@@ -45,10 +45,16 @@ body {
   :root {
     --color-bg: 249 250 251;
     --color-text: 17 24 39;
+    --recharts-tooltip-bg: #ffffff;
+    --recharts-tooltip-color: #111827;
+    --recharts-tooltip-border: #e5e7eb;
   }
   .dark {
     --color-bg: 3 7 18;
     --color-text: 243 244 246;
+    --recharts-tooltip-bg: #1f2937;
+    --recharts-tooltip-color: #f9fafb;
+    --recharts-tooltip-border: #374151;
   }
 }
 

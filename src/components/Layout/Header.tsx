@@ -33,20 +33,23 @@ export function Header({ dark, onToggleDark, tabs, activeTab, onTabChange }: Hea
             {dark ? <Sun size={16} /> : <Moon size={16} />}
           </button>
         </div>
-        <nav className="flex gap-1 pb-3" aria-label="Seções">
+        <nav className="flex gap-1 pb-3" aria-label="Seções" role="tablist">
           {tabs.map((tab) => {
             const Icon = iconMap[tab.icon] || Eye
             const isActive = activeTab === tab.id
             return (
               <button
                 key={tab.id}
+                role="tab"
+                id={`tab-${tab.id}`}
+                aria-selected={isActive}
+                aria-controls={`tabpanel-${tab.id}`}
                 onClick={() => onTabChange(tab.id)}
                 className={`flex items-center gap-1.5 px-3.5 py-2 text-xs font-medium rounded-lg transition-all duration-200 ${
                   isActive
                     ? 'bg-gray-800/10 dark:bg-white/15 text-gray-900 dark:text-gray-100 shadow-sm'
                     : 'text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 hover:bg-gray-800/5 dark:hover:bg-white/10'
                 }`}
-                aria-current={isActive ? 'true' : undefined}
               >
                 <Icon size={14} />
                 {tab.label}

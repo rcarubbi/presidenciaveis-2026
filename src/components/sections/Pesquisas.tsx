@@ -67,6 +67,31 @@ export function Pesquisas() {
   const hasSpontaneous = spontaneousData.length > 0
   const hasRegional = regionalData.length > 0
 
+  if (filtered.length === 0) {
+    return (
+      <div className="space-y-6">
+        <div className="flex flex-wrap gap-2">
+          {institutes.map((inst) => (
+            <button
+              key={inst}
+              onClick={() => setSelected(inst)}
+              className={`px-4 py-1.5 text-sm font-medium rounded-full transition-all duration-200 ${
+                selected === inst
+                  ? 'bg-gray-800 text-white dark:bg-white dark:text-gray-900 shadow-sm'
+                  : 'bg-gray-100 text-gray-600 hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700'
+              }`}
+            >
+              {inst}
+            </button>
+          ))}
+        </div>
+        <div className="glass p-10 text-center">
+          <p className="text-gray-500">Nenhuma pesquisa disponível para {selected}</p>
+        </div>
+      </div>
+    )
+  }
+
   return (
     <div className="space-y-6">
       <div className="flex flex-wrap gap-2">

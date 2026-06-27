@@ -26,10 +26,15 @@ const cmpTabs: { id: CandidateSubTab; label: string; icon: React.ComponentType<{
 
 export function Comparativo({ candidates, selectedIds, onSelectionChange, onClose }: ComparativoProps) {
   const [cmpTab, setCmpTab] = useState<CandidateSubTab>('dados')
+  const [minWarning, setMinWarning] = useState(false)
 
   const toggleCandidateSelection = (id: string) => {
     if (selectedIds.includes(id)) {
-      if (selectedIds.length <= 2) return
+      if (selectedIds.length <= 2) {
+        setMinWarning(true)
+        setTimeout(() => setMinWarning(false), 2000)
+        return
+      }
       onSelectionChange(selectedIds.filter((x) => x !== id))
     } else {
       onSelectionChange([...selectedIds, id])
@@ -70,6 +75,9 @@ export function Comparativo({ candidates, selectedIds, onSelectionChange, onClos
       {/* Candidate selector */}
       <div className="glass p-4">
         <p className="text-sm font-medium text-gray-500 mb-3">Selecione candidatos para comparar (mín. 2):</p>
+        {minWarning && (
+          <p className="text-xs text-red-500 mb-2 animate-pulse" role="alert">Mínimo de 2 candidatos para comparação</p>
+        )}
         <div className="flex gap-3 flex-wrap">
           {candidates.map((c) => {
             const selected = selectedIds.includes(c.id)
@@ -97,20 +105,23 @@ export function Comparativo({ candidates, selectedIds, onSelectionChange, onClos
       </div>
 
       {/* Sub-tabs */}
-      <nav className="flex gap-1 overflow-x-auto glass p-1 rounded-xl" aria-label="Seções comparativas">
+      <nav className="flex gap-1 overflow-x-auto glass p-1 rounded-xl" aria-label="Seções comparativas" role="tablist">
         {cmpTabs.map((tab) => {
           const Icon = tab.icon
           const isActive = cmpTab === tab.id
           return (
             <button
               key={tab.id}
+              role="tab"
+              id={`cmp-tab-${tab.id}`}
+              aria-selected={isActive}
+              aria-controls={`cmp-panel-${tab.id}`}
               onClick={() => setCmpTab(tab.id)}
               className={`flex items-center gap-2 px-3 py-2.5 text-sm font-medium rounded-lg whitespace-nowrap transition-all duration-200 flex-1 justify-center ${
                 isActive
                   ? 'bg-white/80 dark:bg-gray-800/80 text-gray-900 dark:text-gray-100 shadow-sm'
                   : 'text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 hover:bg-white/30 dark:hover:bg-gray-800/30'
               }`}
-              aria-current={isActive ? 'true' : undefined}
             >
               <Icon size={14} />
               <span className="hidden sm:inline text-xs">{tab.label}</span>
@@ -130,7 +141,7 @@ export function Comparativo({ candidates, selectedIds, onSelectionChange, onClos
       </div>
 
       {/* Content */}
-      <div className="tab-enter" key={cmpTab}>
+      <div className="tab-enter" key={cmpTab} role="tabpanel" id={`cmp-panel-${cmpTab}`} aria-labelledby={`cmp-tab-${cmpTab}`}>
         {renderCmpContent()}
       </div>
     </div>

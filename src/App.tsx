@@ -6,6 +6,7 @@ import { VisaoGeral } from './components/sections/VisaoGeral'
 import { Pesquisas } from './components/sections/Pesquisas'
 import { CandidateLayout } from './components/Layout/CandidateLayout'
 import { Comparativo } from './components/sections/Comparativo'
+import { ErrorBoundary } from './components/ErrorBoundary'
 
 const tabs: Tab[] = [
   { id: 'visao', label: 'Visão Geral', icon: 'visao' },
@@ -139,11 +140,20 @@ export default function App() {
       </div>
 
       <div className="relative z-10">
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[60] focus:px-4 focus:py-2 focus:rounded-xl focus:bg-white focus:text-gray-900 focus:shadow-lg focus:text-sm focus:font-medium"
+        >
+          Pular para conteúdo
+        </a>
+
         <Header dark={dark} onToggleDark={toggleDark} tabs={tabs} activeTab={activeTab} onTabChange={handleTabChange} />
 
-        <main className="max-w-7xl mx-auto px-4 py-8" id="main-content">
+        <ErrorBoundary>
+          <main className="max-w-7xl mx-auto px-4 py-8" id="main-content">
           <div key={`${activeTab}-${selectedCandidateId ?? 'overview'}-${comparisonMode ? 'cmp' : 'single'}`} className="tab-enter">
-            <section aria-label={activeTab === 'pesquisas' ? 'Pesquisas' : 'Candidatos'}>
+            <section aria-label={activeTab === 'pesquisas' ? 'Pesquisas' : 'Candidatos'}
+              role="tabpanel" id={`tabpanel-${activeTab}`} aria-labelledby={`tab-${activeTab}`}>
               {renderContent()}
             </section>
           </div>
@@ -155,6 +165,7 @@ export default function App() {
             <p>Última atualização: 26/06/2026.</p>
           </footer>
         </main>
+        </ErrorBoundary>
       </div>
     </div>
   )

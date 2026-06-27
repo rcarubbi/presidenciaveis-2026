@@ -68,6 +68,7 @@ export function CandidateLayout({ candidate, activeSubTab, onSubTabChange, onBac
             src={c.photo}
             alt={c.fullName}
             className="col-span-full row-span-full w-full h-full object-contain"
+            onError={(e) => { (e.target as HTMLImageElement).style.display = 'none' }}
           />
           <div
             className="col-span-full row-span-full"
@@ -81,6 +82,7 @@ export function CandidateLayout({ candidate, activeSubTab, onSubTabChange, onBac
                 src={c.party.logo}
                 alt={c.party.name}
                 className="h-10 md:h-14 object-contain"
+                onError={(e) => { (e.target as HTMLImageElement).style.display = 'none' }}
               />
               <span className="px-3 py-1 rounded-full text-sm font-bold text-white bg-black/30 backdrop-blur-sm">
                 {c.party.name} — {c.party.number}
@@ -112,20 +114,23 @@ export function CandidateLayout({ candidate, activeSubTab, onSubTabChange, onBac
       </div>
 
       {/* Sub tab navigation */}
-      <nav className="flex gap-1 overflow-x-auto glass p-1 rounded-xl" aria-label="Seções do candidato">
+      <nav className="flex gap-1 overflow-x-auto glass p-1 rounded-xl" aria-label="Seções do candidato" role="tablist">
         {subTabs.map((tab) => {
           const Icon = tab.icon
           const isActive = activeSubTab === tab.id
           return (
             <button
               key={tab.id}
+              role="tab"
+              id={`subtab-${c.id}-${tab.id}`}
+              aria-selected={isActive}
+              aria-controls={`subpanel-${c.id}-${tab.id}`}
               onClick={() => onSubTabChange(tab.id)}
               className={`flex items-center gap-2 px-3 py-2.5 text-sm font-medium rounded-lg whitespace-nowrap transition-all duration-200 flex-1 justify-center ${
                 isActive
                   ? 'bg-white/80 dark:bg-gray-800/80 text-gray-900 dark:text-gray-100 shadow-sm'
                   : 'text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 hover:bg-white/30 dark:hover:bg-gray-800/30'
               }`}
-              aria-current={isActive ? 'true' : undefined}
             >
               <Icon size={14} />
               <span className="hidden sm:inline text-xs">{tab.label}</span>
@@ -135,7 +140,7 @@ export function CandidateLayout({ candidate, activeSubTab, onSubTabChange, onBac
       </nav>
 
       {/* Section content */}
-      <div className="tab-enter" key={activeSubTab}>
+      <div className="tab-enter" key={activeSubTab} role="tabpanel" id={`subpanel-${c.id}-${activeSubTab}`} aria-labelledby={`subtab-${c.id}-${activeSubTab}`}>
         {renderSubContent()}
       </div>
     </div>
@@ -181,8 +186,8 @@ function CandidateHeroFull({ candidate: c }: { candidate: Candidate }) {
   )
 }
 
-function fmtPatSimple(v: number): string {
-  if (v === 0) return 'N/D'
+function fmtPatSimple(v: number | null): string {
+  if (v === null) return 'N/D'
   if (v >= 1_000_000) return `R$ ${(v / 1_000_000).toFixed(1)} mi`
   return `R$ ${(v / 1000).toFixed(0)} mil`
 }

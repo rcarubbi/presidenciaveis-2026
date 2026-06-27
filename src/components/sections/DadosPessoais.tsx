@@ -7,7 +7,7 @@ interface DadosPessoaisProps {
 export function DadosPessoais({ candidates }: DadosPessoaisProps) {
   const rows = [
     { label: 'Nome completo', key: 'fullName' as const },
-    { label: 'Data de nascimento', key: 'age' as const, render: (c: Candidate) => `${80 - c.age + 1945} (${c.age} anos)` },
+    { label: 'Data de nascimento', key: 'age' as const, render: (c: Candidate) => `${c.birthYear} (${c.age} anos)` },
     { label: 'Naturalidade', key: 'naturalidade' as const },
     { label: 'Estado civil', key: 'estadoCivil' as const },
     { label: 'Cônjuges anteriores', key: 'conjugesAnteriores' as const },
@@ -16,7 +16,7 @@ export function DadosPessoais({ candidates }: DadosPessoaisProps) {
     { label: 'Profissão', key: 'profissao' as const },
     { label: 'Religião', key: 'religiao' as const },
     { label: 'Residência', key: 'residencia' as const },
-    { label: 'Patrimônio declarado', key: 'patrimonio' as const, render: (c: Candidate) => c.patrimonio === 0 ? 'N/D' : fmtMoney(c.patrimonio) },
+    { label: 'Patrimônio declarado', key: 'patrimonio' as const, render: (c: Candidate) => c.patrimonio === null ? 'N/D' : fmtMoney(c.patrimonio) },
   ]
 
   return (

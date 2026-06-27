@@ -7,6 +7,14 @@ interface PosicionamentoProps {
 export function Posicionamento({ candidates }: PosicionamentoProps) {
   const allIssues = [...new Set(candidates.flatMap((c) => c.positions.map((p) => p.issue)))]
 
+  if (allIssues.length === 0) {
+    return (
+      <div className="glass p-10 text-center">
+        <p className="text-gray-500">Nenhum posicionamento registrado</p>
+      </div>
+    )
+  }
+
   return (
     <div className="glass overflow-x-auto">
       <table className="w-full text-sm">

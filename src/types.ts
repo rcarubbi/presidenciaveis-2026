@@ -11,6 +11,7 @@ export interface Candidate {
     colorLight: string
   }
   age: number
+  birthYear: number
   naturalidade: string
   estadoCivil: string
   conjugesAnteriores: string
@@ -19,7 +20,7 @@ export interface Candidate {
   profissao: string
   religiao: string
   residencia: string
-  patrimonio: number
+  patrimonio: number | null
   currentParty: string
   partyHistory: string[]
   coalition: { party: string; status: string }[]

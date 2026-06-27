@@ -54,6 +54,9 @@ export function Escandalos({ candidates }: EscandalosProps) {
             <h3 className="text-base font-semibold mb-4" style={{ color: c.party.color }}>
               {c.name} ({c.scandals.length})
             </h3>
+            {c.scandals.length === 0 ? (
+              <p className="text-sm text-gray-400 italic">Nenhum caso registrado</p>
+            ) : (
             <div className="space-y-4">
               {c.scandals.map((s, i) => (
                 <div key={i} className="text-sm">
@@ -70,6 +73,7 @@ export function Escandalos({ candidates }: EscandalosProps) {
                 </div>
               ))}
             </div>
+            )}
           </div>
         ))}
       </div>

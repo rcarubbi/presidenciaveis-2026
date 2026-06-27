@@ -6,8 +6,8 @@ interface VisaoGeralProps {
   onSelectCandidate: (id: string) => void
 }
 
-function fmtPat(v: number): string {
-  if (v === 0) return 'N/D'
+function fmtPat(v: number | null): string {
+  if (v === null) return 'N/D'
   if (v >= 1_000_000) return `R$ ${(v / 1_000_000).toFixed(1)} mi`
   return `R$ ${(v / 1000).toFixed(0)} mil`
 }
@@ -44,7 +44,8 @@ function CandidateCard({ candidate, onSelect }: { candidate: Candidate; onSelect
         />
         <div className="col-span-full row-span-full relative z-10 flex flex-col justify-end p-5">
           <div className="flex items-center gap-3 mb-3">
-            <img src={c.party.logo} alt={c.party.name} className="h-10 object-contain" />
+            <img src={c.party.logo} alt={c.party.name} className="h-10 object-contain"
+              onError={(e) => { (e.target as HTMLImageElement).style.display = 'none' }} />
             <span className="px-2.5 py-0.5 rounded-full text-xs font-bold text-white bg-black/40 backdrop-blur-sm">
               {c.party.name} — {c.party.number}
             </span>
@@ -97,6 +98,14 @@ function CandidateCard({ candidate, onSelect }: { candidate: Candidate; onSelect
 }
 
 export function VisaoGeral({ candidates, onSelectCandidate }: VisaoGeralProps) {
+  if (candidates.length === 0) {
+    return (
+      <div className="glass p-10 text-center">
+        <p className="text-gray-500 text-lg">Nenhum candidato disponível</p>
+      </div>
+    )
+  }
+
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
       {candidates.map((c) => (

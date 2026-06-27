@@ -11,6 +11,9 @@ export function Carreira({ candidates }: CarreiraProps) {
         <div key={c.id} className="glass p-5">
           <h3 className="text-base font-semibold mb-4" style={{ color: c.party.color }}>{c.name} — Carreira Política</h3>
 
+          {c.timeline.length === 0 ? (
+            <p className="text-sm text-gray-400 italic mb-4">Nenhum evento registrado</p>
+          ) : (
           <div className="space-y-0 mb-6">
             {c.timeline.map((t, i) => (
               <div key={i} className="flex gap-3 relative">
@@ -28,6 +31,7 @@ export function Carreira({ candidates }: CarreiraProps) {
               </div>
             ))}
           </div>
+          )}
 
           <div className="overflow-x-auto border-t border-gray-200/40 dark:border-gray-700/30 pt-4">
             <table className="w-full text-sm">

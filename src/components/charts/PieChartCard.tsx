@@ -34,10 +34,10 @@ export function PieChartCard({ data, title, unit = 'R$ mi' }: PieChartCardProps)
           </Pie>
           <Tooltip
             contentStyle={{
-              backgroundColor: '#1f2937',
-              border: 'none',
+              backgroundColor: 'var(--recharts-tooltip-bg)',
+              border: '1px solid var(--recharts-tooltip-border)',
               borderRadius: '8px',
-              color: '#f9fafb',
+              color: 'var(--recharts-tooltip-color)',
               fontSize: '12px',
             }}
             formatter={(v) => [`${v}${unit}`, undefined]}

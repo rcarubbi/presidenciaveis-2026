@@ -7,6 +7,14 @@ interface FinanciamentoProps {
 }
 
 export function Financiamento({ candidates }: FinanciamentoProps) {
+  if (candidates.length === 0) {
+    return (
+      <div className="glass p-10 text-center">
+        <p className="text-gray-500">Nenhum dado financeiro disponível</p>
+      </div>
+    )
+  }
+
   const barData = candidates.map((c) => ({
     name: c.name,
     Arrecadado: c.campaignFinance.comparison.arrecadado,
