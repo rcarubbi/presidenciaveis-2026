@@ -1,4 +1,4 @@
-import type { Candidate } from '../../types'
+import type { Candidate, ProposalItem } from '../../types'
 import { ProgressBar } from '../charts/ProgressBar'
 import { proposalSections } from '../../data/proposals'
 import { useState } from 'react'
@@ -46,7 +46,7 @@ export function PlanoGoverno({ candidates }: PlanoGovernoProps) {
               {isOpen && (
                 <div className="grid grid-cols-1 md:grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-6 px-5 pb-5 pt-2 border-t border-gray-200/40 dark:border-gray-700/30">
                   {candidates.map((c) => {
-                    const items = sec[c.id as keyof typeof sec] as string[]
+                    const items = sec[c.id as keyof typeof sec] as ProposalItem[]
                     return (
                       <div key={c.id}>
                         <p className="text-sm font-bold mb-3" style={{ color: c.party.color }}>{c.name}</p>
@@ -57,7 +57,19 @@ export function PlanoGoverno({ candidates }: PlanoGovernoProps) {
                             {items.map((item, i) => (
                               <li key={i} className="text-sm text-gray-600 dark:text-gray-400 flex items-start gap-2">
                                 <span className="mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: c.party.color }} />
-                                {item}
+                                <span>
+                                  {item.text}
+                                  {item.source && (
+                                    <a
+                                      href={item.source}
+                                      target="_blank"
+                                      rel="noopener noreferrer"
+                                      className="ml-1.5 text-xs text-blue-500/70 hover:text-blue-600 underline underline-offset-2"
+                                    >
+                                      fonte
+                                    </a>
+                                  )}
+                                </span>
                               </li>
                             ))}
                           </ul>

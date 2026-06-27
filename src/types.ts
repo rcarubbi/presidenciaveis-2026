@@ -72,6 +72,11 @@ export interface PollData {
   regional?: { region: string; lula: number; flavio: number; renan?: number }[]
 }
 
+export interface ProposalItem {
+  text: string
+  source?: string
+}
+
 export interface Tab {
   id: string
   label: string

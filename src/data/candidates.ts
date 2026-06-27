@@ -54,6 +54,7 @@ export const candidates: Candidate[] = [
       { year: '2018', event: 'Preso 580 dias; candidatura barrada' },
       { year: '2021', event: 'STF anula condenações; recupera direitos' },
       { year: '2022', event: 'Eleito presidente 3ª vez (50,83% × Bolsonaro)' },
+      { year: '2026', event: 'PT aprova manifesto "Construindo o Futuro" foco reeleição. Pré-candidato.' },
     ],
     electionResults: [
       { year: 1986, cargo: 'Dep. Federal SP', votos: '650.134', pct: '—', resultado: 'Eleito (mais votado)' },
@@ -94,6 +95,8 @@ export const candidates: Candidate[] = [
       { issue: 'Casamento LGBT+', position: 'Apoio união civil homoafetiva. "Brasil sem Homofobia".' },
       { issue: 'Regulação Mídia e Redes', position: 'Regular sem censura. Combate desinformação.' },
       { issue: 'Meio Ambiente', position: 'Prioridade. Combate desmatamento. Transição energética.' },
+      { issue: 'Mobilidade Urbana', position: 'Tarifa zero no transporte público. Sistema Nacional de Mobilidade Urbana.' },
+      { issue: 'Segurança Pública', position: 'Repressão qualificada (inteligência). PEC Segurança. PL Antifacção.' },
     ],
     proposalsCoverage: 12,
   },
@@ -181,7 +184,7 @@ export const candidates: Candidate[] = [
       { issue: 'Meio Ambiente', position: 'Exploração Amazônia "responsável". Crítico ativismo.' },
       { issue: 'Regulação Mídia e Redes', position: 'Contra. Liberdade total expressão.' },
     ],
-    proposalsCoverage: 4,
+    proposalsCoverage: 11,
   },
   {
     id: 'renan',

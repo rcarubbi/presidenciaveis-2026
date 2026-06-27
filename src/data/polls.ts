@@ -2,6 +2,78 @@ import type { PollData } from '../types'
 
 export const polls: PollData[] = [
   {
+    institute: 'Datafolha',
+    date: '17/jun',
+    firstRound: [
+      { name: 'Lula', value: 41.0 },
+      { name: 'Flávio', value: 31.0 },
+      { name: 'Caiado', value: 3.0 },
+      { name: 'Renan', value: 3.0 },
+      { name: 'Zema', value: 2.0 },
+      { name: 'Aécio', value: 2.0 },
+      { name: 'Samara', value: 2.0 },
+      { name: 'Cury', value: 2.0 },
+      { name: 'Daciolo', value: 1.0 },
+      { name: 'Barbosa', value: 1.0 },
+      { name: 'Pimenta', value: 1.0 },
+    ],
+    secondRound: [
+      { label: 'Lula × Flávio', lula: 47.0, adversario: 43.0, adversarioNome: 'Flávio' },
+      { label: 'Lula × Caiado', lula: 47.0, adversario: 41.0, adversarioNome: 'Caiado' },
+      { label: 'Lula × Zema', lula: 48.0, adversario: 39.0, adversarioNome: 'Zema' },
+    ],
+    rejection: [
+      { name: 'Flávio', value: 48.0 },
+      { name: 'Lula', value: 46.0 },
+      { name: 'Aécio', value: 23.0 },
+      { name: 'Zema', value: 17.0 },
+      { name: 'Caiado', value: 14.0 },
+      { name: 'Renan', value: 12.0 },
+    ],
+  },
+  {
+    institute: 'Quaest',
+    date: '10/jun',
+    firstRound: [
+      { name: 'Lula', value: 39.0 },
+      { name: 'Flávio', value: 29.0 },
+      { name: 'Caiado', value: 4.0 },
+      { name: 'Zema', value: 4.0 },
+      { name: 'Renan', value: 2.0 },
+    ],
+    secondRound: [
+      { label: 'Lula × Flávio', lula: 44.0, adversario: 38.0, adversarioNome: 'Flávio' },
+    ],
+  },
+  {
+    institute: 'Real Time Big Data',
+    date: '1/jun',
+    firstRound: [
+      { name: 'Lula', value: 38.0 },
+      { name: 'Flávio', value: 31.0 },
+      { name: 'Caiado', value: 4.0 },
+      { name: 'Zema', value: 3.0 },
+    ],
+    secondRound: [
+      { label: 'Lula × Flávio', lula: 45.0, adversario: 40.0, adversarioNome: 'Flávio' },
+    ],
+  },
+  {
+    institute: 'Datafolha',
+    date: '25/mai',
+    firstRound: [
+      { name: 'Lula', value: 40.0 },
+      { name: 'Flávio', value: 31.0 },
+      { name: 'Caiado', value: 4.0 },
+      { name: 'Renan', value: 3.0 },
+      { name: 'Zema', value: 3.0 },
+      { name: 'Samara', value: 3.0 },
+    ],
+    secondRound: [
+      { label: 'Lula × Flávio', lula: 47.0, adversario: 43.0, adversarioNome: 'Flávio' },
+    ],
+  },
+  {
     institute: 'AtlasIntel',
     date: '19/mai',
     firstRound: [
@@ -32,6 +104,20 @@ export const polls: PollData[] = [
       { region: 'Sudeste', lula: 34, flavio: 33, renan: 8 },
       { region: 'Sul', lula: 33, flavio: 36, renan: 7 },
       { region: 'Norte/CO', lula: 34, flavio: 37, renan: 6 },
+    ],
+  },
+  {
+    institute: 'Quaest',
+    date: '13/mai',
+    firstRound: [
+      { name: 'Lula', value: 39.0 },
+      { name: 'Flávio', value: 33.0 },
+      { name: 'Caiado', value: 4.0 },
+      { name: 'Zema', value: 4.0 },
+      { name: 'Renan', value: 2.0 },
+    ],
+    secondRound: [
+      { label: 'Lula × Flávio', lula: 42.0, adversario: 41.0, adversarioNome: 'Flávio' },
     ],
   },
 ]

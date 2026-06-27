@@ -1,11 +1,12 @@
 import { useState } from 'react'
 import type { Candidate, CandidateSubTab } from '../../types'
-import { X, User, Briefcase, Shield, DollarSign, Grid3X3, Eye } from 'lucide-react'
+import { X, User, Briefcase, Shield, DollarSign, Grid3X3, Eye, FileText } from 'lucide-react'
 import { DadosPessoais } from './DadosPessoais'
 import { Carreira } from './Carreira'
 import { Escandalos } from './Escandalos'
 import { Financiamento } from './Financiamento'
 import { Posicionamento } from './Posicionamento'
+import { PlanoGoverno } from './PlanoGoverno'
 
 interface ComparativoProps {
   candidates: Candidate[]
@@ -20,6 +21,7 @@ const cmpTabs: { id: CandidateSubTab; label: string; icon: React.ComponentType<{
   { id: 'escandalos', label: 'Escândalos', icon: Shield },
   { id: 'financiamento', label: 'Financiamento', icon: DollarSign },
   { id: 'posicionamento', label: 'Posicionamento', icon: Grid3X3 },
+  { id: 'plano', label: 'Plano de Governo', icon: FileText },
 ]
 
 export function Comparativo({ candidates, selectedIds, onSelectionChange, onClose }: ComparativoProps) {
@@ -44,6 +46,7 @@ export function Comparativo({ candidates, selectedIds, onSelectionChange, onClos
       case 'escandalos': return <Escandalos candidates={filtered} />
       case 'financiamento': return <Financiamento candidates={filtered} />
       case 'posicionamento': return <Posicionamento candidates={filtered} />
+      case 'plano': return <PlanoGoverno candidates={filtered} />
       default: return null
     }
   }
