@@ -1,0 +1,50 @@
+import type { Candidate } from '../../types'
+import { PieChartCard } from '../charts/PieChartCard'
+import { GroupedBarChartCard } from '../charts/GroupedBarChart'
+
+interface FinanciamentoProps {
+  candidates: Candidate[]
+}
+
+export function Financiamento({ candidates }: FinanciamentoProps) {
+  const barData = candidates.map((c) => ({
+    name: c.name,
+    Arrecadado: c.campaignFinance.comparison.arrecadado,
+    Gasto: c.campaignFinance.comparison.gasto,
+  }))
+
+  return (
+    <div className="space-y-6">
+      <div className="grid grid-cols-1 md:grid-cols-[repeat(auto-fit,minmax(280px,1fr))] gap-4">
+        {candidates.map((c) => (
+          <PieChartCard
+            key={c.id}
+            title={`${c.name} — Fontes`}
+            data={c.campaignFinance.fontes}
+            unit="%"
+          />
+        ))}
+      </div>
+
+      <GroupedBarChartCard
+        title="Arrecadado × Gasto (R$ milhões)"
+        data={barData}
+        bars={[
+          { key: 'Arrecadado', color: '#22c55e', name: 'Arrecadado' },
+          { key: 'Gasto', color: '#ef4444', name: 'Gasto' },
+        ]}
+        unit=" mi"
+      />
+
+      <div className="grid grid-cols-1 md:grid-cols-[repeat(auto-fit,minmax(280px,1fr))] gap-4">
+        {candidates.map((c) => (
+          <div key={c.id} className="glass p-5 text-sm space-y-1.5">
+            <p className="text-gray-500">Total arrecadado: <span className="font-medium text-gray-700 dark:text-gray-300">{c.campaignFinance.totalArrecadado}</span></p>
+            <p className="text-gray-500">Total gasto: <span className="font-medium text-gray-700 dark:text-gray-300">{c.campaignFinance.totalGasto}</span></p>
+            <p className="text-gray-500">Limite: <span className="font-medium text-gray-700 dark:text-gray-300">{c.campaignFinance.limiteGastos}</span></p>
+          </div>
+        ))}
+      </div>
+    </div>
+  )
+}

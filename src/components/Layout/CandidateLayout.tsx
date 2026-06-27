@@ -1,0 +1,188 @@
+import type { Candidate, CandidateSubTab } from '../../types'
+import { ArrowLeft, GitCompare, Eye, User, Briefcase, FileText, Shield, DollarSign, Grid3X3 } from 'lucide-react'
+import { DadosPessoais } from '../sections/DadosPessoais'
+import { Carreira } from '../sections/Carreira'
+import { PlanoGoverno } from '../sections/PlanoGoverno'
+import { Escandalos } from '../sections/Escandalos'
+import { Financiamento } from '../sections/Financiamento'
+import { Posicionamento } from '../sections/Posicionamento'
+
+interface CandidateLayoutProps {
+  candidate: Candidate
+  activeSubTab: CandidateSubTab
+  onSubTabChange: (tab: CandidateSubTab) => void
+  onBack: () => void
+  onCompare: () => void
+}
+
+const subTabs: { id: CandidateSubTab; label: string; icon: React.ComponentType<{ size?: number }> }[] = [
+  { id: 'hero', label: 'Visão Geral', icon: Eye },
+  { id: 'dados', label: 'Dados Pessoais', icon: User },
+  { id: 'carreira', label: 'Carreira', icon: Briefcase },
+  { id: 'plano', label: 'Plano Governo', icon: FileText },
+  { id: 'escandalos', label: 'Escândalos', icon: Shield },
+  { id: 'financiamento', label: 'Financiamento', icon: DollarSign },
+  { id: 'posicionamento', label: 'Posicionamento', icon: Grid3X3 },
+]
+
+export function CandidateLayout({ candidate, activeSubTab, onSubTabChange, onBack, onCompare }: CandidateLayoutProps) {
+  const c = candidate
+  const color = c.party.color
+
+  const renderSubContent = () => {
+    switch (activeSubTab) {
+      case 'hero': return <CandidateHeroFull candidate={c} />
+      case 'dados': return <DadosPessoais candidates={[c]} />
+      case 'carreira': return <Carreira candidates={[c]} />
+      case 'plano': return <PlanoGoverno candidates={[c]} />
+      case 'escandalos': return <Escandalos candidates={[c]} />
+      case 'financiamento': return <Financiamento candidates={[c]} />
+      case 'posicionamento': return <Posicionamento candidates={[c]} />
+    }
+  }
+
+  return (
+    <div className="space-y-6">
+      {/* Top bar */}
+      <div className="flex items-center justify-between">
+        <button
+          onClick={onBack}
+          className="flex items-center gap-2 text-sm font-medium text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 transition-colors"
+        >
+          <ArrowLeft size={16} />
+          Visão Geral
+        </button>
+        <button
+          onClick={onCompare}
+          className="flex items-center gap-2 text-sm font-medium px-4 py-2 rounded-xl glass hover:bg-white/50 dark:hover:bg-gray-800/50 transition-all duration-200"
+        >
+          <GitCompare size={16} />
+          Comparativo
+        </button>
+      </div>
+
+      {/* Hero */}
+      <div className="glass overflow-hidden rounded-xl">
+        <div className="aspect-[3/2] md:aspect-[2/1] grid grid-cols-1 grid-rows-1 overflow-hidden" style={{ backgroundColor: color }}>
+          <img
+            src={c.photo}
+            alt={c.fullName}
+            className="col-span-full row-span-full w-full h-full object-contain"
+          />
+          <div
+            className="col-span-full row-span-full"
+            style={{
+              background: `linear-gradient(to right, ${color}ee 0%, ${color}88 50%, ${color}44 100%)`,
+            }}
+          />
+          <div className="col-span-full row-span-full flex flex-col justify-end p-6 md:p-10">
+            <div className="flex items-center gap-3 mb-2">
+              <img
+                src={c.party.logo}
+                alt={c.party.name}
+                className="h-10 md:h-14 object-contain"
+              />
+              <span className="px-3 py-1 rounded-full text-sm font-bold text-white bg-black/30 backdrop-blur-sm">
+                {c.party.name} — {c.party.number}
+              </span>
+            </div>
+            <h1 className="text-3xl md:text-5xl font-bold text-white drop-shadow-lg">{c.fullName}</h1>
+            <p className="text-base md:text-lg text-white/80 mt-1 drop-shadow">{c.currentPosition}</p>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 p-6">
+          <div className="text-center">
+            <p className="text-2xl font-bold" style={{ color }}>{c.age}</p>
+            <p className="text-xs text-gray-500">anos</p>
+          </div>
+          <div className="text-center">
+            <p className="text-2xl font-bold" style={{ color }}>{c.careerYears}</p>
+            <p className="text-xs text-gray-500">anos na política</p>
+          </div>
+          <div className="text-center">
+            <p className="text-2xl font-bold" style={{ color }}>{fmtPatSimple(c.patrimonio)}</p>
+            <p className="text-xs text-gray-500">patrimônio</p>
+          </div>
+          <div className="text-center">
+            <p className="text-2xl font-bold" style={{ color }}>{c.proposalsCoverage}/12</p>
+            <p className="text-xs text-gray-500">propostas</p>
+          </div>
+        </div>
+      </div>
+
+      {/* Sub tab navigation */}
+      <nav className="flex gap-1 overflow-x-auto glass p-1 rounded-xl" aria-label="Seções do candidato">
+        {subTabs.map((tab) => {
+          const Icon = tab.icon
+          const isActive = activeSubTab === tab.id
+          return (
+            <button
+              key={tab.id}
+              onClick={() => onSubTabChange(tab.id)}
+              className={`flex items-center gap-2 px-3 py-2.5 text-sm font-medium rounded-lg whitespace-nowrap transition-all duration-200 flex-1 justify-center ${
+                isActive
+                  ? 'bg-white/80 dark:bg-gray-800/80 text-gray-900 dark:text-gray-100 shadow-sm'
+                  : 'text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 hover:bg-white/30 dark:hover:bg-gray-800/30'
+              }`}
+              aria-current={isActive ? 'true' : undefined}
+            >
+              <Icon size={14} />
+              <span className="hidden sm:inline text-xs">{tab.label}</span>
+            </button>
+          )
+        })}
+      </nav>
+
+      {/* Section content */}
+      <div className="tab-enter" key={activeSubTab}>
+        {renderSubContent()}
+      </div>
+    </div>
+  )
+}
+
+function CandidateHeroFull({ candidate: c }: { candidate: Candidate }) {
+  return (
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+      <div className="glass p-6 space-y-4">
+        <h3 className="text-base font-semibold text-gray-700 dark:text-gray-300" style={{ color: c.party.color }}>Dados Pessoais</h3>
+        <div className="space-y-2 text-sm text-gray-500 dark:text-gray-400">
+          <p><span className="font-semibold text-gray-700 dark:text-gray-300">Nome completo:</span> {c.fullName}</p>
+          <p><span className="font-semibold text-gray-700 dark:text-gray-300">Naturalidade:</span> {c.naturalidade}</p>
+          <p><span className="font-semibold text-gray-700 dark:text-gray-300">Estado civil:</span> {c.estadoCivil}</p>
+          <p><span className="font-semibold text-gray-700 dark:text-gray-300">Filhos:</span> {c.filhos}</p>
+          <p><span className="font-semibold text-gray-700 dark:text-gray-300">Formação:</span> {c.formacao}</p>
+          <p><span className="font-semibold text-gray-700 dark:text-gray-300">Religião:</span> {c.religiao}</p>
+          <p><span className="font-semibold text-gray-700 dark:text-gray-300">Residência:</span> {c.residencia}</p>
+        </div>
+      </div>
+      <div className="glass p-6 space-y-4">
+        <h3 className="text-base font-semibold text-gray-700 dark:text-gray-300" style={{ color: c.party.color }}>Posicionamento</h3>
+        <div className="space-y-2 text-sm text-gray-500 dark:text-gray-400">
+          <p><span className="font-semibold text-gray-700 dark:text-gray-300">Ideologia:</span> {c.ideologicalPosition}</p>
+          <p><span className="font-semibold text-gray-700 dark:text-gray-300">Partido atual:</span> {c.currentParty}</p>
+          <p><span className="font-semibold text-gray-700 dark:text-gray-300">Histórico partidos:</span> {c.partyHistory.join(', ')}</p>
+          <p><span className="font-semibold text-gray-700 dark:text-gray-300">Cargo atual:</span> {c.currentPosition}</p>
+          <div>
+            <span className="font-semibold text-gray-700 dark:text-gray-300">Coligação:</span>
+            <ul className="mt-1 space-y-0.5">
+              {c.coalition.map((co) => (
+                <li key={co.party} className="flex items-center gap-2">
+                  <span className={`w-2 h-2 rounded-full ${co.status === 'confirmado' ? 'bg-green-400' : 'bg-yellow-400'}`} />
+                  {co.party} ({co.status})
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+function fmtPatSimple(v: number): string {
+  if (v === 0) return 'N/D'
+  if (v >= 1_000_000) return `R$ ${(v / 1_000_000).toFixed(1)} mi`
+  return `R$ ${(v / 1000).toFixed(0)} mil`
+}
