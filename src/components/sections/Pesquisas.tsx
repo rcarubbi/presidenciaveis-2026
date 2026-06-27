@@ -5,6 +5,14 @@ import { HorizontalBarChartCard } from '../charts/HorizontalBarChart'
 
 const institutes = ['AtlasIntel', 'Datafolha', 'Quaest', 'Real Time Big Data']
 
+function sortDate(a: string, b: string) {
+  const parse = (s: string) => {
+    const [d, m] = s.split('/').map(Number)
+    return new Date(2026, m - 1, d).getTime()
+  }
+  return parse(b) - parse(a)
+}
+
 export function Pesquisas() {
   const [selected, setSelected] = useState('AtlasIntel')
   const filtered = polls.filter((p) => p.institute === selected)
@@ -12,7 +20,7 @@ export function Pesquisas() {
   const firstRoundData = filtered
     .filter((p) => p.firstRound.length > 0)
     .map((p) => {
-      const row: Record<string, number | string> = { name: filtered.length > 1 ? p.date : p.institute }
+      const row: { name: string; [key: string]: string | number } = { name: filtered.length > 1 ? p.date : p.institute }
       p.firstRound.forEach((c) => {
         row[c.name] = c.value
       })
@@ -32,23 +40,26 @@ export function Pesquisas() {
 
   const rejectionData = filtered
     .filter((p) => p.rejection)
-    .flatMap((p) => p.rejection!)
-    .sort((a, b) => b.value - a.value)
+    .toSorted((a, b) => sortDate(a.date, b.date))
+    .at(0)?.rejection
+    ?.toSorted((a, b) => b.value - a.value) ?? []
 
   const spontaneousData = filtered
     .filter((p) => p.spontaneous)
-    .flatMap((p) => p.spontaneous!)
-    .sort((a, b) => b.value - a.value)
+    .toSorted((a, b) => sortDate(a.date, b.date))
+    .at(0)?.spontaneous
+    ?.toSorted((a, b) => b.value - a.value) ?? []
 
   const regionalData = filtered
     .filter((p) => p.regional)
-    .flatMap((p) => p.regional!)
-    .map((r) => ({
+    .toSorted((a, b) => sortDate(a.date, b.date))
+    .at(0)?.regional
+    ?.map((r) => ({
       name: r.region,
       Lula: r.lula,
       Flávio: r.flavio,
       Renan: r.renan ?? 0,
-    }))
+    })) ?? []
 
   const dates = filtered.map((p) => p.date).join(', ')
   const hasLulaRenan = secondRoundData.some((d) => d.matchup === 'Lula × Renan')

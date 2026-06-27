@@ -38,7 +38,7 @@ export function GroupedBarChartCard({ data, bars, title, unit = '%' }: GroupedBa
               color: '#f9fafb',
               fontSize: '12px',
             }}
-            formatter={(v: number) => [`${v}${unit}`, undefined]}
+            formatter={(v) => [`${v}${unit}`, undefined]}
           />
           <Legend wrapperStyle={{ fontSize: '11px' }} />
           {bars.map((b) => (

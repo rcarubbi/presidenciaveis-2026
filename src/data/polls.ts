@@ -30,6 +30,13 @@ export const polls: PollData[] = [
       { name: 'Caiado', value: 14.0 },
       { name: 'Renan', value: 12.0 },
     ],
+    spontaneous: [
+      { name: 'Lula', value: 30 },
+      { name: 'Flávio', value: 17 },
+      { name: 'Caiado', value: 1 },
+      { name: 'Renan', value: 1 },
+      { name: 'Zema', value: 1 },
+    ],
   },
   {
     institute: 'Quaest',
@@ -44,6 +51,13 @@ export const polls: PollData[] = [
     secondRound: [
       { label: 'Lula × Flávio', lula: 44.0, adversario: 38.0, adversarioNome: 'Flávio' },
     ],
+    rejection: [
+      { name: 'Flávio', value: 56.0 },
+      { name: 'Lula', value: 53.0 },
+      { name: 'Caiado', value: 32.0 },
+      { name: 'Zema', value: 29.0 },
+      { name: 'Renan', value: 20.0 },
+    ],
   },
   {
     institute: 'Real Time Big Data',
@@ -56,6 +70,17 @@ export const polls: PollData[] = [
     ],
     secondRound: [
       { label: 'Lula × Flávio', lula: 45.0, adversario: 40.0, adversarioNome: 'Flávio' },
+    ],
+    rejection: [
+      { name: 'Lula', value: 48.0 },
+      { name: 'Flávio', value: 48.0 },
+    ],
+    spontaneous: [
+      { name: 'Lula', value: 33 },
+      { name: 'Flávio', value: 25 },
+      { name: 'Renan', value: 2 },
+      { name: 'Caiado', value: 2 },
+      { name: 'Zema', value: 1 },
     ],
   },
   {
@@ -71,6 +96,20 @@ export const polls: PollData[] = [
     ],
     secondRound: [
       { label: 'Lula × Flávio', lula: 47.0, adversario: 43.0, adversarioNome: 'Flávio' },
+    ],
+    rejection: [
+      { name: 'Flávio', value: 46.0 },
+      { name: 'Lula', value: 45.0 },
+      { name: 'Zema', value: 18.0 },
+      { name: 'Caiado', value: 15.0 },
+      { name: 'Renan', value: 16.0 },
+    ],
+    spontaneous: [
+      { name: 'Lula', value: 27 },
+      { name: 'Flávio', value: 18 },
+      { name: 'Caiado', value: 1 },
+      { name: 'Renan', value: 1 },
+      { name: 'Zema', value: 1 },
     ],
   },
   {
@@ -118,6 +157,12 @@ export const polls: PollData[] = [
     ],
     secondRound: [
       { label: 'Lula × Flávio', lula: 42.0, adversario: 41.0, adversarioNome: 'Flávio' },
+    ],
+    rejection: [
+      { name: 'Flávio', value: 54.0 },
+      { name: 'Lula', value: 53.0 },
+      { name: 'Caiado', value: 32.0 },
+      { name: 'Zema', value: 27.0 },
     ],
   },
 ]

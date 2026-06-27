@@ -32,7 +32,7 @@ export function HorizontalBarChartCard({ data, title, color, unit = '%' }: Horiz
               color: '#f9fafb',
               fontSize: '12px',
             }}
-            formatter={(v: number) => [`${v}${unit}`, undefined]}
+            formatter={(v) => [`${v}${unit}`, undefined]}
           />
           <Bar dataKey="value" fill={color} radius={[0, 4, 4, 0]} />
         </BarChart>

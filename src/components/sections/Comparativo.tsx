@@ -37,7 +37,6 @@ export function Comparativo({ candidates, selectedIds, onSelectionChange, onClos
   }
 
   const filtered = candidates.filter((c) => selectedIds.includes(c.id))
-  const allColors = candidates.reduce((acc, c) => ({ ...acc, [c.id]: c.party.color }), {} as Record<string, string>)
 
   const renderCmpContent = () => {
     switch (cmpTab) {
