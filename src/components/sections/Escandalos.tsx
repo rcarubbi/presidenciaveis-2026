@@ -1,31 +1,32 @@
 import type { Candidate } from '../../types'
+import { DataLink } from '../DataLink'
 
 interface EscandalosProps {
   candidates: Candidate[]
 }
 
-const statusColor = {
+const statusColor: Record<string, string> = {
   arquivado: 'bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400',
   absolvido: 'bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400',
   anulado: 'bg-orange-100 text-orange-700 dark:bg-orange-900/30 dark:text-orange-400',
   rejeitado: 'bg-yellow-100 text-yellow-700 dark:bg-yellow-900/30 dark:text-yellow-400',
   ativo: 'bg-red-100 text-red-700 dark:bg-red-900/30 dark:text-red-400',
-} as const
+}
 
-const statusLabel = {
+const statusLabel: Record<string, string> = {
   arquivado: 'Arquivado',
   absolvido: 'Absolvido',
   anulado: 'Anulado (STF)',
   rejeitado: 'Rejeitado',
   ativo: 'Em investigação',
-} as const
+}
 
 export function Escandalos({ candidates }: EscandalosProps) {
   const counts = candidates.map((c) => ({
-    name: c.name,
+    name: c.name.value,
     color: c.party.color,
-    ativos: c.scandals.filter((s) => s.status === 'ativo').length,
-    resolvidos: c.scandals.filter((s) => s.status !== 'ativo').length,
+    ativos: c.scandals.filter((s) => s.status.value === 'ativo').length,
+    resolvidos: c.scandals.filter((s) => s.status.value !== 'ativo').length,
   }))
 
   return (
@@ -52,7 +53,7 @@ export function Escandalos({ candidates }: EscandalosProps) {
         {candidates.map((c) => (
           <div key={c.id} className="glass p-5">
             <h3 className="text-base font-semibold mb-4" style={{ color: c.party.color }}>
-              {c.name} ({c.scandals.length})
+              <DataLink data={c.name} /> ({c.scandals.length})
             </h3>
             {c.scandals.length === 0 ? (
               <p className="text-sm text-gray-400 italic">Nenhum caso registrado</p>
@@ -61,15 +62,15 @@ export function Escandalos({ candidates }: EscandalosProps) {
               {c.scandals.map((s, i) => (
                 <div key={i} className="text-sm">
                   <div className="flex items-center gap-2 mb-1 flex-wrap">
-                    <span className="font-semibold text-gray-700 dark:text-gray-300">{s.name}</span>
-                    <span className={`px-2.5 py-0.5 rounded-full text-xs font-medium ${statusColor[s.status]}`}>
-                      {statusLabel[s.status]}
+                    <span className="font-semibold text-gray-700 dark:text-gray-300"><DataLink data={s.name} /></span>
+                    <span className={`px-2.5 py-0.5 rounded-full text-xs font-medium ${statusColor[s.status.value]}`}>
+                      {statusLabel[s.status.value]}
                     </span>
-                    {s.value && s.value !== '—' && (
-                      <span className="text-gray-400 ml-auto">{s.value}</span>
+                    {s.value && s.value.value && s.value.value !== '—' && (
+                      <span className="text-gray-400 ml-auto"><DataLink data={s.value} /></span>
                     )}
                   </div>
-                  <p className="text-gray-500 dark:text-gray-400">{s.description}</p>
+                  <p className="text-gray-500 dark:text-gray-400"><DataLink data={s.description} /></p>
                 </div>
               ))}
             </div>

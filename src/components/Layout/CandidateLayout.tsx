@@ -2,7 +2,8 @@
 
 import { useState, useRef, useEffect } from 'react'
 import Link from 'next/link'
-import type { Candidate, CandidateSubTab } from '../../types'
+import type { Candidate, CandidateSubTab, DataValue } from '../../types'
+import { DataLink } from '../DataLink'
 import { ArrowLeft, GitCompare, Eye, User, Briefcase, FileText, Shield, DollarSign, Grid3X3 } from 'lucide-react'
 import { DadosPessoais } from '../sections/DadosPessoais'
 import { Carreira } from '../sections/Carreira'
@@ -84,7 +85,7 @@ export function CandidateLayout({ candidate }: CandidateLayoutProps) {
           <img
             ref={photoRef}
             src={c.photo}
-            alt={c.fullName}
+            alt={c.fullName.value}
             className="col-span-full row-span-full w-full h-full object-contain"
             onLoad={() => setPhotoLoaded(true)}
             onError={(e) => { setPhotoLoaded(true); (e.target as HTMLImageElement).style.display = 'none' }}
@@ -102,28 +103,28 @@ export function CandidateLayout({ candidate }: CandidateLayoutProps) {
                 <img
                   ref={logoRef}
                   src={c.party.logo}
-                  alt={c.party.name}
+                  alt={c.party.name.value}
                   className="h-10 md:h-14 object-contain"
                   onLoad={() => setLogoLoaded(true)}
                   onError={(e) => { setLogoLoaded(true); (e.target as HTMLImageElement).style.display = 'none' }}
                 />
               </div>
               <span className="px-3 py-1 rounded-full text-sm font-bold text-white bg-black/30 backdrop-blur-sm">
-                {c.party.name} — {c.party.number}
+                {c.party.name.value} — {c.party.number}
               </span>
             </div>
-            <h1 className="text-3xl md:text-5xl font-bold text-white drop-shadow-lg">{c.fullName}</h1>
-            <p className="text-base md:text-lg text-white/80 mt-1 drop-shadow">{c.currentPosition}</p>
+            <h1 className="text-3xl md:text-5xl font-bold text-white drop-shadow-lg"><DataLink data={c.fullName} /></h1>
+            <p className="text-base md:text-lg text-white/80 mt-1 drop-shadow"><DataLink data={c.currentPosition} /></p>
           </div>
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 p-6">
           <div className="text-center">
-            <p className="text-2xl font-bold" style={{ color }}>{c.age}</p>
+            <p className="text-2xl font-bold" style={{ color }}><DataLink data={c.age} /></p>
             <p className="text-xs text-gray-500">anos</p>
           </div>
           <div className="text-center">
-            <p className="text-2xl font-bold" style={{ color }}>{c.careerYears}</p>
+            <p className="text-2xl font-bold" style={{ color }}><DataLink data={c.careerYears} /></p>
             <p className="text-xs text-gray-500">anos na política</p>
           </div>
           <div className="text-center">
@@ -131,7 +132,7 @@ export function CandidateLayout({ candidate }: CandidateLayoutProps) {
             <p className="text-xs text-gray-500">patrimônio</p>
           </div>
           <div className="text-center">
-            <p className="text-2xl font-bold" style={{ color }}>{c.proposalsCoverage}/12</p>
+            <p className="text-2xl font-bold" style={{ color }}>{c.proposalsCoverage.value}/12</p>
             <p className="text-xs text-gray-500">propostas</p>
           </div>
         </div>
@@ -175,29 +176,29 @@ function CandidateHeroFull({ candidate: c }: { candidate: Candidate }) {
       <div className="glass p-6 space-y-4">
         <h3 className="text-base font-semibold text-gray-700 dark:text-gray-300" style={{ color: c.party.color }}>Dados Pessoais</h3>
         <div className="space-y-2 text-sm text-gray-500 dark:text-gray-400">
-          <p><span className="font-semibold text-gray-700 dark:text-gray-300">Nome completo:</span> {c.fullName}</p>
-          <p><span className="font-semibold text-gray-700 dark:text-gray-300">Naturalidade:</span> {c.naturalidade}</p>
-          <p><span className="font-semibold text-gray-700 dark:text-gray-300">Estado civil:</span> {c.estadoCivil}</p>
-          <p><span className="font-semibold text-gray-700 dark:text-gray-300">Filhos:</span> {c.filhos}</p>
-          <p><span className="font-semibold text-gray-700 dark:text-gray-300">Formação:</span> {c.formacao}</p>
-          <p><span className="font-semibold text-gray-700 dark:text-gray-300">Religião:</span> {c.religiao}</p>
-          <p><span className="font-semibold text-gray-700 dark:text-gray-300">Residência:</span> {c.residencia}</p>
+          <p><span className="font-semibold text-gray-700 dark:text-gray-300">Nome completo:</span> <DataLink data={c.fullName} /></p>
+          <p><span className="font-semibold text-gray-700 dark:text-gray-300">Naturalidade:</span> <DataLink data={c.naturalidade} /></p>
+          <p><span className="font-semibold text-gray-700 dark:text-gray-300">Estado civil:</span> <DataLink data={c.estadoCivil} /></p>
+          <p><span className="font-semibold text-gray-700 dark:text-gray-300">Filhos:</span> <DataLink data={c.filhos} /></p>
+          <p><span className="font-semibold text-gray-700 dark:text-gray-300">Formação:</span> <DataLink data={c.formacao} /></p>
+          <p><span className="font-semibold text-gray-700 dark:text-gray-300">Religião:</span> <DataLink data={c.religiao} /></p>
+          <p><span className="font-semibold text-gray-700 dark:text-gray-300">Residência:</span> <DataLink data={c.residencia} /></p>
         </div>
       </div>
       <div className="glass p-6 space-y-4">
         <h3 className="text-base font-semibold text-gray-700 dark:text-gray-300" style={{ color: c.party.color }}>Posicionamento</h3>
         <div className="space-y-2 text-sm text-gray-500 dark:text-gray-400">
-          <p><span className="font-semibold text-gray-700 dark:text-gray-300">Ideologia:</span> {c.ideologicalPosition}</p>
-          <p><span className="font-semibold text-gray-700 dark:text-gray-300">Partido atual:</span> {c.currentParty}</p>
-          <p><span className="font-semibold text-gray-700 dark:text-gray-300">Histórico partidos:</span> {c.partyHistory.join(', ')}</p>
-          <p><span className="font-semibold text-gray-700 dark:text-gray-300">Cargo atual:</span> {c.currentPosition}</p>
+          <p><span className="font-semibold text-gray-700 dark:text-gray-300">Ideologia:</span> <DataLink data={c.ideologicalPosition} /></p>
+          <p><span className="font-semibold text-gray-700 dark:text-gray-300">Partido atual:</span> <DataLink data={c.currentParty} /></p>
+          <p><span className="font-semibold text-gray-700 dark:text-gray-300">Histórico partidos:</span> {c.partyHistory.map((dv) => dv.value).join(', ')}</p>
+          <p><span className="font-semibold text-gray-700 dark:text-gray-300">Cargo atual:</span> <DataLink data={c.currentPosition} /></p>
           <div>
             <span className="font-semibold text-gray-700 dark:text-gray-300">Coligação:</span>
             <ul className="mt-1 space-y-0.5">
-              {c.coalition.map((co) => (
-                <li key={co.party} className="flex items-center gap-2">
-                  <span className={`w-2 h-2 rounded-full ${co.status === 'confirmado' ? 'bg-green-400' : 'bg-yellow-400'}`} />
-                  {co.party} ({co.status})
+              {c.coalition.map((co, i) => (
+                <li key={i} className="flex items-center gap-2">
+                  <span className={`w-2 h-2 rounded-full ${co.status.value === 'confirmado' ? 'bg-green-400' : 'bg-yellow-400'}`} />
+                  <DataLink data={co.party} /> (<DataLink data={co.status} />)
                 </li>
               ))}
             </ul>
@@ -208,8 +209,8 @@ function CandidateHeroFull({ candidate: c }: { candidate: Candidate }) {
   )
 }
 
-function fmtPatSimple(v: number | null): string {
+function fmtPatSimple(v: DataValue<number> | null): string {
   if (v === null) return 'N/D'
-  if (v >= 1_000_000) return `R$ ${(v / 1_000_000).toFixed(1)} mi`
-  return `R$ ${(v / 1000).toFixed(0)} mil`
+  if (v.value >= 1_000_000) return `R$ ${(v.value / 1_000_000).toFixed(1)} mi`
+  return `R$ ${(v.value / 1000).toFixed(0)} mil`
 }

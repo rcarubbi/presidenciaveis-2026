@@ -5,15 +5,18 @@ import { useRouter } from 'next/navigation'
 import type { Candidate } from '../../types'
 import { ArrowUpRight, GitCompare, Check } from 'lucide-react'
 import { Spinner } from '../ui/Spinner'
+import { DataLink } from '../DataLink'
+import type { DataValue } from '../../types'
 
 interface VisaoGeralProps {
   candidates: Candidate[]
 }
 
-function fmtPat(v: number | null): string {
+function fmtPat(v: DataValue<number> | null): string {
   if (v === null) return 'N/D'
-  if (v >= 1_000_000) return `R$ ${(v / 1_000_000).toFixed(1)} mi`
-  return `R$ ${(v / 1000).toFixed(0)} mil`
+  const val = v.value
+  if (val >= 1_000_000) return `R$ ${(val / 1_000_000).toFixed(1)} mi`
+  return `R$ ${(val / 1000).toFixed(0)} mil`
 }
 
 function photoPos(c: Candidate): string {
@@ -69,23 +72,23 @@ function CandidateCard({
             <div className="flex items-center gap-3 mb-3">
               <div className="relative h-10 w-auto min-w-[40px] flex items-center justify-center">
                 {!logoLoaded && <Spinner size={18} className="text-white/60 absolute" />}
-                <img ref={logoRef} src={c.party.logo} alt={c.party.name}
+                <img ref={logoRef} src={c.party.logo} alt={c.party.name.value}
                   className="h-10 object-contain"
                   onLoad={() => setLogoLoaded(true)}
                   onError={(e) => { setLogoLoaded(true); (e.target as HTMLImageElement).style.display = 'none' }} />
               </div>
             <span className="px-2.5 py-0.5 rounded-full text-xs font-bold text-white bg-black/40 backdrop-blur-sm">
-              {c.party.name} — {c.party.number}
+              {c.party.name.value} — {c.party.number}
             </span>
           </div>
-          <h2 className="text-2xl font-bold text-white drop-shadow-lg">{c.fullName}</h2>
-          <p className="text-sm text-white/80 mt-1 drop-shadow">{c.currentPosition}</p>
+          <h2 className="text-2xl font-bold text-white drop-shadow-lg"><DataLink data={c.fullName} /></h2>
+          <p className="text-sm text-white/80 mt-1 drop-shadow"><DataLink data={c.currentPosition} /></p>
           <div className="flex gap-2 mt-3">
             <span className="px-2 py-0.5 rounded text-[10px] font-medium bg-white/20 text-white backdrop-blur-sm">
-              {c.age} anos
+              {c.age.value} anos
             </span>
             <span className="px-2 py-0.5 rounded text-[10px] font-medium bg-white/20 text-white backdrop-blur-sm">
-              {c.careerYears} anos pol.
+              {c.careerYears.value} anos pol.
             </span>
             <span className="px-2 py-0.5 rounded text-[10px] font-medium bg-white/20 text-white backdrop-blur-sm">
               {fmtPat(c.patrimonio)}
@@ -102,19 +105,19 @@ function CandidateCard({
         <div className="grid grid-cols-2 gap-2 text-xs text-gray-500 dark:text-gray-400">
           <div>
             <span className="font-semibold text-gray-700 dark:text-gray-300">Ideologia:</span>{' '}
-            {c.ideologicalPosition}
+            <DataLink data={c.ideologicalPosition} />
           </div>
           <div>
             <span className="font-semibold text-gray-700 dark:text-gray-300">Propostas:</span>{' '}
-            {c.proposalsCoverage}/12
+            {c.proposalsCoverage.value}/12
           </div>
           <div>
             <span className="font-semibold text-gray-700 dark:text-gray-300">Religião:</span>{' '}
-            {c.religiao}
+            <DataLink data={c.religiao} />
           </div>
           <div>
             <span className="font-semibold text-gray-700 dark:text-gray-300">Natural:</span>{' '}
-            {c.naturalidade}
+            <DataLink data={c.naturalidade} />
           </div>
         </div>
         <div className="mt-4 flex justify-center gap-3">
@@ -125,7 +128,7 @@ function CandidateCard({
                 ? 'bg-gray-800 dark:bg-white text-white dark:text-gray-900'
                 : 'bg-gray-200/70 dark:bg-gray-700/70 text-gray-500 dark:text-gray-400 hover:bg-gray-300 dark:hover:bg-gray-600'
             }`}
-            aria-label={`Comparar ${c.name}`}
+            aria-label={`Comparar ${c.name.value}`}
             title="Comparar"
           >
             {isCompareSelected ? <Check size={20} strokeWidth={2.5} /> : <GitCompare size={20} strokeWidth={2} />}

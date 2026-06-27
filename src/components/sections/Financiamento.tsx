@@ -1,4 +1,5 @@
 import type { Candidate } from '../../types'
+import { DataLink } from '../DataLink'
 import { PieChartCard } from '../charts/PieChartCard'
 import { GroupedBarChartCard } from '../charts/GroupedBarChart'
 
@@ -16,19 +17,29 @@ export function Financiamento({ candidates }: FinanciamentoProps) {
   }
 
   const barData = candidates.map((c) => ({
-    name: c.name,
-    Arrecadado: c.campaignFinance.comparison.arrecadado,
-    Gasto: c.campaignFinance.comparison.gasto,
+    name: c.name.value,
+    Arrecadado: c.campaignFinance.comparison.arrecadado.value,
+    Gasto: c.campaignFinance.comparison.gasto.value,
+  }))
+
+  const fontesData = candidates.map((c) => ({
+    id: c.id,
+    name: c.name.value,
+    fontes: c.campaignFinance.fontes.map((f) => ({
+      name: f.name.value,
+      value: f.value.value,
+      color: f.color,
+    })),
   }))
 
   return (
     <div className="space-y-6">
       <div className="grid grid-cols-1 md:grid-cols-[repeat(auto-fit,minmax(280px,1fr))] gap-4">
-        {candidates.map((c) => (
+        {fontesData.map((fd) => (
           <PieChartCard
-            key={c.id}
-            title={`${c.name} — Fontes`}
-            data={c.campaignFinance.fontes}
+            key={fd.id}
+            title={`${fd.name} — Fontes`}
+            data={fd.fontes}
             unit="%"
           />
         ))}
@@ -47,9 +58,9 @@ export function Financiamento({ candidates }: FinanciamentoProps) {
       <div className="grid grid-cols-1 md:grid-cols-[repeat(auto-fit,minmax(280px,1fr))] gap-4">
         {candidates.map((c) => (
           <div key={c.id} className="glass p-5 text-sm space-y-1.5">
-            <p className="text-gray-500">Total arrecadado: <span className="font-medium text-gray-700 dark:text-gray-300">{c.campaignFinance.totalArrecadado}</span></p>
-            <p className="text-gray-500">Total gasto: <span className="font-medium text-gray-700 dark:text-gray-300">{c.campaignFinance.totalGasto}</span></p>
-            <p className="text-gray-500">Limite: <span className="font-medium text-gray-700 dark:text-gray-300">{c.campaignFinance.limiteGastos}</span></p>
+            <p className="text-gray-500">Total arrecadado: <span className="font-medium text-gray-700 dark:text-gray-300"><DataLink data={c.campaignFinance.totalArrecadado} /></span></p>
+            <p className="text-gray-500">Total gasto: <span className="font-medium text-gray-700 dark:text-gray-300"><DataLink data={c.campaignFinance.totalGasto} /></span></p>
+            <p className="text-gray-500">Limite: <span className="font-medium text-gray-700 dark:text-gray-300"><DataLink data={c.campaignFinance.limiteGastos} /></span></p>
           </div>
         ))}
       </div>

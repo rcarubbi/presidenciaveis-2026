@@ -1,11 +1,12 @@
 import type { Candidate } from '../../types'
+import { DataLink } from '../DataLink'
 
 interface PosicionamentoProps {
   candidates: Candidate[]
 }
 
 export function Posicionamento({ candidates }: PosicionamentoProps) {
-  const allIssues = [...new Set(candidates.flatMap((c) => c.positions.map((p) => p.issue)))]
+  const allIssues = [...new Set(candidates.flatMap((c) => c.positions.map((p) => p.issue.value)))]
 
   if (allIssues.length === 0) {
     return (
@@ -23,7 +24,7 @@ export function Posicionamento({ candidates }: PosicionamentoProps) {
             <th className="text-left py-4 pr-4 pl-5 font-medium text-gray-500 dark:text-gray-400 w-36">Pauta</th>
             {candidates.map((c) => (
               <th key={c.id} className="text-left py-4 px-4 font-semibold text-base" style={{ color: c.party.color }}>
-                {c.name}
+                <DataLink data={c.name} />
               </th>
             ))}
           </tr>
@@ -33,10 +34,10 @@ export function Posicionamento({ candidates }: PosicionamentoProps) {
             <tr key={issue} className={i < allIssues.length - 1 ? 'border-b border-gray-100/50 dark:border-gray-800/30' : ''}>
               <td className="py-3 pr-4 pl-5 text-gray-500 dark:text-gray-400 font-medium text-sm whitespace-nowrap">{issue}</td>
               {candidates.map((c) => {
-                const pos = c.positions.find((p) => p.issue === issue)
+                const pos = c.positions.find((p) => p.issue.value === issue)
                 return (
                   <td key={c.id} className="py-3 px-4 text-sm text-gray-700 dark:text-gray-300">
-                    {pos?.position ?? '—'}
+                    {pos ? <DataLink data={pos.position} /> : '—'}
                   </td>
                 )
               })}

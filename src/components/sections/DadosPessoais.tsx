@@ -1,4 +1,5 @@
 import type { Candidate } from '../../types'
+import { DataLink } from '../DataLink'
 
 interface DadosPessoaisProps {
   candidates: Candidate[]
@@ -6,17 +7,17 @@ interface DadosPessoaisProps {
 
 export function DadosPessoais({ candidates }: DadosPessoaisProps) {
   const rows = [
-    { label: 'Nome completo', key: 'fullName' as const },
-    { label: 'Data de nascimento', key: 'age' as const, render: (c: Candidate) => `${c.birthYear} (${c.age} anos)` },
-    { label: 'Naturalidade', key: 'naturalidade' as const },
-    { label: 'Estado civil', key: 'estadoCivil' as const },
-    { label: 'Cônjuges anteriores', key: 'conjugesAnteriores' as const },
-    { label: 'Filhos', key: 'filhos' as const },
-    { label: 'Formação', key: 'formacao' as const },
-    { label: 'Profissão', key: 'profissao' as const },
-    { label: 'Religião', key: 'religiao' as const },
-    { label: 'Residência', key: 'residencia' as const },
-    { label: 'Patrimônio declarado', key: 'patrimonio' as const, render: (c: Candidate) => c.patrimonio === null ? 'N/D' : fmtMoney(c.patrimonio) },
+    { label: 'Nome completo', render: (c: Candidate) => <DataLink data={c.fullName} /> },
+    { label: 'Data de nascimento', render: (c: Candidate) => <><DataLink data={c.birthYear} /> (<DataLink data={c.age} /> anos)</> },
+    { label: 'Naturalidade', render: (c: Candidate) => <DataLink data={c.naturalidade} /> },
+    { label: 'Estado civil', render: (c: Candidate) => <DataLink data={c.estadoCivil} /> },
+    { label: 'Cônjuges anteriores', render: (c: Candidate) => <DataLink data={c.conjugesAnteriores} /> },
+    { label: 'Filhos', render: (c: Candidate) => <DataLink data={c.filhos} /> },
+    { label: 'Formação', render: (c: Candidate) => <DataLink data={c.formacao} /> },
+    { label: 'Profissão', render: (c: Candidate) => <DataLink data={c.profissao} /> },
+    { label: 'Religião', render: (c: Candidate) => <DataLink data={c.religiao} /> },
+    { label: 'Residência', render: (c: Candidate) => <DataLink data={c.residencia} /> },
+    { label: 'Patrimônio declarado', render: (c: Candidate) => c.patrimonio ? <DataLink data={c.patrimonio} format={(v) => fmtMoney(v as number)} /> : 'N/D' },
   ]
 
   return (
@@ -27,7 +28,7 @@ export function DadosPessoais({ candidates }: DadosPessoaisProps) {
             <th className="text-left py-4 px-5 font-medium text-gray-500 dark:text-gray-400 w-40"></th>
             {candidates.map((c) => (
               <th key={c.id} className="text-left py-4 px-5 font-semibold text-base" style={{ color: c.party.color }}>
-                {c.name}
+                <DataLink data={c.name} />
               </th>
             ))}
           </tr>
@@ -38,7 +39,7 @@ export function DadosPessoais({ candidates }: DadosPessoaisProps) {
               <td className="py-3 px-5 text-gray-500 dark:text-gray-400 text-sm">{row.label}</td>
               {candidates.map((c) => (
                 <td key={c.id} className="py-3 px-5 text-gray-900 dark:text-gray-100 text-sm">
-                  {row.render ? row.render(c) : String(c[row.key] ?? '—')}
+                  {row.render(c)}
                 </td>
               ))}
             </tr>

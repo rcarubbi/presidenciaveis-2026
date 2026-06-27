@@ -1,6 +1,7 @@
 'use client'
 
 import type { Candidate } from '../../types'
+import { DataLink } from '../DataLink'
 import { useState } from 'react'
 
 interface CarreiraProps {
@@ -8,7 +9,7 @@ interface CarreiraProps {
 }
 
 export function Carreira({ candidates }: CarreiraProps) {
-  const allYears = candidates.flatMap((c) => c.timeline.map((t) => parseInt(t.year)))
+  const allYears = candidates.flatMap((c) => c.timeline.map((t) => parseInt(t.year.value)))
   const minYear = Math.min(...allYears)
   const maxYear = Math.max(...allYears)
   const [yearRange, setYearRange] = useState<[number, number]>([minYear, maxYear])
@@ -16,7 +17,7 @@ export function Carreira({ candidates }: CarreiraProps) {
   const filtered = candidates.map((c) => ({
     ...c,
     timeline: c.timeline.filter((t) => {
-      const y = parseInt(t.year)
+      const y = parseInt(t.year.value)
       return y >= yearRange[0] && y <= yearRange[1]
     }),
   }))
@@ -55,7 +56,7 @@ export function Carreira({ candidates }: CarreiraProps) {
       <div className="grid grid-cols-1 md:grid-cols-[repeat(auto-fit,minmax(280px,1fr))] gap-6">
         {filtered.map((c) => (
         <div key={c.id} className="glass p-5">
-          <h3 className="text-base font-semibold mb-4" style={{ color: c.party.color }}>{c.name} — Carreira Política</h3>
+          <h3 className="text-base font-semibold mb-4" style={{ color: c.party.color }}><DataLink data={c.name} /> — Carreira Política</h3>
 
           {c.timeline.length === 0 ? (
             <p className="text-sm text-gray-400 italic mb-4">Nenhum evento registrado</p>
@@ -71,8 +72,8 @@ export function Carreira({ candidates }: CarreiraProps) {
                   )}
                 </div>
                 <div className="pb-5 flex-1">
-                  <p className="text-sm font-bold" style={{ color: c.party.color }}>{t.year}</p>
-                  <p className="text-sm text-gray-600 dark:text-gray-400">{t.event}</p>
+                  <p className="text-sm font-bold" style={{ color: c.party.color }}><DataLink data={t.year} /></p>
+                  <p className="text-sm text-gray-600 dark:text-gray-400"><DataLink data={t.event} /></p>
                 </div>
               </div>
             ))}
@@ -92,10 +93,10 @@ export function Carreira({ candidates }: CarreiraProps) {
               <tbody>
                 {c.electionResults.map((r, i) => (
                   <tr key={i} className="border-b border-gray-100/50 dark:border-gray-800/30">
-                    <td className="py-2 pr-2 font-medium">{r.year}</td>
-                    <td className="py-2 px-2">{r.cargo}</td>
-                    <td className="py-2 px-2 text-right tabular-nums">{r.votos}</td>
-                    <td className="py-2 pl-2 text-right">{r.resultado}</td>
+                    <td className="py-2 pr-2 font-medium"><DataLink data={r.year} /></td>
+                    <td className="py-2 px-2"><DataLink data={r.cargo} /></td>
+                    <td className="py-2 px-2 text-right tabular-nums"><DataLink data={r.votos} /></td>
+                    <td className="py-2 pl-2 text-right"><DataLink data={r.resultado} /></td>
                   </tr>
                 ))}
               </tbody>

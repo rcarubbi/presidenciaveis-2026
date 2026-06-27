@@ -1,6 +1,7 @@
 'use client'
 
 import type { Candidate, ProposalItem } from '../../types'
+import { DataLink } from '../DataLink'
 import { ProgressBar } from '../charts/ProgressBar'
 import { proposalSections } from '../../data/proposals'
 import { useState } from 'react'
@@ -20,7 +21,7 @@ export function PlanoGoverno({ candidates }: PlanoGovernoProps) {
           <div key={c.id} className="glass p-5">
             <p className="text-sm font-medium text-gray-500 mb-3">Cobertura do Plano</p>
             <ProgressBar
-              value={c.proposalsCoverage}
+              value={c.proposalsCoverage.value}
               max={12}
               label="Seções com propostas"
               color={c.party.color}
@@ -51,7 +52,7 @@ export function PlanoGoverno({ candidates }: PlanoGovernoProps) {
                     const items = sec[c.id as keyof typeof sec] as ProposalItem[]
                     return (
                       <div key={c.id}>
-                        <p className="text-sm font-bold mb-3" style={{ color: c.party.color }}>{c.name}</p>
+                        <p className="text-sm font-bold mb-3" style={{ color: c.party.color }}><DataLink data={c.name} /></p>
                         {items.length === 0 ? (
                           <p className="text-sm text-gray-400 italic">Nenhuma proposta específica</p>
                         ) : (
@@ -59,19 +60,7 @@ export function PlanoGoverno({ candidates }: PlanoGovernoProps) {
                             {items.map((item, i) => (
                               <li key={i} className="text-sm text-gray-600 dark:text-gray-400 flex items-start gap-2">
                                 <span className="mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: c.party.color }} />
-                                <span>
-                                  {item.text}
-                                  {item.source && (
-                                    <a
-                                      href={item.source}
-                                      target="_blank"
-                                      rel="noopener noreferrer"
-                                      className="ml-1.5 text-xs text-blue-500/70 hover:text-blue-600 underline underline-offset-2"
-                                    >
-                                      fonte
-                                    </a>
-                                  )}
-                                </span>
+                                  <DataLink data={item.text} />
                               </li>
                             ))}
                           </ul>

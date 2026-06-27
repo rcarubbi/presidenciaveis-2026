@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { toast } from 'sonner'
 import type { Candidate, CandidateSubTab } from '../../types'
+import { DataLink } from '../DataLink'
 import { X, User, Briefcase, Shield, DollarSign, Grid3X3, Eye, FileText } from 'lucide-react'
 import { DadosPessoais } from './DadosPessoais'
 import { Carreira } from './Carreira'
@@ -93,7 +94,7 @@ export function Comparativo({ candidates, initialIds = ['lula', 'flavio', 'renan
                   <img src={c.photo} alt="" className="w-full h-full object-cover"
                     onError={(e) => { (e.target as HTMLImageElement).style.display = 'none' }} />
                 </div>
-                {c.name}
+                  <DataLink data={c.name} />
                 {selected && <X size={12} />}
               </button>
             )
@@ -130,7 +131,7 @@ export function Comparativo({ candidates, initialIds = ['lula', 'flavio', 'renan
         {filtered.map((c) => (
           <span key={c.id} className="flex items-center gap-1.5">
             <span className="w-3 h-3 rounded-full" style={{ backgroundColor: c.party.color }} />
-            {c.name}
+            <DataLink data={c.name} />
           </span>
         ))}
       </div>

@@ -1,66 +1,72 @@
+export interface DataValue<T = string> {
+  value: T
+  source: string
+  updatedAt: string
+}
+
 export interface Candidate {
   id: string
-  name: string
-  fullName: string
+  name: DataValue
+  fullName: DataValue
   photo: string
   party: {
-    name: string
+    name: DataValue
     number: number
     logo: string
     color: string
     colorLight: string
   }
-  age: number
-  birthYear: number
-  naturalidade: string
-  estadoCivil: string
-  conjugesAnteriores: string
-  filhos: string
-  formacao: string
-  profissao: string
-  religiao: string
-  residencia: string
-  patrimonio: number | null
-  currentParty: string
-  partyHistory: string[]
-  coalition: { party: string; status: string }[]
-  ideologicalPosition: string
-  careerYears: number
-  currentPosition: string
+  age: DataValue<number>
+  birthYear: DataValue<number>
+  naturalidade: DataValue
+  estadoCivil: DataValue
+  conjugesAnteriores: DataValue
+  filhos: DataValue
+  formacao: DataValue
+  profissao: DataValue
+  religiao: DataValue
+  residencia: DataValue
+  patrimonio: DataValue<number> | null
+  currentParty: DataValue
+  partyHistory: DataValue[]
+  coalition: { party: DataValue; status: DataValue }[]
+  ideologicalPosition: DataValue
+  careerYears: DataValue<number>
+  currentPosition: DataValue
   timeline: TimelineEvent[]
   electionResults: ElectionResult[]
   scandals: Scandal[]
   campaignFinance: CampaignFinance
-  positions: { issue: string; position: string }[]
-  proposalsCoverage: number
+  positions: { issue: DataValue; position: DataValue }[]
+  proposalsCoverage: DataValue<number>
 }
 
 export interface TimelineEvent {
-  year: string
-  event: string
+  year: DataValue
+  event: DataValue
 }
 
 export interface ElectionResult {
-  year: number
-  cargo: string
-  votos: string
-  pct: string
-  resultado: string
+  year: DataValue<number>
+  cargo: DataValue
+  votos: DataValue
+  pct: DataValue
+  resultado: DataValue
 }
 
 export interface Scandal {
-  name: string
-  status: 'arquivado' | 'ativo' | 'absolvido' | 'anulado' | 'rejeitado'
-  description: string
-  value?: string
+  name: DataValue
+  status: DataValue
+  description: DataValue
+  value?: DataValue
 }
 
 export interface CampaignFinance {
-  totalArrecadado: string
-  totalGasto: string
-  limiteGastos: string
-  fontes: { name: string; value: number; color: string }[]
-  comparison: { name: string; arrecadado: number; gasto: number }
+  totalArrecadado: DataValue
+  totalGasto: DataValue
+  limiteGastos: DataValue
+  fontes: { name: DataValue; value: DataValue<number>; color: string }[]
+  comparison: { name: DataValue; arrecadado: DataValue<number>; gasto: DataValue<number> }
 }
 
 export interface PollData {
@@ -74,8 +80,7 @@ export interface PollData {
 }
 
 export interface ProposalItem {
-  text: string
-  source?: string
+  text: DataValue
 }
 
 export interface Tab {
