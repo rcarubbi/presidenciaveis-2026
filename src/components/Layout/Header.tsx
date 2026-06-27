@@ -1,23 +1,20 @@
+'use client'
+
 import { Moon, Sun, GitCompare, Eye, BarChart3 } from 'lucide-react'
-import type { Tab } from '../../types'
+import Link from 'next/link'
+import { usePathname } from 'next/navigation'
+import { useApp } from '@/lib/providers'
 
-const iconMap: Record<string, React.ComponentType<{ size?: number }>> = {
-  visao: Eye,
-  pesquisas: BarChart3,
-}
+const tabs = [
+  { id: 'visao', label: 'Visão Geral', href: '/', icon: Eye },
+  { id: 'pesquisas', label: 'Pesquisas', href: '/pesquisas', icon: BarChart3 },
+]
 
-interface HeaderProps {
-  dark: boolean
-  onToggleDark: () => void
-  tabs: Tab[]
-  activeTab: string
-  onTabChange: (id: string) => void
-  fontSize: 'normal' | 'large' | 'xlarge'
-  onToggleFontSize: () => void
-}
+export function Header() {
+  const pathname = usePathname()
+  const { theme, toggleTheme, fontSize, toggleFontSize } = useApp()
 
-export function Header({ dark, onToggleDark, tabs, activeTab, onTabChange, fontSize, onToggleFontSize }: HeaderProps) {
-  const fontSizeLabel = fontSize === 'normal' ? 'Aa' : fontSize === 'large' ? 'Aa' : 'Aa'
+  const activeTab = pathname === '/pesquisas' ? 'pesquisas' : 'visao'
   const fontSizeTitle = fontSize === 'normal' ? 'Aumentar fonte' : fontSize === 'large' ? 'Fonte grande' : 'Fonte extra grande'
 
   return (
@@ -32,36 +29,36 @@ export function Header({ dark, onToggleDark, tabs, activeTab, onTabChange, fontS
           </div>
           <div className="flex items-center gap-1">
             <button
-              onClick={onToggleFontSize}
+              onClick={toggleFontSize}
               className="p-2 rounded-lg text-gray-500 hover:text-gray-700 dark:hover:text-gray-200 hover:bg-white/50 dark:hover:bg-gray-800/50 transition-all duration-200 focus-visible:ring-2 focus-visible:ring-gray-400"
               aria-label={fontSizeTitle}
               title={fontSizeTitle}
             >
               <span className={`font-bold ${fontSize === 'normal' ? 'text-sm' : fontSize === 'large' ? 'text-base' : 'text-lg'}`}>
-                {fontSizeLabel}
+                Aa
               </span>
             </button>
             <button
-              onClick={onToggleDark}
+              onClick={toggleTheme}
               className="p-2 rounded-lg text-gray-500 hover:text-gray-700 dark:hover:text-gray-200 hover:bg-white/50 dark:hover:bg-gray-800/50 transition-all duration-200 focus-visible:ring-2 focus-visible:ring-gray-400"
-              aria-label={dark ? 'Ativar modo claro' : 'Ativar modo escuro'}
+              aria-label={theme === 'dark' ? 'Ativar modo claro' : 'Ativar modo escuro'}
             >
-              {dark ? <Sun size={16} /> : <Moon size={16} />}
+              {theme === 'dark' ? <Sun size={16} /> : <Moon size={16} />}
             </button>
           </div>
         </div>
         <nav className="flex gap-1 pb-3" aria-label="Seções" role="tablist">
           {tabs.map((tab) => {
-            const Icon = iconMap[tab.icon] || Eye
+            const Icon = tab.icon
             const isActive = activeTab === tab.id
             return (
-              <button
+              <Link
                 key={tab.id}
+                href={tab.href}
                 role="tab"
                 id={`tab-${tab.id}`}
                 aria-selected={isActive}
                 aria-controls={`tabpanel-${tab.id}`}
-                onClick={() => onTabChange(tab.id)}
                 className={`flex items-center gap-1.5 px-3.5 py-2 text-xs font-medium rounded-lg transition-all duration-200 ${
                   isActive
                     ? 'bg-gray-800/10 dark:bg-white/15 text-gray-900 dark:text-gray-100 shadow-sm'
@@ -70,7 +67,7 @@ export function Header({ dark, onToggleDark, tabs, activeTab, onTabChange, fontS
               >
                 <Icon size={14} />
                 {tab.label}
-              </button>
+              </Link>
             )
           })}
         </nav>

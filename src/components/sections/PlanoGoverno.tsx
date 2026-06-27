@@ -1,3 +1,5 @@
+'use client'
+
 import type { Candidate, ProposalItem } from '../../types'
 import { ProgressBar } from '../charts/ProgressBar'
 import { proposalSections } from '../../data/proposals'

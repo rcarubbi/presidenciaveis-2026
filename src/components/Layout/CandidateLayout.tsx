@@ -1,4 +1,7 @@
-import { useState } from 'react'
+'use client'
+
+import { useState, useRef, useEffect } from 'react'
+import Link from 'next/link'
 import type { Candidate, CandidateSubTab } from '../../types'
 import { ArrowLeft, GitCompare, Eye, User, Briefcase, FileText, Shield, DollarSign, Grid3X3 } from 'lucide-react'
 import { DadosPessoais } from '../sections/DadosPessoais'
@@ -11,10 +14,6 @@ import { Spinner } from '../ui/Spinner'
 
 interface CandidateLayoutProps {
   candidate: Candidate
-  activeSubTab: CandidateSubTab
-  onSubTabChange: (tab: CandidateSubTab) => void
-  onBack: () => void
-  onCompare: () => void
 }
 
 const subTabs: { id: CandidateSubTab; label: string; icon: React.ComponentType<{ size?: number }> }[] = [
@@ -27,11 +26,22 @@ const subTabs: { id: CandidateSubTab; label: string; icon: React.ComponentType<{
   { id: 'posicionamento', label: 'Posicionamento', icon: Grid3X3 },
 ]
 
-export function CandidateLayout({ candidate, activeSubTab, onSubTabChange, onBack, onCompare }: CandidateLayoutProps) {
+export function CandidateLayout({ candidate }: CandidateLayoutProps) {
   const c = candidate
   const color = c.party.color
+  const [activeSubTab, setActiveSubTab] = useState<CandidateSubTab>('hero')
   const [photoLoaded, setPhotoLoaded] = useState(false)
   const [logoLoaded, setLogoLoaded] = useState(false)
+  const photoRef = useRef<HTMLImageElement>(null)
+  const logoRef = useRef<HTMLImageElement>(null)
+
+  useEffect(() => {
+    if (photoRef.current?.complete) setPhotoLoaded(true)
+  }, [])
+
+  useEffect(() => {
+    if (logoRef.current?.complete) setLogoLoaded(true)
+  }, [])
 
   const renderSubContent = () => {
     switch (activeSubTab) {
@@ -47,25 +57,23 @@ export function CandidateLayout({ candidate, activeSubTab, onSubTabChange, onBac
 
   return (
     <div className="space-y-6">
-      {/* Top bar */}
       <div className="flex items-center justify-between">
-        <button
-          onClick={onBack}
+        <Link
+          href="/"
           className="flex items-center gap-2 text-sm font-medium text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 transition-colors"
         >
           <ArrowLeft size={16} />
           Visão Geral
-        </button>
-        <button
-          onClick={onCompare}
+        </Link>
+        <Link
+          href="/comparar"
           className="flex items-center gap-2 text-sm font-medium px-4 py-2 rounded-xl glass hover:bg-white/50 dark:hover:bg-gray-800/50 transition-all duration-200"
         >
           <GitCompare size={16} />
           Comparativo
-        </button>
+        </Link>
       </div>
 
-      {/* Hero */}
       <div className="glass overflow-hidden rounded-xl">
         <div className="aspect-[3/2] md:aspect-[2/1] grid grid-cols-1 grid-rows-1 overflow-hidden relative" style={{ backgroundColor: color }}>
           {!photoLoaded && (
@@ -74,9 +82,10 @@ export function CandidateLayout({ candidate, activeSubTab, onSubTabChange, onBac
             </div>
           )}
           <img
+            ref={photoRef}
             src={c.photo}
             alt={c.fullName}
-            className={`col-span-full row-span-full w-full h-full object-contain ${photoLoaded ? '' : 'invisible'}`}
+            className="col-span-full row-span-full w-full h-full object-contain"
             onLoad={() => setPhotoLoaded(true)}
             onError={(e) => { setPhotoLoaded(true); (e.target as HTMLImageElement).style.display = 'none' }}
           />
@@ -88,12 +97,13 @@ export function CandidateLayout({ candidate, activeSubTab, onSubTabChange, onBac
           />
           <div className="col-span-full row-span-full flex flex-col justify-end p-6 md:p-10">
             <div className="flex items-center gap-3 mb-2">
-              <div className="relative h-10 md:h-14 w-auto min-w-[40px] flex items-center">
-                {!logoLoaded && <Spinner size={20} className="text-white/60" />}
+              <div className="relative h-10 md:h-14 w-auto min-w-[40px] flex items-center justify-center">
+                {!logoLoaded && <Spinner size={20} className="text-white/60 absolute" />}
                 <img
+                  ref={logoRef}
                   src={c.party.logo}
                   alt={c.party.name}
-                  className={`h-10 md:h-14 object-contain ${logoLoaded ? '' : 'invisible absolute'}`}
+                  className="h-10 md:h-14 object-contain"
                   onLoad={() => setLogoLoaded(true)}
                   onError={(e) => { setLogoLoaded(true); (e.target as HTMLImageElement).style.display = 'none' }}
                 />
@@ -127,7 +137,6 @@ export function CandidateLayout({ candidate, activeSubTab, onSubTabChange, onBac
         </div>
       </div>
 
-      {/* Sub tab navigation */}
       <nav className="flex gap-1 overflow-x-auto glass p-1 rounded-xl" aria-label="Seções do candidato" role="tablist">
         {subTabs.map((tab) => {
           const Icon = tab.icon
@@ -139,7 +148,7 @@ export function CandidateLayout({ candidate, activeSubTab, onSubTabChange, onBac
               id={`subtab-${c.id}-${tab.id}`}
               aria-selected={isActive}
               aria-controls={`subpanel-${c.id}-${tab.id}`}
-              onClick={() => onSubTabChange(tab.id)}
+              onClick={() => setActiveSubTab(tab.id)}
               className={`flex items-center gap-2 px-3 py-2.5 text-sm font-medium rounded-lg whitespace-nowrap transition-all duration-200 flex-1 justify-center ${
                 isActive
                   ? 'bg-white/80 dark:bg-gray-800/80 text-gray-900 dark:text-gray-100 shadow-sm'
@@ -153,7 +162,6 @@ export function CandidateLayout({ candidate, activeSubTab, onSubTabChange, onBac
         })}
       </nav>
 
-      {/* Section content */}
       <div className="tab-enter" key={activeSubTab} role="tabpanel" id={`subpanel-${c.id}-${activeSubTab}`} aria-labelledby={`subtab-${c.id}-${activeSubTab}`}>
         {renderSubContent()}
       </div>

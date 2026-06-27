@@ -1,13 +1,14 @@
-import { useState } from 'react'
+'use client'
+
+import { useState, useRef, useEffect } from 'react'
+import { useRouter } from 'next/navigation'
+import Link from 'next/link'
 import type { Candidate } from '../../types'
 import { ArrowUpRight, GitCompare } from 'lucide-react'
 import { Spinner } from '../ui/Spinner'
 
 interface VisaoGeralProps {
   candidates: Candidate[]
-  onSelectCandidate: (id: string) => void
-  compareTargets: string[]
-  onCompareFromCard: (id: string) => void
 }
 
 function fmtPat(v: number | null): string {
@@ -20,21 +21,23 @@ function photoPos(c: Candidate): string {
   return c.id === 'renan' ? 'center' : 'center top'
 }
 
-function CandidateCard({ candidate, onSelect, onCompare, isCompareTarget }: {
-  candidate: Candidate
-  onSelect: (id: string) => void
-  onCompare: (id: string) => void
-  isCompareTarget: boolean
-}) {
+function CandidateCard({ candidate }: { candidate: Candidate }) {
   const c = candidate
+  const router = useRouter()
   const [logoLoaded, setLogoLoaded] = useState(false)
+  const logoRef = useRef<HTMLImageElement>(null)
+
+  useEffect(() => {
+    if (logoRef.current?.complete) setLogoLoaded(true)
+  }, [])
+
   return (
     <div
-      onClick={() => onSelect(c.id)}
-      onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); onSelect(c.id) } }}
+      onClick={() => router.push(`/candidato/${c.id}`)}
+      onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); router.push(`/candidato/${c.id}`) } }}
       role="button"
       tabIndex={0}
-      className={`w-full overflow-hidden rounded-xl text-left group cursor-pointer p-0 focus-visible:ring-2 focus-visible:ring-gray-400 focus-visible:outline-none ${isCompareTarget ? 'ring-2 ring-gray-400 dark:ring-gray-500' : ''}`}
+      className={`w-full overflow-hidden rounded-xl text-left group cursor-pointer p-0 focus-visible:ring-2 focus-visible:ring-gray-400 focus-visible:outline-none`}
     >
       <div className="aspect-[3/4] grid grid-cols-1 grid-rows-1 overflow-hidden" style={{ backgroundColor: c.party.color }}>
         <div
@@ -54,10 +57,10 @@ function CandidateCard({ candidate, onSelect, onCompare, isCompareTarget }: {
         />
         <div className="col-span-full row-span-full relative z-10 flex flex-col justify-end p-5">
             <div className="flex items-center gap-3 mb-3">
-              <div className="relative h-10 w-auto min-w-[40px] flex items-center">
-                {!logoLoaded && <Spinner size={18} className="text-white/60" />}
-                <img src={c.party.logo} alt={c.party.name}
-                  className={`h-10 object-contain ${logoLoaded ? '' : 'invisible absolute'}`}
+              <div className="relative h-10 w-auto min-w-[40px] flex items-center justify-center">
+                {!logoLoaded && <Spinner size={18} className="text-white/60 absolute" />}
+                <img ref={logoRef} src={c.party.logo} alt={c.party.name}
+                  className="h-10 object-contain"
                   onLoad={() => setLogoLoaded(true)}
                   onError={(e) => { setLogoLoaded(true); (e.target as HTMLImageElement).style.display = 'none' }} />
               </div>
@@ -100,18 +103,15 @@ function CandidateCard({ candidate, onSelect, onCompare, isCompareTarget }: {
           </div>
         </div>
         <div className="mt-4 flex justify-center gap-3">
-          <button
-            onClick={(e) => { e.stopPropagation(); onCompare(c.id) }}
-            className={`no-print flex items-center justify-center w-12 h-12 rounded-full transition-all duration-300 hover:scale-110 ${
-              isCompareTarget
-                ? 'bg-gray-800 dark:bg-white text-white dark:text-gray-900 shadow-md'
-                : 'bg-gray-200/70 dark:bg-gray-700/70 text-gray-500 dark:text-gray-400 hover:bg-gray-300 dark:hover:bg-gray-600'
-            }`}
+          <Link
+            href={`/comparar?ids=${c.id}`}
+            onClick={(e) => e.stopPropagation()}
+            className={`flex items-center justify-center w-12 h-12 rounded-full transition-all duration-300 hover:scale-110 bg-gray-200/70 dark:bg-gray-700/70 text-gray-500 dark:text-gray-400 hover:bg-gray-300 dark:hover:bg-gray-600`}
             aria-label={`Comparar ${c.name}`}
             title="Comparar"
           >
             <GitCompare size={20} strokeWidth={2} />
-          </button>
+          </Link>
           <div
             className="flex items-center justify-center w-12 h-12 rounded-full text-white shadow-lg transition-all duration-300 group-hover:scale-110 hover:shadow-xl"
             style={{ backgroundColor: c.party.color }}
@@ -124,7 +124,7 @@ function CandidateCard({ candidate, onSelect, onCompare, isCompareTarget }: {
   )
 }
 
-export function VisaoGeral({ candidates, onSelectCandidate, compareTargets, onCompareFromCard }: VisaoGeralProps) {
+export function VisaoGeral({ candidates }: VisaoGeralProps) {
   if (candidates.length === 0) {
     return (
       <div className="glass p-10 text-center">
@@ -136,7 +136,7 @@ export function VisaoGeral({ candidates, onSelectCandidate, compareTargets, onCo
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
       {candidates.map((c) => (
-        <CandidateCard key={c.id} candidate={c} onSelect={onSelectCandidate} onCompare={onCompareFromCard} isCompareTarget={compareTargets.includes(c.id)} />
+        <CandidateCard key={c.id} candidate={c} />
       ))}
     </div>
   )

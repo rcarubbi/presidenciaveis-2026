@@ -1,3 +1,5 @@
+'use client'
+
 import type { Candidate } from '../../types'
 import { useState } from 'react'
 

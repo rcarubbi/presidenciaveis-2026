@@ -1,3 +1,5 @@
+'use client'
+
 import { useState } from 'react'
 import { polls } from '../../data/polls'
 import { GroupedBarChartCard } from '../charts/GroupedBarChart'

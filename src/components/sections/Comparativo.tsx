@@ -1,4 +1,7 @@
+'use client'
+
 import { useState } from 'react'
+import { useRouter } from 'next/navigation'
 import type { Candidate, CandidateSubTab } from '../../types'
 import { X, User, Briefcase, Shield, DollarSign, Grid3X3, Eye, FileText } from 'lucide-react'
 import { DadosPessoais } from './DadosPessoais'
@@ -10,9 +13,7 @@ import { PlanoGoverno } from './PlanoGoverno'
 
 interface ComparativoProps {
   candidates: Candidate[]
-  selectedIds: string[]
-  onSelectionChange: (ids: string[]) => void
-  onClose: () => void
+  initialIds?: string[]
 }
 
 const cmpTabs: { id: CandidateSubTab; label: string; icon: React.ComponentType<{ size?: number }> }[] = [
@@ -24,7 +25,9 @@ const cmpTabs: { id: CandidateSubTab; label: string; icon: React.ComponentType<{
   { id: 'plano', label: 'Plano de Governo', icon: FileText },
 ]
 
-export function Comparativo({ candidates, selectedIds, onSelectionChange, onClose }: ComparativoProps) {
+export function Comparativo({ candidates, initialIds = ['lula', 'flavio', 'renan'] }: ComparativoProps) {
+  const router = useRouter()
+  const [selectedIds, setSelectedIds] = useState<string[]>(initialIds)
   const [cmpTab, setCmpTab] = useState<CandidateSubTab>('dados')
   const [minWarning, setMinWarning] = useState(false)
 
@@ -35,9 +38,9 @@ export function Comparativo({ candidates, selectedIds, onSelectionChange, onClos
         setTimeout(() => setMinWarning(false), 2000)
         return
       }
-      onSelectionChange(selectedIds.filter((x) => x !== id))
+      setSelectedIds(selectedIds.filter((x) => x !== id))
     } else {
-      onSelectionChange([...selectedIds, id])
+      setSelectedIds([...selectedIds, id])
     }
   }
 
@@ -57,14 +60,13 @@ export function Comparativo({ candidates, selectedIds, onSelectionChange, onClos
 
   return (
     <div className="space-y-6">
-      {/* Header */}
       <div className="flex items-center justify-between">
         <h2 className="text-lg font-bold text-gray-700 dark:text-gray-300 flex items-center gap-2">
           <Eye size={20} />
           Comparativo
         </h2>
         <button
-          onClick={onClose}
+          onClick={() => router.push('/')}
           className="flex items-center gap-2 text-sm font-medium px-4 py-2 rounded-xl glass hover:bg-white/50 dark:hover:bg-gray-800/50 transition-all"
         >
           <X size={16} />
@@ -72,7 +74,6 @@ export function Comparativo({ candidates, selectedIds, onSelectionChange, onClos
         </button>
       </div>
 
-      {/* Candidate selector */}
       <div className="glass p-4">
         <p className="text-sm font-medium text-gray-500 mb-3">Selecione candidatos para comparar (mín. 2):</p>
         {minWarning && (
@@ -104,7 +105,6 @@ export function Comparativo({ candidates, selectedIds, onSelectionChange, onClos
         </div>
       </div>
 
-      {/* Sub-tabs */}
       <nav className="flex gap-1 overflow-x-auto glass p-1 rounded-xl" aria-label="Seções comparativas" role="tablist">
         {cmpTabs.map((tab) => {
           const Icon = tab.icon
@@ -130,7 +130,6 @@ export function Comparativo({ candidates, selectedIds, onSelectionChange, onClos
         })}
       </nav>
 
-      {/* Legend */}
       <div className="flex gap-4 text-xs text-gray-500">
         {filtered.map((c) => (
           <span key={c.id} className="flex items-center gap-1.5">
@@ -140,7 +139,6 @@ export function Comparativo({ candidates, selectedIds, onSelectionChange, onClos
         ))}
       </div>
 
-      {/* Content */}
       <div className="tab-enter" key={cmpTab} role="tabpanel" id={`cmp-panel-${cmpTab}`} aria-labelledby={`cmp-tab-${cmpTab}`}>
         {renderCmpContent()}
       </div>
