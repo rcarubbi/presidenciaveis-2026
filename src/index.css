@@ -59,7 +59,7 @@ body {
 }
 
 @utility glass-strong {
-  @apply rounded-2xl bg-white/85 dark:bg-gray-900/85 backdrop-blur-2xl 
+  @apply rounded-b-2xl bg-white/85 dark:bg-gray-900/85 backdrop-blur-2xl 
          border border-white/40 dark:border-gray-600/40 
          shadow-xl shadow-black/5 dark:shadow-black/25;
 }
