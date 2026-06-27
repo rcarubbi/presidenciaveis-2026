@@ -1,9 +1,11 @@
 import type { Candidate } from '../../types'
-import { ArrowUpRight } from 'lucide-react'
+import { ArrowUpRight, GitCompare } from 'lucide-react'
 
 interface VisaoGeralProps {
   candidates: Candidate[]
   onSelectCandidate: (id: string) => void
+  compareTargets: string[]
+  onCompareFromCard: (id: string) => void
 }
 
 function fmtPat(v: number | null): string {
@@ -16,7 +18,12 @@ function photoPos(c: Candidate): string {
   return c.id === 'renan' ? 'center' : 'center top'
 }
 
-function CandidateCard({ candidate, onSelect }: { candidate: Candidate; onSelect: (id: string) => void }) {
+function CandidateCard({ candidate, onSelect, onCompare, isCompareTarget }: {
+  candidate: Candidate
+  onSelect: (id: string) => void
+  onCompare: (id: string) => void
+  isCompareTarget: boolean
+}) {
   const c = candidate
   return (
     <div
@@ -24,7 +31,7 @@ function CandidateCard({ candidate, onSelect }: { candidate: Candidate; onSelect
       onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); onSelect(c.id) } }}
       role="button"
       tabIndex={0}
-      className="w-full overflow-hidden rounded-xl text-left group cursor-pointer p-0 focus-visible:ring-2 focus-visible:ring-gray-400 focus-visible:outline-none"
+      className={`w-full overflow-hidden rounded-xl text-left group cursor-pointer p-0 focus-visible:ring-2 focus-visible:ring-gray-400 focus-visible:outline-none ${isCompareTarget ? 'ring-2 ring-gray-400 dark:ring-gray-500' : ''}`}
     >
       <div className="aspect-[3/4] grid grid-cols-1 grid-rows-1 overflow-hidden" style={{ backgroundColor: c.party.color }}>
         <div
@@ -84,7 +91,19 @@ function CandidateCard({ candidate, onSelect }: { candidate: Candidate; onSelect
             {c.naturalidade}
           </div>
         </div>
-        <div className="mt-4 flex justify-center">
+        <div className="mt-4 flex justify-center gap-3">
+          <button
+            onClick={(e) => { e.stopPropagation(); onCompare(c.id) }}
+            className={`no-print flex items-center justify-center w-12 h-12 rounded-full transition-all duration-300 hover:scale-110 ${
+              isCompareTarget
+                ? 'bg-gray-800 dark:bg-white text-white dark:text-gray-900 shadow-md'
+                : 'bg-gray-200/70 dark:bg-gray-700/70 text-gray-500 dark:text-gray-400 hover:bg-gray-300 dark:hover:bg-gray-600'
+            }`}
+            aria-label={`Comparar ${c.name}`}
+            title="Comparar"
+          >
+            <GitCompare size={20} strokeWidth={2} />
+          </button>
           <div
             className="flex items-center justify-center w-12 h-12 rounded-full text-white shadow-lg transition-all duration-300 group-hover:scale-110 hover:shadow-xl"
             style={{ backgroundColor: c.party.color }}
@@ -97,7 +116,7 @@ function CandidateCard({ candidate, onSelect }: { candidate: Candidate; onSelect
   )
 }
 
-export function VisaoGeral({ candidates, onSelectCandidate }: VisaoGeralProps) {
+export function VisaoGeral({ candidates, onSelectCandidate, compareTargets, onCompareFromCard }: VisaoGeralProps) {
   if (candidates.length === 0) {
     return (
       <div className="glass p-10 text-center">
@@ -109,7 +128,7 @@ export function VisaoGeral({ candidates, onSelectCandidate }: VisaoGeralProps) {
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
       {candidates.map((c) => (
-        <CandidateCard key={c.id} candidate={c} onSelect={onSelectCandidate} />
+        <CandidateCard key={c.id} candidate={c} onSelect={onSelectCandidate} onCompare={onCompareFromCard} isCompareTarget={compareTargets.includes(c.id)} />
       ))}
     </div>
   )

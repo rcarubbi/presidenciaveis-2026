@@ -12,11 +12,16 @@ interface HeaderProps {
   tabs: Tab[]
   activeTab: string
   onTabChange: (id: string) => void
+  fontSize: 'normal' | 'large' | 'xlarge'
+  onToggleFontSize: () => void
 }
 
-export function Header({ dark, onToggleDark, tabs, activeTab, onTabChange }: HeaderProps) {
+export function Header({ dark, onToggleDark, tabs, activeTab, onTabChange, fontSize, onToggleFontSize }: HeaderProps) {
+  const fontSizeLabel = fontSize === 'normal' ? 'Aa' : fontSize === 'large' ? 'Aa' : 'Aa'
+  const fontSizeTitle = fontSize === 'normal' ? 'Aumentar fonte' : fontSize === 'large' ? 'Fonte grande' : 'Fonte extra grande'
+
   return (
-    <header className="sticky top-0 z-50 glass-strong border-b border-gray-200/30 dark:border-gray-700/30 shadow-sm">
+    <header className="sticky top-0 z-50 glass-strong border-b border-gray-200/30 dark:border-gray-700/30 shadow-sm no-print">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex items-center justify-between h-11">
           <div className="flex items-center gap-2">
@@ -25,13 +30,25 @@ export function Header({ dark, onToggleDark, tabs, activeTab, onTabChange }: Hea
               Presidenciáveis <span className="text-gray-400 font-normal">2026</span>
             </h1>
           </div>
-          <button
-            onClick={onToggleDark}
-            className="p-2 rounded-lg text-gray-500 hover:text-gray-700 dark:hover:text-gray-200 hover:bg-white/50 dark:hover:bg-gray-800/50 transition-all duration-200 focus-visible:ring-2 focus-visible:ring-gray-400"
-            aria-label={dark ? 'Ativar modo claro' : 'Ativar modo escuro'}
-          >
-            {dark ? <Sun size={16} /> : <Moon size={16} />}
-          </button>
+          <div className="flex items-center gap-1">
+            <button
+              onClick={onToggleFontSize}
+              className="p-2 rounded-lg text-gray-500 hover:text-gray-700 dark:hover:text-gray-200 hover:bg-white/50 dark:hover:bg-gray-800/50 transition-all duration-200 focus-visible:ring-2 focus-visible:ring-gray-400"
+              aria-label={fontSizeTitle}
+              title={fontSizeTitle}
+            >
+              <span className={`font-bold ${fontSize === 'normal' ? 'text-sm' : fontSize === 'large' ? 'text-base' : 'text-lg'}`}>
+                {fontSizeLabel}
+              </span>
+            </button>
+            <button
+              onClick={onToggleDark}
+              className="p-2 rounded-lg text-gray-500 hover:text-gray-700 dark:hover:text-gray-200 hover:bg-white/50 dark:hover:bg-gray-800/50 transition-all duration-200 focus-visible:ring-2 focus-visible:ring-gray-400"
+              aria-label={dark ? 'Ativar modo claro' : 'Ativar modo escuro'}
+            >
+              {dark ? <Sun size={16} /> : <Moon size={16} />}
+            </button>
+          </div>
         </div>
         <nav className="flex gap-1 pb-3" aria-label="Seções" role="tablist">
           {tabs.map((tab) => {
