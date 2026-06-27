@@ -41,10 +41,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <main className="max-w-7xl mx-auto px-4 py-8" id="main-content">
                   {children}
                   <footer className="mt-16 pt-6 border-t border-gray-200/60 dark:border-gray-800/60 text-center text-xs text-gray-400/80 space-y-1">
-                    <p>Site independente, sem vínculo com partidos ou campanhas eleitorais.</p>
-                    <p>Dados compilados de fontes públicas (TSE, Câmara, Senado, Folha, G1, O Globo, UOL, Metrópoles, Veja, Poder360).</p>
-                    <p>Conteúdo comparativo para fins informativos. Direito de resposta garantido aos candidatos.</p>
-                    <p>Última atualização: 26/06/2026.</p>
+                    <p>Site informativo sem fins eleitorais. Art. 57-B Lei 9.504/97</p>
                     <FooterActions />
                   </footer>
                 </main>
