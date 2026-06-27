@@ -1,5 +1,7 @@
+import { useState } from 'react'
 import type { Candidate } from '../../types'
 import { ArrowUpRight, GitCompare } from 'lucide-react'
+import { Spinner } from '../ui/Spinner'
 
 interface VisaoGeralProps {
   candidates: Candidate[]
@@ -25,6 +27,7 @@ function CandidateCard({ candidate, onSelect, onCompare, isCompareTarget }: {
   isCompareTarget: boolean
 }) {
   const c = candidate
+  const [logoLoaded, setLogoLoaded] = useState(false)
   return (
     <div
       onClick={() => onSelect(c.id)}
@@ -50,9 +53,14 @@ function CandidateCard({ candidate, onSelect, onCompare, isCompareTarget }: {
           }}
         />
         <div className="col-span-full row-span-full relative z-10 flex flex-col justify-end p-5">
-          <div className="flex items-center gap-3 mb-3">
-            <img src={c.party.logo} alt={c.party.name} className="h-10 object-contain"
-              onError={(e) => { (e.target as HTMLImageElement).style.display = 'none' }} />
+            <div className="flex items-center gap-3 mb-3">
+              <div className="relative h-10 w-auto min-w-[40px] flex items-center">
+                {!logoLoaded && <Spinner size={18} className="text-white/60" />}
+                <img src={c.party.logo} alt={c.party.name}
+                  className={`h-10 object-contain ${logoLoaded ? '' : 'invisible absolute'}`}
+                  onLoad={() => setLogoLoaded(true)}
+                  onError={(e) => { setLogoLoaded(true); (e.target as HTMLImageElement).style.display = 'none' }} />
+              </div>
             <span className="px-2.5 py-0.5 rounded-full text-xs font-bold text-white bg-black/40 backdrop-blur-sm">
               {c.party.name} — {c.party.number}
             </span>
