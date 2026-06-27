@@ -2,9 +2,8 @@
 
 import { useState, useRef, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
-import Link from 'next/link'
 import type { Candidate } from '../../types'
-import { ArrowUpRight, GitCompare } from 'lucide-react'
+import { ArrowUpRight, GitCompare, Check } from 'lucide-react'
 import { Spinner } from '../ui/Spinner'
 
 interface VisaoGeralProps {
@@ -21,9 +20,20 @@ function photoPos(c: Candidate): string {
   return c.id === 'renan' ? 'center' : 'center top'
 }
 
-function CandidateCard({ candidate }: { candidate: Candidate }) {
+function CandidateCard({
+  candidate,
+  cardLoading,
+  isCompareSelected,
+  onCardClick,
+  onCompareClick,
+}: {
+  candidate: Candidate
+  cardLoading: boolean
+  isCompareSelected: boolean
+  onCardClick: (id: string) => void
+  onCompareClick: (id: string, e: React.MouseEvent) => void
+}) {
   const c = candidate
-  const router = useRouter()
   const [logoLoaded, setLogoLoaded] = useState(false)
   const logoRef = useRef<HTMLImageElement>(null)
 
@@ -33,11 +43,11 @@ function CandidateCard({ candidate }: { candidate: Candidate }) {
 
   return (
     <div
-      onClick={() => router.push(`/candidato/${c.id}`)}
-      onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); router.push(`/candidato/${c.id}`) } }}
+      onClick={() => onCardClick(c.id)}
+      onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); onCardClick(c.id) } }}
       role="button"
       tabIndex={0}
-      className={`w-full overflow-hidden rounded-xl text-left group cursor-pointer p-0 focus-visible:ring-2 focus-visible:ring-gray-400 focus-visible:outline-none`}
+      className={`w-full overflow-hidden rounded-xl text-left group cursor-pointer p-0 focus-visible:ring-2 focus-visible:ring-gray-400 focus-visible:outline-none relative overflow-hidden ${isCompareSelected ? 'ring-2 ring-gray-400 dark:ring-gray-500' : ''}`}
     >
       <div className="aspect-[3/4] grid grid-cols-1 grid-rows-1 overflow-hidden" style={{ backgroundColor: c.party.color }}>
         <div
@@ -83,6 +93,11 @@ function CandidateCard({ candidate }: { candidate: Candidate }) {
           </div>
         </div>
       </div>
+      {cardLoading && (
+        <div className="absolute inset-0 z-30 flex items-center justify-center bg-black/30 rounded-xl">
+          <Spinner size={28} className="text-white" />
+        </div>
+      )}
       <div className="p-4 relative z-10 bg-white dark:bg-gray-950 rounded-b-xl">
         <div className="grid grid-cols-2 gap-2 text-xs text-gray-500 dark:text-gray-400">
           <div>
@@ -103,15 +118,18 @@ function CandidateCard({ candidate }: { candidate: Candidate }) {
           </div>
         </div>
         <div className="mt-4 flex justify-center gap-3">
-          <Link
-            href={`/comparar?ids=${c.id}`}
-            onClick={(e) => e.stopPropagation()}
-            className={`flex items-center justify-center w-12 h-12 rounded-full transition-all duration-300 hover:scale-110 bg-gray-200/70 dark:bg-gray-700/70 text-gray-500 dark:text-gray-400 hover:bg-gray-300 dark:hover:bg-gray-600`}
+          <button
+            onClick={(e) => onCompareClick(c.id, e)}
+            className={`flex items-center justify-center w-12 h-12 rounded-full transition-all duration-300 hover:scale-110 ${
+              isCompareSelected
+                ? 'bg-gray-800 dark:bg-white text-white dark:text-gray-900'
+                : 'bg-gray-200/70 dark:bg-gray-700/70 text-gray-500 dark:text-gray-400 hover:bg-gray-300 dark:hover:bg-gray-600'
+            }`}
             aria-label={`Comparar ${c.name}`}
             title="Comparar"
           >
-            <GitCompare size={20} strokeWidth={2} />
-          </Link>
+            {isCompareSelected ? <Check size={20} strokeWidth={2.5} /> : <GitCompare size={20} strokeWidth={2} />}
+          </button>
           <div
             className="flex items-center justify-center w-12 h-12 rounded-full text-white shadow-lg transition-all duration-300 group-hover:scale-110 hover:shadow-xl"
             style={{ backgroundColor: c.party.color }}
@@ -125,6 +143,27 @@ function CandidateCard({ candidate }: { candidate: Candidate }) {
 }
 
 export function VisaoGeral({ candidates }: VisaoGeralProps) {
+  const router = useRouter()
+  const [cardLoading, setCardLoading] = useState<string | null>(null)
+  const [compareSelection, setCompareSelection] = useState<string[]>([])
+
+  const handleCardClick = (id: string) => {
+    setCardLoading(id)
+    router.push(`/candidato/${id}`)
+  }
+
+  const handleCompareClick = (id: string, e: React.MouseEvent) => {
+    e.stopPropagation()
+    if (compareSelection.includes(id)) return
+    const next = [...compareSelection, id]
+    if (next.length === 2) {
+      setCompareSelection([])
+      router.push(`/comparar?ids=${next[0]},${next[1]}`)
+    } else {
+      setCompareSelection(next)
+    }
+  }
+
   if (candidates.length === 0) {
     return (
       <div className="glass p-10 text-center">
@@ -136,7 +175,14 @@ export function VisaoGeral({ candidates }: VisaoGeralProps) {
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
       {candidates.map((c) => (
-        <CandidateCard key={c.id} candidate={c} />
+        <CandidateCard
+          key={c.id}
+          candidate={c}
+          cardLoading={cardLoading === c.id}
+          isCompareSelected={compareSelection.includes(c.id)}
+          onCardClick={handleCardClick}
+          onCompareClick={handleCompareClick}
+        />
       ))}
     </div>
   )

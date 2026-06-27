@@ -3,6 +3,8 @@ import './globals.css'
 import { AppProvider } from '@/lib/providers'
 import { Header } from '@/components/Layout/Header'
 import { ErrorBoundary } from '@/components/ErrorBoundary'
+import { ToasterProvider } from '@/components/ToasterProvider'
+import { FooterActions } from '@/components/FooterActions'
 
 export const metadata: Metadata = {
   title: 'Presidenciáveis 2026 — Comparativo',
@@ -43,9 +45,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                     <p>Dados compilados de fontes públicas (TSE, Câmara, Senado, Folha, G1, O Globo, UOL, Metrópoles, Veja, Poder360).</p>
                     <p>Conteúdo comparativo para fins informativos. Direito de resposta garantido aos candidatos.</p>
                     <p>Última atualização: 26/06/2026.</p>
+                    <FooterActions />
                   </footer>
                 </main>
               </ErrorBoundary>
+              <ToasterProvider />
             </AppProvider>
           </div>
         </div>

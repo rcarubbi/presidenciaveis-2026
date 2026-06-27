@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
+import { toast } from 'sonner'
 import type { Candidate, CandidateSubTab } from '../../types'
 import { X, User, Briefcase, Shield, DollarSign, Grid3X3, Eye, FileText } from 'lucide-react'
 import { DadosPessoais } from './DadosPessoais'
@@ -29,13 +30,11 @@ export function Comparativo({ candidates, initialIds = ['lula', 'flavio', 'renan
   const router = useRouter()
   const [selectedIds, setSelectedIds] = useState<string[]>(initialIds)
   const [cmpTab, setCmpTab] = useState<CandidateSubTab>('dados')
-  const [minWarning, setMinWarning] = useState(false)
 
   const toggleCandidateSelection = (id: string) => {
     if (selectedIds.includes(id)) {
       if (selectedIds.length <= 2) {
-        setMinWarning(true)
-        setTimeout(() => setMinWarning(false), 2000)
+        toast.error('Mínimo de 2 candidatos para comparação')
         return
       }
       setSelectedIds(selectedIds.filter((x) => x !== id))
@@ -76,9 +75,6 @@ export function Comparativo({ candidates, initialIds = ['lula', 'flavio', 'renan
 
       <div className="glass p-4">
         <p className="text-sm font-medium text-gray-500 mb-3">Selecione candidatos para comparar (mín. 2):</p>
-        {minWarning && (
-          <p className="text-xs text-red-500 mb-2 animate-pulse" role="alert">Mínimo de 2 candidatos para comparação</p>
-        )}
         <div className="flex gap-3 flex-wrap">
           {candidates.map((c) => {
             const selected = selectedIds.includes(c.id)
