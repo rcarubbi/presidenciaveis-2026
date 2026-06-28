@@ -17,7 +17,7 @@ export function CookieConsent() {
     localStorage.setItem(STORAGE_KEY, 'accepted')
     const gaId = process.env.NEXT_PUBLIC_GA_ID
     if (gaId && typeof window !== 'undefined') {
-      ;(window as Record<string, unknown>)[`ga-disable-${gaId}`] = false
+      ;(window as unknown as Record<string, boolean>)[`ga-disable-${gaId}`] = false
     }
     setDismissed(true)
     setTimeout(() => setVisible(false), 300)
@@ -27,7 +27,7 @@ export function CookieConsent() {
     localStorage.setItem(STORAGE_KEY, 'refused')
     const gaId = process.env.NEXT_PUBLIC_GA_ID
     if (gaId && typeof window !== 'undefined') {
-      ;(window as Record<string, unknown>)[`ga-disable-${gaId}`] = true
+      ;(window as unknown as Record<string, boolean>)[`ga-disable-${gaId}`] = true
     }
     setDismissed(true)
     setTimeout(() => setVisible(false), 300)
