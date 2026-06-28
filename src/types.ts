@@ -113,4 +113,5 @@ export type CandidateSubTab =
 	| "escandalos"
 	| "financiamento"
 	| "posicionamento"
-	| "midia";
+	| "midia"
+	| "cobertura";
