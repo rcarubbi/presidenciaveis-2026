@@ -6,6 +6,7 @@ import { Header } from '@/components/Layout/Header'
 import { ErrorBoundary } from '@/components/ErrorBoundary'
 import { ToasterProvider } from '@/components/ToasterProvider'
 import { FooterActions } from '@/components/FooterActions'
+import { CookieConsent } from '@/components/CookieConsent'
 import { generateWebsiteJsonLd } from '@/lib/jsonLd'
 
 const BASE_URL =
@@ -34,6 +35,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: GA_ID
+              ? `(function(){try{if(localStorage.getItem('cookie-consent')==='refused'){window['ga-disable-${GA_ID}']=true}}catch(e){}})()`
+              : ''
+          }}
         />
         {GA_ID && (
           <Script
@@ -81,6 +89,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 </main>
               </ErrorBoundary>
               <ToasterProvider />
+              <CookieConsent />
             </AppProvider>
           </div>
         </div>
