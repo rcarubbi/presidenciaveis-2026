@@ -1,9 +1,10 @@
 import { NextResponse } from 'next/server'
-import { downloadCsvZip, getDataset } from '@/lib/tse/client'
+import { downloadCsvZip } from '@/lib/tse/client'
 import { parsePesquisas } from '@/lib/tse/parsers/pesquisas'
 import type { TseAggregate } from '@/lib/tse/parsers/pesquisas'
 
-const DATASET = 'pesquisas-eleitorais-2026'
+const CDN_URL =
+  'https://cdn.tse.jus.br/estatistica/sead/odsele/pesquisa_eleitoral/pesquisa_eleitoral_2026.zip'
 
 let cache: { data: TseAggregate; ts: number } | null = null
 const CACHE_TTL = 5 * 60 * 1000
@@ -14,20 +15,7 @@ export async function GET() {
       return NextResponse.json({ data: cache.data, cached: true })
     }
 
-    const dataset = await getDataset(DATASET)
-
-    const pesquisaResource = dataset.resources.find(
-      (r) => r.name === 'Pesquisas eleitorais' && r.format === 'CSV',
-    )
-
-    if (!pesquisaResource) {
-      return NextResponse.json(
-        { error: 'Pesquisas resource not found in dataset' },
-        { status: 404 },
-      )
-    }
-
-    const rows = await downloadCsvZip(pesquisaResource.url)
+    const rows = await downloadCsvZip(CDN_URL)
     const data = parsePesquisas(rows)
 
     cache = { data, ts: Date.now() }

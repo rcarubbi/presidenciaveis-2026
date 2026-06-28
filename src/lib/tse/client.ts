@@ -105,14 +105,19 @@ function parseCsvLine(line: string): string[] {
   return values
 }
 
-export function extractZip(zipPath: string, destDir: string): void {
+function unzip(zipPath: string, destDir: string): void {
   if (!existsSync(destDir)) mkdirSync(destDir, { recursive: true })
-  const absZip = join(process.cwd(), zipPath)
-  const absDest = join(process.cwd(), destDir)
-  execSync(
-    `powershell -Command "Expand-Archive -LiteralPath '${absZip}' -DestinationPath '${absDest}' -Force"`,
-    { stdio: 'pipe' },
-  )
+  if (process.platform === 'win32') {
+    execSync(
+      `powershell -Command "Expand-Archive -LiteralPath '${zipPath}' -DestinationPath '${destDir}' -Force"`,
+      { stdio: 'pipe' },
+    )
+  } else {
+    execSync(
+      `python3 -c "import zipfile,sys; zipfile.ZipFile(sys.argv[1]).extractall(sys.argv[2])" "${zipPath}" "${destDir}"`,
+      { stdio: 'pipe' },
+    )
+  }
 }
 
 export async function downloadCsvZip(
@@ -131,12 +136,8 @@ export async function downloadCsvZip(
 
   const extractDir = join(tmpDir, zipName.replace(/\.zip$/, ''))
   if (existsSync(extractDir)) rmSync(extractDir, { recursive: true })
-  mkdirSync(extractDir, { recursive: true })
 
-  execSync(
-    `powershell -Command "Expand-Archive -LiteralPath '${zipPath}' -DestinationPath '${extractDir}' -Force"`,
-    { stdio: 'pipe' },
-  )
+  unzip(zipPath, extractDir)
 
   const { readdirSync } = await import('fs')
   const files = readdirSync(extractDir)
