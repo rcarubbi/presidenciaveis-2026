@@ -8,13 +8,14 @@ import { useApp } from '@/lib/providers'
 const tabs = [
   { id: 'candidatos', label: 'Candidatos', href: '/', icon: Users },
   { id: 'pesquisas', label: 'Pesquisas', href: '/pesquisas', icon: BarChart3 },
+  { id: 'comparativo', label: 'Comparativo', href: '/comparar', icon: GitCompare },
 ]
 
 export function Header() {
   const pathname = usePathname()
   const { theme, toggleTheme, fontSize, toggleFontSize } = useApp()
 
-  const activeTab = pathname === '/pesquisas' ? 'pesquisas' : 'candidatos'
+  const activeTab = pathname === '/pesquisas' ? 'pesquisas' : pathname.startsWith('/comparar') ? 'comparativo' : 'candidatos'
   const fontSizeTitle = fontSize === 'normal' ? 'Aumentar fonte' : fontSize === 'large' ? 'Fonte grande' : 'Fonte extra grande'
 
   return (
@@ -47,7 +48,7 @@ export function Header() {
             </button>
           </div>
         </div>
-        <nav className="flex gap-1 pb-3" aria-label="Seções" role="tablist">
+        <nav className="flex gap-2 pb-3" aria-label="Seções" role="tablist">
           {tabs.map((tab) => {
             const Icon = tab.icon
             const isActive = activeTab === tab.id
@@ -59,14 +60,17 @@ export function Header() {
                 id={`tab-${tab.id}`}
                 aria-selected={isActive}
                 aria-controls={`tabpanel-${tab.id}`}
-                className={`flex items-center gap-1.5 px-3.5 py-2 text-xs font-medium rounded-lg transition-all duration-200 ${
+                className={`relative flex items-center gap-1.5 px-4 py-2 text-xs font-medium transition-all duration-200 ${
                   isActive
-                    ? 'bg-gray-800/10 dark:bg-white/15 text-gray-900 dark:text-gray-100 shadow-sm'
-                    : 'text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 hover:bg-gray-800/5 dark:hover:bg-white/10'
+                    ? 'text-gray-900 dark:text-gray-100'
+                    : 'text-gray-500 hover:text-gray-700 dark:hover:text-gray-300'
                 }`}
               >
                 <Icon size={14} />
                 {tab.label}
+                {isActive && (
+                  <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-10 h-0.5 bg-gray-900 dark:bg-gray-100 rounded-full" />
+                )}
               </Link>
             )
           })}

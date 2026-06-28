@@ -2,7 +2,6 @@
 
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
-import { Users } from 'lucide-react'
 import type { Candidate } from '../../types'
 import { CandidateCard } from '../CandidateCard'
 
@@ -42,16 +41,21 @@ export function Candidatos({ candidates }: CandidatosProps) {
 
   return (
     <>
-      <div className="glass rounded-xl p-6 mb-8 space-y-3 border-l-4 border-gray-300 dark:border-gray-600">
-        <h2 className="text-base font-semibold text-gray-800 dark:text-gray-100 flex items-center gap-2">
-          <Users size={18} className="text-gray-500" />
-          Eleições 2026
-        </h2>
-        <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
-          Acompanhe os presidenciáveis 2026. Navegue pelos perfis dos candidatos à Presidência da República — dados pessoais, carreira, planos de governo, escândalos, financiamento de campanha e posicionamento político. Compare candidatos lado a lado.
-        </p>
-      </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 animate-fade-in">
+      <section className="relative overflow-hidden rounded-2xl mb-10 glass p-8 md:p-10">
+        <div className="absolute inset-0 bg-gradient-to-br from-[#cc2222]/5 via-[#1a4fa0]/5 to-[#d97706]/5" />
+        <div className="relative z-10">
+          <div className="max-w-2xl">
+            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-100 tracking-tight">
+              Eleições 2026
+            </h1>
+            <p className="text-xs text-gray-500 dark:text-gray-400 mt-2 leading-relaxed max-w-lg">
+              Acompanhe os presidenciáveis 2026 — perfis completos com dados pessoais, carreira, planos de governo, escândalos, financiamento e posicionamento político de cada candidato à Presidência da República.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 animate-scale-in">
         {candidates.map((c) => (
           <CandidateCard
             key={c.id}

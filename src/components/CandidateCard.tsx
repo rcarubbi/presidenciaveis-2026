@@ -27,7 +27,7 @@ export function CandidateCard({
       onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); onCardClick(c.id) } }}
       role="button"
       tabIndex={0}
-      className={`w-full rounded-2xl overflow-hidden shadow-lg shadow-black/5 dark:shadow-black/20 border border-white/30 dark:border-gray-700/40 group cursor-pointer relative text-left focus-visible:ring-2 focus-visible:ring-gray-400 focus-visible:outline-none ${isCompareSelected ? 'ring-2 ring-gray-400 dark:ring-gray-500' : ''}`}
+      className={`w-full rounded-2xl overflow-hidden shadow-lg shadow-black/5 dark:shadow-black/20 border border-white/30 dark:border-gray-700/40 group cursor-pointer relative text-left focus-visible:ring-2 focus-visible:ring-gray-400 focus-visible:outline-none hover-lift ${isCompareSelected ? 'ring-2 ring-gray-400 dark:ring-gray-500' : ''}`}
     >
       <div className="aspect-[3/4] relative overflow-hidden" style={{ backgroundColor: c.party.color }}>
         <div

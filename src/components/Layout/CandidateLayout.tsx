@@ -4,7 +4,7 @@ import { useState } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import type { Candidate, CandidateSubTab } from '../../types'
-import { ArrowLeft, GitCompare } from 'lucide-react'
+import { ArrowLeft } from 'lucide-react'
 import { DadosPessoais } from '../sections/DadosPessoais'
 import { Carreira } from '../sections/Carreira'
 import { PlanoGoverno } from '../sections/PlanoGoverno'
@@ -47,23 +47,14 @@ export function CandidateLayout({ candidate, initialTab }: CandidateLayoutProps)
   }
 
   return (
-    <div className="space-y-6 animate-fade-in">
-      <div className="flex items-center justify-between">
-        <Link
-          href="/"
-          className="flex items-center gap-2 text-sm font-medium text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 transition-colors"
-        >
-          <ArrowLeft size={16} />
-          Voltar
-        </Link>
-        <Link
-          href="/comparar"
-          className="flex items-center gap-2 text-sm font-medium px-4 py-2 rounded-xl glass hover:bg-white/50 dark:hover:bg-gray-800/50 transition-all duration-200"
-        >
-          <GitCompare size={16} />
-          Comparativo
-        </Link>
-      </div>
+    <div className="space-y-8 animate-fade-in">
+      <Link
+        href="/"
+        className="flex items-center gap-2 text-sm font-medium text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 transition-colors"
+      >
+        <ArrowLeft size={16} />
+        Voltar
+      </Link>
 
       <HeroBanner candidate={c} />
 

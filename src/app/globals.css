@@ -9,14 +9,20 @@
   --color-flavio-light: #3b7dd8;
   --color-renan: #d97706;
   --color-renan-light: #f59e0b;
-  --animate-fade-in: fade-in 0.4s ease-out;
+  --animate-fade-in: fade-in 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  --animate-scale-in: scale-in 0.35s cubic-bezier(0.16, 1, 0.3, 1);
   --animate-float: float 6s ease-in-out infinite;
   --animate-blob: blob 8s ease-in-out infinite;
 }
 
 @keyframes fade-in {
-  from { opacity: 0; transform: translateY(12px); }
+  from { opacity: 0; transform: translateY(16px); }
   to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes scale-in {
+  from { opacity: 0; transform: scale(0.95) translateY(8px); }
+  to { opacity: 1; transform: scale(1) translateY(0); }
 }
 
 @keyframes float {
@@ -97,7 +103,16 @@ body {
 }
 
 .tab-enter {
-  animation: fade-in 0.35s ease-out;
+  animation: fade-in 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.hover-lift {
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.hover-lift:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px -8px rgba(0, 0, 0, 0.08);
 }
 
 .blob-bg {
@@ -111,39 +126,43 @@ body {
 .blob {
   position: absolute;
   border-radius: 50%;
-  filter: blur(80px);
-  opacity: 0.08;
-  animation: blob 8s ease-in-out infinite;
+  filter: blur(100px);
+  opacity: 0.06;
+  animation: blob 12s ease-in-out infinite;
 }
 
 .blob:nth-child(1) {
-  width: 500px; height: 500px;
+  width: 600px; height: 600px;
   background: #cc2222;
-  top: -100px; left: -100px;
+  top: -150px; left: -150px;
   animation-delay: 0s;
 }
 
 .blob:nth-child(2) {
-  width: 400px; height: 400px;
+  width: 500px; height: 500px;
   background: #1a4fa0;
-  top: 40%; right: -80px;
-  animation-delay: -3s;
+  top: 45%; right: -120px;
+  animation-delay: -4s;
 }
 
 .blob:nth-child(3) {
-  width: 350px; height: 350px;
+  width: 450px; height: 450px;
   background: #d97706;
-  bottom: -80px; left: 30%;
-  animation-delay: -6s;
+  bottom: -120px; left: 30%;
+  animation-delay: -8s;
 }
 
 .dark .blob {
-  opacity: 0.12;
+  opacity: 0.1;
 }
 
 .dark .blob:nth-child(1) { background: #ef4444; }
 .dark .blob:nth-child(2) { background: #3b82f6; }
 .dark .blob:nth-child(3) { background: #f59e0b; }
+
+.page-enter {
+  animation: fade-in 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
 
 .photo-ring-lula { box-shadow: 0 0 0 3px rgba(204, 34, 34, 0.3), 0 0 20px -4px rgba(204, 34, 34, 0.2); }
 .photo-ring-flavio { box-shadow: 0 0 0 3px rgba(26, 79, 160, 0.3), 0 0 20px -4px rgba(26, 79, 160, 0.2); }

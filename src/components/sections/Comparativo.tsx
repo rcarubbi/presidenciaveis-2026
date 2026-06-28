@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { useRouter, usePathname } from 'next/navigation'
 import { toast } from 'sonner'
 import type { Candidate, CandidateSubTab } from '../../types'
-import { ArrowLeft, GitCompare } from 'lucide-react'
+import { ArrowLeft } from 'lucide-react'
 import { DadosPessoais } from './DadosPessoais'
 import { Carreira } from './Carreira'
 import { Escandalos } from './Escandalos'
@@ -14,7 +14,6 @@ import { Posicionamento } from './Posicionamento'
 import { PlanoGoverno } from './PlanoGoverno'
 import { ComparisonSelector } from './ComparisonSelector'
 import { ComparisonTabs } from './ComparisonTabs'
-import { ComparisonLegend } from './ComparisonLegend'
 
 interface ComparativoProps {
   candidates: Candidate[]
@@ -82,24 +81,22 @@ export function Comparativo({ candidates, initialIds = ['lula', 'flavio', 'renan
         <ArrowLeft size={16} />
         Voltar
       </Link>
-      <div className="glass rounded-xl p-6 space-y-3 border-l-4 border-gray-300 dark:border-gray-600">
-        <h2 className="text-base font-semibold text-gray-800 dark:text-gray-100 flex items-center gap-2">
-          <GitCompare size={18} className="text-gray-500" />
-          Compare os Presidenciáveis 2026
-        </h2>
-        <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
-          Selecione dois ou mais candidatos e veja lado a lado dados pessoais, carreira, planos de governo, escândalos, financiamento e posicionamento político. Escolha os candidatos e as categorias abaixo para iniciar a comparação.
-        </p>
-        <p className="text-xs text-gray-400 dark:text-gray-500 italic">
-          Site informativo sem fins eleitorais. Art. 57-B Lei 9.504/97.
-        </p>
-      </div>
+      <section className="relative overflow-hidden rounded-2xl glass p-8 md:p-10">
+        <div className="absolute inset-0 bg-gradient-to-br from-[#cc2222]/5 via-[#1a4fa0]/5 to-[#d97706]/5" />
+        <div className="relative z-10 max-w-2xl">
+          <h1 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-100 tracking-tight">
+            Compare os Presidenciáveis 2026
+          </h1>
+          <p className="text-xs text-gray-500 dark:text-gray-400 mt-2 leading-relaxed">
+            Selecione dois ou mais candidatos e veja lado a lado dados pessoais, carreira, planos de governo, escândalos, financiamento e posicionamento político. Escolha os candidatos e as categorias abaixo para iniciar a comparação.
+          </p>
+        </div>
+      </section>
 
       <ComparisonSelector candidates={candidates} selectedIds={selectedIds} onToggle={toggleCandidateSelection} />
 
       <ComparisonTabs activeTab={cmpTab} onTabChange={handleTabChange} />
 
-      <ComparisonLegend candidates={filtered} />
 
       <div className="tab-enter" key={cmpTab} role="tabpanel" id={`cmp-panel-${cmpTab}`} aria-labelledby={`cmp-tab-${cmpTab}`}>
         {renderCmpContent()}
