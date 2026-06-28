@@ -54,7 +54,7 @@ export function HeroBanner({ candidate: c }: HeroBannerProps) {
               ref={logoRef}
               src={c.party.logo}
               alt={c.party.name.value}
-              className="h-10 md:h-14 object-contain"
+              className="h-10 md:h-14 max-w-24 object-contain"
               onLoad={() => setLogoLoaded(true)}
 onError={(e) => { setLogoLoaded(true); (e.target as HTMLImageElement).style.display = 'none' }}
             />
