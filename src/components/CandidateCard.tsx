@@ -1,11 +1,13 @@
 'use client'
 
 import { createContext, useContext } from 'react'
+import { useRouter } from 'next/navigation'
+import { navWithTransition } from '@/lib/viewTransition'
 import type { Candidate } from '../types'
 import { Spinner } from './ui/Spinner'
 import { DataLink } from './DataLink'
 import { CandidateLabels } from './CandidateLabels'
-import { ArrowUpRight, GitCompare, Check } from 'lucide-react'
+import { ArrowUpRight, GitCompare, Check, Video } from 'lucide-react'
 
 interface CandidateCardContext {
   candidate: Candidate
@@ -105,6 +107,7 @@ function Info() {
       </div>
       <div className="mt-3 flex justify-center gap-3">
         <CompareButton />
+        <MediaButton />
         <ArrowButton />
       </div>
     </div>
@@ -140,6 +143,24 @@ function ArrowButton() {
   )
 }
 
+function MediaButton() {
+  const { candidate: c } = useCardCtx()
+  const router = useRouter()
+  return (
+    <button
+      onClick={(e) => {
+        e.stopPropagation()
+        navWithTransition(() => router.push(`/candidato/${c.id}?tab=midia`), 'nav-forward')
+      }}
+      className="flex items-center justify-center w-10 h-10 rounded-full bg-white/20 text-white backdrop-blur-sm transition-all duration-300 hover:scale-110 hover:bg-white/30"
+      aria-label={`Mídia de ${c.name.value}`}
+      title="Mídia"
+    >
+      <Video size={18} strokeWidth={2} />
+    </button>
+  )
+}
+
 function LoadingOverlay() {
   return (
     <div className="absolute inset-0 z-30 flex items-center justify-center bg-black/30">
@@ -153,4 +174,5 @@ CandidateCard.PartyBadge = PartyBadge as React.FC
 CandidateCard.Info = Info as React.FC
 CandidateCard.CompareButton = CompareButton as React.FC
 CandidateCard.ArrowButton = ArrowButton as React.FC
+CandidateCard.MediaButton = MediaButton as React.FC
 CandidateCard.LoadingOverlay = LoadingOverlay as React.FC

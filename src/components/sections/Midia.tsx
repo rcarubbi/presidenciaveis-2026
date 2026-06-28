@@ -1,9 +1,9 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import type { Candidate, MediaItem } from '../../types'
 import { mediaData } from '../../data/media'
-import { Play, ChevronDown, ChevronRight } from 'lucide-react'
+import { Play, ChevronDown, ChevronRight, Maximize2, Minimize } from 'lucide-react'
 
 interface MidiaProps {
   candidates: Candidate[]
@@ -54,16 +54,39 @@ export function Midia({ candidates }: MidiaProps) {
 
 function MediaCard({ item }: { item: MediaItem }) {
   const [playing, setPlaying] = useState(false)
+  const [isFullscreen, setIsFullscreen] = useState(false)
+  const videoRef = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    const handleFsChange = () => setIsFullscreen(!!document.fullscreenElement)
+    document.addEventListener('fullscreenchange', handleFsChange)
+    return () => document.removeEventListener('fullscreenchange', handleFsChange)
+  }, [])
+
+  const toggleFullscreen = () => {
+    if (!document.fullscreenElement) {
+      videoRef.current?.requestFullscreen()
+    } else {
+      document.exitFullscreen()
+    }
+  }
 
   if (playing) {
     return (
-      <div className="aspect-video rounded-xl overflow-hidden">
+      <div className="aspect-video rounded-xl overflow-hidden relative group" ref={videoRef}>
         <iframe
           src={`https://www.youtube-nocookie.com/embed/${item.youtubeId}?autoplay=1`}
           allow="autoplay; encrypted-media; picture-in-picture"
           allowFullScreen
           className="w-full h-full"
         />
+        <button
+          onClick={toggleFullscreen}
+          className="absolute top-2 right-2 p-2 rounded-lg bg-black/50 text-white opacity-0 group-hover:opacity-100 transition-opacity z-10"
+          aria-label={isFullscreen ? 'Sair da tela cheia' : 'Tela cheia'}
+        >
+          {isFullscreen ? <Minimize size={16} /> : <Maximize2 size={16} />}
+        </button>
       </div>
     )
   }
