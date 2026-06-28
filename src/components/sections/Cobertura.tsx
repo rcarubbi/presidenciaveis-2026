@@ -215,55 +215,62 @@ export function Cobertura({ candidates }: CoberturaProps) {
         </div>
       )}
 
-      {detail.top_sources && detail.top_sources.length > 0 && (
-        <div className="glass p-5 rounded-xl">
-          <h3 className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-4">
-            Principais Fontes
-          </h3>
-          <div className="h-48">
-            <ResponsiveContainer width="100%" height="100%">
-              <BarChart
-                data={detail.top_sources.toReversed()}
-                layout="vertical"
-                margin={{ left: 80, right: 20 }}
-              >
-                <XAxis type="number" tick={{ fontSize: 10, fill: '#9CA3AF' }} axisLine={false} tickLine={false} />
-                <YAxis
-                  type="category"
-                  dataKey="source"
-                  tick={{ fontSize: 11, fill: '#6B7280' }}
-                  axisLine={false}
-                  tickLine={false}
-                />
-                <Tooltip
-                  contentStyle={{
-                    background: 'rgba(255,255,255,0.95)',
-                    border: '1px solid #e5e7eb',
-                    borderRadius: '8px',
-                    fontSize: '12px',
-                  }}
-                  formatter={(value) => {
-                    const v = Number(value)
-                    return [v.toLocaleString('pt-BR'), 'Artigos']
-                  }}
-                />
-                <Bar dataKey="count" radius={[0, 4, 4, 0]}>
-                  {(detail.top_sources ?? []).toReversed().map((_, i) => {
-                    const len = detail.top_sources?.length ?? 1
-                    return (
-                      <Cell
-                        key={i}
-                        fill={i === len - 1 ? '#3b82f6' : '#93c5fd'}
-                        fillOpacity={0.7 + (i / len) * 0.3}
-                      />
-                    )
-                  })}
-                </Bar>
-              </BarChart>
-            </ResponsiveContainer>
+      {(() => {
+        const topSources = (detail.top_sources ?? [])
+          .map(s => ({ source: s.source, count: Number((s as Record<string, unknown>).count ?? (s as Record<string, unknown>).articles ?? (s as Record<string, unknown>).total ?? 0) }))
+          .filter(s => s.count > 0)
+          .toReversed()
+        if (topSources.length === 0) return null
+        return (
+          <div className="glass p-5 rounded-xl">
+            <h3 className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-4">
+              Principais Fontes
+            </h3>
+            <div className="h-64">
+              <ResponsiveContainer width="100%" height="100%">
+                <BarChart
+                  data={topSources}
+                  layout="vertical"
+                  margin={{ left: 100, right: 20 }}
+                >
+                  <XAxis type="number" tick={{ fontSize: 10, fill: '#9CA3AF' }} axisLine={false} tickLine={false} />
+                  <YAxis
+                    type="category"
+                    dataKey="source"
+                    tick={{ fontSize: 11, fill: '#6B7280' }}
+                    axisLine={false}
+                    tickLine={false}
+                  />
+                  <Tooltip
+                    contentStyle={{
+                      background: 'rgba(255,255,255,0.95)',
+                      border: '1px solid #e5e7eb',
+                      borderRadius: '8px',
+                      fontSize: '12px',
+                    }}
+                    formatter={(value) => {
+                      const v = Number(value)
+                      return [v.toLocaleString('pt-BR'), 'Artigos']
+                    }}
+                  />
+                  <Bar dataKey="count" radius={[0, 4, 4, 0]}>
+                    {topSources.map((_, i) => {
+                      const isLast = i === topSources.length - 1
+                      return (
+                        <Cell
+                          key={i}
+                          fill={isLast ? '#2563eb' : '#3b82f6'}
+                          fillOpacity={isLast ? 0.95 : 0.65}
+                        />
+                      )
+                    })}
+                  </Bar>
+                </BarChart>
+              </ResponsiveContainer>
+            </div>
           </div>
-        </div>
-      )}
+        )
+      })()}
 
       {detail.top_topics && detail.top_topics.length > 0 && (
         <div className="glass p-5 rounded-xl">

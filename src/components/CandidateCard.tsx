@@ -2,10 +2,9 @@
 
 import { createContext, useContext } from 'react'
 import { useRouter } from 'next/navigation'
-import { navWithTransition } from '@/lib/viewTransition'
+import Link from 'next/link'
 import type { Candidate } from '../types'
 import { Spinner } from './ui/Spinner'
-import { DataLink } from './DataLink'
 import { CandidateLabels } from './CandidateLabels'
 import { ArrowUpRight, GitCompare, Check, Video } from 'lucide-react'
 
@@ -43,16 +42,16 @@ export function CandidateCard({
 }: CandidateCardRootProps) {
   return (
     <CardCtx.Provider value={{ candidate: c, isCompareSelected, onCardClick, onCompareClick }}>
-      <div
+      <Link
+        href={`/candidato/${c.id}`}
+        prefetch
+        transitionTypes={['nav-forward']}
         onClick={() => onCardClick(c.id)}
-        onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); onCardClick(c.id) } }}
-        role="button"
-        tabIndex={0}
-        className={`w-full rounded-2xl overflow-hidden shadow-lg shadow-black/5 dark:shadow-black/20 border border-white/30 dark:border-gray-700/40 group cursor-pointer relative text-left focus-visible:ring-2 focus-visible:ring-gray-400 focus-visible:outline-none hover-lift ${isCompareSelected ? 'ring-2 ring-gray-400 dark:ring-gray-500' : ''}`}
+        className={`block w-full rounded-2xl overflow-hidden shadow-lg shadow-black/5 dark:shadow-black/20 border border-white/30 dark:border-gray-700/40 group cursor-pointer relative text-left focus-visible:ring-2 focus-visible:ring-gray-400 hover-lift ${isCompareSelected ? 'ring-2 ring-gray-400 dark:ring-gray-500' : ''}`}
       >
         {children}
         {cardLoading && <CandidateCard.LoadingOverlay />}
-      </div>
+      </Link>
     </CardCtx.Provider>
   )
 }
@@ -98,12 +97,12 @@ function Info() {
   const { candidate: c } = useCardCtx()
   return (
     <div className="absolute inset-0 flex flex-col justify-end p-5">
-      <h2 className="text-2xl font-bold text-white drop-shadow-lg"><DataLink data={c.name} /></h2>
-      <p className="text-sm text-white/80 mt-1 drop-shadow"><DataLink data={c.currentPosition} /></p>
+      <h2 className="text-2xl font-bold text-white drop-shadow-lg">{c.name.value}</h2>
+      <p className="text-sm text-white/80 mt-1 drop-shadow">{c.currentPosition.value}</p>
       <CandidateLabels age={c.age} careerYears={c.careerYears} />
       <div className="mt-3 flex flex-col gap-1 text-xs text-white/70">
-        <span>Ideologia: <DataLink data={c.ideologicalPosition} /></span>
-        <span>Natural: <DataLink data={c.naturalidade} /></span>
+        <span>Ideologia: {c.ideologicalPosition.value}</span>
+        <span>Natural: {c.naturalidade.value}</span>
       </div>
       <div className="mt-3 flex justify-center gap-3">
         <CompareButton />
@@ -118,7 +117,7 @@ function CompareButton() {
   const { candidate: c, isCompareSelected, onCompareClick } = useCardCtx()
   return (
     <button
-      onClick={(e) => onCompareClick(c.id, e)}
+      onClick={(e) => { e.preventDefault(); onCompareClick(c.id, e) }}
       className={`flex items-center justify-center w-10 h-10 rounded-full backdrop-blur-sm transition-all duration-300 hover:scale-110 ${isCompareSelected
         ? 'bg-white/80 text-gray-900'
         : 'bg-white/20 text-white hover:bg-white/30'
@@ -149,8 +148,9 @@ function MediaButton() {
   return (
     <button
       onClick={(e) => {
+        e.preventDefault()
         e.stopPropagation()
-        navWithTransition(() => router.push(`/candidato/${c.id}?tab=midia`), 'nav-forward')
+        router.push(`/candidato/${c.id}?tab=midia`)
       }}
       className="flex items-center justify-center w-10 h-10 rounded-full bg-white/20 text-white backdrop-blur-sm transition-all duration-300 hover:scale-110 hover:bg-white/30"
       aria-label={`Mídia de ${c.name.value}`}

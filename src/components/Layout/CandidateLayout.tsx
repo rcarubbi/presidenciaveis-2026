@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
-import { navWithTransition } from '@/lib/viewTransition'
+import Link from 'next/link'
 import type { Candidate, CandidateSubTab } from '../../types'
 import { ArrowLeft } from 'lucide-react'
 import { DadosPessoais } from '../sections/DadosPessoais'
@@ -52,13 +52,14 @@ export function CandidateLayout({ candidate, initialTab }: CandidateLayoutProps)
 
   return (
     <div className="space-y-8 animate-fade-in">
-      <button
-        onClick={() => navWithTransition(() => router.push('/'), 'nav-back')}
-        className="flex items-center gap-2 text-sm font-medium text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 transition-colors cursor-pointer"
+      <Link
+        href="/"
+        transitionTypes={['nav-back']}
+        className="flex items-center gap-2 text-sm font-medium text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 transition-colors"
       >
         <ArrowLeft size={16} />
         Voltar
-      </button>
+      </Link>
 
       <HeroBanner candidate={c} />
 
@@ -68,13 +69,14 @@ export function CandidateLayout({ candidate, initialTab }: CandidateLayoutProps)
         {renderSubContent()}
       </div>
 
-      <button
-        onClick={() => navWithTransition(() => router.push('/'), 'nav-back')}
-        className="flex items-center gap-2 text-sm font-medium text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 transition-colors cursor-pointer"
+      <Link
+        href="/"
+        transitionTypes={['nav-back']}
+        className="flex items-center gap-2 text-sm font-medium text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 transition-colors"
       >
         <ArrowLeft size={16} />
         Voltar
-      </button>
+      </Link>
     </div>
   )
 }
