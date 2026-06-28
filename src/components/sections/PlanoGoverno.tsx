@@ -2,7 +2,6 @@
 
 import type { Candidate, ProposalItem } from '../../types'
 import { DataLink } from '../DataLink'
-import { ProgressBar } from '../charts/ProgressBar'
 import { proposalSections } from '../../data/proposals'
 import { useState } from 'react'
 import { ChevronDown, ChevronRight } from 'lucide-react'
@@ -16,19 +15,6 @@ export function PlanoGoverno({ candidates }: PlanoGovernoProps) {
 
   return (
     <div className="space-y-6">
-      <div className="grid grid-cols-1 md:grid-cols-[repeat(auto-fit,minmax(280px,1fr))] gap-4">
-        {candidates.map((c) => (
-          <div key={c.id} className="glass p-5">
-            <p className="text-sm font-medium text-gray-500 mb-3">Cobertura do Plano</p>
-            <ProgressBar
-              value={c.proposalsCoverage.value}
-              max={12}
-              label="Seções com propostas"
-              color={c.party.color}
-            />
-          </div>
-        ))}
-      </div>
 
       <div className="space-y-2">
         {proposalSections.map((sec) => {

@@ -6,17 +6,9 @@ import type { Candidate } from '../../types'
 import { ArrowUpRight, GitCompare, Check } from 'lucide-react'
 import { Spinner } from '../ui/Spinner'
 import { DataLink } from '../DataLink'
-import type { DataValue } from '../../types'
 
 interface VisaoGeralProps {
   candidates: Candidate[]
-}
-
-function fmtPat(v: DataValue<number> | null): string {
-  if (v === null) return 'N/D'
-  const val = v.value
-  if (val >= 1_000_000) return `R$ ${(val / 1_000_000).toFixed(1)} mi`
-  return `R$ ${(val / 1000).toFixed(0)} mil`
 }
 
 function photoPos(c: Candidate): string {
@@ -69,19 +61,19 @@ function CandidateCard({
           }}
         />
         <div className="col-span-full row-span-full relative z-10 flex flex-col justify-end p-5">
-            <div className="flex items-center gap-3 mb-3">
-              <div className="relative h-10 w-auto min-w-[40px] flex items-center justify-center">
-                {!logoLoaded && <Spinner size={18} className="text-white/60 absolute" />}
-                <img ref={logoRef} src={c.party.logo} alt={c.party.name.value}
-                  className="h-10 object-contain"
-                  onLoad={() => setLogoLoaded(true)}
-                  onError={(e) => { setLogoLoaded(true); (e.target as HTMLImageElement).style.display = 'none' }} />
-              </div>
+          <div className="flex items-center gap-3 mb-3">
+            <div className="relative h-10 w-auto min-w-[40px] flex items-center justify-center">
+              {!logoLoaded && <Spinner size={18} className="text-white/60 absolute" />}
+              <img ref={logoRef} src={c.party.logo} alt={c.party.name.value}
+                className="h-10 object-contain"
+                onLoad={() => setLogoLoaded(true)}
+                onError={(e) => { setLogoLoaded(true); (e.target as HTMLImageElement).style.display = 'none' }} />
+            </div>
             <span className="px-2.5 py-0.5 rounded-full text-xs font-bold text-white bg-black/40 backdrop-blur-sm">
               {c.party.name.value} — {c.party.number}
             </span>
           </div>
-          <h2 className="text-2xl font-bold text-white drop-shadow-lg"><DataLink data={c.fullName} /></h2>
+          <h2 className="text-2xl font-bold text-white drop-shadow-lg"><DataLink data={c.name} /></h2>
           <p className="text-sm text-white/80 mt-1 drop-shadow"><DataLink data={c.currentPosition} /></p>
           <div className="flex gap-2 mt-3">
             <span className="px-2 py-0.5 rounded text-[10px] font-medium bg-white/20 text-white backdrop-blur-sm">
@@ -91,7 +83,7 @@ function CandidateCard({
               {c.careerYears.value} anos pol.
             </span>
             <span className="px-2 py-0.5 rounded text-[10px] font-medium bg-white/20 text-white backdrop-blur-sm">
-              {fmtPat(c.patrimonio)}
+              <DataLink data={c.patrimonio} format={(v) => (v as number) >= 1_000_000 ? `R$ ${((v as number) / 1_000_000).toFixed(1)} mi` : `R$ ${((v as number) / 1000).toFixed(0)} mil`} />
             </span>
           </div>
         </div>
@@ -108,10 +100,6 @@ function CandidateCard({
             <DataLink data={c.ideologicalPosition} />
           </div>
           <div>
-            <span className="font-semibold text-gray-700 dark:text-gray-300">Propostas:</span>{' '}
-            {c.proposalsCoverage.value}/12
-          </div>
-          <div>
             <span className="font-semibold text-gray-700 dark:text-gray-300">Religião:</span>{' '}
             <DataLink data={c.religiao} />
           </div>
@@ -123,11 +111,10 @@ function CandidateCard({
         <div className="mt-4 flex justify-center gap-3">
           <button
             onClick={(e) => onCompareClick(c.id, e)}
-            className={`flex items-center justify-center w-12 h-12 rounded-full transition-all duration-300 hover:scale-110 ${
-              isCompareSelected
+            className={`flex items-center justify-center w-12 h-12 rounded-full transition-all duration-300 hover:scale-110 ${isCompareSelected
                 ? 'bg-gray-800 dark:bg-white text-white dark:text-gray-900'
                 : 'bg-gray-200/70 dark:bg-gray-700/70 text-gray-500 dark:text-gray-400 hover:bg-gray-300 dark:hover:bg-gray-600'
-            }`}
+              }`}
             aria-label={`Comparar ${c.name.value}`}
             title="Comparar"
           >

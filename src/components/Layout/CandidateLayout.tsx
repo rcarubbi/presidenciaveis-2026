@@ -2,7 +2,7 @@
 
 import { useState, useRef, useEffect } from 'react'
 import Link from 'next/link'
-import type { Candidate, CandidateSubTab, DataValue } from '../../types'
+import type { Candidate, CandidateSubTab } from '../../types'
 import { DataLink } from '../DataLink'
 import { ArrowLeft, GitCompare, Eye, User, Briefcase, FileText, Shield, DollarSign, Grid3X3 } from 'lucide-react'
 import { DadosPessoais } from '../sections/DadosPessoais'
@@ -118,7 +118,7 @@ export function CandidateLayout({ candidate }: CandidateLayoutProps) {
           </div>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 p-6">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 p-6">
           <div className="text-center">
             <p className="text-2xl font-bold" style={{ color }}><DataLink data={c.age} /></p>
             <p className="text-xs text-gray-500">anos</p>
@@ -128,12 +128,8 @@ export function CandidateLayout({ candidate }: CandidateLayoutProps) {
             <p className="text-xs text-gray-500">anos na política</p>
           </div>
           <div className="text-center">
-            <p className="text-2xl font-bold" style={{ color }}>{fmtPatSimple(c.patrimonio)}</p>
+            <p className="text-2xl font-bold" style={{ color }}><DataLink data={c.patrimonio} format={(v) => (v as number) >= 1_000_000 ? `R$ ${((v as number) / 1_000_000).toFixed(1)} mi` : `R$ ${((v as number) / 1000).toFixed(0)} mil`} /></p>
             <p className="text-xs text-gray-500">patrimônio</p>
-          </div>
-          <div className="text-center">
-            <p className="text-2xl font-bold" style={{ color }}>{c.proposalsCoverage.value}/12</p>
-            <p className="text-xs text-gray-500">propostas</p>
           </div>
         </div>
       </div>
@@ -209,8 +205,4 @@ function CandidateHeroFull({ candidate: c }: { candidate: Candidate }) {
   )
 }
 
-function fmtPatSimple(v: DataValue<number> | null): string {
-  if (v === null) return 'N/D'
-  if (v.value >= 1_000_000) return `R$ ${(v.value / 1_000_000).toFixed(1)} mi`
-  return `R$ ${(v.value / 1000).toFixed(0)} mil`
-}
+

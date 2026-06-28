@@ -38,7 +38,6 @@ export interface Candidate {
   scandals: Scandal[]
   campaignFinance: CampaignFinance
   positions: { issue: DataValue; position: DataValue }[]
-  proposalsCoverage: DataValue<number>
 }
 
 export interface TimelineEvent {
