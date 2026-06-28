@@ -1,7 +1,6 @@
 import type { Candidate } from '../../types'
 import { DataLink } from '../DataLink'
-import { PieChartCard } from '../charts/PieChartCard'
-import { GroupedBarChartCard } from '../charts/GroupedBarChart'
+import { PieChartCard, GroupedBarChartCard } from '../charts'
 
 interface FinanciamentoProps {
   candidates: Candidate[]

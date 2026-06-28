@@ -44,3 +44,5 @@ export function HorizontalBarChartCard({ data, title, color,   unit = '%',
     </div>
   )
 }
+
+export default HorizontalBarChartCard

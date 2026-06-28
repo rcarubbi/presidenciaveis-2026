@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useMemo } from 'react'
 import { polls } from '../data/polls'
 
 export interface TseResponse {
@@ -40,17 +40,17 @@ export function usePollsData() {
       .finally(() => setTseLoading(false))
   }, [source])
 
-  const filtered = polls.filter((p) => p.institute === selected)
+  const filtered = useMemo(() => polls.filter((p) => p.institute === selected), [selected])
 
-  const firstRoundData = filtered
+  const firstRoundData = useMemo(() => filtered
     .filter((p) => p.firstRound.length > 0)
     .map((p) => {
       const row: { name: string; [key: string]: string | number } = { name: filtered.length > 1 ? p.date : p.institute }
       p.firstRound.forEach((c) => { row[c.name] = c.value })
       return row
-    })
+    }), [filtered])
 
-  const secondRoundData = source === 'institutes'
+  const secondRoundData = useMemo(() => source === 'institutes'
     ? filtered
         .filter((p) => p.secondRound)
         .flatMap((p) =>
@@ -61,25 +61,25 @@ export function usePollsData() {
             Lula: s.lula,
           }))
         )
-    : []
+    : [], [source, filtered])
 
-  const rejectionData = source === 'institutes'
+  const rejectionData = useMemo(() => source === 'institutes'
     ? filtered
         .filter((p) => p.rejection)
         .toSorted((a, b) => sortDate(a.date, b.date))
         .at(0)?.rejection
         ?.toSorted((a, b) => b.value - a.value) ?? []
-    : []
+    : [], [source, filtered])
 
-  const spontaneousData = source === 'institutes'
+  const spontaneousData = useMemo(() => source === 'institutes'
     ? filtered
         .filter((p) => p.spontaneous)
         .toSorted((a, b) => sortDate(a.date, b.date))
         .at(0)?.spontaneous
         ?.toSorted((a, b) => b.value - a.value) ?? []
-    : []
+    : [], [source, filtered])
 
-  const regionalData = source === 'institutes'
+  const regionalData = useMemo(() => source === 'institutes'
     ? filtered
         .filter((p) => p.regional)
         .toSorted((a, b) => sortDate(a.date, b.date))
@@ -90,7 +90,7 @@ export function usePollsData() {
           Flávio: r.flavio,
           Renan: r.renan ?? 0,
         })) ?? []
-    : []
+    : [], [source, filtered])
 
   return {
     source,

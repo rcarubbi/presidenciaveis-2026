@@ -1,6 +1,6 @@
 'use client'
 
-import { HorizontalBarChartCard } from '../charts/HorizontalBarChart'
+import { HorizontalBarChartCard } from '../charts'
 
 interface TseDataSectionProps {
   pollsByInstitute: { name: string; value: number }[]

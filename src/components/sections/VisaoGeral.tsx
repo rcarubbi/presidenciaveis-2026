@@ -40,7 +40,7 @@ export function VisaoGeral({ candidates }: VisaoGeralProps) {
   }
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 animate-fade-in">
       {candidates.map((c) => (
         <CandidateCard
           key={c.id}

@@ -1,7 +1,6 @@
 'use client'
 
-import { GroupedBarChartCard } from '../charts/GroupedBarChart'
-import { HorizontalBarChartCard } from '../charts/HorizontalBarChart'
+import { GroupedBarChartCard, HorizontalBarChartCard } from '../charts'
 
 interface InstituteChartsProps {
   firstRoundData: { name: string; [key: string]: string | number }[]

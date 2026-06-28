@@ -1,6 +1,6 @@
 'use client'
 
-import { createContext, useContext, useEffect, useState, useCallback, useMemo } from 'react'
+import { createContext, use, useEffect, useState, useCallback, useMemo } from 'react'
 
 type Theme = 'light' | 'dark'
 type FontSize = 'normal' | 'large' | 'xlarge'
@@ -62,5 +62,5 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
 }
 
 export function useApp() {
-  return useContext(AppContext)
+  return use(AppContext)
 }

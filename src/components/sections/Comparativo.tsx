@@ -52,7 +52,7 @@ export function Comparativo({ candidates, initialIds = ['lula', 'flavio', 'renan
   }
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-6 animate-fade-in">
       <div className="flex items-center justify-between">
         <h2 className="text-lg font-bold text-gray-700 dark:text-gray-300 flex items-center gap-2">
           <Eye size={20} />
