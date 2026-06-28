@@ -823,6 +823,18 @@ export const candidates: Candidate[] = [
 					"2026-05-12",
 				),
 			},
+			{
+				issue: dv(
+					"Fundo Eleitoral",
+					"https://www1.folha.uol.com.br/poder/2024/02/lula-critica-pt-e-diz-que-fundo-eleitoral-e-cooptado-por-deputados-com-mandato.shtml",
+					"2024-02-02",
+				),
+				position: dv(
+					"Crítico. Fundo cooptado por deputados com mandato. Defende distribuição mais equilibrada.",
+					"https://www1.folha.uol.com.br/poder/2024/02/lula-critica-pt-e-diz-que-fundo-eleitoral-e-cooptado-por-deputados-com-mandato.shtml",
+					"2024-02-02",
+				),
+			},
 		],
 	},
 	{
@@ -1480,12 +1492,12 @@ export const candidates: Candidate[] = [
 			{
 				issue: dv(
 					"Educação",
-					"https://jornaltaguacei.com.br/noticias/22/02/2026/pre-candidato-flavio-bolsonaro-defende-mais-privatizacao-prisoes-e-armas-no-brasil/",
+					"https://www.estadao.com.br/politica/privatizacoes-ferrovias-e-presidios-o-que-flavio-bolsonaro-ja-propos-em-8-areas/",
 					"2026-02-22",
 				),
 				position: dv(
-					"Homeschooling. Escola sem partido.",
-					"https://jornaltaguacei.com.br/noticias/22/02/2026/pre-candidato-flavio-bolsonaro-defende-mais-privatizacao-prisoes-e-armas-no-brasil/",
+					"Qualificação tech/AI. 800 mil vagas ociosas em TI por falta de capacitação.",
+					"https://www.estadao.com.br/politica/privatizacoes-ferrovias-e-presidios-o-que-flavio-bolsonaro-ja-propos-em-8-areas/",
 					"2026-02-22",
 				),
 			},
@@ -1511,6 +1523,18 @@ export const candidates: Candidate[] = [
 					"Contra. Liberdade total expressão.",
 					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Posi%C3%A7%C3%B5es_pol%C3%ADticas",
 					"2026-06-26",
+				),
+			},
+			{
+				issue: dv(
+					"Fundo Eleitoral",
+					"https://valor.globo.com/politica/noticia/2019/12/06/flavio-bolsonaro-diz-que-se-enganou-ao-votar-a-favor-de-aumento-do-fundo-eleitoral.ghtml",
+					"2019-12-06",
+				),
+				position: dv(
+					"Contra. Disse que se enganou ao votar a favor do aumento p/ R$ 3,8 bi em 2019. Defende financiamento privado.",
+					"https://valor.globo.com/politica/noticia/2019/12/06/flavio-bolsonaro-diz-que-se-enganou-ao-votar-a-favor-de-aumento-do-fundo-eleitoral.ghtml",
+					"2019-12-06",
 				),
 			},
 		],
@@ -1734,72 +1758,7 @@ export const candidates: Candidate[] = [
 					"2026-06-26",
 				),
 			},
-			{
-				name: dv(
-					"Dívidas PGFN",
-					"https://pt.wikipedia.org/wiki/Renan_Santos#D%C3%ADvidas_fiscais_e_trabalhistas",
-					"2026-06-26",
-				),
-				status: dv(
-					"ativo",
-					"https://pt.wikipedia.org/wiki/Renan_Santos#D%C3%ADvidas_fiscais_e_trabalhistas",
-					"2026-06-26",
-				),
-				description: dv(
-					"Dívidas da empresa Martin Artefatos de Metais na PGFN (R$ 41,1 mil) + ~R$ 1,1 mi em débitos previdenciários/tributários. Renan alega que entrou na sociedade em 2009 (após débitos de 2002-03) e não é responsável. PGFN alega dissolução irregular.",
-					"https://pt.wikipedia.org/wiki/Renan_Santos#D%C3%ADvidas_fiscais_e_trabalhistas",
-					"2026-06-26",
-				),
-				value: dv(
-					"R$ 1,1 mi",
-					"https://pt.wikipedia.org/wiki/Renan_Santos#D%C3%ADvidas_fiscais_e_trabalhistas",
-					"2026-06-26",
-				),
-			},
-			{
-				name: dv(
-					"Processo Wesley Safadão",
-					"https://g1.globo.com/ce/ceara/noticia/2025/06/10/wesley-safadao-processa-renan-santos-por-calunia-e-difamacao-apos-video-sobre-suposto-envolvimento-com-maconha.ghtml",
-					"2025-06-10",
-				),
-				status: dv(
-					"ativo",
-					"https://g1.globo.com/ce/ceara/noticia/2025/06/10/wesley-safadao-processa-renan-santos-por-calunia-e-difamacao-apos-video-sobre-suposto-envolvimento-com-maconha.ghtml",
-					"2025-06-10",
-				),
-				description: dv(
-					"Calúnia/difamação. Liminar removeu vídeo. Cabe recurso.",
-					"https://g1.globo.com/ce/ceara/noticia/2025/06/10/wesley-safadao-processa-renan-santos-por-calunia-e-difamacao-apos-video-sobre-suposto-envolvimento-com-maconha.ghtml",
-					"2025-06-10",
-				),
-				value: dv(
-					"—",
-					"https://g1.globo.com/ce/ceara/noticia/2025/06/10/wesley-safadao-processa-renan-santos-por-calunia-e-difamacao-apos-video-sobre-suposto-envolvimento-com-maconha.ghtml",
-					"2025-06-10",
-				),
-			},
-			{
-				name: dv(
-					"Foto falsa Ucrânia",
-					"https://www.poder360.com.br/eleicoes/renan-santos-e-acusado-de-usar-foto-antiga-em-critica-a-guerra-na-ucrania/",
-					"2022-02-25",
-				),
-				status: dv(
-					"arquivado",
-					"https://www.poder360.com.br/eleicoes/renan-santos-e-acusado-de-usar-foto-antiga-em-critica-a-guerra-na-ucrania/",
-					"2022-02-25",
-				),
-				description: dv(
-					"Publicou foto de 2016 como se fosse guerra na Ucrânia (2022).",
-					"https://www.poder360.com.br/eleicoes/renan-santos-e-acusado-de-usar-foto-antiga-em-critica-a-guerra-na-ucrania/",
-					"2022-02-25",
-				),
-				value: dv(
-					"—",
-					"https://www.poder360.com.br/eleicoes/renan-santos-e-acusado-de-usar-foto-antiga-em-critica-a-guerra-na-ucrania/",
-					"2022-02-25",
-				),
-			},
+
 		],
 		campaignFinance: {
 			totalArrecadado: dv(
@@ -1960,6 +1919,18 @@ export const candidates: Candidate[] = [
 					"Prioridade. Estatuto Nacional da Desfavelização. Polos tecnológicos/data centers Nordeste. Zonas econômicas especiais.",
 					"https://www.estadao.com.br/politica/renan-santos-vira-milei-brasileiro-para-disputar-a-direita-com-flavio-a-quem-chama-de-judas/",
 					"2026-03-29",
+				),
+			},
+			{
+				issue: dv(
+					"Fundo Eleitoral",
+					"https://aonpelavida.com.br/renan-santos-aparece-em-3o-lugar-na-pesquisa-atlasintel",
+					"2026-03-26",
+				),
+				position: dv(
+					"Contra. Campanha via crowdfunding (vaquinha). Partido Missão sem fundo eleitoral consolidado. Defende financiamento voluntário.",
+					"https://aonpelavida.com.br/renan-santos-aparece-em-3o-lugar-na-pesquisa-atlasintel",
+					"2026-03-26",
 				),
 			},
 		],
