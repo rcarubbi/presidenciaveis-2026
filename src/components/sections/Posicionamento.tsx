@@ -24,7 +24,7 @@ export function Posicionamento({ candidates }: PosicionamentoProps) {
             <th className="text-left py-4 pr-4 pl-5 font-medium text-gray-500 dark:text-gray-400 w-36">Pauta</th>
             {candidates.map((c) => (
               <th key={c.id} className="text-left py-4 px-4 font-semibold text-base" style={{ color: c.party.color }}>
-                <DataLink data={c.name} />
+                {candidates.length > 1 && <DataLink data={c.name} />}
               </th>
             ))}
           </tr>

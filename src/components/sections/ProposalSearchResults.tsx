@@ -10,6 +10,7 @@ interface ProposalSearchResultsProps {
   }[]
   totalResults: number
   searchQuery: string
+  showName?: boolean
 }
 
 export function ProposalSearchResults({ results, totalResults, searchQuery }: ProposalSearchResultsProps) {
@@ -33,7 +34,7 @@ export function ProposalSearchResults({ results, totalResults, searchQuery }: Pr
             {matches.map(({ c, items }) => (
               <div key={c.id}>
                 <p className="text-sm font-bold mb-2" style={{ color: c.party.color }}>
-                  <DataLink data={c.name} />
+                  {showName && <DataLink data={c.name} />}
                 </p>
                 <ul className="space-y-1.5">
                   {items.map((item, i) => (

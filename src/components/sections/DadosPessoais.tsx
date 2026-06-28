@@ -28,7 +28,7 @@ export function DadosPessoais({ candidates }: DadosPessoaisProps) {
             <th className="text-left py-4 px-5 font-medium text-gray-500 dark:text-gray-400 w-40"></th>
             {candidates.map((c) => (
               <th key={c.id} className="text-left py-4 px-5 font-semibold text-base" style={{ color: c.party.color }}>
-                <DataLink data={c.name} />
+                {candidates.length > 1 && <DataLink data={c.name} />}
               </th>
             ))}
           </tr>

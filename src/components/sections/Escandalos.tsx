@@ -53,7 +53,7 @@ export function Escandalos({ candidates }: EscandalosProps) {
         {candidates.map((c) => (
           <div key={c.id} className="glass p-5">
             <h3 className="text-base font-semibold mb-4" style={{ color: c.party.color }}>
-              <DataLink data={c.name} /> ({c.scandals.length})
+              {candidates.length > 1 && <><DataLink data={c.name} /> </>}({c.scandals.length})
             </h3>
             {c.scandals.length === 0 ? (
               <p className="text-sm text-gray-400 italic">Nenhum caso registrado</p>

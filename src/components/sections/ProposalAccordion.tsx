@@ -35,7 +35,7 @@ export function ProposalAccordion({ candidates, expandedSection, onToggle }: Pro
                   const items = sec[c.id as keyof typeof sec] as ProposalItem[]
                   return (
                     <div key={c.id}>
-                      <p className="text-sm font-bold mb-3" style={{ color: c.party.color }}><DataLink data={c.name} /></p>
+                      <p className="text-sm font-bold mb-3" style={{ color: c.party.color }}>{candidates.length > 1 && <DataLink data={c.name} />}</p>
                       {items.length === 0 ? (
                         <p className="text-sm text-gray-400 italic">Nenhuma proposta específica</p>
                       ) : (

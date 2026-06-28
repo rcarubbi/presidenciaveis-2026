@@ -44,7 +44,7 @@ export function Financiamento({ candidates }: FinanciamentoProps) {
         {fontesData.map((fd) => (
           <PieChartCard
             key={fd.id}
-            title={`${fd.name} — Fontes`}
+            title={`${candidates.length > 1 ? `${fd.name} — ` : ''}Fontes`}
             data={fd.fontes}
             unit="%"
           />
