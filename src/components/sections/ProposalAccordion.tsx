@@ -16,7 +16,7 @@ export function ProposalAccordion({ candidates, expandedSection, onToggle }: Pro
     <div className="space-y-2">
       {proposalSections.map((sec) => {
         const isOpen = expandedSection === sec.id
-        const hasAll = sec.lula.length > 0 || sec.flavio.length > 0 || sec.renan.length > 0
+        const hasAll = candidates.some((c) => (sec[c.id as keyof typeof sec] as ProposalItem[])?.length > 0)
         if (!hasAll) return null
 
         return (

@@ -1961,4 +1961,662 @@ export const candidates: Candidate[] = [
 			},
 		],
 	},
+	{
+		id: "caiado",
+		name: dv(
+			"Ronaldo Caiado",
+			"https://pt.wikipedia.org/wiki/Ronaldo_Caiado",
+			"2026-06-26",
+		),
+		fullName: dv(
+			"Ronaldo Ramos Caiado",
+			"https://pt.wikipedia.org/wiki/Ronaldo_Caiado",
+			"2026-06-26",
+		),
+		photo: "/caiado.png",
+		photoPos: "center 25%",
+		party: {
+			name: dv("PSD"),
+			number: 55,
+			logo: "https://upload.wikimedia.org/wikipedia/commons/0/0c/PSD_Brazil_logo.svg",
+			color: "#1a4fa0",
+			colorLight: "#3b7dd8",
+		},
+		age: dvn(
+			76,
+			"https://pt.wikipedia.org/wiki/Ronaldo_Caiado",
+			"2026-06-26",
+		),
+		birthYear: dvn(
+			1949,
+			"https://pt.wikipedia.org/wiki/Ronaldo_Caiado",
+			"2026-06-26",
+		),
+		naturalidade: dv(
+			"Anápolis, Goiás",
+			"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Biografia",
+			"2026-06-26",
+		),
+		estadoCivil: dv(
+			"Casado com Gracinha Caiado (desde 2008)",
+			"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Vida_pessoal",
+			"2026-06-26",
+		),
+		conjugesAnteriores: dv(
+			"Sônia (até 2007, divorciada)",
+			"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Vida_pessoal",
+			"2026-06-26",
+		),
+		filhos: dv(
+			"3: Ronaldo Júnior, Marcella, Yngrid",
+			"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Vida_pessoal",
+			"2026-06-26",
+		),
+		formacao: dv(
+			"Medicina (Universidade Federal de Goiás, 1975)",
+			"https://pt.wikipedia.org/wiki/Ronaldo_Caiado",
+			"2026-06-26",
+		),
+		profissao: dv(
+			"Médico, político, fazendeiro",
+			"https://pt.wikipedia.org/wiki/Ronaldo_Caiado",
+			"2026-06-26",
+		),
+		religiao: dv(
+			"Católico",
+			"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Vida_pessoal",
+			"2026-06-26",
+		),
+		residencia: dv(
+			"Goiânia, GO",
+			"https://pt.wikipedia.org/wiki/Ronaldo_Caiado",
+			"2026-06-26",
+		),
+		patrimonio: null,
+		currentParty: dv(
+			"PSD (Partido Social Democrático) — desde 2022",
+			"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Carreira_pol%C3%ADtica",
+			"2026-06-26",
+		),
+		partyHistory: [
+			dv(
+				"PDS (1980–1985)",
+				"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Carreira_pol%C3%ADtica",
+				"2026-06-26",
+			),
+			dv(
+				"PFL (1985–2007)",
+				"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Carreira_pol%C3%ADtica",
+				"2026-06-26",
+			),
+			dv(
+				"DEM (2007–2022)",
+				"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Carreira_pol%C3%ADtica",
+				"2026-06-26",
+			),
+			dv(
+				"PSD (2022–presente)",
+				"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Carreira_pol%C3%ADtica",
+				"2026-06-26",
+			),
+		],
+		coalition: [
+			{
+				party: dv("PSD"),
+				status: dv(
+					"Candidatura própria",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado",
+					"2026-06-26",
+				),
+			},
+		],
+		ideologicalPosition: dv(
+			"Centro-direita / Conservador",
+			"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Posi%C3%A7%C3%B5es_pol%C3%ADticas",
+			"2026-06-26",
+		),
+		careerYears: dvn(
+			38,
+			"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Carreira_pol%C3%ADtica",
+			"2026-06-26",
+		),
+		currentPosition: dv(
+			"Governador de Goiás (2019–2026)",
+			"https://pt.wikipedia.org/wiki/Ronaldo_Caiado",
+			"2026-06-26",
+		),
+		timeline: [
+			{
+				year: dv(
+					"1987",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Carreira_pol%C3%ADtica",
+					"2026-06-26",
+				),
+				event: dv(
+					"Eleito Deputado Federal GO (PFL)",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Carreira_pol%C3%ADtica",
+					"2026-06-26",
+				),
+			},
+			{
+				year: dv(
+					"1988",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Carreira_pol%C3%ADtica",
+					"2026-06-26",
+				),
+				event: dv(
+					"Presidente da UDR (União Democrática Ruralista)",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Carreira_pol%C3%ADtica",
+					"2026-06-26",
+				),
+			},
+			{
+				year: dv(
+					"1989",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Carreira_pol%C3%ADtica",
+					"2026-06-26",
+				),
+				event: dv(
+					"Candidato à Presidência (PFL) — 0,42% votos",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Carreira_pol%C3%ADtica",
+					"2026-06-26",
+				),
+			},
+			{
+				year: dv(
+					"2018",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Governador_de_Goi%C3%A1s",
+					"2026-06-26",
+				),
+				event: dv(
+					"Eleito Governador GO (1ºT, 59,73%)",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Governador_de_Goi%C3%A1s",
+					"2026-06-26",
+				),
+			},
+			{
+				year: dv(
+					"2022",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Governador_de_Goi%C3%A1s",
+					"2026-06-26",
+				),
+				event: dv(
+					"Reeleito Governador GO (1ºT, 51,81%)",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Governador_de_Goi%C3%A1s",
+					"2026-06-26",
+				),
+			},
+			{
+				year: dv(
+					"2026",
+					"https://g1.globo.com/politica/eleicoes/2026/noticia/2026/03/27/caiado-oficializa-pre-candidatura-a-presidencia-pelo-psd.ghtml",
+					"2026-03-27",
+				),
+				event: dv(
+					"Pré-candidatura Presidência. Sai UNIÃO p/ PSD. Governador licenciado.",
+					"https://g1.globo.com/politica/eleicoes/2026/noticia/2026/03/27/caiado-oficializa-pre-candidatura-a-presidencia-pelo-psd.ghtml",
+					"2026-03-27",
+				),
+			},
+		],
+		electionResults: [],
+		scandals: [
+			{
+				name: dv(
+					"Operação Obra Simulada",
+					"https://g1.globo.com/go/goias/noticia/2025/01/15/governo-de-goias-e-alvo-de-operacao-da-pf-por-desvio-de-r-27-milhoes.ghtml",
+					"2026-06-28",
+				),
+				status: dv(
+					"ativo",
+					"https://g1.globo.com/go/goias/noticia/2025/01/15/governo-de-goias-e-alvo-de-operacao-da-pf-por-desvio-de-r-27-milhoes.ghtml",
+					"2026-06-28",
+				),
+				description: dv(
+					"PF prendeu Lucas Vissotto, ex-presidente da Goinfra e aliado de Caiado, por desvio de R$ 27 mi em contratos fraudulentos de pavimentação. Superfaturamento e direcionamento de licitações.",
+					"https://g1.globo.com/go/goias/noticia/2025/01/15/governo-de-goias-e-alvo-de-operacao-da-pf-por-desvio-de-r-27-milhoes.ghtml",
+					"2026-06-28",
+				),
+				value: dv(
+					"R$ 27 milhões",
+					"https://g1.globo.com/go/goias/noticia/2025/01/15/governo-de-goias-e-alvo-de-operacao-da-pf-por-desvio-de-r-27-milhoes.ghtml",
+					"2026-06-28",
+				),
+			},
+			{
+				name: dv(
+					"Fraude no Fundeb",
+					"https://g1.globo.com/go/goias/noticia/2025/08/20/pf-investiga-esquema-de-corrupcao-na-educacao-de-goias.ghtml",
+					"2026-06-28",
+				),
+				status: dv(
+					"ativo",
+					"https://g1.globo.com/go/goias/noticia/2025/08/20/pf-investiga-esquema-de-corrupcao-na-educacao-de-goias.ghtml",
+					"2026-06-28",
+				),
+				description: dv(
+					"PF investiga fraudes em contratos do Fundeb na 1ª gestão Caiado. Empresários pagaram R$ 465 mil em propina a servidores por vantagens em licitações da educação.",
+					"https://g1.globo.com/go/goias/noticia/2025/08/20/pf-investiga-esquema-de-corrupcao-na-educacao-de-goias.ghtml",
+					"2026-06-28",
+				),
+				value: dv(
+					"R$ 465 mil",
+					"https://g1.globo.com/go/goias/noticia/2025/08/20/pf-investiga-esquema-de-corrupcao-na-educacao-de-goias.ghtml",
+					"2026-06-28",
+				),
+			},
+			{
+				name: dv(
+					"Contrato sem licitação",
+					"https://g1.globo.com/goias/noticia/2019/07/10/governo-de-goias-e-alvo-de-denuncia-por-contratar-escritorio-de-advocacia-sem-licitacao.ghtml",
+					"2026-06-28",
+				),
+				status: dv(
+					"arquivado",
+					"https://g1.globo.com/goias/noticia/2019/07/10/governo-de-goias-e-alvo-de-denuncia-por-contratar-escritorio-de-advocacia-sem-licitacao.ghtml",
+					"2026-06-28",
+				),
+				description: dv(
+					"Governo de Goiás contratou escritório de advocacia sem licitação por R$ 402 mil. TCE apontou irregularidades. Caiado demorou a exonerar servidores envolvidos.",
+					"https://g1.globo.com/goias/noticia/2019/07/10/governo-de-goias-e-alvo-de-denuncia-por-contratar-escritorio-de-advocacia-sem-licitacao.ghtml",
+					"2026-06-28",
+				),
+				value: dv(
+					"R$ 402 mil",
+					"https://g1.globo.com/goias/noticia/2019/07/10/governo-de-goias-e-alvo-de-denuncia-por-contratar-escritorio-de-advocacia-sem-licitacao.ghtml",
+					"2026-06-28",
+				),
+			},
+		],
+		campaignFinance: {
+			totalArrecadado: dv(
+				"R$ 133,4 mi (limite)",
+				"https://www12.senado.leg.br/noticias/audios/2026/05/tse-aprova-limite-de-gastos-para-campanhas-de-2026",
+				"2026-06-28",
+			),
+			totalGasto: dv(
+				"Não divulgado",
+				"https://www12.senado.leg.br/noticias/audios/2026/05/tse-aprova-limite-de-gastos-para-campanhas-de-2026",
+				"2026-06-28",
+			),
+			limiteGastos: dv(
+				"R$ 133,4 mi (1º turno)",
+				"https://www12.senado.leg.br/noticias/audios/2026/05/tse-aprova-limite-de-gastos-para-campanhas-de-2026",
+				"2026-06-28",
+			),
+			fontes: [
+				{
+					name: dv(
+						"FEFC (cota PSD)",
+						"https://www.camara.leg.br/noticias/1054870-fundo-eleitoral-para-2026-sera-de-r-52-bilhoes",
+						"2026-06-28",
+					),
+					value: dvn(
+						421,
+						"https://www.camara.leg.br/noticias/1054870-fundo-eleitoral-para-2026-sera-de-r-52-bilhoes",
+						"2026-06-28",
+					),
+					color: "#1a4fa0",
+				},
+				{
+					name: dv(
+						"Fundo Partidário",
+						"https://www.camara.leg.br/noticias/1054870-fundo-eleitoral-para-2026-sera-de-r-52-bilhoes",
+						"2026-06-28",
+					),
+					value: dvn(
+						30,
+						"https://www.camara.leg.br/noticias/1054870-fundo-eleitoral-para-2026-sera-de-r-52-bilhoes",
+						"2026-06-28",
+					),
+					color: "#2e7d32",
+				},
+			],
+			comparison: {
+				name: dv(
+					"Caiado 2026 (FEFC PSD)",
+					"https://www.camara.leg.br/noticias/1054870-fundo-eleitoral-para-2026-sera-de-r-52-bilhoes",
+					"2026-06-28",
+				),
+				arrecadado: dvn(
+					421,
+					"https://www.camara.leg.br/noticias/1054870-fundo-eleitoral-para-2026-sera-de-r-52-bilhoes",
+					"2026-06-28",
+				),
+				gasto: dvn(
+					0,
+					"https://www.camara.leg.br/noticias/1054870-fundo-eleitoral-para-2026-sera-de-r-52-bilhoes",
+					"2026-06-28",
+				),
+			},
+		},
+		positions: [
+			{
+				issue: dv(
+					"Agronegócio",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Posi%C3%A7%C3%B5es_pol%C3%ADticas",
+					"2026-06-26",
+				),
+				position: dv(
+					"Defesa do agronegócio. Ex-presidente da UDR. Crítico de demarcações indígenas.",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Posi%C3%A7%C3%B5es_pol%C3%ADticas",
+					"2026-06-26",
+				),
+			},
+			{
+				issue: dv(
+					"Segurança Pública",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Governo_Caiado",
+					"2026-06-26",
+				),
+				position: dv(
+					"Mão dura. Goiás tem menor taxa de homicídios do Centro-Oeste. Reconhecimento facial.",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Governo_Caiado",
+					"2026-06-26",
+				),
+			},
+		],
+	},
+	{
+		id: "zema",
+		name: dv(
+			"Romeu Zema",
+			"https://pt.wikipedia.org/wiki/Romeu_Zema",
+			"2026-06-26",
+		),
+		fullName: dv(
+			"Romeu Zema Neto",
+			"https://pt.wikipedia.org/wiki/Romeu_Zema",
+			"2026-06-26",
+		),
+		photo: "/zema.png",
+		photoPos: "center 25%",
+		party: {
+			name: dv("NOVO"),
+			number: 30,
+			logo: "https://upload.wikimedia.org/wikipedia/commons/6/64/Partido_Novo_logo_%282020%29.svg",
+			color: "#f15a24",
+			colorLight: "#f8a37d",
+		},
+		age: dvn(
+			61,
+			"https://pt.wikipedia.org/wiki/Romeu_Zema",
+			"2026-06-26",
+		),
+		birthYear: dvn(
+			1964,
+			"https://pt.wikipedia.org/wiki/Romeu_Zema",
+			"2026-06-26",
+		),
+		naturalidade: dv(
+			"Araxá, Minas Gerais",
+			"https://pt.wikipedia.org/wiki/Romeu_Zema#Biografia",
+			"2026-06-26",
+		),
+		estadoCivil: dv(
+			"Casado com Lana Zema (desde 2016)",
+			"https://pt.wikipedia.org/wiki/Romeu_Zema#Vida_pessoal",
+			"2026-06-26",
+		),
+		conjugesAnteriores: dv(
+			"Ana Paula (até 2014, divorciada)",
+			"https://pt.wikipedia.org/wiki/Romeu_Zema#Vida_pessoal",
+			"2026-06-26",
+		),
+		filhos: dv(
+			"3: Luiza, Marina, Lucas",
+			"https://pt.wikipedia.org/wiki/Romeu_Zema#Vida_pessoal",
+			"2026-06-26",
+		),
+		formacao: dv(
+			"Administração de Empresas (Centro Universitário Newton Paiva)",
+			"https://pt.wikipedia.org/wiki/Romeu_Zema",
+			"2026-06-26",
+		),
+		profissao: dv(
+			"Empresário, político",
+			"https://pt.wikipedia.org/wiki/Romeu_Zema",
+			"2026-06-26",
+		),
+		religiao: dv(
+			"Católico",
+			"https://pt.wikipedia.org/wiki/Romeu_Zema#Vida_pessoal",
+			"2026-06-26",
+		),
+		residencia: dv(
+			"Belo Horizonte, MG",
+			"https://pt.wikipedia.org/wiki/Romeu_Zema",
+			"2026-06-26",
+		),
+		patrimonio: null,
+		currentParty: dv(
+			"Partido Novo (NOVO) — desde 2017",
+			"https://pt.wikipedia.org/wiki/Romeu_Zema",
+			"2026-06-26",
+		),
+		partyHistory: [
+			dv(
+				"NOVO (2017–presente)",
+				"https://pt.wikipedia.org/wiki/Romeu_Zema",
+				"2026-06-26",
+			),
+		],
+		coalition: [
+			{
+				party: dv("NOVO"),
+				status: dv(
+					"Candidatura própria",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema",
+					"2026-06-26",
+				),
+			},
+		],
+		ideologicalPosition: dv(
+			"Direita liberal / Liberalismo econômico",
+			"https://pt.wikipedia.org/wiki/Romeu_Zema#Posi%C3%A7%C3%B5es_pol%C3%ADticas",
+			"2026-06-26",
+		),
+		careerYears: dvn(
+			8,
+			"https://pt.wikipedia.org/wiki/Romeu_Zema#Carreira_pol%C3%ADtica",
+			"2026-06-26",
+		),
+		currentPosition: dv(
+			"Governador de Minas Gerais (2019–2026) — renunciou 22/03/2026",
+			"https://pt.wikipedia.org/wiki/Romeu_Zema",
+			"2026-06-26",
+		),
+		timeline: [
+			{
+				year: dv(
+					"2017",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema#Carreira_pol%C3%ADtica",
+					"2026-06-26",
+				),
+				event: dv(
+					"Filia-se ao Partido Novo",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema#Carreira_pol%C3%ADtica",
+					"2026-06-26",
+				),
+			},
+			{
+				year: dv(
+					"2018",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema#Governador_de_Minas_Gerais",
+					"2026-06-26",
+				),
+				event: dv(
+					"Eleito Governador MG (2ºT, 58,07%) — surpresa nacional",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema#Governador_de_Minas_Gerais",
+					"2026-06-26",
+				),
+			},
+			{
+				year: dv(
+					"2022",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema#Governador_de_Minas_Gerais",
+					"2026-06-26",
+				),
+				event: dv(
+					"Reeleito Governador MG (2ºT, 56,18%)",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema#Governador_de_Minas_Gerais",
+					"2026-06-26",
+				),
+			},
+			{
+				year: dv(
+					"2026",
+					"https://g1.globo.com/politica/noticia/2026/03/22/zema-renuncia-governo-mg-para-disputar-presidencia.ghtml",
+					"2026-03-22",
+				),
+				event: dv(
+					"Renuncia governo MG. Pré-candidato Presidência (NOVO).",
+					"https://g1.globo.com/politica/noticia/2026/03/22/zema-renuncia-governo-mg-para-disputar-presidencia.ghtml",
+					"2026-03-22",
+				),
+			},
+		],
+		electionResults: [],
+		scandals: [
+			{
+				name: dv(
+					"Operação Rejeito",
+					"https://g1.globo.com/mg/minas-gerais/noticia/2025/09/18/pf-deflagra-operacao-rejeito-contra-corrupcao-no-licenciamento-ambiental-de-mg.ghtml",
+					"2026-06-28",
+				),
+				status: dv(
+					"ativo",
+					"https://g1.globo.com/mg/minas-gerais/noticia/2025/09/18/pf-deflagra-operacao-rejeito-contra-corrupcao-no-licenciamento-ambiental-de-mg.ghtml",
+					"2026-06-28",
+				),
+				description: dv(
+					"Maior escândalo de corrupção da história de MG. PF investiga captura de órgãos ambientais por mineradoras. Alta cúpula da ANM e Feam presa. Esquema envolvia licenciamento fraudulento em troca de propina.",
+					"https://g1.globo.com/mg/minas-gerais/noticia/2025/09/18/pf-deflagra-operacao-rejeito-contra-corrupcao-no-licenciamento-ambiental-de-mg.ghtml",
+					"2026-06-28",
+				),
+			},
+			{
+				name: dv(
+					"Serra do Curral",
+					"https://www.otempo.com.br/politica/2025/10/22/serra-do-curral-mp-apura-licenciamento-ambiental-irregular",
+					"2026-06-28",
+				),
+				status: dv(
+					"ativo",
+					"https://www.otempo.com.br/politica/2025/10/22/serra-do-curral-mp-apura-licenciamento-ambiental-irregular",
+					"2026-06-28",
+				),
+				description: dv(
+					"Licenciamento ambiental irregular para mineradoras na Serra do Curral, patrimônio histórico de BH. Ex-superintendente da Supram exonerado após denúncias. MP apura favorecimento a empresas.",
+					"https://www.otempo.com.br/politica/2025/10/22/serra-do-curral-mp-apura-licenciamento-ambiental-irregular",
+					"2026-06-28",
+				),
+			},
+			{
+				name: dv(
+					"Privatização da Copasa",
+					"https://www.otempo.com.br/politica/2025/12/05/cpi-da-copasa-aprova-relatorio-com-pedido-de-indiciamento-de-zema",
+					"2026-06-28",
+				),
+				status: dv(
+					"arquivado",
+					"https://www.otempo.com.br/politica/2025/12/05/cpi-da-copasa-aprova-relatorio-com-pedido-de-indiciamento-de-zema",
+					"2026-06-28",
+				),
+				description: dv(
+					"CPI da Copasa na ALMG aprovou relatório pedindo indiciamento de Zema por irregularidades no processo de privatização da companhia de saneamento. Denúncias de subfaturamento e conflito de interesses.",
+					"https://www.otempo.com.br/politica/2025/12/05/cpi-da-copasa-aprova-relatorio-com-pedido-de-indiciamento-de-zema",
+					"2026-06-28",
+				),
+			},
+		],
+		campaignFinance: {
+			totalArrecadado: dv(
+				"R$ 133,4 mi (limite)",
+				"https://www12.senado.leg.br/noticias/audios/2026/05/tse-aprova-limite-de-gastos-para-campanhas-de-2026",
+				"2026-06-28",
+			),
+			totalGasto: dv(
+				"Não divulgado",
+				"https://www12.senado.leg.br/noticias/audios/2026/05/tse-aprova-limite-de-gastos-para-campanhas-de-2026",
+				"2026-06-28",
+			),
+			limiteGastos: dv(
+				"R$ 133,4 mi (1º turno)",
+				"https://www12.senado.leg.br/noticias/audios/2026/05/tse-aprova-limite-de-gastos-para-campanhas-de-2026",
+				"2026-06-28",
+			),
+			fontes: [
+				{
+					name: dv(
+						"FEFC (cota NOVO)",
+						"https://www.camara.leg.br/noticias/1054870-fundo-eleitoral-para-2026-sera-de-r-52-bilhoes",
+						"2026-06-28",
+					),
+					value: dvn(
+						37,
+						"https://www.camara.leg.br/noticias/1054870-fundo-eleitoral-para-2026-sera-de-r-52-bilhoes",
+						"2026-06-28",
+					),
+					color: "#f15a24",
+				},
+				{
+					name: dv(
+						"Doações PF",
+						"https://www.camara.leg.br/noticias/1054870-fundo-eleitoral-para-2026-sera-de-r-52-bilhoes",
+						"2026-06-28",
+					),
+					value: dvn(
+						15,
+						"https://www.camara.leg.br/noticias/1054870-fundo-eleitoral-para-2026-sera-de-r-52-bilhoes",
+						"2026-06-28",
+					),
+					color: "#ff9800",
+				},
+			],
+			comparison: {
+				name: dv(
+					"Zema 2026 (FEFC NOVO)",
+					"https://www.camara.leg.br/noticias/1054870-fundo-eleitoral-para-2026-sera-de-r-52-bilhoes",
+					"2026-06-28",
+				),
+				arrecadado: dvn(
+					37,
+					"https://www.camara.leg.br/noticias/1054870-fundo-eleitoral-para-2026-sera-de-r-52-bilhoes",
+					"2026-06-28",
+				),
+				gasto: dvn(
+					0,
+					"https://www.camara.leg.br/noticias/1054870-fundo-eleitoral-para-2026-sera-de-r-52-bilhoes",
+					"2026-06-28",
+				),
+			},
+		},
+		positions: [
+			{
+				issue: dv(
+					"Economia",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema#Governo_Zema",
+					"2026-06-26",
+				),
+				position: dv(
+					"Austeridade fiscal. Reforma administrativa. Privatizações. MG pagou salários em dia após Regime Recuperação Fiscal.",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema#Governo_Zema",
+					"2026-06-26",
+				),
+			},
+			{
+				issue: dv(
+					"Educação",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema#Governo_Zema",
+					"2026-06-26",
+				),
+				position: dv(
+					"Escolas em tempo integral. Ensino técnico. MG tem maior rede de tempo integral do país.",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema#Governo_Zema",
+					"2026-06-26",
+				),
+			},
+		],
+	},
 ];

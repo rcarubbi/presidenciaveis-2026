@@ -26,8 +26,8 @@ export function InstituteCharts({ firstRoundData, secondRoundData, rejectionData
             { key: 'Lula', color: '#cc2222' },
             { key: 'Flávio', color: '#1a4fa0' },
             { key: 'Renan', color: '#d97706' },
-            { key: 'Zema', color: '#6b7280' },
-            { key: 'Caiado', color: '#9ca3af' },
+            { key: 'Zema', color: '#f15a24' },
+            { key: 'Caiado', color: '#3b7dd8' },
           ]}
         />
         <GroupedBarChartCard

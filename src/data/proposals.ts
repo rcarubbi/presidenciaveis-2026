@@ -7,6 +7,8 @@ export interface ProposalSection {
   lula: ProposalItem[]
   flavio: ProposalItem[]
   renan: ProposalItem[]
+  caiado: ProposalItem[]
+  zema: ProposalItem[]
 }
 
 export const proposalSections: ProposalSection[] = [
@@ -40,6 +42,18 @@ export const proposalSections: ProposalSection[] = [
       { text: dv('Fim progressão de regime', 'https://caminhodamissao.com/candidato/renan-santos', '2026-06-26') },
       { text: dv('Reestruturação polícia brasileira', 'https://caminhodamissao.com/candidato/renan-santos', '2026-06-26') },
     ],
+    caiado: [
+      { text: dv('Recriação do Ministério da Segurança Pública', 'https://g1.globo.com/politica/eleicoes/2026/noticia/2026/03/30/anistia-a-bolsonaro-terras-raras-combate-ao-crime-as-propostas-de-caiado-no-1o-discurso.ghtml', '2026-03-30') },
+      { text: dv('Uso de inteligência artificial e software contra o crime organizado', 'https://g1.globo.com/politica/eleicoes/2026/noticia/2026/03/30/anistia-a-bolsonaro-terras-raras-combate-ao-crime-as-propostas-de-caiado-no-1o-discurso.ghtml', '2026-03-30') },
+      { text: dv('Controle total dos presídios (modelo Goiás)', 'https://g1.globo.com/politica/eleicoes/2026/noticia/2026/03/30/anistia-a-bolsonaro-terras-raras-combate-ao-crime-as-propostas-de-caiado-no-1o-discurso.ghtml', '2026-03-30') },
+      { text: dv('Integração Polícias Estaduais com PF e PRF', 'https://www.correiobraziliense.com.br/mundo/2026/03/7387104-a-segunda-disputa-de-ronaldo-caiado-pela-presidencia.html', '2026-03-30') },
+      { text: dv('Contrário ao uso de câmeras corporais em policiais militares', 'https://www.correiobraziliense.com.br/mundo/2026/03/7387104-a-segunda-disputa-de-ronaldo-caiado-pela-presidencia.html', '2026-03-30') },
+    ],
+    zema: [
+      { text: dv('Classificação de facções criminosas como terroristas — pena mínima 25 anos', 'https://g1.globo.com/jornal-nacional/noticia/2026/04/16/novo-apresenta-diretrizes-do-plano-de-governo-de-romeu-zema-pre-candidato-do-partido-a-presidencia-da-republica.ghtml', '2026-04-16') },
+      { text: dv('Redução da maioridade penal — "crime de adulto, pena de adulto"', 'https://g1.globo.com/jornal-nacional/noticia/2026/04/16/novo-apresenta-diretrizes-do-plano-de-governo-de-romeu-zema-pre-candidato-do-partido-a-presidencia-da-republica.ghtml', '2026-04-16') },
+      { text: dv('Fim das saidinhas para integrantes de facções', 'https://g1.globo.com/jornal-nacional/noticia/2026/04/16/novo-apresenta-diretrizes-do-plano-de-governo-de-romeu-zema-pre-candidato-do-partido-a-presidencia-da-republica.ghtml', '2026-04-16') },
+    ],
   },
   {
     id: 'economia',
@@ -65,6 +79,17 @@ export const proposalSections: ProposalSection[] = [
       { text: dv('Desvinculação gastos saúde/educação da receita', 'https://exame.com/brasil/virais-regionais-e-ataques-a-flavio-a-estrategia-de-renan-santos-para-a-eleicao/', '2026-04-08') },
       { text: dv('Mutirão anti Bolsa-Família (>30% população)', 'https://caminhodamissao.com/candidato/renan-santos', '2026-06-26') },
     ],
+    caiado: [
+      { text: dv('Exploração e processamento de terras raras com parceria EUA/Japão', 'https://g1.globo.com/politica/eleicoes/2026/noticia/2026/03/30/anistia-a-bolsonaro-terras-raras-combate-ao-crime-as-propostas-de-caiado-no-1o-discurso.ghtml', '2026-03-30') },
+      { text: dv('Contrário a aumento de impostos para ricos ("populismo fiscal")', 'https://www.correiobraziliense.com.br/mundo/2026/03/7387104-a-segunda-disputa-de-ronaldo-caiado-pela-presidencia.html', '2026-03-30') },
+      { text: dv('Economia de mercado, livre iniciativa e defesa do setor produtivo', 'https://g1.globo.com/politica/eleicoes/2026/noticia/2026/03/30/anistia-a-bolsonaro-terras-raras-combate-ao-crime-as-propostas-de-caiado-no-1o-discurso.ghtml', '2026-03-30') },
+      { text: dv('Crítico da taxa de juros e seus efeitos sobre o setor produtivo', 'https://g1.globo.com/politica/eleicoes/2026/noticia/2026/03/30/anistia-a-bolsonaro-terras-raras-combate-ao-crime-as-propostas-de-caiado-no-1o-discurso.ghtml', '2026-03-30') },
+    ],
+    zema: [
+      { text: dv('Privatização total das estatais federais (Petrobras, Caixa, BB, Correios)', 'https://oglobo.globo.com/politica/noticia/2026/04/16/zema-propoe-mandato-para-o-stf-privatizacao-de-100percent-das-estatais-e-fim-dos-beneficios-para-marmanjoes.ghtml', '2026-04-16') },
+      { text: dv('CLT paralela — alternativa opcional à CLT com negociação direta', 'https://g1.globo.com/jornal-nacional/noticia/2026/04/16/novo-apresenta-diretrizes-do-plano-de-governo-de-romeu-zema-pre-candidato-do-partido-a-presidencia-da-republica.ghtml', '2026-04-16') },
+      { text: dv('Estado mínimo — redução da máquina pública e corte de gastos', 'https://oglobo.globo.com/politica/noticia/2026/04/16/zema-propoe-mandato-para-o-stf-privatizacao-de-100percent-das-estatais-e-fim-dos-beneficios-para-marmanjoes.ghtml', '2026-04-16') },
+    ],
   },
   {
     id: 'saude',
@@ -83,6 +108,11 @@ export const proposalSections: ProposalSection[] = [
       { text: dv('Telemedicina integrada ao SUS com atendimento remoto especializado', 'https://renansantospropostas.com.br/sus-digital', '2026-06-26') },
       { text: dv('Prontuário único nacional com inteligência artificial para prevenir doenças', 'https://renansantos.wiki/posicoes/Propostas-para-Sa%C3%BAde', '2026-03-09') },
     ],
+    caiado: [
+      { text: dv('Ampliação da rede hospitalar com foco em leitos de UTI (modelo Goiás pandemia)', 'https://portal.al.go.leg.br/noticias/163534/caiado-faz-balanco-da-gestao', '2026-03-31') },
+      { text: dv('Telemedicina integrada para atendimento remoto especializado', 'https://portal.al.go.leg.br/noticias/163534/caiado-faz-balanco-da-gestao', '2026-03-31') },
+    ],
+    zema: [],
   },
   {
     id: 'educacao',
@@ -107,6 +137,15 @@ export const proposalSections: ProposalSection[] = [
       { text: dv('Escolas polo para os melhores alunos da rede pública', 'https://renansantos.wiki/posicoes/Propostas-para-Educa%C3%A7%C3%A3o', '2026-06-17') },
       { text: dv('Fim da progressão continuada com provões de critérios objetivos', 'https://renansantos.wiki/posicoes/Propostas-para-Educa%C3%A7%C3%A3o', '2026-06-17') },
     ],
+    caiado: [
+      { text: dv('Exportar modelo educacional goiano (1º lugar no Ideb) para todo o país', 'https://g1.globo.com/politica/eleicoes/2026/noticia/2026/03/30/anistia-a-bolsonaro-terras-raras-combate-ao-crime-as-propostas-de-caiado-no-1o-discurso.ghtml', '2026-03-30') },
+      { text: dv('Escola em tempo integral com foco em protagonismo juvenil', 'https://portal.al.go.leg.br/noticias/163534/caiado-faz-balanco-da-gestao', '2026-03-31') },
+      { text: dv('Meritocracia e avaliação de desempenho docente', 'https://g1.globo.com/politica/eleicoes/2026/noticia/2026/03/30/anistia-a-bolsonaro-terras-raras-combate-ao-crime-as-propostas-de-caiado-no-1o-discurso.ghtml', '2026-03-30') },
+    ],
+    zema: [
+      { text: dv('Escola em tempo integral — MG tem a maior rede do país', 'https://www.otempo.com.br/politica/2026/4/16/plano-de-governo-de-zema-preve-novo-supremo-programa-de-moralizacao-do-judiciario', '2026-04-16') },
+      { text: dv('Ensino técnico profissionalizante como prioridade nacional', 'https://www.otempo.com.br/politica/2026/4/16/plano-de-governo-de-zema-preve-novo-supremo-programa-de-moralizacao-do-judiciario', '2026-04-16') },
+    ],
   },
   {
     id: 'previdencia',
@@ -124,6 +163,12 @@ export const proposalSections: ProposalSection[] = [
       { text: dv('Nova reforma da Previdência', 'https://exame.com/brasil/virais-regionais-e-ataques-a-flavio-a-estrategia-de-renan-santos-para-a-eleicao/', '2026-04-08') },
       { text: dv('Flexibilização leis trabalhistas com limites', 'https://exame.com/brasil/virais-regionais-e-ataques-a-flavio-a-estrategia-de-renan-santos-para-a-eleicao/', '2026-04-08') },
     ],
+    caiado: [],
+    zema: [
+      { text: dv('Reforma definitiva da Previdência com gatilho automático por expectativa de vida', 'https://sintrajufe.org.br/plano-de-governo-de-zema-pre-candidato-do-partido-novo-preve-jornada-de-trabalho-sem-limite-de-horario-privatizacao-total-e-reforma-definitiva-da-previdencia/', '2026-04-16') },
+      { text: dv('CLT paralela com jornada flexível negociada entre patrão e empregado', 'https://g1.globo.com/jornal-nacional/noticia/2026/04/16/novo-apresenta-diretrizes-do-plano-de-governo-de-romeu-zema-pre-candidato-do-partido-a-presidencia-da-republica.ghtml', '2026-04-16') },
+      { text: dv('Idade mínima dinâmica vinculada à evolução da expectativa de vida', 'https://valor.globo.com/politica/noticia/2026/04/16/zema-lanca-propostas-de-governo-e-repete-que-ira-ate-o-fim-como-candidato-a-presidente.ghtml', '2026-04-16') },
+    ],
   },
   {
     id: 'infraestrutura',
@@ -139,6 +184,12 @@ export const proposalSections: ProposalSection[] = [
       { text: dv('Desfavelização (habitação + reurbanização)', 'https://caminhodamissao.com/candidato/renan-santos', '2026-06-26') },
       { text: dv('Interiorização indústria (Nordeste)', 'https://caminhodamissao.com/candidato/renan-santos', '2026-06-26') },
       { text: dv('Indústria tecnologia (semicondutores, data centers)', 'https://www.estadao.com.br/politica/renan-santos-vira-milei-brasileiro-para-disputar-a-direita-com-flavio-a-quem-chama-de-judas/', '2026-03-29') },
+    ],
+    caiado: [
+      { text: dv('Indústria de processamento de terras raras com agregação de valor nacional', 'https://g1.globo.com/politica/eleicoes/2026/noticia/2026/03/30/anistia-a-bolsonaro-terras-raras-combate-ao-crime-as-propostas-de-caiado-no-1o-discurso.ghtml', '2026-03-30') },
+    ],
+    zema: [
+      { text: dv('Privatização de infraestrutura através de concessões e PPPs', 'https://oglobo.globo.com/politica/noticia/2026/04/16/zema-propoe-mandato-para-o-stf-privatizacao-de-100percent-das-estatais-e-fim-dos-beneficios-para-marmanjoes.ghtml', '2026-04-16') },
     ],
   },
   {
@@ -160,6 +211,14 @@ export const proposalSections: ProposalSection[] = [
       { text: dv('Exploração responsável da Amazônia com tecnologia e monitoramento', 'https://www.gazetasp.com.br/politica/quem-e-renan-santos-presidenciavel-partido-missao/', '2026-05-28') },
       { text: dv('Reforma do licenciamento ambiental para agilidade e segurança jurídica', 'https://www.gazetasp.com.br/politica/quem-e-renan-santos-presidenciavel-partido-missao/', '2026-05-28') },
     ],
+    caiado: [
+      { text: dv('Marco temporal para demarcações indígenas como segurança jurídica ao produtor', 'https://www.correiobraziliense.com.br/mundo/2026/03/7387104-a-segunda-disputa-de-ronaldo-caiado-pela-presidencia.html', '2026-03-30') },
+      { text: dv('Exploração de terras raras com monitoramento ambiental via inteligência artificial', 'https://g1.globo.com/politica/eleicoes/2026/noticia/2026/03/30/anistia-a-bolsonaro-terras-raras-combate-ao-crime-as-propostas-de-caiado-no-1o-discurso.ghtml', '2026-03-30') },
+    ],
+    zema: [
+      { text: dv('Licenciamento ambiental mais ágil e seguro jurídico para investimentos', 'https://www.otempo.com.br/politica/2026/4/16/plano-de-governo-de-zema-preve-novo-supremo-programa-de-moralizacao-do-judiciario', '2026-04-16') },
+      { text: dv('Exploração responsável de recursos naturais com equilíbrio ambiental', 'https://oglobo.globo.com/politica/noticia/2026/04/16/zema-propoe-mandato-para-o-stf-privatizacao-de-100percent-das-estatais-e-fim-dos-beneficios-para-marmanjoes.ghtml', '2026-04-16') },
+    ],
   },
   {
     id: 'relacoes-exteriores',
@@ -180,6 +239,11 @@ export const proposalSections: ProposalSection[] = [
       { text: dv('China pragmática', 'https://www.gazetasp.com.br/politica/quem-e-renan-santos-presidenciavel-partido-missao/', '2026-05-28') },
       { text: dv('Aproximação EUA/OCDE', 'https://www.gazetasp.com.br/politica/quem-e-renan-santos-presidenciavel-partido-missao/', '2026-05-28') },
     ],
+    caiado: [
+      { text: dv('Parceria estratégica com EUA e Japão para processamento de terras raras', 'https://g1.globo.com/politica/eleicoes/2026/noticia/2026/03/30/anistia-a-bolsonaro-terras-raras-combate-ao-crime-as-propostas-de-caiado-no-1o-discurso.ghtml', '2026-03-30') },
+      { text: dv('Soberania nacional na exploração de minerais críticos e terras raras', 'https://g1.globo.com/politica/eleicoes/2026/noticia/2026/03/30/anistia-a-bolsonaro-terras-raras-combate-ao-crime-as-propostas-de-caiado-no-1o-discurso.ghtml', '2026-03-30') },
+    ],
+    zema: [],
   },
   {
     id: 'reforma-politica',
@@ -197,6 +261,15 @@ export const proposalSections: ProposalSection[] = [
       { text: dv('Lei de Responsabilidade Gerencial', 'https://caminhodamissao.com/candidato/renan-santos', '2026-06-26') },
       { text: dv('Fusão de municípios inviáveis', 'https://caminhodamissao.com/candidato/renan-santos', '2026-06-26') },
       { text: dv('Corte privilégios Judiciário', 'https://caminhodamissao.com/candidato/renan-santos', '2026-06-26') },
+    ],
+    caiado: [
+      { text: dv('Anistia ampla, geral e irrestrita para condenados do 8 de janeiro', 'https://g1.globo.com/politica/eleicoes/2026/noticia/2026/03/30/anistia-a-bolsonaro-terras-raras-combate-ao-crime-as-propostas-de-caiado-no-1o-discurso.ghtml', '2026-03-30') },
+      { text: dv('Reforma política com racionalidade e base na experiência de gestão', 'https://g1.globo.com/politica/eleicoes/2026/noticia/2026/03/30/anistia-a-bolsonaro-terras-raras-combate-ao-crime-as-propostas-de-caiado-no-1o-discurso.ghtml', '2026-03-30') },
+    ],
+    zema: [
+      { text: dv('Novo STF: mandato de 15 anos, idade mínima de 60 anos, parentes sem negócios jurídicos', 'https://g1.globo.com/jornal-nacional/noticia/2026/04/16/novo-apresenta-diretrizes-do-plano-de-governo-de-romeu-zema-pre-candidato-do-partido-a-presidencia-da-republica.ghtml', '2026-04-16') },
+      { text: dv('Anistia para condenados pelos atos golpistas de 8 de janeiro', 'https://g1.globo.com/jornal-nacional/noticia/2026/04/16/novo-apresenta-diretrizes-do-plano-de-governo-de-romeu-zema-pre-candidato-do-partido-a-presidencia-da-republica.ghtml', '2026-04-16') },
+      { text: dv('Transparência total do Judiciário com prestação de contas obrigatória', 'https://www.otempo.com.br/politica/2026/4/16/plano-de-governo-de-zema-preve-novo-supremo-programa-de-moralizacao-do-judiciario', '2026-04-16') },
     ],
   },
   {
@@ -220,6 +293,14 @@ export const proposalSections: ProposalSection[] = [
       { text: dv('Uso terapêutico psicodélicos (cogumelos, ayahuasca)', 'https://www.metropoles.com/colunas/paulo-cappelli/renan-santos-explica-experiencia-com-cogumelos-fica-mais-produtivo', '2026-04-18') },
       { text: dv('Fim das cotas raciais e cotas sociais nas universidades', 'https://renansantos.wiki/posicoes/Propostas-para-Educa%C3%A7%C3%A3o', '2026-01-27') },
     ],
+    caiado: [
+      { text: dv('Defesa da família tradicional e contra a ideologia de gênero nas escolas', 'https://www.correiobraziliense.com.br/mundo/2026/03/7387104-a-segunda-disputa-de-ronaldo-caiado-pela-presidencia.html', '2026-03-30') },
+      { text: dv('Emancipação social — transição do assistencialismo para autonomia financeira', 'https://g1.globo.com/politica/eleicoes/2026/noticia/2026/03/30/anistia-a-bolsonaro-terras-raras-combate-ao-crime-as-propostas-de-caiado-no-1o-discurso.ghtml', '2026-03-30') },
+    ],
+    zema: [
+      { text: dv('Bolsa Família condicionado à aceitação de ofertas de emprego ("fim dos marmanjões")', 'https://oglobo.globo.com/politica/noticia/2026/04/16/zema-propoe-mandato-para-o-stf-privatizacao-de-100percent-das-estatais-e-fim-dos-beneficios-para-marmanjoes.ghtml', '2026-04-16') },
+      { text: dv('Família como núcleo central da sociedade', 'https://www.otempo.com.br/politica/2026/4/16/plano-de-governo-de-zema-preve-novo-supremo-programa-de-moralizacao-do-judiciario', '2026-04-16') },
+    ],
   },
   {
     id: 'agricultura',
@@ -241,6 +322,15 @@ export const proposalSections: ProposalSection[] = [
       { text: dv('Menos burocracia e regulação ambiental para produtores rurais', 'https://www.gazetasp.com.br/politica/quem-e-renan-santos-presidenciavel-partido-missao/', '2026-05-28') },
       { text: dv('Inovação e tecnologia no campo (agritech, agricultura de precisão)', 'https://www.gazetasp.com.br/politica/quem-e-renan-santos-presidenciavel-partido-missao/', '2026-05-28') },
       { text: dv('Reforma do INCRA com foco em produtividade e regularização fundiária', 'https://www.gazetasp.com.br/politica/quem-e-renan-santos-presidenciavel-partido-missao/', '2026-05-28') },
+    ],
+    caiado: [
+      { text: dv('Defesa do agronegócio e do direito de propriedade rural', 'https://www.correiobraziliense.com.br/mundo/2026/03/7387104-a-segunda-disputa-de-ronaldo-caiado-pela-presidencia.html', '2026-03-30') },
+      { text: dv('Contra demarcações de terras indígenas que afetem a produção rural', 'https://www.correiobraziliense.com.br/mundo/2026/03/7387104-a-segunda-disputa-de-ronaldo-caiado-pela-presidencia.html', '2026-03-30') },
+      { text: dv('Ex-presidente da UDR — histórico de defesa do produtor rural', 'https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Carreira_pol%C3%ADtica', '2026-06-26') },
+    ],
+    zema: [
+      { text: dv('Menos burocracia e regulação para o produtor rural', 'https://www.otempo.com.br/politica/2026/4/16/plano-de-governo-de-zema-preve-novo-supremo-programa-de-moralizacao-do-judiciario', '2026-04-16') },
+      { text: dv('Agronegócio como motor do desenvolvimento econômico nacional', 'https://www.otempo.com.br/politica/2026/4/16/plano-de-governo-de-zema-preve-novo-supremo-programa-de-moralizacao-do-judiciario', '2026-04-16') },
     ],
   },
 ]
