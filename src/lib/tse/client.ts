@@ -1,39 +1,4 @@
-import { execSync } from 'child_process'
-import { existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } from 'fs'
-import { tmpdir } from 'os'
-import { join, basename } from 'path'
-
-const CKAN_BASE = 'https://dadosabertos.tse.jus.br/api/3/action'
-
-export interface CkanResource {
-  id: string
-  name: string
-  format: string
-  url: string
-  description?: string
-}
-
-export interface CkanDataset {
-  id: string
-  name: string
-  title: string
-  resources: CkanResource[]
-}
-
-export async function fetchJson<T>(url: string): Promise<T> {
-  const res = await fetch(url)
-  if (!res.ok) throw new Error(`GET ${url} failed: ${res.status}`)
-  return res.json() as Promise<T>
-}
-
-export async function getDataset(name: string): Promise<CkanDataset> {
-  const json = await fetchJson<{
-    success: boolean
-    result: CkanDataset
-  }>(`${CKAN_BASE}/package_show?id=${name}`)
-  if (!json.success) throw new Error(`CKAN package_show failed for ${name}`)
-  return json.result
-}
+import { inflateRawSync } from 'node:zlib'
 
 export function parseCsv(text: string): Record<string, string>[] {
   const lines: string[] = []
@@ -105,55 +70,49 @@ function parseCsvLine(line: string): string[] {
   return values
 }
 
-function unzip(zipPath: string, destDir: string): void {
-  if (!existsSync(destDir)) mkdirSync(destDir, { recursive: true })
-  if (process.platform === 'win32') {
-    execSync(
-      `powershell -Command "Expand-Archive -LiteralPath '${zipPath}' -DestinationPath '${destDir}' -Force"`,
-      { stdio: 'pipe' },
-    )
-  } else {
-    execSync(
-      `python3 -c "import zipfile,sys; zipfile.ZipFile(sys.argv[1]).extractall(sys.argv[2])" "${zipPath}" "${destDir}"`,
-      { stdio: 'pipe' },
-    )
+function extractCsvFromZipBuffer(buf: Buffer): string {
+  let offset = 0
+
+  while (offset < buf.length - 30) {
+    if (buf.readUInt32LE(offset) !== 0x04034b50) { offset++; continue }
+
+    const flags = buf.readUInt16LE(offset + 6)
+    const method = buf.readUInt16LE(offset + 8)
+    let compressedSize = buf.readUInt32LE(offset + 18)
+    const filenameLen = buf.readUInt16LE(offset + 26)
+    const extraLen = buf.readUInt16LE(offset + 28)
+
+    const filename = buf.toString('latin1', offset + 30, offset + 30 + filenameLen)
+    const dataOff = offset + 30 + filenameLen + extraLen
+
+    if ((flags & 0x08) !== 0) {
+      let next = dataOff
+      while (next < buf.length - 4) {
+        const sig = buf.readUInt32LE(next)
+        if (sig === 0x04034b50 || sig === 0x02014b50) break
+        next++
+      }
+      compressedSize = next - dataOff
+    }
+
+    if (filename.includes('BRASIL') && filename.endsWith('.csv')) {
+      const data = buf.subarray(dataOff, dataOff + compressedSize)
+      if (method === 0) return data.toString('latin1')
+      if (method === 8) return inflateRawSync(data).toString('latin1')
+      throw new Error(`Unsupported ZIP compression: ${method}`)
+    }
+
+    offset = dataOff + compressedSize
   }
+
+  throw new Error('BRASIL.csv not found in ZIP')
 }
 
 export async function downloadCsvZip(
   url: string,
 ): Promise<Record<string, string>[]> {
-  const tmpDir = join(tmpdir(), 'tse-download')
-  if (!existsSync(tmpDir)) mkdirSync(tmpDir, { recursive: true })
-
-  const zipName = basename(url)
-  const zipPath = join(tmpDir, zipName)
-
   const res = await fetch(url)
   if (!res.ok) throw new Error(`Download ${url} failed: ${res.status}`)
-  const buffer = Buffer.from(await res.arrayBuffer())
-  writeFileSync(zipPath, buffer)
-
-  const extractDir = join(tmpDir, zipName.replace(/\.zip$/, ''))
-  if (existsSync(extractDir)) rmSync(extractDir, { recursive: true })
-
-  unzip(zipPath, extractDir)
-
-  const { readdirSync } = await import('fs')
-  const files = readdirSync(extractDir)
-  const csvFile =
-    files.find(
-      (f) =>
-        f.includes('BRASIL') && (f.endsWith('.csv') || f.endsWith('.txt')),
-    ) ??
-    files.find((f) => f.endsWith('.csv') || f.endsWith('.txt'))
-  if (!csvFile) throw new Error(`No CSV found in ${extractDir}`)
-
-  const csvPath = join(extractDir, csvFile)
-  const raw = readFileSync(csvPath, 'latin1')
-
-  rmSync(zipPath)
-  rmSync(extractDir, { recursive: true })
-
-  return parseCsv(raw)
+  const buf = Buffer.from(await res.arrayBuffer())
+  return parseCsv(extractCsvFromZipBuffer(buf))
 }
