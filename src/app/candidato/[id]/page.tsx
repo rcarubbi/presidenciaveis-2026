@@ -1,11 +1,62 @@
 import { candidates } from '@/data/candidates'
 import { notFound } from 'next/navigation'
 import { CandidateLayout } from '@/components/Layout/CandidateLayout'
+import { generateCandidateJsonLd } from '@/lib/jsonLd'
+import type { Metadata } from 'next'
 
-export default async function CandidatePage({ params }: { params: Promise<{ id: string }> }) {
+const BASE_URL =
+  process.env.NEXT_PUBLIC_BASE_URL || 'https://presidenciaveis-2026.vercel.app'
+
+export function generateStaticParams() {
+  return candidates.map((c) => ({ id: c.id }))
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ id: string }>
+}): Promise<Metadata> {
+  const { id } = await params
+  const candidate = candidates.find((c) => c.id === id)
+  if (!candidate) return {}
+
+  const url = `${BASE_URL}/candidato/${candidate.id}`
+
+  return {
+    title: `${candidate.fullName.value} — Presidenciáveis 2026`,
+    description: `Perfil completo de ${candidate.fullName.value}, candidato à Presidência do Brasil em 2026 pelo ${candidate.party.name.value}. Dados pessoais, carreira, posicionamento político, escândalos e financiamento.`,
+    openGraph: {
+      title: `${candidate.fullName.value} — Presidenciáveis 2026`,
+      description: `Perfil completo de ${candidate.fullName.value}, candidato à Presidência do Brasil em 2026 pelo ${candidate.party.name.value}.`,
+      url,
+      type: 'profile',
+    },
+    twitter: {
+      title: `${candidate.fullName.value} — Presidenciáveis 2026`,
+      description: `Perfil completo de ${candidate.fullName.value}, candidato à Presidência do Brasil em 2026.`,
+    },
+    alternates: { canonical: url },
+  }
+}
+
+export default async function CandidatePage({
+  params,
+}: {
+  params: Promise<{ id: string }>
+}) {
   const { id } = await params
   const candidate = candidates.find((c) => c.id === id)
   if (!candidate) notFound()
 
-  return <CandidateLayout candidate={candidate} />
+  const jsonLd = generateCandidateJsonLd(candidate, BASE_URL)
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <CandidateLayout candidate={candidate} />
+    </>
+  )
 }

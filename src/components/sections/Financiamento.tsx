@@ -22,15 +22,22 @@ export function Financiamento({ candidates }: FinanciamentoProps) {
     Gasto: c.campaignFinance.comparison.gasto.value,
   }))
 
-  const fontesData = candidates.map((c) => ({
-    id: c.id,
-    name: c.name.value,
-    fontes: c.campaignFinance.fontes.map((f) => ({
+  const fontesData = candidates.map((c) => {
+    const raw = c.campaignFinance.fontes.map((f) => ({
       name: f.name.value,
       value: f.value.value,
       color: f.color,
-    })),
-  }))
+    }))
+    const total = raw.reduce((s, f) => s + f.value, 0)
+    return {
+      id: c.id,
+      name: c.name.value,
+      fontes: raw.map((f) => ({
+        ...f,
+        value: total > 0 ? Math.round((f.value / total) * 100) : 0,
+      })),
+    }
+  })
 
   return (
     <div className="space-y-6">
