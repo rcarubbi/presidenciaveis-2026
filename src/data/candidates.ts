@@ -15,6 +15,7 @@ export const candidates: Candidate[] = [
 			"2026-06-26",
 		),
 		photo: "/lula.png",
+		photoPos: "center top",
 		party: {
 			name: dv("PT"),
 			number: 13,
@@ -850,6 +851,7 @@ export const candidates: Candidate[] = [
 			"2026-06-26",
 		),
 		photo: "/flavio.png",
+		photoPos: "center top",
 		party: {
 			name: dv("PL"),
 			number: 22,
@@ -1552,6 +1554,7 @@ export const candidates: Candidate[] = [
 			"2026-06-26",
 		),
 		photo: "/renan.png",
+		photoPos: "center top",
 		party: {
 			name: dv("Missão"),
 			number: 14,

@@ -7,7 +7,8 @@ import { ErrorBoundary } from '@/components/ErrorBoundary'
 import { ToasterProvider } from '@/components/ToasterProvider'
 import { CookieConsent } from '@/components/CookieConsent'
 import { GaScript } from '@/components/GaScript'
-import { generateWebsiteJsonLd } from '@/lib/jsonLd'
+import { ThemeScript } from '@/components/ThemeScript'
+import { JsonLdScript } from '@/components/JsonLdScript'
 
 const BASE_URL =
   process.env.NEXT_PUBLIC_BASE_URL || 'https://presidenciaveis-2026.vercel.app'
@@ -23,18 +24,11 @@ export const metadata: Metadata = {
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  const websiteJsonLd = generateWebsiteJsonLd(BASE_URL)
-
   return (
     <html lang="pt-BR" suppressHydrationWarning>
       <head>
-        <script dangerouslySetInnerHTML={{
-          __html: `(function(){try{var t=localStorage.getItem('theme'),d=window.matchMedia('(prefers-color-scheme: dark)').matches;if(t==='dark'||(!t&&d))document.documentElement.classList.add('dark');var f=localStorage.getItem('fontSize');if(f==='large')document.documentElement.classList.add('text-large');if(f==='xlarge')document.documentElement.classList.add('text-xlarge')}catch(e){}})()`
-        }} />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
-        />
+        <ThemeScript />
+        <JsonLdScript baseUrl={BASE_URL} />
       </head>
       <body>
         <GaScript />

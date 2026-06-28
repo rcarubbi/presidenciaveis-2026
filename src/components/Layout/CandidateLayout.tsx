@@ -1,8 +1,8 @@
 'use client'
 
 import { useState } from 'react'
-import Link from 'next/link'
 import { useRouter } from 'next/navigation'
+import { navWithTransition } from '@/lib/viewTransition'
 import type { Candidate, CandidateSubTab } from '../../types'
 import { ArrowLeft } from 'lucide-react'
 import { DadosPessoais } from '../sections/DadosPessoais'
@@ -34,27 +34,27 @@ export function CandidateLayout({ candidate, initialTab }: CandidateLayoutProps)
     router.replace(`/candidato/${c.id}?tab=${tab}`, { scroll: false })
   }
 
-  const renderSubContent = () => {
-    switch (activeSubTab) {
-      case 'hero': return <CandidateHeroFull candidate={c} />
-      case 'dados': return <DadosPessoais candidates={[c]} />
-      case 'carreira': return <Carreira candidates={[c]} />
-      case 'plano': return <PlanoGoverno candidates={[c]} />
-      case 'escandalos': return <Escandalos candidates={[c]} />
-      case 'financiamento': return <Financiamento candidates={[c]} />
-      case 'posicionamento': return <Posicionamento candidates={[c]} />
-    }
+  const subContentMap: Record<CandidateSubTab, React.ReactNode> = {
+    hero: <CandidateHeroFull candidate={c} />,
+    dados: <DadosPessoais candidates={[c]} />,
+    carreira: <Carreira candidates={[c]} />,
+    plano: <PlanoGoverno candidates={[c]} />,
+    escandalos: <Escandalos candidates={[c]} />,
+    financiamento: <Financiamento candidates={[c]} />,
+    posicionamento: <Posicionamento candidates={[c]} />,
   }
+
+  const renderSubContent = () => subContentMap[activeSubTab]
 
   return (
     <div className="space-y-8 animate-fade-in">
-      <Link
-        href="/"
-        className="flex items-center gap-2 text-sm font-medium text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 transition-colors"
+      <button
+        onClick={() => navWithTransition(() => router.push('/'), 'nav-back')}
+        className="flex items-center gap-2 text-sm font-medium text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 transition-colors cursor-pointer"
       >
         <ArrowLeft size={16} />
         Voltar
-      </Link>
+      </button>
 
       <HeroBanner candidate={c} />
 

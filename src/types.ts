@@ -9,6 +9,7 @@ export interface Candidate {
 	name: DataValue;
 	fullName: DataValue;
 	photo: string;
+	photoPos?: string;
 	party: {
 		name: DataValue;
 		number: number;

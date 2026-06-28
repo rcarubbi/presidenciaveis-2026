@@ -19,7 +19,7 @@ export function Header() {
   const fontSizeTitle = fontSize === 'normal' ? 'Aumentar fonte' : fontSize === 'large' ? 'Fonte grande' : 'Fonte extra grande'
 
   return (
-    <header className="sticky top-0 z-50 glass-strong border-b border-gray-200/30 dark:border-gray-700/30 shadow-sm no-print">
+    <header className="sticky top-0 z-50 glass-strong border-b border-gray-200/30 dark:border-gray-700/30 shadow-sm no-print" style={{ viewTransitionName: 'persistent-header' }}>
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex items-center justify-between h-11">
           <div className="flex items-center gap-2">

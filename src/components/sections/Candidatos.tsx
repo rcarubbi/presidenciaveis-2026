@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
+import { navWithTransition } from '@/lib/viewTransition'
 import type { Candidate } from '../../types'
 import { CandidateCard } from '../CandidateCard'
 
@@ -16,7 +17,7 @@ export function Candidatos({ candidates }: CandidatosProps) {
 
   const handleCardClick = (id: string) => {
     setCardLoading(id)
-    router.push(`/candidato/${id}`)
+    navWithTransition(() => router.push(`/candidato/${id}`), 'nav-forward')
   }
 
   const handleCompareClick = (id: string, e: React.MouseEvent) => {
@@ -25,7 +26,7 @@ export function Candidatos({ candidates }: CandidatosProps) {
     const next = [...compareSelection, id]
     if (next.length === 2) {
       setCompareSelection([])
-      router.push(`/comparar?ids=${next[0]},${next[1]}`)
+      navWithTransition(() => router.push(`/comparar?ids=${next[0]},${next[1]}`), 'nav-forward')
     } else {
       setCompareSelection(next)
     }
@@ -64,7 +65,12 @@ export function Candidatos({ candidates }: CandidatosProps) {
             isCompareSelected={compareSelection.includes(c.id)}
             onCardClick={handleCardClick}
             onCompareClick={handleCompareClick}
-          />
+          >
+            <CandidateCard.Photo>
+              <CandidateCard.PartyBadge />
+              <CandidateCard.Info />
+            </CandidateCard.Photo>
+          </CandidateCard>
         ))}
       </div>
     </>
