@@ -11,6 +11,7 @@ import { PlanoGoverno } from '../sections/PlanoGoverno'
 import { Escandalos } from '../sections/Escandalos'
 import { Financiamento } from '../sections/Financiamento'
 import { Posicionamento } from '../sections/Posicionamento'
+import { Midia } from '../sections/Midia'
 import { HeroBanner } from './HeroBanner'
 import { CandidateTabs } from './CandidateTabs'
 import { CandidateHeroFull } from './CandidateHeroFull'
@@ -20,7 +21,7 @@ interface CandidateLayoutProps {
   initialTab?: string
 }
 
-const validTabs: CandidateSubTab[] = ['hero', 'dados', 'carreira', 'plano', 'escandalos', 'financiamento', 'posicionamento']
+const validTabs: CandidateSubTab[] = ['hero', 'dados', 'carreira', 'plano', 'escandalos', 'financiamento', 'midia', 'posicionamento']
 
 export function CandidateLayout({ candidate, initialTab }: CandidateLayoutProps) {
   const router = useRouter()
@@ -41,6 +42,7 @@ export function CandidateLayout({ candidate, initialTab }: CandidateLayoutProps)
     plano: <PlanoGoverno candidates={[c]} />,
     escandalos: <Escandalos candidates={[c]} />,
     financiamento: <Financiamento candidates={[c]} />,
+    midia: <Midia candidates={[c]} />,
     posicionamento: <Posicionamento candidates={[c]} />,
   }
 

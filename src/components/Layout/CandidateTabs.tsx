@@ -1,7 +1,7 @@
 'use client'
 
 import type { CandidateSubTab } from '../../types'
-import { Eye, User, Briefcase, FileText, Shield, DollarSign, Grid3X3 } from 'lucide-react'
+import { Eye, User, Briefcase, FileText, Shield, DollarSign, Grid3X3, Video } from 'lucide-react'
 
 interface CandidateTabsProps {
   candidateId: string
@@ -16,6 +16,7 @@ const tabs: { id: CandidateSubTab; label: string; icon: React.ComponentType<{ si
   { id: 'plano', label: 'Plano Governo', icon: FileText },
   { id: 'escandalos', label: 'Escândalos', icon: Shield },
   { id: 'financiamento', label: 'Financiamento', icon: DollarSign },
+  { id: 'midia', label: 'Mídia', icon: Video },
   { id: 'posicionamento', label: 'Posicionamento', icon: Grid3X3 },
 ]
 

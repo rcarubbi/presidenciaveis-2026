@@ -92,6 +92,19 @@ export interface ProposalItem {
 	text: DataValue;
 }
 
+export interface MediaItem {
+	title: DataValue;
+	description: DataValue;
+	youtubeId: string;
+	category: string;
+}
+
+export interface MediaCategory {
+	id: string;
+	label: string;
+	items: MediaItem[];
+}
+
 export type CandidateSubTab =
 	| "hero"
 	| "dados"
@@ -99,4 +112,5 @@ export type CandidateSubTab =
 	| "plano"
 	| "escandalos"
 	| "financiamento"
-	| "posicionamento";
+	| "posicionamento"
+	| "midia";
