@@ -46,7 +46,7 @@ html {
 .text-xlarge { font-size: 19px; }
 
 body {
-  @apply bg-gray-50 text-gray-900 dark:bg-gray-950 dark:text-gray-100 antialiased;
+  @apply bg-gray-100 text-gray-900 dark:bg-gray-950 dark:text-gray-100 antialiased;
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
 }
 

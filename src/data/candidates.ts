@@ -954,7 +954,7 @@ export const candidates: Candidate[] = [
 				party: dv("PL"),
 				status: dv(
 					"Candidatura própria",
-					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Carreira_pol%C3%ADtica",
 					"2026-06-26",
 				),
 			},
@@ -966,7 +966,7 @@ export const candidates: Candidate[] = [
 		),
 		careerYears: dvn(
 			22,
-			"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro",
+			"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Carreira_pol%C3%ADtica",
 			"2026-06-26",
 		),
 		currentPosition: dv(
@@ -1559,15 +1559,15 @@ export const candidates: Candidate[] = [
 			color: "#d97706",
 			colorLight: "#f59e0b",
 		},
-		age: dvn(42, "https://pt.wikipedia.org/wiki/Renan_Santos", "2026-06-26"),
+		age: dvn(42, "https://pt.wikipedia.org/wiki/Renan_Santos#Juventude", "2026-06-26"),
 		birthYear: dvn(
 			1984,
-			"https://pt.wikipedia.org/wiki/Renan_Santos",
+			"https://pt.wikipedia.org/wiki/Renan_Santos#Juventude",
 			"2026-06-26",
 		),
 		naturalidade: dv(
 			"São Paulo, SP",
-			"https://pt.wikipedia.org/wiki/Renan_Santos",
+			"https://pt.wikipedia.org/wiki/Renan_Santos#Juventude",
 			"2026-06-26",
 		),
 		estadoCivil: dv(
@@ -1602,7 +1602,7 @@ export const candidates: Candidate[] = [
 		),
 		residencia: dv(
 			"São Paulo, SP",
-			"https://pt.wikipedia.org/wiki/Renan_Santos",
+			"https://pt.wikipedia.org/wiki/Renan_Santos#Juventude",
 			"2026-06-26",
 		),
 		patrimonio: null,
@@ -1930,6 +1930,30 @@ export const candidates: Candidate[] = [
 					"Contra. Campanha via crowdfunding (vaquinha). Partido Missão sem fundo eleitoral consolidado. Defende financiamento voluntário.",
 					"https://aonpelavida.com.br/renan-santos-aparece-em-3o-lugar-na-pesquisa-atlasintel",
 					"2026-03-26",
+				),
+			},
+			{
+				issue: dv(
+					"Cotas Raciais",
+					"https://www.bbc.com/portuguese/articles/cn7846447j3o",
+					"2026-04-28",
+				),
+				position: dv(
+					"Contrário. Crítico das políticas de ação afirmativa nas universidades.",
+					"https://www.bbc.com/portuguese/articles/cn7846447j3o",
+					"2026-04-28",
+				),
+			},
+			{
+				issue: dv(
+					"Assistência Social",
+					"https://www.bbc.com/portuguese/articles/cn7846447j3o",
+					"2026-04-28",
+				),
+				position: dv(
+					'"Mutirão anti-Bolsa Família". Substituir benefício por frentes de trabalho. Homens e mulheres saudáveis devem trabalhar. Crítico do custo do BF retirado do salário de quem paga imposto.',
+					"https://www.bbc.com/portuguese/articles/cn7846447j3o",
+					"2026-04-28",
 				),
 			},
 		],
