@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
+import { useRouter } from 'next/navigation'
 import type { Candidate, CandidateSubTab } from '../../types'
 import { ArrowLeft, GitCompare } from 'lucide-react'
 import { DadosPessoais } from '../sections/DadosPessoais'
@@ -16,11 +17,22 @@ import { CandidateHeroFull } from './CandidateHeroFull'
 
 interface CandidateLayoutProps {
   candidate: Candidate
+  initialTab?: string
 }
 
-export function CandidateLayout({ candidate }: CandidateLayoutProps) {
+const validTabs: CandidateSubTab[] = ['hero', 'dados', 'carreira', 'plano', 'escandalos', 'financiamento', 'posicionamento']
+
+export function CandidateLayout({ candidate, initialTab }: CandidateLayoutProps) {
+  const router = useRouter()
   const c = candidate
-  const [activeSubTab, setActiveSubTab] = useState<CandidateSubTab>('hero')
+  const [activeSubTab, setActiveSubTab] = useState<CandidateSubTab>(
+    validTabs.includes(initialTab as CandidateSubTab) ? (initialTab as CandidateSubTab) : 'hero'
+  )
+
+  const handleTabChange = (tab: CandidateSubTab) => {
+    setActiveSubTab(tab)
+    router.replace(`/candidato/${c.id}?tab=${tab}`, { scroll: false })
+  }
 
   const renderSubContent = () => {
     switch (activeSubTab) {
@@ -55,7 +67,7 @@ export function CandidateLayout({ candidate }: CandidateLayoutProps) {
 
       <HeroBanner candidate={c} />
 
-      <CandidateTabs candidateId={c.id} activeTab={activeSubTab} onTabChange={setActiveSubTab} />
+      <CandidateTabs candidateId={c.id} activeTab={activeSubTab} onTabChange={handleTabChange} />
 
       <div className="tab-enter" key={activeSubTab} role="tabpanel" id={`subpanel-${c.id}-${activeSubTab}`} aria-labelledby={`subtab-${c.id}-${activeSubTab}`}>
         {renderSubContent()}

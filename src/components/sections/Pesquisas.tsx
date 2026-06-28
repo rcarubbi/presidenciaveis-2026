@@ -1,5 +1,6 @@
 'use client'
 
+import { useRouter } from 'next/navigation'
 import { usePollsData } from '../../hooks/usePollsData'
 import { SourceToggle } from './SourceToggle'
 import { InstituteFilter } from './InstituteFilter'
@@ -9,7 +10,12 @@ import { Spinner } from '../ui/Spinner'
 
 const institutes = ['AtlasIntel', 'Datafolha', 'Quaest', 'Real Time Big Data']
 
-export function Pesquisas() {
+interface PesquisasProps {
+  initialSource?: 'institutes' | 'tse'
+}
+
+export function Pesquisas({ initialSource }: PesquisasProps) {
+  const router = useRouter()
   const {
     source, setSource,
     selected, setSelected,
@@ -17,14 +23,19 @@ export function Pesquisas() {
     firstRoundData, secondRoundData,
     rejectionData, spontaneousData, regionalData,
     filtered,
-  } = usePollsData()
+  } = usePollsData(initialSource)
+
+  const handleSourceChange = (s: 'institutes' | 'tse') => {
+    setSource(s)
+    router.replace(`/pesquisas?source=${s}`, { scroll: false })
+  }
 
   const dates = filtered.map((p) => p.date).join(', ')
   const noData = source === 'institutes' ? filtered.length === 0 : (!tseData || tseData.totalPolls === 0)
 
   return (
     <div className="space-y-6">
-      <SourceToggle source={source} onChange={setSource} />
+      <SourceToggle source={source} onChange={handleSourceChange} />
 
       {noData && source === 'institutes' ? (
         <>

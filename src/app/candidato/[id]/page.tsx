@@ -41,10 +41,13 @@ export async function generateMetadata({
 
 export default async function CandidatePage({
   params,
+  searchParams,
 }: {
   params: Promise<{ id: string }>
+  searchParams: Promise<{ tab?: string }>
 }) {
   const { id } = await params
+  const { tab } = await searchParams
   const candidate = candidates.find((c) => c.id === id)
   if (!candidate) notFound()
 
@@ -56,7 +59,7 @@ export default async function CandidatePage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <CandidateLayout candidate={candidate} />
+      <CandidateLayout candidate={candidate} initialTab={tab} />
     </>
   )
 }

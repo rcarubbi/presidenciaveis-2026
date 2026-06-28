@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { useRouter } from 'next/navigation'
+import { useRouter, usePathname } from 'next/navigation'
 import { toast } from 'sonner'
 import type { Candidate, CandidateSubTab } from '../../types'
 import { X, Eye } from 'lucide-react'
@@ -18,23 +18,44 @@ import { ComparisonLegend } from './ComparisonLegend'
 interface ComparativoProps {
   candidates: Candidate[]
   initialIds?: string[]
+  initialTab?: string
 }
 
-export function Comparativo({ candidates, initialIds = ['lula', 'flavio', 'renan'] }: ComparativoProps) {
+const validCmpTabs: CandidateSubTab[] = ['dados', 'carreira', 'escandalos', 'financiamento', 'posicionamento', 'plano']
+
+export function Comparativo({ candidates, initialIds = ['lula', 'flavio', 'renan'], initialTab }: ComparativoProps) {
   const router = useRouter()
+  const pathname = usePathname()
   const [selectedIds, setSelectedIds] = useState<string[]>(initialIds)
-  const [cmpTab, setCmpTab] = useState<CandidateSubTab>('dados')
+  const [cmpTab, setCmpTab] = useState<CandidateSubTab>(
+    validCmpTabs.includes(initialTab as CandidateSubTab) ? (initialTab as CandidateSubTab) : 'dados'
+  )
+
+  const syncUrl = (tab: CandidateSubTab, ids: string[]) => {
+    const params = new URLSearchParams()
+    params.set('tab', tab)
+    params.set('ids', ids.join(','))
+    router.replace(`${pathname}?${params.toString()}`, { scroll: false })
+  }
+
+  const handleTabChange = (tab: CandidateSubTab) => {
+    setCmpTab(tab)
+    syncUrl(tab, selectedIds)
+  }
 
   const toggleCandidateSelection = (id: string) => {
+    let next: string[]
     if (selectedIds.includes(id)) {
       if (selectedIds.length <= 2) {
         toast.error('Mínimo de 2 candidatos para comparação')
         return
       }
-      setSelectedIds(selectedIds.filter((x) => x !== id))
+      next = selectedIds.filter((x) => x !== id)
     } else {
-      setSelectedIds([...selectedIds, id])
+      next = [...selectedIds, id]
     }
+    setSelectedIds(next)
+    syncUrl(cmpTab, next)
   }
 
   const filtered = candidates.filter((c) => selectedIds.includes(c.id))
@@ -69,7 +90,7 @@ export function Comparativo({ candidates, initialIds = ['lula', 'flavio', 'renan
 
       <ComparisonSelector candidates={candidates} selectedIds={selectedIds} onToggle={toggleCandidateSelection} />
 
-      <ComparisonTabs activeTab={cmpTab} onTabChange={setCmpTab} />
+      <ComparisonTabs activeTab={cmpTab} onTabChange={handleTabChange} />
 
       <ComparisonLegend candidates={filtered} />
 

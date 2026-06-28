@@ -19,8 +19,8 @@ function sortDate(a: string, b: string) {
   return parse(b) - parse(a)
 }
 
-export function usePollsData() {
-  const [source, setSource] = useState<'institutes' | 'tse'>('institutes')
+export function usePollsData(initialSource?: 'institutes' | 'tse') {
+  const [source, setSource] = useState<'institutes' | 'tse'>(initialSource ?? 'institutes')
   const [selected, setSelected] = useState('AtlasIntel')
   const [tseData, setTseData] = useState<TseResponse | null>(null)
   const [tseLoading, setTseLoading] = useState(false)

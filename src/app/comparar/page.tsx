@@ -9,9 +9,10 @@ import { Spinner } from '@/components/ui/Spinner'
 function CompararContent() {
   const searchParams = useSearchParams()
   const idsParam = searchParams.get('ids')
+  const tabParam = searchParams.get('tab')
   const initialIds = idsParam ? idsParam.split(',') : undefined
 
-  return <Comparativo candidates={candidates} initialIds={initialIds} />
+  return <Comparativo candidates={candidates} initialIds={initialIds} initialTab={tabParam ?? undefined} />
 }
 
 export default function CompararPage() {
