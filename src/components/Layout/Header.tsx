@@ -13,10 +13,9 @@ const tabs = [
 
 export function Header() {
   const pathname = usePathname()
-  const { theme, toggleTheme, fontSize, toggleFontSize } = useApp()
+  const { theme, toggleTheme } = useApp()
 
   const activeTab = pathname === '/pesquisas' ? 'pesquisas' : pathname.startsWith('/comparar') ? 'comparativo' : 'candidatos'
-  const fontSizeTitle = fontSize === 'normal' ? 'Aumentar fonte' : fontSize === 'large' ? 'Fonte grande' : 'Fonte extra grande'
 
   return (
     <header className="sticky top-0 z-50 glass-strong border-b border-gray-200/30 dark:border-gray-700/30 shadow-sm no-print" style={{ viewTransitionName: 'persistent-header' }}>
@@ -29,16 +28,6 @@ export function Header() {
             </h1>
           </div>
           <div className="flex items-center gap-1">
-            <button
-              onClick={toggleFontSize}
-              className="p-2 rounded-lg text-gray-500 hover:text-gray-700 dark:hover:text-gray-200 hover:bg-white/50 dark:hover:bg-gray-800/50 transition-all duration-200 focus-visible:ring-2 focus-visible:ring-gray-400"
-              aria-label={fontSizeTitle}
-              title={fontSizeTitle}
-            >
-              <span className={`font-bold ${fontSize === 'normal' ? 'text-sm' : fontSize === 'large' ? 'text-base' : 'text-lg'}`}>
-                Aa
-              </span>
-            </button>
             <button
               onClick={toggleTheme}
               className="p-2 rounded-lg text-gray-500 hover:text-gray-700 dark:hover:text-gray-200 hover:bg-white/50 dark:hover:bg-gray-800/50 transition-all duration-200 focus-visible:ring-2 focus-visible:ring-gray-400"

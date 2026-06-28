@@ -39,11 +39,8 @@
 
 html {
   scroll-behavior: smooth;
-  font-size: 15px;
+  font-size: 17px;
 }
-
-.text-large { font-size: 17px; }
-.text-xlarge { font-size: 19px; }
 
 body {
   @apply bg-gray-100 text-gray-900 dark:bg-gray-950 dark:text-gray-100 antialiased;
@@ -168,9 +165,6 @@ body {
 .photo-ring-flavio { box-shadow: 0 0 0 3px rgba(26, 79, 160, 0.3), 0 0 20px -4px rgba(26, 79, 160, 0.2); }
 .photo-ring-renan { box-shadow: 0 0 0 3px rgba(217, 119, 6, 0.3), 0 0 20px -4px rgba(217, 119, 6, 0.2); }
 
-.text-large .blob { opacity: 0.04; }
-.text-xlarge .blob { opacity: 0.02; }
-.text-xlarge .blob-bg { display: none; }
 
 @media print {
   header, .blob-bg, .no-print, nav, button, [role="tablist"] { display: none !important; }
