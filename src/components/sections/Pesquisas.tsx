@@ -1,6 +1,7 @@
 'use client'
 
 import { useRouter } from 'next/navigation'
+import { BarChart3 } from 'lucide-react'
 import { usePollsData } from '../../hooks/usePollsData'
 import { SourceToggle } from './SourceToggle'
 import { InstituteFilter } from './InstituteFilter'
@@ -35,6 +36,16 @@ export function Pesquisas({ initialSource }: PesquisasProps) {
 
   return (
     <div className="space-y-6">
+      <div className="glass rounded-xl p-6 space-y-3 border-l-4 border-gray-300 dark:border-gray-600">
+        <h2 className="text-base font-semibold text-gray-800 dark:text-gray-100 flex items-center gap-2">
+          <BarChart3 size={18} className="text-gray-500" />
+          Pesquisas Eleitorais 2026
+        </h2>
+        <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+          Acompanhe as intenções de voto para Presidente da República. Os dados podem ser visualizados por instituto de pesquisa (Datafolha, Quaest, AtlasIntel, Real Time Big Data) ou pelos registros oficiais do Tribunal Superior Eleitoral. Selecione a fonte abaixo.
+        </p>
+
+      </div>
       <SourceToggle source={source} onChange={handleSourceChange} />
 
       {noData && source === 'institutes' ? (
