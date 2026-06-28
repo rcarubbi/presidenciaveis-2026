@@ -7,7 +7,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "oxlint"
+    "lint": "oxlint",
+    "typecheck": "tsc --noEmit",
+    "fetch:tse": "node --experimental-strip-types scripts/fetch-tse-data.ts"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
