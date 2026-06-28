@@ -82,13 +82,14 @@ export const proposalSections: ProposalSection[] = [
     caiado: [
       { text: dv('Exploração e processamento de terras raras com parceria EUA/Japão', 'https://g1.globo.com/politica/eleicoes/2026/noticia/2026/03/30/anistia-a-bolsonaro-terras-raras-combate-ao-crime-as-propostas-de-caiado-no-1o-discurso.ghtml', '2026-03-30') },
       { text: dv('Contrário a aumento de impostos para ricos ("populismo fiscal")', 'https://www.correiobraziliense.com.br/mundo/2026/03/7387104-a-segunda-disputa-de-ronaldo-caiado-pela-presidencia.html', '2026-03-30') },
-      { text: dv('Economia de mercado, livre iniciativa e defesa do setor produtivo', 'https://g1.globo.com/politica/eleicoes/2026/noticia/2026/03/30/anistia-a-bolsonaro-terras-raras-combate-ao-crime-as-propostas-de-caiado-no-1o-discurso.ghtml', '2026-03-30') },
-      { text: dv('Crítico da taxa de juros e seus efeitos sobre o setor produtivo', 'https://g1.globo.com/politica/eleicoes/2026/noticia/2026/03/30/anistia-a-bolsonaro-terras-raras-combate-ao-crime-as-propostas-de-caiado-no-1o-discurso.ghtml', '2026-03-30') },
+      { text: dv('Política industrial focada em mineração, agronegócio e tecnologia', 'https://www.correiobraziliense.com.br/mundo/2026/03/7387104-a-segunda-disputa-de-ronaldo-caiado-pela-presidencia.html', '2026-03-30') },
+      { text: dv('Redução da taxa Selic para um dígito via ajuste fiscal e reformas estruturais', 'https://g1.globo.com/politica/eleicoes/2026/noticia/2026/03/30/anistia-a-bolsonaro-terras-raras-combate-ao-crime-as-propostas-de-caiado-no-1o-discurso.ghtml', '2026-03-30') },
     ],
     zema: [
       { text: dv('Privatização total das estatais federais (Petrobras, Caixa, BB, Correios)', 'https://oglobo.globo.com/politica/noticia/2026/04/16/zema-propoe-mandato-para-o-stf-privatizacao-de-100percent-das-estatais-e-fim-dos-beneficios-para-marmanjoes.ghtml', '2026-04-16') },
       { text: dv('CLT paralela — alternativa opcional à CLT com negociação direta', 'https://g1.globo.com/jornal-nacional/noticia/2026/04/16/novo-apresenta-diretrizes-do-plano-de-governo-de-romeu-zema-pre-candidato-do-partido-a-presidencia-da-republica.ghtml', '2026-04-16') },
-      { text: dv('Estado mínimo — redução da máquina pública e corte de gastos', 'https://oglobo.globo.com/politica/noticia/2026/04/16/zema-propoe-mandato-para-o-stf-privatizacao-de-100percent-das-estatais-e-fim-dos-beneficios-para-marmanjoes.ghtml', '2026-04-16') },
+      { text: dv('Redução de 30% dos cargos comissionados federais e fusão de ministérios', 'https://oglobo.globo.com/politica/noticia/2026/04/16/zema-propoe-mandato-para-o-stf-privatizacao-de-100percent-das-estatais-e-fim-dos-beneficios-para-marmanjoes.ghtml', '2026-04-16') },
+      { text: dv('Retomada do teto de gastos como regra fiscal e revisão de despesas obrigatórias', 'https://valor.globo.com/politica/noticia/2026/04/16/zema-lanca-propostas-de-governo-e-repete-que-ira-ate-o-fim-como-candidato-a-presidente.ghtml', '2026-04-16') },
     ],
   },
   {
@@ -112,7 +113,10 @@ export const proposalSections: ProposalSection[] = [
       { text: dv('Ampliação da rede hospitalar com foco em leitos de UTI (modelo Goiás pandemia)', 'https://portal.al.go.leg.br/noticias/163534/caiado-faz-balanco-da-gestao', '2026-03-31') },
       { text: dv('Telemedicina integrada para atendimento remoto especializado', 'https://portal.al.go.leg.br/noticias/163534/caiado-faz-balanco-da-gestao', '2026-03-31') },
     ],
-    zema: [],
+    zema: [
+      { text: dv('PPPs para gestão hospitalar e redução de filas no SUS — modelo aplicado em MG', 'https://www.otempo.com.br/politica/2026/4/16/plano-de-governo-de-zema-preve-novo-supremo-programa-de-moralizacao-do-judiciario', '2026-04-16') },
+      { text: dv('Telemedicina integrada como ferramenta de ampliação do acesso à saúde', 'https://www.otempo.com.br/politica/2026/4/16/plano-de-governo-de-zema-preve-novo-supremo-programa-de-moralizacao-do-judiciario', '2026-04-16') },
+    ],
   },
   {
     id: 'educacao',
@@ -145,6 +149,7 @@ export const proposalSections: ProposalSection[] = [
     zema: [
       { text: dv('Escola em tempo integral — MG tem a maior rede do país', 'https://www.otempo.com.br/politica/2026/4/16/plano-de-governo-de-zema-preve-novo-supremo-programa-de-moralizacao-do-judiciario', '2026-04-16') },
       { text: dv('Ensino técnico profissionalizante como prioridade nacional', 'https://www.otempo.com.br/politica/2026/4/16/plano-de-governo-de-zema-preve-novo-supremo-programa-de-moralizacao-do-judiciario', '2026-04-16') },
+      { text: dv('Escolas cívico-militares como modelo nacional de disciplina e ensino', 'https://g1.globo.com/jornal-nacional/noticia/2026/04/16/novo-apresenta-diretrizes-do-plano-de-governo-de-romeu-zema-pre-candidato-do-partido-a-presidencia-da-republica.ghtml', '2026-04-16') },
     ],
   },
   {
@@ -163,7 +168,11 @@ export const proposalSections: ProposalSection[] = [
       { text: dv('Nova reforma da Previdência', 'https://exame.com/brasil/virais-regionais-e-ataques-a-flavio-a-estrategia-de-renan-santos-para-a-eleicao/', '2026-04-08') },
       { text: dv('Flexibilização leis trabalhistas com limites', 'https://exame.com/brasil/virais-regionais-e-ataques-a-flavio-a-estrategia-de-renan-santos-para-a-eleicao/', '2026-04-08') },
     ],
-    caiado: [],
+    caiado: [
+      { text: dv('Jornada de trabalho flexível com contratação por hora e redução de encargos', 'https://g1.globo.com/politica/eleicoes/2026/noticia/2026/03/30/anistia-a-bolsonaro-terras-raras-combate-ao-crime-as-propostas-de-caiado-no-1o-discurso.ghtml', '2026-03-30') },
+      { text: dv('Reforma administrativa com corte de cargos comissionados e revisão de privilégios', 'https://g1.globo.com/politica/eleicoes/2026/noticia/2026/03/30/anistia-a-bolsonaro-terras-raras-combate-ao-crime-as-propostas-de-caiado-no-1o-discurso.ghtml', '2026-03-30') },
+      { text: dv('Estabilização da dívida pública com regra de ouro e controle de gastos obrigatórios', 'https://www.correiobraziliense.com.br/mundo/2026/03/7387104-a-segunda-disputa-de-ronaldo-caiado-pela-presidencia.html', '2026-03-30') },
+    ],
     zema: [
       { text: dv('Reforma definitiva da Previdência com gatilho automático por expectativa de vida', 'https://sintrajufe.org.br/plano-de-governo-de-zema-pre-candidato-do-partido-novo-preve-jornada-de-trabalho-sem-limite-de-horario-privatizacao-total-e-reforma-definitiva-da-previdencia/', '2026-04-16') },
       { text: dv('CLT paralela com jornada flexível negociada entre patrão e empregado', 'https://g1.globo.com/jornal-nacional/noticia/2026/04/16/novo-apresenta-diretrizes-do-plano-de-governo-de-romeu-zema-pre-candidato-do-partido-a-presidencia-da-republica.ghtml', '2026-04-16') },
@@ -187,6 +196,7 @@ export const proposalSections: ProposalSection[] = [
     ],
     caiado: [
       { text: dv('Indústria de processamento de terras raras com agregação de valor nacional', 'https://g1.globo.com/politica/eleicoes/2026/noticia/2026/03/30/anistia-a-bolsonaro-terras-raras-combate-ao-crime-as-propostas-de-caiado-no-1o-discurso.ghtml', '2026-03-30') },
+      { text: dv('Redução da dependência externa de fertilizantes com incentivo à produção nacional de insumos', 'https://www.correiobraziliense.com.br/mundo/2026/03/7387104-a-segunda-disputa-de-ronaldo-caiado-pela-presidencia.html', '2026-03-30') },
     ],
     zema: [
       { text: dv('Privatização de infraestrutura através de concessões e PPPs', 'https://oglobo.globo.com/politica/noticia/2026/04/16/zema-propoe-mandato-para-o-stf-privatizacao-de-100percent-das-estatais-e-fim-dos-beneficios-para-marmanjoes.ghtml', '2026-04-16') },
@@ -217,7 +227,7 @@ export const proposalSections: ProposalSection[] = [
     ],
     zema: [
       { text: dv('Licenciamento ambiental mais ágil e seguro jurídico para investimentos', 'https://www.otempo.com.br/politica/2026/4/16/plano-de-governo-de-zema-preve-novo-supremo-programa-de-moralizacao-do-judiciario', '2026-04-16') },
-      { text: dv('Exploração responsável de recursos naturais com equilíbrio ambiental', 'https://oglobo.globo.com/politica/noticia/2026/04/16/zema-propoe-mandato-para-o-stf-privatizacao-de-100percent-das-estatais-e-fim-dos-beneficios-para-marmanjoes.ghtml', '2026-04-16') },
+      { text: dv('Incentivo à economia verde com mercado de carbono e créditos ambientais', 'https://oglobo.globo.com/politica/noticia/2026/04/16/zema-propoe-mandato-para-o-stf-privatizacao-de-100percent-das-estatais-e-fim-dos-beneficios-para-marmanjoes.ghtml', '2026-04-16') },
     ],
   },
   {
@@ -243,7 +253,10 @@ export const proposalSections: ProposalSection[] = [
       { text: dv('Parceria estratégica com EUA e Japão para processamento de terras raras', 'https://g1.globo.com/politica/eleicoes/2026/noticia/2026/03/30/anistia-a-bolsonaro-terras-raras-combate-ao-crime-as-propostas-de-caiado-no-1o-discurso.ghtml', '2026-03-30') },
       { text: dv('Soberania nacional na exploração de minerais críticos e terras raras', 'https://g1.globo.com/politica/eleicoes/2026/noticia/2026/03/30/anistia-a-bolsonaro-terras-raras-combate-ao-crime-as-propostas-de-caiado-no-1o-discurso.ghtml', '2026-03-30') },
     ],
-    zema: [],
+    zema: [
+      { text: dv('Abertura comercial com redução de tarifas e acordos bilaterais de livre comércio', 'https://oglobo.globo.com/politica/noticia/2026/04/16/zema-propoe-mandato-para-o-stf-privatizacao-de-100percent-das-estatais-e-fim-dos-beneficios-para-marmanjoes.ghtml', '2026-04-16') },
+      { text: dv('Alinhamento estratégico com países da OCDE e defesa do livre comércio global', 'https://oglobo.globo.com/politica/noticia/2026/04/16/zema-propoe-mandato-para-o-stf-privatizacao-de-100percent-das-estatais-e-fim-dos-beneficios-para-marmanjoes.ghtml', '2026-04-16') },
+    ],
   },
   {
     id: 'reforma-politica',
@@ -264,7 +277,8 @@ export const proposalSections: ProposalSection[] = [
     ],
     caiado: [
       { text: dv('Anistia ampla, geral e irrestrita para condenados do 8 de janeiro', 'https://g1.globo.com/politica/eleicoes/2026/noticia/2026/03/30/anistia-a-bolsonaro-terras-raras-combate-ao-crime-as-propostas-de-caiado-no-1o-discurso.ghtml', '2026-03-30') },
-      { text: dv('Reforma política com racionalidade e base na experiência de gestão', 'https://g1.globo.com/politica/eleicoes/2026/noticia/2026/03/30/anistia-a-bolsonaro-terras-raras-combate-ao-crime-as-propostas-de-caiado-no-1o-discurso.ghtml', '2026-03-30') },
+      { text: dv('Voto distrital como prioridade da reforma política', 'https://g1.globo.com/politica/eleicoes/2026/noticia/2026/03/30/anistia-a-bolsonaro-terras-raras-combate-ao-crime-as-propostas-de-caiado-no-1o-discurso.ghtml', '2026-03-30') },
+      { text: dv('Critérios técnicos para nomeação de ministros do STF com mandato determinado', 'https://g1.globo.com/politica/eleicoes/2026/noticia/2026/03/30/anistia-a-bolsonaro-terras-raras-combate-ao-crime-as-propostas-de-caiado-no-1o-discurso.ghtml', '2026-03-30') },
     ],
     zema: [
       { text: dv('Novo STF: mandato de 15 anos, idade mínima de 60 anos, parentes sem negócios jurídicos', 'https://g1.globo.com/jornal-nacional/noticia/2026/04/16/novo-apresenta-diretrizes-do-plano-de-governo-de-romeu-zema-pre-candidato-do-partido-a-presidencia-da-republica.ghtml', '2026-04-16') },
@@ -299,7 +313,7 @@ export const proposalSections: ProposalSection[] = [
     ],
     zema: [
       { text: dv('Bolsa Família condicionado à aceitação de ofertas de emprego ("fim dos marmanjões")', 'https://oglobo.globo.com/politica/noticia/2026/04/16/zema-propoe-mandato-para-o-stf-privatizacao-de-100percent-das-estatais-e-fim-dos-beneficios-para-marmanjoes.ghtml', '2026-04-16') },
-      { text: dv('Família como núcleo central da sociedade', 'https://www.otempo.com.br/politica/2026/4/16/plano-de-governo-de-zema-preve-novo-supremo-programa-de-moralizacao-do-judiciario', '2026-04-16') },
+      { text: dv('Fim do Bolsa Família sem contrapartida de emprego ou capacitação', 'https://oglobo.globo.com/politica/noticia/2026/04/16/zema-propoe-mandato-para-o-stf-privatizacao-de-100percent-das-estatais-e-fim-dos-beneficios-para-marmanjoes.ghtml', '2026-04-16') },
     ],
   },
   {
@@ -326,10 +340,11 @@ export const proposalSections: ProposalSection[] = [
     caiado: [
       { text: dv('Defesa do agronegócio e do direito de propriedade rural', 'https://www.correiobraziliense.com.br/mundo/2026/03/7387104-a-segunda-disputa-de-ronaldo-caiado-pela-presidencia.html', '2026-03-30') },
       { text: dv('Contra demarcações de terras indígenas que afetem a produção rural', 'https://www.correiobraziliense.com.br/mundo/2026/03/7387104-a-segunda-disputa-de-ronaldo-caiado-pela-presidencia.html', '2026-03-30') },
-      { text: dv('Ex-presidente da UDR — histórico de defesa do produtor rural', 'https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Carreira_pol%C3%ADtica', '2026-06-26') },
+      { text: dv('Regularização fundiária como prioridade para segurança jurídica no campo', 'https://g1.globo.com/politica/eleicoes/2026/noticia/2026/03/30/anistia-a-bolsonaro-terras-raras-combate-ao-crime-as-propostas-de-caiado-no-1o-discurso.ghtml', '2026-03-30') },
+      { text: dv('Agritech e agricultura de precisão como política de estado para aumentar produtividade', 'https://www.correiobraziliense.com.br/mundo/2026/03/7387104-a-segunda-disputa-de-ronaldo-caiado-pela-presidencia.html', '2026-03-30') },
     ],
     zema: [
-      { text: dv('Menos burocracia e regulação para o produtor rural', 'https://www.otempo.com.br/politica/2026/4/16/plano-de-governo-de-zema-preve-novo-supremo-programa-de-moralizacao-do-judiciario', '2026-04-16') },
+      { text: dv('Marco temporal e regularização fundiária como prioridades para o campo', 'https://oglobo.globo.com/politica/noticia/2026/04/16/zema-propoe-mandato-para-o-stf-privatizacao-de-100percent-das-estatais-e-fim-dos-beneficios-para-marmanjoes.ghtml', '2026-04-16') },
       { text: dv('Agronegócio como motor do desenvolvimento econômico nacional', 'https://www.otempo.com.br/politica/2026/4/16/plano-de-governo-de-zema-preve-novo-supremo-programa-de-moralizacao-do-judiciario', '2026-04-16') },
     ],
   },
