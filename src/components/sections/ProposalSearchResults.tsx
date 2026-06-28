@@ -13,7 +13,7 @@ interface ProposalSearchResultsProps {
   showName?: boolean
 }
 
-export function ProposalSearchResults({ results, totalResults, searchQuery }: ProposalSearchResultsProps) {
+export function ProposalSearchResults({ results, totalResults, searchQuery, showName }: ProposalSearchResultsProps) {
   if (results.length === 0) {
     return (
       <div className="glass p-10 text-center">
