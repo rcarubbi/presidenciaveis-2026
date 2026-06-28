@@ -1994,7 +1994,7 @@ export const candidates: Candidate[] = [
 		),
 		naturalidade: dv(
 			"Anápolis, Goiás",
-			"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Biografia",
+			"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Primeiros_anos",
 			"2026-06-26",
 		),
 		estadoCivil: dv(
@@ -2014,12 +2014,12 @@ export const candidates: Candidate[] = [
 		),
 		formacao: dv(
 			"Medicina (Universidade Federal de Goiás, 1975)",
-			"https://pt.wikipedia.org/wiki/Ronaldo_Caiado",
+			"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Percurso_acad%C3%AAmico_e_carreira_m%C3%A9dica",
 			"2026-06-26",
 		),
 		profissao: dv(
 			"Médico, político, fazendeiro",
-			"https://pt.wikipedia.org/wiki/Ronaldo_Caiado",
+			"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Percurso_acad%C3%AAmico_e_carreira_m%C3%A9dica",
 			"2026-06-26",
 		),
 		religiao: dv(
@@ -2029,34 +2029,38 @@ export const candidates: Candidate[] = [
 		),
 		residencia: dv(
 			"Goiânia, GO",
-			"https://pt.wikipedia.org/wiki/Ronaldo_Caiado",
+			"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Vida_pessoal",
 			"2026-06-26",
 		),
-		patrimonio: null,
+		patrimonio: dvn(
+			24874436,
+			"https://g1.globo.com/go/goias/noticia/2023/07/12/caiado-e-o-4o-governador-mais-rico-do-brasil-com-patrimonio-de-r-248-milhoes.ghtml",
+			"2026-06-28",
+		),
 		currentParty: dv(
 			"PSD (Partido Social Democrático) — desde 2022",
-			"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Carreira_pol%C3%ADtica",
+			"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Trajet%C3%B3ria_e_carreira_pol%C3%ADtica",
 			"2026-06-26",
 		),
 		partyHistory: [
 			dv(
 				"PDS (1980–1985)",
-				"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Carreira_pol%C3%ADtica",
+				"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Trajet%C3%B3ria_e_carreira_pol%C3%ADtica",
 				"2026-06-26",
 			),
 			dv(
 				"PFL (1985–2007)",
-				"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Carreira_pol%C3%ADtica",
+				"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Trajet%C3%B3ria_e_carreira_pol%C3%ADtica",
 				"2026-06-26",
 			),
 			dv(
 				"DEM (2007–2022)",
-				"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Carreira_pol%C3%ADtica",
+				"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Trajet%C3%B3ria_e_carreira_pol%C3%ADtica",
 				"2026-06-26",
 			),
 			dv(
 				"PSD (2022–presente)",
-				"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Carreira_pol%C3%ADtica",
+				"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Trajet%C3%B3ria_e_carreira_pol%C3%ADtica",
 				"2026-06-26",
 			),
 		],
@@ -2065,60 +2069,60 @@ export const candidates: Candidate[] = [
 				party: dv("PSD"),
 				status: dv(
 					"Candidatura própria",
-					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Pr%C3%A9-candidatura_%C3%A0_Presid%C3%AAncia_em_2026",
 					"2026-06-26",
 				),
 			},
 		],
 		ideologicalPosition: dv(
 			"Centro-direita / Conservador",
-			"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Posi%C3%A7%C3%B5es_pol%C3%ADticas",
+			"https://pt.wikipedia.org/wiki/Ronaldo_Caiado",
 			"2026-06-26",
 		),
 		careerYears: dvn(
 			38,
-			"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Carreira_pol%C3%ADtica",
+			"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Trajet%C3%B3ria_e_carreira_pol%C3%ADtica",
 			"2026-06-26",
 		),
 		currentPosition: dv(
 			"Governador de Goiás (2019–2026)",
-			"https://pt.wikipedia.org/wiki/Ronaldo_Caiado",
+			"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Governador_de_Goi%C3%A1s",
 			"2026-06-26",
 		),
 		timeline: [
 			{
 				year: dv(
 					"1987",
-					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Carreira_pol%C3%ADtica",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#C%C3%A2mara_dos_Deputados",
 					"2026-06-26",
 				),
 				event: dv(
 					"Eleito Deputado Federal GO (PFL)",
-					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Carreira_pol%C3%ADtica",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#C%C3%A2mara_dos_Deputados",
 					"2026-06-26",
 				),
 			},
 			{
 				year: dv(
 					"1988",
-					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Carreira_pol%C3%ADtica",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Trajet%C3%B3ria_e_carreira_pol%C3%ADtica",
 					"2026-06-26",
 				),
 				event: dv(
 					"Presidente da UDR (União Democrática Ruralista)",
-					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Carreira_pol%C3%ADtica",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Trajet%C3%B3ria_e_carreira_pol%C3%ADtica",
 					"2026-06-26",
 				),
 			},
 			{
 				year: dv(
 					"1989",
-					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Carreira_pol%C3%ADtica",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Candidato_%C3%A0_Presid%C3%AAncia_da_Rep%C3%BAblica",
 					"2026-06-26",
 				),
 				event: dv(
-					"Candidato à Presidência (PFL) — 0,42% votos",
-					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Carreira_pol%C3%ADtica",
+					"Candidato à Presidência (PSD) — 0,68% votos",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Candidato_%C3%A0_Presid%C3%AAncia_da_Rep%C3%BAblica",
 					"2026-06-26",
 				),
 			},
@@ -2159,7 +2163,278 @@ export const candidates: Candidate[] = [
 				),
 			},
 		],
-		electionResults: [],
+		electionResults: [
+			{
+				year: dvn(
+					1989,
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				cargo: dv(
+					"Presidente",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				votos: dv(
+					"488.872",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				pct: dv(
+					"0,68%",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				resultado: dv(
+					"Não eleito (10º lugar)",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+			},
+			{
+				year: dvn(
+					1990,
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				cargo: dv(
+					"Dep. Federal GO",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				votos: dv(
+					"98.256",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				pct: dv(
+					"—",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				resultado: dv(
+					"Eleito (mais votado GO)",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+			},
+			{
+				year: dvn(
+					1994,
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				cargo: dv(
+					"Governador GO",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				votos: dv(
+					"364.767",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				pct: dv(
+					"23,18%",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				resultado: dv(
+					"Não eleito (3º lugar)",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+			},
+			{
+				year: dvn(
+					1998,
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				cargo: dv(
+					"Dep. Federal GO",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				votos: dv(
+					"100.446",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				pct: dv(
+					"—",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				resultado: dv(
+					"Eleito (2ª maior votação GO)",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+			},
+			{
+				year: dvn(
+					2002,
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				cargo: dv(
+					"Dep. Federal GO",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				votos: dv(
+					"114.728",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				pct: dv(
+					"—",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				resultado: dv(
+					"Eleito",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+			},
+			{
+				year: dvn(
+					2006,
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				cargo: dv(
+					"Dep. Federal GO",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				votos: dv(
+					"152.895",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				pct: dv(
+					"—",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				resultado: dv(
+					"Eleito (2º mais votado GO)",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+			},
+			{
+				year: dvn(
+					2010,
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				cargo: dv(
+					"Dep. Federal GO",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				votos: dv(
+					"167.591",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				pct: dv(
+					"—",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				resultado: dv(
+					"Eleito (3º mais votado GO)",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+			},
+			{
+				year: dvn(
+					2014,
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				cargo: dv(
+					"Senador GO",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				votos: dv(
+					"1.283.665",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				pct: dv(
+					"47,57%",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				resultado: dv(
+					"Eleito",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+			},
+			{
+				year: dvn(
+					2018,
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				cargo: dv(
+					"Governador GO",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				votos: dv(
+					"1.842.139 (1T)",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				pct: dv(
+					"59,73% (1T)",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				resultado: dv(
+					"Eleito (1º turno)",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+			},
+			{
+				year: dvn(
+					2022,
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				cargo: dv(
+					"Governador GO",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				votos: dv(
+					"1.806.892 (1T)",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				pct: dv(
+					"51,81% (1T)",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				resultado: dv(
+					"Eleito (1º turno)",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+			},
+		],
 		scandals: [
 			{
 				name: dv(
@@ -2294,24 +2569,120 @@ export const candidates: Candidate[] = [
 			{
 				issue: dv(
 					"Agronegócio",
-					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Posi%C3%A7%C3%B5es_pol%C3%ADticas",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Trajet%C3%B3ria_e_carreira_pol%C3%ADtica",
 					"2026-06-26",
 				),
 				position: dv(
 					"Defesa do agronegócio. Ex-presidente da UDR. Crítico de demarcações indígenas.",
-					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Posi%C3%A7%C3%B5es_pol%C3%ADticas",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Trajet%C3%B3ria_e_carreira_pol%C3%ADtica",
 					"2026-06-26",
 				),
 			},
 			{
 				issue: dv(
 					"Segurança Pública",
-					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Governo_Caiado",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Governador_de_Goi%C3%A1s",
 					"2026-06-26",
 				),
 				position: dv(
 					"Mão dura. Goiás tem menor taxa de homicídios do Centro-Oeste. Reconhecimento facial.",
-					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Governo_Caiado",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Governador_de_Goi%C3%A1s",
+					"2026-06-26",
+				),
+			},
+			{
+				issue: dv(
+					"Reforma Agrária / Indígenas",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Trajet%C3%B3ria_e_carreira_pol%C3%ADtica",
+					"2026-06-26",
+				),
+				position: dv(
+					"Ex-presidente da UDR. Crítico de demarcações indígenas. Defesa histórica dos grandes proprietários rurais.",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Trajet%C3%B3ria_e_carreira_pol%C3%ADtica",
+					"2026-06-26",
+				),
+			},
+			{
+				issue: dv(
+					"Armas",
+					"https://g1.globo.com/go/goias/noticia/2022/09/29/caiado-defende-porte-de-armas-para-cidadaos-de-bem.ghtml",
+					"2026-06-28",
+				),
+				position: dv(
+					"Favorável ao porte de armas para 'cidadãos de bem'. Defende flexibilização do Estatuto do Desarmamento.",
+					"https://g1.globo.com/go/goias/noticia/2022/09/29/caiado-defende-porte-de-armas-para-cidadaos-de-bem.ghtml",
+					"2026-06-28",
+				),
+			},
+			{
+				issue: dv(
+					"Educação",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Governador_de_Goi%C3%A1s",
+					"2026-06-26",
+				),
+				position: dv(
+					"Goiás tem melhor IDEB do Centro-Oeste. Escolas em tempo integral. Investimento em tecnologia educacional.",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Governador_de_Goi%C3%A1s",
+					"2026-06-26",
+				),
+			},
+			{
+				issue: dv(
+					"Saúde",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Governador_de_Goi%C3%A1s",
+					"2026-06-26",
+				),
+				position: dv(
+					"Goiás referência no enfrentamento à COVID-19. Ampliação de hospitais regionais. Médico de formação.",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Governador_de_Goi%C3%A1s",
+					"2026-06-26",
+				),
+			},
+			{
+				issue: dv(
+					"Privatização",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Governador_de_Goi%C3%A1s",
+					"2026-06-26",
+				),
+				position: dv(
+					"Privatizou Saneago (parcial) e concessões rodoviárias. Defende redução do Estado e parcerias público-privadas.",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Governador_de_Goi%C3%A1s",
+					"2026-06-26",
+				),
+			},
+			{
+				issue: dv(
+					"Impeachment Dilma",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Impeachment_de_Dilma_Rousseff",
+					"2026-06-26",
+				),
+				position: dv(
+					"Um dos principais articuladores do impeachment de Dilma Rousseff. Votou pela perda do mandato. Rompeu com MDB após absolvição parcial.",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Impeachment_de_Dilma_Rousseff",
+					"2026-06-26",
+				),
+			},
+			{
+				issue: dv(
+					"Reforma Trabalhista",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Impeachment_de_Dilma_Rousseff",
+					"2026-06-26",
+				),
+				position: dv(
+					"Votou a favor da reforma trabalhista de 2017. Defende maior flexibilização das leis trabalhistas e modernização da CLT.",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Impeachment_de_Dilma_Rousseff",
+					"2026-06-26",
+				),
+			},
+			{
+				issue: dv(
+					"PEC do Teto",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Impeachment_de_Dilma_Rousseff",
+					"2026-06-26",
+				),
+				position: dv(
+					"Votou a favor da PEC do Teto dos Gastos Públicos (2016). Defende responsabilidade fiscal e limite para gastos públicos.",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Impeachment_de_Dilma_Rousseff",
 					"2026-06-26",
 				),
 			},
@@ -2350,54 +2721,68 @@ export const candidates: Candidate[] = [
 		),
 		naturalidade: dv(
 			"Araxá, Minas Gerais",
-			"https://pt.wikipedia.org/wiki/Romeu_Zema#Biografia",
+			"https://pt.wikipedia.org/wiki/Romeu_Zema#Primeiros_anos",
 			"2026-06-26",
 		),
 		estadoCivil: dv(
 			"Casado com Lana Zema (desde 2016)",
-			"https://pt.wikipedia.org/wiki/Romeu_Zema#Vida_pessoal",
+			"https://pt.wikipedia.org/wiki/Romeu_Zema#Primeiros_anos",
 			"2026-06-26",
 		),
 		conjugesAnteriores: dv(
 			"Ana Paula (até 2014, divorciada)",
-			"https://pt.wikipedia.org/wiki/Romeu_Zema#Vida_pessoal",
+			"https://pt.wikipedia.org/wiki/Romeu_Zema#Primeiros_anos",
 			"2026-06-26",
 		),
 		filhos: dv(
 			"3: Luiza, Marina, Lucas",
-			"https://pt.wikipedia.org/wiki/Romeu_Zema#Vida_pessoal",
+			"https://pt.wikipedia.org/wiki/Romeu_Zema#Primeiros_anos",
 			"2026-06-26",
 		),
 		formacao: dv(
 			"Administração de Empresas (Centro Universitário Newton Paiva)",
-			"https://pt.wikipedia.org/wiki/Romeu_Zema",
+			"https://pt.wikipedia.org/wiki/Romeu_Zema#Primeiros_anos",
 			"2026-06-26",
 		),
 		profissao: dv(
 			"Empresário, político",
-			"https://pt.wikipedia.org/wiki/Romeu_Zema",
+			"https://pt.wikipedia.org/wiki/Romeu_Zema#Primeiros_anos",
 			"2026-06-26",
 		),
 		religiao: dv(
 			"Católico",
-			"https://pt.wikipedia.org/wiki/Romeu_Zema#Vida_pessoal",
+			"https://pt.wikipedia.org/wiki/Romeu_Zema#Primeiros_anos",
 			"2026-06-26",
 		),
 		residencia: dv(
 			"Belo Horizonte, MG",
-			"https://pt.wikipedia.org/wiki/Romeu_Zema",
+			"https://pt.wikipedia.org/wiki/Romeu_Zema#Primeiros_anos",
 			"2026-06-26",
 		),
-		patrimonio: null,
+		patrimonio: dvn(
+			129800000,
+			"https://divulgacandcontas.tse.jus.br/divulga/#/candidato/2022/2040602022/MG/130001701690/bens",
+			"2026-06-28",
+		),
 		currentParty: dv(
 			"Partido Novo (NOVO) — desde 2017",
-			"https://pt.wikipedia.org/wiki/Romeu_Zema",
+			"https://pt.wikipedia.org/wiki/Romeu_Zema#Primeiros_anos",
 			"2026-06-26",
 		),
 		partyHistory: [
 			dv(
-				"NOVO (2017–presente)",
-				"https://pt.wikipedia.org/wiki/Romeu_Zema",
+				"PL (1999–2006)",
+				"https://pt.wikipedia.org/wiki/Romeu_Zema#Primeiros_anos",
+				"2026-06-26",
+			),
+			dv(
+				"PR (2006–2018)",
+				"https://pt.wikipedia.org/wiki/Romeu_Zema#Primeiros_anos",
+				"2026-06-26",
+			),
+			dv(
+				"NOVO (2018–presente)",
+				"https://pt.wikipedia.org/wiki/Romeu_Zema#Primeiros_anos",
 				"2026-06-26",
 			),
 		],
@@ -2406,60 +2791,60 @@ export const candidates: Candidate[] = [
 				party: dv("NOVO"),
 				status: dv(
 					"Candidatura própria",
-					"https://pt.wikipedia.org/wiki/Romeu_Zema",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema#Pré-candidatura_à_Presidência_da_República",
 					"2026-06-26",
 				),
 			},
 		],
 		ideologicalPosition: dv(
 			"Direita liberal / Liberalismo econômico",
-			"https://pt.wikipedia.org/wiki/Romeu_Zema#Posi%C3%A7%C3%B5es_pol%C3%ADticas",
+			"https://pt.wikipedia.org/wiki/Romeu_Zema#Posicionamentos",
 			"2026-06-26",
 		),
 		careerYears: dvn(
 			8,
-			"https://pt.wikipedia.org/wiki/Romeu_Zema#Carreira_pol%C3%ADtica",
+			"https://pt.wikipedia.org/wiki/Romeu_Zema#Primeiros_anos",
 			"2026-06-26",
 		),
 		currentPosition: dv(
 			"Governador de Minas Gerais (2019–2026) — renunciou 22/03/2026",
-			"https://pt.wikipedia.org/wiki/Romeu_Zema",
+			"https://pt.wikipedia.org/wiki/Romeu_Zema#Pré-candidatura_à_Presidência_da_República",
 			"2026-06-26",
 		),
 		timeline: [
 			{
 				year: dv(
 					"2017",
-					"https://pt.wikipedia.org/wiki/Romeu_Zema#Carreira_pol%C3%ADtica",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema#Primeiros_anos",
 					"2026-06-26",
 				),
 				event: dv(
 					"Filia-se ao Partido Novo",
-					"https://pt.wikipedia.org/wiki/Romeu_Zema#Carreira_pol%C3%ADtica",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema#Primeiros_anos",
 					"2026-06-26",
 				),
 			},
 			{
 				year: dv(
 					"2018",
-					"https://pt.wikipedia.org/wiki/Romeu_Zema#Governador_de_Minas_Gerais",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema#Eleição_de_2018_e_primeiro_mandato_como_governador",
 					"2026-06-26",
 				),
 				event: dv(
 					"Eleito Governador MG (2ºT, 58,07%) — surpresa nacional",
-					"https://pt.wikipedia.org/wiki/Romeu_Zema#Governador_de_Minas_Gerais",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema#Eleição_de_2018_e_primeiro_mandato_como_governador",
 					"2026-06-26",
 				),
 			},
 			{
 				year: dv(
 					"2022",
-					"https://pt.wikipedia.org/wiki/Romeu_Zema#Governador_de_Minas_Gerais",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema#Releição_em_2022_e_segundo_mandato_como_governador",
 					"2026-06-26",
 				),
 				event: dv(
-					"Reeleito Governador MG (2ºT, 56,18%)",
-					"https://pt.wikipedia.org/wiki/Romeu_Zema#Governador_de_Minas_Gerais",
+					"Reeleito Governador MG (1ºT, 56,18%)",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema#Releição_em_2022_e_segundo_mandato_como_governador",
 					"2026-06-26",
 				),
 			},
@@ -2476,7 +2861,62 @@ export const candidates: Candidate[] = [
 				),
 			},
 		],
-		electionResults: [],
+		electionResults: [
+			{
+				year: dvn(
+					2018,
+					"https://pt.wikipedia.org/wiki/Romeu_Zema#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				cargo: dv(
+					"Governador MG",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				votos: dv(
+					"4.138.967 (1T) / 6.963.806 (2T)",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				pct: dv(
+					"42,73% (1T) / 71,80% (2T)",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				resultado: dv(
+					"Eleito (2º turno)",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+			},
+			{
+				year: dvn(
+					2022,
+					"https://pt.wikipedia.org/wiki/Romeu_Zema#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				cargo: dv(
+					"Governador MG",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				votos: dv(
+					"6.094.136 (1T)",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				pct: dv(
+					"56,18% (1T)",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				resultado: dv(
+					"Eleito (1º turno)",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+			},
+		],
 		scandals: [
 			{
 				name: dv(
@@ -2596,24 +3036,108 @@ export const candidates: Candidate[] = [
 			{
 				issue: dv(
 					"Economia",
-					"https://pt.wikipedia.org/wiki/Romeu_Zema#Governo_Zema",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema#Posicionamentos",
 					"2026-06-26",
 				),
 				position: dv(
 					"Austeridade fiscal. Reforma administrativa. Privatizações. MG pagou salários em dia após Regime Recuperação Fiscal.",
-					"https://pt.wikipedia.org/wiki/Romeu_Zema#Governo_Zema",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema#Posicionamentos",
 					"2026-06-26",
 				),
 			},
 			{
 				issue: dv(
 					"Educação",
-					"https://pt.wikipedia.org/wiki/Romeu_Zema#Governo_Zema",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema#Posicionamentos",
 					"2026-06-26",
 				),
 				position: dv(
 					"Escolas em tempo integral. Ensino técnico. MG tem maior rede de tempo integral do país.",
-					"https://pt.wikipedia.org/wiki/Romeu_Zema#Governo_Zema",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema#Posicionamentos",
+					"2026-06-26",
+				),
+			},
+			{
+				issue: dv(
+					"Armas",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema#Posicionamentos",
+					"2026-06-26",
+				),
+				position: dv(
+					"Favorável ao porte de arma. 'Cada indivíduo faça a opção que achar por bem.'",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema#Posicionamentos",
+					"2026-06-26",
+				),
+			},
+			{
+				issue: dv(
+					"Privatização",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema#Posicionamentos",
+					"2026-06-26",
+				),
+				position: dv(
+					"Cogitou privatizar CEMIG, COPASA e CODEMIG para recuperação fiscal. Defende redução do Estado.",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema#Posicionamentos",
+					"2026-06-26",
+				),
+			},
+			{
+				issue: dv(
+					"Segurança Pública",
+					"https://g1.globo.com/mg/minas-gerais/noticia/2026/05/26/zema-defende-encarceramento-em-massa-nos-moldes-de-el-salvador.ghtml",
+					"2026-06-28",
+				),
+				position: dv(
+					"Defende encarceramento em massa nos moldes de El Salvador. Classificar facções como terroristas. Endurecimento de penas.",
+					"https://g1.globo.com/mg/minas-gerais/noticia/2026/05/26/zema-defende-encarceramento-em-massa-nos-moldes-de-el-salvador.ghtml",
+					"2026-06-28",
+				),
+			},
+			{
+				issue: dv(
+					"Reforma Tributária",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema#Posicionamentos",
+					"2026-06-26",
+				),
+				position: dv(
+					"Apoia simplificação tributária. Defende redução da carga e autonomia estadual.",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema#Posicionamentos",
+					"2026-06-26",
+				),
+			},
+			{
+				issue: dv(
+					"Previdência",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema#Histórico_do_governo",
+					"2026-06-26",
+				),
+				position: dv(
+					"Aprovou reforma da previdência estadual em MG: idade mínima 65h/62m. Defende regras nacionais mais rígidas.",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema#Histórico_do_governo",
+					"2026-06-26",
+				),
+			},
+			{
+				issue: dv(
+					"Trabalho Infantil",
+					"https://g1.globo.com/politica/noticia/2026/01/15/zema-defende-trabalho-infantil-e-repercute-negativamente.ghtml",
+					"2026-06-28",
+				),
+				position: dv(
+					"Declarou-se favorável ao trabalho infantil nos moldes dos EUA (entregar jornal). Gerou forte repercussão negativa.",
+					"https://g1.globo.com/politica/noticia/2026/01/15/zema-defende-trabalho-infantil-e-repercute-negativamente.ghtml",
+					"2026-06-28",
+				),
+			},
+			{
+				issue: dv(
+					"Separatismo Sul-Sudeste",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema#Posicionamentos",
+					"2026-06-26",
+				),
+				position: dv(
+					"Criou o Consórcio Sul-Sudeste (Cossud). Gerou debate sobre conotações separatistas entre regiões.",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema#Posicionamentos",
 					"2026-06-26",
 				),
 			},
