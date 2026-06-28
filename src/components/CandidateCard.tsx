@@ -7,10 +7,6 @@ import { PartyInfo } from './PartyInfo'
 import { CandidateLabels } from './CandidateLabels'
 import { CandidateCardFooter } from './CandidateCardFooter'
 
-function photoPos(c: Candidate): string {
-  return c.id === 'renan' ? 'center' : 'center top'
-}
-
 export function CandidateCard({
   candidate,
   cardLoading,
@@ -40,7 +36,7 @@ export function CandidateCard({
           style={{
             backgroundImage: `url(${c.photo})`,
             backgroundSize: 'cover',
-            backgroundPosition: photoPos(c),
+            backgroundPosition: 'center top',
             backgroundRepeat: 'no-repeat',
           }}
         />

@@ -1758,7 +1758,6 @@ export const candidates: Candidate[] = [
 					"2026-06-26",
 				),
 			},
-
 		],
 		campaignFinance: {
 			totalArrecadado: dv(
