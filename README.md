@@ -1,32 +1,48 @@
-# React + TypeScript + Vite
+# Presidenciáveis 2026
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Comparativo dos candidatos à Presidência do Brasil em 2026 — Lula, Flávio
+Bolsonaro e Renan Santos.
 
-Currently, two official plugins are available:
+## Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Next.js 15** (App Router)
+- **React 19**
+- **Tailwind CSS 4**
+- **Recharts** (gráficos)
+- **TypeScript ~6**
+- **Oxlint** (linter)
 
-## React Compiler
+## Rotas
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+| Rota | Descrição |
+|------|-----------|
+| `/` | Visão geral dos candidatos |
+| `/candidato/[id]` | Perfil individual (lula, flavio, renan) |
+| `/pesquisas` | Pesquisas eleitorais |
+| `/comparar?ids=...` | Comparativo lado a lado |
 
-## Expanding the Oxlint configuration
+## Scripts
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+```bash
+npm run dev      # desenvolvimento
+npm run build    # build produção
+npm run start    # servidor produção
+npm run lint     # oxlint
+npm run typecheck # tsc --noEmit
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+## Variáveis de ambiente
+
+| Variável | Obrigatória | Descrição |
+|----------|-------------|-----------|
+| `NEXT_PUBLIC_GA_ID` | Não | Google Tag Manager ID (ex: GTM-...) |
+| `NEXT_PUBLIC_BASE_URL` | Não | URL base para sitemap/OG (fallback: presidenciaveis-2026.vercel.app) |
+
+## Dados
+
+Todo conteúdo extraído de fontes oficiais e artigos de imprensa. Cada campo
+inclui referência (URL + data) via `DataValue`.
+
+## Licença
+
+Site informativo sem fins eleitorais. Art. 57-B Lei 9.504/97.
