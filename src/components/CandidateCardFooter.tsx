@@ -12,7 +12,7 @@ interface CandidateCardFooterProps {
 
 export function CandidateCardFooter({ candidate: c, isCompareSelected, onCompareClick }: CandidateCardFooterProps) {
   return (
-    <div className="p-4 relative z-10 bg-white dark:bg-gray-950 rounded-b-xl">
+    <div className="p-4 relative z-10 bg-white dark:bg-gray-950">
       <div className="grid grid-cols-2 gap-2 text-xs text-gray-500 dark:text-gray-400">
         <div>
           <span className="font-semibold text-gray-700 dark:text-gray-300">Ideologia:</span>{' '}
