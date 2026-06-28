@@ -27,7 +27,7 @@ export const proposalSections: ProposalSection[] = [
       { text: dv('Castração química p/ pedófilos/estupradores', 'https://g1.globo.com/sp/sao-paulo/eleicoes/2026/noticia/2026/06/18/flavio-bolsonaro-lanca-pacote-de-seguranca-com-reducao-da-maioridade-penal-e-castracao-quimica.ghtml', '2026-06-18') },
       { text: dv('Reconhecimento facial em massa', 'https://g1.globo.com/sp/sao-paulo/eleicoes/2026/noticia/2026/06/18/flavio-bolsonaro-lanca-pacote-de-seguranca-com-reducao-da-maioridade-penal-e-castracao-quimica.ghtml', '2026-06-18') },
       { text: dv('Fim progressão regime p/ crimes hediondos', 'https://veja.abril.com.br/brasil/castracao-quimica-e-repressao-ao-crime-entenda-as-12-metas-de-flavio-na-seguranca/', '2026-06-18') },
-      { text: dv('Prisão em 2ª instância (PL 656/2025)', 'https://www.metropoles.com/chapelaria/2a-instancia-flavio-bolsonaro-nao-assina-carta-a-favor-de-prisao', '2019-11-08') },
+      { text: dv('Prisão em 2ª instância', 'https://www.metropoles.com/chapelaria/2a-instancia-flavio-bolsonaro-nao-assina-carta-a-favor-de-prisao', '2019-11-08') },
       { text: dv('Redução maioridade penal p/ 16 anos', 'https://oglobo.globo.com/politica/noticia/2026/06/18/flavio-propoe-castracao-quimica-de-estupradores-reducao-de-maioridade-penal-e-presidios-inspirados-em-el-salvador.ghtml', '2026-06-18') },
       { text: dv('Excludente ilicitude ampliado policiais', 'https://www25.senado.leg.br/web/atividade/materias/-/materia/138227', '2019-08-20') },
       { text: dv('Pensão policial que matar/for morto', 'https://www12.senado.leg.br/noticias/materias/2025/07/15/csp-aprova-indenizacao-para-familia-de-policiais-mortos-em-servico', '2025-07-15') },
@@ -76,8 +76,6 @@ export const proposalSections: ProposalSection[] = [
     ],
     flavio: [
       { text: dv('Desvinculação do piso constitucional (correção só pela inflação, não 15% RCL)', 'https://www1.folha.uol.com.br/mercado/2026/04/flavio-planeja-reajustar-aposentadorias-e-despesas-com-saude-e-educacao-so-pela-inflacao.shtml', '2026-04-28') },
-      { text: dv('Eficiência de gasto, sem ampliação da máquina pública', 'https://www1.folha.uol.com.br/mercado/2026/04/flavio-planeja-reajustar-aposentadorias-e-despesas-com-saude-e-educacao-so-pela-inflacao.shtml', '2026-04-28') },
-      { text: dv('Parcerias privadas na gestão hospitalar', 'https://www1.folha.uol.com.br/mercado/2026/04/flavio-planeja-reajustar-aposentadorias-e-despesas-com-saude-e-educacao-so-pela-inflacao.shtml', '2026-04-28') },
     ],
     renan: [
       { text: dv('Ozempic-similares no SUS para tratamento de obesidade e diabetes', 'https://renansantos.wiki/posicoes/Propostas-para-Sa%C3%BAde', '2026-03-09') },
@@ -120,10 +118,7 @@ export const proposalSections: ProposalSection[] = [
       { text: dv('Redução jornada semanal (fim escala 6x1)', 'https://contee.org.br/lula-lanca-plano-participativo-e-abre-construcao-do-programa-de-governo-para-2027-2030/', '2026-06-05') },
     ],
     flavio: [
-      { text: dv('Separação reajuste salário mínimo de benefícios INSS/BPC', 'https://www.otempo.com.br/politica/2026/6/2/maioridade-penal-ia-e-corte-de-gastos-flavio-bolsonaro-revela-prioridades-e-propostas-de-campanha', '2026-06-02') },
       { text: dv('Correção aposentadorias e BPC só pela inflação', 'https://www1.folha.uol.com.br/mercado/2026/04/flavio-planeja-reajustar-aposentadorias-e-despesas-com-saude-e-educacao-so-pela-inflacao.shtml', '2026-04-28') },
-      { text: dv('Nova reforma da Previdência (regime capitalização)', 'https://www.otempo.com.br/politica/2026/6/2/maioridade-penal-ia-e-corte-de-gastos-flavio-bolsonaro-revela-prioridades-e-propostas-de-campanha', '2026-06-02') },
-      { text: dv('Salário mínimo por hora trabalhada (jornada flexível)', 'https://www.otempo.com.br/politica/2026/6/2/maioridade-penal-ia-e-corte-de-gastos-flavio-bolsonaro-revela-prioridades-e-propostas-de-campanha', '2026-06-02') },
     ],
     renan: [
       { text: dv('Nova reforma da Previdência', 'https://exame.com/brasil/virais-regionais-e-ataques-a-flavio-a-estrategia-de-renan-santos-para-a-eleicao/', '2026-04-08') },
@@ -156,7 +151,6 @@ export const proposalSections: ProposalSection[] = [
       { text: dv('Demarcação terras indígenas', 'https://pt.org.br/com-olhar-para-o-futuro-programa-de-governo-de-lula-tera-construcao-coletiva/', '2026-05-30') },
     ],
     flavio: [
-      { text: dv('Novo marco do licenciamento ambiental (relatoria no Senado)', 'https://valor.globo.com/politica/noticia/2025/05/20/comissao-de-meio-ambiente-do-senado-aprova-marco-do-licenciamento-ambiental.ghtml', '2025-05-20') },
       { text: dv('Marco temporal para demarcações indígenas', 'https://oglobo.globo.com/politica/noticia/2026/04/10/flavio-bolsonaro-acena-ao-agro-defende-marco-temporal-e-sugere-que-indigenas-possam-criar-gado-e-explorar-minerio-em-terras.ghtml', '2026-04-10') },
       { text: dv('Autonomia econômica indígena (gado, mineração em terras)', 'https://oglobo.globo.com/politica/noticia/2026/04/10/flavio-bolsonaro-acena-ao-agro-defende-marco-temporal-e-sugere-que-indigenas-possam-criar-gado-e-explorar-minerio-em-terras.ghtml', '2026-04-10') },
     ],
@@ -197,7 +191,7 @@ export const proposalSections: ProposalSection[] = [
       { text: dv('Regulamentação mídia e redes sociais', 'https://pt.org.br/com-olhar-para-o-futuro-programa-de-governo-de-lula-tera-construcao-coletiva/', '2026-05-30') },
     ],
     flavio: [
-      { text: dv('Prisão em 2ª instância (PL 656/2025)', 'https://www.metropoles.com/chapelaria/2a-instancia-flavio-bolsonaro-nao-assina-carta-a-favor-de-prisao', '2019-11-08') },
+      { text: dv('Prisão em 2ª instância', 'https://www.metropoles.com/chapelaria/2a-instancia-flavio-bolsonaro-nao-assina-carta-a-favor-de-prisao', '2019-11-08') },
     ],
     renan: [
       { text: dv('Lei de Responsabilidade Gerencial', 'https://caminhodamissao.com/candidato/renan-santos', '2026-06-26') },

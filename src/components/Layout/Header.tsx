@@ -1,12 +1,12 @@
 'use client'
 
-import { Moon, Sun, GitCompare, Eye, BarChart3 } from 'lucide-react'
+import { Moon, Sun, GitCompare, Users, BarChart3 } from 'lucide-react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useApp } from '@/lib/providers'
 
 const tabs = [
-  { id: 'visao', label: 'Visão Geral', href: '/', icon: Eye },
+  { id: 'candidatos', label: 'Candidatos', href: '/', icon: Users },
   { id: 'pesquisas', label: 'Pesquisas', href: '/pesquisas', icon: BarChart3 },
 ]
 
@@ -14,7 +14,7 @@ export function Header() {
   const pathname = usePathname()
   const { theme, toggleTheme, fontSize, toggleFontSize } = useApp()
 
-  const activeTab = pathname === '/pesquisas' ? 'pesquisas' : 'visao'
+  const activeTab = pathname === '/pesquisas' ? 'pesquisas' : 'candidatos'
   const fontSizeTitle = fontSize === 'normal' ? 'Aumentar fonte' : fontSize === 'large' ? 'Fonte grande' : 'Fonte extra grande'
 
   return (

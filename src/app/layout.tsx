@@ -60,7 +60,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                   {children}
                   <footer className="mt-16 pt-6 border-t border-gray-200/60 dark:border-gray-800/60 text-center text-xs text-gray-400/80 space-y-1">
                     <p>Site informativo sem fins eleitorais. Art. 57-B Lei 9.504/97</p>
-                    <p>Dados oficiais: <a href="https://dadosabertos.tse.jus.br" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 decoration-blue-400/40 hover:decoration-blue-600 transition-all duration-200">Tribunal Superior Eleitoral</a></p>
                     <FooterActions />
                   </footer>
                 </main>
