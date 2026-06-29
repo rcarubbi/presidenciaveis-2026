@@ -172,7 +172,4 @@ function LoadingOverlay() {
 CandidateCard.Photo = Photo as React.FC<{ children: React.ReactNode }>
 CandidateCard.PartyBadge = PartyBadge as React.FC
 CandidateCard.Info = Info as React.FC
-CandidateCard.CompareButton = CompareButton as React.FC
-CandidateCard.ArrowButton = ArrowButton as React.FC
-CandidateCard.MediaButton = MediaButton as React.FC
 CandidateCard.LoadingOverlay = LoadingOverlay as React.FC

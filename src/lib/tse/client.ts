@@ -1,6 +1,6 @@
 import { inflateRawSync } from 'node:zlib'
 
-export function parseCsv(text: string): Record<string, string>[] {
+function parseCsv(text: string): Record<string, string>[] {
   const lines: string[] = []
   let current = ''
   let inQuotes = false

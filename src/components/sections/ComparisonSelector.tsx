@@ -2,6 +2,7 @@
 
 import type { Candidate } from '../../types'
 import { X } from 'lucide-react'
+import { hideImageOnError } from '@/lib/dom'
 
 interface ComparisonSelectorProps {
   candidates: Candidate[]
@@ -28,7 +29,7 @@ export function ComparisonSelector({ candidates, selectedIds, onToggle }: Compar
             >
               <div className="w-5 h-5 rounded-full overflow-hidden flex-shrink-0">
                 <img src={c.photo} alt="" className="w-full h-full object-cover"
-                  onError={(e) => { (e.target as HTMLImageElement).style.display = 'none' }} />
+                  onError={hideImageOnError} />
               </div>
               {c.name.value}
               {selected && <X size={12} />}

@@ -3,35 +3,9 @@
 import type { Candidate, ProposalItem } from '../../types'
 import { DataLink } from '../DataLink'
 import { proposalSections } from '../../data/proposals'
-import {
-  Shield,
-  TrendingUp,
-  Heart,
-  BookOpen,
-  Clock,
-  Building2,
-  Leaf,
-  Globe,
-  Scale,
-  HeartHandshake,
-  Sprout,
-  ChevronDown,
-} from 'lucide-react'
+import { sectionIcons } from '@/lib/sectionIcons'
+import { Shield, ChevronDown } from 'lucide-react'
 import { useState } from 'react'
-
-const sectionIcons: Record<string, React.ComponentType<{ size?: number; className?: string }>> = {
-  seguranca: Shield,
-  economia: TrendingUp,
-  saude: Heart,
-  educacao: BookOpen,
-  previdencia: Clock,
-  infraestrutura: Building2,
-  'meio-ambiente': Leaf,
-  'relacoes-exteriores': Globe,
-  'reforma-politica': Scale,
-  costumes: HeartHandshake,
-  agricultura: Sprout,
-}
 
 interface ProposalCardsProps {
   candidates: Candidate[]

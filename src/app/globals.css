@@ -3,16 +3,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  --color-lula: #cc2222;
-  --color-lula-light: #e85555;
-  --color-flavio: #1a4fa0;
-  --color-flavio-light: #3b7dd8;
-  --color-renan: #d97706;
-  --color-renan-light: #f59e0b;
   --animate-fade-in: fade-in 0.4s cubic-bezier(0.16, 1, 0.3, 1);
   --animate-scale-in: scale-in 0.35s cubic-bezier(0.16, 1, 0.3, 1);
-  --animate-float: float 6s ease-in-out infinite;
-  --animate-blob: blob 8s ease-in-out infinite;
 }
 
 @keyframes fade-in {
@@ -23,11 +15,6 @@
 @keyframes scale-in {
   from { opacity: 0; transform: scale(0.95) translateY(8px); }
   to { opacity: 1; transform: scale(1) translateY(0); }
-}
-
-@keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-16px); }
 }
 
 @keyframes blob {
@@ -70,33 +57,10 @@ body {
          shadow-lg shadow-black/5 dark:shadow-black/20;
 }
 
-@utility glass-nb {
-  @apply rounded-2xl bg-white/70 dark:bg-gray-900/70
-         border border-white/30 dark:border-gray-700/40
-         shadow-lg shadow-black/5 dark:shadow-black/20;
-}
-
 @utility glass-strong {
   @apply rounded-b-2xl bg-white/85 dark:bg-gray-900/85 backdrop-blur-2xl
          border border-white/40 dark:border-gray-600/40
          shadow-xl shadow-black/5 dark:shadow-black/25;
-}
-
-@utility glass-tab {
-  @apply bg-white/50 dark:bg-gray-900/50 backdrop-blur-lg
-         border-b border-white/20 dark:border-gray-800/50;
-}
-
-@utility glow-lula {
-  box-shadow: 0 0 24px -4px rgba(204, 34, 34, 0.25);
-}
-
-@utility glow-flavio {
-  box-shadow: 0 0 24px -4px rgba(26, 79, 160, 0.25);
-}
-
-@utility glow-renan {
-  box-shadow: 0 0 24px -4px rgba(217, 119, 6, 0.25);
 }
 
 .tab-enter {
@@ -116,7 +80,7 @@ body {
   position: fixed;
   inset: 0;
   z-index: 0;
-  overflow: hidden;
+  overflow: clip;
   pointer-events: none;
 }
 
@@ -160,11 +124,6 @@ body {
 .page-enter {
   animation: fade-in 0.35s cubic-bezier(0.16, 1, 0.3, 1);
 }
-
-.photo-ring-lula { box-shadow: 0 0 0 3px rgba(204, 34, 34, 0.3), 0 0 20px -4px rgba(204, 34, 34, 0.2); }
-.photo-ring-flavio { box-shadow: 0 0 0 3px rgba(26, 79, 160, 0.3), 0 0 20px -4px rgba(26, 79, 160, 0.2); }
-.photo-ring-renan { box-shadow: 0 0 0 3px rgba(217, 119, 6, 0.3), 0 0 20px -4px rgba(217, 119, 6, 0.2); }
-
 
 @media print {
   header, .blob-bg, .no-print, nav, button, [role="tablist"] { display: none !important; }

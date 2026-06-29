@@ -10,6 +10,7 @@ import {
   ResponsiveContainer,
   Legend,
 } from 'recharts'
+import { tooltipContentStyle } from '@/lib/recharts'
 
 interface DataPoint {
   name: string
@@ -32,16 +33,7 @@ export function GroupedBarChartCard({ data, bars, title, unit = '%' }: GroupedBa
           <CartesianGrid strokeDasharray="3 3" stroke="#374151" opacity={0.3} />
           <XAxis dataKey="name" tick={{ fontSize: 11 }} />
           <YAxis tick={{ fontSize: 11 }} unit={unit} />
-          <Tooltip
-            contentStyle={{
-              backgroundColor: 'var(--recharts-tooltip-bg)',
-              border: '1px solid var(--recharts-tooltip-border)',
-              borderRadius: '8px',
-              color: 'var(--recharts-tooltip-color)',
-              fontSize: '12px',
-            }}
-            formatter={(v) => [`${v}${unit}`, undefined]}
-          />
+          <Tooltip contentStyle={tooltipContentStyle} formatter={(v) => [`${v}${unit}`, undefined]} />
           <Legend wrapperStyle={{ fontSize: '11px' }} />
           {bars.map((b) => (
             <Bar key={b.key} dataKey={b.key} fill={b.color} name={b.name || b.key} radius={[4, 4, 0, 0]} />

@@ -8,6 +8,7 @@ import {
   ResponsiveContainer,
   Legend,
 } from 'recharts'
+import { tooltipContentStyle } from '@/lib/recharts'
 
 interface PieChartCardProps {
   data: { name: string; value: number; color: string }[]
@@ -34,16 +35,7 @@ export function PieChartCard({ data, title, unit = 'R$ mi' }: PieChartCardProps)
               <Cell key={i} fill={entry.color} />
             ))}
           </Pie>
-          <Tooltip
-            contentStyle={{
-              backgroundColor: 'var(--recharts-tooltip-bg)',
-              border: '1px solid var(--recharts-tooltip-border)',
-              borderRadius: '8px',
-              color: 'var(--recharts-tooltip-color)',
-              fontSize: '12px',
-            }}
-            formatter={(v) => [`${v}${unit}`, undefined]}
-          />
+          <Tooltip contentStyle={tooltipContentStyle} formatter={(v) => [`${v}${unit}`, undefined]} />
           <Legend wrapperStyle={{ fontSize: '11px' }} />
         </PieChart>
       </ResponsiveContainer>

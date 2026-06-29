@@ -80,7 +80,3 @@ export function CandidateLayout({ candidate, initialTab }: CandidateLayoutProps)
     </div>
   )
 }
-
-
-
-

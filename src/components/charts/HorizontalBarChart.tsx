@@ -9,6 +9,7 @@ import {
   Tooltip,
   ResponsiveContainer,
 } from 'recharts'
+import { tooltipContentStyle } from '@/lib/recharts'
 
 interface HorizontalBarChartProps {
   data: { name: string; value: number }[]
@@ -28,16 +29,7 @@ export function HorizontalBarChartCard({ data, title, color,   unit = '%',
           <CartesianGrid strokeDasharray="3 3" stroke="#374151" opacity={0.3} horizontal={false} />
           <XAxis type="number" tick={{ fontSize: 11 }} unit={unit} domain={domain ?? [0, 100]} />
           <YAxis type="category" dataKey="name" tick={{ fontSize: 12 }} width={80} />
-          <Tooltip
-            contentStyle={{
-              backgroundColor: 'var(--recharts-tooltip-bg)',
-              border: '1px solid var(--recharts-tooltip-border)',
-              borderRadius: '8px',
-              color: 'var(--recharts-tooltip-color)',
-              fontSize: '12px',
-            }}
-            formatter={(v) => [`${v}${unit}`, undefined]}
-          />
+          <Tooltip contentStyle={tooltipContentStyle} formatter={(v) => [`${v}${unit}`, undefined]} />
           <Bar dataKey="value" fill={color} radius={[0, 4, 4, 0]} />
         </BarChart>
       </ResponsiveContainer>

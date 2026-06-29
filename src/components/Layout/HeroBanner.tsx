@@ -4,6 +4,7 @@ import { useState, useRef, useEffect } from 'react'
 import type { Candidate } from '../../types'
 import { DataLink } from '../DataLink'
 import { Spinner } from '../ui/Spinner'
+import { hideImageOnError } from '@/lib/dom'
 import { CandidateStats } from './CandidateStats'
 
 interface HeroBannerProps {
@@ -39,7 +40,7 @@ export function HeroBanner({ candidate: c }: HeroBannerProps) {
           alt={c.fullName.value}
           className="absolute inset-0 w-full h-full object-contain"
           onLoad={() => setPhotoLoaded(true)}
-          onError={(e) => { setPhotoLoaded(true); (e.target as HTMLImageElement).style.display = 'none' }}
+          onError={(e) => { setPhotoLoaded(true); hideImageOnError(e) }}
         />
         <div
           className="absolute inset-0"
@@ -56,7 +57,7 @@ export function HeroBanner({ candidate: c }: HeroBannerProps) {
               alt={c.party.name.value}
               className="h-10 md:h-14 max-w-24 object-contain"
               onLoad={() => setLogoLoaded(true)}
-onError={(e) => { setLogoLoaded(true); (e.target as HTMLImageElement).style.display = 'none' }}
+onError={(e) => { setLogoLoaded(true); hideImageOnError(e) }}
             />
           </div>
         </div>
