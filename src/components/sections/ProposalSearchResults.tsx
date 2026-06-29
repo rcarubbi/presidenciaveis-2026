@@ -2,6 +2,33 @@
 
 import type { Candidate, ProposalItem } from '../../types'
 import { DataLink } from '../DataLink'
+import {
+  Shield,
+  TrendingUp,
+  Heart,
+  BookOpen,
+  Clock,
+  Building2,
+  Leaf,
+  Globe,
+  Scale,
+  HeartHandshake,
+  Sprout,
+} from 'lucide-react'
+
+const sectionIcons: Record<string, React.ComponentType<{ size?: number; className?: string }>> = {
+  seguranca: Shield,
+  economia: TrendingUp,
+  saude: Heart,
+  educacao: BookOpen,
+  previdencia: Clock,
+  infraestrutura: Building2,
+  'meio-ambiente': Leaf,
+  'relacoes-exteriores': Globe,
+  'reforma-politica': Scale,
+  costumes: HeartHandshake,
+  agricultura: Sprout,
+}
 
 interface ProposalSearchResultsProps {
   results: {
@@ -27,7 +54,11 @@ export function ProposalSearchResults({ results, totalResults, searchQuery, show
       <p className="text-xs text-gray-400">{totalResults} proposta{totalResults !== 1 ? 's' : ''} encontrada{totalResults !== 1 ? 's' : ''}</p>
       {results.map(({ sec, matches }) => (
         <div key={sec.id} className="glass overflow-hidden">
-          <div className="px-5 py-3 text-base font-semibold text-gray-700 dark:text-gray-300 border-b border-gray-200/40 dark:border-gray-700/30">
+          <div className="flex items-center gap-2 px-5 py-3 text-base font-semibold text-gray-700 dark:text-gray-300 border-b border-gray-200/40 dark:border-gray-700/30">
+            {(() => {
+              const Icon = sectionIcons[sec.id]
+              return Icon ? <Icon size={16} className="text-gray-500 dark:text-gray-400 flex-shrink-0" /> : null
+            })()}
             {sec.label}
           </div>
           <div className="grid grid-cols-1 md:grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-4 px-5 py-3">

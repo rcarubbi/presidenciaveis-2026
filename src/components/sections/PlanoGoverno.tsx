@@ -1,18 +1,16 @@
 'use client'
 
 import type { Candidate } from '../../types'
-import { useState } from 'react'
 import { useProposalSearch } from '../../hooks/useProposalSearch'
 import { ProposalSearchBar } from './ProposalSearchBar'
 import { ProposalSearchResults } from './ProposalSearchResults'
-import { ProposalAccordion } from './ProposalAccordion'
+import { ProposalCards } from './ProposalCards'
 
 interface PlanoGovernoProps {
   candidates: Candidate[]
 }
 
 export function PlanoGoverno({ candidates }: PlanoGovernoProps) {
-  const [expandedSection, setExpandedSection] = useState<string | null>(null)
   const { search, setSearch, searchResults, totalResults } = useProposalSearch(candidates)
 
   return (
@@ -28,7 +26,7 @@ export function PlanoGoverno({ candidates }: PlanoGovernoProps) {
           </div>
         )
       ) : (
-        <ProposalAccordion candidates={candidates} expandedSection={expandedSection} onToggle={(id) => setExpandedSection(expandedSection === id ? null : id)} />
+        <ProposalCards candidates={candidates} />
       )}
     </div>
   )

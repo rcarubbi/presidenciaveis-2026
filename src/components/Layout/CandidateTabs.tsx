@@ -35,14 +35,14 @@ export function CandidateTabs({ candidateId, activeTab, onTabChange }: Candidate
             aria-selected={isActive}
             aria-controls={`subpanel-${candidateId}-${tab.id}`}
             onClick={() => onTabChange(tab.id)}
-            className={`relative flex items-center gap-2 px-3 py-2.5 text-sm font-medium whitespace-nowrap transition-all duration-200 flex-1 justify-center ${
+            className={`relative flex items-center gap-2 px-2 py-2 sm:px-3 sm:py-2.5 text-sm font-medium whitespace-nowrap transition-all duration-200 flex-shrink-0 sm:flex-1 justify-center ${
               isActive
                 ? 'text-gray-900 dark:text-gray-100'
                 : 'text-gray-500 hover:text-gray-700 dark:hover:text-gray-300'
             }`}
           >
             <Icon size={14} />
-            <span className="hidden sm:inline text-xs">{tab.label}</span>
+            <span className="text-[10px] leading-tight sm:text-xs">{tab.label}</span>
             {isActive && (
               <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-8 h-0.5 bg-gray-900 dark:bg-gray-100 rounded-full" />
             )}
