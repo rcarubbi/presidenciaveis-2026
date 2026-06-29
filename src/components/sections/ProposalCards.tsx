@@ -38,16 +38,20 @@ interface ProposalCardsProps {
 }
 
 export function ProposalCards({ candidates }: ProposalCardsProps) {
-  const colClass = candidates.length === 1 ? 'sm:w-1/2' : ''
+  const isSingle = candidates.length === 1
 
   return (
-    <div className="flex flex-wrap -m-1.5">
+    <div className="flex flex-wrap gap-3">
       {proposalSections.map((sec) => {
         const hasAny = candidates.some((c) => ((sec[c.id as keyof typeof sec] as ProposalItem[])?.length ?? 0) > 0)
         if (!hasAny) return null
 
         return (
-          <div key={sec.id} className={`w-full ${colClass} p-1.5`}>
+          <div
+            key={sec.id}
+            className="min-w-0"
+            style={{ flex: isSingle ? '1 1 calc(50% - 6px)' : '1 1 100%' }}
+          >
             <ProposalCard section={sec} candidates={candidates} />
           </div>
         )
