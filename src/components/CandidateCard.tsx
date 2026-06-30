@@ -60,13 +60,11 @@ function Photo({ children }: { children: React.ReactNode }) {
   const { candidate: c } = useCardCtx()
   return (
     <div className="aspect-[3/4] relative overflow-hidden" style={{ backgroundColor: c.party.color }}>
-      <div
-        className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
-        style={{
-          backgroundImage: `url(${c.photo})`,
-          backgroundPosition: c.photoPos ?? 'center top',
-          backgroundRepeat: 'no-repeat',
-        }}
+      <img
+        src={c.photo}
+        alt={c.fullName.value}
+        className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+        style={{ objectPosition: c.photoPos ?? 'center top' }}
       />
       <div
         className="absolute inset-0"

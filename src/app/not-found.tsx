@@ -1,4 +1,10 @@
 import Link from 'next/link'
+import type { Metadata } from 'next'
+
+// oxlint-disable-next-line react/only-export-components
+export const metadata: Metadata = {
+  title: '404 — Página não encontrada | Presidenciáveis 2026',
+}
 
 export default function NotFound() {
   return (

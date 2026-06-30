@@ -24,6 +24,8 @@ export async function generateMetadata({
 
   const url = `${BASE_URL}/candidato/${candidate.id}`
 
+  const ogImage = `${BASE_URL}${candidate.photo}`
+
   return {
     title: `${candidate.fullName.value} — Presidenciáveis 2026`,
     description: `Perfil completo de ${candidate.fullName.value}, candidato à Presidência do Brasil em 2026 pelo ${candidate.party.name.value}. Dados pessoais, carreira, posicionamento político, escândalos e financiamento.`,
@@ -32,10 +34,13 @@ export async function generateMetadata({
       description: `Perfil completo de ${candidate.fullName.value}, candidato à Presidência do Brasil em 2026 pelo ${candidate.party.name.value}.`,
       url,
       type: 'profile',
+      images: [{ url: ogImage, width: 600, height: 800 }],
     },
     twitter: {
+      card: 'summary_large_image',
       title: `${candidate.fullName.value} — Presidenciáveis 2026`,
       description: `Perfil completo de ${candidate.fullName.value}, candidato à Presidência do Brasil em 2026.`,
+      images: [ogImage],
     },
     alternates: { canonical: url },
   }

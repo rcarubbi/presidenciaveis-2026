@@ -17,11 +17,22 @@ const BASE_URL =
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   title: 'Presidenciáveis 2026',
-  description: 'Comparativo dos presidenciáveis 2026 — Lula, Flávio Bolsonaro e Renan Santos',
+  description: 'Comparativo dos presidenciáveis 2026 — Lula, Flávio Bolsonaro, Renan Santos, Ronaldo Caiado e Romeu Zema',
   openGraph: {
+    title: 'Presidenciáveis 2026',
+    description: 'Comparativo dos presidenciáveis 2026. Perfil completo, pesquisas e comparativo lado a lado.',
+    locale: 'pt_BR',
+    type: 'website',
+    siteName: 'Presidenciáveis 2026',
     images: [{ url: '/og-image.svg', width: 1200, height: 630 }],
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Presidenciáveis 2026',
+    description: 'Comparativo dos presidenciáveis 2026. Perfil completo, pesquisas e comparativo lado a lado.',
+  },
   icons: { icon: '/favicon.svg' },
+  alternates: { canonical: BASE_URL },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

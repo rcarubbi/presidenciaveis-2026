@@ -48,6 +48,14 @@ export function generateWebsiteJsonLd(baseUrl: string): Record<string, unknown> 
     name: 'Presidenciáveis 2026 — Comparativo',
     url: baseUrl,
     description:
-      'Comparativo dos presidenciáveis 2026 — Lula, Flávio Bolsonaro e Renan Santos',
+      'Comparativo dos presidenciáveis 2026 — Lula, Flávio Bolsonaro, Renan Santos, Ronaldo Caiado e Romeu Zema',
+    potentialAction: {
+      '@type': 'SearchAction',
+      target: {
+        '@type': 'EntryPoint',
+        urlTemplate: `${baseUrl}/candidato/{candidate_id}`,
+      },
+      'query-input': 'required name=candidate_id',
+    },
   }
 }
