@@ -14,6 +14,11 @@ interface ProposalSearchResultsProps {
   showName?: boolean
 }
 
+function SectionIcon({ id }: { id: string }) {
+  const Icon = sectionIcons[id]
+  return Icon ? <Icon size={16} className="text-gray-500 dark:text-gray-400 flex-shrink-0" /> : null
+}
+
 export function ProposalSearchResults({ results, totalResults, searchQuery, showName }: ProposalSearchResultsProps) {
   if (results.length === 0) {
     return (
@@ -29,10 +34,7 @@ export function ProposalSearchResults({ results, totalResults, searchQuery, show
       {results.map(({ sec, matches }) => (
         <div key={sec.id} className="glass overflow-hidden">
           <div className="flex items-center gap-2 px-5 py-3 text-base font-semibold text-gray-700 dark:text-gray-300 border-b border-gray-200/40 dark:border-gray-700/30">
-            {(() => {
-              const Icon = sectionIcons[sec.id]
-              return Icon ? <Icon size={16} className="text-gray-500 dark:text-gray-400 flex-shrink-0" /> : null
-            })()}
+            <SectionIcon id={sec.id} />
             {sec.label}
           </div>
           <div className="grid grid-cols-1 md:grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-4 px-5 py-3">
