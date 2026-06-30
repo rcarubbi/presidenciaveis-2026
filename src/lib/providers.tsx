@@ -1,18 +1,8 @@
 'use client'
 
-import { createContext, use, useEffect, useState, useCallback, useMemo } from 'react'
-
-type Theme = 'light' | 'dark'
-
-interface AppContextType {
-  theme: Theme
-  toggleTheme: () => void
-}
-
-const AppContext = createContext<AppContextType>({
-  theme: 'light',
-  toggleTheme: () => {},
-})
+import { useEffect, useState, useCallback, useMemo } from 'react'
+import { AppContext } from './app-context'
+import type { Theme } from './app-context'
 
 export function AppProvider({ children }: { children: React.ReactNode }) {
   const [theme, setTheme] = useState<Theme>('light')
@@ -40,8 +30,4 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
       {children}
     </AppContext.Provider>
   )
-}
-
-export function useApp() {
-  return use(AppContext)
 }

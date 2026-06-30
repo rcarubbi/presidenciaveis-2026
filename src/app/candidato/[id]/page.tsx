@@ -7,10 +7,12 @@ import type { Metadata } from 'next'
 const BASE_URL =
   process.env.NEXT_PUBLIC_BASE_URL || 'https://presidenciaveis-2026.vercel.app'
 
+// oxlint-disable-next-line react/only-export-components
 export function generateStaticParams() {
   return candidates.map((c) => ({ id: c.id }))
 }
 
+// oxlint-disable-next-line react/only-export-components
 export async function generateMetadata({
   params,
 }: {

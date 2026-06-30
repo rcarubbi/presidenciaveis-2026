@@ -13,6 +13,7 @@ import { JsonLdScript } from '@/components/JsonLdScript'
 const BASE_URL =
   process.env.NEXT_PUBLIC_BASE_URL || 'https://presidenciaveis-2026.vercel.app'
 
+// oxlint-disable-next-line react/only-export-components
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   title: 'Presidenciáveis 2026',

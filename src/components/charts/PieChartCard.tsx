@@ -42,5 +42,3 @@ export function PieChartCard({ data, title, unit = 'R$ mi' }: PieChartCardProps)
     </div>
   )
 }
-
-export default PieChartCard

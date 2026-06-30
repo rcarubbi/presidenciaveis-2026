@@ -3,7 +3,7 @@
 import { Moon, Sun, GitCompare, Users, BarChart3 } from 'lucide-react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { useApp } from '@/lib/providers'
+import { useApp } from '@/lib/app-context'
 
 const tabs = [
   { id: 'candidatos', label: 'Candidatos', href: '/', icon: Users },

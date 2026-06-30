@@ -1,29 +1,3 @@
-export interface SapiensEnvelope<T> {
-  data: T
-  meta?: SapiensMeta
-}
-
-export interface SapiensPaginated<T> {
-  data: T[]
-  meta: SapiensMeta
-}
-
-export interface SapiensMeta {
-  total?: number | null
-  page?: number | null
-  page_size?: number | null
-  pages?: number | null
-  note?: string | null
-}
-
-export interface SapiensCandidate {
-  slug: string
-  name: string
-  status: string
-  bio: string | null
-  kpis: SapiensCandidateKPI
-}
-
 export interface SapiensCandidateKPI {
   articles: number
   sentiment_avg: number | null
@@ -53,23 +27,8 @@ export interface SapiensArticle {
   genre: string | null
 }
 
-export interface SapiensSentimentPoint {
-  date: string
-  articles: number
-  sentiment_avg: number | null
-}
-
 export interface SapiensSentimentSeries {
   candidate: string
   slug: string
-  points: SapiensSentimentPoint[]
-}
-
-export interface SapiensStats {
-  total_articles: number
-  total_candidates: number
-  total_sources: number
-  articles_today: number
-  last_fetch_at: string | null
-  cutoff_date: string
+  points: { date: string; articles: number; sentiment_avg: number | null }[]
 }

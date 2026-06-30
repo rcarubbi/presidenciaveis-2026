@@ -8,6 +8,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "oxlint",
+    "knip": "knip",
     "typecheck": "tsc --noEmit",
     "fetch:tse": "node --experimental-strip-types scripts/fetch-tse-data.ts"
   },
@@ -30,6 +31,7 @@
     "@types/node": "^24.13.2",
     "@types/react": "^19.2.17",
     "@types/react-dom": "^19.2.3",
+    "knip": "^6.23.0",
     "oxlint": "^1.69.0",
     "postcss": "^8.5.3",
     "typescript": "~6.0.2"

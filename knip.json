@@ -1,0 +1,10 @@
+{
+  "$schema": "https://unpkg.com/knip@6/schema.json",
+  "entry": ["src/app/**/*.tsx", "src/app/**/*.ts"],
+  "project": ["src/**/*.ts", "src/**/*.tsx"],
+  "ignoreDependencies": ["tailwindcss"],
+  "ignoreIssues": {
+    "src/lib/sapiens/types.ts": ["types"],
+    "src/types.ts": ["types"]
+  }
+}

@@ -43,5 +43,3 @@ export function GroupedBarChartCard({ data, bars, title, unit = '%' }: GroupedBa
     </div>
   )
 }
-
-export default GroupedBarChartCard
