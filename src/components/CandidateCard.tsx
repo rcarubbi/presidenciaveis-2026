@@ -59,7 +59,7 @@ export function CandidateCard({
 function Photo({ children }: { children: React.ReactNode }) {
   const { candidate: c } = useCardCtx()
   return (
-    <div className="aspect-[3/4] relative overflow-hidden" style={{ backgroundColor: c.party.color }}>
+    <div className="aspect-3/4 relative overflow-hidden" style={{ backgroundColor: c.party.color }}>
       <img
         src={c.photo}
         alt={c.fullName.value}
@@ -119,7 +119,7 @@ function CompareButton() {
       className={`flex items-center justify-center w-10 h-10 rounded-full backdrop-blur-sm transition-all duration-300 hover:scale-110 ${isCompareSelected
         ? 'bg-white/80 text-gray-900'
         : 'bg-white/20 text-white hover:bg-white/30'
-      }`}
+        }`}
       aria-label={`Comparar ${c.name.value}`}
       title="Comparar"
     >
