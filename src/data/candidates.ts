@@ -149,9 +149,9 @@ export const candidates: Candidate[] = [
 			},
 		],
 		ideologicalPosition: dv(
-			"Esquerda / Social-democrata",
-			"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva",
-			"2026-06-26",
+			"Centro-esquerda / Social-democrata",
+			"https://www.nexojornal.com.br/expresso/2024/04/28/governo-lula-esquerda-ou-direita",
+			"2026-06-30",
 		),
 		careerYears: dvn(
 			40,
@@ -962,9 +962,9 @@ export const candidates: Candidate[] = [
 			},
 		],
 		ideologicalPosition: dv(
-			"Extrema-direita / Direita conservadora",
-			"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Posi%C3%A7%C3%B5es_pol%C3%ADticas",
-			"2026-06-26",
+			"Direita / Conservador",
+			"https://www.gazetadopovo.com.br/ideias/quem-e-quem-direita-brasileira-guia/",
+			"2026-06-30",
 		),
 		careerYears: dvn(
 			22,
@@ -1637,9 +1637,9 @@ export const candidates: Candidate[] = [
 			},
 		],
 		ideologicalPosition: dv(
-			"Direita liberal / Pragmática",
-			"https://pt.wikipedia.org/wiki/Renan_Santos#Posicionamentos",
-			"2026-06-26",
+			"Centro-direita / Liberal",
+			"https://www.youtube.com/watch?v=fZlo3fybIAU",
+			"2026-06-30",
 		),
 		careerYears: dvn(
 			12,

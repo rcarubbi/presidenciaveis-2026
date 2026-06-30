@@ -22,11 +22,16 @@ const statusLabel: Record<string, string> = {
 }
 
 export function Escandalos({ candidates }: EscandalosProps) {
+  const activeStatuses = new Set(['ativo'])
+  const resolvedStatuses = new Set(['rejeitado', 'absolvido', 'arquivado'])
+  const annulledStatuses = new Set(['anulado'])
+
   const counts = candidates.map((c) => ({
     name: c.name.value,
     color: c.party.color,
-    ativos: c.scandals.filter((s) => s.status.value === 'ativo').length,
-    resolvidos: c.scandals.filter((s) => s.status.value !== 'ativo').length,
+    ativos: c.scandals.filter((s) => activeStatuses.has(s.status.value)).length,
+    resolvidos: c.scandals.filter((s) => resolvedStatuses.has(s.status.value)).length,
+    anulados: c.scandals.filter((s) => annulledStatuses.has(s.status.value)).length,
   }))
 
   return (
@@ -43,6 +48,10 @@ export function Escandalos({ candidates }: EscandalosProps) {
               <span>
                 <span className="font-bold text-green-500 tabular-nums">{c.resolvidos}</span>{' '}
                 <span className="text-gray-400">resolvidos</span>
+              </span>
+              <span>
+                <span className="font-bold text-orange-500 tabular-nums">{c.anulados}</span>{' '}
+                <span className="text-gray-400">anulados</span>
               </span>
             </div>
           </div>
