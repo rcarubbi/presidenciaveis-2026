@@ -17,7 +17,7 @@ Projeto: `C:\Users\rcaru\source\repos\eleicoes_benchmark\presidenciaveis-2026`
 3. **Usar `dv(valor, source, updatedAt)` ou `dvn(valor, source, updatedAt)`** para novos DataValues.
 4. **Nao modificar schemas** (`src/types.ts`). Nao criar arquivos fora de `src/data/`.
 5. **Nao modificar package.json, sitemap.ts, ou qualquer config.**
-6. **Apenas arquivos alterados: `src/data/candidates.ts`, `src/data/polls.ts`, `src/data/proposals.ts`, `src/data/media.ts`.**
+6. **Apenas arquivos alterados: `src/data/candidates.ts`, `src/data/polls.ts`, `src/data/proposals.ts`, `src/data/media.ts`, `src/data/.version.ts`.**
 
 ---
 
@@ -391,6 +391,32 @@ Priorizar: G1, UOL, Folha, Estadão, CNN Brasil, BBC Brasil, Veja, Exame, Poder3
 Editar apenas os 4 arquivos de dados em `src/data/`.
 Manter formatacao existente (indentacao com tabs, aspas duplas).
 Manter ordem existente dos arrays.
+
+### Passo 4.5 — Atualizar `src/data/.version.ts`
+
+Apos qualquer alteracao nos arquivos de dados (`candidates.ts`, `polls.ts`, `proposals.ts`, `media.ts`):
+
+1.  Atualizar `version` e `updatedAt` com timestamp ISO atual (`new Date().toISOString()`)
+2.  Adicionar entrada em `changes[]` para cada categoria de dado alterada:
+    - Pesquisas → `{ emoji: "📊", label: "Pesquisas eleitorais" }`
+    - Candidatos → `{ emoji: "👤", label: "Dados dos candidatos" }`
+    - Propostas → `{ emoji: "📋", label: "Propostas de governo" }`
+    - Videos → `{ emoji: "🎥", label: "Videos e entrevistas" }`
+3.  Se multiplas categorias alteradas, incluir todas em `changes[]`
+4.  Remover entradas duplicadas (mesmo emoji+label)
+5.  Exemplo:
+    ```typescript
+    export const dataVersion = {
+      version: "2026-07-10T14:00:00Z",
+      updatedAt: "2026-07-10T14:00:00Z",
+      changes: [
+        { emoji: "📊", label: "Pesquisas eleitorais" },
+        { emoji: "🎥", label: "Videos e entrevistas" },
+      ],
+    }
+    ```
+
+---
 
 ### Passo 5 — Verificar
 

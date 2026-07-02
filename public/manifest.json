@@ -1,0 +1,16 @@
+{
+  "name": "Presidenciaveis 2026",
+  "short_name": "Presid2026",
+  "description": "Comparativo apartidario dos candidatos a Presidencia do Brasil em 2026",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1e293b",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

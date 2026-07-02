@@ -9,6 +9,7 @@ import { CookieConsent } from '@/components/CookieConsent'
 import { GaScript } from '@/components/GaScript'
 import { ThemeScript } from '@/components/ThemeScript'
 import { JsonLdScript } from '@/components/JsonLdScript'
+import { PushInit } from '@/components/PushInit'
 
 const BASE_URL =
   process.env.NEXT_PUBLIC_BASE_URL || 'https://presidenciaveis-2026.vercel.app'
@@ -41,6 +42,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <ThemeScript />
         <JsonLdScript baseUrl={BASE_URL} />
+        <link rel="manifest" href="/manifest.json" />
       </head>
       <body>
         <GaScript />
@@ -69,6 +71,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               </ErrorBoundary>
               <ToasterProvider />
               <CookieConsent />
+              <PushInit />
             </AppProvider>
           </div>
         </div>
