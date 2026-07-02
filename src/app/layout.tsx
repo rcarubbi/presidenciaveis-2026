@@ -32,7 +32,15 @@ export const metadata: Metadata = {
     title: 'Presidenciáveis 2026',
     description: 'Comparativo dos presidenciáveis 2026. Perfil completo, pesquisas e comparativo lado a lado.',
   },
-  icons: { icon: '/favicon.svg' },
+  icons: {
+    icon: [
+      { url: '/favicon-96x96.png', sizes: '96x96', type: 'image/png' },
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+    ],
+    shortcut: '/favicon.ico',
+    apple: '/apple-touch-icon.png',
+  },
+  appleWebApp: { title: 'Presidenciáveis 2026' },
   alternates: { canonical: BASE_URL },
 }
 
@@ -42,7 +50,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <ThemeScript />
         <JsonLdScript baseUrl={BASE_URL} />
-        <link rel="manifest" href="/manifest.json" />
+        <link rel="manifest" href="/site.webmanifest" />
+        <meta name="apple-mobile-web-app-title" content="Presidenciáveis 2026" />
       </head>
       <body>
         <GaScript />

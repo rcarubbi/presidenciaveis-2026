@@ -10,7 +10,7 @@ export interface DataVersionInfo {
 }
 
 export const dataVersion: DataVersionInfo = {
-	version: "2026-07-02T03:51:00Z",
-	updatedAt: "2026-07-02T03:51:00Z",
+	version: "2026-07-02T03:52:00Z",
+	updatedAt: "2026-07-02T03:52:00Z",
 	changes: [{ emoji: "📊", label: "Pesquisas eleitorais" }],
 };

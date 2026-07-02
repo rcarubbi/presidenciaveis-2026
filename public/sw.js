@@ -44,7 +44,7 @@ async function checkVersion() {
       } else {
         await self.registration.showNotification('Novos dados disponiveis', {
           body,
-          icon: '/icon-192.png',
+          icon: '/web-app-manifest-192x192.png',
           tag: 'data-update',
           renotify: true,
         })
