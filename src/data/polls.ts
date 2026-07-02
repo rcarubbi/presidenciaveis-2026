@@ -2,6 +2,30 @@ import type { PollData } from '../types'
 
 export const polls: PollData[] = [
   {
+    institute: 'AtlasIntel',
+    date: '1/jul',
+    firstRound: [
+      { name: 'Lula', value: 46.3 },
+      { name: 'Flávio', value: 36.6 },
+      { name: 'Renan', value: 7.8 },
+      { name: 'Caiado', value: 2.9 },
+      { name: 'Zema', value: 2.0 },
+      { name: 'Barbosa', value: 1.0 },
+      { name: 'Aécio', value: 0.7 },
+      { name: 'Samara', value: 0.6 },
+      { name: 'Cury', value: 0.5 },
+      { name: 'Daciolo', value: 0.3 },
+      { name: 'Pimenta', value: 0.1 },
+    ],
+    secondRound: [
+      { label: 'Lula × Flávio', lula: 48.8, adversario: 42.3, adversarioNome: 'Flávio' },
+      { label: 'Lula × Michelle', lula: 48.7, adversario: 38.9, adversarioNome: 'Michelle' },
+      { label: 'Lula × Caiado', lula: 48.0, adversario: 39.0, adversarioNome: 'Caiado' },
+      { label: 'Lula × Zema', lula: 48.2, adversario: 38.5, adversarioNome: 'Zema' },
+      { label: 'Lula × Renan', lula: 49.2, adversario: 29.8, adversarioNome: 'Renan' },
+    ],
+  },
+  {
     institute: 'Datafolha',
     date: '17/jun',
     firstRound: [

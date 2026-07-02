@@ -2073,6 +2073,14 @@ export const candidates: Candidate[] = [
 					"2026-06-26",
 				),
 			},
+			{
+				party: dv("Gilberto Kassab (vice)"),
+				status: dv(
+					"Confirmado (01/07/2026)",
+					"https://noticias.uol.com.br/politica/ultimas-noticias/2026/07/01/caiado-anuncia-kassab-como-seu-vice-em-chapa-para-o-planalto.ghtm",
+					"2026-07-01",
+				),
+			},
 		],
 		ideologicalPosition: dv(
 			"Centro-direita / Conservador",

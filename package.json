@@ -10,7 +10,8 @@
     "lint": "oxlint",
     "knip": "knip",
     "typecheck": "tsc --noEmit",
-    "fetch:tse": "node --experimental-strip-types scripts/fetch-tse-data.ts"
+    "fetch:tse": "node --experimental-strip-types scripts/fetch-tse-data.ts",
+    "fetch:youtube": "node --env-file .env.local --experimental-strip-types scripts/fetch-youtube-videos.ts"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
