@@ -4,3 +4,5 @@ export const PieChartCard = dynamic(() => import('./PieChartCard').then(m => m.P
 export const GroupedBarChartCard = dynamic(() => import('./GroupedBarChart').then(m => m.GroupedBarChartCard), { ssr: false })
 
 export const HorizontalBarChartCard = dynamic(() => import('./HorizontalBarChart').then(m => m.HorizontalBarChartCard), { ssr: false })
+
+export const LineChartCard = dynamic(() => import('./LineChart').then(m => m.LineChartCard), { ssr: false })

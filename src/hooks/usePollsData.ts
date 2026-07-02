@@ -11,12 +11,22 @@ export interface TseResponse {
   lastUpdated: string
 }
 
-function sortDate(a: string, b: string) {
-  const parse = (s: string) => {
-    const [d, m] = s.split('/').map(Number)
-    return new Date(2026, m - 1, d).getTime()
-  }
-  return parse(b) - parse(a)
+const MONTHS: Record<string, number> = {
+  jan: 0, fev: 1, mar: 2, abr: 3, mai: 4, jun: 5,
+  jul: 6, ago: 7, set: 8, out: 9, nov: 10, dez: 11,
+}
+
+function parseDate(s: string) {
+  const [d, m] = s.split('/')
+  return new Date(2026, MONTHS[m.toLowerCase()], Number(d)).getTime()
+}
+
+function sortDateDesc(a: string, b: string) {
+  return parseDate(b) - parseDate(a)
+}
+
+function sortDateAsc(a: string, b: string) {
+  return parseDate(a) - parseDate(b)
 }
 
 export function usePollsData(initialSource?: 'institutes' | 'tse') {
@@ -44,6 +54,7 @@ export function usePollsData(initialSource?: 'institutes' | 'tse') {
 
   const firstRoundData = useMemo(() => filtered
     .filter((p) => p.firstRound.length > 0)
+    .toSorted((a, b) => sortDateAsc(a.date, b.date))
     .map((p) => {
       const row: { name: string; [key: string]: string | number } = { name: filtered.length > 1 ? p.date : p.institute }
       p.firstRound.forEach((c) => { row[c.name] = c.value })
@@ -53,6 +64,7 @@ export function usePollsData(initialSource?: 'institutes' | 'tse') {
   const secondRoundData = useMemo(() => source === 'institutes'
     ? filtered
         .filter((p) => p.secondRound)
+        .toSorted((a, b) => sortDateAsc(a.date, b.date))
         .flatMap((p) =>
           p.secondRound!.map((s) => ({
             name: filtered.length > 1 ? p.date : s.label,
@@ -66,7 +78,7 @@ export function usePollsData(initialSource?: 'institutes' | 'tse') {
   const rejectionData = useMemo(() => source === 'institutes'
     ? filtered
         .filter((p) => p.rejection)
-        .toSorted((a, b) => sortDate(a.date, b.date))
+        .toSorted((a, b) => sortDateDesc(a.date, b.date))
         .at(0)?.rejection
         ?.toSorted((a, b) => b.value - a.value) ?? []
     : [], [source, filtered])
@@ -74,7 +86,7 @@ export function usePollsData(initialSource?: 'institutes' | 'tse') {
   const spontaneousData = useMemo(() => source === 'institutes'
     ? filtered
         .filter((p) => p.spontaneous)
-        .toSorted((a, b) => sortDate(a.date, b.date))
+        .toSorted((a, b) => sortDateDesc(a.date, b.date))
         .at(0)?.spontaneous
         ?.toSorted((a, b) => b.value - a.value) ?? []
     : [], [source, filtered])
@@ -82,7 +94,7 @@ export function usePollsData(initialSource?: 'institutes' | 'tse') {
   const regionalData = useMemo(() => source === 'institutes'
     ? filtered
         .filter((p) => p.regional)
-        .toSorted((a, b) => sortDate(a.date, b.date))
+        .toSorted((a, b) => sortDateDesc(a.date, b.date))
         .at(0)?.regional
         ?.map((r) => ({
           name: r.region,
