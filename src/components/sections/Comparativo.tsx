@@ -14,6 +14,7 @@ import { Posicionamento } from './Posicionamento'
 import { PlanoGoverno } from './PlanoGoverno'
 import { ComparisonSelector } from './ComparisonSelector'
 import { ComparisonTabs } from './ComparisonTabs'
+import { ComparativoCobertura } from './ComparativoCobertura'
 
 interface ComparativoProps {
   candidates: Candidate[]
@@ -21,7 +22,7 @@ interface ComparativoProps {
   initialTab?: string
 }
 
-const validCmpTabs: CandidateSubTab[] = ['dados', 'carreira', 'escandalos', 'financiamento', 'posicionamento', 'plano']
+const validCmpTabs: CandidateSubTab[] = ['dados', 'carreira', 'plano', 'cobertura', 'escandalos', 'financiamento', 'posicionamento']
 
 export function Comparativo({ candidates, initialIds = ['lula', 'flavio', 'renan'], initialTab }: ComparativoProps) {
   const router = useRouter()
@@ -64,10 +65,11 @@ export function Comparativo({ candidates, initialIds = ['lula', 'flavio', 'renan
     switch (cmpTab) {
       case 'dados': return <DadosPessoais candidates={filtered} />
       case 'carreira': return <Carreira candidates={filtered} />
+      case 'plano': return <PlanoGoverno candidates={filtered} />
+      case 'cobertura': return <ComparativoCobertura candidates={filtered} />
       case 'escandalos': return <Escandalos candidates={filtered} />
       case 'financiamento': return <Financiamento candidates={filtered} />
       case 'posicionamento': return <Posicionamento candidates={filtered} />
-      case 'plano': return <PlanoGoverno candidates={filtered} />
       default: return null
     }
   }

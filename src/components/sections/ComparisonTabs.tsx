@@ -1,7 +1,7 @@
 'use client'
 
 import type { CandidateSubTab } from '../../types'
-import { User, Briefcase, Shield, DollarSign, Grid3X3, FileText } from 'lucide-react'
+import { User, Briefcase, Shield, DollarSign, Grid3X3, FileText, Newspaper } from 'lucide-react'
 
 interface ComparisonTabsProps {
   activeTab: CandidateSubTab
@@ -11,10 +11,11 @@ interface ComparisonTabsProps {
 const cmpTabs: { id: CandidateSubTab; label: string; icon: React.ComponentType<{ size?: number }> }[] = [
   { id: 'dados', label: 'Dados Pessoais', icon: User },
   { id: 'carreira', label: 'Carreira', icon: Briefcase },
+  { id: 'plano', label: 'Plano de Governo', icon: FileText },
+  { id: 'cobertura', label: 'Cobertura', icon: Newspaper },
   { id: 'escandalos', label: 'Escândalos', icon: Shield },
   { id: 'financiamento', label: 'Financiamento', icon: DollarSign },
   { id: 'posicionamento', label: 'Posicionamento', icon: Grid3X3 },
-  { id: 'plano', label: 'Plano de Governo', icon: FileText },
 ]
 
 export function ComparisonTabs({ activeTab, onTabChange }: ComparisonTabsProps) {

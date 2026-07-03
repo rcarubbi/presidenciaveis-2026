@@ -14,6 +14,7 @@ export async function GET(
     const res = await fetch(url, {
       next: { revalidate: 300 },
       headers: { Accept: 'application/json' },
+      signal: req.signal,
     })
 
     if (!res.ok) {
@@ -26,6 +27,9 @@ export async function GET(
     const data = await res.json()
     return NextResponse.json(data)
   } catch (err) {
+    if (err instanceof DOMException && err.name === 'AbortError') {
+      return NextResponse.json({ error: 'aborted' }, { status: 499 })
+    }
     const msg = err instanceof Error ? err.message : String(err)
     console.error('[sapiens/api]', msg)
     return NextResponse.json({ error: msg }, { status: 500 })

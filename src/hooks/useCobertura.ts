@@ -14,6 +14,49 @@ export interface CoberturaData {
   articles: SapiensArticle[]
 }
 
+// ---- client cache (module-level, survives re-renders and component unmounts) ----
+
+const CACHE_TTL = 4 * 60 * 1000
+
+interface CacheEntry {
+  data: CoberturaData
+  timestamp: number
+}
+
+const cache = new Map<string, CacheEntry>()
+
+async function fetchCoberturaData(apiSlug: string, signal?: AbortSignal): Promise<CoberturaData> {
+  const opts = signal ? { signal } : {}
+  const [detailRes, sentimentRes, articlesRes] = await Promise.all([
+    fetch(`/api/sapiens/candidates/${apiSlug}`, opts).then((r) => r.json()),
+    fetch(`/api/sapiens/candidates/${apiSlug}/sentiment`, opts).then((r) => r.json()),
+    fetch(`/api/sapiens/articles?candidate=${apiSlug}&page_size=10`, opts).then((r) => r.json()),
+  ])
+
+  if (detailRes.error) throw new Error(detailRes.error)
+  if (sentimentRes.error) throw new Error(sentimentRes.error)
+  if (articlesRes.error) throw new Error(articlesRes.error)
+
+  return {
+    detail: detailRes.data,
+    sentiment: sentimentRes.data?.points?.length ? sentimentRes.data : null,
+    articles: articlesRes.data ?? [],
+  }
+}
+
+function getCached(key: string): { data: CoberturaData; fresh: boolean } | null {
+  const entry = cache.get(key)
+  if (!entry) return null
+  return {
+    data: entry.data,
+    fresh: Date.now() - entry.timestamp < CACHE_TTL,
+  }
+}
+
+function setCache(key: string, data: CoberturaData) {
+  cache.set(key, { data, timestamp: Date.now() })
+}
+
 export function useCobertura(candidateId: string) {
   const [data, setData] = useState<CoberturaData | null>(null)
   const [loading, setLoading] = useState(true)
@@ -27,36 +70,49 @@ export function useCobertura(candidateId: string) {
       return
     }
 
+    const controller = new AbortController()
+    const key = candidateId
     let cancelled = false
-    setLoading(true)
+
     setError(null)
 
-    Promise.all([
-      fetch(`/api/sapiens/candidates/${apiSlug}`).then((r) => r.json()),
-      fetch(`/api/sapiens/candidates/${apiSlug}/sentiment`).then((r) => r.json()),
-      fetch(`/api/sapiens/articles?candidate=${apiSlug}&page_size=10`).then((r) => r.json()),
-    ])
-      .then(([detailRes, sentimentRes, articlesRes]) => {
-        if (cancelled) return
+    const cached = getCached(key)
 
-        if (detailRes.error) throw new Error(detailRes.error)
-        if (sentimentRes.error) throw new Error(sentimentRes.error)
-        if (articlesRes.error) throw new Error(articlesRes.error)
+    if (cached) {
+      if (cached.fresh) {
+        setData(cached.data)
+        setLoading(false)
+        return
+      }
+      setData(cached.data)
+      setLoading(true)
+    }
 
-        setData({
-          detail: detailRes.data,
-          sentiment: sentimentRes.data?.points?.length ? sentimentRes.data : null,
-          articles: articlesRes.data ?? [],
-        })
+    fetchCoberturaData(apiSlug, controller.signal)
+      .then((result) => {
+        setCache(key, result)
+        if (!cancelled) {
+          setData(result)
+          setLoading(false)
+          setError(null)
+        }
       })
       .catch((err) => {
-        if (!cancelled) setError(err.message)
-      })
-      .finally(() => {
-        if (!cancelled) setLoading(false)
+        if (err.name === 'AbortError') return
+        if (!cancelled) {
+          if (!cached) {
+            setError(err.message)
+            setLoading(false)
+          } else {
+            setLoading(false)
+          }
+        }
       })
 
-    return () => { cancelled = true }
+    return () => {
+      cancelled = true
+      controller.abort()
+    }
   }, [candidateId])
 
   return { data, loading, error }

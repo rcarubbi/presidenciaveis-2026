@@ -19,7 +19,7 @@ export const candidates: Candidate[] = [
 		party: {
 			name: dv("PT"),
 			number: 13,
-			logo: "https://upload.wikimedia.org/wikipedia/commons/c/c3/PT_%28Brazil%29_logo_2021.svg",
+			logo: "/logos/pt.svg",
 			color: "#cc2222",
 			colorLight: "#e85555",
 		},
@@ -855,7 +855,7 @@ export const candidates: Candidate[] = [
 		party: {
 			name: dv("PL"),
 			number: 22,
-			logo: "https://upload.wikimedia.org/wikipedia/commons/1/12/Partido_Liberal_%28Brazil%29_logo.svg",
+			logo: "/logos/pl.svg",
 			color: "#1a4fa0",
 			colorLight: "#3b7dd8",
 		},
@@ -1558,7 +1558,7 @@ export const candidates: Candidate[] = [
 		party: {
 			name: dv("Missão"),
 			number: 14,
-			logo: "https://filiacao.missao.org.br/images/logo_missao_onca_c.svg",
+			logo: "/logos/missao.svg",
 			color: "#d97706",
 			colorLight: "#f59e0b",
 		},
@@ -1978,7 +1978,7 @@ export const candidates: Candidate[] = [
 		party: {
 			name: dv("PSD"),
 			number: 55,
-			logo: "https://upload.wikimedia.org/wikipedia/commons/0/0c/PSD_Brazil_logo.svg",
+			logo: "/logos/psd.svg",
 			color: "#1a4fa0",
 			colorLight: "#3b7dd8",
 		},
@@ -2713,7 +2713,7 @@ export const candidates: Candidate[] = [
 		party: {
 			name: dv("NOVO"),
 			number: 30,
-			logo: "https://upload.wikimedia.org/wikipedia/commons/6/64/Partido_Novo_logo_%282020%29.svg",
+			logo: "/logos/novo.svg",
 			color: "#f15a24",
 			colorLight: "#f8a37d",
 		},
