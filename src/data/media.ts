@@ -575,6 +575,76 @@ export const mediaData: Record<string, MediaCategory[]> = {
 			items: [
 				{
 					title: dv(
+						"Renan Santos anuncia Aroldo Medina como vice — coletiva de imprensa",
+						"https://www.youtube.com/watch?v=SDUQEa7FAms",
+						"2026-07-03",
+					),
+					description: dv(
+						"O pré-candidato realiza coletiva de imprensa para anunciar Aroldo Medina como seu vice-presidente na chapa do Missão.",
+						"https://www.youtube.com/watch?v=SDUQEa7FAms",
+						"2026-07-03",
+					),
+					youtubeId: "SDUQEa7FAms",
+					category: "entrevistas",
+				},
+				{
+					title: dv(
+						"Renan Santos na Band Bahia — entrevista sobre propostas para o Nordeste",
+						"https://www.youtube.com/watch?v=X1TdZfJnWRM",
+						"2026-07-03",
+					),
+					description: dv(
+						"O pré-candidato concede entrevista à Band Bahia, abordando soluções para os principais problemas do estado da Bahia e do Nordeste.",
+						"https://www.youtube.com/watch?v=X1TdZfJnWRM",
+						"2026-07-03",
+					),
+					youtubeId: "X1TdZfJnWRM",
+					category: "entrevistas",
+				},
+				{
+					title: dv(
+						"Renan Santos no Esfera Cast — entrevista com Marina Demori",
+						"https://www.youtube.com/watch?v=ASThOq7zVSA",
+						"2026-07-03",
+					),
+					description: dv(
+						"O pré-candidato participa do Esfera Cast em entrevista conduzida por Marina Demori, debatendo o futuro do Brasil e as eleições de 2026.",
+						"https://www.youtube.com/watch?v=ASThOq7zVSA",
+						"2026-07-03",
+					),
+					youtubeId: "ASThOq7zVSA",
+					category: "entrevistas",
+				},
+				{
+					title: dv(
+						"Renan Santos na Rádio Arauto News — como pretende unir o Brasil",
+						"https://www.youtube.com/watch?v=Ly0s8WT7FMk",
+						"2026-07-03",
+					),
+					description: dv(
+						"Em entrevista à Rádio Arauto News, o pré-candidato comenta como pretende unir o Brasil e governar sem populismo.",
+						"https://www.youtube.com/watch?v=Ly0s8WT7FMk",
+						"2026-07-03",
+					),
+					youtubeId: "Ly0s8WT7FMk",
+					category: "entrevistas",
+				},
+				{
+					title: dv(
+						"Renan Santos surpreende e revela o que faria se fosse presidente",
+						"https://www.youtube.com/watch?v=96XV6Sn-HFA",
+						"2026-07-03",
+					),
+					description: dv(
+						"O pré-candidato concede entrevista abordando temas que movimentam a política brasileira, revelando planos de governo e visão para o país.",
+						"https://www.youtube.com/watch?v=96XV6Sn-HFA",
+						"2026-07-03",
+					),
+					youtubeId: "96XV6Sn-HFA",
+					category: "entrevistas",
+				},
+				{
+					title: dv(
 						"Renan Santos dá show em entrevista do Correio Brasiliense",
 						"https://www.youtube.com/watch?v=lbPtcsdcAZw",
 						"2026-07-02",
@@ -965,6 +1035,48 @@ export const mediaData: Record<string, MediaCategory[]> = {
 			id: "entrevistas",
 			label: "Entrevistas e Sabatinas",
 			items: [
+				{
+					title: dv(
+						"Caiado concede entrevista coletiva em Marília-SP",
+						"https://www.youtube.com/watch?v=37UHTPaDYQI",
+						"2026-07-03",
+					),
+					description: dv(
+						"O pré-candidato à Presidência da República concede entrevista coletiva em Marília-SP, abordando propostas de governo e o cenário eleitoral.",
+						"https://www.youtube.com/watch?v=37UHTPaDYQI",
+						"2026-07-03",
+					),
+					youtubeId: "37UHTPaDYQI",
+					category: "entrevistas",
+				},
+				{
+					title: dv(
+						"Caiado no Papo De Elite — o que pode derrotar o PT",
+						"https://www.youtube.com/watch?v=RAS1vq-mqdU",
+						"2026-07-02",
+					),
+					description: dv(
+						"O pré-candidato analisa o cenário político brasileiro, explica por que acredita que pode derrotar o PT e apresenta suas propostas para o Brasil.",
+						"https://www.youtube.com/watch?v=RAS1vq-mqdU",
+						"2026-07-02",
+					),
+					youtubeId: "RAS1vq-mqdU",
+					category: "entrevistas",
+				},
+				{
+					title: dv(
+						"Caiado na Jovem Pan Marília — entrevista sobre pré-candidatura e alianças",
+						"https://www.youtube.com/watch?v=JyooQfG4q8s",
+						"2026-07-02",
+					),
+					description: dv(
+						"O pré-candidato participa do Jornal da Manhã Marília da Jovem Pan ao lado de Gilberto Kassab e Titi Brandão para discutir a corrida presidencial.",
+						"https://www.youtube.com/watch?v=JyooQfG4q8s",
+						"2026-07-02",
+					),
+					youtubeId: "JyooQfG4q8s",
+					category: "entrevistas",
+				},
 				{
 					title: dv(
 						"Entrevista com Ronaldo Caiado — PEC Brasil 2026",
