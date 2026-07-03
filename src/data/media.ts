@@ -575,6 +575,20 @@ export const mediaData: Record<string, MediaCategory[]> = {
 			items: [
 				{
 					title: dv(
+						"Renan Santos no SBT News — abre o jogo sobre as eleições 2026",
+						"https://www.youtube.com/watch?v=1vGwMWAyhs4",
+						"2026-07-03",
+					),
+					description: dv(
+						"O pré-candidato concede entrevista ao SBT News, abordando suas propostas de governo e o cenário eleitoral de 2026.",
+						"https://www.youtube.com/watch?v=1vGwMWAyhs4",
+						"2026-07-03",
+					),
+					youtubeId: "1vGwMWAyhs4",
+					category: "entrevistas",
+				},
+				{
+					title: dv(
 						"Renan Santos anuncia Aroldo Medina como vice — coletiva de imprensa",
 						"https://www.youtube.com/watch?v=SDUQEa7FAms",
 						"2026-07-03",
@@ -1459,6 +1473,104 @@ export const mediaData: Record<string, MediaCategory[]> = {
 						"2026-06-29",
 					),
 					youtubeId: "dTajGe601w8",
+					category: "entrevistas",
+				},
+				{
+					title: dv(
+						"Romeu Zema anuncia quebra de sigilo de adversários — Jovem Pan",
+						"https://www.youtube.com/watch?v=HAtBraMJkK8",
+						"2026-06-27",
+					),
+					description: dv(
+						"O pré-candidato do Novo anuncia em entrevista à Jovem Pan que pretende quebrar sigilos de adversários para combater corrupção.",
+						"https://www.youtube.com/watch?v=HAtBraMJkK8",
+						"2026-06-27",
+					),
+					youtubeId: "HAtBraMJkK8",
+					category: "entrevistas",
+				},
+				{
+					title: dv(
+						"Romeu Zema: 'Vou acabar com o orçamento secreto' — O POVO",
+						"https://www.youtube.com/watch?v=mUMBSopR4g0",
+						"2026-06-25",
+					),
+					description: dv(
+						"O pré-candidato afirma em entrevista ao jornal O POVO que pretende acabar com o orçamento secreto e garantir transparência total nos gastos públicos.",
+						"https://www.youtube.com/watch?v=mUMBSopR4g0",
+						"2026-06-25",
+					),
+					youtubeId: "mUMBSopR4g0",
+					category: "entrevistas",
+				},
+				{
+					title: dv(
+						"Romeu Zema comenta eleições 2026 e reforma tributária — O POVO",
+						"https://www.youtube.com/watch?v=K2wRdgeKKJ0",
+						"2026-06-24",
+					),
+					description: dv(
+						"O pré-candidato comenta o cenário das eleições 2026 e a reforma tributária em entrevista ao jornal O POVO.",
+						"https://www.youtube.com/watch?v=K2wRdgeKKJ0",
+						"2026-06-24",
+					),
+					youtubeId: "K2wRdgeKKJ0",
+					category: "entrevistas",
+				},
+				{
+					title: dv(
+						"Zema: 'Para melhorar economia, temos que cortar gastos públicos' — SBT News",
+						"https://www.youtube.com/watch?v=E0bEe6C9I0g",
+						"2026-06-24",
+					),
+					description: dv(
+						"O pré-candidato defende corte de gastos públicos como medida essencial para melhorar a economia brasileira em entrevista ao SBT News.",
+						"https://www.youtube.com/watch?v=E0bEe6C9I0g",
+						"2026-06-24",
+					),
+					youtubeId: "E0bEe6C9I0g",
+					category: "entrevistas",
+				},
+				{
+					title: dv(
+						"Romeu Zema no Mauá Podcast — entrevista sobre propostas de governo",
+						"https://www.youtube.com/watch?v=lK6_85bwvwE",
+						"2026-06-22",
+					),
+					description: dv(
+						"O pré-candidato participa do Mauá Podcast, detalhando suas propostas de governo, visão econômica e planos para o Brasil.",
+						"https://www.youtube.com/watch?v=lK6_85bwvwE",
+						"2026-06-22",
+					),
+					youtubeId: "lK6_85bwvwE",
+					category: "entrevistas",
+				},
+				{
+					title: dv(
+						"Zema dispara contra políticos que não cumprem mandato — TV Meio Norte",
+						"https://www.youtube.com/watch?v=r1mAOwnMYhI",
+						"2026-06-22",
+					),
+					description: dv(
+						"O pré-candidato critica políticos que não cumprem mandato integral e defende mandato fixo em entrevista à TV Meio Norte.",
+						"https://www.youtube.com/watch?v=r1mAOwnMYhI",
+						"2026-06-22",
+					),
+					youtubeId: "r1mAOwnMYhI",
+					category: "entrevistas",
+				},
+				{
+					title: dv(
+						"Código Brasília recebe Romeu Zema — entrevista sobre eleições 2026",
+						"https://www.youtube.com/watch?v=kvO-P7Ho0b0",
+						"2026-06-21",
+					),
+					description: dv(
+						"O pré-candidato participa do Código Brasília, abordando o cenário eleitoral de 2026, propostas de governo e alianças.",
+						"https://www.youtube.com/watch?v=kvO-P7Ho0b0",
+						"2026-06-21",
+					),
+					youtubeId: "kvO-P7Ho0b0",
 					category: "entrevistas",
 				},
 				{

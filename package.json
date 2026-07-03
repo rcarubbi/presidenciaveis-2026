@@ -11,7 +11,8 @@
     "knip": "knip",
     "typecheck": "tsc --noEmit",
     "fetch:tse": "node --experimental-strip-types scripts/fetch-tse-data.ts",
-    "fetch:youtube": "node --env-file .env.local --experimental-strip-types scripts/fetch-youtube-videos.ts"
+    "fetch:youtube": "node --env-file .env.local --experimental-strip-types scripts/fetch-youtube-videos.ts",
+    "fetch:news": "node --experimental-strip-types scripts/fetch-candidate-news.ts"
   },
   "pnpm": {
     "onlyBuiltDependencies": [

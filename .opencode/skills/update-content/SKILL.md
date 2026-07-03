@@ -116,6 +116,39 @@ Adicionar no inicio do array `polls` se for mais recente:
 | `caiado` | Ronaldo Caiado   | `/caiado.png` |
 | `zema`   | Romeu Zema       | `/zema.png`   |
 
+### Script automatizado de buscas
+
+**Script:** `scripts/fetch-candidate-news.ts`
+
+Usa a **SAPIENS API** (`https://eleicoes2026.sapienslabs.com.br/api/v1`) para buscar artigos recentes sobre cada candidato e classifica-los por relevancia:
+
+| Relevancia | Detecta                                      |
+| ---------- | -------------------------------------------- |
+| `proposta` | proposta, plano de governo, promessa, meta   |
+| `posicao`  | defende, declara, a favor, contra, critica   |
+| `escandalo`| investigacao, corrupcao, denuncia, STF       |
+| `timeline` | candidatura, vice, alianca, convencao        |
+| `financas` | patrimonio, arrecadacao, fundo eleitoral     |
+
+#### Como usar
+
+```bash
+# Ultimos 7 dias (summary)
+npm run fetch:news
+
+# Ultimos 3 dias com detalhes
+npm run fetch:news -- 3 -v
+
+# Ultimos 14 dias
+npm run fetch:news 14
+```
+
+#### Fluxo
+
+1. Rodar `npm run fetch:news 7` para ver o que foi publicado
+2. Para cada candidato com artigos relevantes, abrir as URLs dos artigos de maior interesse
+3. Se a informacao for nova e tiver fonte verificavel, adicionar ao `candidates.ts`
+
 ### Campos que requerem atualizacao periodica
 
 #### patrimonio (`DataValue<number>`)
@@ -123,19 +156,20 @@ Adicionar no inicio do array `polls` se for mais recente:
 - Busca: `"{candidato}" patrimonio declarado {ano} TSE`
 - Fonte: sites de noticia (G1, UOL, Estadão) que publiquem declaracao do TSE
 - Verificar: valor numerico, fonte com valor exato, updatedAt > existente
+- Dica: TSE geralmente divulga no registro de candidatura (ago/set). Fora disso, patrimonio raramente muda.
 
 #### timeline (`TimelineEvent[]`)
 
 - Cada evento tem `year: DataValue` e `event: DataValue`
-- Busca: `"{candidato}" {year} {keyword from event}` para verificar se houve desdobramento
+- Busca: usar `npm run fetch:news` e filtrar por `timeline` — captura anuncios de vice, aliancas, convencoes
 - Adicionar novos eventos se relevante (ex: nova candidatura, julgamento, cargo assumido)
 
 #### scandals (`Scandal[]`)
 
 - Cada escandalo: `name`, `status` ("ativo"/"arquivado"/"anulado"), `description`, `value?`
-- Busca: `"{candidato}" "{scandal.name}" atualizacao {ano}`
+- Busca: usar `npm run fetch:news` e filtrar por `escandalo` — captura noticias de investigacao, STF, corrupcao
 - Verificar se `status` mudou (ex: "ativo" → "arquivado")
-- Verificar se novos escandalos surgiram (busca: `"{candidato}" investigacao {ano}"`, `"{candidato}" escandalo {ano}"`)
+- Verificar se novos escandalos surgiram
 - So adicionar novo escandalo se fonte confiavel (veiculo grande: G1, Folha, Estadão, UOL, CNN, BBC, Veja, etc.)
 
 #### campaignFinance (`CampaignFinance`)
@@ -144,11 +178,12 @@ Adicionar no inicio do array `polls` se for mais recente:
 - Busca: `"{candidato}" financiamento campanha {ano} TSE`
 - Tambem: `"{candidato}" arrecadacao campanha {ano}`
 - Atualizar quando TSE divulgar novos dados de prestacao de contas
+- Dica: usar `npm run fetch:news` e filtrar por `financas`
 
 #### positions (`{ issue: DataValue; position: DataValue }[]`)
 
 - Lista de posicionamentos politicos do candidato
-- Busca: `"{candidato}" {issue} {ano}` (issue: aborto, drogas, armas, privatizacao, reforma tributaria, etc.)
+- Busca: usar `npm run fetch:news` e filtrar por `posicao` — captura declaracoes publicas
 - Fontes: entrevistas, discursos, redes sociais do candidato
 - So atualizar se o candidato fez nova declaracao publica sobre o tema
 
@@ -358,7 +393,17 @@ interface ProposalItem {
 
 ### Passo 2 — Buscar atualizacoes (web search + YouTube script)
 
-#### 2a. YouTube — rodar fetch script para TODOS os candidatos
+#### 2a. Candidate news — rodar fetch da SAPIENS API
+
+Sempre executar primeiro para detectar novas propostas, posicoes, escandalos e eventos de timeline:
+
+```bash
+npm run fetch:news 14
+```
+
+Usar `-v` para ver os titulos e URLs dos artigos relevantes.
+
+#### 2b. YouTube — rodar fetch script para TODOS os candidatos
 
 Sempre executar o script `fetch:youtube` para os 5 candidatos antes de buscar manualmente.
 
@@ -375,7 +420,7 @@ node --env-file .env.local --experimental-strip-types scripts/fetch-youtube-vide
 
 O script retorna JSON com `title`, `description`, `youtubeId`, `publishedAt`. Usar `publishedAt` como `updatedAt`.
 
-#### 2b. Web search (paralelo)
+#### 2c. Web search (paralelo, para complementar)
 
 Para cada fonte de dados, web search com queries especificas.
 Priorizar: G1, UOL, Folha, Estadão, CNN Brasil, BBC Brasil, Veja, Exame, Poder360, sites institutos pesquisa.
