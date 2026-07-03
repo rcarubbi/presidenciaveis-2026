@@ -18,6 +18,7 @@ Projeto: `C:\Users\rcaru\source\repos\eleicoes_benchmark\presidenciaveis-2026`
 4. **Nao modificar schemas** (`src/types.ts`). Nao criar arquivos fora de `src/data/`.
 5. **Nao modificar package.json, sitemap.ts, ou qualquer config.**
 6. **Apenas arquivos alterados: `src/data/candidates.ts`, `src/data/polls.ts`, `src/data/proposals.ts`, `src/data/media.ts`, `src/data/.version.ts`.**
+7. **EXECUTE TODOS OS PASSOS DO WORKFLOW (Passo 1 ao 6). NUNCA pular etapas.** Cada execucao do skill deve rodar o diagnostico, todas as buscas (YouTube para 5 candidatos, web search, SAPIENS news), validacao, edicao se necessario, .version, build e report. Skip e permitido APENAS se a busca nao encontrar dados novos — nunca por omissao ou preguiça.
 
 ---
 
@@ -393,6 +394,8 @@ interface ProposalItem {
 
 ### Passo 2 — Buscar atualizacoes (web search + YouTube script)
 
+**IMPORTANTE: Execute TODAS as sub-etapas abaixo (2a, 2b, 2c). Nao pular nenhuma.**
+
 #### 2a. Candidate news — rodar fetch da SAPIENS API
 
 Sempre executar primeiro para detectar novas propostas, posicoes, escandalos e eventos de timeline:
@@ -403,9 +406,9 @@ npm run fetch:news 14
 
 Usar `-v` para ver os titulos e URLs dos artigos relevantes.
 
-#### 2b. YouTube — rodar fetch script para TODOS os candidatos
+#### 2b. YouTube — rodar fetch script para TODOS OS 5 CANDIDATOS
 
-Sempre executar o script `fetch:youtube` para os 5 candidatos antes de buscar manualmente.
+Sempre executar o script `fetch:youtube` para os 5 candidatos (Lula, Flávio, Renan, Caiado, Zema). NUNCA pular um candidato.
 
 ```bash
 # Para cada candidato, usar --after com a data do video mais recente no arquivo
@@ -420,10 +423,13 @@ node --env-file .env.local --experimental-strip-types scripts/fetch-youtube-vide
 
 O script retorna JSON com `title`, `description`, `youtubeId`, `publishedAt`. Usar `publishedAt` como `updatedAt`.
 
-#### 2c. Web search (paralelo, para complementar)
+#### 2c. Web search (paralelo, para complementar) — TODOS OS CAMPOS
 
-Para cada fonte de dados, web search com queries especificas.
-Priorizar: G1, UOL, Folha, Estadão, CNN Brasil, BBC Brasil, Veja, Exame, Poder360, sites institutos pesquisa.
+Para cada fonte de dados, web search com queries especificas. Buscar SEMPRE por atualizacoes em:
+- **Polls**: `"{instituto}" pesquisa eleitoral presidente 2026`
+- **Candidates**: `"{candidato}" proposta/declaracao/escandalo {ano}` — verificar patrimonio, scandals, timeline, positions, campaignFinance
+- **Proposals**: `"{candidato}" plano de governo proposta {area}` — comparar com existing proposals
+Priorizar fontes: G1, UOL, Folha, Estadão, CNN Brasil, BBC Brasil, Veja, Exame, Poder360, sites institutos pesquisa.
 
 ### Passo 3 — Validar
 
@@ -462,6 +468,23 @@ Apos qualquer alteracao nos arquivos de dados (`candidates.ts`, `polls.ts`, `pro
     ```
 
 ---
+
+### Passo 4.7 — Verificar duplicatas
+
+**OBRIGATORIO:** Apos editar qualquer arquivo ou quando nenhuma alteracao for feita, rodar verificacao de duplicatas:
+
+```bash
+node "C:\Users\rcaru\AppData\Local\Temp\opencode\check_duplicates.mjs"
+```
+
+O que verificar:
+- **media.ts**: youtubeIds duplicados (mesmo video em categorias diferentes). Remover entrada duplicada, manter na categoria mais relevante.
+- **proposals.ts**: textos de proposta identicos para o MESMO candidato em secoes diferentes. Remover a copia, manter na secao mais relevante.
+- **polls.ts**: combinacao institute+date duplicada.
+- **candidates.ts**: timeline events duplicados, position texts duplicados.
+
+Se encontrar duplicatas **exatas**, remover automaticamente (manter na secao mais relevante).
+Se encontrar dados **muito similares** (ex: "Redução maioridade penal" e "Redução maioridade penal p/ 16 anos"), perguntar ao usuario o que fazer.
 
 ### Passo 5 — Verificar
 

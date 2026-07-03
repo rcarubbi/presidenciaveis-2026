@@ -1363,21 +1363,7 @@ export const mediaData: Record<string, MediaCategory[]> = {
 					youtubeId: "Wwe49wMVRYI",
 					category: "debates",
 				},
-				{
-					title: dv(
-						"Caiado na Rádio CBN — sobre Gilmar Mendes e Zema",
-						"https://www.youtube.com/watch?v=iZ6uMf8RRmg",
-						"2026-05-15",
-					),
-					description: dv(
-						"O pré-candidato comenta sobre a relação com Zema e o ministro Gilmar Mendes em entrevista à Rádio CBN.",
-						"https://www.youtube.com/watch?v=iZ6uMf8RRmg",
-						"2026-05-15",
-					),
-					youtubeId: "iZ6uMf8RRmg",
-					category: "debates",
-				},
-				{
+			{
 					title: dv(
 						"Caiado no Roda Viva (TV Cultura) — sabatina com bancada de jornalistas",
 						"https://www.youtube.com/watch?v=51g_wYigfag",

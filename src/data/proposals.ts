@@ -73,9 +73,7 @@ export const proposalSections: ProposalSection[] = [
     ],
     renan: [
       { text: dv('Economia de R$ 3,3 tri em 10 anos', 'https://exame.com/brasil/virais-regionais-e-ataques-a-flavio-a-estrategia-de-renan-santos-para-a-eleicao/', '2026-04-08') },
-      { text: dv('Nova reforma da Previdência', 'https://exame.com/brasil/virais-regionais-e-ataques-a-flavio-a-estrategia-de-renan-santos-para-a-eleicao/', '2026-04-08') },
       { text: dv('Desindexação benefícios do salário mínimo', 'https://exame.com/brasil/virais-regionais-e-ataques-a-flavio-a-estrategia-de-renan-santos-para-a-eleicao/', '2026-04-08') },
-      { text: dv('Corte privilégios Judiciário', 'https://exame.com/brasil/virais-regionais-e-ataques-a-flavio-a-estrategia-de-renan-santos-para-a-eleicao/', '2026-04-08') },
       { text: dv('Desvinculação gastos saúde/educação da receita', 'https://exame.com/brasil/virais-regionais-e-ataques-a-flavio-a-estrategia-de-renan-santos-para-a-eleicao/', '2026-04-08') },
       { text: dv('Mutirão anti Bolsa-Família (>30% população)', 'https://caminhodamissao.com/candidato/renan-santos', '2026-06-26') },
     ],
@@ -268,7 +266,6 @@ export const proposalSections: ProposalSection[] = [
       { text: dv('Regulamentação mídia e redes sociais', 'https://pt.org.br/com-olhar-para-o-futuro-programa-de-governo-de-lula-tera-construcao-coletiva/', '2026-05-30') },
     ],
     flavio: [
-      { text: dv('Prisão em 2ª instância', 'https://www.metropoles.com/chapelaria/2a-instancia-flavio-bolsonaro-nao-assina-carta-a-favor-de-prisao', '2019-11-08') },
     ],
     renan: [
       { text: dv('Lei de Responsabilidade Gerencial', 'https://caminhodamissao.com/candidato/renan-santos', '2026-06-26') },
@@ -292,7 +289,6 @@ export const proposalSections: ProposalSection[] = [
     lula: [
       { text: dv('Combate discriminação (racismo, LGBTfobia)', 'https://pt.org.br/com-olhar-para-o-futuro-programa-de-governo-de-lula-tera-construcao-coletiva/', '2026-05-30') },
       { text: dv('Igualdade salarial mulheres', 'https://pt.org.br/com-olhar-para-o-futuro-programa-de-governo-de-lula-tera-construcao-coletiva/', '2026-05-30') },
-      { text: dv('Demarcação terras indígenas', 'https://pt.org.br/com-olhar-para-o-futuro-programa-de-governo-de-lula-tera-construcao-coletiva/', '2026-05-30') },
       { text: dv('Cultura e Novas Economias (economia criativa)', 'https://contee.org.br/lula-lanca-plano-participativo-e-abre-construcao-do-programa-de-governo-para-2027-2030/', '2026-06-05') },
     ],
     flavio: [
