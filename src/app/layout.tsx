@@ -75,7 +75,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <AppProvider>
               <Header />
               <ErrorBoundary>
-                <main className="max-w-7xl mx-auto px-4 py-10 page-enter" id="main-content">
+                <main className="px-8 py-10 page-enter" id="main-content">
                   {children}
                   <Footer />
                 </main>

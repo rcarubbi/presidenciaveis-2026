@@ -54,7 +54,7 @@ export function Candidatos({ candidates }: CandidatosProps) {
         </div>
       </section>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 animate-scale-in">
+      <div className="grid grid-cols-1 sm:grid-cols-[repeat(auto-fit,minmax(280px,1fr))] gap-6 animate-scale-in">
         {candidates.map((c) => (
           <CandidateCard
             key={c.id}

@@ -1,6 +1,7 @@
 'use client'
 
-import { Moon, Sun, GitCompare, Users, BarChart3 } from 'lucide-react'
+import { useState, useEffect } from 'react'
+import { Moon, Sun, GitCompare, Users, BarChart3, Menu, X } from 'lucide-react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useApp } from '@/lib/app-context'
@@ -14,12 +15,24 @@ const tabs = [
 export function Header() {
   const pathname = usePathname()
   const { theme, toggleTheme } = useApp()
+  const [menuOpen, setMenuOpen] = useState(false)
+
+  useEffect(() => { setMenuOpen(false) }, [pathname])
+
+  useEffect(() => {
+    if (!menuOpen) return
+    const esc = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') setMenuOpen(false)
+    }
+    document.addEventListener('keydown', esc)
+    return () => document.removeEventListener('keydown', esc)
+  }, [menuOpen])
 
   const activeTab = pathname === '/pesquisas' ? 'pesquisas' : pathname.startsWith('/comparar') ? 'comparativo' : 'candidatos'
 
   return (
     <header className="sticky top-0 z-50 glass-strong border-b border-gray-200/30 dark:border-gray-700/30 shadow-sm no-print" style={{ viewTransitionName: 'persistent-header' }}>
-      <div className="max-w-7xl mx-auto px-4">
+      <div className="px-8">
         <div className="flex items-center justify-between h-11">
           <div className="flex items-center gap-2">
             <GitCompare size={18} className="text-gray-700 dark:text-gray-200" />
@@ -35,9 +48,16 @@ export function Header() {
             >
               {theme === 'dark' ? <Sun size={16} /> : <Moon size={16} />}
             </button>
+            <button
+              onClick={() => setMenuOpen(!menuOpen)}
+              className="md:hidden p-2 rounded-lg text-gray-500 hover:text-gray-700 dark:hover:text-gray-200 hover:bg-white/50 dark:hover:bg-gray-800/50 transition-all duration-200 focus-visible:ring-2 focus-visible:ring-gray-400"
+              aria-label={menuOpen ? 'Fechar menu' : 'Abrir menu'}
+            >
+              {menuOpen ? <X size={16} /> : <Menu size={16} />}
+            </button>
           </div>
         </div>
-        <nav className="flex gap-2 pb-3" aria-label="Seções" role="tablist">
+        <nav className="hidden md:flex gap-2 pb-3" aria-label="Seções" role="tablist">
           {tabs.map((tab) => {
             const Icon = tab.icon
             const isActive = activeTab === tab.id
@@ -64,6 +84,33 @@ export function Header() {
             )
           })}
         </nav>
+        <div
+          className={`md:hidden border-t border-gray-200/30 dark:border-gray-700/30 overflow-hidden transition-all duration-300 ease-out ${
+            menuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+          }`}
+        >
+          <div className="flex flex-col p-3 gap-1">
+            {tabs.map((tab) => {
+              const Icon = tab.icon
+              const isActive = activeTab === tab.id
+              return (
+                <Link
+                  key={tab.id}
+                  href={tab.href}
+                  onClick={() => setMenuOpen(false)}
+                  className={`flex items-center gap-3 px-4 py-3 rounded-lg text-sm font-medium transition-all duration-200 ${
+                    isActive
+                      ? 'text-gray-900 dark:text-gray-100 bg-gray-100 dark:bg-gray-800'
+                      : 'text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800/50'
+                  }`}
+                >
+                  <Icon size={16} />
+                  {tab.label}
+                </Link>
+              )
+            })}
+          </div>
+        </div>
       </div>
     </header>
   )

@@ -41,7 +41,7 @@ export function CookieConsent() {
         dismissed ? 'translate-y-full opacity-0' : 'translate-y-0 opacity-100'
       }`}
     >
-      <div className="max-w-7xl mx-auto glass rounded-xl p-4 flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4 shadow-lg shadow-black/5 dark:shadow-black/20">
+      <div className="mx-8 glass rounded-xl p-4 flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4 shadow-lg shadow-black/5 dark:shadow-black/20">
         <p className="text-xs text-gray-500 dark:text-gray-400 flex-1 leading-relaxed">
           Este site utiliza cookies do Google Analytics para análise de audiência. Nenhum dado pessoal é coletado.
         </p>
