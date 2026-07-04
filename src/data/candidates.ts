@@ -1635,6 +1635,14 @@ export const candidates: Candidate[] = [
 					"2026-06-26",
 				),
 			},
+			{
+				party: dv("Aroldo Medina (vice)"),
+				status: dv(
+					"Anunciado (01/07/2026)",
+					"https://g1.globo.com/politica/eleicoes/2026/noticia/2026/07/02/renan-santos-anuncia-aroldo-medina-como-vice-em-chapa-a-presidencia.ghtml",
+					"2026-07-02",
+				),
+			},
 		],
 		ideologicalPosition: dv(
 			"Centro-direita / Liberal",
@@ -1734,6 +1742,18 @@ export const candidates: Candidate[] = [
 					"Pré-candidatura Presidência. 3–7% pesquisas.",
 					"https://pt.wikipedia.org/wiki/Renan_Santos#Pr%C3%A9-candidatura_presidencial_de_2026",
 					"2026-06-26",
+				),
+			},
+			{
+				year: dv(
+					"2026",
+					"https://g1.globo.com/politica/eleicoes/2026/noticia/2026/07/02/renan-santos-anuncia-aroldo-medina-como-vice-em-chapa-a-presidencia.ghtml",
+					"2026-07-02",
+				),
+				event: dv(
+					"Anuncia Aroldo Medina como vice na chapa do Missão.",
+					"https://g1.globo.com/politica/eleicoes/2026/noticia/2026/07/02/renan-santos-anuncia-aroldo-medina-como-vice-em-chapa-a-presidencia.ghtml",
+					"2026-07-02",
 				),
 			},
 		],
@@ -2168,6 +2188,18 @@ export const candidates: Candidate[] = [
 					"Pré-candidatura Presidência. Sai UNIÃO p/ PSD. Governador licenciado.",
 					"https://g1.globo.com/politica/eleicoes/2026/noticia/2026/03/27/caiado-oficializa-pre-candidatura-a-presidencia-pelo-psd.ghtml",
 					"2026-03-27",
+				),
+			},
+			{
+				year: dv(
+					"2026",
+					"https://g1.globo.com/politica/noticia/2026/07/01/caiado-anuncia-kassab-presidente-do-psd-como-vice-na-chapa-a-presidencia.ghtml",
+					"2026-07-01",
+				),
+				event: dv(
+					"Anuncia Gilberto Kassab como vice em chapa puro-sangue do PSD.",
+					"https://g1.globo.com/politica/noticia/2026/07/01/caiado-anuncia-kassab-presidente-do-psd-como-vice-na-chapa-a-presidencia.ghtml",
+					"2026-07-01",
 				),
 			},
 		],
