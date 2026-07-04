@@ -1,17 +1,82 @@
 'use client'
 
-import { useState, useEffect, useCallback } from 'react'
+import { useState, useEffect, useCallback, useRef } from 'react'
 import { createPortal } from 'react-dom'
 import type { MediaItem } from '../types'
-import { Play, X } from 'lucide-react'
+import { Play, X, Check } from 'lucide-react'
+import { getVideoProgress, saveVideoProgress } from '@/lib/videoProgress'
+import type { VideoProgress } from '@/lib/videoProgress'
+
+declare global {
+  interface Window {
+    onYouTubeIframeAPIReady?: () => void
+    YT?: {
+      Player: {
+        new (
+          elementId: string | HTMLElement,
+          opts: {
+            host?: string
+            videoId?: string
+            height?: string | number
+            width?: string | number
+            playerVars?: Record<string, string | number>
+            events?: {
+              onReady?: (event: { target: YTPlayer }) => void
+              onStateChange?: (event: { data: number }) => void
+            }
+          }
+        ): YTPlayer
+      }
+      PlayerState: { ENDED: number }
+    }
+  }
+}
+
+interface YTPlayer {
+  getCurrentTime(): number
+  getDuration(): number
+  seekTo(seconds: number, allowSeekAhead: boolean): void
+  destroy(): void
+}
 
 interface MediaCardProps {
   item: MediaItem
+  color: string
 }
 
-export function MediaCard({ item }: MediaCardProps) {
+function loadYouTubeAPI(): Promise<void> {
+  return new Promise((resolve) => {
+    if (typeof window.YT !== 'undefined' && typeof window.YT.Player !== 'undefined') {
+      resolve()
+      return
+    }
+    window.onYouTubeIframeAPIReady = resolve
+    if (!document.querySelector('script[src*="iframe_api"]')) {
+      const tag = document.createElement('script')
+      tag.src = 'https://www.youtube.com/iframe_api'
+      document.head.appendChild(tag)
+    }
+  })
+}
+
+export function MediaCard({ item, color }: MediaCardProps) {
   const [mounted, setMounted] = useState(false)
   const [visible, setVisible] = useState(false)
+  const [refreshKey, setRefreshKey] = useState(0)
+  const playerRef = useRef<YTPlayer | null>(null)
+  const intervalRef = useRef<number | undefined>(undefined)
+  const containerRef = useRef<HTMLDivElement>(null)
+
+  const [saved, setSaved] = useState<VideoProgress | null>(null)
+
+  useEffect(() => {
+    setSaved(getVideoProgress(item.youtubeId))
+  }, [item.youtubeId, refreshKey])
+
+  const isWatched = saved !== null && saved.d > 0 && saved.t / saved.d > 0.95
+  const totalDuration = saved?.d ?? 0
+  const watchPosition = saved?.t ?? 0
+  const progressPct = totalDuration > 0 ? Math.min(watchPosition / totalDuration * 100, 100) : 0
 
   const open = useCallback(() => {
     setMounted(true)
@@ -20,7 +85,10 @@ export function MediaCard({ item }: MediaCardProps) {
 
   const close = useCallback(() => {
     setVisible(false)
-    setTimeout(() => setMounted(false), 250)
+    setTimeout(() => {
+      setMounted(false)
+      setRefreshKey((k) => k + 1)
+    }, 250)
   }, [])
 
   useEffect(() => {
@@ -36,6 +104,62 @@ export function MediaCard({ item }: MediaCardProps) {
     }
   }, [mounted, close])
 
+  useEffect(() => {
+    if (!visible || !containerRef.current) return
+
+    let destroyed = false
+
+    loadYouTubeAPI().then(() => {
+      if (destroyed || !containerRef.current) return
+
+      const YT = window.YT!
+      const player = new YT.Player(containerRef.current, {
+        host: 'https://www.youtube-nocookie.com',
+        videoId: item.youtubeId,
+        height: '100%',
+        width: '100%',
+        playerVars: { autoplay: 1, enablejsapi: 1 },
+        events: {
+          onReady: () => {
+            if (destroyed) return
+            const p = getVideoProgress(item.youtubeId)
+            if (p && p.t > 0) player.seekTo(p.t, true)
+
+            intervalRef.current = window.setInterval(() => {
+              if (destroyed) return
+              try {
+                const t = player.getCurrentTime()
+                const d = player.getDuration()
+                if (t > 0) saveVideoProgress(item.youtubeId, { t, d })
+              } catch {}
+            }, 5000)
+          },
+          onStateChange: (e) => {
+            if (e.data === YT.PlayerState.ENDED) {
+              const d = player.getDuration()
+              if (d > 0) saveVideoProgress(item.youtubeId, { t: d, d })
+            }
+          },
+        },
+      })
+      playerRef.current = player
+    })
+
+    return () => {
+      destroyed = true
+      clearInterval(intervalRef.current)
+      if (playerRef.current) {
+        try {
+          const t = playerRef.current.getCurrentTime()
+          const d = playerRef.current.getDuration()
+          if (t > 0) saveVideoProgress(item.youtubeId, { t, d })
+        } catch {}
+        try { playerRef.current.destroy() } catch {}
+        playerRef.current = null
+      }
+    }
+  }, [visible, item.youtubeId, refreshKey])
+
   return (
     <>
       <button
@@ -44,14 +168,23 @@ export function MediaCard({ item }: MediaCardProps) {
       >
         <div className="flex-1 relative overflow-hidden">
           <img
-            src={`https://img.youtube.com/vi/${item.youtubeId}/maxresdefault.jpg`}
+            src={`https://img.youtube.com/vi/${item.youtubeId}/hqdefault.jpg`}
             alt={item.title.value}
-            className="w-full h-full object-cover"
-            loading="lazy"
+            className="absolute inset-0 w-full h-full object-cover"
           />
+          {!isWatched && progressPct > 0 && (
+            <div className="absolute bottom-0 left-0 right-0 h-1.5 bg-black/40">
+              <div className="h-full" style={{ width: `${progressPct}%`, backgroundColor: color }} />
+            </div>
+          )}
+          {isWatched && (
+            <div className="absolute top-2 right-2 z-10 px-2 py-0.5 rounded-full text-white text-[10px] font-semibold flex items-center gap-1 shadow-sm" style={{ backgroundColor: color }}>
+              <Check size={10} /> Assistido
+            </div>
+          )}
           <div className="absolute inset-0 flex items-center justify-center bg-black/30 group-hover:bg-black/20 transition-colors">
-            <div className="w-14 h-14 rounded-full bg-white/90 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
-              <Play size={22} className="text-gray-900 ml-0.5" />
+            <div className="w-14 h-14 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform" style={{ backgroundColor: color }}>
+              <Play size={22} className="text-white ml-0.5" />
             </div>
           </div>
         </div>
@@ -73,18 +206,14 @@ export function MediaCard({ item }: MediaCardProps) {
           }}
         >
           <div className={`relative w-[95vw] sm:w-[90vw] max-w-5xl max-h-[85vh] transition-all duration-250 ${visible ? 'opacity-100 scale-100 translate-y-0' : 'opacity-0 scale-95 translate-y-4'}`}>
-            <div className="aspect-video rounded-xl overflow-hidden shadow-2xl">
-              <iframe
-                src={`https://www.youtube-nocookie.com/embed/${item.youtubeId}?autoplay=1`}
-                allow="autoplay; encrypted-media; picture-in-picture"
-                allowFullScreen
-                className="w-full h-full"
-              />
+            <div className="aspect-video rounded-xl overflow-hidden shadow-2xl bg-black">
+              <div ref={containerRef} className="w-full h-full" />
             </div>
             <button
               onClick={close}
-              className="absolute -top-4 -right-4 w-10 h-10 rounded-full bg-gray-900 text-white flex items-center justify-center shadow-lg hover:bg-gray-700 transition-colors"
+              className="absolute -top-4 -right-4 w-10 h-10 rounded-full text-white flex items-center justify-center shadow-lg hover:brightness-125 transition-all duration-200"
               aria-label="Fechar"
+              style={{ backgroundColor: color }}
             >
               <X size={20} />
             </button>

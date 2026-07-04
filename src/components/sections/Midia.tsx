@@ -40,9 +40,9 @@ export function Midia({ candidates }: MidiaProps) {
               {isOpen ? <ChevronDown size={16} /> : <ChevronRight size={16} />}
             </button>
             {isOpen && (
-              <div className="px-5 pb-5 pt-2 border-t border-gray-200/40 dark:border-gray-700/30 grid grid-cols-1 sm:grid-cols-[repeat(auto-fit,minmax(420px,1fr))] gap-4">
+              <div className="px-5 pb-5 pt-2 border-t border-gray-200/40 dark:border-gray-700/30 grid grid-cols-1 sm:grid-cols-[repeat(auto-fill,minmax(420px,480px))] justify-start gap-1">
                 {cat.items.map((item, i) => (
-                  <MediaCard key={i} item={item} />
+                  <MediaCard key={i} item={item} color={candidate.party.color} />
                 ))}
               </div>
             )}
