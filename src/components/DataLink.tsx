@@ -18,7 +18,6 @@ export function DataLink({ data, fallback = 'N/D', format }: {
       className="underline underline-offset-2 decoration-blue-400/40 hover:decoration-blue-600 transition-all duration-200"
     >
       {display}
-      <span className="inline-block ml-0.5 text-blue-400/60 text-[10px]">&#8599;</span>
     </a>
   )
 }
