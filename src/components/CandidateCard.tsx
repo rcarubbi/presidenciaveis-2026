@@ -86,7 +86,7 @@ function PartyBadge() {
       <div className="absolute left-5 top-5 z-20">
         <img src={c.party.logo} alt={c.party.name.value} className="h-9 max-w-20 object-contain drop-shadow-lg" />
       </div>
-      <span className="civic-chip absolute right-4 top-4 z-20 border-white/30 bg-black/30 text-white backdrop-blur-sm dark:border-white/20 dark:bg-black/40">
+      <span className="absolute right-3 top-3 z-10 text-[clamp(3rem,8vw,5rem)] font-black leading-none text-white/15 select-none pointer-events-none">
         {c.party.number}
       </span>
     </>
