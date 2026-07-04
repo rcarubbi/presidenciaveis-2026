@@ -21,7 +21,7 @@ export function DadosPessoais({ candidates }: DadosPessoaisProps) {
   ]
 
   return (
-    <div className="glass overflow-x-auto">
+    <div className="bento-card overflow-x-auto">
       <table className="w-full text-base">
         <thead>
           <tr className="border-b border-gray-200/60 dark:border-gray-700/40">

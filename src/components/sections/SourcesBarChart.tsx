@@ -17,7 +17,7 @@ interface SourcesBarChartProps {
 export function SourcesBarChart({ sources }: SourcesBarChartProps) {
   if (sources.length === 0) return null
   return (
-    <div className="glass p-5 rounded-xl">
+    <div className="bento-card p-5 rounded-xl">
       <h3 className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-4">
         Principais Fontes
       </h3>

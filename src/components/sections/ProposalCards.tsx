@@ -44,7 +44,7 @@ function ProposalCard({ section, candidates }: ProposalCardProps) {
   const Icon = sectionIcons[section.id] ?? Shield
 
   return (
-    <div className="glass overflow-hidden transition-all duration-200 hover:shadow-md hover:scale-[1.01]">
+    <div className="bento-card overflow-hidden transition-all duration-200 hover:shadow-md hover:scale-[1.01]">
       <button
         onClick={() => setIsOpen((o) => !o)}
         className="w-full flex items-center justify-between gap-3 px-4 py-3 text-left transition-colors duration-200 hover:bg-white/40 dark:hover:bg-gray-800/40"

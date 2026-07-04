@@ -13,10 +13,10 @@ export function InstituteFilter({ institutes, selected, onSelect }: InstituteFil
         <button
           key={inst}
           onClick={() => onSelect(inst)}
-          className={`px-4 py-1.5 text-sm font-medium rounded-full transition-all duration-200 ${
+          className={`rounded-full px-4 py-2 text-sm font-bold transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 ${
             selected === inst
-              ? 'bg-gray-800 text-white dark:bg-white dark:text-gray-900 shadow-sm'
-              : 'bg-gray-100 text-gray-600 hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700'
+              ? 'bg-blue-800 text-white shadow-sm dark:bg-blue-500 dark:text-slate-950'
+              : 'border border-blue-100/80 bg-white/70 text-slate-600 hover:bg-blue-50 hover:text-blue-950 dark:border-blue-900/50 dark:bg-slate-900/70 dark:text-slate-300 dark:hover:bg-slate-800 dark:hover:text-white'
           }`}
         >
           {inst}

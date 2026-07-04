@@ -22,7 +22,7 @@ function SectionIcon({ id }: { id: string }) {
 export function ProposalSearchResults({ results, totalResults, searchQuery, showName }: ProposalSearchResultsProps) {
   if (results.length === 0) {
     return (
-      <div className="glass p-10 text-center">
+      <div className="bento-card p-10 text-center">
         <p className="text-sm text-gray-400">Nenhuma proposta encontrada para &ldquo;{searchQuery}&rdquo;</p>
       </div>
     )
@@ -32,7 +32,7 @@ export function ProposalSearchResults({ results, totalResults, searchQuery, show
     <div className="space-y-2">
       <p className="text-xs text-gray-400">{totalResults} proposta{totalResults !== 1 ? 's' : ''} encontrada{totalResults !== 1 ? 's' : ''}</p>
       {results.map(({ sec, matches }) => (
-        <div key={sec.id} className="glass overflow-hidden">
+        <div key={sec.id} className="bento-card overflow-hidden">
           <div className="flex items-center gap-2 px-5 py-3 text-base font-semibold text-gray-700 dark:text-gray-300 border-b border-gray-200/40 dark:border-gray-700/30">
             <SectionIcon id={sec.id} />
             {sec.label}

@@ -23,7 +23,7 @@ const tabs: { id: CandidateSubTab; label: string; icon: React.ComponentType<{ si
 
 export function CandidateTabs({ candidateId, activeTab, onTabChange }: CandidateTabsProps) {
   return (
-    <nav className="flex gap-1 overflow-x-auto glass p-1 rounded-xl" aria-label="Seções do candidato" role="tablist">
+    <nav className="flex gap-1.5 overflow-x-auto rounded-2xl border border-blue-100/80 bg-white/70 p-1.5 shadow-sm dark:border-blue-900/50 dark:bg-slate-900/70" aria-label="Seções do candidato" role="tablist">
       {tabs.map((tab) => {
         const Icon = tab.icon
         const isActive = activeTab === tab.id
@@ -35,17 +35,14 @@ export function CandidateTabs({ candidateId, activeTab, onTabChange }: Candidate
             aria-selected={isActive}
             aria-controls={`subpanel-${candidateId}-${tab.id}`}
             onClick={() => onTabChange(tab.id)}
-            className={`relative flex items-center gap-2 px-2 py-2 sm:px-3 sm:py-2.5 text-sm font-medium whitespace-nowrap transition-all duration-200 flex-shrink-0 sm:flex-1 justify-center ${
+            className={`flex min-h-11 items-center gap-2 rounded-xl px-3.5 text-sm font-bold whitespace-nowrap transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 ${
               isActive
-                ? 'text-gray-900 dark:text-gray-100'
-                : 'text-gray-500 hover:text-gray-700 dark:hover:text-gray-300'
+                ? 'bg-blue-800 text-white shadow-sm dark:bg-blue-500 dark:text-slate-950'
+                : 'text-slate-600 hover:bg-blue-50 hover:text-blue-950 dark:text-slate-300 dark:hover:bg-slate-800 dark:hover:text-white'
             }`}
           >
-            <Icon size={14} />
-            <span className="text-[10px] leading-tight sm:text-xs">{tab.label}</span>
-            {isActive && (
-              <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-8 h-0.5 bg-gray-900 dark:bg-gray-100 rounded-full" />
-            )}
+            <Icon size={16} />
+            <span className="hidden sm:inline">{tab.label}</span>
           </button>
         )
       })}

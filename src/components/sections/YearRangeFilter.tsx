@@ -9,7 +9,7 @@ interface YearRangeFilterProps {
 
 export function YearRangeFilter({ minYear, maxYear, yearRange, onChange }: YearRangeFilterProps) {
   return (
-    <div className="glass p-4 flex items-center gap-4 flex-wrap">
+    <div className="bento-card p-4 flex items-center gap-4 flex-wrap">
       <span className="text-xs font-medium text-gray-500">Filtrar ano:</span>
       <div className="flex items-center gap-2 flex-1 min-w-[200px]">
         <span className="text-xs text-gray-400 tabular-nums w-10 text-right">{yearRange[0]}</span>

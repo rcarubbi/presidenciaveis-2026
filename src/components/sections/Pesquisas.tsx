@@ -34,16 +34,19 @@ export function Pesquisas({ initialSource }: PesquisasProps) {
   const noData = source === 'institutes' ? filtered.length === 0 : (!tseData || tseData.totalPolls === 0)
 
   return (
-    <div className="space-y-6">
-      <section className="relative overflow-hidden rounded-2xl glass p-8 md:p-10">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#cc2222]/5 via-[#1a4fa0]/5 to-[#d97706]/5" />
-        <div className="relative z-10 max-w-2xl">
-          <h1 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-100 tracking-tight">
-            Pesquisas Eleitorais 2026
-          </h1>
-          <p className="text-xs text-gray-500 dark:text-gray-400 mt-2 leading-relaxed">
-            Acompanhe as intenções de voto para Presidente da República. Os dados podem ser visualizados por instituto de pesquisa (Datafolha, Quaest, AtlasIntel, Real Time Big Data) ou pelos registros oficiais do Tribunal Superior Eleitoral. Selecione a fonte abaixo.
-          </p>
+    <div className="space-y-8">
+      <section className="bento-panel overflow-hidden px-6 py-8 sm:px-10 sm:py-12">
+        <div className="flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">
+          <div className="max-w-2xl">
+            <span className="civic-chip mb-4 w-fit">Pesquisas</span>
+            <h1 className="text-[clamp(1.75rem,5vw,3.25rem)] font-black tracking-tight text-slate-950 dark:text-white leading-[1.08]">
+              Pesquisas Eleitorais{' '}
+              <span className="bg-gradient-to-r from-blue-800 to-amber-600 bg-clip-text text-transparent dark:from-blue-400 dark:to-amber-400">2026</span>
+            </h1>
+            <p className="mt-3 max-w-xl text-sm leading-relaxed text-slate-500 dark:text-slate-400">
+              Acompanhe as intenções de voto para Presidente da República. Os dados podem ser visualizados por instituto de pesquisa (Datafolha, Quaest, AtlasIntel, Real Time Big Data) ou pelos registros oficiais do Tribunal Superior Eleitoral.
+            </p>
+          </div>
         </div>
       </section>
       <SourceToggle source={source} onChange={handleSourceChange} />
@@ -51,16 +54,16 @@ export function Pesquisas({ initialSource }: PesquisasProps) {
       {noData && source === 'institutes' ? (
         <>
           <InstituteFilter institutes={institutes} selected={selected} onSelect={setSelected} />
-          <div className="glass p-10 text-center">
-            <p className="text-gray-500">Nenhuma pesquisa disponível para {selected}</p>
+          <div className="bento-card p-10 text-center">
+            <p className="text-slate-500">Nenhuma pesquisa disponível para {selected}</p>
           </div>
         </>
       ) : source === 'tse' && tseLoading ? (
-        <div className="glass p-10 text-center flex justify-center">
+        <div className="bento-card p-10 text-center flex justify-center">
           <Spinner size={32} />
         </div>
       ) : source === 'tse' && tseError ? (
-        <div className="glass p-10 text-center">
+        <div className="bento-card p-10 text-center">
           <p className="text-red-500">Erro ao carregar dados do TSE: {tseError}</p>
         </div>
       ) : (
@@ -86,7 +89,7 @@ export function Pesquisas({ initialSource }: PesquisasProps) {
               lastUpdated={tseData.lastUpdated}
             />
           )}
-          <p className="text-xs text-gray-400 dark:text-gray-500 text-center">
+          <p className="text-xs text-slate-400 dark:text-slate-500 text-center">
             {source === 'institutes'
               ? `Fonte: ${selected} (${dates}).`
               : `Fonte: Tribunal Superior Eleitoral — Pesquisas Eleitorais 2026. Dados oficiais registrados no TSE.`

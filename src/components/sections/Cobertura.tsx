@@ -67,14 +67,14 @@ export function Cobertura({ candidates }: CoberturaProps) {
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-        <div className="glass p-5 rounded-xl">
+        <div className="bento-card p-5 rounded-xl">
           <p className="text-xs text-gray-500 dark:text-gray-400 mb-1">Total de Artigos</p>
           <p className="text-2xl font-bold text-gray-900 dark:text-gray-100">
             {detail.kpis.articles.toLocaleString('pt-BR')}
           </p>
         </div>
 
-        <div className="glass p-5 rounded-xl">
+        <div className="bento-card p-5 rounded-xl">
           <p className="text-xs text-gray-500 dark:text-gray-400 mb-1">Sentimento Médio</p>
           <div className="flex items-center gap-2">
             <p className={`text-2xl font-bold ${sentimentBadge(detail.kpis.sentiment_avg).cls || ''}`}>
@@ -86,7 +86,7 @@ export function Cobertura({ candidates }: CoberturaProps) {
           </div>
         </div>
 
-        <div className="glass p-5 rounded-xl">
+        <div className="bento-card p-5 rounded-xl">
           <p className="text-xs text-gray-500 dark:text-gray-400 mb-2">Distribuição</p>
           <div className="h-2 rounded-full bg-gray-200 dark:bg-gray-700 overflow-hidden flex">
             <div
@@ -114,7 +114,7 @@ export function Cobertura({ candidates }: CoberturaProps) {
       </div>
 
       {articles.length > 0 && (
-        <div className="glass rounded-xl overflow-hidden">
+        <div className="bento-card rounded-xl overflow-hidden">
           <div className="px-5 py-3 border-b border-gray-200/40 dark:border-gray-700/30">
             <h3 className="text-sm font-semibold text-gray-700 dark:text-gray-300">
               Artigos Recentes
@@ -159,7 +159,7 @@ export function Cobertura({ candidates }: CoberturaProps) {
       )}
 
       {sentiment && sentiment.points.length > 1 && (
-        <div className="glass p-5 rounded-xl">
+        <div className="bento-card p-5 rounded-xl">
           <h3 className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-4">
             Sentimento ao Longo do Tempo
           </h3>
@@ -221,7 +221,7 @@ export function Cobertura({ candidates }: CoberturaProps) {
       {topSources.length > 0 && <SourcesBarChart sources={topSources} />}
 
       {detail.top_topics && detail.top_topics.length > 0 && (
-        <div className="glass p-5 rounded-xl">
+        <div className="bento-card p-5 rounded-xl">
           <h3 className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-4">
             Principais Tópicos
           </h3>
@@ -258,13 +258,13 @@ function CoberturaSkeleton() {
       <div className="h-4 w-40 bg-gray-200 dark:bg-gray-700 rounded" />
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
         {[1, 2, 3].map((i) => (
-          <div key={i} className="glass p-5 rounded-xl">
+          <div key={i} className="bento-card p-5 rounded-xl">
             <div className="h-3 w-20 bg-gray-200 dark:bg-gray-700 rounded mb-2" />
             <div className="h-6 w-16 bg-gray-200 dark:bg-gray-700 rounded" />
           </div>
         ))}
       </div>
-      <div className="glass rounded-xl overflow-hidden">
+      <div className="bento-card rounded-xl overflow-hidden">
         <div className="p-5 border-b border-gray-200/40 dark:border-gray-700/30">
           <div className="h-4 w-32 bg-gray-200 dark:bg-gray-700 rounded" />
         </div>

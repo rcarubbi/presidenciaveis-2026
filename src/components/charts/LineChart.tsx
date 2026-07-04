@@ -26,8 +26,8 @@ interface LineChartProps {
 
 export function LineChartCard({ data, lines, title, unit = '%' }: LineChartProps) {
   return (
-    <div className="glass p-5">
-      <h4 className="text-base font-semibold text-gray-700 dark:text-gray-300 mb-4">{title}</h4>
+    <div className="bento-card p-5">
+      <h4 className="text-sm font-black uppercase tracking-[0.08em] text-slate-500 dark:text-slate-400 mb-4">{title}</h4>
       <ResponsiveContainer width="100%" height={220}>
         <LineChart data={data} margin={{ top: 5, right: 10, left: -10, bottom: 5 }}>
           <CartesianGrid strokeDasharray="3 3" stroke="#374151" opacity={0.3} />
