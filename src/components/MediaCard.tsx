@@ -180,7 +180,7 @@ export function MediaCard({ item, color }: MediaCardProps) {
           {!isWatched && progressPct > 0 && (
             <>
               <div className="absolute top-2 right-2 z-10 px-2 py-0.5 rounded-full text-white text-[10px] font-semibold flex items-center gap-1 shadow-sm" style={{ backgroundColor: color }}>
-                <Check size={10} /> Assistindo
+                <Play size={10} className="fill-white text-white" /> Assistindo
               </div>
               <div className="absolute bottom-0 left-0 right-0 h-1.5 bg-black/40">
                 <div className="h-full" style={{ width: `${progressPct}%`, backgroundColor: color }} />
