@@ -10,9 +10,9 @@ export interface DataVersionInfo {
 }
 
 export const dataVersion: DataVersionInfo = {
-	version: "2026-07-04T02:53:41Z",
-	updatedAt: "2026-07-04T02:53:41Z",
+	version: "2026-07-04T23:00:00Z",
+	updatedAt: "2026-07-04T23:00:00Z",
 	changes: [
-		{ emoji: "👤", label: "Dados dos candidatos" },
+		{ emoji: "🎥", label: "Videos e entrevistas" },
 	],
 };

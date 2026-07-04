@@ -225,6 +225,20 @@ export const mediaData: Record<string, MediaCategory[]> = {
 			items: [
 				{
 					title: dv(
+						"Presidente Lula na inauguração de túnel para transposição das águas do Rio São Francisco para o RN",
+						"https://www.youtube.com/watch?v=inbBmZaRgs0",
+						"2026-07-02",
+					),
+					description: dv(
+						"O presidente Lula participa da inauguração de túnel para transposição das águas do Rio São Francisco, levando água ao Rio Grande do Norte.",
+						"https://www.youtube.com/watch?v=inbBmZaRgs0",
+						"2026-07-02",
+					),
+					youtubeId: "inbBmZaRgs0",
+					category: "campanha",
+				},
+				{
+					title: dv(
 						"Lula no ICL — entrevista sobre os 8 anos do golpe e o futuro do Brasil",
 						"https://www.youtube.com/watch?v=rjq0ms0NQ-0",
 						"2023-12-12",
