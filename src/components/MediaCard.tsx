@@ -12,7 +12,7 @@ declare global {
     onYouTubeIframeAPIReady?: () => void
     YT?: {
       Player: {
-        new (
+        new(
           elementId: string | HTMLElement,
           opts: {
             host?: string
@@ -131,7 +131,7 @@ export function MediaCard({ item, color }: MediaCardProps) {
                 const t = player.getCurrentTime()
                 const d = player.getDuration()
                 if (t > 0) saveVideoProgress(item.youtubeId, { t, d })
-              } catch {}
+              } catch { }
             }, 5000)
           },
           onStateChange: (e) => {
@@ -153,8 +153,8 @@ export function MediaCard({ item, color }: MediaCardProps) {
           const t = playerRef.current.getCurrentTime()
           const d = playerRef.current.getDuration()
           if (t > 0) saveVideoProgress(item.youtubeId, { t, d })
-        } catch {}
-        try { playerRef.current.destroy() } catch {}
+        } catch { }
+        try { playerRef.current.destroy() } catch { }
         playerRef.current = null
       }
     }
@@ -164,23 +164,28 @@ export function MediaCard({ item, color }: MediaCardProps) {
     <>
       <button
         onClick={open}
-        className="group relative flex flex-col rounded-xl overflow-hidden bg-gray-100 dark:bg-gray-800/60 hover:ring-2 hover:ring-gray-400/40 transition-all duration-200 text-left aspect-[3/2] max-w-[480px] place-self-center"
+        className="group relative flex flex-col rounded-xl overflow-hidden bg-gray-100 dark:bg-gray-800/60 hover:ring-2 hover:ring-gray-400/40 transition-all duration-200 text-left max-w-[480px] place-self-center"
       >
-        <div className="flex-1 relative overflow-hidden">
+        <div className="aspect-[3/2] relative overflow-hidden">
           <img
             src={`https://img.youtube.com/vi/${item.youtubeId}/hqdefault.jpg`}
             alt={item.title.value}
             className="absolute inset-0 w-full h-full object-cover"
           />
-          {!isWatched && progressPct > 0 && (
-            <div className="absolute bottom-0 left-0 right-0 h-1.5 bg-black/40">
-              <div className="h-full" style={{ width: `${progressPct}%`, backgroundColor: color }} />
-            </div>
-          )}
           {isWatched && (
             <div className="absolute top-2 right-2 z-10 px-2 py-0.5 rounded-full text-white text-[10px] font-semibold flex items-center gap-1 shadow-sm" style={{ backgroundColor: color }}>
-              <Check size={10} /> Assistido
+              <Check size={10} /> Visto
             </div>
+          )}
+          {!isWatched && progressPct > 0 && (
+            <>
+              <div className="absolute top-2 right-2 z-10 px-2 py-0.5 rounded-full text-white text-[10px] font-semibold flex items-center gap-1 shadow-sm" style={{ backgroundColor: color }}>
+                <Check size={10} /> Assistindo
+              </div>
+              <div className="absolute bottom-0 left-0 right-0 h-1.5 bg-black/40">
+                <div className="h-full" style={{ width: `${progressPct}%`, backgroundColor: color }} />
+              </div>
+            </>
           )}
           <div className="absolute inset-0 flex items-center justify-center bg-black/30 group-hover:bg-black/20 transition-colors">
             <div className="w-14 h-14 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform" style={{ backgroundColor: color }}>
@@ -188,11 +193,11 @@ export function MediaCard({ item, color }: MediaCardProps) {
             </div>
           </div>
         </div>
-        <div className="p-2.5">
-          <h3 className="text-xs font-semibold text-gray-800 dark:text-gray-200 line-clamp-2">
+        <div className="p-3 min-h-[86px]">
+          <h3 className="text-sm font-semibold text-gray-800 dark:text-gray-200 line-clamp-2">
             {item.title.value}
           </h3>
-          <p className="text-[11px] text-gray-500 dark:text-gray-400 mt-0.5 line-clamp-1">
+          <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5 line-clamp-1">
             {item.description.value}
           </p>
         </div>
