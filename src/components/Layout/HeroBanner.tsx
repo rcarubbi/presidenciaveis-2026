@@ -28,10 +28,7 @@ export function HeroBanner({ candidate: c }: HeroBannerProps) {
                 background: `linear-gradient(to top, ${color} 0%, ${color}cc 35%, ${color}55 65%, transparent 85%)`,
               }}
             />
-            <span className="absolute right-5 top-5 z-20 inline-flex items-center justify-center min-w-[4rem] h-14 px-4 rounded-xl bg-black/30 backdrop-blur-md border border-white/20 text-2xl font-black tracking-tight text-white shadow-lg select-none md:hidden">
-              {c.party.number}
-            </span>
-            <span className="absolute right-6 bottom-6 z-10 text-[clamp(5rem,12vw,10rem)] font-black leading-none text-white/10 select-none pointer-events-none hidden md:block">
+            <span className="absolute right-5 top-5 z-10 text-[clamp(5rem,12vw,10rem)] font-black leading-none text-white/10 select-none pointer-events-none">
               {c.party.number}
             </span>
           </div>
