@@ -2,6 +2,7 @@
 
 import type { Candidate } from '../../types'
 import { useProposalSearch } from '../../hooks/useProposalSearch'
+import { FileText } from 'lucide-react'
 import { ProposalSearchBar } from './ProposalSearchBar'
 import { ProposalSearchResults } from './ProposalSearchResults'
 import { ProposalCards } from './ProposalCards'
@@ -15,6 +16,13 @@ export function PlanoGoverno({ candidates }: PlanoGovernoProps) {
 
   return (
     <div className="space-y-6">
+      <div
+        className={`flex items-center gap-2 ${candidates.length > 1 ? 'text-gray-700 dark:text-gray-300' : ''}`}
+        style={candidates.length === 1 ? { color: candidates[0].party.color } : undefined}
+      >
+        <FileText className="size-4" />
+        <h3 className="text-sm font-black uppercase tracking-[0.12em]">PLANO DE GOVERNO</h3>
+      </div>
       <ProposalSearchBar value={search} onChange={setSearch} />
 
       {search ? (

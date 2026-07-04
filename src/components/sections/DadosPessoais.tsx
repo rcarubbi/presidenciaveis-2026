@@ -1,5 +1,6 @@
 import type { Candidate } from '../../types'
 import { DataLink } from '../DataLink'
+import { User } from 'lucide-react'
 
 interface DadosPessoaisProps {
   candidates: Candidate[]
@@ -21,8 +22,16 @@ export function DadosPessoais({ candidates }: DadosPessoaisProps) {
   ]
 
   return (
-    <div className="bento-card overflow-x-auto">
-      <table className="w-full text-base">
+    <div className="space-y-4">
+      <div
+        className={`flex items-center gap-2 ${candidates.length > 1 ? 'text-gray-700 dark:text-gray-300' : ''}`}
+        style={candidates.length === 1 ? { color: candidates[0].party.color } : undefined}
+      >
+        <User className="size-4" />
+        <h3 className="text-sm font-black uppercase tracking-[0.12em]">DADOS PESSOAIS</h3>
+      </div>
+      <div className="bento-card overflow-x-auto">
+        <table className="w-full text-base">
         <thead>
           <tr className="border-b border-gray-200/60 dark:border-gray-700/40">
             <th className="text-left py-4 px-5 font-medium text-gray-500 dark:text-gray-400 w-40"></th>
@@ -46,6 +55,7 @@ export function DadosPessoais({ candidates }: DadosPessoaisProps) {
           ))}
         </tbody>
       </table>
+    </div>
     </div>
   )
 }

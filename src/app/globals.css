@@ -39,6 +39,15 @@
   100% { transform: translate(0, 0) scale(1); }
 }
 
+@keyframes slide-x {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(6px); }
+}
+
+@utility animate-slide-x {
+  animation: slide-x 1.2s ease-in-out infinite;
+}
+
 html {
   scroll-behavior: smooth;
   font-size: 17px;

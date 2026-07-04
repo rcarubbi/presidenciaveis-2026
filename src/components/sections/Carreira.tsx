@@ -1,8 +1,8 @@
 'use client'
 
 import type { Candidate } from '../../types'
-import { DataLink } from '../DataLink'
 import { useState } from 'react'
+import { Briefcase } from 'lucide-react'
 import { YearRangeFilter } from './YearRangeFilter'
 import { CareerTimeline } from './CareerTimeline'
 import { ElectionResults } from './ElectionResults'
@@ -25,14 +25,19 @@ export function Carreira({ candidates }: CarreiraProps) {
     }),
   }))
   return (
-    <div className="space-y-4">
+    <div className="space-y-6">
+      <div
+        className={`flex items-center gap-2 ${candidates.length > 1 ? 'text-gray-700 dark:text-gray-300' : ''}`}
+        style={candidates.length === 1 ? { color: candidates[0].party.color } : undefined}
+      >
+        <Briefcase className="size-4" />
+        <h3 className="text-sm font-black uppercase tracking-[0.12em]">CARREIRA POLÍTICA</h3>
+      </div>
       <YearRangeFilter minYear={minYear} maxYear={maxYear} yearRange={yearRange} onChange={setYearRange} />
 
       <div className="grid grid-cols-1 md:grid-cols-[repeat(auto-fit,minmax(280px,1fr))] gap-6">
         {filtered.map((c) => (
         <div key={c.id} className="bento-card p-5">
-          <h3 className="text-base font-semibold mb-4" style={{ color: c.party.color }}>{candidates.length > 1 && <><DataLink data={c.name} /> — </>}Carreira Política</h3>
-
           <CareerTimeline events={c.timeline} partyColor={c.party.color} />
           <ElectionResults results={c.electionResults} />
         </div>

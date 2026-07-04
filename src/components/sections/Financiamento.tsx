@@ -1,5 +1,6 @@
 import type { Candidate } from '../../types'
 import { DataLink } from '../DataLink'
+import { DollarSign } from 'lucide-react'
 import { PieChartCard, GroupedBarChartCard } from '../charts'
 
 interface FinanciamentoProps {
@@ -40,6 +41,13 @@ export function Financiamento({ candidates }: FinanciamentoProps) {
 
   return (
     <div className="space-y-6">
+      <div
+        className={`flex items-center gap-2 ${candidates.length > 1 ? 'text-gray-700 dark:text-gray-300' : ''}`}
+        style={candidates.length === 1 ? { color: candidates[0].party.color } : undefined}
+      >
+        <DollarSign className="size-4" />
+        <h3 className="text-sm font-black uppercase tracking-[0.12em]">FINANCIAMENTO DE CAMPANHA</h3>
+      </div>
       <div className="grid grid-cols-1 md:grid-cols-[repeat(auto-fit,minmax(280px,1fr))] gap-4">
         {fontesData.map((fd) => (
           <PieChartCard

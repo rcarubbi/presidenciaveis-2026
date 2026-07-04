@@ -1,5 +1,6 @@
 import type { Candidate } from '../../types'
 import { DataLink } from '../DataLink'
+import { Shield } from 'lucide-react'
 
 interface EscandalosProps {
   candidates: Candidate[]
@@ -36,6 +37,13 @@ export function Escandalos({ candidates }: EscandalosProps) {
 
   return (
     <div className="space-y-6">
+      <div
+        className={`flex items-center gap-2 ${candidates.length > 1 ? 'text-gray-700 dark:text-gray-300' : ''}`}
+        style={candidates.length === 1 ? { color: candidates[0].party.color } : undefined}
+      >
+        <Shield className="size-4" />
+        <h3 className="text-sm font-black uppercase tracking-[0.12em]">ESCÂNDALOS DE CORRUPÇÃO</h3>
+      </div>
       <div className="grid grid-cols-1 md:grid-cols-[repeat(auto-fit,minmax(240px,1fr))] gap-4">
         {counts.map((c) => (
           <div key={c.name} className="bento-card p-5 text-center">

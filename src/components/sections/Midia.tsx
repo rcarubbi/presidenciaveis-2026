@@ -3,7 +3,7 @@
 import { useState, useMemo } from 'react'
 import type { Candidate, MediaItem } from '../../types'
 import { mediaData } from '../../data/media'
-import { ChevronDown } from 'lucide-react'
+import { ChevronDown, Video } from 'lucide-react'
 import { MediaCard } from '../MediaCard'
 
 interface MidiaProps {
@@ -68,7 +68,15 @@ export function Midia({ candidates }: MidiaProps) {
   }
 
   return (
-    <div className="space-y-3">
+    <div className="space-y-6">
+      <div
+        className={`flex items-center gap-2 ${candidates.length > 1 ? 'text-gray-700 dark:text-gray-300' : ''}`}
+        style={candidates.length === 1 ? { color: candidates[0].party.color } : undefined}
+      >
+        <Video className="size-4" />
+        <h3 className="text-sm font-black uppercase tracking-[0.12em]">{candidate.name.value} NA MÍDIA</h3>
+      </div>
+      <div className="space-y-3">
       {groups.map((group) => {
         const isOpen = expanded === group.id
         return (
@@ -107,6 +115,7 @@ export function Midia({ candidates }: MidiaProps) {
           </div>
         )
       })}
+    </div>
     </div>
   )
 }

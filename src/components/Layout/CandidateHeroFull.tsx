@@ -2,6 +2,7 @@
 
 import type { Candidate } from '../../types'
 import { DataLink } from '../DataLink'
+import { Eye } from 'lucide-react'
 
 interface CandidateHeroFullProps {
   candidate: Candidate
@@ -9,7 +10,12 @@ interface CandidateHeroFullProps {
 
 export function CandidateHeroFull({ candidate: c }: CandidateHeroFullProps) {
   return (
-    <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
+    <div className="space-y-6">
+      <div className="flex items-center gap-2" style={{ color: c.party.color }}>
+        <Eye className="size-4" />
+        <h3 className="text-sm font-black uppercase tracking-[0.12em]">VISÃO GERAL</h3>
+      </div>
+      <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
       <div className="bento-card space-y-4 p-6">
         <h3 className="flex items-center gap-2 text-sm font-black uppercase tracking-[0.12em]" style={{ color: c.party.color }}>Dados Pessoais</h3>
         <div className="space-y-2 text-sm text-slate-500 dark:text-slate-400">
@@ -42,6 +48,7 @@ export function CandidateHeroFull({ candidate: c }: CandidateHeroFullProps) {
           </div>
         </div>
       </div>
+    </div>
     </div>
   )
 }

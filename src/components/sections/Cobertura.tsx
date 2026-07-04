@@ -59,11 +59,12 @@ export function Cobertura({ candidates }: CoberturaProps) {
 
   return (
     <div className="space-y-6">
-      <div className="flex items-center gap-2 mb-2">
-        <Newspaper size={18} className="text-gray-500" />
-        <h2 className="text-sm font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wider">
-          Cobertura Jornalística
-        </h2>
+      <div
+        className={`flex items-center gap-2 ${candidates.length > 1 ? 'text-gray-700 dark:text-gray-300' : ''}`}
+        style={candidates.length === 1 ? { color: candidates[0].party.color } : undefined}
+      >
+        <Newspaper className="size-4" />
+        <h3 className="text-sm font-black uppercase tracking-[0.12em]">COBERTURA JORNALÍSTICA</h3>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">

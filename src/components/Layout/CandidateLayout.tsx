@@ -4,7 +4,7 @@ import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 import type { Candidate, CandidateSubTab } from '../../types'
-import { ArrowLeft } from 'lucide-react'
+import { ArrowLeft, ChevronRight } from 'lucide-react'
 import { DadosPessoais } from '../sections/DadosPessoais'
 import { Carreira } from '../sections/Carreira'
 import { PlanoGoverno } from '../sections/PlanoGoverno'
@@ -63,6 +63,10 @@ export function CandidateLayout({ candidate, initialTab }: CandidateLayoutProps)
 
       <HeroBanner candidate={c} />
 
+      <div className="flex items-center gap-1.5 sm:hidden text-[11px] font-medium text-slate-400 dark:text-slate-500">
+        <span>Deslize para ver mais</span>
+        <ChevronRight size={14} className="-ml-0.5 animate-slide-x" />
+      </div>
       <CandidateTabs candidateId={c.id} activeTab={activeSubTab} onTabChange={handleTabChange} />
 
       <div className="tab-enter" key={activeSubTab} role="tabpanel" id={`subpanel-${c.id}-${activeSubTab}`} aria-labelledby={`subtab-${c.id}-${activeSubTab}`}>
