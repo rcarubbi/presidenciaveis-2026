@@ -6,17 +6,18 @@ import { useRouter, usePathname } from 'next/navigation'
 import { toast } from 'sonner'
 import type { Candidate, CandidateSubTab } from '../../types'
 import { ArrowLeft } from 'lucide-react'
-import { DadosPessoais } from './DadosPessoais'
-import { Carreira } from './Carreira'
-import { Escandalos } from './Escandalos'
-import { Financiamento } from './Financiamento'
-import { Posicionamento } from './Posicionamento'
-import { PlanoGoverno } from './PlanoGoverno'
+import { DadosPessoaisCell } from './DadosPessoais'
+import { CarreiraCell } from './Carreira'
+import { EscandalosCell } from './Escandalos'
+import { FinanciamentoCell } from './Financiamento'
+import { PlanoGovernoCell } from './PlanoGoverno'
+import { PosicionamentoCell } from './Posicionamento'
+import { CoberturaCell } from './Cobertura'
 import { ComparisonSelector } from './ComparisonSelector'
 import { ComparisonTabs } from './ComparisonTabs'
-import { ComparativoCobertura } from './ComparativoCobertura'
 import { ErrorBoundary } from '../ErrorBoundary'
 import { ShareButton } from '../ui/ShareButton'
+import { CandidateSectionBlock } from '../ui/CandidateSectionBlock'
 
 interface ComparativoProps {
   candidates: Candidate[]
@@ -25,6 +26,10 @@ interface ComparativoProps {
 }
 
 const validCmpTabs: CandidateSubTab[] = ['dados', 'carreira', 'plano', 'cobertura', 'escandalos', 'financiamento', 'posicionamento']
+
+function CmpGrid({ children }: { children: React.ReactNode }) {
+  return <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">{children}</div>
+}
 
 export function Comparativo({ candidates, initialIds = ['lula', 'flavio', 'renan'], initialTab }: ComparativoProps) {
   const router = useRouter()
@@ -65,14 +70,78 @@ export function Comparativo({ candidates, initialIds = ['lula', 'flavio', 'renan
 
   const renderCmpContent = () => {
     switch (cmpTab) {
-      case 'dados': return <DadosPessoais candidates={filtered} />
-      case 'carreira': return <Carreira candidates={filtered} />
-      case 'plano': return <PlanoGoverno candidates={filtered} />
-      case 'cobertura': return <ComparativoCobertura candidates={filtered} />
-      case 'escandalos': return <Escandalos candidates={filtered} />
-      case 'financiamento': return <Financiamento candidates={filtered} />
-      case 'posicionamento': return <Posicionamento candidates={filtered} />
-      default: return null
+      case 'dados':
+        return (
+          <CmpGrid>
+            {filtered.map((c) => (
+              <CandidateSectionBlock key={c.id} candidate={c}>
+                <DadosPessoaisCell candidate={c} />
+              </CandidateSectionBlock>
+            ))}
+          </CmpGrid>
+        )
+      case 'carreira':
+        return (
+          <CmpGrid>
+            {filtered.map((c) => (
+              <CandidateSectionBlock key={c.id} candidate={c}>
+                <CarreiraCell candidate={c} />
+              </CandidateSectionBlock>
+            ))}
+          </CmpGrid>
+        )
+      case 'plano':
+        return (
+          <CmpGrid>
+            {filtered.map((c) => (
+              <CandidateSectionBlock key={c.id} candidate={c}>
+                <PlanoGovernoCell candidate={c} />
+              </CandidateSectionBlock>
+            ))}
+          </CmpGrid>
+        )
+      case 'cobertura':
+        return (
+          <CmpGrid>
+            {filtered.map((c) => (
+              <CandidateSectionBlock key={c.id} candidate={c}>
+                <CoberturaCell candidate={c} />
+              </CandidateSectionBlock>
+            ))}
+          </CmpGrid>
+        )
+      case 'escandalos':
+        return (
+          <CmpGrid>
+            {filtered.map((c) => (
+              <CandidateSectionBlock key={c.id} candidate={c}>
+                <EscandalosCell candidate={c} />
+              </CandidateSectionBlock>
+            ))}
+          </CmpGrid>
+        )
+      case 'financiamento':
+        return (
+          <CmpGrid>
+            {filtered.map((c) => (
+              <CandidateSectionBlock key={c.id} candidate={c}>
+                <FinanciamentoCell candidate={c} />
+              </CandidateSectionBlock>
+            ))}
+          </CmpGrid>
+        )
+      case 'posicionamento':
+        return (
+          <CmpGrid>
+            {filtered.map((c) => (
+              <CandidateSectionBlock key={c.id} candidate={c}>
+                <PosicionamentoCell candidate={c} />
+              </CandidateSectionBlock>
+            ))}
+          </CmpGrid>
+        )
+      default:
+        return null
     }
   }
 

@@ -29,7 +29,6 @@ export function Posicionamento({ candidates }: PosicionamentoProps) {
             <th className="text-left py-4 pr-4 pl-5 font-medium text-gray-500 dark:text-gray-400 w-36">Pauta</th>
             {candidates.map((c) => (
               <th key={c.id} className="text-left py-4 px-4 font-semibold text-base" style={{ color: c.party.color }}>
-                {candidates.length > 1 && <DataLink data={c.name} />}
               </th>
             ))}
           </tr>
@@ -51,6 +50,32 @@ export function Posicionamento({ candidates }: PosicionamentoProps) {
         </tbody>
       </table>
     </div>
+    </div>
+  )
+}
+
+export function PosicionamentoCell({ candidate }: { candidate: Candidate }) {
+  if (candidate.positions.length === 0) {
+    return (
+      <div className="bento-card p-6 text-center">
+        <p className="text-sm text-gray-400">Nenhum posicionamento registrado</p>
+      </div>
+    )
+  }
+
+  return (
+    <div className="bento-card overflow-x-auto">
+      <table className="w-full text-sm">
+        <caption className="sr-only">Posicionamento sobre pautas polêmicas</caption>
+        <tbody>
+          {candidate.positions.map((p, i) => (
+            <tr key={p.issue.value} className={i < candidate.positions.length - 1 ? 'border-b border-gray-100/50 dark:border-gray-800/30' : ''}>
+              <td className="py-2.5 px-4 text-gray-500 dark:text-gray-400 font-medium text-sm w-44">{p.issue.value}</td>
+              <td className="py-2.5 px-4 text-sm text-gray-700 dark:text-gray-300"><DataLink data={p.position} /></td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </div>
   )
 }

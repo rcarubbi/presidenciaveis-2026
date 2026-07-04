@@ -11,7 +11,7 @@ interface ProposalSearchResultsProps {
   }[]
   totalResults: number
   searchQuery: string
-  showName?: boolean
+
 }
 
 function SectionIcon({ id }: { id: string }) {
@@ -19,7 +19,7 @@ function SectionIcon({ id }: { id: string }) {
   return Icon ? <Icon size={16} className="text-gray-500 dark:text-gray-400 flex-shrink-0" /> : null
 }
 
-export function ProposalSearchResults({ results, totalResults, searchQuery, showName }: ProposalSearchResultsProps) {
+export function ProposalSearchResults({ results, totalResults, searchQuery }: ProposalSearchResultsProps) {
   if (results.length === 0) {
     return (
       <div className="bento-card p-10 text-center">
@@ -40,9 +40,7 @@ export function ProposalSearchResults({ results, totalResults, searchQuery, show
           <div className="grid grid-cols-1 md:grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-4 px-5 py-3">
             {matches.map(({ c, items }) => (
               <div key={c.id}>
-                <p className="text-sm font-bold mb-2" style={{ color: c.party.color }}>
-                  {showName && <DataLink data={c.name} />}
-                </p>
+
                 <ul className="space-y-1.5">
                   {items.map((item, i) => (
                     <li key={i} className="text-sm text-gray-600 dark:text-gray-400 flex items-start gap-2">

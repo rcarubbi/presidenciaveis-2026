@@ -33,7 +33,6 @@ export function DadosPessoais({ candidates }: DadosPessoaisProps) {
             <th className="text-left py-4 px-5 font-medium text-gray-500 dark:text-gray-400 w-40"></th>
             {candidates.map((c) => (
               <th key={c.id} className="text-left py-4 px-5 font-semibold text-base" style={{ color: c.party.color }}>
-                {candidates.length > 1 && <DataLink data={c.name} />}
               </th>
             ))}
           </tr>
@@ -52,6 +51,38 @@ export function DadosPessoais({ candidates }: DadosPessoaisProps) {
         </tbody>
       </table>
     </div>
+    </div>
+  )
+}
+
+export function DadosPessoaisCell({ candidate }: { candidate: Candidate }) {
+  const rows = [
+    { label: 'Nome completo', render: () => <DataLink data={candidate.fullName} /> },
+    { label: 'Data de nascimento', render: () => <><DataLink data={candidate.birthYear} /> (<DataLink data={candidate.age} /> anos)</> },
+    { label: 'Naturalidade', render: () => <DataLink data={candidate.naturalidade} /> },
+    { label: 'Estado civil', render: () => <DataLink data={candidate.estadoCivil} /> },
+    { label: 'Cônjuges anteriores', render: () => <DataLink data={candidate.conjugesAnteriores} /> },
+    { label: 'Filhos', render: () => <DataLink data={candidate.filhos} /> },
+    { label: 'Formação', render: () => <DataLink data={candidate.formacao} /> },
+    { label: 'Profissão', render: () => <DataLink data={candidate.profissao} /> },
+    { label: 'Religião', render: () => <DataLink data={candidate.religiao} /> },
+    { label: 'Residência', render: () => <DataLink data={candidate.residencia} /> },
+    { label: 'Patrimônio declarado', render: () => candidate.patrimonio ? <DataLink data={candidate.patrimonio} format={(v) => fmtMoney(v as number)} /> : 'N/D' },
+  ]
+
+  return (
+    <div className="bento-card overflow-x-auto">
+      <table className="w-full text-base">
+        <caption className="sr-only">Dados pessoais</caption>
+        <tbody>
+          {rows.map((row, i) => (
+            <tr key={row.label} className={i < rows.length - 1 ? 'border-b border-gray-100/50 dark:border-gray-800/30' : ''}>
+              <td className="py-2.5 px-4 text-gray-500 dark:text-gray-400 text-sm w-44">{row.label}</td>
+              <td className="py-2.5 px-4 text-gray-900 dark:text-gray-100 text-sm">{row.render()}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </div>
   )
 }
