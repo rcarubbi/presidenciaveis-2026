@@ -9,7 +9,7 @@ interface FinanciamentoProps {
 export function Financiamento({ candidates }: FinanciamentoProps) {
   if (candidates.length === 0) {
     return (
-      <div className="glass p-10 text-center">
+      <div className="bento-card p-10 text-center">
         <p className="text-gray-500">Nenhum dado financeiro disponível</p>
       </div>
     )
@@ -63,7 +63,7 @@ export function Financiamento({ candidates }: FinanciamentoProps) {
 
       <div className="grid grid-cols-1 md:grid-cols-[repeat(auto-fit,minmax(280px,1fr))] gap-4">
         {candidates.map((c) => (
-          <div key={c.id} className="glass p-5 text-sm space-y-1.5">
+          <div key={c.id} className="bento-card p-5 text-sm space-y-1.5">
             <p className="text-gray-500">Total arrecadado: <span className="font-medium text-gray-700 dark:text-gray-300"><DataLink data={c.campaignFinance.totalArrecadado} /></span></p>
             <p className="text-gray-500">Total gasto: <span className="font-medium text-gray-700 dark:text-gray-300"><DataLink data={c.campaignFinance.totalGasto} /></span></p>
             <p className="text-gray-500">Limite: <span className="font-medium text-gray-700 dark:text-gray-300"><DataLink data={c.campaignFinance.limiteGastos} /></span></p>

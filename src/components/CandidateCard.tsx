@@ -47,7 +47,7 @@ export function CandidateCard({
         prefetch
         transitionTypes={['nav-forward']}
         onClick={() => onCardClick(c.id)}
-        className={`block w-full rounded-2xl overflow-hidden shadow-lg shadow-black/5 dark:shadow-black/20 border border-white/30 dark:border-gray-700/40 group cursor-pointer relative text-left focus-visible:ring-2 focus-visible:ring-gray-400 hover-lift ${isCompareSelected ? 'ring-2 ring-gray-400 dark:ring-gray-500' : ''}`}
+        className={`bento-card group block w-full cursor-pointer overflow-hidden text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 hover-lift ${isCompareSelected ? 'ring-2 ring-blue-500 dark:ring-blue-400' : ''}`}
       >
         {children}
         {cardLoading && <CandidateCard.LoadingOverlay />}
@@ -59,19 +59,21 @@ export function CandidateCard({
 function Photo({ children }: { children: React.ReactNode }) {
   const { candidate: c } = useCardCtx()
   return (
-    <div className="aspect-3/4 relative overflow-hidden" style={{ backgroundColor: c.party.color }}>
-      <img
-        src={c.photo}
-        alt={c.fullName.value}
-        className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-        style={{ objectPosition: c.photoPos ?? 'center top' }}
-      />
-      <div
-        className="absolute inset-0"
-        style={{
-          background: `linear-gradient(to top, ${c.party.color} 0%, ${c.party.color}88 40%, transparent 70%)`,
-        }}
-      />
+    <div className="relative overflow-hidden rounded-[1.75rem]" style={{ backgroundColor: c.party.color }}>
+      <div className="aspect-3/4">
+        <img
+          src={c.photo}
+          alt={c.fullName.value}
+          className="absolute inset-0 size-full object-cover transition-all duration-700 ease-out group-hover:scale-[1.03]"
+          style={{ objectPosition: c.photoPos ?? 'center top' }}
+        />
+        <div
+          className="absolute inset-0"
+          style={{
+            background: `linear-gradient(to top, ${c.party.color} 0%, ${c.party.color}cc 35%, ${c.party.color}55 65%, transparent 85%)`,
+          }}
+        />
+      </div>
       {children}
     </div>
   )
@@ -81,10 +83,10 @@ function PartyBadge() {
   const { candidate: c } = useCardCtx()
   return (
     <>
-      <div className="absolute top-5 left-5 z-20">
-        <img src={c.party.logo} alt={c.party.name.value} className="h-10 max-w-24 object-contain drop-shadow-lg" />
+      <div className="absolute left-5 top-5 z-20">
+        <img src={c.party.logo} alt={c.party.name.value} className="h-9 max-w-20 object-contain drop-shadow-lg" />
       </div>
-      <span className="absolute top-5 right-5 z-20 px-2.5 py-0.5 rounded-full text-xs font-bold text-white bg-black/40 backdrop-blur-sm">
+      <span className="civic-chip absolute right-4 top-4 z-20 border-white/30 bg-black/30 text-white backdrop-blur-sm dark:border-white/20 dark:bg-black/40">
         {c.party.number}
       </span>
     </>
@@ -95,17 +97,25 @@ function Info() {
   const { candidate: c } = useCardCtx()
   return (
     <div className="absolute inset-0 flex flex-col justify-end p-5">
-      <h2 className="text-2xl font-bold text-white drop-shadow-lg">{c.name.value}</h2>
-      <p className="text-sm text-white/80 mt-1 drop-shadow">{c.currentPosition.value}</p>
-      <CandidateLabels age={c.age} careerYears={c.careerYears} />
-      <div className="mt-3 flex flex-col gap-1 text-xs text-white/70">
-        <span>Ideologia: {c.ideologicalPosition.value}</span>
-        <span>Natural: {c.naturalidade.value}</span>
-      </div>
-      <div className="mt-3 flex justify-center gap-3">
-        <CompareButton />
-        <MediaButton />
-        <ArrowButton />
+      <div className="rounded-2xl bg-gradient-to-t from-black/75 via-black/45 to-transparent p-4 pt-8">
+        <h2 className="text-2xl font-black text-white drop-shadow-sm">{c.name.value}</h2>
+        <p className="text-sm font-medium leading-tight text-white/85">{c.currentPosition.value}</p>
+        <CandidateLabels age={c.age} careerYears={c.careerYears} />
+        <div className="mt-3 flex items-center gap-4 text-xs text-white/70">
+          <span className="flex items-center gap-1.5">
+            <span className="size-1.5 rounded-full bg-white/40" />
+            {c.ideologicalPosition.value}
+          </span>
+          <span className="flex items-center gap-1.5">
+            <span className="size-1.5 rounded-full bg-white/40" />
+            {c.naturalidade.value}
+          </span>
+        </div>
+        <div className="mt-4 flex gap-2.5">
+          <CompareButton />
+          <MediaButton />
+          <ArrowButton />
+        </div>
       </div>
     </div>
   )
@@ -116,14 +126,13 @@ function CompareButton() {
   return (
     <button
       onClick={(e) => { e.preventDefault(); onCompareClick(c.id, e) }}
-      className={`flex items-center justify-center w-10 h-10 rounded-full backdrop-blur-sm transition-all duration-300 hover:scale-110 ${isCompareSelected
-        ? 'bg-white/80 text-gray-900'
-        : 'bg-white/20 text-white hover:bg-white/30'
+      className={`flex min-h-11 min-w-11 items-center justify-center rounded-xl transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white ${isCompareSelected
+        ? 'bg-white text-slate-950 shadow-md'
+        : 'bg-white/20 text-white backdrop-blur-sm hover:bg-white/35'
         }`}
       aria-label={`Comparar ${c.name.value}`}
-      title="Comparar"
     >
-      {isCompareSelected ? <Check size={18} strokeWidth={2.5} /> : <GitCompare size={18} strokeWidth={2} />}
+      {isCompareSelected ? <Check size={18} /> : <GitCompare size={18} />}
     </button>
   )
 }
@@ -132,10 +141,11 @@ function ArrowButton() {
   const { candidate: c } = useCardCtx()
   return (
     <div
-      className="flex items-center justify-center w-10 h-10 rounded-full text-white transition-all duration-300 group-hover:scale-110"
-      style={{ backgroundColor: `${c.party.color}cc` }}
+      className="flex min-h-11 min-w-11 items-center justify-center rounded-xl text-white shadow-sm transition-all duration-200 group-hover:scale-105"
+      style={{ backgroundColor: c.party.color }}
+      aria-hidden="true"
     >
-      <ArrowUpRight size={18} strokeWidth={2.5} />
+      <ArrowUpRight size={18} />
     </div>
   )
 }
@@ -150,11 +160,10 @@ function MediaButton() {
         e.stopPropagation()
         router.push(`/candidato/${c.id}?tab=midia`)
       }}
-      className="flex items-center justify-center w-10 h-10 rounded-full bg-white/20 text-white backdrop-blur-sm transition-all duration-300 hover:scale-110 hover:bg-white/30"
+      className="flex min-h-11 min-w-11 items-center justify-center rounded-xl bg-white/20 text-white backdrop-blur-sm transition-all duration-200 hover:bg-white/35 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
       aria-label={`Mídia de ${c.name.value}`}
-      title="Mídia"
     >
-      <Video size={18} strokeWidth={2} />
+      <Video size={18} />
     </button>
   )
 }

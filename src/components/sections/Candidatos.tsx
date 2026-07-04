@@ -2,8 +2,10 @@
 
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
+import Link from 'next/link'
 import type { Candidate } from '../../types'
 import { CandidateCard } from '../CandidateCard'
+import { GitCompare } from 'lucide-react'
 
 interface CandidatosProps {
   candidates: Candidate[]
@@ -32,29 +34,37 @@ export function Candidatos({ candidates }: CandidatosProps) {
 
   if (candidates.length === 0) {
     return (
-      <div className="glass p-10 text-center">
+      <div className="bento-card p-10 text-center">
         <p className="text-gray-500 text-lg">Nenhum candidato disponível</p>
       </div>
     )
   }
 
   return (
-    <>
-      <section className="relative overflow-hidden rounded-2xl mb-10 glass p-8 md:p-10">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#cc2222]/5 via-[#1a4fa0]/5 to-[#d97706]/5" />
-        <div className="relative z-10">
+    <div className="space-y-10">
+      <section className="bento-panel overflow-hidden px-6 py-8 sm:px-10 sm:py-12">
+        <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
           <div className="max-w-2xl">
-            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-100 tracking-tight">
-              Eleições 2026
+            <span className="civic-chip mb-4 w-fit">Eleições 2026</span>
+            <h1 className="text-[clamp(1.75rem,5vw,3.25rem)] font-black tracking-tight text-slate-950 dark:text-white leading-[1.08]">
+              Presidenciáveis{' '}
+              <span className="bg-gradient-to-r from-blue-800 to-amber-600 bg-clip-text text-transparent dark:from-blue-400 dark:to-amber-400">2026</span>
             </h1>
-            <p className="text-xs text-gray-500 dark:text-gray-400 mt-2 leading-relaxed max-w-lg">
-              Acompanhe os presidenciáveis 2026 — perfis completos com dados pessoais, carreira, planos de governo, escândalos, financiamento e posicionamento político de cada candidato à Presidência da República.
+            <p className="mt-3 max-w-xl text-sm leading-relaxed text-slate-500 dark:text-slate-400">
+              Perfis completos com dados pessoais, carreira, planos de governo, escândalos, financiamento e posicionamento político de cada candidato à Presidência da República.
             </p>
           </div>
+          <Link
+            href="/comparar"
+            className="civic-button shrink-0"
+          >
+            <GitCompare size={16} />
+            Comparar candidatos
+          </Link>
         </div>
       </section>
 
-      <div className="grid grid-cols-1 sm:grid-cols-[repeat(auto-fit,minmax(280px,1fr))] gap-6 animate-scale-in">
+      <div className="grid grid-cols-1 gap-6 sm:grid-cols-[repeat(auto-fit,minmax(290px,1fr))] md:gap-8 animate-scale-in">
         {candidates.map((c) => (
           <CandidateCard
             key={c.id}
@@ -71,6 +81,6 @@ export function Candidatos({ candidates }: CandidatosProps) {
           </CandidateCard>
         ))}
       </div>
-    </>
+    </div>
   )
 }

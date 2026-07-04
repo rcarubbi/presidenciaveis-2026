@@ -1,10 +1,7 @@
 'use client'
 
-import { useState, useRef, useEffect } from 'react'
 import type { Candidate } from '../../types'
 import { DataLink } from '../DataLink'
-import { Spinner } from '../ui/Spinner'
-import { hideImageOnError } from '@/lib/dom'
 import { CandidateStats } from './CandidateStats'
 
 interface HeroBannerProps {
@@ -13,68 +10,46 @@ interface HeroBannerProps {
 
 export function HeroBanner({ candidate: c }: HeroBannerProps) {
   const color = c.party.color
-  const [photoLoaded, setPhotoLoaded] = useState(false)
-  const [logoLoaded, setLogoLoaded] = useState(false)
-  const photoRef = useRef<HTMLImageElement>(null)
-  const logoRef = useRef<HTMLImageElement>(null)
-
-  useEffect(() => {
-    if (photoRef.current?.complete) setPhotoLoaded(true)
-  }, [])
-
-  useEffect(() => {
-    if (logoRef.current?.complete) setLogoLoaded(true)
-  }, [])
 
   return (
-    <div className="glass overflow-hidden rounded-xl">
+    <div className="bento-card overflow-hidden">
       <div className="relative" style={{ backgroundColor: color }}>
-        <div className="h-[624px] relative overflow-hidden">
-        {!photoLoaded && (
-          <div className="absolute inset-0 flex items-center justify-center z-30">
-            <Spinner size={32} className="text-white/60" />
+        <div className="relative h-[624px] overflow-hidden">
+          <div className="absolute inset-0 overflow-hidden animate-slide-from-right">
+            <img
+              src={c.photo}
+              alt={c.fullName.value}
+              className="size-full object-cover md:object-contain"
+              style={{ objectPosition: c.photoPos ?? 'center top' }}
+            />
+            <div
+              className="absolute inset-0"
+              style={{
+                background: `linear-gradient(to top, ${color} 0%, ${color}cc 35%, ${color}55 65%, transparent 85%)`,
+              }}
+            />
+            <span className="absolute right-5 top-5 z-20 civic-chip border-white/30 bg-black/25 text-white backdrop-blur-sm dark:border-white/20 dark:bg-black/40">
+              {c.party.number}
+            </span>
           </div>
-        )}
-        <div className="absolute inset-0 overflow-hidden animate-slide-from-right">
-          <img
-            ref={photoRef}
-            src={c.photo}
-            alt={c.fullName.value}
-            className="w-full h-full object-cover md:object-contain"
-            style={{ objectPosition: c.photoPos ?? 'center top' }}
-            onLoad={() => setPhotoLoaded(true)}
-            onError={(e) => { setPhotoLoaded(true); hideImageOnError(e) }}
-          />
-          <div
-            className="absolute inset-0"
-            style={{
-              background: `linear-gradient(to top, ${color} 0%, ${color}88 40%, transparent 70%)`,
-            }}
-          />
-        </div>
-        <div className="animate-slide-from-left absolute inset-0 overflow-hidden" style={{ animationDelay: '400ms' }}>
-          <div className="absolute top-5 left-5 z-20">
-            <div className="relative h-10 md:h-14 w-auto min-w-[40px] flex items-center justify-center">
-              {!logoLoaded && <Spinner size={20} className="text-white/60 absolute" />}
+          <div className="animate-slide-from-left absolute inset-0 overflow-hidden" style={{ animationDelay: '400ms' }}>
+            <div className="absolute left-5 top-5 z-20">
               <img
-                ref={logoRef}
                 src={c.party.logo}
                 alt={c.party.name.value}
-                className="h-10 md:h-14 max-w-24 object-contain"
-                onLoad={() => setLogoLoaded(true)}
-   onError={(e) => { setLogoLoaded(true); hideImageOnError(e) }}
+                className="h-12 max-w-24 object-contain drop-shadow-lg"
               />
             </div>
-          </div>
-          <div className="absolute inset-0 flex flex-col justify-end p-6 md:p-10">
-            <h1 className="text-3xl md:text-5xl font-bold text-white drop-shadow-lg"><DataLink data={c.fullName} /></h1>
-            <p className="text-base md:text-lg text-white/80 mt-1 drop-shadow"><DataLink data={c.currentPosition} /></p>
+            <div className="absolute inset-0 flex flex-col justify-end p-6 md:p-10">
+              <h1 className="text-3xl font-black text-white drop-shadow-sm md:text-5xl">
+                <DataLink data={c.fullName} />
+              </h1>
+              <p className="mt-1 text-base font-medium leading-tight text-white/85 md:text-lg">
+                <DataLink data={c.currentPosition} />
+              </p>
+            </div>
           </div>
         </div>
-        <span className="absolute top-5 right-5 z-20 px-3 py-1 rounded-full text-sm font-bold text-white bg-black/30 backdrop-blur-sm animate-slide-from-right" style={{ animationDelay: '100ms' }}>
-          {c.party.number}
-        </span>
-      </div>
       </div>
       <CandidateStats candidate={c} />
     </div>

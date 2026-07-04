@@ -12,8 +12,8 @@ interface ComparisonSelectorProps {
 
 export function ComparisonSelector({ candidates, selectedIds, onToggle }: ComparisonSelectorProps) {
   return (
-    <div className="glass p-4">
-      <p className="text-sm font-medium text-gray-500 mb-3">Selecione candidatos para comparar (mín. 2):</p>
+    <div className="bento-card p-5">
+      <p className="text-sm font-bold text-slate-600 dark:text-slate-300 mb-4">Selecione candidatos para comparar (mín. 2):</p>
       <div className="flex gap-3 flex-wrap">
         {candidates.map((c) => {
           const selected = selectedIds.includes(c.id)
@@ -21,18 +21,18 @@ export function ComparisonSelector({ candidates, selectedIds, onToggle }: Compar
             <button
               key={c.id}
               onClick={() => onToggle(c.id)}
-              className={`flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-medium transition-all duration-200 ${selected
+              className={`flex min-h-11 items-center gap-2 rounded-xl px-4 text-sm font-bold transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 ${selected
                 ? 'text-white shadow-sm'
-                : 'text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 bg-gray-100/50 dark:bg-gray-800/50'
+                : 'border border-blue-100/80 text-slate-600 hover:bg-blue-50 hover:text-blue-950 dark:border-blue-900/50 dark:text-slate-300 dark:hover:bg-slate-800 dark:hover:text-white'
                 }`}
               style={selected ? { backgroundColor: c.party.color } : undefined}
             >
-              <div className="w-5 h-5 rounded-full overflow-hidden flex-shrink-0">
-                <img src={c.photo} alt="" className="w-full h-full object-cover"
+              <div className="size-6 shrink-0 overflow-hidden rounded-full">
+                <img src={c.photo} alt="" className="size-full object-cover"
                   onError={hideImageOnError} />
               </div>
               {c.name.value}
-              {selected && <X size={12} />}
+              {selected && <X size={14} />}
             </button>
           )
         })}

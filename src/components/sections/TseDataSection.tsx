@@ -31,10 +31,10 @@ export function TseDataSection({ pollsByInstitute, sampleByInstitute, totalPolls
             unit=""
             domain={['auto', 'auto']}
           />
-          <div className="mt-2 text-xs text-gray-500 space-y-0.5">
+          <div className="mt-2 text-xs text-slate-400 space-y-0.5">
             {pollsByInstitute.map((item, i) => (
               <div key={item.name} className="flex gap-2">
-                <span className="font-mono text-gray-400 w-6 shrink-0">#{i + 1}</span>
+                <span className="font-mono text-slate-300 w-6 shrink-0">#{i + 1}</span>
                 <span className="truncate">{item.name}</span>
               </div>
             ))}
@@ -48,17 +48,17 @@ export function TseDataSection({ pollsByInstitute, sampleByInstitute, totalPolls
             unit=""
             domain={['auto', 'auto']}
           />
-          <div className="mt-2 text-xs text-gray-500 space-y-0.5">
+          <div className="mt-2 text-xs text-slate-400 space-y-0.5">
             {sampleByInstitute.map((item, i) => (
               <div key={item.name} className="flex gap-2">
-                <span className="font-mono text-gray-400 w-6 shrink-0">#{i + 1}</span>
+                <span className="font-mono text-slate-300 w-6 shrink-0">#{i + 1}</span>
                 <span className="truncate">{item.name}</span>
               </div>
             ))}
           </div>
         </div>
       </div>
-      <p className="text-xs text-gray-400 dark:text-gray-500 text-center">
+      <p className="text-xs text-slate-400 dark:text-slate-500 text-center">
         {totalPolls} pesquisas registradas, {totalInstitutes} institutos.
         {lastUpdated && ` Dados de ${lastUpdated}.`}
       </p>

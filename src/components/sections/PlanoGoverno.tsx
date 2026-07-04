@@ -21,7 +21,7 @@ export function PlanoGoverno({ candidates }: PlanoGovernoProps) {
         searchResults && searchResults.length > 0 ? (
           <ProposalSearchResults results={searchResults} totalResults={totalResults} searchQuery={search} showName={candidates.length > 1} />
         ) : (
-          <div className="glass p-10 text-center">
+          <div className="bento-card p-10 text-center">
             <p className="text-sm text-gray-400">Nenhuma proposta encontrada para &ldquo;{search}&rdquo;</p>
           </div>
         )

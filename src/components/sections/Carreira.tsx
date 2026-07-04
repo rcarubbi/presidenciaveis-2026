@@ -30,7 +30,7 @@ export function Carreira({ candidates }: CarreiraProps) {
 
       <div className="grid grid-cols-1 md:grid-cols-[repeat(auto-fit,minmax(280px,1fr))] gap-6">
         {filtered.map((c) => (
-        <div key={c.id} className="glass p-5">
+        <div key={c.id} className="bento-card p-5">
           <h3 className="text-base font-semibold mb-4" style={{ color: c.party.color }}>{candidates.length > 1 && <><DataLink data={c.name} /> — </>}Carreira Política</h3>
 
           <CareerTimeline events={c.timeline} partyColor={c.party.color} />

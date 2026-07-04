@@ -41,13 +41,13 @@ function CoberturaCell({ candidate }: { candidate: Candidate }) {
   const { data, loading, error } = useCobertura(candidate.id)
 
   if (error) return (
-    <div className="glass p-5 rounded-xl text-center">
+    <div className="bento-card p-5 rounded-xl text-center">
       <p className="text-xs text-gray-400">Dados indisponíveis</p>
     </div>
   )
 
   if (loading || !data) return (
-    <div className="glass p-5 rounded-xl space-y-3 animate-pulse">
+    <div className="bento-card p-5 rounded-xl space-y-3 animate-pulse">
       <div className="h-4 w-32 bg-gray-200 dark:bg-gray-700 rounded" />
       <div className="grid grid-cols-3 gap-2">
         <div className="h-14 bg-gray-200 dark:bg-gray-700 rounded" />
@@ -66,7 +66,7 @@ function CoberturaCell({ candidate }: { candidate: Candidate }) {
   const neuPct = dist.neutral ? (dist.neutral / totalSentiment) * 100 : 0
 
   return (
-    <div className="glass rounded-xl overflow-hidden">
+    <div className="bento-card rounded-xl overflow-hidden">
       <div className="px-4 py-3 border-b border-gray-200/40 dark:border-gray-700/30 flex items-center gap-3">
         <div className="w-7 h-7 rounded-full overflow-hidden flex-shrink-0">
           <img src={candidate.photo} alt="" className="w-full h-full object-cover" onError={hideImageOnError} />

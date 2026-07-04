@@ -10,14 +10,14 @@ export function Posicionamento({ candidates }: PosicionamentoProps) {
 
   if (allIssues.length === 0) {
     return (
-      <div className="glass p-10 text-center">
+      <div className="bento-card p-10 text-center">
         <p className="text-gray-500">Nenhum posicionamento registrado</p>
       </div>
     )
   }
 
   return (
-    <div className="glass overflow-x-auto">
+    <div className="bento-card overflow-x-auto">
       <table className="w-full text-sm">
         <thead>
           <tr className="border-b border-gray-200/60 dark:border-gray-700/40">

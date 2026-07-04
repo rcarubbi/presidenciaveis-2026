@@ -75,22 +75,23 @@ export function Comparativo({ candidates, initialIds = ['lula', 'flavio', 'renan
   }
 
   return (
-    <div className="space-y-6 animate-fade-in">
+    <div className="space-y-8 animate-fade-in">
       <Link
         href="/"
-        className="flex items-center gap-2 text-sm font-medium text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 transition-colors"
+        className="flex min-h-11 w-fit items-center gap-2 rounded-full border border-blue-100/80 bg-white/70 px-4 text-sm font-bold text-slate-600 shadow-sm transition-all duration-200 hover:bg-blue-50 hover:text-blue-950 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 dark:border-blue-900/50 dark:bg-slate-900/70 dark:text-slate-300 dark:hover:bg-slate-800 dark:hover:text-white"
       >
         <ArrowLeft size={16} />
         Voltar
       </Link>
-      <section className="relative overflow-hidden rounded-2xl glass p-8 md:p-10">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#cc2222]/5 via-[#1a4fa0]/5 to-[#d97706]/5" />
-        <div className="relative z-10 max-w-2xl">
-          <h1 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-100 tracking-tight">
-            Compare os Presidenciáveis 2026
+      <section className="bento-panel overflow-hidden px-6 py-8 sm:px-10 sm:py-12">
+        <div className="max-w-2xl">
+          <span className="civic-chip mb-4 w-fit">Comparativo</span>
+          <h1 className="text-[clamp(1.75rem,5vw,3.25rem)] font-black tracking-tight text-slate-950 dark:text-white leading-[1.08]">
+            Compare os Presidenciáveis{' '}
+            <span className="bg-gradient-to-r from-blue-800 to-amber-600 bg-clip-text text-transparent dark:from-blue-400 dark:to-amber-400">2026</span>
           </h1>
-          <p className="text-xs text-gray-500 dark:text-gray-400 mt-2 leading-relaxed">
-            Selecione dois ou mais candidatos e veja lado a lado dados pessoais, carreira, planos de governo, escândalos, financiamento e posicionamento político. Escolha os candidatos e as categorias abaixo para iniciar a comparação.
+          <p className="mt-3 max-w-xl text-sm leading-relaxed text-slate-500 dark:text-slate-400">
+            Selecione dois ou mais candidatos e veja lado a lado dados pessoais, carreira, planos de governo, escândalos, financiamento e posicionamento político.
           </p>
         </div>
       </section>

@@ -38,7 +38,7 @@ export function Escandalos({ candidates }: EscandalosProps) {
     <div className="space-y-6">
       <div className="grid grid-cols-1 md:grid-cols-[repeat(auto-fit,minmax(240px,1fr))] gap-4">
         {counts.map((c) => (
-          <div key={c.name} className="glass p-5 text-center">
+          <div key={c.name} className="bento-card p-5 text-center">
             <p className="text-sm text-gray-500 mb-2">Casos</p>
             <div className="flex justify-center gap-5 text-base">
               <span>
@@ -60,7 +60,7 @@ export function Escandalos({ candidates }: EscandalosProps) {
 
       <div className="grid grid-cols-1 md:grid-cols-[repeat(auto-fit,minmax(240px,1fr))] gap-4">
         {candidates.map((c) => (
-          <div key={c.id} className="glass p-5">
+          <div key={c.id} className="bento-card p-5">
             <h3 className="text-base font-semibold mb-4" style={{ color: c.party.color }}>
               {candidates.length > 1 && <><DataLink data={c.name} /> </>}({c.scandals.length})
             </h3>

@@ -16,12 +16,12 @@ export class ErrorBoundary extends Component<Props, State> {
     if (this.state.hasError) {
       return (
         <div className="flex items-center justify-center min-h-[60vh]">
-          <div className="glass p-8 text-center max-w-md">
-            <p className="text-xl mb-2">Algo deu errado</p>
-            <p className="text-sm text-gray-500 mb-4">Tente recarregar a página.</p>
+          <div className="bento-card p-8 text-center max-w-md">
+            <p className="text-xl font-bold mb-1">Algo deu errado</p>
+            <p className="text-sm text-slate-500 dark:text-slate-400 mb-6">Tente recarregar a página.</p>
             <button
               onClick={() => { this.setState({ hasError: false }); window.location.reload() }}
-              className="px-5 py-2 rounded-xl bg-gray-800 text-white dark:bg-white dark:text-gray-900 text-sm font-medium"
+              className="civic-button"
             >
               Recarregar
             </button>
