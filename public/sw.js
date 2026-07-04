@@ -1,7 +1,25 @@
 const POLL_INTERVAL = 30 * 60 * 1000
 const VERSION_URL = '/api/data/version'
+const CACHE_NAME = 'sw-cache'
+const CACHE_KEY = '/sw/version'
 
-let lastVersion = null
+async function getLastVersion() {
+  try {
+    const cache = await caches.open(CACHE_NAME)
+    const response = await cache.match(CACHE_KEY)
+    return response ? await response.text() : null
+  } catch {
+    return null
+  }
+}
+
+async function setLastVersion(version) {
+  try {
+    const cache = await caches.open(CACHE_NAME)
+    const headers = new Headers({ 'Content-Type': 'text/plain' })
+    await cache.put(CACHE_KEY, new Response(version, { headers }))
+  } catch {}
+}
 
 self.addEventListener('install', () => {
   self.skipWaiting()
@@ -32,8 +50,9 @@ async function checkVersion() {
     const res = await fetch(VERSION_URL)
     if (!res.ok) return
     const data = await res.json()
+    const stored = await getLastVersion()
 
-    if (lastVersion !== null && lastVersion !== data.version) {
+    if (stored !== null && stored !== data.version) {
       const body = formatBody(data.changes)
 
       const windows = await clients.matchAll({ type: 'window', includeUncontrolled: true })
@@ -51,7 +70,7 @@ async function checkVersion() {
       }
     }
 
-    lastVersion = data.version
+    await setLastVersion(data.version)
   } catch {
     // next poll will retry
   }

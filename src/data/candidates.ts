@@ -1364,7 +1364,7 @@ export const candidates: Candidate[] = [
 				"2026-06-01",
 			),
 			limiteGastos: dv(
-				"R$ 88,9 mi (proj.)",
+				"R$ 133,4 mi (proj. ambos turnos)",
 				"https://www.poder360.com.br/poder-eleicoes/tse-avalia-manter-teto-de-gastos-para-campanhas-em-2026/",
 				"2026-06-20",
 			),
@@ -1774,7 +1774,7 @@ export const candidates: Candidate[] = [
 				"2026-06-26",
 			),
 			limiteGastos: dv(
-				"R$ 133,4 mi (não deve atingir)",
+				"R$ 133,4 mi (proj. ambos turnos)",
 				"https://www.poder360.com.br/poder-eleicoes/tse-avalia-manter-teto-de-gastos-para-campanhas-em-2026/",
 				"2026-06-20",
 			),
@@ -2523,7 +2523,7 @@ export const candidates: Candidate[] = [
 				"2026-06-28",
 			),
 			limiteGastos: dv(
-				"R$ 133,4 mi (1º turno)",
+				"R$ 133,4 mi (proj. ambos turnos)",
 				"https://www12.senado.leg.br/noticias/audios/2026/05/tse-aprova-limite-de-gastos-para-campanhas-de-2026",
 				"2026-06-28",
 			),
@@ -2990,7 +2990,7 @@ export const candidates: Candidate[] = [
 				"2026-06-28",
 			),
 			limiteGastos: dv(
-				"R$ 133,4 mi (1º turno)",
+				"R$ 133,4 mi (proj. ambos turnos)",
 				"https://www12.senado.leg.br/noticias/audios/2026/05/tse-aprova-limite-de-gastos-para-campanhas-de-2026",
 				"2026-06-28",
 			),
