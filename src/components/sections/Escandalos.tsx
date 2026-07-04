@@ -1,6 +1,7 @@
 import type { Candidate } from '../../types'
 import { DataLink } from '../DataLink'
 import { Shield } from 'lucide-react'
+import { CandidateNameHeading } from '../ui/CandidateNameHeading'
 
 interface EscandalosProps {
   candidates: Candidate[]
@@ -37,13 +38,7 @@ export function Escandalos({ candidates }: EscandalosProps) {
 
   return (
     <div className="space-y-6">
-      <div
-        className={`flex items-center gap-2 ${candidates.length > 1 ? 'text-gray-700 dark:text-gray-300' : ''}`}
-        style={candidates.length === 1 ? { color: candidates[0].party.color } : undefined}
-      >
-        <Shield className="size-4" />
-        <h3 className="text-sm font-black uppercase tracking-[0.12em]">ESCÂNDALOS DE CORRUPÇÃO</h3>
-      </div>
+      <CandidateNameHeading candidates={candidates} icon={Shield} title="ESCÂNDALOS DE CORRUPÇÃO" />
       <div className="grid grid-cols-1 md:grid-cols-[repeat(auto-fit,minmax(240px,1fr))] gap-4">
         {counts.map((c) => (
           <div key={c.name} className="bento-card p-5 text-center">
@@ -69,9 +64,12 @@ export function Escandalos({ candidates }: EscandalosProps) {
       <div className="grid grid-cols-1 md:grid-cols-[repeat(auto-fit,minmax(240px,1fr))] gap-4">
         {candidates.map((c) => (
           <div key={c.id} className="bento-card p-5">
-            <h3 className="text-base font-semibold mb-4" style={{ color: c.party.color }}>
-              {candidates.length > 1 && <><DataLink data={c.name} /> </>}({c.scandals.length})
-            </h3>
+            {candidates.length > 1 && (
+              <h3 className="text-base font-semibold mb-2" style={{ color: c.party.color }}>
+                <DataLink data={c.name} />
+              </h3>
+            )}
+            <p className="text-sm text-gray-500 mb-4">{c.scandals.length} casos</p>
             {c.scandals.length === 0 ? (
               <p className="text-sm text-gray-400 italic">Nenhum caso registrado</p>
             ) : (

@@ -51,7 +51,7 @@ export function Footer() {
           </nav>
         </div>
 
-        <div className="space-y-3 md:text-right">
+        <div className="space-y-3 md:text-right md:flex md:flex-col md:items-end">
           <h3 className="text-xs font-black uppercase tracking-[0.18em] text-slate-400 dark:text-slate-500">Fonte</h3>
           <p className="text-sm text-slate-400 dark:text-slate-500">
             Dados oficiais:{' '}

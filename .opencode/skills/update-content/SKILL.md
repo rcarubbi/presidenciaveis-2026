@@ -17,7 +17,7 @@ Projeto: `C:\Users\rcaru\source\repos\eleicoes_benchmark\presidenciaveis-2026`
 3. **Usar `dv(valor, source, updatedAt)` ou `dvn(valor, source, updatedAt)`** para novos DataValues.
 4. **Nao modificar schemas** (`src/types.ts`). Nao criar arquivos fora de `src/data/`.
 5. **Nao modificar package.json, sitemap.ts, ou qualquer config.**
-6. **Apenas arquivos alterados: `src/data/candidates.ts`, `src/data/polls.ts`, `src/data/proposals.ts`, `src/data/media.ts`, `src/data/.version.ts`.**
+6. **Apenas arquivos alterados: `src/data/candidates.ts`, `src/data/polls.ts`, `src/data/proposals-lula.ts`, `src/data/proposals-flavio.ts`, `src/data/proposals-renan.ts`, `src/data/proposals-caiado.ts`, `src/data/proposals-zema.ts`, `src/data/media-lula.ts`, `src/data/media-flavio.ts`, `src/data/media-renan.ts`, `src/data/media-caiado.ts`, `src/data/media-zema.ts`, `src/data/.version.ts`.**
 7. **EXECUTE TODOS OS PASSOS DO WORKFLOW (Passo 1 ao 6). NUNCA pular etapas.** Cada execucao do skill deve rodar o diagnostico, todas as buscas (YouTube para 5 candidatos, web search, SAPIENS news), validacao, edicao se necessario, .version, build e report. Skip e permitido APENAS se a busca nao encontrar dados novos — nunca por omissao ou preguiça.
 
 ---
@@ -213,8 +213,8 @@ dvn(1234567.89, "https://fonte.url", "2026-07-01");
 
 ## 3. Videos (Midia)
 
-**File:** `src/data/media.ts`
-**Type:** `Record<string, MediaCategory[]>`
+**Files:** `src/data/media-lula.ts`, `src/data/media-flavio.ts`, `src/data/media-renan.ts`, `src/data/media-caiado.ts`, `src/data/media-zema.ts`
+**Type:** `MediaCategory[]` (each file exports a per-candidate array; barrel `src/data/media.ts` composes `mediaData: Record<string, MediaCategory[]>`)
 
 ### Estrutura
 
@@ -293,7 +293,7 @@ Nesse caso, buscar no YouTube manualmente e extrair o `youtubeId` da URL.
 
 ### Verificacao de duplicatas
 
-- Antes de adicionar, conferir se `youtubeId` ja existe em todos os `items[]` do candidato
+- Antes de adicionar, conferir se `youtubeId` ja existe em `items[]` no arquivo do candidato (`media-{candidato}.ts`)
 - Se existir, pular (ja cadastrado)
 - Se `youtubeId` nao existe, extrair metadados e adicionar mesmo que similar a titulo existente. Preferir duplicata leve a perder conteudo novo.
 
@@ -317,8 +317,8 @@ items: [
 
 ## 4. Propostas de Governo
 
-**File:** `src/data/proposals.ts`
-**Type:** `ProposalSection[]`
+**Files:** `src/data/proposals-lula.ts`, `src/data/proposals-flavio.ts`, `src/data/proposals-renan.ts`, `src/data/proposals-caiado.ts`, `src/data/proposals-zema.ts`
+**Type:** `Record<string, ProposalItem[]>` (each file exports a per-candidate map; barrel `src/data/proposals.ts` composes `ProposalSection[]`)
 
 ### Estrutura
 
@@ -387,10 +387,10 @@ interface ProposalItem {
 ### Passo 1 — Diagnosticar estado atual
 
 - Ler `src/data/polls.ts` — extrair ultima data por instituto
-- Ler `src/data/candidates.ts` — extrair `updatedAt` de cada campo de cada candidato
-- Ler `src/data/media.ts` — extrair `updatedAt` dos videos mais recentes por candidato
+- Ler `src/data/{candidato}.ts` (lula, flavio, renan, caiado, zema) para cada candidato — extrair `updatedAt` de cada campo
+- Ler `src/data/media-{candidato}.ts` para cada candidato — extrair `updatedAt` dos videos mais recentes
 - Calcular `dataAlvo = (hoje - 14 dias)` no formato `YYYY-MM-DD`. Usar como filtro `after:{dataAlvo}` nas buscas de midia.
-- Ler `src/data/proposals.ts` — extrair `updatedAt` das propostas mais recentes por area/candidato
+- Ler `src/data/proposals-{candidato}.ts` para cada candidato — extrair `updatedAt` das propostas mais recentes por area
 
 ### Passo 2 — Buscar atualizacoes (web search + YouTube script)
 
@@ -411,7 +411,7 @@ Usar `-v` para ver os titulos e URLs dos artigos relevantes.
 Sempre executar o script `fetch:youtube` para os 5 candidatos (Lula, Flávio, Renan, Caiado, Zema). NUNCA pular um candidato.
 
 ```bash
-# Para cada candidato, usar --after com a data do video mais recente no arquivo
+# Para cada candidato, usar --after com a data do video mais recente no arquivo media-{candidato}.ts
 node --env-file .env.local --experimental-strip-types scripts/fetch-youtube-videos.ts --candidate "Lula" --after "2026-06-05"
 node --env-file .env.local --experimental-strip-types scripts/fetch-youtube-videos.ts --candidate "Flávio Bolsonaro" --after "2026-06-26"
 node --env-file .env.local --experimental-strip-types scripts/fetch-youtube-videos.ts --candidate "Renan Santos" --after "2026-06-26"
@@ -439,13 +439,13 @@ Priorizar fontes: G1, UOL, Folha, Estadão, CNN Brasil, BBC Brasil, Veja, Exame,
 
 ### Passo 4 — Editar arquivos
 
-Editar apenas os 4 arquivos de dados em `src/data/`.
+Editar apenas os arquivos de dados em `src/data/` (per-candidate: `media-{candidato}.ts`, `proposals-{candidato}.ts`; globais: `polls.ts`, `.version.ts`; candidatos: `lula.ts`, `flavio.ts`, `renan.ts`, `caiado.ts`, `zema.ts`).
 Manter formatacao existente (indentacao com tabs, aspas duplas).
 Manter ordem existente dos arrays.
 
 ### Passo 4.5 — Atualizar `src/data/.version.ts`
 
-Apos qualquer alteracao nos arquivos de dados (`candidates.ts`, `polls.ts`, `proposals.ts`, `media.ts`):
+Apos qualquer alteracao nos arquivos de dados (`lula.ts`, `flavio.ts`, `renan.ts`, `caiado.ts`, `zema.ts`, `polls.ts`, `proposals-{candidato}.ts`, `media-{candidato}.ts`):
 
 1.  Atualizar `version` e `updatedAt` com timestamp ISO atual (`new Date().toISOString()`)
 2.  Adicionar entrada em `changes[]` para cada categoria de dado alterada:
@@ -478,10 +478,10 @@ node "C:\Users\rcaru\AppData\Local\Temp\opencode\check_duplicates.mjs"
 ```
 
 O que verificar:
-- **media.ts**: youtubeIds duplicados (mesmo video em categorias diferentes). Remover entrada duplicada, manter na categoria mais relevante.
-- **proposals.ts**: textos de proposta identicos para o MESMO candidato em secoes diferentes. Remover a copia, manter na secao mais relevante.
+- **media-{candidato}.ts**: youtubeIds duplicados (mesmo video em categorias diferentes). Remover entrada duplicada, manter na categoria mais relevante.
+- **proposals-{candidato}.ts**: textos de proposta identicos para o MESMO candidato em secoes diferentes. Remover a copia, manter na secao mais relevante.
 - **polls.ts**: combinacao institute+date duplicada.
-- **candidates.ts**: timeline events duplicados, position texts duplicados.
+- **{candidato}.ts** (lula, flavio, renan, caiado, zema): timeline events duplicados, position texts duplicados.
 
 Se encontrar duplicatas **exatas**, remover automaticamente (manter na secao mais relevante).
 Se encontrar dados **muito similares** (ex: "Redução maioridade penal" e "Redução maioridade penal p/ 16 anos"), perguntar ao usuario o que fazer.

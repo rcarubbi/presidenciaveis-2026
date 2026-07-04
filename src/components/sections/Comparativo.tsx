@@ -15,6 +15,8 @@ import { PlanoGoverno } from './PlanoGoverno'
 import { ComparisonSelector } from './ComparisonSelector'
 import { ComparisonTabs } from './ComparisonTabs'
 import { ComparativoCobertura } from './ComparativoCobertura'
+import { ErrorBoundary } from '../ErrorBoundary'
+import { ShareButton } from '../ui/ShareButton'
 
 interface ComparativoProps {
   candidates: Candidate[]
@@ -76,13 +78,16 @@ export function Comparativo({ candidates, initialIds = ['lula', 'flavio', 'renan
 
   return (
     <div className="space-y-8 animate-fade-in">
-      <Link
-        href="/"
-        className="flex min-h-11 w-fit items-center gap-2 rounded-full border border-blue-100/80 bg-white/70 px-4 text-sm font-bold text-slate-600 shadow-sm transition-all duration-200 hover:bg-blue-50 hover:text-blue-950 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 dark:border-blue-900/50 dark:bg-slate-900/70 dark:text-slate-300 dark:hover:bg-slate-800 dark:hover:text-white"
-      >
-        <ArrowLeft size={16} />
-        Voltar
-      </Link>
+      <div className="flex items-center gap-3 flex-wrap">
+        <Link
+          href="/"
+          className="flex min-h-11 w-fit items-center gap-2 rounded-full border border-blue-100/80 bg-white/70 px-4 text-sm font-bold text-slate-600 shadow-sm transition-all duration-200 hover:bg-blue-50 hover:text-blue-950 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 dark:border-blue-900/50 dark:bg-slate-900/70 dark:text-slate-300 dark:hover:bg-slate-800 dark:hover:text-white"
+        >
+          <ArrowLeft size={16} />
+          Voltar
+        </Link>
+        <ShareButton />
+      </div>
       <section className="bento-panel overflow-hidden px-6 py-8 sm:px-10 sm:py-12">
         <div className="max-w-2xl">
           <span className="civic-chip mb-4 w-fit">Comparativo</span>
@@ -102,7 +107,7 @@ export function Comparativo({ candidates, initialIds = ['lula', 'flavio', 'renan
 
 
       <div className="tab-enter" key={cmpTab} role="tabpanel" id={`cmp-panel-${cmpTab}`} aria-labelledby={`cmp-tab-${cmpTab}`}>
-        {renderCmpContent()}
+        <ErrorBoundary key={cmpTab}>{renderCmpContent()}</ErrorBoundary>
       </div>
     </div>
   )

@@ -5,6 +5,7 @@ import type { Candidate, MediaItem } from '../../types'
 import { mediaData } from '../../data/media'
 import { ChevronDown, Video } from 'lucide-react'
 import { MediaCard } from '../MediaCard'
+import { CandidateNameHeading } from '../ui/CandidateNameHeading'
 
 interface MidiaProps {
   candidates: Candidate[]
@@ -69,13 +70,7 @@ export function Midia({ candidates }: MidiaProps) {
 
   return (
     <div className="space-y-6">
-      <div
-        className={`flex items-center gap-2 ${candidates.length > 1 ? 'text-gray-700 dark:text-gray-300' : ''}`}
-        style={candidates.length === 1 ? { color: candidates[0].party.color } : undefined}
-      >
-        <Video className="size-4" />
-        <h3 className="text-sm font-black uppercase tracking-[0.12em]">{candidate.name.value} NA MÍDIA</h3>
-      </div>
+      <CandidateNameHeading candidates={candidates} icon={Video} title={`${candidate.name.value} NA MÍDIA`} />
       <div className="space-y-3">
       {groups.map((group) => {
         const isOpen = expanded === group.id

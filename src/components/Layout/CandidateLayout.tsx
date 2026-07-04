@@ -16,6 +16,10 @@ import { Cobertura } from '../sections/Cobertura'
 import { HeroBanner } from './HeroBanner'
 import { CandidateTabs } from './CandidateTabs'
 import { CandidateHeroFull } from './CandidateHeroFull'
+import { ErrorBoundary } from '../ErrorBoundary'
+import { ShareButton } from '../ui/ShareButton'
+import { UpdatedAtBadge } from '../ui/UpdatedAtBadge'
+import { getLatestCandidateUpdate } from '../../lib/dataValue'
 
 interface CandidateLayoutProps {
   candidate: Candidate
@@ -52,14 +56,24 @@ export function CandidateLayout({ candidate, initialTab }: CandidateLayoutProps)
 
   return (
     <div className="space-y-6 animate-fade-in">
-      <Link
-        href="/"
-        transitionTypes={['nav-back']}
-        className="flex min-h-11 w-fit items-center gap-2 rounded-full border border-blue-100/80 bg-white/70 px-4 text-sm font-bold text-slate-600 shadow-sm transition-all duration-200 hover:bg-blue-50 hover:text-blue-950 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 dark:border-blue-900/50 dark:bg-slate-900/70 dark:text-slate-300 dark:hover:bg-slate-800 dark:hover:text-white"
-      >
-        <ArrowLeft size={16} />
-        Voltar
-      </Link>
+      <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-xs text-slate-400 dark:text-slate-500">
+        <Link href="/">Home</Link>
+        <span aria-hidden="true">/</span>
+        <span className="font-medium text-slate-600 dark:text-slate-300">{c.name.value}</span>
+      </nav>
+
+      <div className="flex items-center gap-3 flex-wrap">
+        <Link
+          href="/"
+          transitionTypes={['nav-back']}
+          className="flex min-h-11 w-fit items-center gap-2 rounded-full border border-blue-100/80 bg-white/70 px-4 text-sm font-bold text-slate-600 shadow-sm transition-all duration-200 hover:bg-blue-50 hover:text-blue-950 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 dark:border-blue-900/50 dark:bg-slate-900/70 dark:text-slate-300 dark:hover:bg-slate-800 dark:hover:text-white"
+        >
+          <ArrowLeft size={16} />
+          Voltar
+        </Link>
+        <ShareButton />
+      </div>
+      <UpdatedAtBadge updatedAt={getLatestCandidateUpdate(c)} />
 
       <HeroBanner candidate={c} />
 
@@ -70,7 +84,7 @@ export function CandidateLayout({ candidate, initialTab }: CandidateLayoutProps)
       <CandidateTabs candidateId={c.id} activeTab={activeSubTab} onTabChange={handleTabChange} />
 
       <div className="tab-enter" key={activeSubTab} role="tabpanel" id={`subpanel-${c.id}-${activeSubTab}`} aria-labelledby={`subtab-${c.id}-${activeSubTab}`}>
-        {renderSubContent()}
+        <ErrorBoundary key={activeSubTab}>{renderSubContent()}</ErrorBoundary>
       </div>
 
       <Link

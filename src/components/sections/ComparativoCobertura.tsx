@@ -225,7 +225,7 @@ function CoberturaCell({ candidate }: { candidate: Candidate }) {
 }
 
 export function ComparativoCobertura({ candidates }: ComparativoCoberturaProps) {
-  if (candidates.length === 0) return null
+  if (candidates.length === 0) return <div className="bento-card p-10 text-center"><p className="text-sm text-gray-400">Selecione candidatos para comparar a cobertura jornalística</p></div>
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
