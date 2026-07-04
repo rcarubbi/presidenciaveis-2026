@@ -40,7 +40,7 @@ export function HeroBanner({ candidate: c }: HeroBannerProps) {
             ref={photoRef}
             src={c.photo}
             alt={c.fullName.value}
-            className="w-full h-full object-contain"
+            className="w-full h-full object-cover md:object-contain"
             style={{ objectPosition: c.photoPos ?? 'center top' }}
             onLoad={() => setPhotoLoaded(true)}
             onError={(e) => { setPhotoLoaded(true); hideImageOnError(e) }}
