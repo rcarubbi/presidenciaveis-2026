@@ -433,8 +433,8 @@ export const flavio: Candidate = 	{
 				),
 				status: dv(
 					"arquivado",
-					"https://noticias.uol.com.br/politica/ultimas-noticias/2025/12/06/decisoes-do-stj-e-stf-livraram-flavio-bolsonaro-do-caso-das-rachadinhas.htm",
-					"2024-04-23",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Caso_Queiroz_e_acusa%C3%A7%C3%A3o_de_peculato",
+					"2026-06-26",
 				),
 				description: dv(
 					"Esquema de desvio salarial na Alerj. Arquivado pelo TJ-RJ (2024). STF Gilmar Mendes rejeitou reabertura (fev/2025) por questões processuais (perda prazo MP, foro).",
@@ -455,8 +455,8 @@ export const flavio: Candidate = 	{
 				),
 				status: dv(
 					"arquivado",
-					"https://noticias.uol.com.br/politica/ultimas-noticias/2025/12/06/decisoes-do-stj-e-stf-livraram-flavio-bolsonaro-do-caso-das-rachadinhas.htm",
-					"2024-04-23",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Caso_Queiroz_e_acusa%C3%A7%C3%A3o_de_peculato",
+					"2026-06-26",
 				),
 				description: dv(
 					"Movimentação atípica R$ 1,2 mi (Queiroz). Absorvido pelo caso rachadinhas.",

@@ -59,7 +59,7 @@ async function checkVersion() {
       const focused = windows.find((c) => c.focused)
 
       if (focused) {
-        focused.postMessage({ type: 'data-update', body })
+        focused.postMessage({ type: 'data-update', changes: data.changes })
       } else {
         await self.registration.showNotification('Novos dados disponiveis', {
           body,

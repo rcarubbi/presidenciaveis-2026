@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { useRouter, usePathname } from 'next/navigation'
 import { toast } from 'sonner'
 import type { Candidate, CandidateSubTab } from '../../types'
-import { ArrowLeft } from 'lucide-react'
+import { ArrowLeft, User, Briefcase, FileText, Newspaper, Shield, DollarSign, Grid3X3 } from 'lucide-react'
 import { DadosPessoaisCell } from './DadosPessoais'
 import { CarreiraCell } from './Carreira'
 import { EscandalosCell } from './Escandalos'
@@ -72,73 +72,115 @@ export function Comparativo({ candidates, initialIds = ['lula', 'flavio', 'renan
     switch (cmpTab) {
       case 'dados':
         return (
-          <CmpGrid>
-            {filtered.map((c) => (
-              <CandidateSectionBlock key={c.id} candidate={c}>
-                <DadosPessoaisCell candidate={c} />
-              </CandidateSectionBlock>
-            ))}
-          </CmpGrid>
+          <>
+            <div className="flex items-center gap-2 mb-4 text-gray-700 dark:text-gray-300">
+              <User className="size-4" />
+              <h3 className="text-sm font-black uppercase tracking-[0.12em]">DADOS PESSOAIS</h3>
+            </div>
+            <CmpGrid>
+              {filtered.map((c) => (
+                <CandidateSectionBlock key={c.id} candidate={c}>
+                  <DadosPessoaisCell candidate={c} />
+                </CandidateSectionBlock>
+              ))}
+            </CmpGrid>
+          </>
         )
       case 'carreira':
         return (
-          <CmpGrid>
-            {filtered.map((c) => (
-              <CandidateSectionBlock key={c.id} candidate={c}>
-                <CarreiraCell candidate={c} />
-              </CandidateSectionBlock>
-            ))}
-          </CmpGrid>
+          <>
+            <div className="flex items-center gap-2 mb-4 text-gray-700 dark:text-gray-300">
+              <Briefcase className="size-4" />
+              <h3 className="text-sm font-black uppercase tracking-[0.12em]">CARREIRA POLÍTICA</h3>
+            </div>
+            <CmpGrid>
+              {filtered.map((c) => (
+                <CandidateSectionBlock key={c.id} candidate={c}>
+                  <CarreiraCell candidate={c} />
+                </CandidateSectionBlock>
+              ))}
+            </CmpGrid>
+          </>
         )
       case 'plano':
         return (
-          <CmpGrid>
-            {filtered.map((c) => (
-              <CandidateSectionBlock key={c.id} candidate={c}>
-                <PlanoGovernoCell candidate={c} />
-              </CandidateSectionBlock>
-            ))}
-          </CmpGrid>
+          <>
+            <div className="flex items-center gap-2 mb-4 text-gray-700 dark:text-gray-300">
+              <FileText className="size-4" />
+              <h3 className="text-sm font-black uppercase tracking-[0.12em]">PLANO DE GOVERNO</h3>
+            </div>
+            <CmpGrid>
+              {filtered.map((c) => (
+                <CandidateSectionBlock key={c.id} candidate={c}>
+                  <PlanoGovernoCell candidate={c} />
+                </CandidateSectionBlock>
+              ))}
+            </CmpGrid>
+          </>
         )
       case 'cobertura':
         return (
-          <CmpGrid>
-            {filtered.map((c) => (
-              <CandidateSectionBlock key={c.id} candidate={c}>
-                <CoberturaCell candidate={c} />
-              </CandidateSectionBlock>
-            ))}
-          </CmpGrid>
+          <>
+            <div className="flex items-center gap-2 mb-4 text-gray-700 dark:text-gray-300">
+              <Newspaper className="size-4" />
+              <h3 className="text-sm font-black uppercase tracking-[0.12em]">COBERTURA JORNALÍSTICA</h3>
+            </div>
+            <CmpGrid>
+              {filtered.map((c) => (
+                <CandidateSectionBlock key={c.id} candidate={c}>
+                  <CoberturaCell candidate={c} />
+                </CandidateSectionBlock>
+              ))}
+            </CmpGrid>
+          </>
         )
       case 'escandalos':
         return (
-          <CmpGrid>
-            {filtered.map((c) => (
-              <CandidateSectionBlock key={c.id} candidate={c}>
-                <EscandalosCell candidate={c} />
-              </CandidateSectionBlock>
-            ))}
-          </CmpGrid>
+          <>
+            <div className="flex items-center gap-2 mb-4 text-gray-700 dark:text-gray-300">
+              <Shield className="size-4" />
+              <h3 className="text-sm font-black uppercase tracking-[0.12em]">ESCÂNDALOS DE CORRUPÇÃO</h3>
+            </div>
+            <CmpGrid>
+              {filtered.map((c) => (
+                <CandidateSectionBlock key={c.id} candidate={c}>
+                  <EscandalosCell candidate={c} />
+                </CandidateSectionBlock>
+              ))}
+            </CmpGrid>
+          </>
         )
       case 'financiamento':
         return (
-          <CmpGrid>
-            {filtered.map((c) => (
-              <CandidateSectionBlock key={c.id} candidate={c}>
-                <FinanciamentoCell candidate={c} />
-              </CandidateSectionBlock>
-            ))}
-          </CmpGrid>
+          <>
+            <div className="flex items-center gap-2 mb-4 text-gray-700 dark:text-gray-300">
+              <DollarSign className="size-4" />
+              <h3 className="text-sm font-black uppercase tracking-[0.12em]">FINANCIAMENTO DE CAMPANHA</h3>
+            </div>
+            <CmpGrid>
+              {filtered.map((c) => (
+                <CandidateSectionBlock key={c.id} candidate={c}>
+                  <FinanciamentoCell candidate={c} />
+                </CandidateSectionBlock>
+              ))}
+            </CmpGrid>
+          </>
         )
       case 'posicionamento':
         return (
-          <CmpGrid>
-            {filtered.map((c) => (
-              <CandidateSectionBlock key={c.id} candidate={c}>
-                <PosicionamentoCell candidate={c} />
-              </CandidateSectionBlock>
-            ))}
-          </CmpGrid>
+          <>
+            <div className="flex items-center gap-2 mb-4 text-gray-700 dark:text-gray-300">
+              <Grid3X3 className="size-4" />
+              <h3 className="text-sm font-black uppercase tracking-[0.12em]">POSICIONAMENTO SOBRE PAUTAS POLÊMICAS</h3>
+            </div>
+            <CmpGrid>
+              {filtered.map((c) => (
+                <CandidateSectionBlock key={c.id} candidate={c}>
+                  <PosicionamentoCell candidate={c} />
+                </CandidateSectionBlock>
+              ))}
+            </CmpGrid>
+          </>
         )
       default:
         return null

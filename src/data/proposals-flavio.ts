@@ -24,7 +24,7 @@ export const flavioProposals: Record<string, ProposalItem[]> = {
   ],
   educacao: [
     { text: dv('Homeschooling como direito', 'https://www12.senado.leg.br/noticias/materias/2023/05/02/grupo-quer-retirar-homeschooling-da-regulacao-de-escolas-comunitarias', '2023-05-02') },
-    { text: dv('Escola sem partido', 'https://www.epsjv.fiocruz.br/noticias/reportagem/por-tras-do-escola-sem-partido', '2018-07-04') },
+    { text: dv('Escola sem partido', 'https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Posi%C3%A7%C3%B5es_pol%C3%ADticas', '2026-06-26') },
     { text: dv('Desvinculação do piso constitucional (correção só pela inflação, não 18% RLI)', 'https://www1.folha.uol.com.br/mercado/2026/04/flavio-planeja-reajustar-aposentadorias-e-despesas-com-saude-e-educacao-so-pela-inflacao.shtml', '2026-04-28') },
     { text: dv('Meritocracia e avaliação de desempenho docente', 'https://parlamentobrasil.org/audio/educacao-e-respeito-a-proposta-de-flavio-bolsonaro-para-valorizar-os-professores-do-brasil', '2026-02-11') },
   ],
@@ -32,7 +32,7 @@ export const flavioProposals: Record<string, ProposalItem[]> = {
     { text: dv('Correção aposentadorias e BPC só pela inflação', 'https://www1.folha.uol.com.br/mercado/2026/04/flavio-planeja-reajustar-aposentadorias-e-despesas-com-saude-e-educacao-so-pela-inflacao.shtml', '2026-04-28') },
   ],
   infraestrutura: [
-    { text: dv('Saneamento básico para municípios pequenos', 'https://acessepolitica.com.br/noticia/176307/flavio-bolsonaro-e-aplaudido-e-recebe-apoio-de-prefeitos-durante-marcha-em-brasilia', '2026-05-19') },
+    { text: dv('Saneamento básico para municípios pequenos', 'https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Posi%C3%A7%C3%B5es_pol%C3%ADticas', '2026-06-26') },
   ],
   'meio-ambiente': [
     { text: dv('Marco temporal para demarcações indígenas', 'https://oglobo.globo.com/politica/noticia/2026/04/10/flavio-bolsonaro-acena-ao-agro-defende-marco-temporal-e-sugere-que-indigenas-possam-criar-gado-e-explorar-minerio-em-terras.ghtml', '2026-04-10') },

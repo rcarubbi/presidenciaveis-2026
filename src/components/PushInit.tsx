@@ -45,10 +45,17 @@ export function PushInit() {
   useEffect(() => {
     function onMessage(event: MessageEvent) {
       if (event.data?.type === 'data-update') {
-        toast('Novos dados disponiveis', {
-          description: event.data.body,
-          duration: 10000,
-        })
+        const changes = event.data.changes
+        if (changes?.length) {
+          changes.forEach((c: { emoji: string; label: string }) => {
+            toast(c.emoji + ' ' + c.label, { duration: 10000 })
+          })
+        } else {
+          toast('Novos dados disponiveis', {
+            description: event.data.body,
+            duration: 10000,
+          })
+        }
       }
     }
 
