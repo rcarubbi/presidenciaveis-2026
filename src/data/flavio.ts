@@ -253,11 +253,11 @@ export const flavio: Candidate = 	{
 					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Esc%C3%A2ndalo_do_Banco_Master_e_filme_Dark_Horse",
 					"2026-06-26",
 				),
-				event: dv(
-					'Plano "Brasil Sem Medo" (18/06). Dark Horse no STF.',
-					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Esc%C3%A2ndalo_do_Banco_Master_e_filme_Dark_Horse",
-					"2026-06-26",
-				),
+		event: dv(
+				'Plano "Brasil Sem Medo" (18/06). Dark Horse no STF. Crise c/ Michelle (24/06). Bia Kicis cotada vice. Audiência tarifas EUA (jul).',
+				"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Esc%C3%A2ndalo_do_Banco_Master_e_filme_Dark_Horse",
+				"2026-07-03",
+			),
 			},
 		],
 		electionResults: [
@@ -699,6 +699,18 @@ export const flavio: Candidate = 	{
 					"Contra. Disse que se enganou ao votar a favor do aumento p/ R$ 3,8 bi em 2019. Defende financiamento privado.",
 					"https://valor.globo.com/politica/noticia/2019/12/06/flavio-bolsonaro-diz-que-se-enganou-ao-votar-a-favor-de-aumento-do-fundo-eleitoral.ghtml",
 					"2019-12-06",
+				),
+			},
+			{
+				issue: dv(
+					"Tarifas EUA",
+					"https://g1.globo.com/politica/noticia/2026/07/03/flavio-bolsonaro-eua-tarifaco.ghtml",
+					"2026-07-03",
+				),
+				position: dv(
+					"Crítico tarifaço Trump. Foi a Washington discursar contra tarifas ao Brasil. Defende alinhamento bilateral.",
+					"https://g1.globo.com/politica/noticia/2026/07/03/flavio-bolsonaro-eua-tarifaco.ghtml",
+					"2026-07-03",
 				),
 			},
 		],

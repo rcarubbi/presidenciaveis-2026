@@ -10,9 +10,21 @@ export interface DataVersionInfo {
 }
 
 export const dataVersion: DataVersionInfo = {
-	version: "2026-07-06T14:00:00Z",
-	updatedAt: "2026-07-06T14:00:00Z",
+	version: "2026-07-06T16:30:00Z",
+	updatedAt: "2026-07-06T16:30:00Z",
 	changes: [
+		{
+			emoji: "👤",
+			label: "Flávio: timeline — crise c/ Michelle, Bia Kicis cotada vice, audiência tarifas EUA",
+		},
+		{
+			emoji: "👤",
+			label: "Flávio: posição — Tarifas EUA (crítico tarifaço Trump, foi a Washington)",
+		},
+		{
+			emoji: "🎥",
+			label: "Flávio: vídeos — Metrópoles (Michelle apelido) + Cappelli (vice) (02-03/jul)",
+		},
 		{
 			emoji: "🎥",
 			label: "Lula: vídeo — entrevista Jornal da Manhã Bahia (05/jul)",
