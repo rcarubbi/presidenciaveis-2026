@@ -10,8 +10,8 @@ export interface DataVersionInfo {
 }
 
 export const dataVersion: DataVersionInfo = {
-	version: "2026-07-05T22:30:00Z",
-	updatedAt: "2026-07-05T22:30:00Z",
+	version: "2026-07-05T23:30:00Z",
+	updatedAt: "2026-07-05T23:30:00Z",
 	changes: [
 		{
 			emoji: "🔄",
@@ -33,6 +33,26 @@ export const dataVersion: DataVersionInfo = {
 		{
 			emoji: "🎥",
 			label: "Flávio: vídeo — CNN Bastidores (Michelle/Flávio) 02/07",
+		},
+		{
+			emoji: "👤",
+			label: "Caiado: scandal — MP investiga uso de PMs como seguranças (Folha) 27/jun",
+		},
+		{
+			emoji: "👤",
+			label: "Caiado: timeline — PSD marca convenção 26/jul em SP 24/jun",
+		},
+		{
+			emoji: "👤",
+			label: "Caiado: positions — Reforma STF (Metrópoles 22/jun) + Reforma Tributária 23/jun",
+		},
+		{
+			emoji: "📋",
+			label: "Caiado: proposal — projeto reforma STF (Metrópoles) 22/jun",
+		},
+		{
+			emoji: "🎥",
+			label: "Caiado: videos — BandNews FM, TMC News Br, CNN HORA H (Kassab vice) 01-02/jul",
 		},
 	],
 };

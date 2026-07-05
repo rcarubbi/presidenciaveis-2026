@@ -149,8 +149,19 @@ export const caiado: Candidate = 	{
 					"https://g1.globo.com/politica/noticia/2026/07/01/caiado-anuncia-kassab-presidente-do-psd-como-vice-na-chapa-a-presidencia.ghtml",
 					"2026-07-01",
 				),
-			}
-		,
+			},
+			{
+				year: dv(
+					"2026",
+					"https://bpmoney.com.br/politica/psd-convencao-caiado-presidencia-julho-sao-paulo",
+					"2026-06-24",
+				),
+				event: dv(
+					"PSD marca convenção para 26 de julho em SP para oficializar candidatura de Caiado.",
+					"https://bpmoney.com.br/politica/psd-convencao-caiado-presidencia-julho-sao-paulo",
+					"2026-06-24",
+				),
+			},
 			{
 				year: dv(
 					"2026",
@@ -563,6 +574,28 @@ export const caiado: Candidate = 	{
 					"https://goias24horas.com.br/215741-governo-caiado-daniel-e-mabel-na-prefeitura-fecharam-contrato-milionario-com-advogado-do-pernambuco-sem-licitacao",
 					"2026-06-28",
 				),
+			},
+			{
+				name: dv(
+					"Uso de PMs como seguranças pessoais",
+					"https://www1.folha.uol.com.br/poder/2026/06/ministerio-publico-de-goias-entra-com-acao-contra-uso-de-policiais-como-segurancas-de-caiado.shtml",
+					"2026-06-27",
+				),
+				status: dv(
+					"ativo",
+					"https://www1.folha.uol.com.br/poder/2026/06/ministerio-publico-de-goias-entra-com-acao-contra-uso-de-policiais-como-segurancas-de-caiado.shtml",
+					"2026-06-27",
+				),
+				description: dv(
+					"MP-GO aciona Justiça contra uso de policiais militares como seguranças particulares de Caiado. Ação aponta desvio de finalidade e improbidade administrativa.",
+					"https://www1.folha.uol.com.br/poder/2026/06/ministerio-publico-de-goias-entra-com-acao-contra-uso-de-policiais-como-segurancas-de-caiado.shtml",
+					"2026-06-27",
+				),
+				value: dv(
+					"Improbidade administrativa",
+					"https://www1.folha.uol.com.br/poder/2026/06/ministerio-publico-de-goias-entra-com-acao-contra-uso-de-policiais-como-segurancas-de-caiado.shtml",
+					"2026-06-27",
+				),
 			}
 		
 ],
@@ -747,6 +780,30 @@ export const caiado: Candidate = 	{
 					"Votou a favor da PEC do Teto dos Gastos Públicos (2016). Defende responsabilidade fiscal e limite para gastos públicos.",
 					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Impeachment_de_Dilma_Rousseff",
 					"2026-06-26",
+				),
+			},
+			{
+				issue: dv(
+					"Reforma Tributária",
+					"https://reformatributaria.com/reforma-tributaria-nas-eleicoes/caiado-diz-nao-ser-contra-a-reforma-tributaria-mas-defende-ver-se-a-mudanca-procede",
+					"2026-06-23",
+				),
+				position: dv(
+					"Não é contra a reforma tributária, mas defende avaliar setores afetados antes de implementar. Quer garantir que a mudança 'procede' antes de apoiar.",
+					"https://reformatributaria.com/reforma-tributaria-nas-eleicoes/caiado-diz-nao-ser-contra-a-reforma-tributaria-mas-defende-ver-se-a-mudanca-procede",
+					"2026-06-23",
+				),
+			},
+			{
+				issue: dv(
+					"Reforma do STF",
+					"https://metropoles.com/brasil/caiado-diz-que-enviara-projeto-de-reforma-do-stf-ao-congresso",
+					"2026-06-22",
+				),
+				position: dv(
+					"Defende mandato determinado para ministros do STF. Enviará projeto de reforma ao Congresso se eleito, com critérios técnicos de nomeação.",
+					"https://metropoles.com/brasil/caiado-diz-que-enviara-projeto-de-reforma-do-stf-ao-congresso",
+					"2026-06-22",
 				),
 			}
 		
