@@ -233,51 +233,51 @@ export const zema: Candidate = 	{
 			{
 				name: dv(
 					"Operação Rejeito",
-					"https://g1.globo.com/mg/minas-gerais/noticia/2025/09/18/pf-deflagra-operacao-rejeito-contra-corrupcao-no-licenciamento-ambiental-de-mg.ghtml",
+					"https://g1.globo.com/mg/minas-gerais/noticia/2025/09/19/como-operacao-contra-fraudes-na-mineracao-em-mg-afetou-alto-escalao-do-governo-zema.ghtml",
 					"2026-06-28",
 				),
 				status: dv(
 					"ativo",
-					"https://g1.globo.com/mg/minas-gerais/noticia/2025/09/18/pf-deflagra-operacao-rejeito-contra-corrupcao-no-licenciamento-ambiental-de-mg.ghtml",
+					"https://g1.globo.com/mg/minas-gerais/noticia/2025/09/19/como-operacao-contra-fraudes-na-mineracao-em-mg-afetou-alto-escalao-do-governo-zema.ghtml",
 					"2026-06-28",
 				),
 				description: dv(
 					"Maior escândalo de corrupção da história de MG. PF investiga captura de órgãos ambientais por mineradoras. Alta cúpula da ANM e Feam presa. Esquema envolvia licenciamento fraudulento em troca de propina.",
-					"https://g1.globo.com/mg/minas-gerais/noticia/2025/09/18/pf-deflagra-operacao-rejeito-contra-corrupcao-no-licenciamento-ambiental-de-mg.ghtml",
+					"https://g1.globo.com/mg/minas-gerais/noticia/2025/09/19/como-operacao-contra-fraudes-na-mineracao-em-mg-afetou-alto-escalao-do-governo-zema.ghtml",
 					"2026-06-28",
 				),
 			},
 			{
 				name: dv(
 					"Serra do Curral",
-					"https://www.otempo.com.br/politica/2025/10/22/serra-do-curral-mp-apura-licenciamento-ambiental-irregular",
+					"https://www.em.com.br/politica/2025/09/7251390-decreto-alterado-por-zema-favoreceu-empresa-investigada-na-operacao-rejeito.html",
 					"2026-06-28",
 				),
 				status: dv(
 					"ativo",
-					"https://www.otempo.com.br/politica/2025/10/22/serra-do-curral-mp-apura-licenciamento-ambiental-irregular",
+					"https://www.em.com.br/politica/2025/09/7251390-decreto-alterado-por-zema-favoreceu-empresa-investigada-na-operacao-rejeito.html",
 					"2026-06-28",
 				),
 				description: dv(
 					"Licenciamento ambiental irregular para mineradoras na Serra do Curral, patrimônio histórico de BH. Ex-superintendente da Supram exonerado após denúncias. MP apura favorecimento a empresas.",
-					"https://www.otempo.com.br/politica/2025/10/22/serra-do-curral-mp-apura-licenciamento-ambiental-irregular",
+					"https://www.em.com.br/politica/2025/09/7251390-decreto-alterado-por-zema-favoreceu-empresa-investigada-na-operacao-rejeito.html",
 					"2026-06-28",
 				),
 			},
 			{
 				name: dv(
 					"Privatização da Copasa",
-					"https://www.otempo.com.br/politica/2025/12/05/cpi-da-copasa-aprova-relatorio-com-pedido-de-indiciamento-de-zema",
+					"https://g1.globo.com/mg/minas-gerais/noticia/2025/12/23/zema-sanciona-lei-que-autoriza-privatizacao-da-copasa-e-troca-comando-da-empresa.ghtml",
 					"2026-06-28",
 				),
 				status: dv(
 					"arquivado",
-					"https://www.otempo.com.br/politica/2025/12/05/cpi-da-copasa-aprova-relatorio-com-pedido-de-indiciamento-de-zema",
+					"https://g1.globo.com/mg/minas-gerais/noticia/2025/12/23/zema-sanciona-lei-que-autoriza-privatizacao-da-copasa-e-troca-comando-da-empresa.ghtml",
 					"2026-06-28",
 				),
 				description: dv(
 					"CPI da Copasa na ALMG aprovou relatório pedindo indiciamento de Zema por irregularidades no processo de privatização da companhia de saneamento. Denúncias de subfaturamento e conflito de interesses.",
-					"https://www.otempo.com.br/politica/2025/12/05/cpi-da-copasa-aprova-relatorio-com-pedido-de-indiciamento-de-zema",
+					"https://g1.globo.com/mg/minas-gerais/noticia/2025/12/23/zema-sanciona-lei-que-autoriza-privatizacao-da-copasa-e-troca-comando-da-empresa.ghtml",
 					"2026-06-28",
 				),
 			},

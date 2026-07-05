@@ -2,7 +2,7 @@
 
 import { Suspense } from 'react'
 import { Comparativo } from '@/components/sections/Comparativo'
-import { candidates } from '@/data/candidates'
+import { candidates } from '@/data'
 import { useSearchParams } from 'next/navigation'
 import { Spinner } from '@/components/ui/Spinner'
 

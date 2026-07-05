@@ -2,7 +2,7 @@
 
 import { useState, useMemo } from 'react'
 import type { Candidate, MediaItem } from '../../types'
-import { mediaData } from '../../data/media'
+import { mediaData } from '@/data'
 import { ChevronDown, Video } from 'lucide-react'
 import { MediaCard } from '../MediaCard'
 import { CandidateNameHeading } from '../ui/CandidateNameHeading'

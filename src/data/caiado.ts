@@ -498,66 +498,66 @@ export const caiado: Candidate = 	{
 			{
 				name: dv(
 					"Operação Obra Simulada",
-					"https://g1.globo.com/go/goias/noticia/2025/01/15/governo-de-goias-e-alvo-de-operacao-da-pf-por-desvio-de-r-27-milhoes.ghtml",
+					"https://revistaforum.com.br/politica/homem-de-confianca-de-caiado-e-preso-em-megaoperacao-contra-esquema-milionario-de-corrupcao",
 					"2026-06-28",
 				),
 				status: dv(
 					"ativo",
-					"https://g1.globo.com/go/goias/noticia/2025/01/15/governo-de-goias-e-alvo-de-operacao-da-pf-por-desvio-de-r-27-milhoes.ghtml",
+					"https://revistaforum.com.br/politica/homem-de-confianca-de-caiado-e-preso-em-megaoperacao-contra-esquema-milionario-de-corrupcao",
 					"2026-06-28",
 				),
 				description: dv(
 					"PF prendeu Lucas Vissotto, ex-presidente da Goinfra e aliado de Caiado, por desvio de R$ 27 mi em contratos fraudulentos de pavimentação. Superfaturamento e direcionamento de licitações.",
-					"https://g1.globo.com/go/goias/noticia/2025/01/15/governo-de-goias-e-alvo-de-operacao-da-pf-por-desvio-de-r-27-milhoes.ghtml",
+					"https://revistaforum.com.br/politica/homem-de-confianca-de-caiado-e-preso-em-megaoperacao-contra-esquema-milionario-de-corrupcao",
 					"2026-06-28",
 				),
 				value: dv(
 					"R$ 27 milhões",
-					"https://g1.globo.com/go/goias/noticia/2025/01/15/governo-de-goias-e-alvo-de-operacao-da-pf-por-desvio-de-r-27-milhoes.ghtml",
+					"https://revistaforum.com.br/politica/homem-de-confianca-de-caiado-e-preso-em-megaoperacao-contra-esquema-milionario-de-corrupcao",
 					"2026-06-28",
 				),
 			},
 			{
 				name: dv(
 					"Fraude no Fundeb",
-					"https://g1.globo.com/go/goias/noticia/2025/08/20/pf-investiga-esquema-de-corrupcao-na-educacao-de-goias.ghtml",
+					"https://brasilnocentro.com.br/pf-investiga-esquema-de-corrupcao-no-governo-caiado-em-goias",
 					"2026-06-28",
 				),
 				status: dv(
 					"ativo",
-					"https://g1.globo.com/go/goias/noticia/2025/08/20/pf-investiga-esquema-de-corrupcao-na-educacao-de-goias.ghtml",
+					"https://brasilnocentro.com.br/pf-investiga-esquema-de-corrupcao-no-governo-caiado-em-goias",
 					"2026-06-28",
 				),
 				description: dv(
 					"PF investiga fraudes em contratos do Fundeb na 1ª gestão Caiado. Empresários pagaram R$ 465 mil em propina a servidores por vantagens em licitações da educação.",
-					"https://g1.globo.com/go/goias/noticia/2025/08/20/pf-investiga-esquema-de-corrupcao-na-educacao-de-goias.ghtml",
+					"https://brasilnocentro.com.br/pf-investiga-esquema-de-corrupcao-no-governo-caiado-em-goias",
 					"2026-06-28",
 				),
 				value: dv(
 					"R$ 465 mil",
-					"https://g1.globo.com/go/goias/noticia/2025/08/20/pf-investiga-esquema-de-corrupcao-na-educacao-de-goias.ghtml",
+					"https://brasilnocentro.com.br/pf-investiga-esquema-de-corrupcao-no-governo-caiado-em-goias",
 					"2026-06-28",
 				),
 			},
 			{
 				name: dv(
 					"Contrato sem licitação",
-					"https://g1.globo.com/goias/noticia/2019/07/10/governo-de-goias-e-alvo-de-denuncia-por-contratar-escritorio-de-advocacia-sem-licitacao.ghtml",
+					"https://goias24horas.com.br/215741-governo-caiado-daniel-e-mabel-na-prefeitura-fecharam-contrato-milionario-com-advogado-do-pernambuco-sem-licitacao",
 					"2026-06-28",
 				),
 				status: dv(
 					"arquivado",
-					"https://g1.globo.com/goias/noticia/2019/07/10/governo-de-goias-e-alvo-de-denuncia-por-contratar-escritorio-de-advocacia-sem-licitacao.ghtml",
+					"https://goias24horas.com.br/215741-governo-caiado-daniel-e-mabel-na-prefeitura-fecharam-contrato-milionario-com-advogado-do-pernambuco-sem-licitacao",
 					"2026-06-28",
 				),
 				description: dv(
 					"Governo de Goiás contratou escritório de advocacia sem licitação por R$ 402 mil. TCE apontou irregularidades. Caiado demorou a exonerar servidores envolvidos.",
-					"https://g1.globo.com/goias/noticia/2019/07/10/governo-de-goias-e-alvo-de-denuncia-por-contratar-escritorio-de-advocacia-sem-licitacao.ghtml",
+					"https://goias24horas.com.br/215741-governo-caiado-daniel-e-mabel-na-prefeitura-fecharam-contrato-milionario-com-advogado-do-pernambuco-sem-licitacao",
 					"2026-06-28",
 				),
 				value: dv(
 					"R$ 402 mil",
-					"https://g1.globo.com/goias/noticia/2019/07/10/governo-de-goias-e-alvo-de-denuncia-por-contratar-escritorio-de-advocacia-sem-licitacao.ghtml",
+					"https://goias24horas.com.br/215741-governo-caiado-daniel-e-mabel-na-prefeitura-fecharam-contrato-milionario-com-advogado-do-pernambuco-sem-licitacao",
 					"2026-06-28",
 				),
 			},

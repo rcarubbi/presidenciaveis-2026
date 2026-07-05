@@ -226,7 +226,7 @@ export const renan: Candidate = 	{
 				),
 				status: dv(
 					"rejeitado",
-					"https://g1.globo.com/sp/sao-paulo/noticia/2020/11/20/justica-de-sp-rejeita-denuncia-contra-fundador-do-mbl-renan-santos-por-trafico-de-influencia.ghtml",
+					"https://www.conjur.com.br/2020-nov-06/justica-rejeita-denuncia-renan-santos-trafico-influencia/",
 					"2020-11-20",
 				),
 				description: dv(

@@ -1,4 +1,4 @@
-import { candidates } from '@/data/candidates'
+import { candidates } from '@/data'
 import { notFound } from 'next/navigation'
 import { CandidateLayout } from '@/components/Layout/CandidateLayout'
 import { generateCandidateJsonLd } from '@/lib/jsonLd'

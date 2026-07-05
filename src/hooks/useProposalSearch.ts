@@ -1,6 +1,6 @@
 import { useState, useMemo } from 'react'
 import type { Candidate, ProposalItem } from '../types'
-import { proposalSections } from '../data/proposals'
+import { proposalSections } from '@/data'
 
 export function useProposalSearch(candidates: Candidate[]) {
   const [search, setSearch] = useState('')

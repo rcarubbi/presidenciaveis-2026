@@ -1,5 +1,5 @@
 import type { MetadataRoute } from 'next'
-import { candidates } from '@/data/candidates'
+import { candidates } from '@/data'
 
 const BASE_URL =
   process.env.NEXT_PUBLIC_BASE_URL || 'https://presidenciaveis-2026.vercel.app'

@@ -1,6 +1,6 @@
 'use client'
 
-import type { Candidate, ProposalItem } from '../../types'
+import type { Candidate, ProposalItem, ProposalSection } from '../../types'
 import { useProposalSearch } from '../../hooks/useProposalSearch'
 import { FileText, Shield, ChevronDown } from 'lucide-react'
 import { useState } from 'react'
@@ -9,7 +9,7 @@ import { ProposalSearchResults } from './ProposalSearchResults'
 import { ProposalCards } from './ProposalCards'
 import { CandidateNameHeading } from '../ui/CandidateNameHeading'
 import { DataLink } from '../DataLink'
-import { proposalSections, type ProposalSection } from '../../data/proposals'
+import { proposalSections } from '@/data'
 import { sectionIcons } from '@/lib/sectionIcons'
 
 interface PlanoGovernoProps {

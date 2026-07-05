@@ -433,7 +433,7 @@ export const flavio: Candidate = 	{
 				),
 				status: dv(
 					"arquivado",
-					"https://g1.globo.com/rj/rio-de-janeiro/noticia/2024/04/23/tj-rj-arquiva-inquerito-que-investigava-flavio-bolsonaro-no-caso-rachadinhas.ghtml",
+					"https://noticias.uol.com.br/politica/ultimas-noticias/2025/12/06/decisoes-do-stj-e-stf-livraram-flavio-bolsonaro-do-caso-das-rachadinhas.htm",
 					"2024-04-23",
 				),
 				description: dv(
@@ -455,7 +455,7 @@ export const flavio: Candidate = 	{
 				),
 				status: dv(
 					"arquivado",
-					"https://g1.globo.com/rj/rio-de-janeiro/noticia/2024/04/23/tj-rj-arquiva-inquerito-que-investigava-flavio-bolsonaro-no-caso-rachadinhas.ghtml",
+					"https://noticias.uol.com.br/politica/ultimas-noticias/2025/12/06/decisoes-do-stj-e-stf-livraram-flavio-bolsonaro-do-caso-das-rachadinhas.htm",
 					"2024-04-23",
 				),
 				description: dv(
@@ -477,7 +477,7 @@ export const flavio: Candidate = 	{
 				),
 				status: dv(
 					"ativo",
-					"https://www.cnnbrasil.com.br/politica/stf-andre-mendonca-e-relator-de-inquerito-que-investiga-flavio-bolsonaro-por-dark-horse/",
+					"https://cbn.globo.com/brasil/noticia/2026/05/17/dark-horse-investigacoes-apuram-destino-de-r-134-milhoes-ligados-a-filme-sobre-bolsonaro.ghtml",
 					"2026-05-23",
 				),
 				description: dv(
@@ -487,29 +487,29 @@ export const flavio: Candidate = 	{
 				),
 				value: dv(
 					"R$ 134 mi",
-					"https://g1.globo.com/politica/noticia/2026/05/16/pf-aponta-que-flavio-bolsonaro-solicitou-r-134-milhoes-ao-banco-master.ghtml",
+					"https://cbn.globo.com/brasil/noticia/2026/05/17/dark-horse-investigacoes-apuram-destino-de-r-134-milhoes-ligados-a-filme-sobre-bolsonaro.ghtml",
 					"2026-05-16",
 				),
 			},
 			{
 				name: dv(
 					"Abin Paralela",
-					"https://www.cnnbrasil.com.br/politica/alvos-da-abin-paralela-esconderam-se-em-shopping-no-riozinho-diz-pf/",
+					"https://g1.globo.com/politica/noticia/2024/07/11/abin-espionou-auditores-da-receita-federal-que-apuravam-possivel-rachadinha-de-flavio-bolsonaro-diz-pf.ghtml",
 					"2026-04-10",
 				),
 				status: dv(
 					"ativo",
-					"https://www.cnnbrasil.com.br/politica/alvos-da-abin-paralela-esconderam-se-em-shopping-no-riozinho-diz-pf/",
+					"https://g1.globo.com/politica/noticia/2024/07/11/abin-espionou-auditores-da-receita-federal-que-apuravam-possivel-rachadinha-de-flavio-bolsonaro-diz-pf.ghtml",
 					"2026-04-10",
 				),
 				description: dv(
 					"Espionagem a auditores do Coaf que investigavam Flávio. Inquérito no STF.",
-					"https://www.cnnbrasil.com.br/politica/alvos-da-abin-paralela-esconderam-se-em-shopping-no-riozinho-diz-pf/",
+					"https://g1.globo.com/politica/noticia/2024/07/11/abin-espionou-auditores-da-receita-federal-que-apuravam-possivel-rachadinha-de-flavio-bolsonaro-diz-pf.ghtml",
 					"2026-04-10",
 				),
 				value: dv(
 					"—",
-					"https://www.cnnbrasil.com.br/politica/alvos-da-abin-paralela-esconderam-se-em-shopping-no-riozinho-diz-pf/",
+					"https://g1.globo.com/politica/noticia/2024/07/11/abin-espionou-auditores-da-receita-federal-que-apuravam-possivel-rachadinha-de-flavio-bolsonaro-diz-pf.ghtml",
 					"2026-04-10",
 				),
 			},
