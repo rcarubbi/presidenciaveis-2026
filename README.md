@@ -11,12 +11,15 @@ Site: [presidenciaveis-2026.vercel.app](https://presidenciaveis-2026.vercel.app)
 
 - **Next.js 16** (App Router)
 - **React 19**
-- **Tailwind CSS 4**
+- **Tailwind CSS 4** (via `@tailwindcss/postcss`)
 - **Recharts** (gráficos)
 - **TypeScript ~6**
 - **Oxlint** (linter)
+- **Knip** (dead code analysis)
 - **lucide-react** (ícones)
 - **sonner** (notificações)
+- **Vercel Analytics + Speed Insights**
+- **OpenCode** (agente de desenvolvimento)
 
 ## Rotas
 
@@ -30,11 +33,15 @@ Site: [presidenciaveis-2026.vercel.app](https://presidenciaveis-2026.vercel.app)
 ## Scripts
 
 ```bash
-npm run dev       # desenvolvimento
-npm run build     # build produção
-npm run start     # servidor produção
-npm run lint      # oxlint
-npm run typecheck # tsc --noEmit
+npm run dev           # desenvolvimento (Turbopack)
+npm run build         # build produção
+npm run start         # servidor produção
+npm run lint          # oxlint
+npm run typecheck     # tsc --noEmit
+npm run knip          # dead code analysis
+npm run fetch:tse     # atualiza CSV de pesquisas do TSE
+npm run fetch:youtube # busca vídeos do YouTube via API
+npm run fetch:news    # busca notícias recentes via GNews API
 ```
 
 ## Variáveis de ambiente
@@ -43,13 +50,22 @@ npm run typecheck # tsc --noEmit
 |----------|-------------|-----------|
 | `NEXT_PUBLIC_GA_ID` | Não | Google Tag Manager ID (ex: GTM-...) |
 | `NEXT_PUBLIC_BASE_URL` | Não | URL base para sitemap/OG (fallback: presidenciaveis-2026.vercel.app) |
+| `YOUTUBE_API_KEY` | Para `fetch:youtube` | API Key do YouTube Data v3 |
+| `GNEWS_API_KEY` | Para `fetch:news` | API Key do GNews |
 
 ## Dados
 
-### Candidate data
-Perfis, carreira, posicionamento, escândalos e financiamento estão em
-arquivos TypeScript estáticos em `src/data/`. Cada campo inclui referência
-(URL + data) via `DataValue<T>`.
+~250+ pontos de dados com referência (URL + data) via `DataValue<T>`.
+Todas as fontes priorizam imprensa (G1, Folha, UOL, Estadão, CNN, BBC).
+Atualização registrada em `src/data/.version.ts`.
+
+### Perfis dos candidatos (`src/data/{candidato}.ts`)
+Carreira, posicionamento, escândalos, financiamento e timeline.
+
+### Propostas de governo (`src/data/proposals-{candidato}.ts`)
+11 seções temáticas (Segurança, Economia, Saúde, Educação, Previdência,
+Infraestrutura, Meio Ambiente, Relações Exteriores, Reforma Política,
+Costumes, Agricultura). ~120 propostas no total.
 
 ### Cobertura jornalística (SapiensLabs)
 Série histórica de sentimento, artigos, top fontes e tópicos vindos da API
@@ -60,13 +76,24 @@ O slug de cada candidato na API está mapeado em `src/lib/sapiens/slugs.ts`.
 ### Pesquisas eleitorais
 Duas fontes:
 - **Institutos** — Datafolha, Quaest, AtlasIntel, Real Time Big Data
-  (dados estáticos em `src/data/polls/`)
+  (dados estáticos em `src/data/polls.ts`)
 - **TSE** — CSV oficial de pesquisas registradas, parseado em
   `src/lib/tse/client.ts`
 
-### Mídia
-95+ vídeos do YouTube embedados por categoria (entrevistas, debates,
-campanha), organizados em `src/data/media/`.
+### Mídia (`src/data/media-{candidato}.ts`)
+~100+ vídeos do YouTube embedados, organizados por mês/ano
+(grupos colapsáveis com contagem). Dados pré-agrupados por mês,
+ordenados do mais recente ao mais antigo.
+
+## Automação
+
+O projeto usa [OpenCode](https://opencode.ai) com skills para manutenção:
+
+- `update-content` — atualiza dados de 1 candidato por execução (pesquisas,
+  vídeos, propostas, perfil)
+- `validate-sources` — valida fontes dos dados (links, consistência numérica)
+
+Skills e configuração do agente em `.opencode/` e `AGENTS.md`.
 
 ## Licença
 
