@@ -10,21 +10,21 @@ export interface DataVersionInfo {
 }
 
 export const dataVersion: DataVersionInfo = {
-	version: "2026-07-05T03:10:00Z",
-	updatedAt: "2026-07-05T03:10:00Z",
+	version: "2026-07-05T03:20:00Z",
+	updatedAt: "2026-07-05T03:20:00Z",
 	changes: [
 		{
 			emoji: "🔗",
-			label: "Caiado: brasilnocentro quebrada → G1 (Fraude Fundeb R$ 465 mil)",
+			label:
+				"Zema: sintrajufe.org.br (Tier4) → valor.globo.com (Tier1) Previdência",
 		},
 		{
-			emoji: "🔗",
-			label:
-				"Caiado: #Posições_políticas inexistente → Senado PDL 175/2017 (Armas)",
+			emoji: "❌",
+			label: "Zema: Doações PF R$15M removida — sem fonte Tier1 que comprove",
 		},
 		{
 			emoji: "✅",
-			label: "Caiado: validadas 38 URLs (36 OK + 2 corrigidas)",
+			label: "Zema: validadas 22 URLs (21 OK + 1 substituída + 1 removida)",
 		},
 	],
 };

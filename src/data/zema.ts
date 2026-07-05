@@ -312,19 +312,7 @@ export const zema: Candidate = 	{
 					),
 					color: "#f15a24",
 				},
-				{
-					name: dv(
-						"Doações PF",
-						"https://g1.globo.com/politica/eleicoes/2026/noticia/2026/06/04/fundo-eleitoral-2026-confira-como-sera-distribuicao-dos-r-49-bilhoes-pl-pt-e-uniao-lideram.ghtml",
-						"2026-06-28",
-					),
-					value: dvn(
-						15,
-						"https://g1.globo.com/politica/eleicoes/2026/noticia/2026/06/04/fundo-eleitoral-2026-confira-como-sera-distribuicao-dos-r-49-bilhoes-pl-pt-e-uniao-lideram.ghtml",
-						"2026-06-28",
-					),
-					color: "#ff9800",
-				},
+
 			],
 			comparison: {
 				name: dv(

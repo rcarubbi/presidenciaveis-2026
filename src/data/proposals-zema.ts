@@ -23,7 +23,7 @@ export const zemaProposals: Record<string, ProposalItem[]> = {
     { text: dv('Escolas cívico-militares como modelo nacional de disciplina e ensino', 'https://g1.globo.com/jornal-nacional/noticia/2026/04/16/novo-apresenta-diretrizes-do-plano-de-governo-de-romeu-zema-pre-candidato-do-partido-a-presidencia-da-republica.ghtml', '2026-04-16') },
   ],
   previdencia: [
-    { text: dv('Reforma definitiva da Previdência com gatilho automático por expectativa de vida', 'https://sintrajufe.org.br/plano-de-governo-de-zema-pre-candidato-do-partido-novo-preve-jornada-de-trabalho-sem-limite-de-horario-privatizacao-total-e-reforma-definitiva-da-previdencia/', '2026-04-16') },
+    { text: dv('Reforma definitiva da Previdência com gatilho automático por expectativa de vida', 'https://valor.globo.com/politica/noticia/2026/04/16/zema-lanca-propostas-de-governo-e-repete-que-ira-ate-o-fim-como-candidato-a-presidente.ghtml', '2026-04-16') },
     { text: dv('CLT paralela com jornada flexível negociada entre patrão e empregado', 'https://g1.globo.com/jornal-nacional/noticia/2026/04/16/novo-apresenta-diretrizes-do-plano-de-governo-de-romeu-zema-pre-candidato-do-partido-a-presidencia-da-republica.ghtml', '2026-04-16') },
     { text: dv('Idade mínima dinâmica vinculada à evolução da expectativa de vida', 'https://valor.globo.com/politica/noticia/2026/04/16/zema-lanca-propostas-de-governo-e-repete-que-ira-ate-o-fim-como-candidato-a-presidente.ghtml', '2026-04-16') },
   ],
