@@ -11,7 +11,7 @@ import {
   ResponsiveContainer,
 } from 'recharts'
 import { SourcesBarChart } from './SourcesBarChart'
-import { ExternalLink, TrendingUp, TrendingDown, Minus, Newspaper } from 'lucide-react'
+import { ExternalLink, TrendingUp, TrendingDown, Minus, Newspaper, ArrowLeft, ArrowRight, HelpCircle } from 'lucide-react'
 
 interface CoberturaProps {
   candidates: Candidate[]
@@ -35,6 +35,35 @@ function sentimentIcon(val: number | null) {
   if (val > 0.05) return <TrendingUp size={14} className="text-green-600 dark:text-green-400" />
   if (val < -0.05) return <TrendingDown size={14} className="text-red-600 dark:text-red-400" />
   return <Minus size={14} className="text-gray-400" />
+}
+
+function editorialLeanBadge(lean: string): { label: string; icon: React.ReactNode; cls: string } | null {
+  switch (lean) {
+    case 'left':
+      return {
+        label: 'Esquerda',
+        icon: <ArrowLeft size={10} />,
+        cls: 'bg-red-100 text-red-700 dark:bg-red-900/40 dark:text-red-300',
+      }
+    case 'right':
+      return {
+        label: 'Direita',
+        icon: <ArrowRight size={10} />,
+        cls: 'bg-blue-100 text-blue-700 dark:bg-blue-900/40 dark:text-blue-300',
+      }
+    case 'center':
+      return {
+        label: 'Centro',
+        icon: <Minus size={10} />,
+        cls: 'bg-gray-100 text-gray-600 dark:bg-gray-800 dark:text-gray-400',
+      }
+    default:
+      return {
+        label: 'Não classif.',
+        icon: <HelpCircle size={10} />,
+        cls: 'bg-slate-100 text-slate-500 dark:bg-slate-800 dark:text-slate-400',
+      }
+  }
 }
 
 export function Cobertura({ candidates }: CoberturaProps) {
@@ -145,12 +174,19 @@ export function Cobertura({ candidates }: CoberturaProps) {
                         <span className="text-xs capitalize text-gray-400">{article.genre}</span>
                       </>
                     )}
-                    {article.editorial_lean && (
-                      <>
-                        <span className="text-xs text-gray-400">·</span>
-                        <span className="text-xs capitalize text-gray-400">{article.editorial_lean}</span>
-                      </>
-                    )}
+                    {article.editorial_lean && (() => {
+                      const badge = editorialLeanBadge(article.editorial_lean!)
+                      if (!badge) return null
+                      return (
+                        <>
+                          <span className="text-xs text-gray-400">·</span>
+                          <span className={`inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-[10px] font-semibold leading-none ${badge.cls}`}>
+                            {badge.icon}
+                            {badge.label}
+                          </span>
+                        </>
+                      )
+                    })()}
                   </div>
                 </div>
               </a>
@@ -341,6 +377,19 @@ export function CoberturaCell({ candidate }: { candidate: Candidate }) {
                       <span className="text-[10px] text-gray-400">{article.source ?? '—'}</span>
                       <span className="text-[10px] text-gray-400">·</span>
                       <span className="text-[10px] text-gray-400">{formatDate(article.published_at)}</span>
+                      {article.editorial_lean && (() => {
+                        const badge = editorialLeanBadge(article.editorial_lean!)
+                        if (!badge) return null
+                        return (
+                          <>
+                            <span className="text-[10px] text-gray-400">·</span>
+                            <span className={`inline-flex items-center gap-1 rounded-full px-1.5 py-0.5 text-[9px] font-semibold leading-none ${badge.cls}`}>
+                              {badge.icon}
+                              {badge.label}
+                            </span>
+                          </>
+                        )
+                      })()}
                     </div>
                   </div>
                 </a>
