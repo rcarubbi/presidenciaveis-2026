@@ -254,9 +254,9 @@ export const flavio: Candidate = 	{
 					"2026-06-26",
 				),
 				event: dv(
-					'Plano "Brasil Sem Medo" (18/06). Dark Horse no STF.',
-					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Esc%C3%A2ndalo_do_Banco_Master_e_filme_Dark_Horse",
-					"2026-06-26",
+					'Plano "Brasil Sem Medo" (18/06). Dark Horse no STF. Carta aos EUA omite envolvimento (02/07).',
+					"https://www.metropoles.com/brasil/em-carta-aos-eua-flavio-associa-master-a-lula-e-omite-caso-dark-horse",
+					"2026-07-05",
 				),
 			},
 		],
@@ -481,9 +481,9 @@ export const flavio: Candidate = 	{
 					"2026-05-23",
 				),
 				description: dv(
-					"PF investiga solicitação de R$ 134 mi ao Banco Master. Relator: STF André Mendonça.",
-					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Esc%C3%A2ndalo_do_Banco_Master_e_filme_Dark_Horse",
-					"2026-06-26",
+					"PF investiga solicitação de R$ 134 mi ao Banco Master. Em jul/2026, enviou carta ao governo dos EUA chamando Master de 'maior escândalo bancário' e omitiu sua própria ligação com o caso Dark Horse. Relator: STF André Mendonça.",
+					"https://www.metropoles.com/brasil/em-carta-aos-eua-flavio-associa-master-a-lula-e-omite-caso-dark-horse",
+					"2026-07-05",
 				),
 				value: dv(
 					"R$ 134 mi",

@@ -8,6 +8,20 @@ export const flavioMedia: MediaCategory[] = [
 			items: [
 				{
 					title: dv(
+						"Michelle e Flávio Bolsonaro vão superar episódio, afirma líder da oposição",
+						"https://www.youtube.com/watch?v=7Oh-2Vg9reI",
+						"2026-07-02",
+					),
+					description: dv(
+						"O líder da oposição no Congresso afirma que Michelle e Flávio Bolsonaro vão superar o episódio de desavença, em análise no Bastidores CNN.",
+						"https://www.youtube.com/watch?v=7Oh-2Vg9reI",
+						"2026-07-02",
+					),
+					youtubeId: "7Oh-2Vg9reI",
+					category: "entrevistas",
+				},
+				{
+					title: dv(
 						"Direita em ascensão: Flávio Bolsonaro detalha onda azul que chega ao Brasil",
 						"https://www.youtube.com/watch?v=XV-R-99WLF4",
 						"2026-07-01",
