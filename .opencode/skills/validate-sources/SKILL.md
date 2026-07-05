@@ -275,7 +275,9 @@ Para cada resultado nao-OK:
 
 Para cada candidato encontrado:
 - `webfetch` para confirmar conteudo
-- Registar como candidata a substituta
+- O conteudo deve mencionar EXPLICITAMENTE o `value` do `DataValue` (ou seu equivalente numerico exato)
+- Registrar como candidata a substituta
+- **Critico**: cada dado precisa de sua propria URL verificada. Nao reutilizar a mesma URL para dados diferentes sem verificar que o artigo cobre cada um individualmente.
 
 ### Passo 5 — Consultar usuario
 

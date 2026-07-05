@@ -645,7 +645,7 @@ export const lula: Candidate = 	{
 			),
 			limiteGastos: dv(
 				"R$ 133,4 mi (proj. ambos turnos)",
-				"https://www.poder360.com.br/poder-eleicoes/pt-quer-reservar-valor-maximo-permitido-pelo-tse-para-campanha-de-lula/",
+				"https://www.poder360.com.br/poder-eleicoes/tse-avalia-manter-teto-de-gastos-para-campanhas-em-2026/",
 				"2026-06-19",
 			),
 			fontes: [
@@ -705,24 +705,24 @@ export const lula: Candidate = 	{
 			{
 				issue: dv(
 					"Armas",
-					"https://www.gov.br/casacivil/pt-br/assuntos/noticias/2026/maio/r-11-bilhoes-governo-do-brasil-lanca-ofensiva-nacional-contra-o-crime-organizado",
+					"https://g1.globo.com/politica/noticia/2026/05/12/governo-federal-lanca-plano-de-combate-ao-crime-organizado-veja-acoes.ghtml",
 					"2026-05-12",
 				),
 				position: dv(
 					"Retomada Estatuto Desarmamento. Admite armas p/ produtores rurais.",
-					"https://www.gov.br/casacivil/pt-br/assuntos/noticias/2026/maio/r-11-bilhoes-governo-do-brasil-lanca-ofensiva-nacional-contra-o-crime-organizado",
+					"https://g1.globo.com/politica/noticia/2026/05/12/governo-federal-lanca-plano-de-combate-ao-crime-organizado-veja-acoes.ghtml",
 					"2026-05-12",
 				),
 			},
 			{
 				issue: dv(
 					"Privatização",
-					"https://agenciabrasil.ebc.com.br/politica/noticia/2026-05/lula-diz-sonhar-em-reverter-privatizacoes-de-empresas-estrategicas",
+					"https://g1.globo.com/se/sergipe/noticia/2026/05/29/lula-em-sergipe.ghtml",
 					"2026-05-29",
 				),
 				position: dv(
 					"Contrário. Fortalecimento da empresa pública.",
-					"https://agenciabrasil.ebc.com.br/politica/noticia/2026-05/lula-diz-sonhar-em-reverter-privatizacoes-de-empresas-estrategicas",
+					"https://g1.globo.com/se/sergipe/noticia/2026/05/29/lula-em-sergipe.ghtml",
 					"2026-05-29",
 				),
 			},
@@ -789,12 +789,12 @@ export const lula: Candidate = 	{
 			{
 				issue: dv(
 					"Meio Ambiente",
-					"https://agenciabrasil.ebc.com.br/economia/noticia/2026-05/lula-defende-exploracao-na-margem-equatorial-com-responsabilidade",
+					"https://g1.globo.com/politica/noticia/2026/05/18/lula-cita-possivel-interesse-de-trump-e-defende-exploracao-da-margem-equatorial-pela-petrobras-garantir-para-o-nosso-pais.ghtml",
 					"2026-05-18",
 				),
 				position: dv(
 					"Prioridade. Combate desmatamento. Transição energética.",
-					"https://agenciabrasil.ebc.com.br/economia/noticia/2026-05/lula-defende-exploracao-na-margem-equatorial-com-responsabilidade",
+					"https://g1.globo.com/politica/noticia/2026/05/18/lula-cita-possivel-interesse-de-trump-e-defende-exploracao-da-margem-equatorial-pela-petrobras-garantir-para-o-nosso-pais.ghtml",
 					"2026-05-18",
 				),
 			},
@@ -813,12 +813,12 @@ export const lula: Candidate = 	{
 			{
 				issue: dv(
 					"Segurança Pública",
-					"https://www.gov.br/casacivil/pt-br/assuntos/noticias/2026/maio/r-11-bilhoes-governo-do-brasil-lanca-ofensiva-nacional-contra-o-crime-organizado",
+					"https://g1.globo.com/politica/noticia/2026/05/12/governo-federal-lanca-plano-de-combate-ao-crime-organizado-veja-acoes.ghtml",
 					"2026-05-12",
 				),
 				position: dv(
 					"Repressão qualificada (inteligência). PEC Segurança. PL Antifacção.",
-					"https://www.gov.br/casacivil/pt-br/assuntos/noticias/2026/maio/r-11-bilhoes-governo-do-brasil-lanca-ofensiva-nacional-contra-o-crime-organizado",
+					"https://g1.globo.com/politica/noticia/2026/05/12/governo-federal-lanca-plano-de-combate-ao-crime-organizado-veja-acoes.ghtml",
 					"2026-05-12",
 				),
 			},

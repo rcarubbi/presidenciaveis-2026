@@ -143,7 +143,7 @@ export const zema: Candidate = 	{
 					"2026-06-26",
 				),
 				event: dv(
-					"Eleito Governador MG (2ºT, 58,07%) — surpresa nacional",
+					"Eleito Governador MG (2ºT, 71,80%) — surpresa nacional",
 					"https://pt.wikipedia.org/wiki/Romeu_Zema#Eleição_de_2018_e_primeiro_mandato_como_governador",
 					"2026-06-26",
 				),
@@ -163,12 +163,12 @@ export const zema: Candidate = 	{
 			{
 				year: dv(
 					"2026",
-					"https://g1.globo.com/politica/noticia/2026/03/22/zema-renuncia-governo-mg-para-disputar-presidencia.ghtml",
+					"https://g1.globo.com/mg/minas-gerais/noticia/2026/03/22/zema-renuncia-ao-governo-de-mg-para-pre-campanha-a-presidencia-da-republica-e-vice-mateus-simoes-assume-cargo.ghtml",
 					"2026-03-22",
 				),
 				event: dv(
 					"Renuncia governo MG. Pré-candidato Presidência (NOVO).",
-					"https://g1.globo.com/politica/noticia/2026/03/22/zema-renuncia-governo-mg-para-disputar-presidencia.ghtml",
+					"https://g1.globo.com/mg/minas-gerais/noticia/2026/03/22/zema-renuncia-ao-governo-de-mg-para-pre-campanha-a-presidencia-da-republica-e-vice-mateus-simoes-assume-cargo.ghtml",
 					"2026-03-22",
 				),
 			},
@@ -302,12 +302,12 @@ export const zema: Candidate = 	{
 				{
 					name: dv(
 						"FEFC (cota NOVO)",
-						"https://www.camara.leg.br/noticias/1054870-fundo-eleitoral-para-2026-sera-de-r-52-bilhoes",
+						"https://g1.globo.com/politica/eleicoes/2026/noticia/2026/06/04/fundo-eleitoral-2026-confira-como-sera-distribuicao-dos-r-49-bilhoes-pl-pt-e-uniao-lideram.ghtml",
 						"2026-06-28",
 					),
 					value: dvn(
 						37,
-						"https://www.camara.leg.br/noticias/1054870-fundo-eleitoral-para-2026-sera-de-r-52-bilhoes",
+						"https://g1.globo.com/politica/eleicoes/2026/noticia/2026/06/04/fundo-eleitoral-2026-confira-como-sera-distribuicao-dos-r-49-bilhoes-pl-pt-e-uniao-lideram.ghtml",
 						"2026-06-28",
 					),
 					color: "#f15a24",
@@ -315,12 +315,12 @@ export const zema: Candidate = 	{
 				{
 					name: dv(
 						"Doações PF",
-						"https://www.camara.leg.br/noticias/1054870-fundo-eleitoral-para-2026-sera-de-r-52-bilhoes",
+						"https://g1.globo.com/politica/eleicoes/2026/noticia/2026/06/04/fundo-eleitoral-2026-confira-como-sera-distribuicao-dos-r-49-bilhoes-pl-pt-e-uniao-lideram.ghtml",
 						"2026-06-28",
 					),
 					value: dvn(
 						15,
-						"https://www.camara.leg.br/noticias/1054870-fundo-eleitoral-para-2026-sera-de-r-52-bilhoes",
+						"https://g1.globo.com/politica/eleicoes/2026/noticia/2026/06/04/fundo-eleitoral-2026-confira-como-sera-distribuicao-dos-r-49-bilhoes-pl-pt-e-uniao-lideram.ghtml",
 						"2026-06-28",
 					),
 					color: "#ff9800",
@@ -329,17 +329,17 @@ export const zema: Candidate = 	{
 			comparison: {
 				name: dv(
 					"Zema 2026 (FEFC NOVO)",
-					"https://www.camara.leg.br/noticias/1054870-fundo-eleitoral-para-2026-sera-de-r-52-bilhoes",
+					"https://g1.globo.com/politica/eleicoes/2026/noticia/2026/06/04/fundo-eleitoral-2026-confira-como-sera-distribuicao-dos-r-49-bilhoes-pl-pt-e-uniao-lideram.ghtml",
 					"2026-06-28",
 				),
 				arrecadado: dvn(
 					37,
-					"https://www.camara.leg.br/noticias/1054870-fundo-eleitoral-para-2026-sera-de-r-52-bilhoes",
+					"https://g1.globo.com/politica/eleicoes/2026/noticia/2026/06/04/fundo-eleitoral-2026-confira-como-sera-distribuicao-dos-r-49-bilhoes-pl-pt-e-uniao-lideram.ghtml",
 					"2026-06-28",
 				),
 				gasto: dvn(
 					0,
-					"https://www.camara.leg.br/noticias/1054870-fundo-eleitoral-para-2026-sera-de-r-52-bilhoes",
+					"https://g1.globo.com/politica/eleicoes/2026/noticia/2026/06/04/fundo-eleitoral-2026-confira-como-sera-distribuicao-dos-r-49-bilhoes-pl-pt-e-uniao-lideram.ghtml",
 					"2026-06-28",
 				),
 			},
@@ -396,12 +396,12 @@ export const zema: Candidate = 	{
 			{
 				issue: dv(
 					"Segurança Pública",
-					"https://g1.globo.com/mg/minas-gerais/noticia/2026/05/26/zema-defende-encarceramento-em-massa-nos-moldes-de-el-salvador.ghtml",
+					"https://g1.globo.com/sp/sao-paulo/eleicoes/2026/noticia/2026/05/25/zema-defende-modelo-de-el-salvador-com-encarceramento-em-massa-contra-o-crime.ghtml",
 					"2026-06-28",
 				),
 				position: dv(
 					"Defende encarceramento em massa nos moldes de El Salvador. Classificar facções como terroristas. Endurecimento de penas.",
-					"https://g1.globo.com/mg/minas-gerais/noticia/2026/05/26/zema-defende-encarceramento-em-massa-nos-moldes-de-el-salvador.ghtml",
+					"https://g1.globo.com/sp/sao-paulo/eleicoes/2026/noticia/2026/05/25/zema-defende-modelo-de-el-salvador-com-encarceramento-em-massa-contra-o-crime.ghtml",
 					"2026-06-28",
 				),
 			},
@@ -432,12 +432,12 @@ export const zema: Candidate = 	{
 			{
 				issue: dv(
 					"Trabalho Infantil",
-					"https://g1.globo.com/politica/noticia/2026/01/15/zema-defende-trabalho-infantil-e-repercute-negativamente.ghtml",
+					"https://g1.globo.com/politica/eleicoes/2026/noticia/2026/05/01/zema-trabalho-criancas.ghtml",
 					"2026-06-28",
 				),
 				position: dv(
 					"Declarou-se favorável ao trabalho infantil nos moldes dos EUA (entregar jornal). Gerou forte repercussão negativa.",
-					"https://g1.globo.com/politica/noticia/2026/01/15/zema-defende-trabalho-infantil-e-repercute-negativamente.ghtml",
+					"https://g1.globo.com/politica/eleicoes/2026/noticia/2026/05/01/zema-trabalho-criancas.ghtml",
 					"2026-06-28",
 				),
 			},

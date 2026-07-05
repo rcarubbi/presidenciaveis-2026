@@ -73,7 +73,7 @@ export const caiado: Candidate = 	{
 		),
 		patrimonio: dvn(
 			24874436,
-			"https://g1.globo.com/go/goias/noticia/2023/07/12/caiado-e-o-4o-governador-mais-rico-do-brasil-com-patrimonio-de-r-248-milhoes.ghtml",
+			"https://g1.globo.com/go/goias/eleicoes/2022/noticia/2022/08/12/ronaldo-caiado-declara-patrimonio-de-r-248-milhoes-ao-tse.ghtml",
 			"2026-06-28",
 		),
 		currentParty: dv(
@@ -200,12 +200,12 @@ export const caiado: Candidate = 	{
 			{
 				year: dv(
 					"2026",
-					"https://g1.globo.com/politica/eleicoes/2026/noticia/2026/03/27/caiado-oficializa-pre-candidatura-a-presidencia-pelo-psd.ghtml",
+					"https://g1.globo.com/sp/sao-paulo/noticia/2026/03/30/psd-oficializa-ronaldo-caiado-como-pre-candidato-a-presidencia.ghtml",
 					"2026-03-27",
 				),
 				event: dv(
 					"Pré-candidatura Presidência. Sai UNIÃO p/ PSD. Governador licenciado.",
-					"https://g1.globo.com/politica/eleicoes/2026/noticia/2026/03/27/caiado-oficializa-pre-candidatura-a-presidencia-pelo-psd.ghtml",
+					"https://g1.globo.com/sp/sao-paulo/noticia/2026/03/30/psd-oficializa-ronaldo-caiado-como-pre-candidato-a-presidencia.ghtml",
 					"2026-03-27",
 				),
 			},
@@ -582,12 +582,12 @@ export const caiado: Candidate = 	{
 				{
 					name: dv(
 						"FEFC (cota PSD)",
-						"https://www.camara.leg.br/noticias/1054870-fundo-eleitoral-para-2026-sera-de-r-52-bilhoes",
+						"https://g1.globo.com/politica/eleicoes/2026/noticia/2026/06/04/fundo-eleitoral-2026-confira-como-sera-distribuicao-dos-r-49-bilhoes-pl-pt-e-uniao-lideram.ghtml",
 						"2026-06-28",
 					),
 					value: dvn(
 						421,
-						"https://www.camara.leg.br/noticias/1054870-fundo-eleitoral-para-2026-sera-de-r-52-bilhoes",
+						"https://g1.globo.com/politica/eleicoes/2026/noticia/2026/06/04/fundo-eleitoral-2026-confira-como-sera-distribuicao-dos-r-49-bilhoes-pl-pt-e-uniao-lideram.ghtml",
 						"2026-06-28",
 					),
 					color: "#1a4fa0",
@@ -595,12 +595,12 @@ export const caiado: Candidate = 	{
 				{
 					name: dv(
 						"Fundo Partidário",
-						"https://www.camara.leg.br/noticias/1054870-fundo-eleitoral-para-2026-sera-de-r-52-bilhoes",
+						"https://g1.globo.com/politica/eleicoes/2026/noticia/2026/06/04/fundo-eleitoral-2026-confira-como-sera-distribuicao-dos-r-49-bilhoes-pl-pt-e-uniao-lideram.ghtml",
 						"2026-06-28",
 					),
 					value: dvn(
 						30,
-						"https://www.camara.leg.br/noticias/1054870-fundo-eleitoral-para-2026-sera-de-r-52-bilhoes",
+						"https://g1.globo.com/politica/eleicoes/2026/noticia/2026/06/04/fundo-eleitoral-2026-confira-como-sera-distribuicao-dos-r-49-bilhoes-pl-pt-e-uniao-lideram.ghtml",
 						"2026-06-28",
 					),
 					color: "#2e7d32",
@@ -609,17 +609,17 @@ export const caiado: Candidate = 	{
 			comparison: {
 				name: dv(
 					"Caiado 2026 (FEFC PSD)",
-					"https://www.camara.leg.br/noticias/1054870-fundo-eleitoral-para-2026-sera-de-r-52-bilhoes",
+					"https://g1.globo.com/politica/eleicoes/2026/noticia/2026/06/04/fundo-eleitoral-2026-confira-como-sera-distribuicao-dos-r-49-bilhoes-pl-pt-e-uniao-lideram.ghtml",
 					"2026-06-28",
 				),
 				arrecadado: dvn(
 					421,
-					"https://www.camara.leg.br/noticias/1054870-fundo-eleitoral-para-2026-sera-de-r-52-bilhoes",
+					"https://g1.globo.com/politica/eleicoes/2026/noticia/2026/06/04/fundo-eleitoral-2026-confira-como-sera-distribuicao-dos-r-49-bilhoes-pl-pt-e-uniao-lideram.ghtml",
 					"2026-06-28",
 				),
 				gasto: dvn(
 					0,
-					"https://www.camara.leg.br/noticias/1054870-fundo-eleitoral-para-2026-sera-de-r-52-bilhoes",
+					"https://g1.globo.com/politica/eleicoes/2026/noticia/2026/06/04/fundo-eleitoral-2026-confira-como-sera-distribuicao-dos-r-49-bilhoes-pl-pt-e-uniao-lideram.ghtml",
 					"2026-06-28",
 				),
 			},
@@ -664,12 +664,12 @@ export const caiado: Candidate = 	{
 			{
 				issue: dv(
 					"Armas",
-					"https://g1.globo.com/go/goias/noticia/2022/09/29/caiado-defende-porte-de-armas-para-cidadaos-de-bem.ghtml",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Posi%C3%A7%C3%B5es_pol%C3%ADticas",
 					"2026-06-28",
 				),
 				position: dv(
 					"Favorável ao porte de armas para 'cidadãos de bem'. Defende flexibilização do Estatuto do Desarmamento.",
-					"https://g1.globo.com/go/goias/noticia/2022/09/29/caiado-defende-porte-de-armas-para-cidadaos-de-bem.ghtml",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Posi%C3%A7%C3%B5es_pol%C3%ADticas",
 					"2026-06-28",
 				),
 			},

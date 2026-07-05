@@ -109,9 +109,9 @@ export const renan: Candidate = 	{
 			"2026-06-30",
 		),
 		careerYears: dvn(
-			12,
+			8,
 			"https://pt.wikipedia.org/wiki/Renan_Santos#Carreira_pol%C3%ADtica",
-			"2026-06-26",
+			"2026-07-05",
 		),
 		currentPosition: dv(
 			"Fundador e presidente do Partido Missão",
@@ -260,11 +260,11 @@ export const renan: Candidate = 	{
 			fontes: [
 				{
 					name: dv("Crowdfunding PF"),
-					value: dvn(
-						1.12,
-						"https://www.poder360.com.br/poder-eleicoes/renan-santos-comemora-r-500-mil-em-doacao-eleitoral/",
-						"2026-06-03",
-					),
+				value: dvn(
+					1.12,
+					"https://www.estadao.com.br/politica/eleicoes/renan-santos-arrecada-r-112-milhao-em-crowdfunding-para-campanha/",
+					"2026-07-05",
+				),
 					color: "#d97706",
 				},
 			],
