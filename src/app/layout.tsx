@@ -21,19 +21,18 @@ export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   title: 'Presidenciáveis 2026',
   description: 'Comparativo dos presidenciáveis 2026 — Lula, Flávio Bolsonaro, Renan Santos, Ronaldo Caiado e Romeu Zema',
-  openGraph: {
-    title: 'Presidenciáveis 2026',
-    description: 'Comparativo dos presidenciáveis 2026. Perfil completo, pesquisas e comparativo lado a lado.',
-    locale: 'pt_BR',
-    type: 'website',
-    siteName: 'Presidenciáveis 2026',
-    images: [{ url: '/og-image.svg', width: 1200, height: 630 }],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Presidenciáveis 2026',
-    description: 'Comparativo dos presidenciáveis 2026. Perfil completo, pesquisas e comparativo lado a lado.',
-  },
+    openGraph: {
+      title: 'Presidenciáveis 2026',
+      description: 'Comparativo dos presidenciáveis 2026. Perfil completo, pesquisas e comparativo lado a lado.',
+      locale: 'pt_BR',
+      type: 'website',
+      siteName: 'Presidenciáveis 2026',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: 'Presidenciáveis 2026',
+      description: 'Comparativo dos presidenciáveis 2026. Perfil completo, pesquisas e comparativo lado a lado.',
+    },
   icons: {
     icon: [
       { url: '/favicon-96x96.png', sizes: '96x96', type: 'image/png' },

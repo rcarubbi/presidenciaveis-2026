@@ -3,6 +3,7 @@
 import { createContext, useContext } from 'react'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
+import Image from 'next/image'
 import type { Candidate } from '../types'
 import { Spinner } from './ui/Spinner'
 import { CandidateLabels } from './CandidateLabels'
@@ -61,11 +62,13 @@ function Photo({ children }: { children: React.ReactNode }) {
   return (
     <div className="relative overflow-hidden rounded-[1.75rem]" style={{ backgroundColor: c.party.color }}>
       <div className="aspect-3/4">
-        <img
+        <Image
+          fill
           src={c.photo}
           alt={c.fullName.value}
-          className="absolute inset-0 size-full object-cover transition-all duration-700 ease-out group-hover:scale-[1.03]"
+          className="object-cover transition-all duration-700 ease-out group-hover:scale-[1.03]"
           style={{ objectPosition: c.photoPos ?? 'center top' }}
+          sizes="(max-width: 768px) 50vw, 25vw"
         />
         <div
           className="absolute inset-0"
@@ -84,7 +87,7 @@ function PartyBadge() {
   return (
     <>
       <div className="absolute left-5 top-5 z-20">
-        <img src={c.party.logo} alt={c.party.name.value} className="h-9 max-w-20 object-contain drop-shadow-lg" />
+        <Image src={c.party.logo} alt={c.party.name.value} width={80} height={36} className="object-contain drop-shadow-lg" unoptimized />
       </div>
       <span className="absolute right-3 top-3 z-10 text-[clamp(2.5rem,5vw,3.5rem)] font-black leading-none text-white/15 select-none pointer-events-none">
         {c.party.number}
