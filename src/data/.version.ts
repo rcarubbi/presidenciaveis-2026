@@ -10,24 +10,21 @@ export interface DataVersionInfo {
 }
 
 export const dataVersion: DataVersionInfo = {
-	version: "2026-07-05T20:04:00Z",
-	updatedAt: "2026-07-05T20:04:00Z",
+	version: "2026-07-05T03:10:00Z",
+	updatedAt: "2026-07-05T03:10:00Z",
 	changes: [
 		{
 			emoji: "🔗",
-			label: "Renan: Estadão crowdfunding quebrada → Estadão vaquinha (OK)",
+			label: "Caiado: brasilnocentro quebrada → G1 (Fraude Fundeb R$ 465 mil)",
 		},
 		{
-			emoji: "⬆️",
-			label: "Renan: Tier4 aonpelavida → Tier1 Revista Oeste (Fundo Eleitoral)",
+			emoji: "🔗",
+			label:
+				"Caiado: #Posições_políticas inexistente → Senado PDL 175/2017 (Armas)",
 		},
-		{ emoji: "✅", label: "Renan: validadas 31 URLs (30 OK)" },
-		{ emoji: "🔗", label: "Flávio: UOL rachadinhas bloqueada → Wikipédia" },
-		{ emoji: "🔗", label: "Flávio: Fiocruz bloqueada → Wikipédia" },
-		{ emoji: "🔗", label: "Flávio: AcessePolítica bloqueada → Wikipédia" },
 		{
 			emoji: "✅",
-			label: "Flávio: validadas 38 URLs (35 OK + 3 migradas p/ Wikipédia)",
+			label: "Caiado: validadas 38 URLs (36 OK + 2 corrigidas)",
 		},
 	],
 };

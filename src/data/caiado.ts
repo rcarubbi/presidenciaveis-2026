@@ -520,22 +520,22 @@ export const caiado: Candidate = 	{
 			{
 				name: dv(
 					"Fraude no Fundeb",
-					"https://brasilnocentro.com.br/pf-investiga-esquema-de-corrupcao-no-governo-caiado-em-goias",
+					"https://g1.globo.com/go/goias/noticia/2025/08/07/operacao-cumpre-mandados-em-go-e-mais-tres-estados-contra-suposta-fraude-em-licitacao-com-recursos-do-fundeb.ghtml",
 					"2026-06-28",
 				),
 				status: dv(
 					"ativo",
-					"https://brasilnocentro.com.br/pf-investiga-esquema-de-corrupcao-no-governo-caiado-em-goias",
+					"https://g1.globo.com/go/goias/noticia/2025/08/07/operacao-cumpre-mandados-em-go-e-mais-tres-estados-contra-suposta-fraude-em-licitacao-com-recursos-do-fundeb.ghtml",
 					"2026-06-28",
 				),
 				description: dv(
 					"PF investiga fraudes em contratos do Fundeb na 1ª gestão Caiado. Empresários pagaram R$ 465 mil em propina a servidores por vantagens em licitações da educação.",
-					"https://brasilnocentro.com.br/pf-investiga-esquema-de-corrupcao-no-governo-caiado-em-goias",
+					"https://g1.globo.com/go/goias/noticia/2025/08/07/operacao-cumpre-mandados-em-go-e-mais-tres-estados-contra-suposta-fraude-em-licitacao-com-recursos-do-fundeb.ghtml",
 					"2026-06-28",
 				),
 				value: dv(
 					"R$ 465 mil",
-					"https://brasilnocentro.com.br/pf-investiga-esquema-de-corrupcao-no-governo-caiado-em-goias",
+					"https://g1.globo.com/go/goias/noticia/2025/08/07/operacao-cumpre-mandados-em-go-e-mais-tres-estados-contra-suposta-fraude-em-licitacao-com-recursos-do-fundeb.ghtml",
 					"2026-06-28",
 				),
 			},
@@ -664,12 +664,12 @@ export const caiado: Candidate = 	{
 			{
 				issue: dv(
 					"Armas",
-					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Posi%C3%A7%C3%B5es_pol%C3%ADticas",
+					"https://www25.senado.leg.br/web/atividade/materias/-/materia/130695",
 					"2026-06-28",
 				),
 				position: dv(
 					"Favorável ao porte de armas para 'cidadãos de bem'. Defende flexibilização do Estatuto do Desarmamento.",
-					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Posi%C3%A7%C3%B5es_pol%C3%ADticas",
+					"https://www25.senado.leg.br/web/atividade/materias/-/materia/130695",
 					"2026-06-28",
 				),
 			},
