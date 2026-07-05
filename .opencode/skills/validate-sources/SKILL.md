@@ -1,22 +1,44 @@
 ---
 name: validate-sources
 description: >
-  Valida fontes dos dados de 5 candidatos (lula, flavio, renan, caiado, zema).
+  Valida fontes dos dados de 1 candidato por execucao (lula, flavio, renan, caiado, zema).
   Checa links quebrados, ancora incorreta, fonte fraca, consistencia numerica,
   e dados globais. Preferencia: imprensa (G1, Folha, UOL, Estadão, CNN, BBC)
-  sobre Wikipedia. Trigger: "validate sources", "validar fontes", "/check-sources".
+  sobre Wikipedia.
+  Trigger: "validate sources {candidato}", "validar fontes {candidato}",
+  "/check-sources {candidato}" (ex: "validar fontes lula").
 ---
 
-# Validate Sources Agent
+# Validate Sources Agent (1 candidato)
 
 Projeto: `C:\Users\rcaru\source\repos\eleicoes_benchmark\presidenciaveis-2026`
+
+## Argumento Obrigatorio: Candidato
+
+Sempre especificar candidato no comando. Ex:
+
+```
+/check-sources lula
+validar fontes flavio
+validate renan sources
+```
+
+Se omitido, informar erro e listar opcoes validas.
+
+| ID | Nome | Arquivo dados | Arquivo propostas |
+|---|---|---|---|
+| `lula` | Lula | `src/data/lula.ts` | `src/data/proposals-lula.ts` |
+| `flavio` | Flávio Bolsonaro | `src/data/flavio.ts` | `src/data/proposals-flavio.ts` |
+| `renan` | Renan Santos | `src/data/renan.ts` | `src/data/proposals-renan.ts` |
+| `caiado` | Ronaldo Caiado | `src/data/caiado.ts` | `src/data/proposals-caiado.ts` |
+| `zema` | Romeu Zema | `src/data/zema.ts` | `src/data/proposals-zema.ts` |
 
 ## Regras Obrigatorias
 
 1. **Nunca remover fonte sem substituto.** Se link quebrado, buscar substituto antes de editar. Se insubstituivel, manter com `[BROKEN]` no report.
 2. **Preferencia Tier 1 sobre Tier 3/4.** Sempre migrar Wikipedia para imprensa quando possivel.
 3. **Multiplas fontes para mesmo dado** → listar opcoes e perguntar ao usuario qual usar.
-4. **Dados globais (mesmo valor entre candidatos)** → usar a mesma fonte para todos. Ex: limite de gastos TSE aplica-se a todos; usar unica fonte.
+4. **Dados globais (mesmo valor entre candidatos)** → verificar se outros candidatos usam fonte diferente e sugerir unificacao.
 5. **Sempre verificar ancora `#`.** O fragmento deve existir no HTML e corresponder ao dado. Decodificar URL-encoding (`%C3%A7` → `ç`) antes de comparar com IDs do HTML.
 6. **Valor numerico deve bater com a fonte.** Extrair numero do artigo, comparar com `DataValue.value`.
 7. **EXECUTE O WORKFLOW COMPLETO (Passo 1 ao 7).** Nao pular etapas.
@@ -27,36 +49,29 @@ Projeto: `C:\Users\rcaru\source\repos\eleicoes_benchmark\presidenciaveis-2026`
 
 ---
 
-## 1. Inventario de Dados
+## 1. Inventario de Dados (1 candidato)
 
-### Candidatos e arquivos
+Arquivos a ler (so os do candidato escolhido):
 
-| ID | Arquivo dados | Arquivo propostas |
-|---|---|---|
-| `lula` | `src/data/lula.ts` | `src/data/proposals-lula.ts` |
-| `flavio` | `src/data/flavio.ts` | `src/data/proposals-flavio.ts` |
-| `renan` | `src/data/renan.ts` | `src/data/proposals-renan.ts` |
-| `caiado` | `src/data/caiado.ts` | `src/data/proposals-caiado.ts` |
-| `zema` | `src/data/zema.ts` | `src/data/proposals-zema.ts` |
+- `src/data/{CANDIDATE}.ts` — dados pessoais, carreira, escandalos, financiamento, posicionamento
+- `src/data/proposals-{CANDIDATE}.ts` — propostas de governo (11 areas)
+
+Excluir: media-*, polls, .version, index, types.
 
 ### Categorias, campos e quantidade estimada de fontes
 
-| Categoria | Campos com `source` | Arquivo | Fontes estimadas (por candidato) |
-|---|---|---|---|
-| Dados Pessoais | `naturalidade`, `estadoCivil`, `conjugesAnteriores`, `filhos`, `formacao`, `profissao`, `religiao`, `residencia`, `patrimonio` | `{id}.ts` | ~9 |
-| Carreira | `currentParty`, `partyHistory[]`, `coalition[].status`, `ideologicalPosition`, `careerYears`, `currentPosition`, `timeline[].year+event`, `electionResults[].cargo+votos+pct+resultado` | `{id}.ts` | ~40-60 |
-| Plano Governo | `ProposalItem[].text` (11 areas tematicas) | `proposals-{id}.ts` | ~15-30 |
-| Escandalos | `scandals[].name`, `.status`, `.description`, `.value` | `{id}.ts` | ~4-12 |
-| Financiamento | `campaignFinance.totalArrecadado`, `.totalGasto`, `.limiteGastos`, `.fontes[].name+value`, `.comparison.*` | `{id}.ts` | ~8-15 |
-| Posicionamento | `positions[].issue`, `.position` | `{id}.ts` | ~10-15 |
-
-Total estimado: ~250-400 fontes unicas.
+| Categoria | Campos com `source` | Fontes estimadas |
+|---|---|---|
+| Dados Pessoais | `naturalidade`, `estadoCivil`, `conjugesAnteriores`, `filhos`, `formacao`, `profissao`, `religiao`, `residencia`, `patrimonio` | ~9 |
+| Carreira | `currentParty`, `partyHistory[]`, `coalition[].status`, `ideologicalPosition`, `careerYears`, `currentPosition`, `timeline[].year+event`, `electionResults[].cargo+votos+pct+resultado` | ~40-60 |
+| Plano Governo | `ProposalItem[].text` (11 areas tematicas) | ~15-30 |
+| Escandalos | `scandals[].name`, `.status`, `.description`, `.value` | ~4-12 |
+| Financiamento | `campaignFinance.totalArrecadado`, `.totalGasto`, `.limiteGastos`, `.fontes[].name+value`, `.comparison.*` | ~8-15 |
+| Posicionamento | `positions[].issue`, `.position` | ~10-15 |
 
 ---
 
 ## 2. Tabela de Qualidade de Fontes
-
-Use esta classificacao para decidir se uma fonte precisa ser substituida.
 
 | Tier | Descricao | Exemplos | Acao |
 |---|---|---|---|
@@ -65,19 +80,13 @@ Use esta classificacao para decidir se uma fonte precisa ser substituida.
 | 3 | Wikipedia, sites partidarios | wikipedia.org, pt.org.br, partido.site | Substituir por Tier 1/2 quando possivel |
 | 4 | Blogs, redes sociais, fontes primarias sem verificacao | Blogspot, Medium, Twitter/X, Instagram, Facebook | Substituir sempre |
 
-**Wikipedia**: aceitavel provisoriamente. Preferir G1, Folha, UOL, Estadão, CNN Brasil, BBC Brasil. Se nenhuma outra fonte cobrir o fato historico, Wikipedia pode ficar.
-
-**Sites partidarios** (pt.org.br, pl.org.br, etc.): usar apenas para fatos institucionais (ex: "filiacao ao partido"). Para declaracoes politicas, preferir cobertura da imprensa.
-
 ---
 
 ## 3. Metodologia de Validacao
 
 ### 3.1 Coleta de URLs
 
-Para cada candidato, para cada categoria:
-
-1. Ler o arquivo de dados (`src/data/{id}.ts`)
+1. Ler arquivo `src/data/{CANDIDATE}.ts` e `src/data/proposals-{CANDIDATE}.ts`
 2. Extrair recursivamente toda string no campo `source` de objetos `DataValue`
 3. Agrupar por categoria
 4. Identificar se a URL tem ancora (`#`)
@@ -87,13 +96,15 @@ Para cada candidato, para cada categoria:
 Para cada URL:
 
 ```
-webfetch(url)
+webfetch(url, timeout=15)
 ```
 
 - **200 OK**: link valido. Prosseguir para verificacao de conteudo.
-- **4xx/5xx**: link quebrado. Marcar como `[BROKEN]`. Buscar substituto (Secao 4).
+- **4xx/5xx**: link quebrado. Marcar como `[BROKEN]`. Buscar substituto.
 - **Timeout/erro DNS**: link inacessivel. Marcar como `[UNREACHABLE]`. Tentar novamente com `timeout=30`. Se persistir, buscar substituto.
 - **Redirect (3xx)**: seguir redirect. Anotar URL final. Se chain > 3 hops, potencialmente fragil.
+- **403/blocked**: marcar `[BLOCKED]`. Buscar substituto Tier 1.
+- **SPA (pagina carrega mas conteudo via JS)**: marcar `[SPA]`. Se for site oficial (TSE, gov), manter com nota.
 
 ### 3.3 Verificacao de Ancora (`#`)
 
@@ -123,8 +134,6 @@ Para cada URL valida:
 
 ### 3.5 Classificacao Final da Fonte
 
-Combinar status HTTP + ancora + conteudo + Tier:
-
 | Resultado | Significado | Acao |
 |---|---|---|
 | `OK` | Link valido, ancora OK, conteudo comprova, Tier 1-2 | Manter |
@@ -134,6 +143,7 @@ Combinar status HTTP + ancora + conteudo + Tier:
 | `UNREACHABLE` | Timeout/DNS | Buscar substituto |
 | `WEAK_CONTENT` | Conteudo nao comprova dado claramente | Buscar substituto |
 | `WRONG_VALUE` | Valor numerico nao bate com fonte | Corrigir value ou fonte |
+| `BLOCKED` | HTTP 403/blocked | Buscar substituto Tier 1 |
 
 ---
 
@@ -176,7 +186,7 @@ Combinar status HTTP + ancora + conteudo + Tier:
 ### 4.4 Conteudo nao comprova
 
 1. Marcar como `WEAK_CONTENT`
-2. Buscar fonte alternativa (Secao 4.1) — com busca multi-fonte obrigatoria
+2. Buscar fonte alternativa — com busca multi-fonte obrigatoria
 3. Se nenhuma alternativa comprovar o dado: questionar se o dado deve ser removido
 4. **Nunca substituir uma fonte `WEAK_CONTENT` por outra que tambem nao comprove o dado.** A nova fonte deve mencionar explicitamente o `value`, nao apenas o topico.
 
@@ -213,45 +223,41 @@ Para todo `DataValue<number>` (via `dvn()`):
 
 Dados que sao iguais para todos os candidatos DEVEM usar a mesma fonte.
 
-### Identificar dados globais
+### Identificar no escopo de 1 candidato
 
-Padrao: mesmo `DataValue.value` aparece em 2+ candidatos.
-
-Exemplos provaveis:
 - `limiteGastos` em `campaignFinance` — teto do TSE igual para todos
-- `ideologicalPosition` — nao, e diferente por candidato
-- Regras eleitorais mencionadas em descriptions — verificar
+- Se o candidato atual tiver este campo, verificar se a fonte e a mesma usada por outros candidatos (consultar versao anterior dos dados ou perguntar ao usuario)
+- Sugerir unificacao se houver divergencia
 
 ### Protocolo
 
-1. Se valor identico em multiplos candidatos → verificar se fontes sao diferentes
-2. Se fontes diferentes → selecionar a melhor (Tier mais alto, mais recente)
-3. Substituir todas as ocorrencias para usar a mesma fonte
-4. Se multiplas fontes igualmente boas → perguntar ao usuario
+1. Se valor identico ao de outros candidatos → verificar se fonte atual e a melhor disponivel
+2. Se encontrar fonte Tier 1 melhor (Poder360, G1, etc.), sugerir ao usuario
+3. Substituir apenas apos aprovacao
 
 ---
 
-## 7. Workflow (7 passos)
+## 7. Workflow (7 passos, 1 candidato)
 
-### Passo 1 — Ler dados
+### Passo 1 — Ler dados do candidato
 
-Ler os 5 arquivos de candidatos + 5 arquivos de propostas:
+Ler os 2 arquivos do candidato escolhido:
 
-- `src/data/lula.ts`, `src/data/flavio.ts`, `src/data/renan.ts`, `src/data/caiado.ts`, `src/data/zema.ts`
-- `src/data/proposals-lula.ts`, `src/data/proposals-flavio.ts`, `src/data/proposals-renan.ts`, `src/data/proposals-caiado.ts`, `src/data/proposals-zema.ts`
+- `src/data/{CANDIDATE}.ts`
+- `src/data/proposals-{CANDIDATE}.ts`
 
 ### Passo 2 — Extrair e classificar URLs
 
-Para cada categoria de cada candidato:
+Para cada categoria:
 
 1. Extrair todas URLs `source` com seus respectivos `value` e `updatedAt`
 2. Classificar cada URL por Tier (1-4)
 3. Identificar URLs com ancora (`#`)
 4. Identificar `DataValue<number>` para verificacao numerica
-5. Identificar valores que parecem globais (repetidos entre candidatos)
-6. Montar matriz: `{ candidato, categoria, campo, value, source, updatedAt, tier, temAncora, isNumeric }`
+5. Identificar valores globais (repetidos entre candidatos)
+6. Montar matriz: `{ campo, value, source, updatedAt, tier, temAncora, isNumeric }`
 
-### Passo 3 — Validar links (paralelo)
+### Passo 3 — Validar links
 
 Para cada URL unica:
 
@@ -260,9 +266,10 @@ Para cada URL unica:
 3. Se 200: verificar ancora, verificar conteudo
 4. Se 4xx/5xx: marcar `BROKEN`
 5. Se timeout: marcar `UNREACHABLE`
-6. Classificar resultado: `OK`, `OK_WEAK`, `OK_ANCHOR`, `BROKEN`, `UNREACHABLE`, `WEAK_CONTENT`
+6. Se 403: marcar `BLOCKED`
+7. Classificar resultado: `OK`, `OK_WEAK`, `OK_ANCHOR`, `BROKEN`, `UNREACHABLE`, `WEAK_CONTENT`, `BLOCKED`
 
-Processar em lotes paralelos para eficiencia.
+Salvar checkpoint apos este passo.
 
 ### Passo 4 — Buscar substitutos
 
@@ -270,54 +277,42 @@ Para cada resultado nao-OK:
 
 1. Link quebrado: `websearch` por fonte alternativa
 2. Fonte fraca (Tier 3-4): `websearch` por Tier 1-2
-3. Ancora incorreta: identificar ancora correta no documento
+3. Ancora incorreta: identificar ancora correta
 4. Conteudo fraco: buscar fonte que comprove melhor
 
-Para cada candidato encontrado:
+Para cada candidata encontrada:
 - `webfetch` para confirmar conteudo
 - O conteudo deve mencionar EXPLICITAMENTE o `value` do `DataValue` (ou seu equivalente numerico exato)
 - Registrar como candidata a substituta
-- **Critico**: cada dado precisa de sua propria URL verificada. Nao reutilizar a mesma URL para dados diferentes sem verificar que o artigo cobre cada um individualmente.
+
+Salvar checkpoint apos este passo.
 
 ### Passo 5 — Consultar usuario
 
 Para cada caso ambiguo:
 
-1. **Multiplas fontes candidatas** para o mesmo dado → listar com:
-   - URL
-   - Veiculo
-   - Trecho relevante
-   - Data
-   - Qualidade percebida
-   Perguntar: "Qual fonte usar?"
-
-2. **Nenhuma fonte encontrada** para substituir quebrado → perguntar:
-   - "Manter link quebrado? Remover dado? Buscar manualmente?"
-
-3. **Valor numerico divergente** → perguntar:
-   - "Atualizar value para {novo_valor}? Manter value antigo?"
+1. **Multiplas fontes candidatas** para o mesmo dado → listar com URL, veiculo, trecho, data, qualidade
+2. **Nenhuma fonte encontrada** para substituir quebrado → perguntar se mantem, remove, ou busca manual
+3. **Valor numerico divergente** → perguntar se atualiza ou mantem
 
 ### Passo 6 — Aplicar edicoes
 
 Para cada substituicao aprovada:
 
-1. Editar o arquivo de dados (`src/data/{id}.ts` ou `src/data/proposals-{id}.ts`)
+1. Editar `src/data/{CANDIDATE}.ts` e/ou `src/data/proposals-{CANDIDATE}.ts`
 2. Atualizar: `source` → nova URL, `updatedAt` → data atual
 3. Apos todas edicoes: atualizar `src/data/.version.ts`
-   - Adicionar entrada em `changes[]`: `{ emoji: "🔍", label: "Validacao de fontes" }`
 4. Executar validacao:
    ```
-   npm run lint
    npm run typecheck
+   npm run lint
    npm run build
    ```
 
 ### Passo 7 — Reportar
 
-Entregar relatorio final para o usuario:
-
 ```
-## Relatorio de Validacao de Fontes
+## Relatorio de Validacao de Fontes — {CANDIDATE}
 
 ### Resumo
 - Total de fontes verificadas: N
@@ -327,22 +322,87 @@ Entregar relatorio final para o usuario:
 - Consultadas ao usuario: N
 
 ### Substituicoes
-| Candidato | Categoria | Campo | Fonte antiga | Fonte nova | Motivo |
-|---|---|---|---|---|---|
-| ... | ... | ... | ... | ... | ... |
+| Categoria | Campo | Fonte antiga | Fonte nova | Motivo |
+|---|---|---|---|---|
 
 ### Problemas nao resolvidos
-| Candidato | Categoria | Campo | Fonte | Problema |
-|---|---|---|---|---|
-| ... | ... | ... | ... | ... |
+| Categoria | Campo | Fonte | Problema |
 
 ### Numeros divergentes
-| Candidato | Campo | Valor atual | Valor na fonte | Acao |
-|---|---|---|---|---|
+| Campo | Valor atual | Valor na fonte | Acao |
 
-### Dados globais unificados
-| Valor | Fonte antiga (candidatos) | Fonte nova |
-|---|---|---|
+### Dados globais
+| Valor | Fonte atual | Sugestao |
+```
+
+---
+
+## 8. Checkpoint / Persistencia Parcial
+
+Usar memoria do opencode para salvar e recarregar progresso.
+
+### Salvar checkpoint
+
+Apos Passo 2, 3, e 4, salvar progresso:
+
+```
+memory mode=add type=skill-checkpoint tags="validate-sources,{CANDIDATE},passo-{N}" content="PROGRESSO:{...JSON...}"
+```
+
+Conteudo do checkpoint (JSON):
+
+```json
+{
+  "candidate": "{CANDIDATE}",
+  "passo": 3,
+  "descricao": "Validacao de links concluida",
+  "totalUrls": 42,
+  "ok": 35,
+  "broken": 5,
+  "blocked": 2,
+  "urlResults": [
+    {"url": "...", "status": "BROKEN", "dado": "patrimonio"}
+  ]
+}
+```
+
+### Recarregar checkpoint
+
+Se contexto expirar:
+
+```
+memory mode=search type=skill-checkpoint query="validate-sources {CANDIDATE}"
+```
+
+Listar checkpoints, identificar ultimo passo, retomar dali.
+
+### Limpeza ao finalizar
+
+No final do Passo 7, limpar todos os checkpoints deste candidato:
+
+1. `memory mode=search type=skill-checkpoint tags=validate-sources,{CANDIDATE}` (listar)
+2. Para cada um: `memory mode=forget memoryId=<ID>`
+
+**Nao deixar checkpoints orfaos.**
+
+---
+
+## 9. Scripts auxiliares (opcionais, 1 candidato)
+
+### extract-urls.ps1
+
+Extrai todas URLs de source dos arquivos do candidato:
+
+```powershell
+.\scripts\extract-urls.ps1 -DataDir "src/data" -Candidate "{CANDIDATE}"
+```
+
+### categorize-urls.ps1
+
+Classifica URLs por Tier:
+
+```powershell
+.\scripts\categorize-urls.ps1 -UrlFile "urls_export.txt"
 ```
 
 ---
@@ -350,11 +410,9 @@ Entregar relatorio final para o usuario:
 ## Anexo — Comandos uteis
 
 ```bash
-# Ler dados de um candidato
-cat src/data/lula.ts
-
-# Ler propostas
-cat src/data/proposals-lula.ts
+# Ler dados do candidato
+cat src/data/{CANDIDATE}.ts
+cat src/data/proposals-{CANDIDATE}.ts
 
 # Verificar tipos
 npm run typecheck
@@ -367,14 +425,11 @@ npm run build
 ```
 
 ```typescript
-// Estrutura esperada de DataValue
 interface DataValue<T = string> {
     value: T;
-    source: string;  // URL que comprova o dado
-    updatedAt: string; // ISO date "YYYY-MM-DD"
+    source: string;
+    updatedAt: string;
 }
-
-// Helpers no codigo
 // dv(valor, source, updatedAt)  → DataValue<string>
 // dvn(valor, source, updatedAt) → DataValue<number>
 ```

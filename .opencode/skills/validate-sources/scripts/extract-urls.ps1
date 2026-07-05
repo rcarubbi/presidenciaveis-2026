@@ -1,6 +1,11 @@
-param([string]$DataDir = "src/data")
+param([string]$DataDir = "src/data", [string]$Candidate = "")
 
-$allFiles = Get-ChildItem "$DataDir/*.ts" | Where-Object { $_.Name -notlike "media-*" -and $_.Name -notlike "index*" -and $_.Name -notlike "polls*" -and $_.Name -notlike ".version*" } | Sort-Object Name
+$allFiles = Get-ChildItem "$DataDir/*.ts" | Where-Object {
+    $n = $_.Name
+    $skip = $n -like "media-*" -or $n -like "index*" -or $n -like "polls*" -or $n -like ".version*" -or $n -eq "candidates.ts"
+    $match = if ($Candidate) { $n -like "$Candidate.ts" -or $n -like "proposals-$Candidate.ts" } else { $true }
+    (-not $skip) -and $match
+} | Sort-Object Name
 
 $script:allUrls = @{}
 
