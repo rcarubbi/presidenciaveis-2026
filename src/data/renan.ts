@@ -75,16 +75,17 @@ export const renan: Candidate = 	{
 		),
 		partyHistory: [
 			dv(
-				"PSDB (2010–2015)",
-				"https://pt.wikipedia.org/wiki/Renan_Santos#Carreira_pol%C3%ADtica",
-				"2026-06-26",
-			),
-			dv(
 				"Missão (2023–presente)",
 				"https://pt.wikipedia.org/wiki/Renan_Santos#Partido_Miss%C3%A3o",
 				"2026-06-26",
-			),
-		],
+			)
+		,
+			dv(
+				"PSDB (2010–2015)",
+				"https://pt.wikipedia.org/wiki/Renan_Santos#Carreira_pol%C3%ADtica",
+				"2026-06-26",
+			)
+],
 		coalition: [
 			{
 				party: dv("Missão"),
@@ -121,61 +122,37 @@ export const renan: Candidate = 	{
 		timeline: [
 			{
 				year: dv(
-					"2013",
-					"https://pt.wikipedia.org/wiki/Renan_Santos#Manifesta%C3%A7%C3%A3o_contra_a_PEC_37_de_2013",
-					"2026-06-26",
+					"2026",
+					"https://g1.globo.com/politica/eleicoes/2026/noticia/2026/07/02/renan-santos-anuncia-aroldo-medina-como-vice-em-chapa-a-presidencia.ghtml",
+					"2026-07-02",
 				),
 				event: dv(
-					"Participa Jornadas de Junho; contra PEC 37",
-					"https://pt.wikipedia.org/wiki/Renan_Santos#Manifesta%C3%A7%C3%A3o_contra_a_PEC_37_de_2013",
-					"2026-06-26",
+					"Anuncia Aroldo Medina como vice na chapa do Missão.",
+					"https://g1.globo.com/politica/eleicoes/2026/noticia/2026/07/02/renan-santos-anuncia-aroldo-medina-como-vice-em-chapa-a-presidencia.ghtml",
+					"2026-07-02",
 				),
 			},
 			{
 				year: dv(
-					"2014",
-					"https://pt.wikipedia.org/wiki/Renan_Santos#Movimento_Brasil_Livre",
-					"2026-06-26",
+					"2026",
+					"https://www.cnnbrasil.com.br/eleicoes/em-sua-1a-convencao-missao-lancara-renan-santos-a-presidencia-em-sp/",
+					"2026-07-03",
 				),
 				event: dv(
-					"Funda MBL com Kim Kataguiri",
-					"https://pt.wikipedia.org/wiki/Renan_Santos#Movimento_Brasil_Livre",
-					"2026-06-26",
+					"Missão marca 1ª convenção para 1º/ago em SP; lança candidatura.",
+					"https://www.cnnbrasil.com.br/eleicoes/em-sua-1a-convencao-missao-lancara-renan-santos-a-presidencia-em-sp/",
+					"2026-07-03",
 				),
 			},
 			{
 				year: dv(
-					"2015–2016",
-					"https://pt.wikipedia.org/wiki/Renan_Santos#Manifesta%C3%A7%C3%B5es_de_13_de_mar%C3%A7o_de_2016",
+					"2026",
+					"https://pt.wikipedia.org/wiki/Renan_Santos#Pr%C3%A9-candidatura_presidencial_de_2026",
 					"2026-06-26",
 				),
 				event: dv(
-					"Lidera protestos impeachment Dilma (3,3 mi pessoas)",
-					"https://pt.wikipedia.org/wiki/Renan_Santos#Manifesta%C3%A7%C3%B5es_de_13_de_mar%C3%A7o_de_2016",
-					"2026-06-26",
-				),
-			},
-			{
-				year: dv(
-					"2020",
-					"https://pt.wikipedia.org/wiki/Renan_Santos#Den%C3%BAncia_por_tr%C3%A1fico_de_influ%C3%AAncia",
-					"2026-06-26",
-				),
-				event: dv(
-					"Denunciado MP-SP (tráfico influência) — rejeitada",
-					"https://pt.wikipedia.org/wiki/Renan_Santos#Den%C3%BAncia_por_tr%C3%A1fico_de_influ%C3%AAncia",
-					"2026-06-26",
-				),
-			},
-			{
-				year: dv(
-					"2023",
-					"https://pt.wikipedia.org/wiki/Renan_Santos#Partido_Miss%C3%A3o",
-					"2026-06-26",
-				),
-				event: dv(
-					"Anuncia fundação Partido Missão",
-					"https://pt.wikipedia.org/wiki/Renan_Santos#Partido_Miss%C3%A3o",
+					"Pré-candidatura Presidência. 3–7% pesquisas.",
+					"https://pt.wikipedia.org/wiki/Renan_Santos#Pr%C3%A9-candidatura_presidencial_de_2026",
 					"2026-06-26",
 				),
 			},
@@ -193,29 +170,65 @@ export const renan: Candidate = 	{
 			},
 			{
 				year: dv(
-					"2026",
-					"https://pt.wikipedia.org/wiki/Renan_Santos#Pr%C3%A9-candidatura_presidencial_de_2026",
+					"2023",
+					"https://pt.wikipedia.org/wiki/Renan_Santos#Partido_Miss%C3%A3o",
 					"2026-06-26",
 				),
 				event: dv(
-					"Pré-candidatura Presidência. 3–7% pesquisas.",
-					"https://pt.wikipedia.org/wiki/Renan_Santos#Pr%C3%A9-candidatura_presidencial_de_2026",
+					"Anuncia fundação Partido Missão",
+					"https://pt.wikipedia.org/wiki/Renan_Santos#Partido_Miss%C3%A3o",
 					"2026-06-26",
 				),
 			},
 			{
 				year: dv(
-					"2026",
-					"https://g1.globo.com/politica/eleicoes/2026/noticia/2026/07/02/renan-santos-anuncia-aroldo-medina-como-vice-em-chapa-a-presidencia.ghtml",
-					"2026-07-02",
+					"2020",
+					"https://pt.wikipedia.org/wiki/Renan_Santos#Den%C3%BAncia_por_tr%C3%A1fico_de_influ%C3%AAncia",
+					"2026-06-26",
 				),
 				event: dv(
-					"Anuncia Aroldo Medina como vice na chapa do Missão.",
-					"https://g1.globo.com/politica/eleicoes/2026/noticia/2026/07/02/renan-santos-anuncia-aroldo-medina-como-vice-em-chapa-a-presidencia.ghtml",
-					"2026-07-02",
+					"Denunciado MP-SP (tráfico influência) — rejeitada",
+					"https://pt.wikipedia.org/wiki/Renan_Santos#Den%C3%BAncia_por_tr%C3%A1fico_de_influ%C3%AAncia",
+					"2026-06-26",
 				),
 			},
-		],
+			{
+				year: dv(
+					"2015–2016",
+					"https://pt.wikipedia.org/wiki/Renan_Santos#Manifesta%C3%A7%C3%B5es_de_13_de_mar%C3%A7o_de_2016",
+					"2026-06-26",
+				),
+				event: dv(
+					"Lidera protestos impeachment Dilma (3,3 mi pessoas)",
+					"https://pt.wikipedia.org/wiki/Renan_Santos#Manifesta%C3%A7%C3%B5es_de_13_de_mar%C3%A7o_de_2016",
+					"2026-06-26",
+				),
+			},
+			{
+				year: dv(
+					"2014",
+					"https://pt.wikipedia.org/wiki/Renan_Santos#Movimento_Brasil_Livre",
+					"2026-06-26",
+				),
+				event: dv(
+					"Funda MBL com Kim Kataguiri",
+					"https://pt.wikipedia.org/wiki/Renan_Santos#Movimento_Brasil_Livre",
+					"2026-06-26",
+				),
+			},
+			{
+				year: dv(
+					"2013",
+					"https://pt.wikipedia.org/wiki/Renan_Santos#Manifesta%C3%A7%C3%A3o_contra_a_PEC_37_de_2013",
+					"2026-06-26",
+				),
+				event: dv(
+					"Participa Jornadas de Junho; contra PEC 37",
+					"https://pt.wikipedia.org/wiki/Renan_Santos#Manifesta%C3%A7%C3%A3o_contra_a_PEC_37_de_2013",
+					"2026-06-26",
+				),
+			}
+],
 		electionResults: [],
 		scandals: [
 			{
@@ -239,8 +252,9 @@ export const renan: Candidate = 	{
 					"https://pt.wikipedia.org/wiki/Renan_Santos#Den%C3%BAncia_por_tr%C3%A1fico_de_influ%C3%AAncia",
 					"2026-06-26",
 				),
-			},
-		],
+			}
+		
+],
 		campaignFinance: {
 			totalArrecadado: dv(
 				"R$ 1,12 mi (crowdfunding)",
@@ -281,52 +295,14 @@ export const renan: Candidate = 	{
 		positions: [
 			{
 				issue: dv(
-					"Segurança Pública",
-					"https://www.bbc.com/portuguese/articles/cn7846447j3o",
-					"2026-04-28",
+					"Fundo Eleitoral",
+					"https://revistaoeste.com/politica/campanha-de-renan-santos-rejeita-fundo-eleitoral-e-aposta-em-vaquinha/",
+					"2026-07-01",
 				),
 				position: dv(
-					'Endurecimento radical. "Prendeu, matou". Pena de morte p/ hediondos. Direito Penal do Inimigo contra facções.',
-					"https://www.bbc.com/portuguese/articles/cn7846447j3o",
-					"2026-04-28",
-				),
-			},
-
-			{
-				issue: dv(
-					"Economia",
-					"https://www.estadao.com.br/politica/renan-santos-vira-milei-brasileiro-para-disputar-a-direita-com-flavio-a-quem-chama-de-judas/",
-					"2026-03-29",
-				),
-				position: dv(
-					"Agenda liberal. Nova reforma da Previdência. Desindexação BPC do salário mínimo. Reforma trabalhista.",
-					"https://www.estadao.com.br/politica/renan-santos-vira-milei-brasileiro-para-disputar-a-direita-com-flavio-a-quem-chama-de-judas/",
-					"2026-03-29",
-				),
-			},
-			{
-				issue: dv(
-					"Privatização",
-					"https://sbtnews.sbt.com.br/noticia/politica/renan-santos-nega-ser-3-via-e-diz-que-vai-substituir-flavio",
-					"2026-06-11",
-				),
-				position: dv(
-					'Seletiva. Correios sim, Petrobras não, Embrapa não. BB/Caixa operações parcialmente. Crítico "liberobobismo".',
-					"https://sbtnews.sbt.com.br/noticia/politica/renan-santos-nega-ser-3-via-e-diz-que-vai-substituir-flavio",
-					"2026-06-11",
-				),
-			},
-
-			{
-				issue: dv(
-					"Drogas",
-					"https://www.metropoles.com/colunas/paulo-cappelli/renan-santos-explica-experiencia-com-cogumelos-fica-mais-produtivo",
-					"2026-04-18",
-				),
-				position: dv(
-					"Combate radical ao tráfico. Porém favorável ao uso medicinal de canabidiol e psilocibina. Admitiu microdosagem de cogumelo p/ produtividade.",
-					"https://www.metropoles.com/colunas/paulo-cappelli/renan-santos-explica-experiencia-com-cogumelos-fica-mais-produtivo",
-					"2026-04-18",
+					"Contra. Campanha via crowdfunding (vaquinha). Partido Missão sem fundo eleitoral consolidado. Defende financiamento voluntário.",
+					"https://revistaoeste.com/politica/campanha-de-renan-santos-rejeita-fundo-eleitoral-e-aposta-em-vaquinha/",
+					"2026-07-01",
 				),
 			},
 			{
@@ -343,6 +319,18 @@ export const renan: Candidate = 	{
 			},
 			{
 				issue: dv(
+					"Zona Franca de Manaus",
+					"https://www.estadao.com.br/politica/renan-santos-bolsonarismo-morreu-e-flavio-e-inviavel-na-disputa-contra-lula",
+					"2026-06-24",
+				),
+				position: dv(
+					"Defende revisão de renúncias fiscais. Cita Zona Franca como modelo fracassado que precisa de 'desmame' com transição.",
+					"https://www.estadao.com.br/politica/renan-santos-bolsonarismo-morreu-e-flavio-e-inviavel-na-disputa-contra-lula",
+					"2026-06-24",
+				),
+			},
+			{
+				issue: dv(
 					"Educação",
 					"https://valor.globo.com/politica/noticia/2026/05/14/escandalo-envolvendo-flavio-bolsonaro-leva-a-aumento-de-interesse-por-renan-santos-sabia-quem-e.ghtml",
 					"2026-06-26",
@@ -355,17 +343,17 @@ export const renan: Candidate = 	{
 			},
 			{
 				issue: dv(
-					"Previdência",
-					"https://www.estadao.com.br/politica/renan-santos-vira-milei-brasileiro-para-disputar-a-direita-com-flavio-a-quem-chama-de-judas/",
-					"2026-03-29",
+					"Privatização",
+					"https://sbtnews.sbt.com.br/noticia/politica/renan-santos-nega-ser-3-via-e-diz-que-vai-substituir-flavio",
+					"2026-06-11",
 				),
 				position: dv(
-					"Nova reforma. Equiparação público/privado. Futura capitalização. Desindexar BPC do mínimo.",
-					"https://www.estadao.com.br/politica/renan-santos-vira-milei-brasileiro-para-disputar-a-direita-com-flavio-a-quem-chama-de-judas/",
-					"2026-03-29",
+					'Seletiva. Correios sim, Petrobras não, Embrapa não. BB/Caixa operações parcialmente. Crítico "liberobobismo".',
+					"https://sbtnews.sbt.com.br/noticia/politica/renan-santos-nega-ser-3-via-e-diz-que-vai-substituir-flavio",
+					"2026-06-11",
 				),
-			},
-
+			}
+,
 			{
 				issue: dv(
 					"Relações Exteriores",
@@ -392,28 +380,17 @@ export const renan: Candidate = 	{
 			},
 			{
 				issue: dv(
-					"Infraestrutura",
-					"https://www.estadao.com.br/politica/renan-santos-vira-milei-brasileiro-para-disputar-a-direita-com-flavio-a-quem-chama-de-judas/",
-					"2026-03-29",
+					"Segurança Pública",
+					"https://www.bbc.com/portuguese/articles/cn7846447j3o",
+					"2026-04-28",
 				),
 				position: dv(
-					"Prioridade. Estatuto Nacional da Desfavelização. Polos tecnológicos/data centers Nordeste. Zonas econômicas especiais.",
-					"https://www.estadao.com.br/politica/renan-santos-vira-milei-brasileiro-para-disputar-a-direita-com-flavio-a-quem-chama-de-judas/",
-					"2026-03-29",
+					'Endurecimento radical. "Prendeu, matou". Pena de morte p/ hediondos. Direito Penal do Inimigo contra facções.',
+					"https://www.bbc.com/portuguese/articles/cn7846447j3o",
+					"2026-04-28",
 				),
-			},
-			{
-				issue: dv(
-					"Fundo Eleitoral",
-					"https://revistaoeste.com/politica/campanha-de-renan-santos-rejeita-fundo-eleitoral-e-aposta-em-vaquinha/",
-					"2026-07-01",
-				),
-				position: dv(
-					"Contra. Campanha via crowdfunding (vaquinha). Partido Missão sem fundo eleitoral consolidado. Defende financiamento voluntário.",
-					"https://revistaoeste.com/politica/campanha-de-renan-santos-rejeita-fundo-eleitoral-e-aposta-em-vaquinha/",
-					"2026-07-01",
-				),
-			},
+			}
+,
 			{
 				issue: dv(
 					"Cotas Raciais",
@@ -437,7 +414,57 @@ export const renan: Candidate = 	{
 					"https://www.bbc.com/portuguese/articles/cn7846447j3o",
 					"2026-04-28",
 				),
+			}
+		,
+			{
+				issue: dv(
+					"Drogas",
+					"https://www.metropoles.com/colunas/paulo-cappelli/renan-santos-explica-experiencia-com-cogumelos-fica-mais-produtivo",
+					"2026-04-18",
+				),
+				position: dv(
+					"Combate radical ao tráfico. Porém favorável ao uso medicinal de canabidiol e psilocibina. Admitiu microdosagem de cogumelo p/ produtividade.",
+					"https://www.metropoles.com/colunas/paulo-cappelli/renan-santos-explica-experiencia-com-cogumelos-fica-mais-produtivo",
+					"2026-04-18",
+				),
 			},
-		],
+			{
+				issue: dv(
+					"Economia",
+					"https://www.estadao.com.br/politica/renan-santos-vira-milei-brasileiro-para-disputar-a-direita-com-flavio-a-quem-chama-de-judas/",
+					"2026-03-29",
+				),
+				position: dv(
+					"Agenda liberal. Nova reforma da Previdência. Desindexação BPC do salário mínimo. Reforma trabalhista.",
+					"https://www.estadao.com.br/politica/renan-santos-vira-milei-brasileiro-para-disputar-a-direita-com-flavio-a-quem-chama-de-judas/",
+					"2026-03-29",
+				),
+			},
+			{
+				issue: dv(
+					"Previdência",
+					"https://www.estadao.com.br/politica/renan-santos-vira-milei-brasileiro-para-disputar-a-direita-com-flavio-a-quem-chama-de-judas/",
+					"2026-03-29",
+				),
+				position: dv(
+					"Nova reforma. Equiparação público/privado. Futura capitalização. Desindexar BPC do mínimo.",
+					"https://www.estadao.com.br/politica/renan-santos-vira-milei-brasileiro-para-disputar-a-direita-com-flavio-a-quem-chama-de-judas/",
+					"2026-03-29",
+				),
+			}
+,
+			{
+				issue: dv(
+					"Infraestrutura",
+					"https://www.estadao.com.br/politica/renan-santos-vira-milei-brasileiro-para-disputar-a-direita-com-flavio-a-quem-chama-de-judas/",
+					"2026-03-29",
+				),
+				position: dv(
+					"Prioridade. Estatuto Nacional da Desfavelização. Polos tecnológicos/data centers Nordeste. Zonas econômicas especiais.",
+					"https://www.estadao.com.br/politica/renan-santos-vira-milei-brasileiro-para-disputar-a-direita-com-flavio-a-quem-chama-de-judas/",
+					"2026-03-29",
+				),
+			}
+],
 	}
 

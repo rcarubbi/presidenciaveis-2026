@@ -83,7 +83,13 @@ export const caiado: Candidate = 	{
 		),
 		partyHistory: [
 			dv(
-				"PDS (1980–1985)",
+				"PSD (2022–presente)",
+				"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Trajet%C3%B3ria_e_carreira_pol%C3%ADtica",
+				"2026-06-26",
+			)
+		,
+			dv(
+				"DEM (2007–2022)",
 				"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Trajet%C3%B3ria_e_carreira_pol%C3%ADtica",
 				"2026-06-26",
 			),
@@ -93,16 +99,11 @@ export const caiado: Candidate = 	{
 				"2026-06-26",
 			),
 			dv(
-				"DEM (2007–2022)",
+				"PDS (1980–1985)",
 				"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Trajet%C3%B3ria_e_carreira_pol%C3%ADtica",
 				"2026-06-26",
-			),
-			dv(
-				"PSD (2022–presente)",
-				"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Trajet%C3%B3ria_e_carreira_pol%C3%ADtica",
-				"2026-06-26",
-			),
-		],
+			)
+],
 		coalition: [
 			{
 				party: dv("PSD"),
@@ -139,37 +140,38 @@ export const caiado: Candidate = 	{
 		timeline: [
 			{
 				year: dv(
-					"1987",
-					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#C%C3%A2mara_dos_Deputados",
-					"2026-06-26",
+					"2026",
+					"https://g1.globo.com/politica/noticia/2026/07/01/caiado-anuncia-kassab-presidente-do-psd-como-vice-na-chapa-a-presidencia.ghtml",
+					"2026-07-01",
 				),
 				event: dv(
-					"Eleito Deputado Federal GO (PFL)",
-					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#C%C3%A2mara_dos_Deputados",
-					"2026-06-26",
+					"Anuncia Gilberto Kassab como vice em chapa puro-sangue do PSD.",
+					"https://g1.globo.com/politica/noticia/2026/07/01/caiado-anuncia-kassab-presidente-do-psd-como-vice-na-chapa-a-presidencia.ghtml",
+					"2026-07-01",
+				),
+			}
+		,
+			{
+				year: dv(
+					"2026",
+					"https://g1.globo.com/sp/sao-paulo/noticia/2026/03/30/psd-oficializa-ronaldo-caiado-como-pre-candidato-a-presidencia.ghtml",
+					"2026-03-27",
+				),
+				event: dv(
+					"Pré-candidatura Presidência. Sai UNIÃO p/ PSD. Governador licenciado.",
+					"https://g1.globo.com/sp/sao-paulo/noticia/2026/03/30/psd-oficializa-ronaldo-caiado-como-pre-candidato-a-presidencia.ghtml",
+					"2026-03-27",
 				),
 			},
 			{
 				year: dv(
-					"1988",
-					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Trajet%C3%B3ria_e_carreira_pol%C3%ADtica",
+					"2022",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Governador_de_Goi%C3%A1s",
 					"2026-06-26",
 				),
 				event: dv(
-					"Presidente da UDR (União Democrática Ruralista)",
-					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Trajet%C3%B3ria_e_carreira_pol%C3%ADtica",
-					"2026-06-26",
-				),
-			},
-			{
-				year: dv(
-					"1989",
-					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Candidato_%C3%A0_Presid%C3%AAncia_da_Rep%C3%BAblica",
-					"2026-06-26",
-				),
-				event: dv(
-					"Candidato à Presidência (PSD) — 0,68% votos",
-					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Candidato_%C3%A0_Presid%C3%AAncia_da_Rep%C3%BAblica",
+					"Reeleito Governador GO (1ºT, 51,81%)",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Governador_de_Goi%C3%A1s",
 					"2026-06-26",
 				),
 			},
@@ -187,99 +189,45 @@ export const caiado: Candidate = 	{
 			},
 			{
 				year: dv(
-					"2022",
-					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Governador_de_Goi%C3%A1s",
+					"1989",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Candidato_%C3%A0_Presid%C3%AAncia_da_Rep%C3%BAblica",
 					"2026-06-26",
 				),
 				event: dv(
-					"Reeleito Governador GO (1ºT, 51,81%)",
-					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Governador_de_Goi%C3%A1s",
+					"Candidato à Presidência (PSD) — 0,68% votos",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Candidato_%C3%A0_Presid%C3%AAncia_da_Rep%C3%BAblica",
 					"2026-06-26",
 				),
 			},
 			{
 				year: dv(
-					"2026",
-					"https://g1.globo.com/sp/sao-paulo/noticia/2026/03/30/psd-oficializa-ronaldo-caiado-como-pre-candidato-a-presidencia.ghtml",
-					"2026-03-27",
+					"1988",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Trajet%C3%B3ria_e_carreira_pol%C3%ADtica",
+					"2026-06-26",
 				),
 				event: dv(
-					"Pré-candidatura Presidência. Sai UNIÃO p/ PSD. Governador licenciado.",
-					"https://g1.globo.com/sp/sao-paulo/noticia/2026/03/30/psd-oficializa-ronaldo-caiado-como-pre-candidato-a-presidencia.ghtml",
-					"2026-03-27",
+					"Presidente da UDR (União Democrática Ruralista)",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Trajet%C3%B3ria_e_carreira_pol%C3%ADtica",
+					"2026-06-26",
 				),
 			},
 			{
 				year: dv(
-					"2026",
-					"https://g1.globo.com/politica/noticia/2026/07/01/caiado-anuncia-kassab-presidente-do-psd-como-vice-na-chapa-a-presidencia.ghtml",
-					"2026-07-01",
+					"1987",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#C%C3%A2mara_dos_Deputados",
+					"2026-06-26",
 				),
 				event: dv(
-					"Anuncia Gilberto Kassab como vice em chapa puro-sangue do PSD.",
-					"https://g1.globo.com/politica/noticia/2026/07/01/caiado-anuncia-kassab-presidente-do-psd-como-vice-na-chapa-a-presidencia.ghtml",
-					"2026-07-01",
+					"Eleito Deputado Federal GO (PFL)",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#C%C3%A2mara_dos_Deputados",
+					"2026-06-26",
 				),
-			},
-		],
+			}
+],
 		electionResults: [
 			{
 				year: dvn(
-					1989,
-					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
-					"2026-06-26",
-				),
-				cargo: dv(
-					"Presidente",
-					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
-					"2026-06-26",
-				),
-				votos: dv(
-					"488.872",
-					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
-					"2026-06-26",
-				),
-				pct: dv(
-					"0,68%",
-					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
-					"2026-06-26",
-				),
-				resultado: dv(
-					"Não eleito (10º lugar)",
-					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
-					"2026-06-26",
-				),
-			},
-			{
-				year: dvn(
-					1990,
-					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
-					"2026-06-26",
-				),
-				cargo: dv(
-					"Dep. Federal GO",
-					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
-					"2026-06-26",
-				),
-				votos: dv(
-					"98.256",
-					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
-					"2026-06-26",
-				),
-				pct: dv(
-					"—",
-					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
-					"2026-06-26",
-				),
-				resultado: dv(
-					"Eleito (mais votado GO)",
-					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
-					"2026-06-26",
-				),
-			},
-			{
-				year: dvn(
-					1994,
+					2022,
 					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
 					"2026-06-26",
 				),
@@ -289,125 +237,45 @@ export const caiado: Candidate = 	{
 					"2026-06-26",
 				),
 				votos: dv(
-					"364.767",
+					"1.806.892 (1T)",
 					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
 					"2026-06-26",
 				),
 				pct: dv(
-					"23,18%",
+					"51,81% (1T)",
 					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
 					"2026-06-26",
 				),
 				resultado: dv(
-					"Não eleito (3º lugar)",
+					"Eleito (1º turno)",
 					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
 					"2026-06-26",
 				),
-			},
+			}
+		,
 			{
 				year: dvn(
-					1998,
+					2018,
 					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
 					"2026-06-26",
 				),
 				cargo: dv(
-					"Dep. Federal GO",
+					"Governador GO",
 					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
 					"2026-06-26",
 				),
 				votos: dv(
-					"100.446",
+					"1.842.139 (1T)",
 					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
 					"2026-06-26",
 				),
 				pct: dv(
-					"—",
+					"59,73% (1T)",
 					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
 					"2026-06-26",
 				),
 				resultado: dv(
-					"Eleito (2ª maior votação GO)",
-					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
-					"2026-06-26",
-				),
-			},
-			{
-				year: dvn(
-					2002,
-					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
-					"2026-06-26",
-				),
-				cargo: dv(
-					"Dep. Federal GO",
-					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
-					"2026-06-26",
-				),
-				votos: dv(
-					"114.728",
-					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
-					"2026-06-26",
-				),
-				pct: dv(
-					"—",
-					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
-					"2026-06-26",
-				),
-				resultado: dv(
-					"Eleito",
-					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
-					"2026-06-26",
-				),
-			},
-			{
-				year: dvn(
-					2006,
-					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
-					"2026-06-26",
-				),
-				cargo: dv(
-					"Dep. Federal GO",
-					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
-					"2026-06-26",
-				),
-				votos: dv(
-					"152.895",
-					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
-					"2026-06-26",
-				),
-				pct: dv(
-					"—",
-					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
-					"2026-06-26",
-				),
-				resultado: dv(
-					"Eleito (2º mais votado GO)",
-					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
-					"2026-06-26",
-				),
-			},
-			{
-				year: dvn(
-					2010,
-					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
-					"2026-06-26",
-				),
-				cargo: dv(
-					"Dep. Federal GO",
-					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
-					"2026-06-26",
-				),
-				votos: dv(
-					"167.591",
-					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
-					"2026-06-26",
-				),
-				pct: dv(
-					"—",
-					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
-					"2026-06-26",
-				),
-				resultado: dv(
-					"Eleito (3º mais votado GO)",
+					"Eleito (1º turno)",
 					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
 					"2026-06-26",
 				),
@@ -441,34 +309,115 @@ export const caiado: Candidate = 	{
 			},
 			{
 				year: dvn(
-					2018,
+					2010,
 					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
 					"2026-06-26",
 				),
 				cargo: dv(
-					"Governador GO",
+					"Dep. Federal GO",
 					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
 					"2026-06-26",
 				),
 				votos: dv(
-					"1.842.139 (1T)",
+					"167.591",
 					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
 					"2026-06-26",
 				),
 				pct: dv(
-					"59,73% (1T)",
+					"—",
 					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
 					"2026-06-26",
 				),
 				resultado: dv(
-					"Eleito (1º turno)",
+					"Eleito (3º mais votado GO)",
 					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
 					"2026-06-26",
 				),
 			},
 			{
 				year: dvn(
-					2022,
+					2006,
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				cargo: dv(
+					"Dep. Federal GO",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				votos: dv(
+					"152.895",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				pct: dv(
+					"—",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				resultado: dv(
+					"Eleito (2º mais votado GO)",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+			},
+			{
+				year: dvn(
+					2002,
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				cargo: dv(
+					"Dep. Federal GO",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				votos: dv(
+					"114.728",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				pct: dv(
+					"—",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				resultado: dv(
+					"Eleito",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+			},
+			{
+				year: dvn(
+					1998,
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				cargo: dv(
+					"Dep. Federal GO",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				votos: dv(
+					"100.446",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				pct: dv(
+					"—",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				resultado: dv(
+					"Eleito (2ª maior votação GO)",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+			},
+			{
+				year: dvn(
+					1994,
 					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
 					"2026-06-26",
 				),
@@ -478,22 +427,76 @@ export const caiado: Candidate = 	{
 					"2026-06-26",
 				),
 				votos: dv(
-					"1.806.892 (1T)",
+					"364.767",
 					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
 					"2026-06-26",
 				),
 				pct: dv(
-					"51,81% (1T)",
+					"23,18%",
 					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
 					"2026-06-26",
 				),
 				resultado: dv(
-					"Eleito (1º turno)",
+					"Não eleito (3º lugar)",
 					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
 					"2026-06-26",
 				),
 			},
-		],
+			{
+				year: dvn(
+					1990,
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				cargo: dv(
+					"Dep. Federal GO",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				votos: dv(
+					"98.256",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				pct: dv(
+					"—",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				resultado: dv(
+					"Eleito (mais votado GO)",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+			},
+			{
+				year: dvn(
+					1989,
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				cargo: dv(
+					"Presidente",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				votos: dv(
+					"488.872",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				pct: dv(
+					"0,68%",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				resultado: dv(
+					"Não eleito (10º lugar)",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+			}
+],
 		scandals: [
 			{
 				name: dv(
@@ -560,8 +563,9 @@ export const caiado: Candidate = 	{
 					"https://goias24horas.com.br/215741-governo-caiado-daniel-e-mabel-na-prefeitura-fecharam-contrato-milionario-com-advogado-do-pernambuco-sem-licitacao",
 					"2026-06-28",
 				),
-			},
-		],
+			}
+		
+],
 		campaignFinance: {
 			totalArrecadado: dv(
 				"R$ 133,4 mi (limite)",
@@ -627,6 +631,18 @@ export const caiado: Candidate = 	{
 		positions: [
 			{
 				issue: dv(
+					"Armas",
+					"https://www25.senado.leg.br/web/atividade/materias/-/materia/130695",
+					"2026-06-28",
+				),
+				position: dv(
+					"Favorável ao porte de armas para 'cidadãos de bem'. Defende flexibilização do Estatuto do Desarmamento.",
+					"https://www25.senado.leg.br/web/atividade/materias/-/materia/130695",
+					"2026-06-28",
+				),
+			},
+			{
+				issue: dv(
 					"Agronegócio",
 					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Trajet%C3%B3ria_e_carreira_pol%C3%ADtica",
 					"2026-06-26",
@@ -659,18 +675,6 @@ export const caiado: Candidate = 	{
 					"Ex-presidente da UDR. Crítico de demarcações indígenas. Defesa histórica dos grandes proprietários rurais.",
 					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Trajet%C3%B3ria_e_carreira_pol%C3%ADtica",
 					"2026-06-26",
-				),
-			},
-			{
-				issue: dv(
-					"Armas",
-					"https://www25.senado.leg.br/web/atividade/materias/-/materia/130695",
-					"2026-06-28",
-				),
-				position: dv(
-					"Favorável ao porte de armas para 'cidadãos de bem'. Defende flexibilização do Estatuto do Desarmamento.",
-					"https://www25.senado.leg.br/web/atividade/materias/-/materia/130695",
-					"2026-06-28",
 				),
 			},
 			{
@@ -744,7 +748,8 @@ export const caiado: Candidate = 	{
 					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Impeachment_de_Dilma_Rousseff",
 					"2026-06-26",
 				),
-			},
-		],
+			}
+		
+],
 	}
 

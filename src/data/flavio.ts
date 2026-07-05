@@ -83,17 +83,13 @@ export const flavio: Candidate = 	{
 		),
 		partyHistory: [
 			dv(
-				"PPB (2002–2003)",
+				"PL (2022–presente)",
 				"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Carreira_pol%C3%ADtica",
 				"2026-06-26",
-			),
+			)
+		,
 			dv(
-				"PP (2003–2005)",
-				"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Carreira_pol%C3%ADtica",
-				"2026-06-26",
-			),
-			dv(
-				"PFL (2005–2007)",
+				"PSL (2009–2022)",
 				"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Carreira_pol%C3%ADtica",
 				"2026-06-26",
 			),
@@ -103,16 +99,21 @@ export const flavio: Candidate = 	{
 				"2026-06-26",
 			),
 			dv(
-				"PSL (2009–2022)",
+				"PFL (2005–2007)",
 				"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Carreira_pol%C3%ADtica",
 				"2026-06-26",
 			),
 			dv(
-				"PL (2022–presente)",
+				"PP (2003–2005)",
 				"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Carreira_pol%C3%ADtica",
 				"2026-06-26",
 			),
-		],
+			dv(
+				"PPB (2002–2003)",
+				"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Carreira_pol%C3%ADtica",
+				"2026-06-26",
+			)
+],
 		coalition: [
 			{
 				party: dv("PL"),
@@ -141,60 +142,49 @@ export const flavio: Candidate = 	{
 		timeline: [
 			{
 				year: dv(
-					"2004",
-					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Deputado_estadual",
+					"2026",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Esc%C3%A2ndalo_do_Banco_Master_e_filme_Dark_Horse",
 					"2026-06-26",
 				),
 				event: dv(
-					"Eleito vereador RJ (suplente, assume 2005)",
-					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Deputado_estadual",
+					'Plano "Brasil Sem Medo" (18/06). Dark Horse no STF. Carta aos EUA omite envolvimento (02/07).',
+					"https://www.metropoles.com/brasil/em-carta-aos-eua-flavio-associa-master-a-lula-e-omite-caso-dark-horse",
+					"2026-07-05",
+				),
+			}
+		,
+			{
+				year: dv(
+					"2025",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Pr%C3%A9-candidatura_%C3%A0_Presid%C3%AAncia_da_Rep%C3%BAblica_em_2026",
+					"2026-06-26",
+				),
+				event: dv(
+					"STF rejeita reabertura; lança pré-candidatura",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Pr%C3%A9-candidatura_%C3%A0_Presid%C3%AAncia_da_Rep%C3%BAblica_em_2026",
 					"2026-06-26",
 				),
 			},
 			{
 				year: dv(
-					"2008",
-					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Deputado_estadual",
+					"2024",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Caso_Queiroz_e_acusa%C3%A7%C3%A3o_de_peculato",
 					"2026-06-26",
 				),
 				event: dv(
-					"Reeleito vereador RJ (35.498 votos)",
-					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Deputado_estadual",
+					"Caso rachadinhas arquivado",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Caso_Queiroz_e_acusa%C3%A7%C3%A3o_de_peculato",
 					"2026-06-26",
 				),
 			},
 			{
 				year: dv(
-					"2010",
-					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Deputado_estadual",
-					"2026-06-26",
-				),
-				event: dv(
-					"Eleito Deputado Estadual RJ (94.902 votos)",
-					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Deputado_estadual",
-					"2026-06-26",
-				),
-			},
-			{
-				year: dv(
-					"2014",
-					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Deputado_estadual",
-					"2026-06-26",
-				),
-				event: dv(
-					"Reeleito Dep. Estadual RJ (126.512 votos)",
-					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Deputado_estadual",
-					"2026-06-26",
-				),
-			},
-			{
-				year: dv(
-					"2018",
+					"2022",
 					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Senador_da_Rep%C3%BAblica_(2019%E2%80%93presente)",
 					"2026-06-26",
 				),
 				event: dv(
-					"Eleito Senador RJ — mais votado do Brasil (4.099.888 votos)",
+					"Reeleito Senador RJ (1.839.409 votos)",
 					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Senador_da_Rep%C3%BAblica_(2019%E2%80%93presente)",
 					"2026-06-26",
 				),
@@ -213,99 +203,139 @@ export const flavio: Candidate = 	{
 			},
 			{
 				year: dv(
-					"2022",
+					"2018",
 					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Senador_da_Rep%C3%BAblica_(2019%E2%80%93presente)",
 					"2026-06-26",
 				),
 				event: dv(
-					"Reeleito Senador RJ (1.839.409 votos)",
+					"Eleito Senador RJ — mais votado do Brasil (4.099.888 votos)",
 					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Senador_da_Rep%C3%BAblica_(2019%E2%80%93presente)",
 					"2026-06-26",
 				),
 			},
 			{
 				year: dv(
-					"2024",
-					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Caso_Queiroz_e_acusa%C3%A7%C3%A3o_de_peculato",
+					"2014",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Deputado_estadual",
 					"2026-06-26",
 				),
 				event: dv(
-					"Caso rachadinhas arquivado",
-					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Caso_Queiroz_e_acusa%C3%A7%C3%A3o_de_peculato",
+					"Reeleito Dep. Estadual RJ (126.512 votos)",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Deputado_estadual",
 					"2026-06-26",
 				),
 			},
 			{
 				year: dv(
-					"2025",
-					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Pr%C3%A9-candidatura_%C3%A0_Presid%C3%AAncia_da_Rep%C3%BAblica_em_2026",
+					"2010",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Deputado_estadual",
 					"2026-06-26",
 				),
 				event: dv(
-					"STF rejeita reabertura; lança pré-candidatura",
-					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Pr%C3%A9-candidatura_%C3%A0_Presid%C3%AAncia_da_Rep%C3%BAblica_em_2026",
+					"Eleito Deputado Estadual RJ (94.902 votos)",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Deputado_estadual",
 					"2026-06-26",
 				),
 			},
 			{
 				year: dv(
-					"2026",
-					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Esc%C3%A2ndalo_do_Banco_Master_e_filme_Dark_Horse",
+					"2008",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Deputado_estadual",
 					"2026-06-26",
 				),
 				event: dv(
-					'Plano "Brasil Sem Medo" (18/06). Dark Horse no STF. Carta aos EUA omite envolvimento (02/07).',
-					"https://www.metropoles.com/brasil/em-carta-aos-eua-flavio-associa-master-a-lula-e-omite-caso-dark-horse",
-					"2026-07-05",
+					"Reeleito vereador RJ (35.498 votos)",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Deputado_estadual",
+					"2026-06-26",
 				),
 			},
-		],
+			{
+				year: dv(
+					"2004",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Deputado_estadual",
+					"2026-06-26",
+				),
+				event: dv(
+					"Eleito vereador RJ (suplente, assume 2005)",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Deputado_estadual",
+					"2026-06-26",
+				),
+			}
+],
 		electionResults: [
 			{
 				year: dvn(
-					2004,
+					2022,
 					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Desempenho_eleitoral",
 					"2026-06-26",
 				),
 				cargo: dv(
-					"Vereador RJ",
+					"Senador RJ",
 					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Desempenho_eleitoral",
 					"2026-06-26",
 				),
 				votos: dv(
-					"25.146",
+					"1.839.409",
 					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Desempenho_eleitoral",
 					"2026-06-26",
 				),
 				pct: dv(
-					"0,82%",
+					"23,50%",
 					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Desempenho_eleitoral",
 					"2026-06-26",
 				),
 				resultado: dv(
-					"Suplente (assumiu 2005)",
+					"Eleito (mais votado RJ)",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+			}
+		,
+			{
+				year: dvn(
+					2018,
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				cargo: dv(
+					"Senador RJ",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				votos: dv(
+					"4.099.888",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				pct: dv(
+					"31,17%",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				resultado: dv(
+					"Eleito (mais votado BR)",
 					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Desempenho_eleitoral",
 					"2026-06-26",
 				),
 			},
 			{
 				year: dvn(
-					2008,
+					2014,
 					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Desempenho_eleitoral",
 					"2026-06-26",
 				),
 				cargo: dv(
-					"Vereador RJ",
+					"Dep. Estadual RJ",
 					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Desempenho_eleitoral",
 					"2026-06-26",
 				),
 				votos: dv(
-					"35.498",
+					"126.512",
 					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Desempenho_eleitoral",
 					"2026-06-26",
 				),
 				pct: dv(
-					"1,13%",
+					"2,15%",
 					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Desempenho_eleitoral",
 					"2026-06-26",
 				),
@@ -344,22 +374,22 @@ export const flavio: Candidate = 	{
 			},
 			{
 				year: dvn(
-					2014,
+					2008,
 					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Desempenho_eleitoral",
 					"2026-06-26",
 				),
 				cargo: dv(
-					"Dep. Estadual RJ",
+					"Vereador RJ",
 					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Desempenho_eleitoral",
 					"2026-06-26",
 				),
 				votos: dv(
-					"126.512",
+					"35.498",
 					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Desempenho_eleitoral",
 					"2026-06-26",
 				),
 				pct: dv(
-					"2,15%",
+					"1,13%",
 					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Desempenho_eleitoral",
 					"2026-06-26",
 				),
@@ -371,60 +401,55 @@ export const flavio: Candidate = 	{
 			},
 			{
 				year: dvn(
-					2018,
+					2004,
 					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Desempenho_eleitoral",
 					"2026-06-26",
 				),
 				cargo: dv(
-					"Senador RJ",
+					"Vereador RJ",
 					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Desempenho_eleitoral",
 					"2026-06-26",
 				),
 				votos: dv(
-					"4.099.888",
+					"25.146",
 					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Desempenho_eleitoral",
 					"2026-06-26",
 				),
 				pct: dv(
-					"31,17%",
+					"0,82%",
 					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Desempenho_eleitoral",
 					"2026-06-26",
 				),
 				resultado: dv(
-					"Eleito (mais votado BR)",
+					"Suplente (assumiu 2005)",
 					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Desempenho_eleitoral",
 					"2026-06-26",
 				),
-			},
-			{
-				year: dvn(
-					2022,
-					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Desempenho_eleitoral",
-					"2026-06-26",
-				),
-				cargo: dv(
-					"Senador RJ",
-					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Desempenho_eleitoral",
-					"2026-06-26",
-				),
-				votos: dv(
-					"1.839.409",
-					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Desempenho_eleitoral",
-					"2026-06-26",
-				),
-				pct: dv(
-					"23,50%",
-					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Desempenho_eleitoral",
-					"2026-06-26",
-				),
-				resultado: dv(
-					"Eleito (mais votado RJ)",
-					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Desempenho_eleitoral",
-					"2026-06-26",
-				),
-			},
-		],
+			}
+],
 		scandals: [
+			{
+				name: dv(
+					"Dark Horse (Banco Master)",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Esc%C3%A2ndalo_do_Banco_Master_e_filme_Dark_Horse",
+					"2026-06-26",
+				),
+				status: dv(
+					"ativo",
+					"https://cbn.globo.com/brasil/noticia/2026/05/17/dark-horse-investigacoes-apuram-destino-de-r-134-milhoes-ligados-a-filme-sobre-bolsonaro.ghtml",
+					"2026-05-23",
+				),
+				description: dv(
+					"PF investiga solicitação de R$ 134 mi ao Banco Master. Em jul/2026, enviou carta ao governo dos EUA chamando Master de 'maior escândalo bancário' e omitiu sua própria ligação com o caso Dark Horse. Relator: STF André Mendonça.",
+					"https://www.metropoles.com/brasil/em-carta-aos-eua-flavio-associa-master-a-lula-e-omite-caso-dark-horse",
+					"2026-07-05",
+				),
+				value: dv(
+					"R$ 134 mi",
+					"https://cbn.globo.com/brasil/noticia/2026/05/17/dark-horse-investigacoes-apuram-destino-de-r-134-milhoes-ligados-a-filme-sobre-bolsonaro.ghtml",
+					"2026-05-16",
+				),
+			},
 			{
 				name: dv(
 					"Rachadinhas (Queijadinhas)",
@@ -471,28 +496,6 @@ export const flavio: Candidate = 	{
 			},
 			{
 				name: dv(
-					"Dark Horse (Banco Master)",
-					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Esc%C3%A2ndalo_do_Banco_Master_e_filme_Dark_Horse",
-					"2026-06-26",
-				),
-				status: dv(
-					"ativo",
-					"https://cbn.globo.com/brasil/noticia/2026/05/17/dark-horse-investigacoes-apuram-destino-de-r-134-milhoes-ligados-a-filme-sobre-bolsonaro.ghtml",
-					"2026-05-23",
-				),
-				description: dv(
-					"PF investiga solicitação de R$ 134 mi ao Banco Master. Em jul/2026, enviou carta ao governo dos EUA chamando Master de 'maior escândalo bancário' e omitiu sua própria ligação com o caso Dark Horse. Relator: STF André Mendonça.",
-					"https://www.metropoles.com/brasil/em-carta-aos-eua-flavio-associa-master-a-lula-e-omite-caso-dark-horse",
-					"2026-07-05",
-				),
-				value: dv(
-					"R$ 134 mi",
-					"https://cbn.globo.com/brasil/noticia/2026/05/17/dark-horse-investigacoes-apuram-destino-de-r-134-milhoes-ligados-a-filme-sobre-bolsonaro.ghtml",
-					"2026-05-16",
-				),
-			},
-			{
-				name: dv(
 					"Abin Paralela",
 					"https://g1.globo.com/politica/noticia/2024/07/11/abin-espionou-auditores-da-receita-federal-que-apuravam-possivel-rachadinha-de-flavio-bolsonaro-diz-pf.ghtml",
 					"2026-04-10",
@@ -512,8 +515,9 @@ export const flavio: Candidate = 	{
 					"https://g1.globo.com/politica/noticia/2024/07/11/abin-espionou-auditores-da-receita-federal-que-apuravam-possivel-rachadinha-de-flavio-bolsonaro-diz-pf.ghtml",
 					"2026-04-10",
 				),
-			},
-		],
+			}
+		
+],
 		campaignFinance: {
 			totalArrecadado: dv(
 				"R$ 120 mi (proj.)",
@@ -571,6 +575,30 @@ export const flavio: Candidate = 	{
 		positions: [
 			{
 				issue: dv(
+					"Meio Ambiente",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Posi%C3%A7%C3%B5es_pol%C3%ADticas",
+					"2026-06-26",
+				),
+				position: dv(
+					'Exploração Amazônia "responsável". Crítico ativismo.',
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Posi%C3%A7%C3%B5es_pol%C3%ADticas",
+					"2026-06-26",
+				),
+			},
+			{
+				issue: dv(
+					"Regulação Mídia e Redes",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Posi%C3%A7%C3%B5es_pol%C3%ADticas",
+					"2026-06-26",
+				),
+				position: dv(
+					"Contra. Liberdade total expressão.",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Posi%C3%A7%C3%B5es_pol%C3%ADticas",
+					"2026-06-26",
+				),
+			},
+			{
+				issue: dv(
 					"Segurança Pública",
 					"https://g1.globo.com/sp/sao-paulo/eleicoes/2026/noticia/2026/06/18/flavio-bolsonaro-lanca-pacote-de-seguranca-com-reducao-da-maioridade-penal-e-castracao-quimica.ghtml",
 					"2026-06-18",
@@ -583,14 +611,14 @@ export const flavio: Candidate = 	{
 			},
 			{
 				issue: dv(
-					"Armas",
-					"https://jornaltaguacei.com.br/noticias/22/02/2026/pre-candidato-flavio-bolsonaro-defende-mais-privatizacao-prisoes-e-armas-no-brasil/",
-					"2026-02-22",
+					"Drogas",
+					"https://exame.com/brasil/flavio-bolsonaro-aposta-em-modelo-el-salvador-e-reducao-da-maioridade-em-plano-de-seguranca/",
+					"2026-06-18",
 				),
 				position: dv(
-					"Armamento civil amplo. Contra Estatuto Desarmamento.",
-					"https://jornaltaguacei.com.br/noticias/22/02/2026/pre-candidato-flavio-bolsonaro-defende-mais-privatizacao-prisoes-e-armas-no-brasil/",
-					"2026-02-22",
+					"Contra qualquer legalização. Internação compulsória.",
+					"https://exame.com/brasil/flavio-bolsonaro-aposta-em-modelo-el-salvador-e-reducao-da-maioridade-em-plano-de-seguranca/",
+					"2026-06-18",
 				),
 			},
 			{
@@ -607,14 +635,14 @@ export const flavio: Candidate = 	{
 			},
 			{
 				issue: dv(
-					"Drogas",
-					"https://exame.com/brasil/flavio-bolsonaro-aposta-em-modelo-el-salvador-e-reducao-da-maioridade-em-plano-de-seguranca/",
-					"2026-06-18",
+					"Armas",
+					"https://jornaltaguacei.com.br/noticias/22/02/2026/pre-candidato-flavio-bolsonaro-defende-mais-privatizacao-prisoes-e-armas-no-brasil/",
+					"2026-02-22",
 				),
 				position: dv(
-					"Contra qualquer legalização. Internação compulsória.",
-					"https://exame.com/brasil/flavio-bolsonaro-aposta-em-modelo-el-salvador-e-reducao-da-maioridade-em-plano-de-seguranca/",
-					"2026-06-18",
+					"Armamento civil amplo. Contra Estatuto Desarmamento.",
+					"https://jornaltaguacei.com.br/noticias/22/02/2026/pre-candidato-flavio-bolsonaro-defende-mais-privatizacao-prisoes-e-armas-no-brasil/",
+					"2026-02-22",
 				),
 			},
 			{
@@ -667,30 +695,6 @@ export const flavio: Candidate = 	{
 			},
 			{
 				issue: dv(
-					"Meio Ambiente",
-					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Posi%C3%A7%C3%B5es_pol%C3%ADticas",
-					"2026-06-26",
-				),
-				position: dv(
-					'Exploração Amazônia "responsável". Crítico ativismo.',
-					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Posi%C3%A7%C3%B5es_pol%C3%ADticas",
-					"2026-06-26",
-				),
-			},
-			{
-				issue: dv(
-					"Regulação Mídia e Redes",
-					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Posi%C3%A7%C3%B5es_pol%C3%ADticas",
-					"2026-06-26",
-				),
-				position: dv(
-					"Contra. Liberdade total expressão.",
-					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Posi%C3%A7%C3%B5es_pol%C3%ADticas",
-					"2026-06-26",
-				),
-			},
-			{
-				issue: dv(
 					"Fundo Eleitoral",
 					"https://valor.globo.com/politica/noticia/2019/12/06/flavio-bolsonaro-diz-que-se-enganou-ao-votar-a-favor-de-aumento-do-fundo-eleitoral.ghtml",
 					"2019-12-06",
@@ -700,7 +704,8 @@ export const flavio: Candidate = 	{
 					"https://valor.globo.com/politica/noticia/2019/12/06/flavio-bolsonaro-diz-que-se-enganou-ao-votar-a-favor-de-aumento-do-fundo-eleitoral.ghtml",
 					"2019-12-06",
 				),
-			},
-		],
+			}
+		
+],
 	}
 

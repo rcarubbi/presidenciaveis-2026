@@ -86,8 +86,9 @@ export const lula: Candidate = 	{
 				"PT (1980–presente)",
 				"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#In%C3%ADcio_da_carreira_pol%C3%ADtica_e_cria%C3%A7%C3%A3o_do_Partido_dos_Trabalhadores",
 				"2026-06-26",
-			),
-		],
+			)
+		
+],
 		coalition: [
 			{
 				party: dv("PT"),
@@ -164,96 +165,49 @@ export const lula: Candidate = 	{
 		timeline: [
 			{
 				year: dv(
-					"1975",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Sindicalismo",
+					"2026",
+					"https://g1.globo.com/politica/noticia/2026/06/24/jaques-wagner-pede-licenca-da-lideranca-do-governo-do-senado-apos-operacao-da-pf.ghtml",
+					"2026-06-24",
+				),
+				event: dv(
+					"Lula designa Teresa Leitão líder do governo no Senado após Wagner se afastar por investigação da PF",
+					"https://g1.globo.com/politica/noticia/2026/06/24/jaques-wagner-pede-licenca-da-lideranca-do-governo-do-senado-apos-operacao-da-pf.ghtml",
+					"2026-06-24",
+				),
+			}
+		,
+			{
+				year: dv(
+					"2026",
+					"https://g1.globo.com/politica/noticia/2026/04/26/sem-lula-pt-aprova-manifesto-para-2026-com-foco-em-reeleicao-do-presidente.ghtml",
+					"2026-04-26",
+				),
+				event: dv(
+					'PT aprova manifesto "Construindo o Futuro" foco reeleição. Pré-candidato.',
+					"https://g1.globo.com/politica/noticia/2026/04/26/sem-lula-pt-aprova-manifesto-para-2026-com-foco-em-reeleicao-do-presidente.ghtml",
+					"2026-04-26",
+				),
+			},
+			{
+				year: dv(
+					"2022",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Campanha_presidencial_de_2022",
 					"2026-06-26",
 				),
 				event: dv(
-					"Presidente Sindicato Metalúrgicos ABC (92% votos)",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Sindicalismo",
+					"Eleito presidente 3ª vez (50,83% × Bolsonaro)",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Campanha_presidencial_de_2022",
 					"2026-06-26",
 				),
 			},
 			{
 				year: dv(
-					"1980",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#In%C3%ADcio_da_carreira_pol%C3%ADtica_e_cria%C3%A7%C3%A3o_do_Partido_dos_Trabalhadores",
-					"2026-06-26",
-				),
-				event: dv(
-					"Funda o PT; preso 31 dias (Lei Segurança Nacional)",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#In%C3%ADcio_da_carreira_pol%C3%ADtica_e_cria%C3%A7%C3%A3o_do_Partido_dos_Trabalhadores",
-					"2026-06-26",
-				),
-			},
-			{
-				year: dv(
-					"1986",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#In%C3%ADcio_da_carreira_pol%C3%ADtica_e_cria%C3%A7%C3%A3o_do_Partido_dos_Trabalhadores",
-					"2026-06-26",
-				),
-				event: dv(
-					"Deputado Federal Constituinte mais votado (650 mil votos)",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#In%C3%ADcio_da_carreira_pol%C3%ADtica_e_cria%C3%A7%C3%A3o_do_Partido_dos_Trabalhadores",
-					"2026-06-26",
-				),
-			},
-			{
-				year: dv(
-					"1989",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Candidatura_%C3%A0_Presid%C3%AAncia_da_Rep%C3%BAblica_em_1989",
-					"2026-06-26",
-				),
-				event: dv(
-					"1ª candidatura Presidência (perde 2ºT para Collor)",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Candidatura_%C3%A0_Presid%C3%AAncia_da_Rep%C3%BAblica_em_1989",
-					"2026-06-26",
-				),
-			},
-			{
-				year: dv(
-					"2002",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Vit%C3%B3ria_em_2002",
-					"2026-06-26",
-				),
-				event: dv(
-					"Eleito Presidente (61,27% × José Serra)",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Vit%C3%B3ria_em_2002",
-					"2026-06-26",
-				),
-			},
-			{
-				year: dv(
-					"2006",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Reelei%C3%A7%C3%A3o_em_2006",
-					"2026-06-26",
-				),
-				event: dv(
-					"Reeleito (60,83% × Geraldo Alckmin)",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Reelei%C3%A7%C3%A3o_em_2006",
-					"2026-06-26",
-				),
-			},
-			{
-				year: dv(
-					"2010",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva",
-					"2026-06-26",
-				),
-				event: dv(
-					"Encerra mandato com 83% aprovação",
-					"https://datafolha.folha.uol.com.br/opiniaopublica/2010/12/acima-das-expectativas-lula-encerra-mandato-com-melhor-avaliacao-da-historia.shtml",
-					"2010-12-20",
-				),
-			},
-			{
-				year: dv(
-					"2017",
+					"2021",
 					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Opera%C3%A7%C3%A3o_Lava_Jato",
 					"2026-06-26",
 				),
 				event: dv(
-					"Condenado por Moro no caso tríplex",
+					"STF anula condenações; recupera direitos",
 					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Opera%C3%A7%C3%A3o_Lava_Jato",
 					"2026-06-26",
 				),
@@ -272,84 +226,105 @@ export const lula: Candidate = 	{
 			},
 			{
 				year: dv(
-					"2021",
+					"2017",
 					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Opera%C3%A7%C3%A3o_Lava_Jato",
 					"2026-06-26",
 				),
 				event: dv(
-					"STF anula condenações; recupera direitos",
+					"Condenado por Moro no caso tríplex",
 					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Opera%C3%A7%C3%A3o_Lava_Jato",
 					"2026-06-26",
 				),
 			},
 			{
 				year: dv(
-					"2022",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Campanha_presidencial_de_2022",
+					"2010",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva",
 					"2026-06-26",
 				),
 				event: dv(
-					"Eleito presidente 3ª vez (50,83% × Bolsonaro)",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Campanha_presidencial_de_2022",
+					"Encerra mandato com 83% aprovação",
+					"https://datafolha.folha.uol.com.br/opiniaopublica/2010/12/acima-das-expectativas-lula-encerra-mandato-com-melhor-avaliacao-da-historia.shtml",
+					"2010-12-20",
+				),
+			},
+			{
+				year: dv(
+					"2006",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Reelei%C3%A7%C3%A3o_em_2006",
+					"2026-06-26",
+				),
+				event: dv(
+					"Reeleito (60,83% × Geraldo Alckmin)",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Reelei%C3%A7%C3%A3o_em_2006",
 					"2026-06-26",
 				),
 			},
 			{
 				year: dv(
-					"2026",
-					"https://g1.globo.com/politica/noticia/2026/04/26/sem-lula-pt-aprova-manifesto-para-2026-com-foco-em-reeleicao-do-presidente.ghtml",
-					"2026-04-26",
+					"2002",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Vit%C3%B3ria_em_2002",
+					"2026-06-26",
 				),
 				event: dv(
-					'PT aprova manifesto "Construindo o Futuro" foco reeleição. Pré-candidato.',
-					"https://g1.globo.com/politica/noticia/2026/04/26/sem-lula-pt-aprova-manifesto-para-2026-com-foco-em-reeleicao-do-presidente.ghtml",
-					"2026-04-26",
+					"Eleito Presidente (61,27% × José Serra)",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Vit%C3%B3ria_em_2002",
+					"2026-06-26",
 				),
 			},
 			{
 				year: dv(
-					"2026",
-					"https://g1.globo.com/politica/noticia/2026/06/24/jaques-wagner-pede-licenca-da-lideranca-do-governo-do-senado-apos-operacao-da-pf.ghtml",
-					"2026-06-24",
+					"1989",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Candidatura_%C3%A0_Presid%C3%AAncia_da_Rep%C3%BAblica_em_1989",
+					"2026-06-26",
 				),
 				event: dv(
-					"Lula designa Teresa Leitão líder do governo no Senado após Wagner se afastar por investigação da PF",
-					"https://g1.globo.com/politica/noticia/2026/06/24/jaques-wagner-pede-licenca-da-lideranca-do-governo-do-senado-apos-operacao-da-pf.ghtml",
-					"2026-06-24",
+					"1ª candidatura Presidência (perde 2ºT para Collor)",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Candidatura_%C3%A0_Presid%C3%AAncia_da_Rep%C3%BAblica_em_1989",
+					"2026-06-26",
 				),
 			},
-		],
+			{
+				year: dv(
+					"1986",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#In%C3%ADcio_da_carreira_pol%C3%ADtica_e_cria%C3%A7%C3%A3o_do_Partido_dos_Trabalhadores",
+					"2026-06-26",
+				),
+				event: dv(
+					"Deputado Federal Constituinte mais votado (650 mil votos)",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#In%C3%ADcio_da_carreira_pol%C3%ADtica_e_cria%C3%A7%C3%A3o_do_Partido_dos_Trabalhadores",
+					"2026-06-26",
+				),
+			},
+			{
+				year: dv(
+					"1980",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#In%C3%ADcio_da_carreira_pol%C3%ADtica_e_cria%C3%A7%C3%A3o_do_Partido_dos_Trabalhadores",
+					"2026-06-26",
+				),
+				event: dv(
+					"Funda o PT; preso 31 dias (Lei Segurança Nacional)",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#In%C3%ADcio_da_carreira_pol%C3%ADtica_e_cria%C3%A7%C3%A3o_do_Partido_dos_Trabalhadores",
+					"2026-06-26",
+				),
+			},
+			{
+				year: dv(
+					"1975",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Sindicalismo",
+					"2026-06-26",
+				),
+				event: dv(
+					"Presidente Sindicato Metalúrgicos ABC (92% votos)",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Sindicalismo",
+					"2026-06-26",
+				),
+			}
+],
 		electionResults: [
 			{
 				year: dvn(
-					1986,
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
-					"2026-06-26",
-				),
-				cargo: dv(
-					"Dep. Federal SP",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
-					"2026-06-26",
-				),
-				votos: dv(
-					"650.134",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
-					"2026-06-26",
-				),
-				pct: dv(
-					"—",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
-					"2026-06-26",
-				),
-				resultado: dv(
-					"Eleito (mais votado)",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
-					"2026-06-26",
-				),
-			},
-			{
-				year: dvn(
-					1989,
+					2022,
 					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
 					"2026-06-26",
 				),
@@ -359,24 +334,25 @@ export const lula: Candidate = 	{
 					"2026-06-26",
 				),
 				votos: dv(
-					"11.622.673 (1T)",
+					"60.345.999 (2T)",
 					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
 					"2026-06-26",
 				),
 				pct: dv(
-					"17,19%",
+					"50,83%",
 					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
 					"2026-06-26",
 				),
 				resultado: dv(
-					"2º turno (derrotado)",
+					"Eleito",
 					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
 					"2026-06-26",
 				),
-			},
+			}
+		,
 			{
 				year: dvn(
-					1994,
+					2006,
 					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
 					"2026-06-26",
 				),
@@ -386,44 +362,17 @@ export const lula: Candidate = 	{
 					"2026-06-26",
 				),
 				votos: dv(
-					"17.122.127",
+					"58.295.042 (2T)",
 					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
 					"2026-06-26",
 				),
 				pct: dv(
-					"27,04%",
+					"60,83%",
 					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
 					"2026-06-26",
 				),
 				resultado: dv(
-					"Não eleito (1ºT)",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
-					"2026-06-26",
-				),
-			},
-			{
-				year: dvn(
-					1998,
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
-					"2026-06-26",
-				),
-				cargo: dv(
-					"Presidente",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
-					"2026-06-26",
-				),
-				votos: dv(
-					"21.475.218",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
-					"2026-06-26",
-				),
-				pct: dv(
-					"31,71%",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
-					"2026-06-26",
-				),
-				resultado: dv(
-					"Não eleito (1ºT)",
+					"Eleito",
 					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
 					"2026-06-26",
 				),
@@ -457,7 +406,7 @@ export const lula: Candidate = 	{
 			},
 			{
 				year: dvn(
-					2006,
+					1998,
 					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
 					"2026-06-26",
 				),
@@ -467,24 +416,24 @@ export const lula: Candidate = 	{
 					"2026-06-26",
 				),
 				votos: dv(
-					"58.295.042 (2T)",
+					"21.475.218",
 					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
 					"2026-06-26",
 				),
 				pct: dv(
-					"60,83%",
+					"31,71%",
 					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
 					"2026-06-26",
 				),
 				resultado: dv(
-					"Eleito",
+					"Não eleito (1ºT)",
 					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
 					"2026-06-26",
 				),
 			},
 			{
 				year: dvn(
-					2022,
+					1994,
 					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
 					"2026-06-26",
 				),
@@ -494,22 +443,76 @@ export const lula: Candidate = 	{
 					"2026-06-26",
 				),
 				votos: dv(
-					"60.345.999 (2T)",
+					"17.122.127",
 					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
 					"2026-06-26",
 				),
 				pct: dv(
-					"50,83%",
+					"27,04%",
 					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
 					"2026-06-26",
 				),
 				resultado: dv(
-					"Eleito",
+					"Não eleito (1ºT)",
 					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
 					"2026-06-26",
 				),
 			},
-		],
+			{
+				year: dvn(
+					1989,
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
+					"2026-06-26",
+				),
+				cargo: dv(
+					"Presidente",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
+					"2026-06-26",
+				),
+				votos: dv(
+					"11.622.673 (1T)",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
+					"2026-06-26",
+				),
+				pct: dv(
+					"17,19%",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
+					"2026-06-26",
+				),
+				resultado: dv(
+					"2º turno (derrotado)",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
+					"2026-06-26",
+				),
+			},
+			{
+				year: dvn(
+					1986,
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
+					"2026-06-26",
+				),
+				cargo: dv(
+					"Dep. Federal SP",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
+					"2026-06-26",
+				),
+				votos: dv(
+					"650.134",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
+					"2026-06-26",
+				),
+				pct: dv(
+					"—",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
+					"2026-06-26",
+				),
+				resultado: dv(
+					"Eleito (mais votado)",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
+					"2026-06-26",
+				),
+			}
+],
 		scandals: [
 			{
 				name: dv(
@@ -601,28 +604,6 @@ export const lula: Candidate = 	{
 			},
 			{
 				name: dv(
-					"Op. Sem Desconto",
-					"https://www1.folha.uol.com.br/amp/poder/2026/05/investigadores-racham-sobre-envolvimento-de-lulinha-no-inss-e-grupo-quer-focar-fraudes.shtml",
-					"2026-05-19",
-				),
-				status: dv(
-					"ativo",
-					"https://www1.folha.uol.com.br/amp/poder/2026/05/investigadores-racham-sobre-envolvimento-de-lulinha-no-inss-e-grupo-quer-focar-fraudes.shtml",
-					"2026-05-19",
-				),
-				description: dv(
-					'PF investiga fraudes em descontos do INSS com suspeitas sobre Fábio Luís "Lulinha". Sem indiciamento de Lula.',
-					"https://www1.folha.uol.com.br/amp/poder/2026/05/investigadores-racham-sobre-envolvimento-de-lulinha-no-inss-e-grupo-quer-focar-fraudes.shtml",
-					"2026-05-19",
-				),
-				value: dv(
-					"—",
-					"https://www1.folha.uol.com.br/amp/poder/2026/05/investigadores-racham-sobre-envolvimento-de-lulinha-no-inss-e-grupo-quer-focar-fraudes.shtml",
-					"2026-05-19",
-				),
-			},
-			{
-				name: dv(
 					"Op. Compliance Zero",
 					"https://www.bbc.com/portuguese/articles/cp36nzdvyp4o",
 					"2026-06-18",
@@ -642,8 +623,31 @@ export const lula: Candidate = 	{
 					"https://www.bbc.com/portuguese/articles/cp36nzdvyp4o",
 					"2026-06-18",
 				),
-			},
-		],
+			}
+		,
+			{
+				name: dv(
+					"Op. Sem Desconto",
+					"https://www1.folha.uol.com.br/amp/poder/2026/05/investigadores-racham-sobre-envolvimento-de-lulinha-no-inss-e-grupo-quer-focar-fraudes.shtml",
+					"2026-05-19",
+				),
+				status: dv(
+					"ativo",
+					"https://www1.folha.uol.com.br/amp/poder/2026/05/investigadores-racham-sobre-envolvimento-de-lulinha-no-inss-e-grupo-quer-focar-fraudes.shtml",
+					"2026-05-19",
+				),
+				description: dv(
+					'PF investiga fraudes em descontos do INSS com suspeitas sobre Fábio Luís "Lulinha". Sem indiciamento de Lula.',
+					"https://www1.folha.uol.com.br/amp/poder/2026/05/investigadores-racham-sobre-envolvimento-de-lulinha-no-inss-e-grupo-quer-focar-fraudes.shtml",
+					"2026-05-19",
+				),
+				value: dv(
+					"—",
+					"https://www1.folha.uol.com.br/amp/poder/2026/05/investigadores-racham-sobre-envolvimento-de-lulinha-no-inss-e-grupo-quer-focar-fraudes.shtml",
+					"2026-05-19",
+				),
+			}
+],
 		campaignFinance: {
 			totalArrecadado: dv(
 				"R$ 105 mi (proj. 1º turno)",
@@ -692,38 +696,26 @@ export const lula: Candidate = 	{
 		positions: [
 			{
 				issue: dv(
-					"Aborto",
-					"https://www.bbc.com/portuguese/articles/c888dj7y7elo",
-					"2024-06-15",
+					"Casamento LGBT+",
+					"https://www.voxms.com.br/politica/governo-lula-lanca-campanha-de-visibilidade-e-defesa-dos-direitos-lgbtqia",
+					"2026-06-05",
 				),
 				position: dv(
-					"Pessoalmente contra. Saúde pública. Contra PL 1904/2024.",
-					"https://www.bbc.com/portuguese/articles/c888dj7y7elo",
-					"2024-06-15",
+					'Apoio união civil homoafetiva. "Brasil sem Homofobia".',
+					"https://www.voxms.com.br/politica/governo-lula-lanca-campanha-de-visibilidade-e-defesa-dos-direitos-lgbtqia",
+					"2026-06-05",
 				),
 			},
 			{
 				issue: dv(
-					"Drogas",
-					"https://valor.globo.com/politica/noticia/2024/06/26/apos-stf-julgar-porte-de-maconha-lula-diz-que-e-equivoco-tratar-uso-das-drogas-pelo-codigo-penal.ghtml",
-					"2024-06-26",
+					"Regulação Mídia e Redes",
+					"https://pt.org.br/com-olhar-para-o-futuro-programa-de-governo-de-lula-tera-construcao-coletiva/",
+					"2026-05-30",
 				),
 				position: dv(
-					"Redução de danos, prevenção. Não apoia legalização recreativa.",
-					"https://valor.globo.com/politica/noticia/2024/06/26/apos-stf-julgar-porte-de-maconha-lula-diz-que-e-equivoco-tratar-uso-das-drogas-pelo-codigo-penal.ghtml",
-					"2024-06-26",
-				),
-			},
-			{
-				issue: dv(
-					"Armas",
-					"https://g1.globo.com/politica/noticia/2026/05/12/governo-federal-lanca-plano-de-combate-ao-crime-organizado-veja-acoes.ghtml",
-					"2026-05-12",
-				),
-				position: dv(
-					"Retomada Estatuto Desarmamento. Admite armas p/ produtores rurais.",
-					"https://g1.globo.com/politica/noticia/2026/05/12/governo-federal-lanca-plano-de-combate-ao-crime-organizado-veja-acoes.ghtml",
-					"2026-05-12",
+					"Regular sem censura. Combate desinformação.",
+					"https://pt.org.br/com-olhar-para-o-futuro-programa-de-governo-de-lula-tera-construcao-coletiva/",
+					"2026-05-30",
 				),
 			},
 			{
@@ -740,14 +732,38 @@ export const lula: Candidate = 	{
 			},
 			{
 				issue: dv(
-					"Reforma Tributária",
-					"https://g1.globo.com/economia/noticia/2025/03/18/mudancas-no-ir-imposto-para-super-rico-comeca-em-25percent-a-partir-de-r-600-mil-por-ano-e-busca-arrecadar-r-25-bilhoes-em-2026.ghtml",
-					"2025-03-18",
+					"Meio Ambiente",
+					"https://g1.globo.com/politica/noticia/2026/05/18/lula-cita-possivel-interesse-de-trump-e-defende-exploracao-da-margem-equatorial-pela-petrobras-garantir-para-o-nosso-pais.ghtml",
+					"2026-05-18",
 				),
 				position: dv(
-					'Progressiva. "Ricos pagarem IR". Tributação dividendos.',
-					"https://g1.globo.com/economia/noticia/2025/03/18/mudancas-no-ir-imposto-para-super-rico-comeca-em-25percent-a-partir-de-r-600-mil-por-ano-e-busca-arrecadar-r-25-bilhoes-em-2026.ghtml",
-					"2025-03-18",
+					"Prioridade. Combate desmatamento. Transição energética.",
+					"https://g1.globo.com/politica/noticia/2026/05/18/lula-cita-possivel-interesse-de-trump-e-defende-exploracao-da-margem-equatorial-pela-petrobras-garantir-para-o-nosso-pais.ghtml",
+					"2026-05-18",
+				),
+			},
+			{
+				issue: dv(
+					"Armas",
+					"https://g1.globo.com/politica/noticia/2026/05/12/governo-federal-lanca-plano-de-combate-ao-crime-organizado-veja-acoes.ghtml",
+					"2026-05-12",
+				),
+				position: dv(
+					"Retomada Estatuto Desarmamento. Admite armas p/ produtores rurais.",
+					"https://g1.globo.com/politica/noticia/2026/05/12/governo-federal-lanca-plano-de-combate-ao-crime-organizado-veja-acoes.ghtml",
+					"2026-05-12",
+				),
+			},
+			{
+				issue: dv(
+					"Segurança Pública",
+					"https://g1.globo.com/politica/noticia/2026/05/12/governo-federal-lanca-plano-de-combate-ao-crime-organizado-veja-acoes.ghtml",
+					"2026-05-12",
+				),
+				position: dv(
+					"Repressão qualificada (inteligência). PEC Segurança. PL Antifacção.",
+					"https://g1.globo.com/politica/noticia/2026/05/12/governo-federal-lanca-plano-de-combate-ao-crime-organizado-veja-acoes.ghtml",
+					"2026-05-12",
 				),
 			},
 			{
@@ -776,42 +792,6 @@ export const lula: Candidate = 	{
 			},
 			{
 				issue: dv(
-					"Casamento LGBT+",
-					"https://www.voxms.com.br/politica/governo-lula-lanca-campanha-de-visibilidade-e-defesa-dos-direitos-lgbtqia",
-					"2026-06-05",
-				),
-				position: dv(
-					'Apoio união civil homoafetiva. "Brasil sem Homofobia".',
-					"https://www.voxms.com.br/politica/governo-lula-lanca-campanha-de-visibilidade-e-defesa-dos-direitos-lgbtqia",
-					"2026-06-05",
-				),
-			},
-			{
-				issue: dv(
-					"Regulação Mídia e Redes",
-					"https://pt.org.br/com-olhar-para-o-futuro-programa-de-governo-de-lula-tera-construcao-coletiva/",
-					"2026-05-30",
-				),
-				position: dv(
-					"Regular sem censura. Combate desinformação.",
-					"https://pt.org.br/com-olhar-para-o-futuro-programa-de-governo-de-lula-tera-construcao-coletiva/",
-					"2026-05-30",
-				),
-			},
-			{
-				issue: dv(
-					"Meio Ambiente",
-					"https://g1.globo.com/politica/noticia/2026/05/18/lula-cita-possivel-interesse-de-trump-e-defende-exploracao-da-margem-equatorial-pela-petrobras-garantir-para-o-nosso-pais.ghtml",
-					"2026-05-18",
-				),
-				position: dv(
-					"Prioridade. Combate desmatamento. Transição energética.",
-					"https://g1.globo.com/politica/noticia/2026/05/18/lula-cita-possivel-interesse-de-trump-e-defende-exploracao-da-margem-equatorial-pela-petrobras-garantir-para-o-nosso-pais.ghtml",
-					"2026-05-18",
-				),
-			},
-			{
-				issue: dv(
 					"Mobilidade Urbana",
 					"https://www.cnnbrasil.com.br/eleicoes/lula-vai-propor-sus-do-transporte-com-tarifa-zero-em-plano-de-governo/",
 					"2026-02-23",
@@ -824,14 +804,38 @@ export const lula: Candidate = 	{
 			},
 			{
 				issue: dv(
-					"Segurança Pública",
-					"https://g1.globo.com/politica/noticia/2026/05/12/governo-federal-lanca-plano-de-combate-ao-crime-organizado-veja-acoes.ghtml",
-					"2026-05-12",
+					"Reforma Tributária",
+					"https://g1.globo.com/economia/noticia/2025/03/18/mudancas-no-ir-imposto-para-super-rico-comeca-em-25percent-a-partir-de-r-600-mil-por-ano-e-busca-arrecadar-r-25-bilhoes-em-2026.ghtml",
+					"2025-03-18",
 				),
 				position: dv(
-					"Repressão qualificada (inteligência). PEC Segurança. PL Antifacção.",
-					"https://g1.globo.com/politica/noticia/2026/05/12/governo-federal-lanca-plano-de-combate-ao-crime-organizado-veja-acoes.ghtml",
-					"2026-05-12",
+					'Progressiva. "Ricos pagarem IR". Tributação dividendos.',
+					"https://g1.globo.com/economia/noticia/2025/03/18/mudancas-no-ir-imposto-para-super-rico-comeca-em-25percent-a-partir-de-r-600-mil-por-ano-e-busca-arrecadar-r-25-bilhoes-em-2026.ghtml",
+					"2025-03-18",
+				),
+			},
+			{
+				issue: dv(
+					"Drogas",
+					"https://valor.globo.com/politica/noticia/2024/06/26/apos-stf-julgar-porte-de-maconha-lula-diz-que-e-equivoco-tratar-uso-das-drogas-pelo-codigo-penal.ghtml",
+					"2024-06-26",
+				),
+				position: dv(
+					"Redução de danos, prevenção. Não apoia legalização recreativa.",
+					"https://valor.globo.com/politica/noticia/2024/06/26/apos-stf-julgar-porte-de-maconha-lula-diz-que-e-equivoco-tratar-uso-das-drogas-pelo-codigo-penal.ghtml",
+					"2024-06-26",
+				),
+			},
+			{
+				issue: dv(
+					"Aborto",
+					"https://www.bbc.com/portuguese/articles/c888dj7y7elo",
+					"2024-06-15",
+				),
+				position: dv(
+					"Pessoalmente contra. Saúde pública. Contra PL 1904/2024.",
+					"https://www.bbc.com/portuguese/articles/c888dj7y7elo",
+					"2024-06-15",
 				),
 			},
 			{
@@ -845,7 +849,8 @@ export const lula: Candidate = 	{
 					"https://www1.folha.uol.com.br/poder/2024/02/lula-critica-pt-e-diz-que-fundo-eleitoral-e-cooptado-por-deputados-com-mandato.shtml",
 					"2024-02-02",
 				),
-			},
-		],
+			}
+		
+],
 	}
 

@@ -17,13 +17,13 @@ Projeto: `C:\Users\rcaru\source\repos\eleicoes_benchmark\presidenciaveis-2026`
 Se especificar candidato, processar apenas dados + propostas + videos dele + polls.
 Se omitir, processar apenas polls + resumo geral.
 
-| ID | Nome | Arquivo dados | Arquivo propostas | Arquivo media |
-|---|---|---|---|---|
-| `lula` | Lula | `src/data/lula.ts` | `src/data/proposals-lula.ts` | `src/data/media-lula.ts` |
+| ID       | Nome             | Arquivo dados        | Arquivo propostas              | Arquivo media              |
+| -------- | ---------------- | -------------------- | ------------------------------ | -------------------------- |
+| `lula`   | Lula             | `src/data/lula.ts`   | `src/data/proposals-lula.ts`   | `src/data/media-lula.ts`   |
 | `flavio` | Flávio Bolsonaro | `src/data/flavio.ts` | `src/data/proposals-flavio.ts` | `src/data/media-flavio.ts` |
-| `renan` | Renan Santos | `src/data/renan.ts` | `src/data/proposals-renan.ts` | `src/data/media-renan.ts` |
-| `caiado` | Ronaldo Caiado | `src/data/caiado.ts` | `src/data/proposals-caiado.ts` | `src/data/media-caiado.ts` |
-| `zema` | Romeu Zema | `src/data/zema.ts` | `src/data/proposals-zema.ts` | `src/data/media-zema.ts` |
+| `renan`  | Renan Santos     | `src/data/renan.ts`  | `src/data/proposals-renan.ts`  | `src/data/media-renan.ts`  |
+| `caiado` | Ronaldo Caiado   | `src/data/caiado.ts` | `src/data/proposals-caiado.ts` | `src/data/media-caiado.ts` |
+| `zema`   | Romeu Zema       | `src/data/zema.ts`   | `src/data/proposals-zema.ts`   | `src/data/media-zema.ts`   |
 
 ## Regras Obrigatorias
 
@@ -34,6 +34,20 @@ Se omitir, processar apenas polls + resumo geral.
 5. **Nao modificar package.json, sitemap.ts, ou qualquer config.**
 6. **Apenas arquivos alterados: `src/data/candidates.ts`, `src/data/polls.ts`, `src/data/proposals-{CANDIDATE}.ts`, `src/data/media-{CANDIDATE}.ts`, `src/data/{CANDIDATE}.ts`, `src/data/.version.ts`.**
 7. **EXECUTE TODOS OS PASSOS DO WORKFLOW (Passo 1 ao 6). NUNCA pular etapas.** Skip e permitido APENAS se a busca nao encontrar dados novos — nunca por omissao.
+
+### Ordem dos arrays
+
+Todos os arrays devem ser ordenados do **mais recente para o mais antigo** (decrescente). NUNCA adicionar no final do array — inserir na posicao que preserva a ordenacao.
+
+| Array              | Chave de ordenacao     | Formato                                    |
+| ------------------ | ---------------------- | ------------------------------------------ |
+| `timeline`         | `year` (decrescente)   | `{ year: dv(...), event: dv(...) }`        |
+| `electionResults`  | `year` (decrescente)   | `{ year: dvn(...), cargo: dv(...), ... }`  |
+| `partyHistory`     | sequencia decrescente  | `dv("nome", "src", "date")` — inverter     |
+| `positions`        | `updatedAt` (mais recente primeiro) | `{ issue: dv(...), position: dv(...), updatedAt }` |
+| `scandals`         | `updatedAt` (mais recente primeiro) | `{ name: dv(...), status: dv(...), ... }`  |
+| `polls`            | `date` (decrescente)   | `{ institute, date, firstRound, ... }`     |
+| `changes[]` (version) | data no label (decrescente) | `{ label: "... DD/mon" }`              |
 
 ---
 
@@ -49,7 +63,12 @@ interface PollData {
 	institute: string; // "Datafolha" | "Quaest" | "AtlasIntel" | "Real Time Big Data"
 	date: string; // "DD/mon" ex: "17/jun"
 	firstRound: { name: string; value: number }[];
-	secondRound?: { label: string; lula: number; adversario: number; adversarioNome: string }[];
+	secondRound?: {
+		label: string;
+		lula: number;
+		adversario: number;
+		adversarioNome: string;
+	}[];
 	rejection?: { name: string; value: number }[];
 	spontaneous?: { name: string; value: number }[];
 	regional?: { region: string; lula: number; flavio: number; renan?: number }[];
@@ -58,12 +77,12 @@ interface PollData {
 
 ### Institutos e URLs de busca
 
-| Instituto | Search query | Pagina oficial |
-|---|---|---|
-| Datafolha | `Datafolha pesquisa eleitoral presidente 2026` | `datafolha.folha.uol.com.br` |
-| Quaest | `Quaest Genial pesquisa presidente 2026` | `gemaa.quaaest.com.br` |
-| AtlasIntel | `AtlasIntel pesquisa Brasil presidente 2026` | `atlasintel.com.br` |
-| Real Time Big Data | `Real Time Big Data pesquisa presidente 2026` | (buscar em noticias) |
+| Instituto          | Search query                                   | Pagina oficial               |
+| ------------------ | ---------------------------------------------- | ---------------------------- |
+| Datafolha          | `Datafolha pesquisa eleitoral presidente 2026` | `datafolha.folha.uol.com.br` |
+| Quaest             | `Quaest Genial pesquisa presidente 2026`       | `gemaa.quaaest.com.br`       |
+| AtlasIntel         | `AtlasIntel pesquisa Brasil presidente 2026`   | `atlasintel.com.br`          |
+| Real Time Big Data | `Real Time Big Data pesquisa presidente 2026`  | (buscar em noticias)         |
 
 ### Fluxo
 
@@ -148,13 +167,13 @@ Script retorna JSON: `title`, `description`, `youtubeId`, `publishedAt`, `channe
 
 #### Queries por candidato
 
-| ID | `--candidate` |
-|---|---|
-| lula | `"Lula"` |
+| ID     | `--candidate`        |
+| ------ | -------------------- |
+| lula   | `"Lula"`             |
 | flavio | `"Flavio Bolsonaro"` |
-| renan | `"Renan Santos"` |
-| caiado | `"Caiado"` |
-| zema | `"Zema"` |
+| renan  | `"Renan Santos"`     |
+| caiado | `"Caiado"`           |
+| zema   | `"Zema"`             |
 
 ### Verificacao de duplicatas
 
@@ -238,19 +257,20 @@ Salvar checkpoint apos este passo.
 
 ### Passo 4 — Editar arquivos
 
-Editar apenas `src/data/` files. Manter indentacao (tabs), aspas duplas, ordem dos arrays.
+Editar apenas `src/data/` files. Manter indentacao (tabs), aspas duplas.
+
+**Ordem dos arrays:** Consultar tabela em "Regras Obrigatorias > Ordem dos arrays". Cada entrada deve ser inserida NA POSICAO QUE PRESERVA A ORDENACAO, jamais no final do array indiscriminadamente.
 
 ### Passo 4.5 — Atualizar `src/data/.version.ts`
 
 Apos qualquer alteracao:
 
 1. Atualizar `version` e `updatedAt` com timestamp ISO atual
-2. Adicionar entrada em `changes[]` para cada categoria alterada:
-   - Pesquisas → `{ emoji: "📊", label: "Pesquisas eleitorais" }`
-   - Candidatos → `{ emoji: "👤", label: "Dados dos candidatos" }`
-   - Propostas → `{ emoji: "📋", label: "Propostas de governo" }`
-   - Videos → `{ emoji: "🎥", label: "Videos e entrevistas" }`
-3. Remover entradas duplicadas
+2. Adicionar entrada em `changes[]` para cada alteracao:
+   - O template de `label` deve conter: `"{candidato}: descricao concisa + data (DD/mon)"`
+   - Exemplo: `"Renan: timeline — 1a convencao Missao 01/ago (CNN) 03/jul"`
+3. **Inserir cada entrada na posicao correta** — `changes[]` e ordenado por data decrescente (mais recente primeiro). Extrair a data no formato `DD/mon` do label e posicionar a entrada entre a entrada mais recente (acima) e a mais antiga (abaixo).
+4. Remover entradas duplicadas
 
 ### Passo 4.7 — Verificar duplicatas
 
@@ -303,17 +323,17 @@ Formato do JSON:
 
 ```json
 {
-  "candidate": "{CANDIDATE}",
-  "passo": 2,
-  "descricao": "Buscas de YouTube concluidas",
-  "pollUpdated": false,
-  "candidateUpdated": false,
-  "mediaUpdated": false,
-  "proposalsUpdated": false,
-  "newPolls": [],
-  "newVideos": [],
-  "newProposals": [],
-  "findings": "Resumo do que foi encontrado"
+	"candidate": "{CANDIDATE}",
+	"passo": 2,
+	"descricao": "Buscas de YouTube concluidas",
+	"pollUpdated": false,
+	"candidateUpdated": false,
+	"mediaUpdated": false,
+	"proposalsUpdated": false,
+	"newPolls": [],
+	"newVideos": [],
+	"newProposals": [],
+	"findings": "Resumo do que foi encontrado"
 }
 ```
 

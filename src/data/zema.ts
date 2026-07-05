@@ -83,21 +83,22 @@ export const zema: Candidate = 	{
 		),
 		partyHistory: [
 			dv(
-				"PL (1999–2006)",
+				"NOVO (2018–presente)",
 				"https://pt.wikipedia.org/wiki/Romeu_Zema#Primeiros_anos",
 				"2026-06-26",
-			),
+			)
+		,
 			dv(
 				"PR (2006–2018)",
 				"https://pt.wikipedia.org/wiki/Romeu_Zema#Primeiros_anos",
 				"2026-06-26",
 			),
 			dv(
-				"NOVO (2018–presente)",
+				"PL (1999–2006)",
 				"https://pt.wikipedia.org/wiki/Romeu_Zema#Primeiros_anos",
 				"2026-06-26",
-			),
-		],
+			)
+],
 		coalition: [
 			{
 				party: dv("NOVO"),
@@ -126,13 +127,26 @@ export const zema: Candidate = 	{
 		timeline: [
 			{
 				year: dv(
-					"2017",
-					"https://pt.wikipedia.org/wiki/Romeu_Zema#Primeiros_anos",
+					"2026",
+					"https://g1.globo.com/mg/minas-gerais/noticia/2026/03/22/zema-renuncia-ao-governo-de-mg-para-pre-campanha-a-presidencia-da-republica-e-vice-mateus-simoes-assume-cargo.ghtml",
+					"2026-03-22",
+				),
+				event: dv(
+					"Renuncia governo MG. Pré-candidato Presidência (NOVO).",
+					"https://g1.globo.com/mg/minas-gerais/noticia/2026/03/22/zema-renuncia-ao-governo-de-mg-para-pre-campanha-a-presidencia-da-republica-e-vice-mateus-simoes-assume-cargo.ghtml",
+					"2026-03-22",
+				),
+			}
+		,
+			{
+				year: dv(
+					"2022",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema#Releição_em_2022_e_segundo_mandato_como_governador",
 					"2026-06-26",
 				),
 				event: dv(
-					"Filia-se ao Partido Novo",
-					"https://pt.wikipedia.org/wiki/Romeu_Zema#Primeiros_anos",
+					"Reeleito Governador MG (1ºT, 56,18%)",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema#Releição_em_2022_e_segundo_mandato_como_governador",
 					"2026-06-26",
 				),
 			},
@@ -150,57 +164,18 @@ export const zema: Candidate = 	{
 			},
 			{
 				year: dv(
-					"2022",
-					"https://pt.wikipedia.org/wiki/Romeu_Zema#Releição_em_2022_e_segundo_mandato_como_governador",
+					"2017",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema#Primeiros_anos",
 					"2026-06-26",
 				),
 				event: dv(
-					"Reeleito Governador MG (1ºT, 56,18%)",
-					"https://pt.wikipedia.org/wiki/Romeu_Zema#Releição_em_2022_e_segundo_mandato_como_governador",
+					"Filia-se ao Partido Novo",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema#Primeiros_anos",
 					"2026-06-26",
 				),
-			},
-			{
-				year: dv(
-					"2026",
-					"https://g1.globo.com/mg/minas-gerais/noticia/2026/03/22/zema-renuncia-ao-governo-de-mg-para-pre-campanha-a-presidencia-da-republica-e-vice-mateus-simoes-assume-cargo.ghtml",
-					"2026-03-22",
-				),
-				event: dv(
-					"Renuncia governo MG. Pré-candidato Presidência (NOVO).",
-					"https://g1.globo.com/mg/minas-gerais/noticia/2026/03/22/zema-renuncia-ao-governo-de-mg-para-pre-campanha-a-presidencia-da-republica-e-vice-mateus-simoes-assume-cargo.ghtml",
-					"2026-03-22",
-				),
-			},
-		],
+			}
+],
 		electionResults: [
-			{
-				year: dvn(
-					2018,
-					"https://pt.wikipedia.org/wiki/Romeu_Zema#Desempenho_eleitoral",
-					"2026-06-26",
-				),
-				cargo: dv(
-					"Governador MG",
-					"https://pt.wikipedia.org/wiki/Romeu_Zema#Desempenho_eleitoral",
-					"2026-06-26",
-				),
-				votos: dv(
-					"4.138.967 (1T) / 6.963.806 (2T)",
-					"https://pt.wikipedia.org/wiki/Romeu_Zema#Desempenho_eleitoral",
-					"2026-06-26",
-				),
-				pct: dv(
-					"42,73% (1T) / 71,80% (2T)",
-					"https://pt.wikipedia.org/wiki/Romeu_Zema#Desempenho_eleitoral",
-					"2026-06-26",
-				),
-				resultado: dv(
-					"Eleito (2º turno)",
-					"https://pt.wikipedia.org/wiki/Romeu_Zema#Desempenho_eleitoral",
-					"2026-06-26",
-				),
-			},
 			{
 				year: dvn(
 					2022,
@@ -227,8 +202,36 @@ export const zema: Candidate = 	{
 					"https://pt.wikipedia.org/wiki/Romeu_Zema#Desempenho_eleitoral",
 					"2026-06-26",
 				),
-			},
-		],
+			}
+		,
+			{
+				year: dvn(
+					2018,
+					"https://pt.wikipedia.org/wiki/Romeu_Zema#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				cargo: dv(
+					"Governador MG",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				votos: dv(
+					"4.138.967 (1T) / 6.963.806 (2T)",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				pct: dv(
+					"42,73% (1T) / 71,80% (2T)",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				resultado: dv(
+					"Eleito (2º turno)",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+			}
+],
 		scandals: [
 			{
 				name: dv(
@@ -280,8 +283,9 @@ export const zema: Candidate = 	{
 					"https://g1.globo.com/mg/minas-gerais/noticia/2025/12/23/zema-sanciona-lei-que-autoriza-privatizacao-da-copasa-e-troca-comando-da-empresa.ghtml",
 					"2026-06-28",
 				),
-			},
-		],
+			}
+		
+],
 		campaignFinance: {
 			totalArrecadado: dv(
 				"R$ 133,4 mi (limite)",
@@ -335,6 +339,30 @@ export const zema: Candidate = 	{
 		positions: [
 			{
 				issue: dv(
+					"Segurança Pública",
+					"https://g1.globo.com/sp/sao-paulo/eleicoes/2026/noticia/2026/05/25/zema-defende-modelo-de-el-salvador-com-encarceramento-em-massa-contra-o-crime.ghtml",
+					"2026-06-28",
+				),
+				position: dv(
+					"Defende encarceramento em massa nos moldes de El Salvador. Classificar facções como terroristas. Endurecimento de penas.",
+					"https://g1.globo.com/sp/sao-paulo/eleicoes/2026/noticia/2026/05/25/zema-defende-modelo-de-el-salvador-com-encarceramento-em-massa-contra-o-crime.ghtml",
+					"2026-06-28",
+				),
+			},
+			{
+				issue: dv(
+					"Trabalho Infantil",
+					"https://g1.globo.com/politica/eleicoes/2026/noticia/2026/05/01/zema-trabalho-criancas.ghtml",
+					"2026-06-28",
+				),
+				position: dv(
+					"Declarou-se favorável ao trabalho infantil nos moldes dos EUA (entregar jornal). Gerou forte repercussão negativa.",
+					"https://g1.globo.com/politica/eleicoes/2026/noticia/2026/05/01/zema-trabalho-criancas.ghtml",
+					"2026-06-28",
+				),
+			},
+			{
+				issue: dv(
 					"Economia",
 					"https://pt.wikipedia.org/wiki/Romeu_Zema#Posicionamentos",
 					"2026-06-26",
@@ -383,18 +411,6 @@ export const zema: Candidate = 	{
 			},
 			{
 				issue: dv(
-					"Segurança Pública",
-					"https://g1.globo.com/sp/sao-paulo/eleicoes/2026/noticia/2026/05/25/zema-defende-modelo-de-el-salvador-com-encarceramento-em-massa-contra-o-crime.ghtml",
-					"2026-06-28",
-				),
-				position: dv(
-					"Defende encarceramento em massa nos moldes de El Salvador. Classificar facções como terroristas. Endurecimento de penas.",
-					"https://g1.globo.com/sp/sao-paulo/eleicoes/2026/noticia/2026/05/25/zema-defende-modelo-de-el-salvador-com-encarceramento-em-massa-contra-o-crime.ghtml",
-					"2026-06-28",
-				),
-			},
-			{
-				issue: dv(
 					"Reforma Tributária",
 					"https://pt.wikipedia.org/wiki/Romeu_Zema#Posicionamentos",
 					"2026-06-26",
@@ -419,18 +435,6 @@ export const zema: Candidate = 	{
 			},
 			{
 				issue: dv(
-					"Trabalho Infantil",
-					"https://g1.globo.com/politica/eleicoes/2026/noticia/2026/05/01/zema-trabalho-criancas.ghtml",
-					"2026-06-28",
-				),
-				position: dv(
-					"Declarou-se favorável ao trabalho infantil nos moldes dos EUA (entregar jornal). Gerou forte repercussão negativa.",
-					"https://g1.globo.com/politica/eleicoes/2026/noticia/2026/05/01/zema-trabalho-criancas.ghtml",
-					"2026-06-28",
-				),
-			},
-			{
-				issue: dv(
 					"Separatismo Sul-Sudeste",
 					"https://pt.wikipedia.org/wiki/Romeu_Zema#Posicionamentos",
 					"2026-06-26",
@@ -440,7 +444,8 @@ export const zema: Candidate = 	{
 					"https://pt.wikipedia.org/wiki/Romeu_Zema#Posicionamentos",
 					"2026-06-26",
 				),
-			},
-		],
+			}
+		
+],
 	}
 
