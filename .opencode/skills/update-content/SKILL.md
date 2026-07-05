@@ -209,10 +209,15 @@ Salvar checkpoint apos este passo.
 Sempre executar para detectar novas propostas, posicoes, escandalos:
 
 ```bash
-npm run fetch:news 14
+npm run fetch:news 14 -- --candidate "{CANDIDATE_SLUG}"
 ```
 
 Usar `-v` para ver os titulos e URLs.
+
+**ATENCAO:** Usar `--` antes de `--candidate` para npm passar o argumento ao script.
+Se nao passar `--candidate`, busca todos os candidatos (mais lento).
+
+Slugs: `lula-silva`, `flavio-bolsonaro`, `renan-santos`, `ronaldo-caiado`, `romeu-zema`.
 
 #### 2b. YouTube (se CANDIDATE especificado)
 

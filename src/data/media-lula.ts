@@ -8,6 +8,20 @@ export const lulaMedia: MediaCategory[] = [
 			items: [
 				{
 					title: dv(
+						"Presidente Lula concede entrevista para o Jornal da Manhã Bahia",
+						"https://www.youtube.com/watch?v=PEp6i7Sxz10",
+						"2026-07-05",
+					),
+					description: dv(
+						"O presidente Lula concede entrevista ao Jornal da Manhã Bahia, abordando temas da campanha eleitoral e realizações do governo.",
+						"https://www.youtube.com/watch?v=PEp6i7Sxz10",
+						"2026-07-05",
+					),
+					youtubeId: "PEp6i7Sxz10",
+					category: "entrevistas",
+				},
+				{
+					title: dv(
 						"Presidente Lula na inauguração de túnel para transposição das águas do Rio São Francisco para o RN",
 						"https://www.youtube.com/watch?v=inbBmZaRgs0",
 						"2026-07-02",

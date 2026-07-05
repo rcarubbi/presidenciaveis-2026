@@ -10,20 +10,24 @@ export interface DataVersionInfo {
 }
 
 export const dataVersion: DataVersionInfo = {
-	version: "2026-07-05T15:30:00Z",
-	updatedAt: "2026-07-05T15:30:00Z",
+	version: "2026-07-06T14:00:00Z",
+	updatedAt: "2026-07-06T14:00:00Z",
 	changes: [
 		{
-			emoji: "📋",
-			label: "Lula: Compliance Zero — Wagner afastou-se liderança 24/06",
-		},
-		{
-			emoji: "👤",
-			label: "Lula: timeline — Teresa Leitão liderança Senado",
-		},
-		{
 			emoji: "🎥",
-			label: "Lula: vídeo — discurso 68ª Cúpula Mercosul",
+			label: "Lula: vídeo — entrevista Jornal da Manhã Bahia (05/jul)",
+		},
+		{
+			emoji: "💰",
+			label: "Lula: financiamento FEFC sobe de R$ 105M para R$ 126,9M (03/jul)",
+		},
+		{
+			emoji: "📅",
+			label: "Lula: timeline — PT oficializa candidatura em 2/ago (04/jul)",
+		},
+		{
+			emoji: "📋",
+			label: "Lula: proposta — Mapa do Caminho para tarifaço EUA (02/jul)",
 		},
 	],
 };

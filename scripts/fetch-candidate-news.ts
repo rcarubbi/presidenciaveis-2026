@@ -103,15 +103,34 @@ async function fetchArticles(slug: string, fromDate: string): Promise<SapiensArt
   return allArticles
 }
 
+function getCandidateSlug(input: string): string | null {
+  const match = CANDIDATES.find(
+    (c) => c.slug === input || c.name.toLowerCase() === input.toLowerCase()
+  )
+  return match ? match.slug : null
+}
+
 async function main() {
   const args = process.argv.slice(2)
   const verbose = args.includes("--verbose") || args.includes("-v")
+  const candidateIdx = args.indexOf("--candidate")
+  const candidateSlug = candidateIdx !== -1 && candidateIdx + 1 < args.length
+    ? getCandidateSlug(args[candidateIdx + 1])
+    : null
+  if (candidateIdx !== -1 && !candidateSlug) {
+    console.error(`[ERROR] Unknown candidate: ${args[candidateIdx + 1]}`)
+    process.exit(1)
+  }
   const fromDays = parseInt(args.find((a) => !a.startsWith("-")) || "7", 10)
   const fromDate = getDaysAgo(fromDays)
 
   console.log(`[candidate-news] ${fromDays}d from ${fromDate}\n`)
 
-  for (const candidate of CANDIDATES) {
+  const targets = candidateSlug
+    ? CANDIDATES.filter((c) => c.slug === candidateSlug)
+    : CANDIDATES
+
+  for (const candidate of targets) {
     const articles = await fetchArticles(candidate.slug, fromDate)
 
     const matches: ArticleMatch[] = []

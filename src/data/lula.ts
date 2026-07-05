@@ -318,6 +318,18 @@ export const lula: Candidate = 	{
 					"2026-06-24",
 				),
 			},
+			{
+				year: dv(
+					"2026",
+					"https://atarde.com.br/eleicoes/pt-define-data-para-oficializar-candidatura-de-lula-a-reeleicao-1394105",
+					"2026-07-04",
+				),
+				event: dv(
+					"PT define 2 de agosto para oficializar candidatura de Lula à reeleição",
+					"https://atarde.com.br/eleicoes/pt-define-data-para-oficializar-candidatura-de-lula-a-reeleicao-1394105",
+					"2026-07-04",
+				),
+			},
 		],
 		electionResults: [
 			{
@@ -646,14 +658,14 @@ export const lula: Candidate = 	{
 		],
 		campaignFinance: {
 			totalArrecadado: dv(
-				"R$ 105 mi (proj. 1º turno)",
-				"https://oglobo.globo.com/politica/noticia/2026/06/17/pt-deve-reservar-r-105-milhoes-para-campanha-de-lula-gastar-no-primeiro-turno.ghtml",
-				"2026-06-17",
+				"R$ 126,9 mi (reeleição)",
+				"https://poder360.com.br/poder-eleicoes/pt-destinara-r-1269-mi-do-fundo-eleitoral-para-reeleicao-de-lula",
+				"2026-07-03",
 			),
 			totalGasto: dv(
-				"R$ 105 mi (proj. 1º turno)",
-				"https://oglobo.globo.com/politica/noticia/2026/06/17/pt-deve-reservar-r-105-milhoes-para-campanha-de-lula-gastar-no-primeiro-turno.ghtml",
-				"2026-06-17",
+				"R$ 126,9 mi (reeleição)",
+				"https://poder360.com.br/poder-eleicoes/pt-destinara-r-1269-mi-do-fundo-eleitoral-para-reeleicao-de-lula",
+				"2026-07-03",
 			),
 			limiteGastos: dv(
 				"R$ 133,4 mi (proj. ambos turnos)",
@@ -664,28 +676,28 @@ export const lula: Candidate = 	{
 				{
 					name: dv("FEFC"),
 					value: dvn(
-						105,
-						"https://oglobo.globo.com/politica/noticia/2026/06/17/pt-deve-reservar-r-105-milhoes-para-campanha-de-lula-gastar-no-primeiro-turno.ghtml",
-						"2026-06-17",
+						126.9,
+						"https://poder360.com.br/poder-eleicoes/pt-destinara-r-1269-mi-do-fundo-eleitoral-para-reeleicao-de-lula",
+						"2026-07-03",
 					),
 					color: "#cc2222",
 				},
 			],
 			comparison: {
 				name: dv(
-					"Lula 2026 (proj.)",
-					"https://oglobo.globo.com/politica/noticia/2026/06/17/pt-deve-reservar-r-105-milhoes-para-campanha-de-lula-gastar-no-primeiro-turno.ghtml",
-					"2026-06-17",
+					"Lula 2026 (1º turno)",
+					"https://poder360.com.br/poder-eleicoes/pt-destinara-r-1269-mi-do-fundo-eleitoral-para-reeleicao-de-lula",
+					"2026-07-03",
 				),
 				arrecadado: dvn(
-					105,
-					"https://oglobo.globo.com/politica/noticia/2026/06/17/pt-deve-reservar-r-105-milhoes-para-campanha-de-lula-gastar-no-primeiro-turno.ghtml",
-					"2026-06-17",
+					126.9,
+					"https://poder360.com.br/poder-eleicoes/pt-destinara-r-1269-mi-do-fundo-eleitoral-para-reeleicao-de-lula",
+					"2026-07-03",
 				),
 				gasto: dvn(
-					105,
-					"https://oglobo.globo.com/politica/noticia/2026/06/17/pt-deve-reservar-r-105-milhoes-para-campanha-de-lula-gastar-no-primeiro-turno.ghtml",
-					"2026-06-17",
+					126.9,
+					"https://poder360.com.br/poder-eleicoes/pt-destinara-r-1269-mi-do-fundo-eleitoral-para-reeleicao-de-lula",
+					"2026-07-03",
 				),
 			},
 		},
