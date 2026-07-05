@@ -587,6 +587,30 @@ export const flavio: Candidate = 	{
 			},
 			{
 				issue: dv(
+					"Agronegócio",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
+					"Apoios Regionais",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
 					"Armas",
 					"https://jornaltaguacei.com.br/noticias/22/02/2026/pre-candidato-flavio-bolsonaro-defende-mais-privatizacao-prisoes-e-armas-no-brasil/",
 					"2026-02-22",
@@ -595,6 +619,30 @@ export const flavio: Candidate = 	{
 					"Armamento civil amplo. Contra Estatuto Desarmamento.",
 					"https://jornaltaguacei.com.br/noticias/22/02/2026/pre-candidato-flavio-bolsonaro-defende-mais-privatizacao-prisoes-e-armas-no-brasil/",
 					"2026-02-22",
+				),
+			},
+			{
+				issue: dv(
+					"Assistência Social",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
+					"Bolsa Família / Programas Sociais",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro",
+					"2026-07-05",
 				),
 			},
 			{
@@ -611,6 +659,18 @@ export const flavio: Candidate = 	{
 			},
 			{
 				issue: dv(
+					"Cotas Raciais",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
 					"Drogas",
 					"https://exame.com/brasil/flavio-bolsonaro-aposta-em-modelo-el-salvador-e-reducao-da-maioridade-em-plano-de-seguranca/",
 					"2026-06-18",
@@ -619,6 +679,18 @@ export const flavio: Candidate = 	{
 					"Contra qualquer legalização. Internação compulsória.",
 					"https://exame.com/brasil/flavio-bolsonaro-aposta-em-modelo-el-salvador-e-reducao-da-maioridade-em-plano-de-seguranca/",
 					"2026-06-18",
+				),
+			},
+			{
+				issue: dv(
+					"Economia",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro",
+					"2026-07-05",
 				),
 			},
 			{
@@ -647,6 +719,30 @@ export const flavio: Candidate = 	{
 			},
 			{
 				issue: dv(
+					"Impeachment Dilma",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
+					"Infraestrutura",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
 					"Meio Ambiente",
 					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Posi%C3%A7%C3%B5es_pol%C3%ADticas",
 					"2026-06-26",
@@ -659,6 +755,42 @@ export const flavio: Candidate = 	{
 			},
 			{
 				issue: dv(
+					"Mobilidade Urbana",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
+					"PEC do Teto",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
+					"Previdência",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
 					"Privatização",
 					"https://jornaltaguacei.com.br/noticias/22/02/2026/pre-candidato-flavio-bolsonaro-defende-mais-privatizacao-prisoes-e-armas-no-brasil/",
 					"2026-02-22",
@@ -667,6 +799,54 @@ export const flavio: Candidate = 	{
 					"A favor. Eficiência setor privado.",
 					"https://jornaltaguacei.com.br/noticias/22/02/2026/pre-candidato-flavio-bolsonaro-defende-mais-privatizacao-prisoes-e-armas-no-brasil/",
 					"2026-02-22",
+				),
+			},
+			{
+				issue: dv(
+					"Reforma Agrária/Indígenas",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
+					"Reforma do STF",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
+					"Reforma Política",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
+					"Reforma Trabalhista",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro",
+					"2026-07-05",
 				),
 			},
 			{
@@ -695,6 +875,42 @@ export const flavio: Candidate = 	{
 			},
 			{
 				issue: dv(
+					"Relações Exteriores",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
+					"STF",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
+					"Saúde",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
 					"Segurança Pública",
 					"https://g1.globo.com/sp/sao-paulo/eleicoes/2026/noticia/2026/06/18/flavio-bolsonaro-lanca-pacote-de-seguranca-com-reducao-da-maioridade-penal-e-castracao-quimica.ghtml",
 					"2026-06-18",
@@ -704,8 +920,56 @@ export const flavio: Candidate = 	{
 					"https://g1.globo.com/sp/sao-paulo/eleicoes/2026/noticia/2026/06/18/flavio-bolsonaro-lanca-pacote-de-seguranca-com-reducao-da-maioridade-penal-e-castracao-quimica.ghtml",
 					"2026-06-18",
 				),
-			}
-		
-],
+			},
+			{
+				issue: dv(
+					"Separatismo Sul-Sudeste",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
+					"Trabalho Infantil",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
+					"Trabalhista",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
+					"Zona Franca de Manaus",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro",
+					"2026-07-05",
+				),
+			},
+
+		],
 	}
 

@@ -44,8 +44,10 @@ Todos os arrays devem ser ordenados do **mais recente para o mais antigo** (decr
 | `timeline`         | `year` (decrescente)   | `{ year: dv(...), event: dv(...) }`        |
 | `electionResults`  | `year` (decrescente)   | `{ year: dvn(...), cargo: dv(...), ... }`  |
 | `partyHistory`     | sequencia decrescente  | `dv("nome", "src", "date")` — inverter     |
-| `positions`        | `updatedAt` (mais recente primeiro) | `{ issue: dv(...), position: dv(...), updatedAt }` |
+| `positions`        | `issue` (ordem alfabética)          | `{ issue: dv(...), position: dv(...), updatedAt }` |
 | `scandals`         | `updatedAt` (mais recente primeiro) | `{ name: dv(...), status: dv(...), ... }`  |
+
+**Positions:** Todos os candidatos devem ter entradas para **todas as pautas** da união (lista completa no `allIssues`). Usar `"-"` (traço) como `position.value` quando o candidato não se pronunciou. Usar a Wikipedia do candidato como `source` e data atual como `updatedAt` para entradas com traço.
 | `polls`            | `date` (decrescente)   | `{ institute, date, firstRound, ... }`     |
 | `changes[]` (version) | data no label (decrescente) | `{ label: "... DD/mon" }`              |
 

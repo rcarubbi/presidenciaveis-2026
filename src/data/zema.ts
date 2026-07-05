@@ -392,6 +392,30 @@ export const zema: Candidate = 	{
 		positions: [
 			{
 				issue: dv(
+					"Aborto",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
+					"Agronegócio",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
 					"Apoios Regionais",
 					"https://g1.globo.com/ba/bahia/eleicoes/2026/noticia/2026/07/01/zema-confirma-apoio-a-acm-neto-para-o-governo-da-bahia.ghtml",
 					"2026-07-02",
@@ -416,6 +440,18 @@ export const zema: Candidate = 	{
 			},
 			{
 				issue: dv(
+					"Assistência Social",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
 					"Bolsa Família / Programas Sociais",
 					"https://jornalopcao.com.br/politica/estamos-criando-uma-geracao-de-imprestaveis-diz-romeu-zema-ao-criticar-programas-sociais-839355",
 					"2026-06-22",
@@ -424,6 +460,42 @@ export const zema: Candidate = 	{
 					"'Estamos criando uma geração de imprestáveis', critica programas sociais. Defende condicionar Bolsa Família a contrapartidas de emprego e capacitação. Propõe R$ 5 mil para quem deixar o programa.",
 					"https://jornalopcao.com.br/politica/estamos-criando-uma-geracao-de-imprestaveis-diz-romeu-zema-ao-criticar-programas-sociais-839355",
 					"2026-06-22",
+				),
+			},
+			{
+				issue: dv(
+					"Casamento LGBT+",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
+					"Cotas Raciais",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
+					"Drogas",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema",
+					"2026-07-05",
 				),
 			},
 			{
@@ -452,13 +524,85 @@ export const zema: Candidate = 	{
 			},
 			{
 				issue: dv(
+					"Fundo Eleitoral",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
+					"Impeachment Dilma",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
+					"Infraestrutura",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
+					"Meio Ambiente",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
+					"Mobilidade Urbana",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
+					"PEC do Teto",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
 					"Previdência",
-					"https://pt.wikipedia.org/wiki/Romeu_Zema#Histórico_do_governo",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema#Hist%C3%B3rico_do_governo",
 					"2026-06-26",
 				),
 				position: dv(
 					"Aprovou reforma da previdência estadual em MG: idade mínima 65h/62m. Defende regras nacionais mais rígidas.",
-					"https://pt.wikipedia.org/wiki/Romeu_Zema#Histórico_do_governo",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema#Hist%C3%B3rico_do_governo",
 					"2026-06-26",
 				),
 			},
@@ -476,6 +620,54 @@ export const zema: Candidate = 	{
 			},
 			{
 				issue: dv(
+					"Reforma Agrária/Indígenas",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
+					"Reforma do STF",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
+					"Reforma Política",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
+					"Reforma Trabalhista",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
 					"Reforma Tributária",
 					"https://pt.wikipedia.org/wiki/Romeu_Zema#Posicionamentos",
 					"2026-06-26",
@@ -488,6 +680,30 @@ export const zema: Candidate = 	{
 			},
 			{
 				issue: dv(
+					"Regulação Mídia e Redes",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
+					"Relações Exteriores",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
 					"STF",
 					"https://ndmais.com.br/politica/zema-diz-dormir-bem-apos-ataques-a-gilmar-mendes-dever-cumprido",
 					"2026-06-26",
@@ -496,6 +712,18 @@ export const zema: Candidate = 	{
 					"Diz 'dormir bem' após ataques a Gilmar Mendes. Critica STF como 'subserviente ao governo federal'. Defende mandato de 15 anos para ministros.",
 					"https://ndmais.com.br/politica/zema-diz-dormir-bem-apos-ataques-a-gilmar-mendes-dever-cumprido",
 					"2026-06-26",
+				),
+			},
+			{
+				issue: dv(
+					"Saúde",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema",
+					"2026-07-05",
 				),
 			},
 			{
@@ -533,8 +761,32 @@ export const zema: Candidate = 	{
 					"https://g1.globo.com/politica/eleicoes/2026/noticia/2026/05/01/zema-trabalho-criancas.ghtml",
 					"2026-06-28",
 				),
-			}
-		
-],
+			},
+			{
+				issue: dv(
+					"Trabalhista",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
+					"Zona Franca de Manaus",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema",
+					"2026-07-05",
+				),
+			},
+
+		],
 	}
 

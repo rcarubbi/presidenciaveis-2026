@@ -295,6 +295,42 @@ export const renan: Candidate = 	{
 		positions: [
 			{
 				issue: dv(
+					"Aborto",
+					"https://pt.wikipedia.org/wiki/Renan_Santos",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Renan_Santos",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
+					"Agronegócio",
+					"https://pt.wikipedia.org/wiki/Renan_Santos",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Renan_Santos",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
+					"Apoios Regionais",
+					"https://pt.wikipedia.org/wiki/Renan_Santos",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Renan_Santos",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
 					"Armas",
 					"https://valor.globo.com/politica/noticia/2026/05/14/escandalo-envolvendo-flavio-bolsonaro-leva-a-aumento-de-interesse-por-renan-santos-sabia-quem-e.ghtml",
 					"2026-06-26",
@@ -315,6 +351,30 @@ export const renan: Candidate = 	{
 					'"Mutirão anti-Bolsa Família". Substituir benefício por frentes de trabalho. Homens e mulheres saudáveis devem trabalhar. Crítico do custo do BF retirado do salário de quem paga imposto.',
 					"https://www.bbc.com/portuguese/articles/cn7846447j3o",
 					"2026-04-28",
+				),
+			},
+			{
+				issue: dv(
+					"Bolsa Família / Programas Sociais",
+					"https://pt.wikipedia.org/wiki/Renan_Santos",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Renan_Santos",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
+					"Casamento LGBT+",
+					"https://pt.wikipedia.org/wiki/Renan_Santos",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Renan_Santos",
+					"2026-07-05",
 				),
 			},
 			{
@@ -379,6 +439,18 @@ export const renan: Candidate = 	{
 			},
 			{
 				issue: dv(
+					"Impeachment Dilma",
+					"https://pt.wikipedia.org/wiki/Renan_Santos",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Renan_Santos",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
 					"Infraestrutura",
 					"https://www.estadao.com.br/politica/renan-santos-vira-milei-brasileiro-para-disputar-a-direita-com-flavio-a-quem-chama-de-judas/",
 					"2026-03-29",
@@ -387,6 +459,42 @@ export const renan: Candidate = 	{
 					"Prioridade. Estatuto Nacional da Desfavelização. Polos tecnológicos/data centers Nordeste. Zonas econômicas especiais.",
 					"https://www.estadao.com.br/politica/renan-santos-vira-milei-brasileiro-para-disputar-a-direita-com-flavio-a-quem-chama-de-judas/",
 					"2026-03-29",
+				),
+			},
+			{
+				issue: dv(
+					"Meio Ambiente",
+					"https://pt.wikipedia.org/wiki/Renan_Santos",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Renan_Santos",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
+					"Mobilidade Urbana",
+					"https://pt.wikipedia.org/wiki/Renan_Santos",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Renan_Santos",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
+					"PEC do Teto",
+					"https://pt.wikipedia.org/wiki/Renan_Santos",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Renan_Santos",
+					"2026-07-05",
 				),
 			},
 			{
@@ -415,6 +523,30 @@ export const renan: Candidate = 	{
 			},
 			{
 				issue: dv(
+					"Reforma Agrária/Indígenas",
+					"https://pt.wikipedia.org/wiki/Renan_Santos",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Renan_Santos",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
+					"Reforma do STF",
+					"https://pt.wikipedia.org/wiki/Renan_Santos",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Renan_Santos",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
 					"Reforma Política",
 					"https://www.gazetasp.com.br/politica/quem-e-renan-santos-presidenciavel-partido-missao/",
 					"2026-05-28",
@@ -423,6 +555,42 @@ export const renan: Candidate = 	{
 					"Anticartel partidário. Lei Responsabilidade Gerencial. Fusão municípios. Condicionar fundo partidário/emendas a desempenho.",
 					"https://www.gazetasp.com.br/politica/quem-e-renan-santos-presidenciavel-partido-missao/",
 					"2026-05-28",
+				),
+			},
+			{
+				issue: dv(
+					"Reforma Trabalhista",
+					"https://pt.wikipedia.org/wiki/Renan_Santos",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Renan_Santos",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
+					"Reforma Tributária",
+					"https://pt.wikipedia.org/wiki/Renan_Santos",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Renan_Santos",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
+					"Regulação Mídia e Redes",
+					"https://pt.wikipedia.org/wiki/Renan_Santos",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Renan_Santos",
+					"2026-07-05",
 				),
 			},
 			{
@@ -439,6 +607,30 @@ export const renan: Candidate = 	{
 			},
 			{
 				issue: dv(
+					"STF",
+					"https://pt.wikipedia.org/wiki/Renan_Santos",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Renan_Santos",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
+					"Saúde",
+					"https://pt.wikipedia.org/wiki/Renan_Santos",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Renan_Santos",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
 					"Segurança Pública",
 					"https://www.bbc.com/portuguese/articles/cn7846447j3o",
 					"2026-04-28",
@@ -447,6 +639,42 @@ export const renan: Candidate = 	{
 					'Endurecimento radical. "Prendeu, matou". Pena de morte p/ hediondos. Direito Penal do Inimigo contra facções.',
 					"https://www.bbc.com/portuguese/articles/cn7846447j3o",
 					"2026-04-28",
+				),
+			},
+			{
+				issue: dv(
+					"Separatismo Sul-Sudeste",
+					"https://pt.wikipedia.org/wiki/Renan_Santos",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Renan_Santos",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
+					"Trabalho Infantil",
+					"https://pt.wikipedia.org/wiki/Renan_Santos",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Renan_Santos",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
+					"Trabalhista",
+					"https://pt.wikipedia.org/wiki/Renan_Santos",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Renan_Santos",
+					"2026-07-05",
 				),
 			},
 			{
@@ -460,7 +688,8 @@ export const renan: Candidate = 	{
 					"https://www.estadao.com.br/politica/renan-santos-bolsonarismo-morreu-e-flavio-e-inviavel-na-disputa-contra-lula",
 					"2026-06-24",
 				),
-			}
-],
+			},
+
+		],
 	}
 
