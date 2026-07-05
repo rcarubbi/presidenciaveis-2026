@@ -28,7 +28,7 @@ export function HeroBanner({ candidate: c }: HeroBannerProps) {
                 background: `linear-gradient(to top, ${color} 0%, ${color}cc 35%, ${color}55 65%, transparent 85%)`,
               }}
             />
-            <span className="absolute right-5 top-5 z-10 text-[clamp(5rem,12vw,10rem)] font-black leading-none text-white/10 select-none pointer-events-none">
+            <span className="absolute right-0 top-0 z-10 text-[clamp(7rem,18vw,38rem)] font-black leading-none text-white/10 select-none pointer-events-none">
               {c.party.number}
             </span>
           </div>
@@ -37,7 +37,7 @@ export function HeroBanner({ candidate: c }: HeroBannerProps) {
               <img
                 src={c.party.logo}
                 alt={c.party.name.value}
-                className="h-12 max-w-24 object-contain drop-shadow-lg"
+                className="h-12 md:h-16 max-w-24 md:max-w-36 object-contain drop-shadow-lg"
               />
             </div>
             <div className="absolute inset-0 flex flex-col justify-end p-6 md:p-10">
