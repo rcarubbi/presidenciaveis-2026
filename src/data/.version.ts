@@ -10,9 +10,13 @@ export interface DataVersionInfo {
 }
 
 export const dataVersion: DataVersionInfo = {
-	version: "2026-07-06T16:30:00Z",
-	updatedAt: "2026-07-06T16:30:00Z",
+	version: "2026-07-06T22:00:00Z",
+	updatedAt: "2026-07-06T22:00:00Z",
 	changes: [
+		{
+			emoji: "🎥",
+			label: "Renan: vídeos — 9 novos vídeos (05/jul): Cortadas do Firmino, RedeTV, Bandeirantes RS, Renan lidera jovens",
+		},
 		{
 			emoji: "👤",
 			label: "Flávio: timeline — crise c/ Michelle, Bia Kicis cotada vice, audiência tarifas EUA",

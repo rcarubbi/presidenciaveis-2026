@@ -8,6 +8,132 @@ export const renanMedia: MediaCategory[] = [
 			items: [
 				{
 					title: dv(
+						"RENAN SANTOS detona família de JOÃO CAMPOS: eram escravocratas",
+						"https://www.youtube.com/watch?v=shHzdJZ0APo",
+						"2026-07-05",
+					),
+					description: dv(
+						"Em entrevista ao podcast Cortadas do Firmino, o pré-candidato à presidência, Renan Santos, afirmou que algumas famílias têm histórico de escravidão.",
+						"https://www.youtube.com/watch?v=shHzdJZ0APo",
+						"2026-07-05",
+					),
+					youtubeId: "shHzdJZ0APo",
+					category: "entrevistas",
+				},
+				{
+					title: dv(
+						"RENAN SANTOS DETONA BOLSONARO E EXPLICA COMO VENCERÁ EM 2026",
+						"https://www.youtube.com/watch?v=enx8RcLG-U8",
+						"2026-07-05",
+					),
+					description: dv(
+						"Trecho de uma entrevista à RedeTV Notícias. Renan Santos apresenta sua visão para a eleição presidencial de 2026.",
+						"https://www.youtube.com/watch?v=enx8RcLG-U8",
+						"2026-07-05",
+					),
+					youtubeId: "enx8RcLG-U8",
+					category: "entrevistas",
+				},
+				{
+					title: dv(
+						"RENAN SANTOS manda a real sobre os movimentos feminista, LGBT e raciais.",
+						"https://www.youtube.com/watch?v=e8KLM1G-2M0",
+						"2026-07-05",
+					),
+					description: dv(
+						"Em entrevista ao podcast Cortadas do Firmino, o pré-candidato à presidência, Renan Santos, disse sua visão sobre movimentos sociais.",
+						"https://www.youtube.com/watch?v=e8KLM1G-2M0",
+						"2026-07-05",
+					),
+					youtubeId: "e8KLM1G-2M0",
+					category: "entrevistas",
+				},
+				{
+					title: dv(
+						"RENAN SANTOS fala SOBRE as MANIFESTAÇÕES de 8 de JANEIRO",
+						"https://www.youtube.com/watch?v=l8_cQ4ylFkM",
+						"2026-07-05",
+					),
+					description: dv(
+						"Corte retirado da entrevista de Renan Santos ao canal do Firmino. Renan fala o que pensa sobre as manifestações de 8 de janeiro.",
+						"https://www.youtube.com/watch?v=l8_cQ4ylFkM",
+						"2026-07-05",
+					),
+					youtubeId: "l8_cQ4ylFkM",
+					category: "entrevistas",
+				},
+				{
+					title: dv(
+						"Renan lidera pesquisa entre os jovens e encosta no segundo turno",
+						"https://www.youtube.com/watch?v=racHAk9NYxs",
+						"2026-07-05",
+					),
+					description: dv(
+						"Nesta entrevista exclusiva, Renan Santos apresenta seu plano de governo para o Brasil e expõe os fracassos estruturais dos governos anteriores.",
+						"https://www.youtube.com/watch?v=racHAk9NYxs",
+						"2026-07-05",
+					),
+					youtubeId: "racHAk9NYxs",
+					category: "entrevistas",
+				},
+				{
+					title: dv(
+						"Firmino questiona o processo de Renan Santos na justiça!",
+						"https://www.youtube.com/watch?v=956dx-LMl2s",
+						"2026-07-05",
+					),
+					description: dv(
+						"Na entrevista do canal Cortadas do Firmino, Renan Santos é questionado sobre uma acusação grave que sofreu em antigo processo.",
+						"https://www.youtube.com/watch?v=956dx-LMl2s",
+						"2026-07-05",
+					),
+					youtubeId: "956dx-LMl2s",
+					category: "entrevistas",
+				},
+				{
+					title: dv(
+						"Firmino questiona RENAN SANTOS sobre tema polêmico",
+						"https://www.youtube.com/watch?v=HUvYjZnxGpI",
+						"2026-07-05",
+					),
+					description: dv(
+						"Durante sua entrevista com Firmino, Renan Santos respondeu a perguntas sobre a polêmica com o Deputado Guto Zacarias e outros temas.",
+						"https://www.youtube.com/watch?v=HUvYjZnxGpI",
+						"2026-07-05",
+					),
+					youtubeId: "HUvYjZnxGpI",
+					category: "entrevistas",
+				},
+				{
+					title: dv(
+						"Essa entrevista acabou saindo do script com RENAN SANTOS",
+						"https://www.youtube.com/watch?v=MbjS4V706QY",
+						"2026-07-05",
+					),
+					description: dv(
+						"Os melhores cortes das principais figuras do Partido Missão — discursos, debates e momentos marcantes reunidos em um só lugar.",
+						"https://www.youtube.com/watch?v=MbjS4V706QY",
+						"2026-07-05",
+					),
+					youtubeId: "MbjS4V706QY",
+					category: "entrevistas",
+				},
+				{
+					title: dv(
+						"Renan Santos revela sua visão para o Brasil | Entrevista na Bandeirantes RS",
+						"https://www.youtube.com/watch?v=tJBCs86H7GU",
+						"2026-07-05",
+					),
+					description: dv(
+						"Neste corte, Renan Santos comenta o cenário político nacional durante entrevista concedida ao programa Acontece, da Rádio Bandeirantes RS.",
+						"https://www.youtube.com/watch?v=tJBCs86H7GU",
+						"2026-07-05",
+					),
+					youtubeId: "tJBCs86H7GU",
+					category: "entrevistas",
+				},
+				{
+					title: dv(
 						"Renan Santos no SBT News — abre o jogo sobre as eleições 2026",
 						"https://www.youtube.com/watch?v=1vGwMWAyhs4",
 						"2026-07-03",
