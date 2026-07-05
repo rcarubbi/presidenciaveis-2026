@@ -26,12 +26,12 @@ validate renan sources
 Se omitido, informar erro e listar opcoes validas.
 
 | ID | Nome | Arquivo dados | Arquivo propostas |
-|---|---|---|---|
-| `lula` | Lula | `src/data/lula.ts` | `src/data/proposals-lula.ts` |
-| `flavio` | Flávio Bolsonaro | `src/data/flavio.ts` | `src/data/proposals-flavio.ts` |
-| `renan` | Renan Santos | `src/data/renan.ts` | `src/data/proposals-renan.ts` |
-| `caiado` | Ronaldo Caiado | `src/data/caiado.ts` | `src/data/proposals-caiado.ts` |
-| `zema` | Romeu Zema | `src/data/zema.ts` | `src/data/proposals-zema.ts` |
+|---|---|---|---|---|
+| `lula` | Lula (Luiz Inácio Lula da Silva, PT) | `src/data/lula.ts` | `src/data/proposals-lula.ts` |
+| `flavio` | Flávio Bolsonaro (Flávio Nantes Bolsonaro, PL) | `src/data/flavio.ts` | `src/data/proposals-flavio.ts` |
+| `renan` | Renan Santos (Renan Antônio Ferreira dos Santos, Missão) | `src/data/renan.ts` | `src/data/proposals-renan.ts` |
+| `caiado` | Ronaldo Caiado (Ronaldo Ramos Caiado, União Brasil) | `src/data/caiado.ts` | `src/data/proposals-caiado.ts` |
+| `zema` | Romeu Zema (Romeu Zema Neto, NOVO) | `src/data/zema.ts` | `src/data/proposals-zema.ts` |
 
 ## Regras Obrigatorias
 
