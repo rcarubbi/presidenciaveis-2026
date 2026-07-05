@@ -306,6 +306,18 @@ export const lula: Candidate = 	{
 					"2026-04-26",
 				),
 			},
+			{
+				year: dv(
+					"2026",
+					"https://g1.globo.com/politica/noticia/2026/06/24/jaques-wagner-pede-licenca-da-lideranca-do-governo-do-senado-apos-operacao-da-pf.ghtml",
+					"2026-06-24",
+				),
+				event: dv(
+					"Lula designa Teresa Leitão líder do governo no Senado após Wagner se afastar por investigação da PF",
+					"https://g1.globo.com/politica/noticia/2026/06/24/jaques-wagner-pede-licenca-da-lideranca-do-governo-do-senado-apos-operacao-da-pf.ghtml",
+					"2026-06-24",
+				),
+			},
 		],
 		electionResults: [
 			{
@@ -621,9 +633,9 @@ export const lula: Candidate = 	{
 					"2026-06-18",
 				),
 				description: dv(
-					"PF investiga esquema bilionário Banco Master. Alvo: Jaques Wagner (líder governo Senado), não Lula.",
-					"https://www.bbc.com/portuguese/articles/cp36nzdvyp4o",
-					"2026-06-18",
+					"PF investiga esquema bilionário Banco Master. Alvo: Jaques Wagner (ex-líder governo Senado, afastou-se 24/06), não Lula.",
+					"https://g1.globo.com/politica/noticia/2026/06/24/jaques-wagner-pede-licenca-da-lideranca-do-governo-do-senado-apos-operacao-da-pf.ghtml",
+					"2026-06-24",
 				),
 				value: dv(
 					"—",

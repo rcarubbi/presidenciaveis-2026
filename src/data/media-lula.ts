@@ -3,9 +3,43 @@ import { dv } from "@/lib/dataValue";
 
 export const lulaMedia: MediaCategory[] = [
 		{
-			id: "entrevistas",
-			label: "Entrevistas e Sabatinas",
+			id: "2026-07",
+			label: "Julho de 2026",
 			items: [
+				{
+					title: dv(
+						"Presidente Lula na inauguração de túnel para transposição das águas do Rio São Francisco para o RN",
+						"https://www.youtube.com/watch?v=inbBmZaRgs0",
+						"2026-07-02",
+					),
+					description: dv(
+						"O presidente Lula participa da inauguração de túnel para transposição das águas do Rio São Francisco, levando água ao Rio Grande do Norte.",
+						"https://www.youtube.com/watch?v=inbBmZaRgs0",
+						"2026-07-02",
+					),
+					youtubeId: "inbBmZaRgs0",
+					category: "campanha",
+				},
+			],
+		},
+		{
+			id: "2026-06",
+			label: "Junho de 2026",
+			items: [
+				{
+					title: dv(
+						"Presidente Lula discursa na 68ª Cúpula de Presidentes do Mercosul",
+						"https://www.youtube.com/watch?v=NflxhONHvG8",
+						"2026-06-30",
+					),
+					description: dv(
+						"O presidente Lula discursa na 68ª Cúpula de Presidentes do Mercosul, abordando integração regional, parceria econômica com o Japão e comércio internacional.",
+						"https://www.youtube.com/watch?v=NflxhONHvG8",
+						"2026-06-30",
+					),
+					youtubeId: "NflxhONHvG8",
+					category: "campanha",
+				},
 				{
 					title: dv(
 						"Lula na CNN Mercado — entrevista sobre tarifas e comércio internacional",
@@ -20,6 +54,12 @@ export const lulaMedia: MediaCategory[] = [
 					youtubeId: "KwUOhAlb5zc",
 					category: "entrevistas",
 				},
+			],
+		},
+		{
+			id: "2026-05",
+			label: "Maio de 2026",
+			items: [
 				{
 					title: dv(
 						"Lula no EL PAÍS Brasil — entrevista completa sobre política internacional",
@@ -34,6 +74,12 @@ export const lulaMedia: MediaCategory[] = [
 					youtubeId: "HkG2J_0jxGw",
 					category: "entrevistas",
 				},
+			],
+		},
+		{
+			id: "2026-02",
+			label: "Fevereiro de 2026",
+			items: [
 				{
 					title: dv(
 						"Lula no UOL News — entrevista com Daniela Lima sobre economia",
@@ -48,6 +94,12 @@ export const lulaMedia: MediaCategory[] = [
 					youtubeId: "01BYnHLyA2A",
 					category: "entrevistas",
 				},
+			],
+		},
+		{
+			id: "2025-11",
+			label: "Novembro de 2025",
+			items: [
 				{
 					title: dv(
 						"Lula na Rede Amazônica — entrevista sobre a região Norte",
@@ -62,6 +114,12 @@ export const lulaMedia: MediaCategory[] = [
 					youtubeId: "LzlDpCTSQsg",
 					category: "entrevistas",
 				},
+			],
+		},
+		{
+			id: "2025-09",
+			label: "Setembro de 2025",
+			items: [
 				{
 					title: dv(
 						"Lula no SBT Brasil — entrevista sobre economia e política",
@@ -104,6 +162,12 @@ export const lulaMedia: MediaCategory[] = [
 					youtubeId: "eBih5lMY8kU",
 					category: "entrevistas",
 				},
+			],
+		},
+		{
+			id: "2025-08",
+			label: "Agosto de 2025",
+			items: [
 				{
 					title: dv(
 						"Lula no Estado de Minas — entrevista exclusiva ao veículo mineiro",
@@ -118,6 +182,12 @@ export const lulaMedia: MediaCategory[] = [
 					youtubeId: "HkDDTzUNGxk",
 					category: "entrevistas",
 				},
+			],
+		},
+		{
+			id: "2025-07",
+			label: "Julho de 2025",
+			items: [
 				{
 					title: dv(
 						"Lula na CNN Amanpour — entrevista sobre tarifas e relação com Trump",
@@ -160,6 +230,12 @@ export const lulaMedia: MediaCategory[] = [
 					youtubeId: "wBEjdV3JoIo",
 					category: "entrevistas",
 				},
+			],
+		},
+		{
+			id: "2025-06",
+			label: "Junho de 2025",
+			items: [
 				{
 					title: dv(
 						"Lula no Mano a Mano com Mano Brown — entrevista completa",
@@ -174,6 +250,12 @@ export const lulaMedia: MediaCategory[] = [
 					youtubeId: "z41gz9DuS3E",
 					category: "entrevistas",
 				},
+			],
+		},
+		{
+			id: "2025-01",
+			label: "Janeiro de 2025",
+			items: [
 				{
 					title: dv(
 						"Lula na LIVE CNN — primeira entrevista à imprensa em 2025",
@@ -188,6 +270,32 @@ export const lulaMedia: MediaCategory[] = [
 					youtubeId: "AZ1ulkgaitg",
 					category: "entrevistas",
 				},
+			],
+		},
+		{
+			id: "2023-12",
+			label: "Dezembro de 2023",
+			items: [
+				{
+					title: dv(
+						"Lula no ICL — entrevista sobre os 8 anos do golpe e o futuro do Brasil",
+						"https://www.youtube.com/watch?v=rjq0ms0NQ-0",
+						"2023-12-12",
+					),
+					description: dv(
+						"O presidente Lula concede entrevista ao Instituto Conhecimento Liberta (ICL) sobre os 8 anos do processo de impeachment, a economia brasileira e os desafios do país.",
+						"https://www.youtube.com/watch?v=rjq0ms0NQ-0",
+						"2023-12-12",
+					),
+					youtubeId: "rjq0ms0NQ-0",
+					category: "entrevistas",
+				},
+			],
+		},
+		{
+			id: "2022-10",
+			label: "Outubro de 2022",
+			items: [
 				{
 					title: dv(
 						"Lula no Flow Podcast — entrevista histórica com 1 milhão de espectadores simultâneos",
@@ -202,6 +310,12 @@ export const lulaMedia: MediaCategory[] = [
 					youtubeId: "OAu9KJFbMhU",
 					category: "entrevistas",
 				},
+			],
+		},
+		{
+			id: "2021-12",
+			label: "Dezembro de 2021",
+			items: [
 				{
 					title: dv(
 						"Lula no Podpah — entrevista sobre carreira, PT e planos para o Brasil",
@@ -214,40 +328,6 @@ export const lulaMedia: MediaCategory[] = [
 						"2021-12-02",
 					),
 					youtubeId: "r4JJh0lbYHU",
-					category: "entrevistas",
-				},
-			],
-		},
-		{
-			id: "campanha",
-			label: "Campanha e Discursos",
-			items: [
-				{
-					title: dv(
-						"Presidente Lula na inauguração de túnel para transposição das águas do Rio São Francisco para o RN",
-						"https://www.youtube.com/watch?v=inbBmZaRgs0",
-						"2026-07-02",
-					),
-					description: dv(
-						"O presidente Lula participa da inauguração de túnel para transposição das águas do Rio São Francisco, levando água ao Rio Grande do Norte.",
-						"https://www.youtube.com/watch?v=inbBmZaRgs0",
-						"2026-07-02",
-					),
-					youtubeId: "inbBmZaRgs0",
-					category: "campanha",
-				},
-				{
-					title: dv(
-						"Lula no ICL — entrevista sobre os 8 anos do golpe e o futuro do Brasil",
-						"https://www.youtube.com/watch?v=rjq0ms0NQ-0",
-						"2023-12-12",
-					),
-					description: dv(
-						"O presidente Lula concede entrevista ao Instituto Conhecimento Liberta (ICL) sobre os 8 anos do processo de impeachment, a economia brasileira e os desafios do país.",
-						"https://www.youtube.com/watch?v=rjq0ms0NQ-0",
-						"2023-12-12",
-					),
-					youtubeId: "rjq0ms0NQ-0",
 					category: "entrevistas",
 				},
 			],

@@ -3,8 +3,8 @@ import { dv } from "@/lib/dataValue";
 
 export const flavioMedia: MediaCategory[] = [
 		{
-			id: "entrevistas",
-			label: "Entrevistas e Sabatinas",
+			id: "2026-07",
+			label: "Julho de 2026",
 			items: [
 				{
 					title: dv(
@@ -34,6 +34,12 @@ export const flavioMedia: MediaCategory[] = [
 					youtubeId: "Xf4itGf-Lhk",
 					category: "entrevistas",
 				},
+			],
+		},
+		{
+			id: "2026-06",
+			label: "Junho de 2026",
+			items: [
 				{
 					title: dv(
 						"Flávio Bolsonaro fala sobre Michelle, pedido a Donald Trump e critica Lula",
@@ -61,6 +67,20 @@ export const flavioMedia: MediaCategory[] = [
 					),
 					youtubeId: "rZKXt-EmxtA",
 					category: "entrevistas",
+				},
+				{
+					title: dv(
+						"Flávio Bolsonaro diz que não irá em debates que Renan Santos comparecer",
+						"https://www.youtube.com/watch?v=afJy8jAxOVo",
+						"2026-06-22",
+					),
+					description: dv(
+						"O pré-candidato afirma à Jovem Pan que não participará de debates nos quais o pré-candidato Renan Santos (Partido Missão) estiver presente, gerando polêmica no cenário eleitoral.",
+						"https://www.youtube.com/watch?v=afJy8jAxOVo",
+						"2026-06-22",
+					),
+					youtubeId: "afJy8jAxOVo",
+					category: "debates",
 				},
 				{
 					title: dv(
@@ -134,6 +154,26 @@ export const flavioMedia: MediaCategory[] = [
 				},
 				{
 					title: dv(
+						"Flávio Bolsonaro na Marcha Para Jesus em São Paulo",
+						"https://www.youtube.com/watch?v=7LYjR8TMzuA",
+						"2026-06-04",
+					),
+					description: dv(
+						"O pré-candidato participa da Marcha Para Jesus em São Paulo, evento religioso que reúne milhares de fiéis, e discursa sobre fé e política.",
+						"https://www.youtube.com/watch?v=7LYjR8TMzuA",
+						"2026-06-04",
+					),
+					youtubeId: "7LYjR8TMzuA",
+					category: "campanha",
+				},
+			],
+		},
+		{
+			id: "2026-05",
+			label: "Maio de 2026",
+			items: [
+				{
+					title: dv(
 						"Flávio Bolsonaro na Revista Oeste — coletiva após encontro com Trump",
 						"https://www.youtube.com/watch?v=Eeq-kTaz_Xc",
 						"2026-05-26",
@@ -160,6 +200,12 @@ export const flavioMedia: MediaCategory[] = [
 					youtubeId: "5ZlB2qBdeT4",
 					category: "entrevistas",
 				},
+			],
+		},
+		{
+			id: "2026-04",
+			label: "Abril de 2026",
+			items: [
 				{
 					title: dv(
 						"Flávio Bolsonaro na Jovem Pan 3 em 1 — resposta a Nikolas e união da direita",
@@ -190,6 +236,26 @@ export const flavioMedia: MediaCategory[] = [
 				},
 				{
 					title: dv(
+						'Flávio Bolsonaro no Fórum da Liberdade — "Brasil tem jeito, sim"',
+						"https://www.youtube.com/watch?v=RaB5hqrGX5M",
+						"2026-04-10",
+					),
+					description: dv(
+						"O pré-candidato discursa no Fórum da Liberdade afirmando que o Brasil tem jeito, apresentando suas propostas de governo e visão de país.",
+						"https://www.youtube.com/watch?v=RaB5hqrGX5M",
+						"2026-04-10",
+					),
+					youtubeId: "RaB5hqrGX5M",
+					category: "campanha",
+				},
+			],
+		},
+		{
+			id: "2026-03",
+			label: "Março de 2026",
+			items: [
+				{
+					title: dv(
 						"Flávio Bolsonaro na Jovem Pan — entrevista sobre pré-candidatura",
 						"https://www.youtube.com/watch?v=-bM_EHOh5QY",
 						"2026-03-15",
@@ -202,6 +268,12 @@ export const flavioMedia: MediaCategory[] = [
 					youtubeId: "-bM_EHOh5QY",
 					category: "entrevistas",
 				},
+			],
+		},
+		{
+			id: "2026-02",
+			label: "Fevereiro de 2026",
+			items: [
 				{
 					title: dv(
 						"Flávio Bolsonaro na CEO Conference 2026 — política e cenário eleitoral",
@@ -230,6 +302,12 @@ export const flavioMedia: MediaCategory[] = [
 					youtubeId: "T2z6wQgRG88",
 					category: "entrevistas",
 				},
+			],
+		},
+		{
+			id: "2025-12",
+			label: "Dezembro de 2025",
+			items: [
 				{
 					title: dv(
 						"Flávio Bolsonaro no VEJA+ Em Pauta — pré-candidatura, anistia e STF",
@@ -258,6 +336,12 @@ export const flavioMedia: MediaCategory[] = [
 					youtubeId: "sb38vcI-8cY",
 					category: "entrevistas",
 				},
+			],
+		},
+		{
+			id: "2025-06",
+			label: "Junho de 2025",
+			items: [
 				{
 					title: dv(
 						"Flávio Bolsonaro na Folha de S.Paulo — eventual candidatura e indulto",
@@ -271,60 +355,6 @@ export const flavioMedia: MediaCategory[] = [
 					),
 					youtubeId: "HjGhcK09gJI",
 					category: "entrevistas",
-				},
-			],
-		},
-		{
-			id: "debates",
-			label: "Debates e Sabatinas",
-			items: [
-				{
-					title: dv(
-						"Flávio Bolsonaro diz que não irá em debates que Renan Santos comparecer",
-						"https://www.youtube.com/watch?v=afJy8jAxOVo",
-						"2026-06-22",
-					),
-					description: dv(
-						"O pré-candidato afirma à Jovem Pan que não participará de debates nos quais o pré-candidato Renan Santos (Partido Missão) estiver presente, gerando polêmica no cenário eleitoral.",
-						"https://www.youtube.com/watch?v=afJy8jAxOVo",
-						"2026-06-22",
-					),
-					youtubeId: "afJy8jAxOVo",
-					category: "debates",
-				},
-			],
-		},
-		{
-			id: "campanha",
-			label: "Campanha e Discursos",
-			items: [
-				{
-					title: dv(
-						"Flávio Bolsonaro na Marcha Para Jesus em São Paulo",
-						"https://www.youtube.com/watch?v=7LYjR8TMzuA",
-						"2026-06-04",
-					),
-					description: dv(
-						"O pré-candidato participa da Marcha Para Jesus em São Paulo, evento religioso que reúne milhares de fiéis, e discursa sobre fé e política.",
-						"https://www.youtube.com/watch?v=7LYjR8TMzuA",
-						"2026-06-04",
-					),
-					youtubeId: "7LYjR8TMzuA",
-					category: "campanha",
-				},
-				{
-					title: dv(
-						'Flávio Bolsonaro no Fórum da Liberdade — "Brasil tem jeito, sim"',
-						"https://www.youtube.com/watch?v=RaB5hqrGX5M",
-						"2026-04-10",
-					),
-					description: dv(
-						"O pré-candidato discursa no Fórum da Liberdade afirmando que o Brasil tem jeito, apresentando suas propostas de governo e visão de país.",
-						"https://www.youtube.com/watch?v=RaB5hqrGX5M",
-						"2026-04-10",
-					),
-					youtubeId: "RaB5hqrGX5M",
-					category: "campanha",
 				},
 			],
 		},

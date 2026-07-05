@@ -3,8 +3,8 @@ import { dv } from "@/lib/dataValue";
 
 export const zemaMedia: MediaCategory[] = [
 		{
-			id: "entrevistas",
-			label: "Entrevistas e Sabatinas",
+			id: "2026-07",
+			label: "Julho de 2026",
 			items: [
 				{
 					title: dv(
@@ -20,6 +20,12 @@ export const zemaMedia: MediaCategory[] = [
 					youtubeId: "TWzMeA0MrJ0",
 					category: "entrevistas",
 				},
+			],
+		},
+		{
+			id: "2026-06",
+			label: "Junho de 2026",
+			items: [
 				{
 					title: dv(
 						"Romeu Zema no Arena Oeste — entrevista Revista Oeste",
@@ -174,6 +180,26 @@ export const zemaMedia: MediaCategory[] = [
 					youtubeId: "7IIZZ_cF-TE",
 					category: "entrevistas",
 				},
+			],
+		},
+		{
+			id: "2026-05",
+			label: "Maio de 2026",
+			items: [
+				{
+					title: dv(
+						"Zema no Café com Ferri — caso Vorcaro e direita pós-Bolsonaro",
+						"https://www.youtube.com/watch?v=AzQxZ9r8l08",
+						"2026-05-22",
+					),
+					description: dv(
+						"O pré-candidato fala sem rodeios sobre o escândalo Vorcaro, a direita após Bolsonaro e suas propostas econômicas para o Brasil.",
+						"https://www.youtube.com/watch?v=AzQxZ9r8l08",
+						"2026-05-22",
+					),
+					youtubeId: "AzQxZ9r8l08",
+					category: "campanha",
+				},
 				{
 					title: dv(
 						"Zema no Flow News — pré-campanha e propostas para 2026",
@@ -186,6 +212,34 @@ export const zemaMedia: MediaCategory[] = [
 						"2026-05-22",
 					),
 					youtubeId: "688n7zJ6bME",
+					category: "entrevistas",
+				},
+				{
+					title: dv(
+						"Zema e Caiado planejam aliança para 2026 — chapa única?",
+						"https://www.youtube.com/watch?v=I2ALi43v__I",
+						"2026-05-10",
+					),
+					description: dv(
+						"Os governadores Romeu Zema e Ronaldo Caiado admitem conversas sobre uma possível aliança para as eleições presidenciais de 2026.",
+						"https://www.youtube.com/watch?v=I2ALi43v__I",
+						"2026-05-10",
+					),
+					youtubeId: "I2ALi43v__I",
+					category: "campanha",
+				},
+				{
+					title: dv(
+						"Zema no Pânico (Jovem Pan) — polarização e saída (2026)",
+						"https://www.youtube.com/watch?v=HNX-cB-ZKOw",
+						"2026-05-10",
+					),
+					description: dv(
+						"O pré-candidato participa do programa Pânico da Jovem Pan discutindo a polarização entre Lula e Bolsonaro e o futuro da direita.",
+						"https://www.youtube.com/watch?v=HNX-cB-ZKOw",
+						"2026-05-10",
+					),
+					youtubeId: "HNX-cB-ZKOw",
 					category: "entrevistas",
 				},
 				{
@@ -230,6 +284,12 @@ export const zemaMedia: MediaCategory[] = [
 					youtubeId: "o0HbJOyIyxE",
 					category: "entrevistas",
 				},
+			],
+		},
+		{
+			id: "2026-04",
+			label: "Abril de 2026",
+			items: [
 				{
 					title: dv(
 						"Zema no Arena Oeste #49 (Revista Oeste) — bastidores da política",
@@ -300,20 +360,12 @@ export const zemaMedia: MediaCategory[] = [
 					youtubeId: "SOabQ3n6d1A",
 					category: "entrevistas",
 				},
-				{
-					title: dv(
-						"Zema no Pânico (Jovem Pan) — polarização e saída (2026)",
-						"https://www.youtube.com/watch?v=HNX-cB-ZKOw",
-						"2026-05-10",
-					),
-					description: dv(
-						"O pré-candidato participa do programa Pânico da Jovem Pan discutindo a polarização entre Lula e Bolsonaro e o futuro da direita.",
-						"https://www.youtube.com/watch?v=HNX-cB-ZKOw",
-						"2026-05-10",
-					),
-					youtubeId: "HNX-cB-ZKOw",
-					category: "entrevistas",
-				},
+			],
+		},
+		{
+			id: "2026-03",
+			label: "Março de 2026",
+			items: [
 				{
 					title: dv(
 						"Zema na Itatiaia — BRICS e política internacional",
@@ -328,6 +380,12 @@ export const zemaMedia: MediaCategory[] = [
 					youtubeId: "eYnpcCjNya8",
 					category: "entrevistas",
 				},
+			],
+		},
+		{
+			id: "2026-02",
+			label: "Fevereiro de 2026",
+			items: [
 				{
 					title: dv(
 						"Zema no Morning Show (Jovem Pan) — direita e eleições",
@@ -342,39 +400,11 @@ export const zemaMedia: MediaCategory[] = [
 					youtubeId: "AATRd-y-_xQ",
 					category: "entrevistas",
 				},
-				{
-					title: dv(
-						"Zema no Papo com Editor (Estadão) — STF e pré-candidatura 2026",
-						"https://www.youtube.com/watch?v=9gLbKylo93g",
-						"2025-07-21",
-					),
-					description: dv(
-						"O governador de Minas Gerais critica o STF como subserviente ao governo federal e discute sua pré-candidatura e as eleições de 2026.",
-						"https://www.youtube.com/watch?v=9gLbKylo93g",
-						"2025-07-21",
-					),
-					youtubeId: "9gLbKylo93g",
-					category: "entrevistas",
-				},
-				{
-					title: dv(
-						"Zema no Pânico (Jovem Pan) — polarização e saída",
-						"https://www.youtube.com/watch?v=PrSLgWdeQFQ",
-						"2025-06-05",
-					),
-					description: dv(
-						"O ex-governador participa do programa Pânico, da Jovem Pan, debatendo a saída da polarização entre Lula e Bolsonaro e o futuro da direita.",
-						"https://www.youtube.com/watch?v=PrSLgWdeQFQ",
-						"2025-06-05",
-					),
-					youtubeId: "PrSLgWdeQFQ",
-					category: "entrevistas",
-				},
 			],
 		},
 		{
-			id: "debates",
-			label: "Debates e Sabatinas",
+			id: "2025-08",
+			label: "Agosto de 2025",
 			items: [
 				{
 					title: dv(
@@ -393,36 +423,42 @@ export const zemaMedia: MediaCategory[] = [
 			],
 		},
 		{
-			id: "campanha",
-			label: "Campanha e Discursos",
+			id: "2025-07",
+			label: "Julho de 2025",
 			items: [
 				{
 					title: dv(
-						"Zema no Café com Ferri — caso Vorcaro e direita pós-Bolsonaro",
-						"https://www.youtube.com/watch?v=AzQxZ9r8l08",
-						"2026-05-22",
+						"Zema no Papo com Editor (Estadão) — STF e pré-candidatura 2026",
+						"https://www.youtube.com/watch?v=9gLbKylo93g",
+						"2025-07-21",
 					),
 					description: dv(
-						"O pré-candidato fala sem rodeios sobre o escândalo Vorcaro, a direita após Bolsonaro e suas propostas econômicas para o Brasil.",
-						"https://www.youtube.com/watch?v=AzQxZ9r8l08",
-						"2026-05-22",
+						"O governador de Minas Gerais critica o STF como subserviente ao governo federal e discute sua pré-candidatura e as eleições de 2026.",
+						"https://www.youtube.com/watch?v=9gLbKylo93g",
+						"2025-07-21",
 					),
-					youtubeId: "AzQxZ9r8l08",
-					category: "campanha",
+					youtubeId: "9gLbKylo93g",
+					category: "entrevistas",
 				},
+			],
+		},
+		{
+			id: "2025-06",
+			label: "Junho de 2025",
+			items: [
 				{
 					title: dv(
-						"Zema e Caiado planejam aliança para 2026 — chapa única?",
-						"https://www.youtube.com/watch?v=I2ALi43v__I",
-						"2026-05-10",
+						"Zema no Pânico (Jovem Pan) — polarização e saída",
+						"https://www.youtube.com/watch?v=PrSLgWdeQFQ",
+						"2025-06-05",
 					),
 					description: dv(
-						"Os governadores Romeu Zema e Ronaldo Caiado admitem conversas sobre uma possível aliança para as eleições presidenciais de 2026.",
-						"https://www.youtube.com/watch?v=I2ALi43v__I",
-						"2026-05-10",
+						"O ex-governador participa do programa Pânico, da Jovem Pan, debatendo a saída da polarização entre Lula e Bolsonaro e o futuro da direita.",
+						"https://www.youtube.com/watch?v=PrSLgWdeQFQ",
+						"2025-06-05",
 					),
-					youtubeId: "I2ALi43v__I",
-					category: "campanha",
+					youtubeId: "PrSLgWdeQFQ",
+					category: "entrevistas",
 				},
 			],
 		},

@@ -3,8 +3,8 @@ import { dv } from "@/lib/dataValue";
 
 export const renanMedia: MediaCategory[] = [
 		{
-			id: "entrevistas",
-			label: "Entrevistas e Sabatinas",
+			id: "2026-07",
+			label: "Julho de 2026",
 			items: [
 				{
 					title: dv(
@@ -188,6 +188,12 @@ export const renanMedia: MediaCategory[] = [
 					youtubeId: "ShHv6X3Bv6Y",
 					category: "entrevistas",
 				},
+			],
+		},
+		{
+			id: "2026-06",
+			label: "Junho de 2026",
+			items: [
 				{
 					title: dv(
 						"Renan Santos na RedeTV! Notícias — entrevista completa",
@@ -232,6 +238,20 @@ export const renanMedia: MediaCategory[] = [
 				},
 				{
 					title: dv(
+						'Renan Santos no Minuto 14 — por que o MBL vai relançar "Não Vai Ter Golpe"',
+						"https://www.youtube.com/watch?v=5PCwqjNg6ZA",
+						"2026-06-13",
+					),
+					description: dv(
+						"O pré-candidato explica no Minuto 14 por que o MBL vai relançar o filme Não Vai Ter Golpe e analisa o cenário político brasileiro.",
+						"https://www.youtube.com/watch?v=5PCwqjNg6ZA",
+						"2026-06-13",
+					),
+					youtubeId: "5PCwqjNg6ZA",
+					category: "debates",
+				},
+				{
+					title: dv(
 						"Renan Santos no Conexões JBFM — bastidores da pré-candidatura",
 						"https://www.youtube.com/watch?v=axvXleeMlEA",
 						"2026-06-10",
@@ -244,6 +264,12 @@ export const renanMedia: MediaCategory[] = [
 					youtubeId: "axvXleeMlEA",
 					category: "entrevistas",
 				},
+			],
+		},
+		{
+			id: "2026-05",
+			label: "Maio de 2026",
+			items: [
 				{
 					title: dv(
 						"Renan Santos na Sabatina Esfera — propostas e visão de país",
@@ -342,6 +368,12 @@ export const renanMedia: MediaCategory[] = [
 					youtubeId: "gvUpvucO8aU",
 					category: "entrevistas",
 				},
+			],
+		},
+		{
+			id: "2026-04",
+			label: "Abril de 2026",
+			items: [
 				{
 					title: dv(
 						"Renan Santos no Frente a Frente (Folha/UOL) — pré-candidatura e propostas",
@@ -412,6 +444,12 @@ export const renanMedia: MediaCategory[] = [
 					youtubeId: "vpUJwdYDh_w",
 					category: "entrevistas",
 				},
+			],
+		},
+		{
+			id: "2026-03",
+			label: "Março de 2026",
+			items: [
 				{
 					title: dv(
 						"Renan Santos no Podcast Conversar — bastidores da política",
@@ -426,6 +464,12 @@ export const renanMedia: MediaCategory[] = [
 					youtubeId: "iQ4q6wFlRvQ",
 					category: "entrevistas",
 				},
+			],
+		},
+		{
+			id: "2026-02",
+			label: "Fevereiro de 2026",
+			items: [
 				{
 					title: dv(
 						"Renan Santos no Flow News #032 — pré-candidatura e plano de governo",
@@ -440,6 +484,12 @@ export const renanMedia: MediaCategory[] = [
 					youtubeId: "YQ7E5cimEus",
 					category: "entrevistas",
 				},
+			],
+		},
+		{
+			id: "2026-01",
+			label: "Janeiro de 2026",
+			items: [
 				{
 					title: dv(
 						"Renan Santos no Eslen Podcast — odiado por lulistas e bolsonaristas",
@@ -453,26 +503,6 @@ export const renanMedia: MediaCategory[] = [
 					),
 					youtubeId: "UT0QKSgzerk",
 					category: "entrevistas",
-				},
-			],
-		},
-		{
-			id: "debates",
-			label: "Debates e Sabatinas",
-			items: [
-				{
-					title: dv(
-						'Renan Santos no Minuto 14 — por que o MBL vai relançar "Não Vai Ter Golpe"',
-						"https://www.youtube.com/watch?v=5PCwqjNg6ZA",
-						"2026-06-13",
-					),
-					description: dv(
-						"O pré-candidato explica no Minuto 14 por que o MBL vai relançar o filme Não Vai Ter Golpe e analisa o cenário político brasileiro.",
-						"https://www.youtube.com/watch?v=5PCwqjNg6ZA",
-						"2026-06-13",
-					),
-					youtubeId: "5PCwqjNg6ZA",
-					category: "debates",
 				},
 			],
 		},

@@ -18,37 +18,16 @@ interface DateGroup {
   items: MediaItem[]
 }
 
-const MONTHS = [
-  'Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho',
-  'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro',
-]
-
-function formatMonth(ym: string): string {
-  const [y, m] = ym.split('-')
-  return `${MONTHS[parseInt(m, 10) - 1]} de ${y}`
-}
-
 function buildDateGroups(candidateId: string): DateGroup[] {
   const cats = mediaData[candidateId]
   if (!cats) return []
 
-  const all = cats.flatMap((cat) => cat.items)
-
-  const map = new Map<string, MediaItem[]>()
-  for (const item of all) {
-    const ym = item.title.updatedAt.slice(0, 7)
-    if (!map.has(ym)) map.set(ym, [])
-    map.get(ym)!.push(item)
-  }
-
-  return Array.from(map.entries())
-    .sort(([a], [b]) => b.localeCompare(a))
-    .map(([ym, items]) => ({
-      id: ym,
-      label: formatMonth(ym),
-      iso: ym,
-      items,
-    }))
+  return cats.map((cat) => ({
+    id: cat.id,
+    label: cat.label,
+    iso: cat.id,
+    items: cat.items,
+  }))
 }
 
 export function Midia({ candidates }: MidiaProps) {

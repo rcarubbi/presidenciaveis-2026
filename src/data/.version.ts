@@ -10,21 +10,20 @@ export interface DataVersionInfo {
 }
 
 export const dataVersion: DataVersionInfo = {
-	version: "2026-07-05T03:20:00Z",
-	updatedAt: "2026-07-05T03:20:00Z",
+	version: "2026-07-05T15:30:00Z",
+	updatedAt: "2026-07-05T15:30:00Z",
 	changes: [
 		{
-			emoji: "🔗",
-			label:
-				"Zema: sintrajufe.org.br (Tier4) → valor.globo.com (Tier1) Previdência",
+			emoji: "📋",
+			label: "Lula: Compliance Zero — Wagner afastou-se liderança 24/06",
 		},
 		{
-			emoji: "❌",
-			label: "Zema: Doações PF R$15M removida — sem fonte Tier1 que comprove",
+			emoji: "👤",
+			label: "Lula: timeline — Teresa Leitão liderança Senado",
 		},
 		{
-			emoji: "✅",
-			label: "Zema: validadas 22 URLs (21 OK + 1 substituída + 1 removida)",
+			emoji: "🎥",
+			label: "Lula: vídeo — discurso 68ª Cúpula Mercosul",
 		},
 	],
 };

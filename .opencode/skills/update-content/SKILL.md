@@ -122,9 +122,17 @@ dvn(1234567.89, "https://fonte.url", "2026-07-01");
 **File:** `src/data/media-{CANDIDATE}.ts`
 **Type:** `MediaCategory[]`
 
-### Categorias
+### Estrutura
 
-`entrevistas`, `debates`, `campanha`
+Agrupado por mes/ano (`YYYY-MM`). Mais recente primeiro. Dentro de cada mes, items ordenados do mais recente ao mais antigo.
+
+```typescript
+{
+  id: "2026-07",       // YYYY-MM
+  label: "Julho de 2026",
+  items: MediaItem[]   // ordenado decrescente por updatedAt
+}
+```
 
 ### Estrategia de busca
 

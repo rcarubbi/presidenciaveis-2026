@@ -3,8 +3,8 @@ import { dv } from "@/lib/dataValue";
 
 export const caiadoMedia: MediaCategory[] = [
 		{
-			id: "entrevistas",
-			label: "Entrevistas e Sabatinas",
+			id: "2026-07",
+			label: "Julho de 2026",
 			items: [
 				{
 					title: dv(
@@ -76,6 +76,12 @@ export const caiadoMedia: MediaCategory[] = [
 					youtubeId: "cm83H1ajZjc",
 					category: "entrevistas",
 				},
+			],
+		},
+		{
+			id: "2026-06",
+			label: "Junho de 2026",
+			items: [
 				{
 					title: dv(
 						"Caiado no Direto ao Ponto (Jovem Pan) — agronegócio e desafios do setor",
@@ -148,6 +154,20 @@ export const caiadoMedia: MediaCategory[] = [
 				},
 				{
 					title: dv(
+						"Caiado no Poder360 — propostas para o Brasil",
+						"https://www.youtube.com/watch?v=12bMiIXPvKA",
+						"2026-06-06",
+					),
+					description: dv(
+						"O pré-candidato apresenta suas propostas para o Brasil em entrevista ao Poder360, abordando reformas e planos de governo.",
+						"https://www.youtube.com/watch?v=12bMiIXPvKA",
+						"2026-06-06",
+					),
+					youtubeId: "12bMiIXPvKA",
+					category: "campanha",
+				},
+				{
+					title: dv(
 						"Caiado no IronTalks — entrevista aprofundada de quase 3 horas",
 						"https://www.youtube.com/watch?v=X2ygPkiz5iw",
 						"2026-06-03",
@@ -162,6 +182,26 @@ export const caiadoMedia: MediaCategory[] = [
 				},
 				{
 					title: dv(
+						"Caiado na TV Band Minas — tarifaço e política internacional",
+						"https://www.youtube.com/watch?v=02wIYB7zSIo",
+						"2026-06-01",
+					),
+					description: dv(
+						"O pré-candidato analisa o tarifaço americano e seus impactos no Brasil em entrevista à TV Band Minas.",
+						"https://www.youtube.com/watch?v=02wIYB7zSIo",
+						"2026-06-01",
+					),
+					youtubeId: "02wIYB7zSIo",
+					category: "debates",
+				},
+			],
+		},
+		{
+			id: "2026-05",
+			label: "Maio de 2026",
+			items: [
+				{
+					title: dv(
 						"Caiado na TBC Reportagens — O Mundo em Sua Casa",
 						"https://www.youtube.com/watch?v=3wUDcbpA2XU",
 						"2026-05-26",
@@ -173,6 +213,20 @@ export const caiadoMedia: MediaCategory[] = [
 					),
 					youtubeId: "3wUDcbpA2XU",
 					category: "entrevistas",
+				},
+				{
+					title: dv(
+						"Caiado no Café com Ferri — bastidores da eleição e propostas",
+						"https://www.youtube.com/watch?v=D0pKrvxqnyE",
+						"2026-05-22",
+					),
+					description: dv(
+						"O pré-candidato fala sobre bastidores da campanha, alianças políticas e suas propostas para o Brasil em entrevista ao programa Café com Ferri.",
+						"https://www.youtube.com/watch?v=D0pKrvxqnyE",
+						"2026-05-22",
+					),
+					youtubeId: "D0pKrvxqnyE",
+					category: "campanha",
 				},
 				{
 					title: dv(
@@ -244,6 +298,26 @@ export const caiadoMedia: MediaCategory[] = [
 					youtubeId: "tj4UdFcybuY",
 					category: "entrevistas",
 				},
+			],
+		},
+		{
+			id: "2026-04",
+			label: "Abril de 2026",
+			items: [
+				{
+					title: dv(
+						"Caiado sobre aliança com Zema e vice-presidência — bastidores da eleição 2026",
+						"https://www.youtube.com/watch?v=Wwe49wMVRYI",
+						"2026-04-20",
+					),
+					description: dv(
+						"O pré-candidato declara que Kassab seria o vice-presidente ideal e comenta sobre uma possível aliança com Zema para as eleições.",
+						"https://www.youtube.com/watch?v=Wwe49wMVRYI",
+						"2026-04-20",
+					),
+					youtubeId: "Wwe49wMVRYI",
+					category: "debates",
+				},
 				{
 					title: dv(
 						"Caiado no Frente a Frente (Folha/UOL) — segurança pública e operação policial",
@@ -258,6 +332,12 @@ export const caiadoMedia: MediaCategory[] = [
 					youtubeId: "DGKqLldrf5I",
 					category: "entrevistas",
 				},
+			],
+		},
+		{
+			id: "2026-03",
+			label: "Março de 2026",
+			items: [
 				{
 					title: dv(
 						"Caiado no Flow News — pré-candidatura e planos para o Brasil",
@@ -272,6 +352,12 @@ export const caiadoMedia: MediaCategory[] = [
 					youtubeId: "irsSMtI4iVM",
 					category: "entrevistas",
 				},
+			],
+		},
+		{
+			id: "2026-01",
+			label: "Janeiro de 2026",
+			items: [
 				{
 					title: dv(
 						"Caiado no Poder360 — entrevista sobre plano de governo",
@@ -289,38 +375,10 @@ export const caiadoMedia: MediaCategory[] = [
 			],
 		},
 		{
-			id: "debates",
-			label: "Debates e Sabatinas",
+			id: "2025-06",
+			label: "Junho de 2025",
 			items: [
 				{
-					title: dv(
-						"Caiado na TV Band Minas — tarifaço e política internacional",
-						"https://www.youtube.com/watch?v=02wIYB7zSIo",
-						"2026-06-01",
-					),
-					description: dv(
-						"O pré-candidato analisa o tarifaço americano e seus impactos no Brasil em entrevista à TV Band Minas.",
-						"https://www.youtube.com/watch?v=02wIYB7zSIo",
-						"2026-06-01",
-					),
-					youtubeId: "02wIYB7zSIo",
-					category: "debates",
-				},
-				{
-					title: dv(
-						"Caiado sobre aliança com Zema e vice-presidência — bastidores da eleição 2026",
-						"https://www.youtube.com/watch?v=Wwe49wMVRYI",
-						"2026-04-20",
-					),
-					description: dv(
-						"O pré-candidato declara que Kassab seria o vice-presidente ideal e comenta sobre uma possível aliança com Zema para as eleições.",
-						"https://www.youtube.com/watch?v=Wwe49wMVRYI",
-						"2026-04-20",
-					),
-					youtubeId: "Wwe49wMVRYI",
-					category: "debates",
-				},
-			{
 					title: dv(
 						"Caiado no Roda Viva (TV Cultura) — sabatina com bancada de jornalistas",
 						"https://www.youtube.com/watch?v=51g_wYigfag",
@@ -333,40 +391,6 @@ export const caiadoMedia: MediaCategory[] = [
 					),
 					youtubeId: "51g_wYigfag",
 					category: "debates",
-				},
-			],
-		},
-		{
-			id: "campanha",
-			label: "Campanha e Discursos",
-			items: [
-				{
-					title: dv(
-						"Caiado no Poder360 — propostas para o Brasil",
-						"https://www.youtube.com/watch?v=12bMiIXPvKA",
-						"2026-06-06",
-					),
-					description: dv(
-						"O pré-candidato apresenta suas propostas para o Brasil em entrevista ao Poder360, abordando reformas e planos de governo.",
-						"https://www.youtube.com/watch?v=12bMiIXPvKA",
-						"2026-06-06",
-					),
-					youtubeId: "12bMiIXPvKA",
-					category: "campanha",
-				},
-				{
-					title: dv(
-						"Caiado no Café com Ferri — bastidores da eleição e propostas",
-						"https://www.youtube.com/watch?v=D0pKrvxqnyE",
-						"2026-05-22",
-					),
-					description: dv(
-						"O pré-candidato fala sobre bastidores da campanha, alianças políticas e suas propostas para o Brasil em entrevista ao programa Café com Ferri.",
-						"https://www.youtube.com/watch?v=D0pKrvxqnyE",
-						"2026-05-22",
-					),
-					youtubeId: "D0pKrvxqnyE",
-					category: "campanha",
 				},
 			],
 		},
