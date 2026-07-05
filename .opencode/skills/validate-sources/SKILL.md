@@ -17,10 +17,13 @@ Projeto: `C:\Users\rcaru\source\repos\eleicoes_benchmark\presidenciaveis-2026`
 2. **Preferencia Tier 1 sobre Tier 3/4.** Sempre migrar Wikipedia para imprensa quando possivel.
 3. **Multiplas fontes para mesmo dado** → listar opcoes e perguntar ao usuario qual usar.
 4. **Dados globais (mesmo valor entre candidatos)** → usar a mesma fonte para todos. Ex: limite de gastos TSE aplica-se a todos; usar unica fonte.
-5. **Sempre verificar ancora `#`.** O fragmento deve existir no HTML e corresponder ao dado.
+5. **Sempre verificar ancora `#`.** O fragmento deve existir no HTML e corresponder ao dado. Decodificar URL-encoding (`%C3%A7` → `ç`) antes de comparar com IDs do HTML.
 6. **Valor numerico deve bater com a fonte.** Extrair numero do artigo, comparar com `DataValue.value`.
 7. **EXECUTE O WORKFLOW COMPLETO (Passo 1 ao 7).** Nao pular etapas.
 8. **Sempre atualizar `src/data/.version.ts` apos qualquer alteracao.** Incrementar timestamp `version`/`updatedAt` e adicionar entry em `changes[]` descrevendo a mudanca.
+9. **FONTE DEVE COMPROVAR O DADO ESPECIFICO individualmente.** `DataValue.source` precisa ser um artigo que mencione explicitamente aquele `value`. Proibido agrupar N propostas sob uma unica URL generica que nao cita cada proposta individual. Cada `source` deve ser verificado independentemente contra seu `value` — uma URL que funciona para um dado pode ser INVALIDA para outro.
+10. **BUSCA MULTI-FONTE obrigatoria.** Ao buscar substituto, tentar no minimo 3 queries diferentes variando veiculos (G1, Folha, UOL, Estadão, CNN, BBC, Poder360, Band, VEJA, etc.). Nao aceitar o primeiro resultado. Se o primeiro resultado for fraco (Tier 3-4 ou nao comprova o dado), continuar buscando.
+11. **LER CONTEUDO COMPLETO do artigo**, nao apenas trecho de busca. O snippet da busca pode mencionar o termo mas nao comprovar o dado no contexto correto.
 
 ---
 
@@ -142,9 +145,15 @@ Combinar status HTTP + ancora + conteudo + Tier:
 2. `websearch` com query: `"{candidato} {termos_do_dado}"`
 3. Dos resultados, selecionar URLs Tier 1-2
 4. Abrir cada candidata com `webfetch`
-5. Verificar se conteudo comprova o `value`
-6. Se encontrar unica candidata boa: substituir `source`
-7. Se multiplas: listar para usuario com:
+5. Verificar se conteudo comprova o `value` — o `value` deve ser explicitamente mencionado no texto do artigo, nao apenas relacionado por contexto amplo.
+6. **Busca multi-fonte**: Se a primeira query nao encontrar Tier 1-2 que comprove o dado, tentar variacoes:
+   - `"{candidato} {termos_do_dado} {veiculo}"` (G1, Folha, etc.)
+   - `"{termo_mais_especifico}"` sem nome do candidato
+   - `"{candidato} {sinonimo_do_tema}"`
+   - `"{candidato} proposta {tema}"`
+7. **NUNCA re-aproveitar uma URL encontrada para um dado como fonte de outro dado**, mesmo que sejam do mesmo candidato ou mesma categoria. Cada `source` precisa ser verificado independentemente.
+8. Se encontrar unica candidata boa que comprova o dado: substituir `source`
+9. Se multiplas: listar para usuario com:
    - URL
    - Veiculo
    - Data da publicacao
@@ -154,8 +163,9 @@ Combinar status HTTP + ancora + conteudo + Tier:
 
 1. `websearch` com mesma query
 2. Preferir sites Tier 1
-3. Se encontrar: substituir
-4. Se nao encontrar: manter Wikipedia com nota no report
+3. Se encontrar: verificar se conteudo comprova o `value` especifico (nao apenas o topico geral)
+4. Se encontrar e comprova: substituir
+5. Se nao encontrar: manter Wikipedia com nota no report
 
 ### 4.3 Ancora incorreta
 
@@ -166,8 +176,9 @@ Combinar status HTTP + ancora + conteudo + Tier:
 ### 4.4 Conteudo nao comprova
 
 1. Marcar como `WEAK_CONTENT`
-2. Buscar fonte alternativa (Secao 4.1)
+2. Buscar fonte alternativa (Secao 4.1) — com busca multi-fonte obrigatoria
 3. Se nenhuma alternativa comprovar o dado: questionar se o dado deve ser removido
+4. **Nunca substituir uma fonte `WEAK_CONTENT` por outra que tambem nao comprove o dado.** A nova fonte deve mencionar explicitamente o `value`, nao apenas o topico.
 
 ---
 
