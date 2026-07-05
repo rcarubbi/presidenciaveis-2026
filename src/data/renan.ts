@@ -105,7 +105,7 @@ export const renan: Candidate = 	{
 		],
 		ideologicalPosition: dv(
 			"Centro-direita / Liberal",
-			"https://www.youtube.com/watch?v=fZlo3fybIAU",
+			"https://veja.abril.com.br/politica/renan-santos-mira-espaco-na-direita-e-afirma-que-bolsonarismo-se-tornou-insustentavel/",
 			"2026-06-30",
 		),
 		careerYears: dvn(
@@ -244,12 +244,12 @@ export const renan: Candidate = 	{
 		campaignFinance: {
 			totalArrecadado: dv(
 				"R$ 1,12 mi (crowdfunding)",
-				"https://queroapoiar.com.br/renan",
+				"https://www.estadao.com.br/politica/renan-aposta-em-vaquinha-base-do-mbl-e-faria-lima-para-disputar-2026-sem-maquina-partidaria/",
 				"2026-06-26",
 			),
 			totalGasto: dv(
 				"R$ 1,12 mi (crowdfunding)",
-				"https://queroapoiar.com.br/renan",
+				"https://www.estadao.com.br/politica/renan-aposta-em-vaquinha-base-do-mbl-e-faria-lima-para-disputar-2026-sem-maquina-partidaria/",
 				"2026-06-26",
 			),
 			limiteGastos: dv(
@@ -271,11 +271,11 @@ export const renan: Candidate = 	{
 			comparison: {
 				name: dv(
 					"Renan 2026 (est.)",
-					"https://queroapoiar.com.br/renan",
+					"https://www.estadao.com.br/politica/renan-aposta-em-vaquinha-base-do-mbl-e-faria-lima-para-disputar-2026-sem-maquina-partidaria/",
 					"2026-06-26",
 				),
-				arrecadado: dvn(1.12, "https://queroapoiar.com.br/renan", "2026-06-26"),
-				gasto: dvn(1.12, "https://queroapoiar.com.br/renan", "2026-06-26"),
+				arrecadado: dvn(1.12, "https://www.estadao.com.br/politica/renan-aposta-em-vaquinha-base-do-mbl-e-faria-lima-para-disputar-2026-sem-maquina-partidaria/", "2026-06-26"),
+				gasto: dvn(1.12, "https://www.estadao.com.br/politica/renan-aposta-em-vaquinha-base-do-mbl-e-faria-lima-para-disputar-2026-sem-maquina-partidaria/", "2026-06-26"),
 			},
 		},
 		positions: [
@@ -332,24 +332,24 @@ export const renan: Candidate = 	{
 			{
 				issue: dv(
 					"Armas",
-					"https://caminhodamissao.com/candidato/renan-santos",
+					"https://valor.globo.com/politica/noticia/2026/05/14/escandalo-envolvendo-flavio-bolsonaro-leva-a-aumento-de-interesse-por-renan-santos-sabia-quem-e.ghtml",
 					"2026-06-26",
 				),
 				position: dv(
 					"Armamento civil. Legítima defesa. Flexibilização Estatuto Desarmamento (histórico MBL).",
-					"https://caminhodamissao.com/candidato/renan-santos",
+					"https://valor.globo.com/politica/noticia/2026/05/14/escandalo-envolvendo-flavio-bolsonaro-leva-a-aumento-de-interesse-por-renan-santos-sabia-quem-e.ghtml",
 					"2026-06-26",
 				),
 			},
 			{
 				issue: dv(
 					"Educação",
-					"https://caminhodamissao.com/candidato/renan-santos",
+					"https://valor.globo.com/politica/noticia/2026/05/14/escandalo-envolvendo-flavio-bolsonaro-leva-a-aumento-de-interesse-por-renan-santos-sabia-quem-e.ghtml",
 					"2026-06-26",
 				),
 				position: dv(
 					"Liberdade de ensino. Escolas cívico-militares. Meritocracia.",
-					"https://caminhodamissao.com/candidato/renan-santos",
+					"https://valor.globo.com/politica/noticia/2026/05/14/escandalo-envolvendo-flavio-bolsonaro-leva-a-aumento-de-interesse-por-renan-santos-sabia-quem-e.ghtml",
 					"2026-06-26",
 				),
 			},

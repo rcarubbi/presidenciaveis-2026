@@ -517,12 +517,12 @@ export const flavio: Candidate = 	{
 		campaignFinance: {
 			totalArrecadado: dv(
 				"R$ 120 mi (proj.)",
-				"https://dedemontalvao.blogspot.com/2026/06/campanha-de-flavio-bolsonaro-pressiona.html",
+				"https://www1.folha.uol.com.br/amp/poder/2026/06/pl-deve-focar-fundo-eleitoral-em-flavio-e-senado-e-deputados-temem-falta-de-recursos.shtml",
 				"2026-06-01",
 			),
 			totalGasto: dv(
 				"R$ 120 mi (proj.)",
-				"https://dedemontalvao.blogspot.com/2026/06/campanha-de-flavio-bolsonaro-pressiona.html",
+				"https://www1.folha.uol.com.br/amp/poder/2026/06/pl-deve-focar-fundo-eleitoral-em-flavio-e-senado-e-deputados-temem-falta-de-recursos.shtml",
 				"2026-06-01",
 			),
 			limiteGastos: dv(
@@ -553,17 +553,17 @@ export const flavio: Candidate = 	{
 			comparison: {
 				name: dv(
 					"Flávio 2026 (proj.)",
-					"https://dedemontalvao.blogspot.com/2026/06/campanha-de-flavio-bolsonaro-pressiona.html",
+					"https://www1.folha.uol.com.br/amp/poder/2026/06/pl-deve-focar-fundo-eleitoral-em-flavio-e-senado-e-deputados-temem-falta-de-recursos.shtml",
 					"2026-06-01",
 				),
 				arrecadado: dvn(
 					120,
-					"https://dedemontalvao.blogspot.com/2026/06/campanha-de-flavio-bolsonaro-pressiona.html",
+					"https://www1.folha.uol.com.br/amp/poder/2026/06/pl-deve-focar-fundo-eleitoral-em-flavio-e-senado-e-deputados-temem-falta-de-recursos.shtml",
 					"2026-06-01",
 				),
 				gasto: dvn(
 					120,
-					"https://dedemontalvao.blogspot.com/2026/06/campanha-de-flavio-bolsonaro-pressiona.html",
+					"https://www1.folha.uol.com.br/amp/poder/2026/06/pl-deve-focar-fundo-eleitoral-em-flavio-e-senado-e-deputados-temem-falta-de-recursos.shtml",
 					"2026-06-01",
 				),
 			},

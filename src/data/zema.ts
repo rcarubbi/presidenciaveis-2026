@@ -285,18 +285,18 @@ export const zema: Candidate = 	{
 		campaignFinance: {
 			totalArrecadado: dv(
 				"R$ 133,4 mi (limite)",
-				"https://www12.senado.leg.br/noticias/audios/2026/05/tse-aprova-limite-de-gastos-para-campanhas-de-2026",
-				"2026-06-28",
+				"https://www.poder360.com.br/poder-eleicoes/tse-avalia-manter-teto-de-gastos-para-campanhas-em-2026/",
+				"2026-06-20",
 			),
 			totalGasto: dv(
 				"Não divulgado",
-				"https://www12.senado.leg.br/noticias/audios/2026/05/tse-aprova-limite-de-gastos-para-campanhas-de-2026",
-				"2026-06-28",
+				"https://www.poder360.com.br/poder-eleicoes/tse-avalia-manter-teto-de-gastos-para-campanhas-em-2026/",
+				"2026-06-20",
 			),
 			limiteGastos: dv(
 				"R$ 133,4 mi (proj. ambos turnos)",
-				"https://www12.senado.leg.br/noticias/audios/2026/05/tse-aprova-limite-de-gastos-para-campanhas-de-2026",
-				"2026-06-28",
+				"https://www.poder360.com.br/poder-eleicoes/tse-avalia-manter-teto-de-gastos-para-campanhas-em-2026/",
+				"2026-06-20",
 			),
 			fontes: [
 				{

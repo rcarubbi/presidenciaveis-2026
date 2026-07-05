@@ -116,8 +116,8 @@ export const caiado: Candidate = 	{
 				party: dv("Gilberto Kassab (vice)"),
 				status: dv(
 					"Confirmado (01/07/2026)",
-					"https://noticias.uol.com.br/politica/ultimas-noticias/2026/07/01/caiado-anuncia-kassab-como-seu-vice-em-chapa-para-o-planalto.ghtm",
-					"2026-07-01",
+				"https://g1.globo.com/politica/noticia/2026/07/01/caiado-anuncia-kassab-presidente-do-psd-como-vice-na-chapa-a-presidencia.ghtml",
+				"2026-07-01",
 				),
 			},
 		],
@@ -565,18 +565,18 @@ export const caiado: Candidate = 	{
 		campaignFinance: {
 			totalArrecadado: dv(
 				"R$ 133,4 mi (limite)",
-				"https://www12.senado.leg.br/noticias/audios/2026/05/tse-aprova-limite-de-gastos-para-campanhas-de-2026",
-				"2026-06-28",
+				"https://www.poder360.com.br/poder-eleicoes/tse-avalia-manter-teto-de-gastos-para-campanhas-em-2026/",
+				"2026-06-20",
 			),
 			totalGasto: dv(
 				"Não divulgado",
-				"https://www12.senado.leg.br/noticias/audios/2026/05/tse-aprova-limite-de-gastos-para-campanhas-de-2026",
-				"2026-06-28",
+				"https://www.poder360.com.br/poder-eleicoes/tse-avalia-manter-teto-de-gastos-para-campanhas-em-2026/",
+				"2026-06-20",
 			),
 			limiteGastos: dv(
 				"R$ 133,4 mi (proj. ambos turnos)",
-				"https://www12.senado.leg.br/noticias/audios/2026/05/tse-aprova-limite-de-gastos-para-campanhas-de-2026",
-				"2026-06-28",
+				"https://www.poder360.com.br/poder-eleicoes/tse-avalia-manter-teto-de-gastos-para-campanhas-em-2026/",
+				"2026-06-20",
 			),
 			fontes: [
 				{
