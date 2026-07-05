@@ -664,18 +664,6 @@ export const caiado: Candidate = 	{
 		positions: [
 			{
 				issue: dv(
-					"Armas",
-					"https://www25.senado.leg.br/web/atividade/materias/-/materia/130695",
-					"2026-06-28",
-				),
-				position: dv(
-					"Favorável ao porte de armas para 'cidadãos de bem'. Defende flexibilização do Estatuto do Desarmamento.",
-					"https://www25.senado.leg.br/web/atividade/materias/-/materia/130695",
-					"2026-06-28",
-				),
-			},
-			{
-				issue: dv(
 					"Agronegócio",
 					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Trajet%C3%B3ria_e_carreira_pol%C3%ADtica",
 					"2026-06-26",
@@ -688,26 +676,14 @@ export const caiado: Candidate = 	{
 			},
 			{
 				issue: dv(
-					"Segurança Pública",
-					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Governador_de_Goi%C3%A1s",
-					"2026-06-26",
+					"Armas",
+					"https://www25.senado.leg.br/web/atividade/materias/-/materia/130695",
+					"2026-06-28",
 				),
 				position: dv(
-					"Mão dura. Goiás tem menor taxa de homicídios do Centro-Oeste. Reconhecimento facial.",
-					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Governador_de_Goi%C3%A1s",
-					"2026-06-26",
-				),
-			},
-			{
-				issue: dv(
-					"Reforma Agrária / Indígenas",
-					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Trajet%C3%B3ria_e_carreira_pol%C3%ADtica",
-					"2026-06-26",
-				),
-				position: dv(
-					"Ex-presidente da UDR. Crítico de demarcações indígenas. Defesa histórica dos grandes proprietários rurais.",
-					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Trajet%C3%B3ria_e_carreira_pol%C3%ADtica",
-					"2026-06-26",
+					"Favorável ao porte de armas para 'cidadãos de bem'. Defende flexibilização do Estatuto do Desarmamento.",
+					"https://www25.senado.leg.br/web/atividade/materias/-/materia/130695",
+					"2026-06-28",
 				),
 			},
 			{
@@ -718,30 +694,6 @@ export const caiado: Candidate = 	{
 				),
 				position: dv(
 					"Goiás tem melhor IDEB do Centro-Oeste. Escolas em tempo integral. Investimento em tecnologia educacional.",
-					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Governador_de_Goi%C3%A1s",
-					"2026-06-26",
-				),
-			},
-			{
-				issue: dv(
-					"Saúde",
-					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Governador_de_Goi%C3%A1s",
-					"2026-06-26",
-				),
-				position: dv(
-					"Goiás referência no enfrentamento à COVID-19. Ampliação de hospitais regionais. Médico de formação.",
-					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Governador_de_Goi%C3%A1s",
-					"2026-06-26",
-				),
-			},
-			{
-				issue: dv(
-					"Privatização",
-					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Governador_de_Goi%C3%A1s",
-					"2026-06-26",
-				),
-				position: dv(
-					"Privatizou Saneago (parcial) e concessões rodoviárias. Defende redução do Estado e parcerias público-privadas.",
 					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Governador_de_Goi%C3%A1s",
 					"2026-06-26",
 				),
@@ -760,24 +712,60 @@ export const caiado: Candidate = 	{
 			},
 			{
 				issue: dv(
-					"Reforma Trabalhista",
-					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Impeachment_de_Dilma_Rousseff",
-					"2026-06-26",
-				),
-				position: dv(
-					"Votou a favor da reforma trabalhista de 2017. Defende maior flexibilização das leis trabalhistas e modernização da CLT.",
-					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Impeachment_de_Dilma_Rousseff",
-					"2026-06-26",
-				),
-			},
-			{
-				issue: dv(
 					"PEC do Teto",
 					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Impeachment_de_Dilma_Rousseff",
 					"2026-06-26",
 				),
 				position: dv(
 					"Votou a favor da PEC do Teto dos Gastos Públicos (2016). Defende responsabilidade fiscal e limite para gastos públicos.",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Impeachment_de_Dilma_Rousseff",
+					"2026-06-26",
+				),
+			},
+			{
+				issue: dv(
+					"Privatização",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Governador_de_Goi%C3%A1s",
+					"2026-06-26",
+				),
+				position: dv(
+					"Privatizou Saneago (parcial) e concessões rodoviárias. Defende redução do Estado e parcerias público-privadas.",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Governador_de_Goi%C3%A1s",
+					"2026-06-26",
+				),
+			},
+			{
+				issue: dv(
+					"Reforma Agrária / Indígenas",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Trajet%C3%B3ria_e_carreira_pol%C3%ADtica",
+					"2026-06-26",
+				),
+				position: dv(
+					"Ex-presidente da UDR. Crítico de demarcações indígenas. Defesa histórica dos grandes proprietários rurais.",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Trajet%C3%B3ria_e_carreira_pol%C3%ADtica",
+					"2026-06-26",
+				),
+			},
+			{
+				issue: dv(
+					"Reforma do STF",
+					"https://metropoles.com/brasil/caiado-diz-que-enviara-projeto-de-reforma-do-stf-ao-congresso",
+					"2026-06-22",
+				),
+				position: dv(
+					"Defende mandato determinado para ministros do STF. Enviará projeto de reforma ao Congresso se eleito, com critérios técnicos de nomeação.",
+					"https://metropoles.com/brasil/caiado-diz-que-enviara-projeto-de-reforma-do-stf-ao-congresso",
+					"2026-06-22",
+				),
+			},
+			{
+				issue: dv(
+					"Reforma Trabalhista",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Impeachment_de_Dilma_Rousseff",
+					"2026-06-26",
+				),
+				position: dv(
+					"Votou a favor da reforma trabalhista de 2017. Defende maior flexibilização das leis trabalhistas e modernização da CLT.",
 					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Impeachment_de_Dilma_Rousseff",
 					"2026-06-26",
 				),
@@ -796,14 +784,26 @@ export const caiado: Candidate = 	{
 			},
 			{
 				issue: dv(
-					"Reforma do STF",
-					"https://metropoles.com/brasil/caiado-diz-que-enviara-projeto-de-reforma-do-stf-ao-congresso",
-					"2026-06-22",
+					"Saúde",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Governador_de_Goi%C3%A1s",
+					"2026-06-26",
 				),
 				position: dv(
-					"Defende mandato determinado para ministros do STF. Enviará projeto de reforma ao Congresso se eleito, com critérios técnicos de nomeação.",
-					"https://metropoles.com/brasil/caiado-diz-que-enviara-projeto-de-reforma-do-stf-ao-congresso",
-					"2026-06-22",
+					"Goiás referência no enfrentamento à COVID-19. Ampliação de hospitais regionais. Médico de formação.",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Governador_de_Goi%C3%A1s",
+					"2026-06-26",
+				),
+			},
+			{
+				issue: dv(
+					"Segurança Pública",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Governador_de_Goi%C3%A1s",
+					"2026-06-26",
+				),
+				position: dv(
+					"Mão dura. Goiás tem menor taxa de homicídios do Centro-Oeste. Reconhecimento facial.",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Governador_de_Goi%C3%A1s",
+					"2026-06-26",
 				),
 			}
 		

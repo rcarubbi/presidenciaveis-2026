@@ -266,11 +266,12 @@ Editar apenas `src/data/` files. Manter indentacao (tabs), aspas duplas.
 Apos qualquer alteracao:
 
 1. Atualizar `version` e `updatedAt` com timestamp ISO atual
-2. Adicionar entrada em `changes[]` para cada alteracao:
-   - O template de `label` deve conter: `"{candidato}: descricao concisa + data (DD/mon)"`
-   - Exemplo: `"Renan: timeline — 1a convencao Missao 01/ago (CNN) 03/jul"`
-3. **Inserir cada entrada na posicao correta** — `changes[]` e ordenado por data decrescente (mais recente primeiro). Extrair a data no formato `DD/mon` do label e posicionar a entrada entre a entrada mais recente (acima) e a mais antiga (abaixo).
-4. Remover entradas duplicadas
+2. **Substituir** entradas existentes no `changes[]` para o candidato — NUNCA adicionar novas.
+   - Se candidato ja tem entries (ex: "Caiado:"), remover todas as antigas e substituir pelas atuais
+   - Se candidato nao tem entries, criar novas
+3. Template do `label`: `"{candidato}: descricao concisa + data (DD/mon)"`  
+   Exemplo: `"Renan: timeline — 1a convencao Missao 01/ago (CNN) 03/jul"`
+4. **Inserir cada entrada na posicao correta** — `changes[]` e ordenado por data decrescente (mais recente primeiro). Extrair a data no formato `DD/mon` do label e posicionar entre a entrada mais recente (acima) e mais antiga (abaixo).
 
 ### Passo 4.7 — Verificar duplicatas
 

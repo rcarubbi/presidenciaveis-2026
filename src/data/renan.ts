@@ -295,18 +295,6 @@ export const renan: Candidate = 	{
 		positions: [
 			{
 				issue: dv(
-					"Fundo Eleitoral",
-					"https://revistaoeste.com/politica/campanha-de-renan-santos-rejeita-fundo-eleitoral-e-aposta-em-vaquinha/",
-					"2026-07-01",
-				),
-				position: dv(
-					"Contra. Campanha via crowdfunding (vaquinha). Partido Missão sem fundo eleitoral consolidado. Defende financiamento voluntário.",
-					"https://revistaoeste.com/politica/campanha-de-renan-santos-rejeita-fundo-eleitoral-e-aposta-em-vaquinha/",
-					"2026-07-01",
-				),
-			},
-			{
-				issue: dv(
 					"Armas",
 					"https://valor.globo.com/politica/noticia/2026/05/14/escandalo-envolvendo-flavio-bolsonaro-leva-a-aumento-de-interesse-por-renan-santos-sabia-quem-e.ghtml",
 					"2026-06-26",
@@ -315,92 +303,6 @@ export const renan: Candidate = 	{
 					"Armamento civil. Legítima defesa. Flexibilização Estatuto Desarmamento (histórico MBL).",
 					"https://valor.globo.com/politica/noticia/2026/05/14/escandalo-envolvendo-flavio-bolsonaro-leva-a-aumento-de-interesse-por-renan-santos-sabia-quem-e.ghtml",
 					"2026-06-26",
-				),
-			},
-			{
-				issue: dv(
-					"Zona Franca de Manaus",
-					"https://www.estadao.com.br/politica/renan-santos-bolsonarismo-morreu-e-flavio-e-inviavel-na-disputa-contra-lula",
-					"2026-06-24",
-				),
-				position: dv(
-					"Defende revisão de renúncias fiscais. Cita Zona Franca como modelo fracassado que precisa de 'desmame' com transição.",
-					"https://www.estadao.com.br/politica/renan-santos-bolsonarismo-morreu-e-flavio-e-inviavel-na-disputa-contra-lula",
-					"2026-06-24",
-				),
-			},
-			{
-				issue: dv(
-					"Educação",
-					"https://valor.globo.com/politica/noticia/2026/05/14/escandalo-envolvendo-flavio-bolsonaro-leva-a-aumento-de-interesse-por-renan-santos-sabia-quem-e.ghtml",
-					"2026-06-26",
-				),
-				position: dv(
-					"Liberdade de ensino. Escolas cívico-militares. Meritocracia.",
-					"https://valor.globo.com/politica/noticia/2026/05/14/escandalo-envolvendo-flavio-bolsonaro-leva-a-aumento-de-interesse-por-renan-santos-sabia-quem-e.ghtml",
-					"2026-06-26",
-				),
-			},
-			{
-				issue: dv(
-					"Privatização",
-					"https://sbtnews.sbt.com.br/noticia/politica/renan-santos-nega-ser-3-via-e-diz-que-vai-substituir-flavio",
-					"2026-06-11",
-				),
-				position: dv(
-					'Seletiva. Correios sim, Petrobras não, Embrapa não. BB/Caixa operações parcialmente. Crítico "liberobobismo".',
-					"https://sbtnews.sbt.com.br/noticia/politica/renan-santos-nega-ser-3-via-e-diz-que-vai-substituir-flavio",
-					"2026-06-11",
-				),
-			}
-,
-			{
-				issue: dv(
-					"Relações Exteriores",
-					"https://www.gazetasp.com.br/politica/quem-e-renan-santos-presidenciavel-partido-missao/",
-					"2026-05-28",
-				),
-				position: dv(
-					'Alinhamento EUA (terras raras, F-35). Crítico "vassalagem à China". Abertura comercial. Milei/Bukele.',
-					"https://www.gazetasp.com.br/politica/quem-e-renan-santos-presidenciavel-partido-missao/",
-					"2026-05-28",
-				),
-			},
-			{
-				issue: dv(
-					"Reforma Política",
-					"https://www.gazetasp.com.br/politica/quem-e-renan-santos-presidenciavel-partido-missao/",
-					"2026-05-28",
-				),
-				position: dv(
-					"Anticartel partidário. Lei Responsabilidade Gerencial. Fusão municípios. Condicionar fundo partidário/emendas a desempenho.",
-					"https://www.gazetasp.com.br/politica/quem-e-renan-santos-presidenciavel-partido-missao/",
-					"2026-05-28",
-				),
-			},
-			{
-				issue: dv(
-					"Segurança Pública",
-					"https://www.bbc.com/portuguese/articles/cn7846447j3o",
-					"2026-04-28",
-				),
-				position: dv(
-					'Endurecimento radical. "Prendeu, matou". Pena de morte p/ hediondos. Direito Penal do Inimigo contra facções.',
-					"https://www.bbc.com/portuguese/articles/cn7846447j3o",
-					"2026-04-28",
-				),
-			}
-,
-			{
-				issue: dv(
-					"Cotas Raciais",
-					"https://www.bbc.com/portuguese/articles/cn7846447j3o",
-					"2026-04-28",
-				),
-				position: dv(
-					"Contrário. Crítico das políticas de ação afirmativa nas universidades.",
-					"https://www.bbc.com/portuguese/articles/cn7846447j3o",
-					"2026-04-28",
 				),
 			},
 			{
@@ -414,8 +316,19 @@ export const renan: Candidate = 	{
 					"https://www.bbc.com/portuguese/articles/cn7846447j3o",
 					"2026-04-28",
 				),
-			}
-		,
+			},
+			{
+				issue: dv(
+					"Cotas Raciais",
+					"https://www.bbc.com/portuguese/articles/cn7846447j3o",
+					"2026-04-28",
+				),
+				position: dv(
+					"Contrário. Crítico das políticas de ação afirmativa nas universidades.",
+					"https://www.bbc.com/portuguese/articles/cn7846447j3o",
+					"2026-04-28",
+				),
+			},
 			{
 				issue: dv(
 					"Drogas",
@@ -442,17 +355,28 @@ export const renan: Candidate = 	{
 			},
 			{
 				issue: dv(
-					"Previdência",
-					"https://www.estadao.com.br/politica/renan-santos-vira-milei-brasileiro-para-disputar-a-direita-com-flavio-a-quem-chama-de-judas/",
-					"2026-03-29",
+					"Educação",
+					"https://valor.globo.com/politica/noticia/2026/05/14/escandalo-envolvendo-flavio-bolsonaro-leva-a-aumento-de-interesse-por-renan-santos-sabia-quem-e.ghtml",
+					"2026-06-26",
 				),
 				position: dv(
-					"Nova reforma. Equiparação público/privado. Futura capitalização. Desindexar BPC do mínimo.",
-					"https://www.estadao.com.br/politica/renan-santos-vira-milei-brasileiro-para-disputar-a-direita-com-flavio-a-quem-chama-de-judas/",
-					"2026-03-29",
+					"Liberdade de ensino. Escolas cívico-militares. Meritocracia.",
+					"https://valor.globo.com/politica/noticia/2026/05/14/escandalo-envolvendo-flavio-bolsonaro-leva-a-aumento-de-interesse-por-renan-santos-sabia-quem-e.ghtml",
+					"2026-06-26",
 				),
-			}
-,
+			},
+			{
+				issue: dv(
+					"Fundo Eleitoral",
+					"https://revistaoeste.com/politica/campanha-de-renan-santos-rejeita-fundo-eleitoral-e-aposta-em-vaquinha/",
+					"2026-07-01",
+				),
+				position: dv(
+					"Contra. Campanha via crowdfunding (vaquinha). Partido Missão sem fundo eleitoral consolidado. Defende financiamento voluntário.",
+					"https://revistaoeste.com/politica/campanha-de-renan-santos-rejeita-fundo-eleitoral-e-aposta-em-vaquinha/",
+					"2026-07-01",
+				),
+			},
 			{
 				issue: dv(
 					"Infraestrutura",
@@ -463,6 +387,78 @@ export const renan: Candidate = 	{
 					"Prioridade. Estatuto Nacional da Desfavelização. Polos tecnológicos/data centers Nordeste. Zonas econômicas especiais.",
 					"https://www.estadao.com.br/politica/renan-santos-vira-milei-brasileiro-para-disputar-a-direita-com-flavio-a-quem-chama-de-judas/",
 					"2026-03-29",
+				),
+			},
+			{
+				issue: dv(
+					"Previdência",
+					"https://www.estadao.com.br/politica/renan-santos-vira-milei-brasileiro-para-disputar-a-direita-com-flavio-a-quem-chama-de-judas/",
+					"2026-03-29",
+				),
+				position: dv(
+					"Nova reforma. Equiparação público/privado. Futura capitalização. Desindexar BPC do mínimo.",
+					"https://www.estadao.com.br/politica/renan-santos-vira-milei-brasileiro-para-disputar-a-direita-com-flavio-a-quem-chama-de-judas/",
+					"2026-03-29",
+				),
+			},
+			{
+				issue: dv(
+					"Privatização",
+					"https://sbtnews.sbt.com.br/noticia/politica/renan-santos-nega-ser-3-via-e-diz-que-vai-substituir-flavio",
+					"2026-06-11",
+				),
+				position: dv(
+					'Seletiva. Correios sim, Petrobras não, Embrapa não. BB/Caixa operações parcialmente. Crítico "liberobobismo".',
+					"https://sbtnews.sbt.com.br/noticia/politica/renan-santos-nega-ser-3-via-e-diz-que-vai-substituir-flavio",
+					"2026-06-11",
+				),
+			},
+			{
+				issue: dv(
+					"Reforma Política",
+					"https://www.gazetasp.com.br/politica/quem-e-renan-santos-presidenciavel-partido-missao/",
+					"2026-05-28",
+				),
+				position: dv(
+					"Anticartel partidário. Lei Responsabilidade Gerencial. Fusão municípios. Condicionar fundo partidário/emendas a desempenho.",
+					"https://www.gazetasp.com.br/politica/quem-e-renan-santos-presidenciavel-partido-missao/",
+					"2026-05-28",
+				),
+			},
+			{
+				issue: dv(
+					"Relações Exteriores",
+					"https://www.gazetasp.com.br/politica/quem-e-renan-santos-presidenciavel-partido-missao/",
+					"2026-05-28",
+				),
+				position: dv(
+					'Alinhamento EUA (terras raras, F-35). Crítico "vassalagem à China". Abertura comercial. Milei/Bukele.',
+					"https://www.gazetasp.com.br/politica/quem-e-renan-santos-presidenciavel-partido-missao/",
+					"2026-05-28",
+				),
+			},
+			{
+				issue: dv(
+					"Segurança Pública",
+					"https://www.bbc.com/portuguese/articles/cn7846447j3o",
+					"2026-04-28",
+				),
+				position: dv(
+					'Endurecimento radical. "Prendeu, matou". Pena de morte p/ hediondos. Direito Penal do Inimigo contra facções.',
+					"https://www.bbc.com/portuguese/articles/cn7846447j3o",
+					"2026-04-28",
+				),
+			},
+			{
+				issue: dv(
+					"Zona Franca de Manaus",
+					"https://www.estadao.com.br/politica/renan-santos-bolsonarismo-morreu-e-flavio-e-inviavel-na-disputa-contra-lula",
+					"2026-06-24",
+				),
+				position: dv(
+					"Defende revisão de renúncias fiscais. Cita Zona Franca como modelo fracassado que precisa de 'desmame' com transição.",
+					"https://www.estadao.com.br/politica/renan-santos-bolsonarismo-morreu-e-flavio-e-inviavel-na-disputa-contra-lula",
+					"2026-06-24",
 				),
 			}
 ],

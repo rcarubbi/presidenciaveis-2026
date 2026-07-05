@@ -575,54 +575,6 @@ export const flavio: Candidate = 	{
 		positions: [
 			{
 				issue: dv(
-					"Meio Ambiente",
-					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Posi%C3%A7%C3%B5es_pol%C3%ADticas",
-					"2026-06-26",
-				),
-				position: dv(
-					'Exploração Amazônia "responsável". Crítico ativismo.',
-					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Posi%C3%A7%C3%B5es_pol%C3%ADticas",
-					"2026-06-26",
-				),
-			},
-			{
-				issue: dv(
-					"Regulação Mídia e Redes",
-					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Posi%C3%A7%C3%B5es_pol%C3%ADticas",
-					"2026-06-26",
-				),
-				position: dv(
-					"Contra. Liberdade total expressão.",
-					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Posi%C3%A7%C3%B5es_pol%C3%ADticas",
-					"2026-06-26",
-				),
-			},
-			{
-				issue: dv(
-					"Segurança Pública",
-					"https://g1.globo.com/sp/sao-paulo/eleicoes/2026/noticia/2026/06/18/flavio-bolsonaro-lanca-pacote-de-seguranca-com-reducao-da-maioridade-penal-e-castracao-quimica.ghtml",
-					"2026-06-18",
-				),
-				position: dv(
-					'Bandeira principal. "Brasil Sem Medo". Endurecimento penal.',
-					"https://g1.globo.com/sp/sao-paulo/eleicoes/2026/noticia/2026/06/18/flavio-bolsonaro-lanca-pacote-de-seguranca-com-reducao-da-maioridade-penal-e-castracao-quimica.ghtml",
-					"2026-06-18",
-				),
-			},
-			{
-				issue: dv(
-					"Drogas",
-					"https://exame.com/brasil/flavio-bolsonaro-aposta-em-modelo-el-salvador-e-reducao-da-maioridade-em-plano-de-seguranca/",
-					"2026-06-18",
-				),
-				position: dv(
-					"Contra qualquer legalização. Internação compulsória.",
-					"https://exame.com/brasil/flavio-bolsonaro-aposta-em-modelo-el-salvador-e-reducao-da-maioridade-em-plano-de-seguranca/",
-					"2026-06-18",
-				),
-			},
-			{
-				issue: dv(
 					"Aborto",
 					"https://oglobo.globo.com/politica/noticia/2026/06/03/de-aborto-a-maioridade-penal-oposicao-no-congresso-tenta-aprovar-propostas-que-sao-bandeiras-eleitorais-antes-da-campanha.ghtml",
 					"2026-06-03",
@@ -659,26 +611,14 @@ export const flavio: Candidate = 	{
 			},
 			{
 				issue: dv(
-					"Privatização",
-					"https://jornaltaguacei.com.br/noticias/22/02/2026/pre-candidato-flavio-bolsonaro-defende-mais-privatizacao-prisoes-e-armas-no-brasil/",
-					"2026-02-22",
+					"Drogas",
+					"https://exame.com/brasil/flavio-bolsonaro-aposta-em-modelo-el-salvador-e-reducao-da-maioridade-em-plano-de-seguranca/",
+					"2026-06-18",
 				),
 				position: dv(
-					"A favor. Eficiência setor privado.",
-					"https://jornaltaguacei.com.br/noticias/22/02/2026/pre-candidato-flavio-bolsonaro-defende-mais-privatizacao-prisoes-e-armas-no-brasil/",
-					"2026-02-22",
-				),
-			},
-			{
-				issue: dv(
-					"Reforma Tributária",
-					"https://jornaltaguacei.com.br/noticias/22/02/2026/pre-candidato-flavio-bolsonaro-defende-mais-privatizacao-prisoes-e-armas-no-brasil/",
-					"2026-02-22",
-				),
-				position: dv(
-					"Simplificação. Contra alíquotas progressivas.",
-					"https://jornaltaguacei.com.br/noticias/22/02/2026/pre-candidato-flavio-bolsonaro-defende-mais-privatizacao-prisoes-e-armas-no-brasil/",
-					"2026-02-22",
+					"Contra qualquer legalização. Internação compulsória.",
+					"https://exame.com/brasil/flavio-bolsonaro-aposta-em-modelo-el-salvador-e-reducao-da-maioridade-em-plano-de-seguranca/",
+					"2026-06-18",
 				),
 			},
 			{
@@ -703,6 +643,66 @@ export const flavio: Candidate = 	{
 					"Contra. Disse que se enganou ao votar a favor do aumento p/ R$ 3,8 bi em 2019. Defende financiamento privado.",
 					"https://valor.globo.com/politica/noticia/2019/12/06/flavio-bolsonaro-diz-que-se-enganou-ao-votar-a-favor-de-aumento-do-fundo-eleitoral.ghtml",
 					"2019-12-06",
+				),
+			},
+			{
+				issue: dv(
+					"Meio Ambiente",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Posi%C3%A7%C3%B5es_pol%C3%ADticas",
+					"2026-06-26",
+				),
+				position: dv(
+					'Exploração Amazônia "responsável". Crítico ativismo.',
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Posi%C3%A7%C3%B5es_pol%C3%ADticas",
+					"2026-06-26",
+				),
+			},
+			{
+				issue: dv(
+					"Privatização",
+					"https://jornaltaguacei.com.br/noticias/22/02/2026/pre-candidato-flavio-bolsonaro-defende-mais-privatizacao-prisoes-e-armas-no-brasil/",
+					"2026-02-22",
+				),
+				position: dv(
+					"A favor. Eficiência setor privado.",
+					"https://jornaltaguacei.com.br/noticias/22/02/2026/pre-candidato-flavio-bolsonaro-defende-mais-privatizacao-prisoes-e-armas-no-brasil/",
+					"2026-02-22",
+				),
+			},
+			{
+				issue: dv(
+					"Reforma Tributária",
+					"https://jornaltaguacei.com.br/noticias/22/02/2026/pre-candidato-flavio-bolsonaro-defende-mais-privatizacao-prisoes-e-armas-no-brasil/",
+					"2026-02-22",
+				),
+				position: dv(
+					"Simplificação. Contra alíquotas progressivas.",
+					"https://jornaltaguacei.com.br/noticias/22/02/2026/pre-candidato-flavio-bolsonaro-defende-mais-privatizacao-prisoes-e-armas-no-brasil/",
+					"2026-02-22",
+				),
+			},
+			{
+				issue: dv(
+					"Regulação Mídia e Redes",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Posi%C3%A7%C3%B5es_pol%C3%ADticas",
+					"2026-06-26",
+				),
+				position: dv(
+					"Contra. Liberdade total expressão.",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Posi%C3%A7%C3%B5es_pol%C3%ADticas",
+					"2026-06-26",
+				),
+			},
+			{
+				issue: dv(
+					"Segurança Pública",
+					"https://g1.globo.com/sp/sao-paulo/eleicoes/2026/noticia/2026/06/18/flavio-bolsonaro-lanca-pacote-de-seguranca-com-reducao-da-maioridade-penal-e-castracao-quimica.ghtml",
+					"2026-06-18",
+				),
+				position: dv(
+					'Bandeira principal. "Brasil Sem Medo". Endurecimento penal.',
+					"https://g1.globo.com/sp/sao-paulo/eleicoes/2026/noticia/2026/06/18/flavio-bolsonaro-lanca-pacote-de-seguranca-com-reducao-da-maioridade-penal-e-castracao-quimica.ghtml",
+					"2026-06-18",
 				),
 			}
 		

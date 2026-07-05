@@ -10,8 +10,8 @@ export interface DataVersionInfo {
 }
 
 export const dataVersion: DataVersionInfo = {
-	version: "2026-07-05T23:30:00Z",
-	updatedAt: "2026-07-05T23:30:00Z",
+	version: "2026-07-05T23:45:00Z",
+	updatedAt: "2026-07-05T23:45:00Z",
 	changes: [
 		{
 			emoji: "🔄",
@@ -53,6 +53,22 @@ export const dataVersion: DataVersionInfo = {
 		{
 			emoji: "🎥",
 			label: "Caiado: videos — BandNews FM, TMC News Br, CNN HORA H (Kassab vice) 01-02/jul",
+		},
+		{
+			emoji: "👤",
+			label: "Zema: scandal — Isenção fiscal R$2,28mi para Eletrozema (empresa família) 25/jun",
+		},
+		{
+			emoji: "👤",
+			label: "Zema: timeline — Apoio ACM Neto (BA) 02/jul + Apoio Girão (CE) 04/jul + nega alianças 25/jun",
+		},
+		{
+			emoji: "👤",
+			label: "Zema: positions — Bolsa Família/'geração imprestáveis' 22/jun + STF/Gilmar 26/jun + Apoios regionais 02/jul",
+		},
+		{
+			emoji: "🎥",
+			label: "Zema: videos — Poder360 04/jul + BandNews FM 02/jul",
 		},
 	],
 };

@@ -696,50 +696,14 @@ export const lula: Candidate = 	{
 		positions: [
 			{
 				issue: dv(
-					"Casamento LGBT+",
-					"https://www.voxms.com.br/politica/governo-lula-lanca-campanha-de-visibilidade-e-defesa-dos-direitos-lgbtqia",
-					"2026-06-05",
+					"Aborto",
+					"https://www.bbc.com/portuguese/articles/c888dj7y7elo",
+					"2024-06-15",
 				),
 				position: dv(
-					'Apoio união civil homoafetiva. "Brasil sem Homofobia".',
-					"https://www.voxms.com.br/politica/governo-lula-lanca-campanha-de-visibilidade-e-defesa-dos-direitos-lgbtqia",
-					"2026-06-05",
-				),
-			},
-			{
-				issue: dv(
-					"Regulação Mídia e Redes",
-					"https://pt.org.br/com-olhar-para-o-futuro-programa-de-governo-de-lula-tera-construcao-coletiva/",
-					"2026-05-30",
-				),
-				position: dv(
-					"Regular sem censura. Combate desinformação.",
-					"https://pt.org.br/com-olhar-para-o-futuro-programa-de-governo-de-lula-tera-construcao-coletiva/",
-					"2026-05-30",
-				),
-			},
-			{
-				issue: dv(
-					"Privatização",
-					"https://g1.globo.com/se/sergipe/noticia/2026/05/29/lula-em-sergipe.ghtml",
-					"2026-05-29",
-				),
-				position: dv(
-					"Contrário. Fortalecimento da empresa pública.",
-					"https://g1.globo.com/se/sergipe/noticia/2026/05/29/lula-em-sergipe.ghtml",
-					"2026-05-29",
-				),
-			},
-			{
-				issue: dv(
-					"Meio Ambiente",
-					"https://g1.globo.com/politica/noticia/2026/05/18/lula-cita-possivel-interesse-de-trump-e-defende-exploracao-da-margem-equatorial-pela-petrobras-garantir-para-o-nosso-pais.ghtml",
-					"2026-05-18",
-				),
-				position: dv(
-					"Prioridade. Combate desmatamento. Transição energética.",
-					"https://g1.globo.com/politica/noticia/2026/05/18/lula-cita-possivel-interesse-de-trump-e-defende-exploracao-da-margem-equatorial-pela-petrobras-garantir-para-o-nosso-pais.ghtml",
-					"2026-05-18",
+					"Pessoalmente contra. Saúde pública. Contra PL 1904/2024.",
+					"https://www.bbc.com/portuguese/articles/c888dj7y7elo",
+					"2024-06-15",
 				),
 			},
 			{
@@ -756,62 +720,14 @@ export const lula: Candidate = 	{
 			},
 			{
 				issue: dv(
-					"Segurança Pública",
-					"https://g1.globo.com/politica/noticia/2026/05/12/governo-federal-lanca-plano-de-combate-ao-crime-organizado-veja-acoes.ghtml",
-					"2026-05-12",
+					"Casamento LGBT+",
+					"https://www.voxms.com.br/politica/governo-lula-lanca-campanha-de-visibilidade-e-defesa-dos-direitos-lgbtqia",
+					"2026-06-05",
 				),
 				position: dv(
-					"Repressão qualificada (inteligência). PEC Segurança. PL Antifacção.",
-					"https://g1.globo.com/politica/noticia/2026/05/12/governo-federal-lanca-plano-de-combate-ao-crime-organizado-veja-acoes.ghtml",
-					"2026-05-12",
-				),
-			},
-			{
-				issue: dv(
-					"Previdência",
-					"https://horadopovo.com.br/centrais-levam-pauta-a-lula-que-critica-reformas-e-convoca-mobilizacao-para-avanco-em-direitos-trabalhistas/",
-					"2026-04-16",
-				),
-				position: dv(
-					"Revisão EC 103/2019. Ampliar cobertura.",
-					"https://horadopovo.com.br/centrais-levam-pauta-a-lula-que-critica-reformas-e-convoca-mobilizacao-para-avanco-em-direitos-trabalhistas/",
-					"2026-04-16",
-				),
-			},
-			{
-				issue: dv(
-					"Trabalhista",
-					"https://www.estadao.com.br/politica/lula-critica-reforma-trabalhista-e-chama-bolsonaro-de-a-coisa-que-veio-depois-do-temer-nprp/",
-					"2026-04-16",
-				),
-				position: dv(
-					"Revogar marcos reforma 2017. Proteção apps. Apoio fim 6x1.",
-					"https://www.estadao.com.br/politica/lula-critica-reforma-trabalhista-e-chama-bolsonaro-de-a-coisa-que-veio-depois-do-temer-nprp/",
-					"2026-04-16",
-				),
-			},
-			{
-				issue: dv(
-					"Mobilidade Urbana",
-					"https://www.cnnbrasil.com.br/eleicoes/lula-vai-propor-sus-do-transporte-com-tarifa-zero-em-plano-de-governo/",
-					"2026-02-23",
-				),
-				position: dv(
-					"Tarifa zero no transporte público. Sistema Nacional de Mobilidade Urbana.",
-					"https://www.cnnbrasil.com.br/eleicoes/lula-vai-propor-sus-do-transporte-com-tarifa-zero-em-plano-de-governo/",
-					"2026-02-23",
-				),
-			},
-			{
-				issue: dv(
-					"Reforma Tributária",
-					"https://g1.globo.com/economia/noticia/2025/03/18/mudancas-no-ir-imposto-para-super-rico-comeca-em-25percent-a-partir-de-r-600-mil-por-ano-e-busca-arrecadar-r-25-bilhoes-em-2026.ghtml",
-					"2025-03-18",
-				),
-				position: dv(
-					'Progressiva. "Ricos pagarem IR". Tributação dividendos.',
-					"https://g1.globo.com/economia/noticia/2025/03/18/mudancas-no-ir-imposto-para-super-rico-comeca-em-25percent-a-partir-de-r-600-mil-por-ano-e-busca-arrecadar-r-25-bilhoes-em-2026.ghtml",
-					"2025-03-18",
+					'Apoio união civil homoafetiva. "Brasil sem Homofobia".',
+					"https://www.voxms.com.br/politica/governo-lula-lanca-campanha-de-visibilidade-e-defesa-dos-direitos-lgbtqia",
+					"2026-06-05",
 				),
 			},
 			{
@@ -828,18 +744,6 @@ export const lula: Candidate = 	{
 			},
 			{
 				issue: dv(
-					"Aborto",
-					"https://www.bbc.com/portuguese/articles/c888dj7y7elo",
-					"2024-06-15",
-				),
-				position: dv(
-					"Pessoalmente contra. Saúde pública. Contra PL 1904/2024.",
-					"https://www.bbc.com/portuguese/articles/c888dj7y7elo",
-					"2024-06-15",
-				),
-			},
-			{
-				issue: dv(
 					"Fundo Eleitoral",
 					"https://www1.folha.uol.com.br/poder/2024/02/lula-critica-pt-e-diz-que-fundo-eleitoral-e-cooptado-por-deputados-com-mandato.shtml",
 					"2024-02-02",
@@ -848,6 +752,102 @@ export const lula: Candidate = 	{
 					"Crítico. Fundo cooptado por deputados com mandato. Defende distribuição mais equilibrada.",
 					"https://www1.folha.uol.com.br/poder/2024/02/lula-critica-pt-e-diz-que-fundo-eleitoral-e-cooptado-por-deputados-com-mandato.shtml",
 					"2024-02-02",
+				),
+			},
+			{
+				issue: dv(
+					"Meio Ambiente",
+					"https://g1.globo.com/politica/noticia/2026/05/18/lula-cita-possivel-interesse-de-trump-e-defende-exploracao-da-margem-equatorial-pela-petrobras-garantir-para-o-nosso-pais.ghtml",
+					"2026-05-18",
+				),
+				position: dv(
+					"Prioridade. Combate desmatamento. Transição energética.",
+					"https://g1.globo.com/politica/noticia/2026/05/18/lula-cita-possivel-interesse-de-trump-e-defende-exploracao-da-margem-equatorial-pela-petrobras-garantir-para-o-nosso-pais.ghtml",
+					"2026-05-18",
+				),
+			},
+			{
+				issue: dv(
+					"Mobilidade Urbana",
+					"https://www.cnnbrasil.com.br/eleicoes/lula-vai-propor-sus-do-transporte-com-tarifa-zero-em-plano-de-governo/",
+					"2026-02-23",
+				),
+				position: dv(
+					"Tarifa zero no transporte público. Sistema Nacional de Mobilidade Urbana.",
+					"https://www.cnnbrasil.com.br/eleicoes/lula-vai-propor-sus-do-transporte-com-tarifa-zero-em-plano-de-governo/",
+					"2026-02-23",
+				),
+			},
+			{
+				issue: dv(
+					"Previdência",
+					"https://horadopovo.com.br/centrais-levam-pauta-a-lula-que-critica-reformas-e-convoca-mobilizacao-para-avanco-em-direitos-trabalhistas/",
+					"2026-04-16",
+				),
+				position: dv(
+					"Revisão EC 103/2019. Ampliar cobertura.",
+					"https://horadopovo.com.br/centrais-levam-pauta-a-lula-que-critica-reformas-e-convoca-mobilizacao-para-avanco-em-direitos-trabalhistas/",
+					"2026-04-16",
+				),
+			},
+			{
+				issue: dv(
+					"Privatização",
+					"https://g1.globo.com/se/sergipe/noticia/2026/05/29/lula-em-sergipe.ghtml",
+					"2026-05-29",
+				),
+				position: dv(
+					"Contrário. Fortalecimento da empresa pública.",
+					"https://g1.globo.com/se/sergipe/noticia/2026/05/29/lula-em-sergipe.ghtml",
+					"2026-05-29",
+				),
+			},
+			{
+				issue: dv(
+					"Reforma Tributária",
+					"https://g1.globo.com/economia/noticia/2025/03/18/mudancas-no-ir-imposto-para-super-rico-comeca-em-25percent-a-partir-de-r-600-mil-por-ano-e-busca-arrecadar-r-25-bilhoes-em-2026.ghtml",
+					"2025-03-18",
+				),
+				position: dv(
+					'Progressiva. "Ricos pagarem IR". Tributação dividendos.',
+					"https://g1.globo.com/economia/noticia/2025/03/18/mudancas-no-ir-imposto-para-super-rico-comeca-em-25percent-a-partir-de-r-600-mil-por-ano-e-busca-arrecadar-r-25-bilhoes-em-2026.ghtml",
+					"2025-03-18",
+				),
+			},
+			{
+				issue: dv(
+					"Regulação Mídia e Redes",
+					"https://pt.org.br/com-olhar-para-o-futuro-programa-de-governo-de-lula-tera-construcao-coletiva/",
+					"2026-05-30",
+				),
+				position: dv(
+					"Regular sem censura. Combate desinformação.",
+					"https://pt.org.br/com-olhar-para-o-futuro-programa-de-governo-de-lula-tera-construcao-coletiva/",
+					"2026-05-30",
+				),
+			},
+			{
+				issue: dv(
+					"Segurança Pública",
+					"https://g1.globo.com/politica/noticia/2026/05/12/governo-federal-lanca-plano-de-combate-ao-crime-organizado-veja-acoes.ghtml",
+					"2026-05-12",
+				),
+				position: dv(
+					"Repressão qualificada (inteligência). PEC Segurança. PL Antifacção.",
+					"https://g1.globo.com/politica/noticia/2026/05/12/governo-federal-lanca-plano-de-combate-ao-crime-organizado-veja-acoes.ghtml",
+					"2026-05-12",
+				),
+			},
+			{
+				issue: dv(
+					"Trabalhista",
+					"https://www.estadao.com.br/politica/lula-critica-reforma-trabalhista-e-chama-bolsonaro-de-a-coisa-que-veio-depois-do-temer-nprp/",
+					"2026-04-16",
+				),
+				position: dv(
+					"Revogar marcos reforma 2017. Proteção apps. Apoio fim 6x1.",
+					"https://www.estadao.com.br/politica/lula-critica-reforma-trabalhista-e-chama-bolsonaro-de-a-coisa-que-veio-depois-do-temer-nprp/",
+					"2026-04-16",
 				),
 			}
 		
