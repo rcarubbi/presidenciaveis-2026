@@ -2,7 +2,7 @@
 
 import type { Candidate, ProposalItem } from '../../types'
 import { DataLink } from '../DataLink'
-import { proposalSections } from '../../data/proposals'
+import { proposalSections } from '@/data'
 import { sectionIcons } from '@/lib/sectionIcons'
 import { Shield, ChevronDown } from 'lucide-react'
 import { useState } from 'react'

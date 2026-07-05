@@ -2,9 +2,10 @@
 
 import { useState, useMemo } from 'react'
 import type { Candidate, MediaItem } from '../../types'
-import { mediaData } from '../../data/media'
-import { ChevronDown } from 'lucide-react'
+import { mediaData } from '@/data'
+import { ChevronDown, Video } from 'lucide-react'
 import { MediaCard } from '../MediaCard'
+import { CandidateNameHeading } from '../ui/CandidateNameHeading'
 
 interface MidiaProps {
   candidates: Candidate[]
@@ -17,37 +18,16 @@ interface DateGroup {
   items: MediaItem[]
 }
 
-const MONTHS = [
-  'Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho',
-  'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro',
-]
-
-function formatMonth(ym: string): string {
-  const [y, m] = ym.split('-')
-  return `${MONTHS[parseInt(m, 10) - 1]} de ${y}`
-}
-
 function buildDateGroups(candidateId: string): DateGroup[] {
   const cats = mediaData[candidateId]
   if (!cats) return []
 
-  const all = cats.flatMap((cat) => cat.items)
-
-  const map = new Map<string, MediaItem[]>()
-  for (const item of all) {
-    const ym = item.title.updatedAt.slice(0, 7)
-    if (!map.has(ym)) map.set(ym, [])
-    map.get(ym)!.push(item)
-  }
-
-  return Array.from(map.entries())
-    .sort(([a], [b]) => b.localeCompare(a))
-    .map(([ym, items]) => ({
-      id: ym,
-      label: formatMonth(ym),
-      iso: ym,
-      items,
-    }))
+  return cats.map((cat) => ({
+    id: cat.id,
+    label: cat.label,
+    iso: cat.id,
+    items: cat.items,
+  }))
 }
 
 export function Midia({ candidates }: MidiaProps) {
@@ -68,7 +48,9 @@ export function Midia({ candidates }: MidiaProps) {
   }
 
   return (
-    <div className="space-y-3">
+    <div className="space-y-6">
+      <CandidateNameHeading candidates={candidates} icon={Video} title={`${candidate.name.value} NA MÍDIA`} />
+      <div className="space-y-3">
       {groups.map((group) => {
         const isOpen = expanded === group.id
         return (
@@ -107,6 +89,7 @@ export function Midia({ candidates }: MidiaProps) {
           </div>
         )
       })}
+    </div>
     </div>
   )
 }

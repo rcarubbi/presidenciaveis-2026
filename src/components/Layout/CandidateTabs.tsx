@@ -13,7 +13,7 @@ const tabs: { id: CandidateSubTab; label: string; icon: React.ComponentType<{ si
   { id: 'hero', label: 'Visão Geral', icon: Eye },
   { id: 'dados', label: 'Dados Pessoais', icon: User },
   { id: 'carreira', label: 'Carreira', icon: Briefcase },
-  { id: 'plano', label: 'Plano Governo', icon: FileText },
+  { id: 'plano', label: 'Plano de Governo', icon: FileText },
   { id: 'cobertura', label: 'Cobertura', icon: Newspaper },
   { id: 'escandalos', label: 'Escândalos', icon: Shield },
   { id: 'financiamento', label: 'Financiamento', icon: DollarSign },

@@ -1,5 +1,7 @@
 import type { Candidate } from '../../types'
 import { DataLink } from '../DataLink'
+import { Shield } from 'lucide-react'
+import { CandidateNameHeading } from '../ui/CandidateNameHeading'
 
 interface EscandalosProps {
   candidates: Candidate[]
@@ -36,6 +38,7 @@ export function Escandalos({ candidates }: EscandalosProps) {
 
   return (
     <div className="space-y-6">
+      <CandidateNameHeading candidates={candidates} icon={Shield} title="ESCÂNDALOS DE CORRUPÇÃO" />
       <div className="grid grid-cols-1 md:grid-cols-[repeat(auto-fit,minmax(240px,1fr))] gap-4">
         {counts.map((c) => (
           <div key={c.name} className="bento-card p-5 text-center">
@@ -61,9 +64,7 @@ export function Escandalos({ candidates }: EscandalosProps) {
       <div className="grid grid-cols-1 md:grid-cols-[repeat(auto-fit,minmax(240px,1fr))] gap-4">
         {candidates.map((c) => (
           <div key={c.id} className="bento-card p-5">
-            <h3 className="text-base font-semibold mb-4" style={{ color: c.party.color }}>
-              {candidates.length > 1 && <><DataLink data={c.name} /> </>}({c.scandals.length})
-            </h3>
+            <p className="text-sm text-gray-500 mb-4">{c.scandals.length} casos</p>
             {c.scandals.length === 0 ? (
               <p className="text-sm text-gray-400 italic">Nenhum caso registrado</p>
             ) : (
@@ -86,6 +87,62 @@ export function Escandalos({ candidates }: EscandalosProps) {
             )}
           </div>
         ))}
+      </div>
+    </div>
+  )
+}
+
+export function EscandalosCell({ candidate }: { candidate: Candidate }) {
+  const activeStatuses = new Set(['ativo'])
+  const resolvedStatuses = new Set(['rejeitado', 'absolvido', 'arquivado'])
+  const annulledStatuses = new Set(['anulado'])
+
+  const ativos = candidate.scandals.filter((s) => activeStatuses.has(s.status.value)).length
+  const resolvidos = candidate.scandals.filter((s) => resolvedStatuses.has(s.status.value)).length
+  const anulados = candidate.scandals.filter((s) => annulledStatuses.has(s.status.value)).length
+
+  return (
+    <div className="space-y-4">
+      <div className="bento-card p-5 text-center">
+        <p className="text-sm text-gray-500 mb-2">Casos</p>
+        <div className="flex justify-center gap-5 text-base">
+          <span>
+            <span className="font-bold text-red-500 tabular-nums">{ativos}</span>{' '}
+            <span className="text-gray-400">ativos</span>
+          </span>
+          <span>
+            <span className="font-bold text-green-500 tabular-nums">{resolvidos}</span>{' '}
+            <span className="text-gray-400">resolvidos</span>
+          </span>
+          <span>
+            <span className="font-bold text-orange-500 tabular-nums">{anulados}</span>{' '}
+            <span className="text-gray-400">anulados</span>
+          </span>
+        </div>
+      </div>
+
+      <div className="bento-card p-5">
+        <p className="text-sm text-gray-500 mb-4">{candidate.scandals.length} casos</p>
+        {candidate.scandals.length === 0 ? (
+          <p className="text-sm text-gray-400 italic">Nenhum caso registrado</p>
+        ) : (
+          <div className="space-y-4">
+            {candidate.scandals.map((s, i) => (
+              <div key={i} className="text-sm">
+                <div className="flex items-center gap-2 mb-1 flex-wrap">
+                  <span className="font-semibold text-gray-700 dark:text-gray-300"><DataLink data={s.name} /></span>
+                  <span className={`px-2.5 py-0.5 rounded-full text-xs font-medium ${statusColor[s.status.value]}`}>
+                    {statusLabel[s.status.value]}
+                  </span>
+                  {s.value && s.value.value && s.value.value !== '—' && (
+                    <span className="text-gray-400 ml-auto"><DataLink data={s.value} /></span>
+                  )}
+                </div>
+                <p className="text-gray-500 dark:text-gray-400"><DataLink data={s.description} /></p>
+              </div>
+            ))}
+          </div>
+        )}
       </div>
     </div>
   )

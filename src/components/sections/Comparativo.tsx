@@ -5,16 +5,19 @@ import Link from 'next/link'
 import { useRouter, usePathname } from 'next/navigation'
 import { toast } from 'sonner'
 import type { Candidate, CandidateSubTab } from '../../types'
-import { ArrowLeft } from 'lucide-react'
-import { DadosPessoais } from './DadosPessoais'
-import { Carreira } from './Carreira'
-import { Escandalos } from './Escandalos'
-import { Financiamento } from './Financiamento'
-import { Posicionamento } from './Posicionamento'
-import { PlanoGoverno } from './PlanoGoverno'
+import { ArrowLeft, User, Briefcase, FileText, Newspaper, Shield, DollarSign, Grid3X3 } from 'lucide-react'
+import { DadosPessoaisCell } from './DadosPessoais'
+import { CarreiraCell } from './Carreira'
+import { EscandalosCell } from './Escandalos'
+import { FinanciamentoCell } from './Financiamento'
+import { PlanoGovernoCell } from './PlanoGoverno'
+import { PosicionamentoCell } from './Posicionamento'
+import { CoberturaCell } from './Cobertura'
 import { ComparisonSelector } from './ComparisonSelector'
 import { ComparisonTabs } from './ComparisonTabs'
-import { ComparativoCobertura } from './ComparativoCobertura'
+import { ErrorBoundary } from '../ErrorBoundary'
+import { ShareButton } from '../ui/ShareButton'
+import { CandidateSectionBlock } from '../ui/CandidateSectionBlock'
 
 interface ComparativoProps {
   candidates: Candidate[]
@@ -23,6 +26,10 @@ interface ComparativoProps {
 }
 
 const validCmpTabs: CandidateSubTab[] = ['dados', 'carreira', 'plano', 'cobertura', 'escandalos', 'financiamento', 'posicionamento']
+
+function CmpGrid({ children }: { children: React.ReactNode }) {
+  return <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">{children}</div>
+}
 
 export function Comparativo({ candidates, initialIds = ['lula', 'flavio', 'renan'], initialTab }: ComparativoProps) {
   const router = useRouter()
@@ -63,26 +70,135 @@ export function Comparativo({ candidates, initialIds = ['lula', 'flavio', 'renan
 
   const renderCmpContent = () => {
     switch (cmpTab) {
-      case 'dados': return <DadosPessoais candidates={filtered} />
-      case 'carreira': return <Carreira candidates={filtered} />
-      case 'plano': return <PlanoGoverno candidates={filtered} />
-      case 'cobertura': return <ComparativoCobertura candidates={filtered} />
-      case 'escandalos': return <Escandalos candidates={filtered} />
-      case 'financiamento': return <Financiamento candidates={filtered} />
-      case 'posicionamento': return <Posicionamento candidates={filtered} />
-      default: return null
+      case 'dados':
+        return (
+          <>
+            <div className="flex items-center gap-2 mb-4 text-gray-700 dark:text-gray-300">
+              <User className="size-4" />
+              <h3 className="text-sm font-black uppercase tracking-[0.12em]">DADOS PESSOAIS</h3>
+            </div>
+            <CmpGrid>
+              {filtered.map((c) => (
+                <CandidateSectionBlock key={c.id} candidate={c}>
+                  <DadosPessoaisCell candidate={c} />
+                </CandidateSectionBlock>
+              ))}
+            </CmpGrid>
+          </>
+        )
+      case 'carreira':
+        return (
+          <>
+            <div className="flex items-center gap-2 mb-4 text-gray-700 dark:text-gray-300">
+              <Briefcase className="size-4" />
+              <h3 className="text-sm font-black uppercase tracking-[0.12em]">CARREIRA POLÍTICA</h3>
+            </div>
+            <CmpGrid>
+              {filtered.map((c) => (
+                <CandidateSectionBlock key={c.id} candidate={c}>
+                  <CarreiraCell candidate={c} />
+                </CandidateSectionBlock>
+              ))}
+            </CmpGrid>
+          </>
+        )
+      case 'plano':
+        return (
+          <>
+            <div className="flex items-center gap-2 mb-4 text-gray-700 dark:text-gray-300">
+              <FileText className="size-4" />
+              <h3 className="text-sm font-black uppercase tracking-[0.12em]">PLANO DE GOVERNO</h3>
+            </div>
+            <CmpGrid>
+              {filtered.map((c) => (
+                <CandidateSectionBlock key={c.id} candidate={c}>
+                  <PlanoGovernoCell candidate={c} />
+                </CandidateSectionBlock>
+              ))}
+            </CmpGrid>
+          </>
+        )
+      case 'cobertura':
+        return (
+          <>
+            <div className="flex items-center gap-2 mb-4 text-gray-700 dark:text-gray-300">
+              <Newspaper className="size-4" />
+              <h3 className="text-sm font-black uppercase tracking-[0.12em]">COBERTURA JORNALÍSTICA</h3>
+            </div>
+            <CmpGrid>
+              {filtered.map((c) => (
+                <CandidateSectionBlock key={c.id} candidate={c}>
+                  <CoberturaCell candidate={c} />
+                </CandidateSectionBlock>
+              ))}
+            </CmpGrid>
+          </>
+        )
+      case 'escandalos':
+        return (
+          <>
+            <div className="flex items-center gap-2 mb-4 text-gray-700 dark:text-gray-300">
+              <Shield className="size-4" />
+              <h3 className="text-sm font-black uppercase tracking-[0.12em]">ESCÂNDALOS DE CORRUPÇÃO</h3>
+            </div>
+            <CmpGrid>
+              {filtered.map((c) => (
+                <CandidateSectionBlock key={c.id} candidate={c}>
+                  <EscandalosCell candidate={c} />
+                </CandidateSectionBlock>
+              ))}
+            </CmpGrid>
+          </>
+        )
+      case 'financiamento':
+        return (
+          <>
+            <div className="flex items-center gap-2 mb-4 text-gray-700 dark:text-gray-300">
+              <DollarSign className="size-4" />
+              <h3 className="text-sm font-black uppercase tracking-[0.12em]">FINANCIAMENTO DE CAMPANHA</h3>
+            </div>
+            <CmpGrid>
+              {filtered.map((c) => (
+                <CandidateSectionBlock key={c.id} candidate={c}>
+                  <FinanciamentoCell candidate={c} />
+                </CandidateSectionBlock>
+              ))}
+            </CmpGrid>
+          </>
+        )
+      case 'posicionamento':
+        return (
+          <>
+            <div className="flex items-center gap-2 mb-4 text-gray-700 dark:text-gray-300">
+              <Grid3X3 className="size-4" />
+              <h3 className="text-sm font-black uppercase tracking-[0.12em]">POSICIONAMENTO SOBRE PAUTAS POLÊMICAS</h3>
+            </div>
+            <CmpGrid>
+              {filtered.map((c) => (
+                <CandidateSectionBlock key={c.id} candidate={c}>
+                  <PosicionamentoCell candidate={c} />
+                </CandidateSectionBlock>
+              ))}
+            </CmpGrid>
+          </>
+        )
+      default:
+        return null
     }
   }
 
   return (
     <div className="space-y-8 animate-fade-in">
-      <Link
-        href="/"
-        className="flex min-h-11 w-fit items-center gap-2 rounded-full border border-blue-100/80 bg-white/70 px-4 text-sm font-bold text-slate-600 shadow-sm transition-all duration-200 hover:bg-blue-50 hover:text-blue-950 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 dark:border-blue-900/50 dark:bg-slate-900/70 dark:text-slate-300 dark:hover:bg-slate-800 dark:hover:text-white"
-      >
-        <ArrowLeft size={16} />
-        Voltar
-      </Link>
+      <div className="flex items-center gap-3 flex-wrap">
+        <Link
+          href="/"
+          className="flex min-h-11 w-fit items-center gap-2 rounded-full border border-blue-100/80 bg-white/70 px-4 text-sm font-bold text-slate-600 shadow-sm transition-all duration-200 hover:bg-blue-50 hover:text-blue-950 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 dark:border-blue-900/50 dark:bg-slate-900/70 dark:text-slate-300 dark:hover:bg-slate-800 dark:hover:text-white"
+        >
+          <ArrowLeft size={16} />
+          Voltar
+        </Link>
+        <ShareButton />
+      </div>
       <section className="bento-panel overflow-hidden px-6 py-8 sm:px-10 sm:py-12">
         <div className="max-w-2xl">
           <span className="civic-chip mb-4 w-fit">Comparativo</span>
@@ -102,7 +218,7 @@ export function Comparativo({ candidates, initialIds = ['lula', 'flavio', 'renan
 
 
       <div className="tab-enter" key={cmpTab} role="tabpanel" id={`cmp-panel-${cmpTab}`} aria-labelledby={`cmp-tab-${cmpTab}`}>
-        {renderCmpContent()}
+        <ErrorBoundary key={cmpTab}>{renderCmpContent()}</ErrorBoundary>
       </div>
     </div>
   )

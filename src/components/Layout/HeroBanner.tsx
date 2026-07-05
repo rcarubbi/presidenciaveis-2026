@@ -15,7 +15,7 @@ export function HeroBanner({ candidate: c }: HeroBannerProps) {
     <div className="bento-card overflow-hidden">
       <div className="relative" style={{ backgroundColor: color }}>
         <div className="relative h-[624px] overflow-hidden">
-          <div className="absolute inset-0 overflow-hidden animate-slide-from-right">
+          <div className="absolute inset-0 animate-slide-from-right">
             <img
               src={c.photo}
               alt={c.fullName.value}
@@ -28,7 +28,7 @@ export function HeroBanner({ candidate: c }: HeroBannerProps) {
                 background: `linear-gradient(to top, ${color} 0%, ${color}cc 35%, ${color}55 65%, transparent 85%)`,
               }}
             />
-            <span className="absolute right-5 top-5 z-20 civic-chip border-white/30 bg-black/25 text-white backdrop-blur-sm dark:border-white/20 dark:bg-black/40">
+            <span className="absolute right-6 top-5 z-10 -translate-y-[20%] max-sm:text-[clamp(3rem,8vw,5rem)] sm:text-[clamp(7rem,18vw,38rem)] font-black leading-none text-white/10 select-none pointer-events-none">
               {c.party.number}
             </span>
           </div>
@@ -37,7 +37,7 @@ export function HeroBanner({ candidate: c }: HeroBannerProps) {
               <img
                 src={c.party.logo}
                 alt={c.party.name.value}
-                className="h-12 max-w-24 object-contain drop-shadow-lg"
+                className="h-12 md:h-16 max-w-24 md:max-w-36 object-contain drop-shadow-lg"
               />
             </div>
             <div className="absolute inset-0 flex flex-col justify-end p-6 md:p-10">

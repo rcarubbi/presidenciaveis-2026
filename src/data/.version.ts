@@ -10,9 +10,20 @@ export interface DataVersionInfo {
 }
 
 export const dataVersion: DataVersionInfo = {
-	version: "2026-07-04T02:53:41Z",
-	updatedAt: "2026-07-04T02:53:41Z",
+	version: "2026-07-05T15:30:00Z",
+	updatedAt: "2026-07-05T15:30:00Z",
 	changes: [
-		{ emoji: "👤", label: "Dados dos candidatos" },
+		{
+			emoji: "📋",
+			label: "Lula: Compliance Zero — Wagner afastou-se liderança 24/06",
+		},
+		{
+			emoji: "👤",
+			label: "Lula: timeline — Teresa Leitão liderança Senado",
+		},
+		{
+			emoji: "🎥",
+			label: "Lula: vídeo — discurso 68ª Cúpula Mercosul",
+		},
 	],
 };

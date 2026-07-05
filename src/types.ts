@@ -92,6 +92,16 @@ export interface ProposalItem {
 	text: DataValue;
 }
 
+export interface ProposalSection {
+	id: string
+	label: string
+	lula: ProposalItem[]
+	flavio: ProposalItem[]
+	renan: ProposalItem[]
+	caiado: ProposalItem[]
+	zema: ProposalItem[]
+}
+
 export interface MediaItem {
 	title: DataValue;
 	description: DataValue;

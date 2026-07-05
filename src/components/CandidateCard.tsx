@@ -86,7 +86,7 @@ function PartyBadge() {
       <div className="absolute left-5 top-5 z-20">
         <img src={c.party.logo} alt={c.party.name.value} className="h-9 max-w-20 object-contain drop-shadow-lg" />
       </div>
-      <span className="civic-chip absolute right-4 top-4 z-20 border-white/30 bg-black/30 text-white backdrop-blur-sm dark:border-white/20 dark:bg-black/40">
+      <span className="absolute right-3 top-3 z-10 text-[clamp(2.5rem,5vw,3.5rem)] font-black leading-none text-white/15 select-none pointer-events-none">
         {c.party.number}
       </span>
     </>
@@ -98,10 +98,10 @@ function Info() {
   return (
     <div className="absolute inset-0 flex flex-col justify-end p-5">
       <div className="rounded-2xl bg-gradient-to-t from-black/75 via-black/45 to-transparent p-4 pt-8">
-        <h2 className="text-2xl font-black text-white drop-shadow-sm">{c.name.value}</h2>
-        <p className="text-sm font-medium leading-tight text-white/85">{c.currentPosition.value}</p>
+        <h2 className="text-lg font-black text-white drop-shadow-sm sm:text-2xl">{c.name.value}</h2>
+        <p className="text-xs font-medium leading-tight text-white/85 sm:text-sm">{c.currentPosition.value}</p>
         <CandidateLabels age={c.age} careerYears={c.careerYears} />
-        <div className="mt-3 flex items-center gap-4 text-xs text-white/70">
+        <div className="mt-3 flex items-center gap-4 text-[10px] text-white/70 sm:text-xs">
           <span className="flex items-center gap-1.5">
             <span className="size-1.5 rounded-full bg-white/40" />
             {c.ideologicalPosition.value}
