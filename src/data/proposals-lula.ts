@@ -16,6 +16,7 @@ export const lulaProposals: Record<string, ProposalItem[]> = {
     { text: dv('Reindustrialização nacional', 'https://contee.org.br/lula-lanca-plano-participativo-e-abre-construcao-do-programa-de-governo-para-2027-2030/', '2026-06-05') },
     { text: dv('Valorização salário mínimo (inflação + PIB)', 'https://contee.org.br/lula-lanca-plano-participativo-e-abre-construcao-do-programa-de-governo-para-2027-2030/', '2026-06-05') },
     { text: dv('Desenrola 2 (renegociação dívidas)', 'https://pt.org.br/com-olhar-para-o-futuro-programa-de-governo-de-lula-tera-construcao-coletiva/', '2026-05-30') },
+    { text: dv('Mapa do Caminho para contornar tarifaço dos EUA (negociação Section 301, exceto Pix)', 'https://valor.globo.com/brasil/noticia/2026/07/02/governo-propoe-aos-eua-mapa-do-caminho-para-contornar-tarifa-de-25percent-mas-pix-e-inegociavel.ghtml', '2026-07-02') },
   ],
   saude: [
     { text: dv('Fortalecimento SUS (atenção primária, vigilância)', 'https://pt.org.br/com-olhar-para-o-futuro-programa-de-governo-de-lula-tera-construcao-coletiva/', '2026-05-30') },

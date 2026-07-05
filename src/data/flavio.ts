@@ -262,6 +262,13 @@ export const flavio: Candidate = 	{
 				),
 			}
 ],
+		event: dv(
+				'Plano "Brasil Sem Medo" (18/06). Dark Horse no STF. Crise c/ Michelle (24/06). Bia Kicis cotada vice. Audiência tarifas EUA (jul).',
+				"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Esc%C3%A2ndalo_do_Banco_Master_e_filme_Dark_Horse",
+				"2026-07-03",
+			),
+			},
+		],
 		electionResults: [
 			{
 				year: dvn(
@@ -970,6 +977,16 @@ export const flavio: Candidate = 	{
 				),
 			},
 
+					"Tarifas EUA",
+					"https://g1.globo.com/politica/noticia/2026/07/03/flavio-bolsonaro-eua-tarifaco.ghtml",
+					"2026-07-03",
+				),
+				position: dv(
+					"Crítico tarifaço Trump. Foi a Washington discursar contra tarifas ao Brasil. Defende alinhamento bilateral.",
+					"https://g1.globo.com/politica/noticia/2026/07/03/flavio-bolsonaro-eua-tarifaco.ghtml",
+					"2026-07-03",
+				),
+			},
 		],
 	}
 

@@ -18,6 +18,30 @@ export const flavioMedia: MediaCategory[] = [
 						"2026-07-02",
 					),
 					youtubeId: "7Oh-2Vg9reI",
+						"O novo apelido de Michelle Bolsonaro na direita após atrito com Flávio",
+						"https://www.youtube.com/watch?v=AZXyWibrND8",
+						"2026-07-03",
+					),
+					description: dv(
+						"A ex-primeira-dama Michelle Bolsonaro ganhou um novo apelido entre aliados dos filhos do ex-presidente Jair Bolsonaro (PL) após o atrito público com Flávio.",
+						"https://www.youtube.com/watch?v=AZXyWibrND8",
+						"2026-07-03",
+					),
+					youtubeId: "AZXyWibrND8",
+					category: "noticias",
+				},
+				{
+					title: dv(
+						"Flávio Bolsonaro perto de anunciar uma mulher como vice na chapa à Presidência",
+						"https://www.youtube.com/watch?v=pTUoISjZfRs",
+						"2026-07-02",
+					),
+					description: dv(
+						"Flávio Bolsonaro avisa que está perto de anunciar uma mulher como vice na disputa à Presidência. Em entrevista a Paulo Cappelli.",
+						"https://www.youtube.com/watch?v=pTUoISjZfRs",
+						"2026-07-02",
+					),
+					youtubeId: "pTUoISjZfRs",
 					category: "entrevistas",
 				},
 				{
