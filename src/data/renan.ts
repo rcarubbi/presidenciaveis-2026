@@ -262,7 +262,7 @@ export const renan: Candidate = 	{
 					name: dv("Crowdfunding PF"),
 				value: dvn(
 					1.12,
-					"https://www.estadao.com.br/politica/eleicoes/renan-santos-arrecada-r-112-milhao-em-crowdfunding-para-campanha/",
+					"https://www.estadao.com.br/politica/renan-aposta-em-vaquinha-base-do-mbl-e-faria-lima-para-disputar-2026-sem-maquina-partidaria/",
 					"2026-07-05",
 				),
 					color: "#d97706",
@@ -405,13 +405,13 @@ export const renan: Candidate = 	{
 			{
 				issue: dv(
 					"Fundo Eleitoral",
-					"https://aonpelavida.com.br/renan-santos-aparece-em-3o-lugar-na-pesquisa-atlasintel",
-					"2026-03-26",
+					"https://revistaoeste.com/politica/campanha-de-renan-santos-rejeita-fundo-eleitoral-e-aposta-em-vaquinha/",
+					"2026-07-01",
 				),
 				position: dv(
 					"Contra. Campanha via crowdfunding (vaquinha). Partido Missão sem fundo eleitoral consolidado. Defende financiamento voluntário.",
-					"https://aonpelavida.com.br/renan-santos-aparece-em-3o-lugar-na-pesquisa-atlasintel",
-					"2026-03-26",
+					"https://revistaoeste.com/politica/campanha-de-renan-santos-rejeita-fundo-eleitoral-e-aposta-em-vaquinha/",
+					"2026-07-01",
 				),
 			},
 			{
