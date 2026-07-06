@@ -8,6 +8,48 @@ export const zemaMedia: MediaCategory[] = [
 		items: [
 			{
 				title: dv(
+					"Poder360 entrevista Romeu Zema — pré-candidato do Novo (04/07)",
+					"https://www.youtube.com/watch?v=VXafoqXoKXs",
+					"2026-07-04",
+				),
+				description: dv(
+					"O pré-candidato do Partido Novo concede entrevista ao Poder360, abordando propostas de governo, economia e o cenário eleitoral.",
+					"https://www.youtube.com/watch?v=VXafoqXoKXs",
+					"2026-07-04",
+				),
+				youtubeId: "VXafoqXoKXs",
+				category: "entrevistas",
+			},
+			{
+				title: dv(
+					"Caiado anuncia vice, Zema ataca PT e Renan visita RS | Eleições 2026 (BandNews)",
+					"https://www.youtube.com/watch?v=-hNabO6-ctA",
+					"2026-07-02",
+				),
+				description: dv(
+					"O pré-candidato do Novo comenta o cenário eleitoral: Caiado anuncia vice, Zema ataca o PT e Renan Santos visita o Rio Grande do Sul.",
+					"https://www.youtube.com/watch?v=-hNabO6-ctA",
+					"2026-07-02",
+				),
+				youtubeId: "-hNabO6-ctA",
+				category: "debates",
+			},
+			{
+				title: dv(
+					"Flávio, Zema e Renan Santos ainda têm vices indefinidos — CNN Prime Time (02/07)",
+					"https://www.youtube.com/watch?v=uiNci5BdVJ8",
+					"2026-07-02",
+				),
+				description: dv(
+					"Análise da CNN Prime Time sobre os pré-candidatos que ainda não definiram seus vices: Flávio Bolsonaro, Romeu Zema e Renan Santos.",
+					"https://www.youtube.com/watch?v=uiNci5BdVJ8",
+					"2026-07-02",
+				),
+				youtubeId: "uiNci5BdVJ8",
+				category: "entrevistas",
+			},
+			{
+				title: dv(
 					"Romeu Zema no Poder360 — entrevista completa 01/07",
 					"https://www.youtube.com/watch?v=TWzMeA0MrJ0",
 					"2026-07-01",

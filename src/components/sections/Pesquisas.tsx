@@ -1,5 +1,6 @@
 'use client'
 
+import { useMemo } from 'react'
 import { useRouter } from 'next/navigation'
 import { usePollsData } from '../../hooks/usePollsData'
 import { SourceToggle } from './SourceToggle'
@@ -7,8 +8,7 @@ import { InstituteFilter } from './InstituteFilter'
 import { InstituteCharts } from './InstituteCharts'
 import { TseDataSection } from './TseDataSection'
 import { Spinner } from '../ui/Spinner'
-
-const institutes = ['AtlasIntel', 'Datafolha', 'Quaest', 'Real Time Big Data']
+import { polls } from '../../data/polls'
 
 interface PesquisasProps {
   initialSource?: 'institutes' | 'tse'
@@ -16,6 +16,7 @@ interface PesquisasProps {
 
 export function Pesquisas({ initialSource }: PesquisasProps) {
   const router = useRouter()
+  const institutes = useMemo(() => [...new Set(polls.map((p) => p.institute))], [])
   const {
     source, setSource,
     selected, setSelected,
@@ -44,7 +45,7 @@ export function Pesquisas({ initialSource }: PesquisasProps) {
               <span className="bg-gradient-to-r from-blue-800 to-amber-600 bg-clip-text text-transparent dark:from-blue-400 dark:to-amber-400">2026</span>
             </h1>
             <p className="mt-3 max-w-xl text-sm leading-relaxed text-slate-500 dark:text-slate-400">
-              Acompanhe as intenções de voto para Presidente da República. Os dados podem ser visualizados por instituto de pesquisa (Datafolha, Quaest, AtlasIntel, Real Time Big Data) ou pelos registros oficiais do Tribunal Superior Eleitoral.
+              Acompanhe as intenções de voto para Presidente da República. Os dados podem ser visualizados por instituto de pesquisa ou pelos registros oficiais do Tribunal Superior Eleitoral.
             </p>
           </div>
         </div>

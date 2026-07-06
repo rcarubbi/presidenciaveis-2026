@@ -2,6 +2,34 @@ import type { PollData } from '../types'
 
 export const polls: PollData[] = [
   {
+    institute: 'Nexus/BTG Pactual',
+    date: '29/jun',
+    firstRound: [
+      { name: 'Lula', value: 42.0 },
+      { name: 'Flávio', value: 34.0 },
+      { name: 'Caiado', value: 5.0 },
+      { name: 'Renan', value: 4.0 },
+      { name: 'Zema', value: 3.0 },
+      { name: 'Barbosa', value: 1.0 },
+      { name: 'Cury', value: 1.0 },
+      { name: 'Aécio', value: 1.0 },
+      { name: 'Daciolo', value: 1.0 },
+    ],
+    secondRound: [
+      { label: 'Lula × Flávio', lula: 47.0, adversario: 44.0, adversarioNome: 'Flávio' },
+      { label: 'Lula × Caiado', lula: 47.0, adversario: 39.0, adversarioNome: 'Caiado' },
+      { label: 'Lula × Zema', lula: 48.0, adversario: 38.0, adversarioNome: 'Zema' },
+      { label: 'Lula × Renan', lula: 48.0, adversario: 36.0, adversarioNome: 'Renan' },
+    ],
+    spontaneous: [
+      { name: 'Lula', value: 38 },
+      { name: 'Flávio', value: 27 },
+      { name: 'Renan', value: 3 },
+      { name: 'Caiado', value: 2 },
+      { name: 'Zema', value: 1 },
+    ],
+  },
+  {
     institute: 'AtlasIntel',
     date: '1/jul',
     firstRound: [

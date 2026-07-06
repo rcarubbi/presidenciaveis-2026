@@ -86,6 +86,10 @@ export const dataVersion: DataVersionInfo = {
 			label: "Caiado: videos — BandNews FM, TMC News Br, CNN HORA H (Kassab vice) 01-02/jul",
 		},
 		{
+			emoji: "📊",
+			label: "Zema: poll — Nexus/BTG 29/jun: Zema 3% 1T, 38% 2T vs Lula",
+		},
+		{
 			emoji: "👤",
 			label: "Zema: scandal — Isenção fiscal R$2,28mi para Eletrozema (empresa família) 25/jun",
 		},
@@ -99,7 +103,7 @@ export const dataVersion: DataVersionInfo = {
 		},
 		{
 			emoji: "🎥",
-			label: "Zema: videos — Poder360 04/jul + BandNews FM 02/jul",
+			label: "Zema: videos — Poder360 04/jul + BandNews FM 02/jul + CNN Prime Time (vices) 02/jul",
 		},
 	],
 };

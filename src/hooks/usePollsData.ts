@@ -31,7 +31,7 @@ function sortDateAsc(a: string, b: string) {
 
 export function usePollsData(initialSource?: 'institutes' | 'tse') {
   const [source, setSource] = useState<'institutes' | 'tse'>(initialSource ?? 'institutes')
-  const [selected, setSelected] = useState('AtlasIntel')
+  const [selected, setSelected] = useState(polls[0]?.institute ?? 'AtlasIntel')
   const [tseData, setTseData] = useState<TseResponse | null>(null)
   const [tseLoading, setTseLoading] = useState(false)
   const [tseError, setTseError] = useState('')
