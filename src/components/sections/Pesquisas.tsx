@@ -16,7 +16,7 @@ interface PesquisasProps {
 
 export function Pesquisas({ initialSource }: PesquisasProps) {
   const router = useRouter()
-  const institutes = useMemo(() => [...new Set(polls.map((p) => p.institute))], [])
+  const institutes = useMemo(() => [...new Set(polls.map((p) => p.institute))].sort(), [])
   const {
     source, setSource,
     selected, setSelected,
