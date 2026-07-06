@@ -4,6 +4,8 @@ Comparativo apartidário dos 5 principais candidatos à Presidência do Brasil
 em 2026 — Lula (PT), Flávio Bolsonaro (PL), Renan Santos (Missão),
 Ronaldo Caiado (PSD) e Romeu Zema (NOVO).
 
+![Screenshot](Screenshot.png)
+
 Código-fonte: [github.com/rcarubbi/presidenciaveis-2026](https://github.com/rcarubbi/presidenciaveis-2026)  
 Site: [presidenciaveis-2026.vercel.app](https://presidenciaveis-2026.vercel.app)
 
