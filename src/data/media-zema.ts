@@ -8,6 +8,20 @@ export const zemaMedia: MediaCategory[] = [
 			items: [
 				{
 					title: dv(
+						"Poder 360 entrevista Romeu Zema — pré-candidato à Presidência pelo Novo",
+						"https://www.youtube.com/watch?v=VXafoqXoKXs",
+						"2026-07-04",
+					),
+					description: dv(
+						"O pré-candidato do Novo concede entrevista ao Poder360 sobre propostas de governo, economia e o cenário eleitoral.",
+						"https://www.youtube.com/watch?v=VXafoqXoKXs",
+						"2026-07-04",
+					),
+					youtubeId: "VXafoqXoKXs",
+					category: "entrevistas",
+				},
+				{
+					title: dv(
 						"Romeu Zema no Poder360 — entrevista completa 01/07",
 						"https://www.youtube.com/watch?v=TWzMeA0MrJ0",
 						"2026-07-01",

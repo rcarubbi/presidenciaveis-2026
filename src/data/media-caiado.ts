@@ -64,6 +64,34 @@ export const caiadoMedia: MediaCategory[] = [
 				},
 				{
 					title: dv(
+						"Ronaldo Caiado anuncia vice, Zema ataca o PT e Renan Santos visita o RS | Eleições 2026",
+						"https://www.youtube.com/watch?v=-hNabO6-ctA",
+						"2026-07-02",
+					),
+					description: dv(
+						"BandNews FM cobre o anúncio de Kassab como vice de Caiado e analisa o cenário eleitoral.",
+						"https://www.youtube.com/watch?v=-hNabO6-ctA",
+						"2026-07-02",
+					),
+					youtubeId: "-hNabO6-ctA",
+					category: "campanha",
+				},
+				{
+					title: dv(
+						"EXCLUSIVO: Kassab diz que Caiado é o candidato mais preparado para governar o Brasil",
+						"https://www.youtube.com/watch?v=bRVarmAlqYg",
+						"2026-07-02",
+					),
+					description: dv(
+						"Gilberto Kassab, pré-candidato a vice, declara apoio a Caiado e afirma que ele é o mais preparado para governar o Brasil.",
+						"https://www.youtube.com/watch?v=bRVarmAlqYg",
+						"2026-07-02",
+					),
+					youtubeId: "bRVarmAlqYg",
+					category: "entrevistas",
+				},
+				{
+					title: dv(
 						"Caiado na Jovem Pan — Morning Show entrevista 01/07",
 						"https://www.youtube.com/watch?v=cm83H1ajZjc",
 						"2026-07-01",
@@ -74,6 +102,20 @@ export const caiadoMedia: MediaCategory[] = [
 						"2026-07-01",
 					),
 					youtubeId: "cm83H1ajZjc",
+					category: "entrevistas",
+				},
+				{
+					title: dv(
+						"Eleicoes 2026: Kassab fala sobre corrida presidencial e campanha com Caiado | CNN HORA H",
+						"https://www.youtube.com/watch?v=FL8GDqWaPEs",
+						"2026-07-01",
+					),
+					description: dv(
+						"Em entrevista à CNN, Gilberto Kassab, presidente nacional do PSD e pré-candidato a vice, fala sobre a corrida presidencial com Caiado.",
+						"https://www.youtube.com/watch?v=FL8GDqWaPEs",
+						"2026-07-01",
+					),
+					youtubeId: "FL8GDqWaPEs",
 					category: "entrevistas",
 				},
 			],

@@ -59,6 +59,45 @@ function loadYouTubeAPI(): Promise<void> {
   })
 }
 
+const categoryColors: Record<string, string> = {
+  'entrevistas': '#0ea5e9',
+  'entrevista': '#0ea5e9',
+  'campanha': '#10b981',
+  'debates': '#f59e0b',
+  'debate': '#f59e0b',
+  'podcasts': '#8b5cf6',
+  'podcast': '#8b5cf6',
+  'opiniao': '#f43f5e',
+  'discurso': '#06b6d4',
+  'ao-vivo': '#ef4444',
+}
+
+function formatCategory(cat: string): string {
+  const map: Record<string, string> = {
+    'entrevistas': 'Entrevista',
+    'campanha': 'Campanha',
+    'debates': 'Debate',
+    'podcasts': 'Podcast',
+    'opiniao': 'Opinião',
+    'discurso': 'Discurso',
+    'ao-vivo': 'Ao Vivo',
+    'entrevista': 'Entrevista',
+    'debate': 'Debate',
+    'podcast': 'Podcast',
+  }
+  return map[cat] || cat.charAt(0).toUpperCase() + cat.slice(1)
+}
+
+function getCategoryColor(cat: string): string {
+  return categoryColors[cat] || '#6b7280'
+}
+
+function formatDateBadge(iso: string): string {
+  const months = ['jan', 'fev', 'mar', 'abr', 'mai', 'jun', 'jul', 'ago', 'set', 'out', 'nov', 'dez']
+  const [, m, d] = iso.split('-')
+  return `${parseInt(d)}/${months[parseInt(m) - 1]}`
+}
+
 export function MediaCard({ item, color }: MediaCardProps) {
   const [mounted, setMounted] = useState(false)
   const [visible, setVisible] = useState(false)
@@ -172,6 +211,9 @@ export function MediaCard({ item, color }: MediaCardProps) {
             alt={item.title.value}
             className="absolute inset-0 w-full h-full object-cover"
           />
+          <div className="absolute top-2 left-2 z-10 px-2.5 py-1 rounded-full text-white text-[10px] font-medium shadow-sm backdrop-blur-sm" style={{ backgroundColor: getCategoryColor(item.category) }}>
+            {formatCategory(item.category)} · {formatDateBadge(item.title.updatedAt)}
+          </div>
           {isWatched && (
             <div className="absolute top-2 right-2 z-10 px-2 py-0.5 rounded-full text-white text-[10px] font-semibold flex items-center gap-1 shadow-sm" style={{ backgroundColor: color }}>
               <Check size={10} /> Visto

@@ -41,7 +41,8 @@ export const caiadoProposals: Record<string, ProposalItem[]> = {
     { text: dv('Parceria estratégica com EUA e Japão para processamento de terras raras', 'https://g1.globo.com/politica/eleicoes/2026/noticia/2026/03/30/anistia-a-bolsonaro-terras-raras-combate-ao-crime-as-propostas-de-caiado-no-1o-discurso.ghtml', '2026-03-30') },
     { text: dv('Soberania nacional na exploração de minerais críticos e terras raras', 'https://g1.globo.com/politica/eleicoes/2026/noticia/2026/03/30/anistia-a-bolsonaro-terras-raras-combate-ao-crime-as-propostas-de-caiado-no-1o-discurso.ghtml', '2026-03-30') },
   ],
-  'reforma-politica': [
+   'reforma-politica': [
+    { text: dv('Enviará projeto de reforma do STF ao Congresso com mandato determinado para ministros', 'https://metropoles.com/brasil/caiado-diz-que-enviara-projeto-de-reforma-do-stf-ao-congresso', '2026-06-22') },
     { text: dv('Anistia ampla, geral e irrestrita para condenados do 8 de janeiro', 'https://g1.globo.com/politica/eleicoes/2026/noticia/2026/03/30/anistia-a-bolsonaro-terras-raras-combate-ao-crime-as-propostas-de-caiado-no-1o-discurso.ghtml', '2026-03-30') },
     { text: dv('Voto distrital como prioridade da reforma política', 'https://g1.globo.com/politica/eleicoes/2026/noticia/2026/03/30/anistia-a-bolsonaro-terras-raras-combate-ao-crime-as-propostas-de-caiado-no-1o-discurso.ghtml', '2026-03-30') },
     { text: dv('Critérios técnicos para nomeação de ministros do STF com mandato determinado', 'https://g1.globo.com/politica/eleicoes/2026/noticia/2026/03/30/anistia-a-bolsonaro-terras-raras-combate-ao-crime-as-propostas-de-caiado-no-1o-discurso.ghtml', '2026-03-30') },

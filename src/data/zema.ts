@@ -82,22 +82,23 @@ export const zema: Candidate = 	{
 			"2026-06-26",
 		),
 		partyHistory: [
-		dv(
+			dv(
 				"NOVO (2018–presente)",
 				"https://pt.wikipedia.org/wiki/Romeu_Zema#Primeiros_anos",
 				"2026-06-26",
-			),
-		dv(
+			)
+		,
+			dv(
 				"PR (2006–2018)",
 				"https://pt.wikipedia.org/wiki/Romeu_Zema#Primeiros_anos",
 				"2026-06-26",
 			),
-		dv(
+			dv(
 				"PL (1999–2006)",
 				"https://pt.wikipedia.org/wiki/Romeu_Zema#Primeiros_anos",
 				"2026-06-26",
-			),
-	],
+			)
+],
 		coalition: [
 			{
 				party: dv("NOVO"),
@@ -124,7 +125,43 @@ export const zema: Candidate = 	{
 			"2026-06-26",
 		),
 		timeline: [
-		{
+			{
+				year: dv(
+					"2026",
+					"https://opovo.com.br/noticias/politica/2026/07/04/zema-critica-articulacao-da-direita-em-torno-de-ciro-e-apoia-girao.html",
+					"2026-07-04",
+				),
+				event: dv(
+					"Apoia Eduardo Girão (NOVO) ao governo do Ceará. Critica articulação do PL com Ciro Gomes.",
+					"https://opovo.com.br/noticias/politica/2026/07/04/zema-critica-articulacao-da-direita-em-torno-de-ciro-e-apoia-girao.html",
+					"2026-07-04",
+				),
+			},
+			{
+				year: dv(
+					"2026",
+					"https://g1.globo.com/ba/bahia/eleicoes/2026/noticia/2026/07/01/zema-confirma-apoio-a-acm-neto-para-o-governo-da-bahia.ghtml",
+					"2026-07-02",
+				),
+				event: dv(
+					"Declara apoio a ACM Neto (União Brasil) ao governo da Bahia. 'Quem estiver contra o PT tem meu apoio.'",
+					"https://g1.globo.com/ba/bahia/eleicoes/2026/noticia/2026/07/01/zema-confirma-apoio-a-acm-neto-para-o-governo-da-bahia.ghtml",
+					"2026-07-02",
+				),
+			},
+			{
+				year: dv(
+					"2026",
+					"https://estadao.com.br/politica/zema-nega-aliancas-com-flavio-bolsonaro-e-caiado-e-promete-anunciar-o-vice-na-proxima-semana",
+					"2026-06-25",
+				),
+				event: dv(
+					"Nega alianças com Flávio Bolsonaro e Caiado. Promete anunciar vice na próxima semana.",
+					"https://estadao.com.br/politica/zema-nega-aliancas-com-flavio-bolsonaro-e-caiado-e-promete-anunciar-o-vice-na-proxima-semana",
+					"2026-06-25",
+				),
+			},
+			{
 				year: dv(
 					"2026",
 					"https://g1.globo.com/mg/minas-gerais/noticia/2026/03/22/zema-renuncia-ao-governo-de-mg-para-pre-campanha-a-presidencia-da-republica-e-vice-mateus-simoes-assume-cargo.ghtml",
@@ -135,8 +172,9 @@ export const zema: Candidate = 	{
 					"https://g1.globo.com/mg/minas-gerais/noticia/2026/03/22/zema-renuncia-ao-governo-de-mg-para-pre-campanha-a-presidencia-da-republica-e-vice-mateus-simoes-assume-cargo.ghtml",
 					"2026-03-22",
 				),
-			},
-		{
+			}
+		,
+			{
 				year: dv(
 					"2022",
 					"https://pt.wikipedia.org/wiki/Romeu_Zema#Releição_em_2022_e_segundo_mandato_como_governador",
@@ -148,7 +186,7 @@ export const zema: Candidate = 	{
 					"2026-06-26",
 				),
 			},
-		{
+			{
 				year: dv(
 					"2018",
 					"https://pt.wikipedia.org/wiki/Romeu_Zema#Eleição_de_2018_e_primeiro_mandato_como_governador",
@@ -160,7 +198,7 @@ export const zema: Candidate = 	{
 					"2026-06-26",
 				),
 			},
-		{
+			{
 				year: dv(
 					"2017",
 					"https://pt.wikipedia.org/wiki/Romeu_Zema#Primeiros_anos",
@@ -171,10 +209,10 @@ export const zema: Candidate = 	{
 					"https://pt.wikipedia.org/wiki/Romeu_Zema#Primeiros_anos",
 					"2026-06-26",
 				),
-			},
-	],
+			}
+],
 		electionResults: [
-		{
+			{
 				year: dvn(
 					2022,
 					"https://pt.wikipedia.org/wiki/Romeu_Zema#Desempenho_eleitoral",
@@ -200,8 +238,9 @@ export const zema: Candidate = 	{
 					"https://pt.wikipedia.org/wiki/Romeu_Zema#Desempenho_eleitoral",
 					"2026-06-26",
 				),
-			},
-		{
+			}
+		,
+			{
 				year: dvn(
 					2018,
 					"https://pt.wikipedia.org/wiki/Romeu_Zema#Desempenho_eleitoral",
@@ -227,9 +266,26 @@ export const zema: Candidate = 	{
 					"https://pt.wikipedia.org/wiki/Romeu_Zema#Desempenho_eleitoral",
 					"2026-06-26",
 				),
-			},
-	],
+			}
+],
 		scandals: [
+			{
+				name: dv(
+					"Isenção fiscal para Eletrozema (empresa da família)",
+					"https://g1.globo.com/mg/minas-gerais/noticia/2026/06/25/governo-de-mg-concede-r-22-milhoes-em-isencao-de-impostos-para-empresa-da-familia-de-romeu-zema.ghtml",
+					"2026-06-25",
+				),
+				status: dv(
+					"ativo",
+					"https://g1.globo.com/mg/minas-gerais/noticia/2026/06/25/governo-de-mg-concede-r-22-milhoes-em-isencao-de-impostos-para-empresa-da-familia-de-romeu-zema.ghtml",
+					"2026-06-25",
+				),
+				description: dv(
+					"Governo de MG concedeu R$ 2,28 mi em isenção fiscal para Eletrozema S/A, empresa controlada pela família de Zema. Dados liberados após decisão judicial. Oposição acionou TJMG. Zema defende legalidade e diz que benefício existe desde 2008.",
+					"https://g1.globo.com/mg/minas-gerais/noticia/2026/06/25/governo-de-mg-concede-r-22-milhoes-em-isencao-de-impostos-para-empresa-da-familia-de-romeu-zema.ghtml",
+					"2026-06-25",
+				),
+			},
 			{
 				name: dv(
 					"Operação Rejeito",
@@ -280,8 +336,9 @@ export const zema: Candidate = 	{
 					"https://g1.globo.com/mg/minas-gerais/noticia/2025/12/23/zema-sanciona-lei-que-autoriza-privatizacao-da-copasa-e-troca-comando-da-empresa.ghtml",
 					"2026-06-28",
 				),
-			},
-		],
+			}
+		
+],
 		campaignFinance: {
 			totalArrecadado: dv(
 				"R$ 133,4 mi (limite)",
@@ -335,6 +392,114 @@ export const zema: Candidate = 	{
 		positions: [
 			{
 				issue: dv(
+					"Aborto",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
+					"Agronegócio",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
+					"Apoios Regionais",
+					"https://g1.globo.com/ba/bahia/eleicoes/2026/noticia/2026/07/01/zema-confirma-apoio-a-acm-neto-para-o-governo-da-bahia.ghtml",
+					"2026-07-02",
+				),
+				position: dv(
+					"Declara apoio a ACM Neto (União Brasil) ao governo da Bahia e a Eduardo Girão (NOVO) no Ceará. 'Quem estiver contra o PT tem meu apoio.'",
+					"https://g1.globo.com/ba/bahia/eleicoes/2026/noticia/2026/07/01/zema-confirma-apoio-a-acm-neto-para-o-governo-da-bahia.ghtml",
+					"2026-07-02",
+				),
+			},
+			{
+				issue: dv(
+					"Armas",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema#Posicionamentos",
+					"2026-06-26",
+				),
+				position: dv(
+					"Favorável ao porte de arma. 'Cada indivíduo faça a opção que achar por bem.'",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema#Posicionamentos",
+					"2026-06-26",
+				),
+			},
+			{
+				issue: dv(
+					"Assistência Social",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
+					"Bolsa Família / Programas Sociais",
+					"https://jornalopcao.com.br/politica/estamos-criando-uma-geracao-de-imprestaveis-diz-romeu-zema-ao-criticar-programas-sociais-839355",
+					"2026-06-22",
+				),
+				position: dv(
+					"'Estamos criando uma geração de imprestáveis', critica programas sociais. Defende condicionar Bolsa Família a contrapartidas de emprego e capacitação. Propõe R$ 5 mil para quem deixar o programa.",
+					"https://jornalopcao.com.br/politica/estamos-criando-uma-geracao-de-imprestaveis-diz-romeu-zema-ao-criticar-programas-sociais-839355",
+					"2026-06-22",
+				),
+			},
+			{
+				issue: dv(
+					"Casamento LGBT+",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
+					"Cotas Raciais",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
+					"Drogas",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
 					"Economia",
 					"https://pt.wikipedia.org/wiki/Romeu_Zema#Posicionamentos",
 					"2026-06-26",
@@ -359,13 +524,85 @@ export const zema: Candidate = 	{
 			},
 			{
 				issue: dv(
-					"Armas",
-					"https://pt.wikipedia.org/wiki/Romeu_Zema#Posicionamentos",
+					"Fundo Eleitoral",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
+					"Impeachment Dilma",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
+					"Infraestrutura",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
+					"Meio Ambiente",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
+					"Mobilidade Urbana",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
+					"PEC do Teto",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
+					"Previdência",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema#Hist%C3%B3rico_do_governo",
 					"2026-06-26",
 				),
 				position: dv(
-					"Favorável ao porte de arma. 'Cada indivíduo faça a opção que achar por bem.'",
-					"https://pt.wikipedia.org/wiki/Romeu_Zema#Posicionamentos",
+					"Aprovou reforma da previdência estadual em MG: idade mínima 65h/62m. Defende regras nacionais mais rígidas.",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema#Hist%C3%B3rico_do_governo",
 					"2026-06-26",
 				),
 			},
@@ -383,14 +620,50 @@ export const zema: Candidate = 	{
 			},
 			{
 				issue: dv(
-					"Segurança Pública",
-					"https://g1.globo.com/sp/sao-paulo/eleicoes/2026/noticia/2026/05/25/zema-defende-modelo-de-el-salvador-com-encarceramento-em-massa-contra-o-crime.ghtml",
-					"2026-06-28",
+					"Reforma Agrária/Indígenas",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema",
+					"2026-07-05",
 				),
 				position: dv(
-					"Defende encarceramento em massa nos moldes de El Salvador. Classificar facções como terroristas. Endurecimento de penas.",
-					"https://g1.globo.com/sp/sao-paulo/eleicoes/2026/noticia/2026/05/25/zema-defende-modelo-de-el-salvador-com-encarceramento-em-massa-contra-o-crime.ghtml",
-					"2026-06-28",
+					"-",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
+					"Reforma do STF",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
+					"Reforma Política",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
+					"Reforma Trabalhista",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema",
+					"2026-07-05",
 				),
 			},
 			{
@@ -407,13 +680,73 @@ export const zema: Candidate = 	{
 			},
 			{
 				issue: dv(
-					"Previdência",
-					"https://pt.wikipedia.org/wiki/Romeu_Zema#Histórico_do_governo",
+					"Regulação Mídia e Redes",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
+					"Relações Exteriores",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
+					"STF",
+					"https://ndmais.com.br/politica/zema-diz-dormir-bem-apos-ataques-a-gilmar-mendes-dever-cumprido",
 					"2026-06-26",
 				),
 				position: dv(
-					"Aprovou reforma da previdência estadual em MG: idade mínima 65h/62m. Defende regras nacionais mais rígidas.",
-					"https://pt.wikipedia.org/wiki/Romeu_Zema#Histórico_do_governo",
+					"Diz 'dormir bem' após ataques a Gilmar Mendes. Critica STF como 'subserviente ao governo federal'. Defende mandato de 15 anos para ministros.",
+					"https://ndmais.com.br/politica/zema-diz-dormir-bem-apos-ataques-a-gilmar-mendes-dever-cumprido",
+					"2026-06-26",
+				),
+			},
+			{
+				issue: dv(
+					"Saúde",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
+					"Segurança Pública",
+					"https://g1.globo.com/sp/sao-paulo/eleicoes/2026/noticia/2026/05/25/zema-defende-modelo-de-el-salvador-com-encarceramento-em-massa-contra-o-crime.ghtml",
+					"2026-06-28",
+				),
+				position: dv(
+					"Defende encarceramento em massa nos moldes de El Salvador. Classificar facções como terroristas. Endurecimento de penas.",
+					"https://g1.globo.com/sp/sao-paulo/eleicoes/2026/noticia/2026/05/25/zema-defende-modelo-de-el-salvador-com-encarceramento-em-massa-contra-o-crime.ghtml",
+					"2026-06-28",
+				),
+			},
+			{
+				issue: dv(
+					"Separatismo Sul-Sudeste",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema#Posicionamentos",
+					"2026-06-26",
+				),
+				position: dv(
+					"Criou o Consórcio Sul-Sudeste (Cossud). Gerou debate sobre conotações separatistas entre regiões.",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema#Posicionamentos",
 					"2026-06-26",
 				),
 			},
@@ -431,16 +764,29 @@ export const zema: Candidate = 	{
 			},
 			{
 				issue: dv(
-					"Separatismo Sul-Sudeste",
-					"https://pt.wikipedia.org/wiki/Romeu_Zema#Posicionamentos",
-					"2026-06-26",
+					"Trabalhista",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema",
+					"2026-07-05",
 				),
 				position: dv(
-					"Criou o Consórcio Sul-Sudeste (Cossud). Gerou debate sobre conotações separatistas entre regiões.",
-					"https://pt.wikipedia.org/wiki/Romeu_Zema#Posicionamentos",
-					"2026-06-26",
+					"-",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema",
+					"2026-07-05",
 				),
 			},
+			{
+				issue: dv(
+					"Zona Franca de Manaus",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema",
+					"2026-07-05",
+				),
+			},
+
 		],
 	}
 

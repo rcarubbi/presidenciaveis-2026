@@ -22,6 +22,20 @@ export const flavioMedia: MediaCategory[] = [
 				},
 				{
 					title: dv(
+						"Michelle e Flávio Bolsonaro vão superar episódio, afirma líder da oposição",
+						"https://www.youtube.com/watch?v=7Oh-2Vg9reI",
+						"2026-07-02",
+					),
+					description: dv(
+						"O líder da oposição no Congresso afirma que Michelle e Flávio Bolsonaro vão superar o episódio de desavença, em análise no Bastidores CNN.",
+						"https://www.youtube.com/watch?v=7Oh-2Vg9reI",
+						"2026-07-02",
+					),
+					youtubeId: "7Oh-2Vg9reI",
+					category: "entrevistas",
+				},
+				{
+					title: dv(
 						"Flávio Bolsonaro perto de anunciar uma mulher como vice na chapa à Presidência",
 						"https://www.youtube.com/watch?v=pTUoISjZfRs",
 						"2026-07-02",

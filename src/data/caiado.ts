@@ -82,27 +82,28 @@ export const caiado: Candidate = 	{
 			"2026-06-26",
 		),
 		partyHistory: [
-		dv(
+			dv(
 				"PSD (2022–presente)",
 				"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Trajet%C3%B3ria_e_carreira_pol%C3%ADtica",
 				"2026-06-26",
-			),
-		dv(
+			)
+		,
+			dv(
 				"DEM (2007–2022)",
 				"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Trajet%C3%B3ria_e_carreira_pol%C3%ADtica",
 				"2026-06-26",
 			),
-		dv(
+			dv(
 				"PFL (1985–2007)",
 				"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Trajet%C3%B3ria_e_carreira_pol%C3%ADtica",
 				"2026-06-26",
 			),
-		dv(
+			dv(
 				"PDS (1980–1985)",
 				"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Trajet%C3%B3ria_e_carreira_pol%C3%ADtica",
 				"2026-06-26",
-			),
-	],
+			)
+],
 		coalition: [
 			{
 				party: dv("PSD"),
@@ -137,7 +138,7 @@ export const caiado: Candidate = 	{
 			"2026-06-26",
 		),
 		timeline: [
-		{
+			{
 				year: dv(
 					"2026",
 					"https://g1.globo.com/politica/noticia/2026/07/01/caiado-anuncia-kassab-presidente-do-psd-como-vice-na-chapa-a-presidencia.ghtml",
@@ -149,7 +150,19 @@ export const caiado: Candidate = 	{
 					"2026-07-01",
 				),
 			},
-		{
+			{
+				year: dv(
+					"2026",
+					"https://bpmoney.com.br/politica/psd-convencao-caiado-presidencia-julho-sao-paulo",
+					"2026-06-24",
+				),
+				event: dv(
+					"PSD marca convenção para 26 de julho em SP para oficializar candidatura de Caiado.",
+					"https://bpmoney.com.br/politica/psd-convencao-caiado-presidencia-julho-sao-paulo",
+					"2026-06-24",
+				),
+			},
+			{
 				year: dv(
 					"2026",
 					"https://g1.globo.com/sp/sao-paulo/noticia/2026/03/30/psd-oficializa-ronaldo-caiado-como-pre-candidato-a-presidencia.ghtml",
@@ -161,7 +174,7 @@ export const caiado: Candidate = 	{
 					"2026-03-27",
 				),
 			},
-		{
+			{
 				year: dv(
 					"2022",
 					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Governador_de_Goi%C3%A1s",
@@ -173,7 +186,7 @@ export const caiado: Candidate = 	{
 					"2026-06-26",
 				),
 			},
-		{
+			{
 				year: dv(
 					"2018",
 					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Governador_de_Goi%C3%A1s",
@@ -185,7 +198,7 @@ export const caiado: Candidate = 	{
 					"2026-06-26",
 				),
 			},
-		{
+			{
 				year: dv(
 					"1989",
 					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Candidato_%C3%A0_Presid%C3%AAncia_da_Rep%C3%BAblica",
@@ -197,7 +210,7 @@ export const caiado: Candidate = 	{
 					"2026-06-26",
 				),
 			},
-		{
+			{
 				year: dv(
 					"1988",
 					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Trajet%C3%B3ria_e_carreira_pol%C3%ADtica",
@@ -209,7 +222,7 @@ export const caiado: Candidate = 	{
 					"2026-06-26",
 				),
 			},
-		{
+			{
 				year: dv(
 					"1987",
 					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#C%C3%A2mara_dos_Deputados",
@@ -220,10 +233,10 @@ export const caiado: Candidate = 	{
 					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#C%C3%A2mara_dos_Deputados",
 					"2026-06-26",
 				),
-			},
-	],
+			}
+],
 		electionResults: [
-		{
+			{
 				year: dvn(
 					2022,
 					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
@@ -249,8 +262,9 @@ export const caiado: Candidate = 	{
 					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
 					"2026-06-26",
 				),
-			},
-		{
+			}
+		,
+			{
 				year: dvn(
 					2018,
 					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
@@ -277,7 +291,7 @@ export const caiado: Candidate = 	{
 					"2026-06-26",
 				),
 			},
-		{
+			{
 				year: dvn(
 					2014,
 					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
@@ -304,7 +318,7 @@ export const caiado: Candidate = 	{
 					"2026-06-26",
 				),
 			},
-		{
+			{
 				year: dvn(
 					2010,
 					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
@@ -331,7 +345,7 @@ export const caiado: Candidate = 	{
 					"2026-06-26",
 				),
 			},
-		{
+			{
 				year: dvn(
 					2006,
 					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
@@ -358,7 +372,7 @@ export const caiado: Candidate = 	{
 					"2026-06-26",
 				),
 			},
-		{
+			{
 				year: dvn(
 					2002,
 					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
@@ -385,7 +399,7 @@ export const caiado: Candidate = 	{
 					"2026-06-26",
 				),
 			},
-		{
+			{
 				year: dvn(
 					1998,
 					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
@@ -412,7 +426,7 @@ export const caiado: Candidate = 	{
 					"2026-06-26",
 				),
 			},
-		{
+			{
 				year: dvn(
 					1994,
 					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
@@ -439,7 +453,7 @@ export const caiado: Candidate = 	{
 					"2026-06-26",
 				),
 			},
-		{
+			{
 				year: dvn(
 					1990,
 					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
@@ -466,7 +480,7 @@ export const caiado: Candidate = 	{
 					"2026-06-26",
 				),
 			},
-		{
+			{
 				year: dvn(
 					1989,
 					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
@@ -492,8 +506,8 @@ export const caiado: Candidate = 	{
 					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Desempenho_eleitoral",
 					"2026-06-26",
 				),
-			},
-	],
+			}
+],
 		scandals: [
 			{
 				name: dv(
@@ -561,7 +575,30 @@ export const caiado: Candidate = 	{
 					"2026-06-28",
 				),
 			},
-		],
+			{
+				name: dv(
+					"Uso de PMs como seguranças pessoais",
+					"https://www1.folha.uol.com.br/poder/2026/06/ministerio-publico-de-goias-entra-com-acao-contra-uso-de-policiais-como-segurancas-de-caiado.shtml",
+					"2026-06-27",
+				),
+				status: dv(
+					"ativo",
+					"https://www1.folha.uol.com.br/poder/2026/06/ministerio-publico-de-goias-entra-com-acao-contra-uso-de-policiais-como-segurancas-de-caiado.shtml",
+					"2026-06-27",
+				),
+				description: dv(
+					"MP-GO aciona Justiça contra uso de policiais militares como seguranças particulares de Caiado. Ação aponta desvio de finalidade e improbidade administrativa.",
+					"https://www1.folha.uol.com.br/poder/2026/06/ministerio-publico-de-goias-entra-com-acao-contra-uso-de-policiais-como-segurancas-de-caiado.shtml",
+					"2026-06-27",
+				),
+				value: dv(
+					"Improbidade administrativa",
+					"https://www1.folha.uol.com.br/poder/2026/06/ministerio-publico-de-goias-entra-com-acao-contra-uso-de-policiais-como-segurancas-de-caiado.shtml",
+					"2026-06-27",
+				),
+			}
+		
+],
 		campaignFinance: {
 			totalArrecadado: dv(
 				"R$ 133,4 mi (limite)",
@@ -627,6 +664,18 @@ export const caiado: Candidate = 	{
 		positions: [
 			{
 				issue: dv(
+					"Aborto",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
 					"Agronegócio",
 					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Trajet%C3%B3ria_e_carreira_pol%C3%ADtica",
 					"2026-06-26",
@@ -634,6 +683,318 @@ export const caiado: Candidate = 	{
 				position: dv(
 					"Defesa do agronegócio. Ex-presidente da UDR. Crítico de demarcações indígenas.",
 					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Trajet%C3%B3ria_e_carreira_pol%C3%ADtica",
+					"2026-06-26",
+				),
+			},
+			{
+				issue: dv(
+					"Apoios Regionais",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
+					"Armas",
+					"https://www25.senado.leg.br/web/atividade/materias/-/materia/130695",
+					"2026-06-28",
+				),
+				position: dv(
+					"Favorável ao porte de armas para 'cidadãos de bem'. Defende flexibilização do Estatuto do Desarmamento.",
+					"https://www25.senado.leg.br/web/atividade/materias/-/materia/130695",
+					"2026-06-28",
+				),
+			},
+			{
+				issue: dv(
+					"Assistência Social",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
+					"Bolsa Família / Programas Sociais",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
+					"Casamento LGBT+",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
+					"Cotas Raciais",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
+					"Drogas",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
+					"Economia",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
+					"Educação",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Governador_de_Goi%C3%A1s",
+					"2026-06-26",
+				),
+				position: dv(
+					"Goiás tem melhor IDEB do Centro-Oeste. Escolas em tempo integral. Investimento em tecnologia educacional.",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Governador_de_Goi%C3%A1s",
+					"2026-06-26",
+				),
+			},
+			{
+				issue: dv(
+					"Fundo Eleitoral",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
+					"Impeachment Dilma",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Impeachment_de_Dilma_Rousseff",
+					"2026-06-26",
+				),
+				position: dv(
+					"Um dos principais articuladores do impeachment de Dilma Rousseff. Votou pela perda do mandato. Rompeu com MDB após absolvição parcial.",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Impeachment_de_Dilma_Rousseff",
+					"2026-06-26",
+				),
+			},
+			{
+				issue: dv(
+					"Infraestrutura",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
+					"Meio Ambiente",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
+					"Mobilidade Urbana",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
+					"PEC do Teto",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Impeachment_de_Dilma_Rousseff",
+					"2026-06-26",
+				),
+				position: dv(
+					"Votou a favor da PEC do Teto dos Gastos Públicos (2016). Defende responsabilidade fiscal e limite para gastos públicos.",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Impeachment_de_Dilma_Rousseff",
+					"2026-06-26",
+				),
+			},
+			{
+				issue: dv(
+					"Previdência",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
+					"Privatização",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Governador_de_Goi%C3%A1s",
+					"2026-06-26",
+				),
+				position: dv(
+					"Privatizou Saneago (parcial) e concessões rodoviárias. Defende redução do Estado e parcerias público-privadas.",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Governador_de_Goi%C3%A1s",
+					"2026-06-26",
+				),
+			},
+			{
+				issue: dv(
+					"Reforma Agrária/Indígenas",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Trajet%C3%B3ria_e_carreira_pol%C3%ADtica",
+					"2026-06-26",
+				),
+				position: dv(
+					"Ex-presidente da UDR. Crítico de demarcações indígenas. Defesa histórica dos grandes proprietários rurais.",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Trajet%C3%B3ria_e_carreira_pol%C3%ADtica",
+					"2026-06-26",
+				),
+			},
+			{
+				issue: dv(
+					"Reforma do STF",
+					"https://metropoles.com/brasil/caiado-diz-que-enviara-projeto-de-reforma-do-stf-ao-congresso",
+					"2026-06-22",
+				),
+				position: dv(
+					"Defende mandato determinado para ministros do STF. Enviará projeto de reforma ao Congresso se eleito, com critérios técnicos de nomeação.",
+					"https://metropoles.com/brasil/caiado-diz-que-enviara-projeto-de-reforma-do-stf-ao-congresso",
+					"2026-06-22",
+				),
+			},
+			{
+				issue: dv(
+					"Reforma Política",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
+					"Reforma Trabalhista",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Impeachment_de_Dilma_Rousseff",
+					"2026-06-26",
+				),
+				position: dv(
+					"Votou a favor da reforma trabalhista de 2017. Defende maior flexibilização das leis trabalhistas e modernização da CLT.",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Impeachment_de_Dilma_Rousseff",
+					"2026-06-26",
+				),
+			},
+			{
+				issue: dv(
+					"Reforma Tributária",
+					"https://reformatributaria.com/reforma-tributaria-nas-eleicoes/caiado-diz-nao-ser-contra-a-reforma-tributaria-mas-defende-ver-se-a-mudanca-procede",
+					"2026-06-23",
+				),
+				position: dv(
+					"Não é contra a reforma tributária, mas defende avaliar setores afetados antes de implementar. Quer garantir que a mudança 'procede' antes de apoiar.",
+					"https://reformatributaria.com/reforma-tributaria-nas-eleicoes/caiado-diz-nao-ser-contra-a-reforma-tributaria-mas-defende-ver-se-a-mudanca-procede",
+					"2026-06-23",
+				),
+			},
+			{
+				issue: dv(
+					"Regulação Mídia e Redes",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
+					"Relações Exteriores",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
+					"STF",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
+					"Saúde",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Governador_de_Goi%C3%A1s",
+					"2026-06-26",
+				),
+				position: dv(
+					"Goiás referência no enfrentamento à COVID-19. Ampliação de hospitais regionais. Médico de formação.",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Governador_de_Goi%C3%A1s",
 					"2026-06-26",
 				),
 			},
@@ -651,100 +1012,53 @@ export const caiado: Candidate = 	{
 			},
 			{
 				issue: dv(
-					"Reforma Agrária / Indígenas",
-					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Trajet%C3%B3ria_e_carreira_pol%C3%ADtica",
-					"2026-06-26",
+					"Separatismo Sul-Sudeste",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado",
+					"2026-07-05",
 				),
 				position: dv(
-					"Ex-presidente da UDR. Crítico de demarcações indígenas. Defesa histórica dos grandes proprietários rurais.",
-					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Trajet%C3%B3ria_e_carreira_pol%C3%ADtica",
-					"2026-06-26",
+					"-",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado",
+					"2026-07-05",
 				),
 			},
 			{
 				issue: dv(
-					"Armas",
-					"https://www25.senado.leg.br/web/atividade/materias/-/materia/130695",
-					"2026-06-28",
+					"Trabalho Infantil",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado",
+					"2026-07-05",
 				),
 				position: dv(
-					"Favorável ao porte de armas para 'cidadãos de bem'. Defende flexibilização do Estatuto do Desarmamento.",
-					"https://www25.senado.leg.br/web/atividade/materias/-/materia/130695",
-					"2026-06-28",
+					"-",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado",
+					"2026-07-05",
 				),
 			},
 			{
 				issue: dv(
-					"Educação",
-					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Governador_de_Goi%C3%A1s",
-					"2026-06-26",
+					"Trabalhista",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado",
+					"2026-07-05",
 				),
 				position: dv(
-					"Goiás tem melhor IDEB do Centro-Oeste. Escolas em tempo integral. Investimento em tecnologia educacional.",
-					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Governador_de_Goi%C3%A1s",
-					"2026-06-26",
+					"-",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado",
+					"2026-07-05",
 				),
 			},
 			{
 				issue: dv(
-					"Saúde",
-					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Governador_de_Goi%C3%A1s",
-					"2026-06-26",
+					"Zona Franca de Manaus",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado",
+					"2026-07-05",
 				),
 				position: dv(
-					"Goiás referência no enfrentamento à COVID-19. Ampliação de hospitais regionais. Médico de formação.",
-					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Governador_de_Goi%C3%A1s",
-					"2026-06-26",
+					"-",
+					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado",
+					"2026-07-05",
 				),
 			},
-			{
-				issue: dv(
-					"Privatização",
-					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Governador_de_Goi%C3%A1s",
-					"2026-06-26",
-				),
-				position: dv(
-					"Privatizou Saneago (parcial) e concessões rodoviárias. Defende redução do Estado e parcerias público-privadas.",
-					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Governador_de_Goi%C3%A1s",
-					"2026-06-26",
-				),
-			},
-			{
-				issue: dv(
-					"Impeachment Dilma",
-					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Impeachment_de_Dilma_Rousseff",
-					"2026-06-26",
-				),
-				position: dv(
-					"Um dos principais articuladores do impeachment de Dilma Rousseff. Votou pela perda do mandato. Rompeu com MDB após absolvição parcial.",
-					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Impeachment_de_Dilma_Rousseff",
-					"2026-06-26",
-				),
-			},
-			{
-				issue: dv(
-					"Reforma Trabalhista",
-					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Impeachment_de_Dilma_Rousseff",
-					"2026-06-26",
-				),
-				position: dv(
-					"Votou a favor da reforma trabalhista de 2017. Defende maior flexibilização das leis trabalhistas e modernização da CLT.",
-					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Impeachment_de_Dilma_Rousseff",
-					"2026-06-26",
-				),
-			},
-			{
-				issue: dv(
-					"PEC do Teto",
-					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Impeachment_de_Dilma_Rousseff",
-					"2026-06-26",
-				),
-				position: dv(
-					"Votou a favor da PEC do Teto dos Gastos Públicos (2016). Defende responsabilidade fiscal e limite para gastos públicos.",
-					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Impeachment_de_Dilma_Rousseff",
-					"2026-06-26",
-				),
-			},
+
 		],
 	}
 

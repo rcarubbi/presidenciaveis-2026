@@ -86,8 +86,9 @@ export const lula: Candidate = 	{
 				"PT (1980–presente)",
 				"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#In%C3%ADcio_da_carreira_pol%C3%ADtica_e_cria%C3%A7%C3%A3o_do_Partido_dos_Trabalhadores",
 				"2026-06-26",
-			),
-		],
+			)
+		
+],
 		coalition: [
 			{
 				party: dv("PT"),
@@ -162,7 +163,7 @@ export const lula: Candidate = 	{
 			"2026-06-26",
 		),
 		timeline: [
-		{
+			{
 				year: dv(
 					"2026",
 					"https://atarde.com.br/eleicoes/pt-define-data-para-oficializar-candidatura-de-lula-a-reeleicao-1394105",
@@ -174,7 +175,7 @@ export const lula: Candidate = 	{
 					"2026-07-04",
 				),
 			},
-		{
+			{
 				year: dv(
 					"2026",
 					"https://g1.globo.com/politica/noticia/2026/06/24/jaques-wagner-pede-licenca-da-lideranca-do-governo-do-senado-apos-operacao-da-pf.ghtml",
@@ -185,8 +186,9 @@ export const lula: Candidate = 	{
 					"https://g1.globo.com/politica/noticia/2026/06/24/jaques-wagner-pede-licenca-da-lideranca-do-governo-do-senado-apos-operacao-da-pf.ghtml",
 					"2026-06-24",
 				),
-			},
-		{
+			}
+		,
+			{
 				year: dv(
 					"2026",
 					"https://g1.globo.com/politica/noticia/2026/04/26/sem-lula-pt-aprova-manifesto-para-2026-com-foco-em-reeleicao-do-presidente.ghtml",
@@ -198,7 +200,7 @@ export const lula: Candidate = 	{
 					"2026-04-26",
 				),
 			},
-		{
+			{
 				year: dv(
 					"2022",
 					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Campanha_presidencial_de_2022",
@@ -210,7 +212,7 @@ export const lula: Candidate = 	{
 					"2026-06-26",
 				),
 			},
-		{
+			{
 				year: dv(
 					"2021",
 					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Opera%C3%A7%C3%A3o_Lava_Jato",
@@ -222,7 +224,7 @@ export const lula: Candidate = 	{
 					"2026-06-26",
 				),
 			},
-		{
+			{
 				year: dv(
 					"2018",
 					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Candidatura_presidencial_em_2018",
@@ -234,7 +236,7 @@ export const lula: Candidate = 	{
 					"2026-06-26",
 				),
 			},
-		{
+			{
 				year: dv(
 					"2017",
 					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Opera%C3%A7%C3%A3o_Lava_Jato",
@@ -246,7 +248,7 @@ export const lula: Candidate = 	{
 					"2026-06-26",
 				),
 			},
-		{
+			{
 				year: dv(
 					"2010",
 					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva",
@@ -258,7 +260,7 @@ export const lula: Candidate = 	{
 					"2010-12-20",
 				),
 			},
-		{
+			{
 				year: dv(
 					"2006",
 					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Reelei%C3%A7%C3%A3o_em_2006",
@@ -270,7 +272,7 @@ export const lula: Candidate = 	{
 					"2026-06-26",
 				),
 			},
-		{
+			{
 				year: dv(
 					"2002",
 					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Vit%C3%B3ria_em_2002",
@@ -282,7 +284,7 @@ export const lula: Candidate = 	{
 					"2026-06-26",
 				),
 			},
-		{
+			{
 				year: dv(
 					"1989",
 					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Candidatura_%C3%A0_Presid%C3%AAncia_da_Rep%C3%BAblica_em_1989",
@@ -294,7 +296,7 @@ export const lula: Candidate = 	{
 					"2026-06-26",
 				),
 			},
-		{
+			{
 				year: dv(
 					"1986",
 					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#In%C3%ADcio_da_carreira_pol%C3%ADtica_e_cria%C3%A7%C3%A3o_do_Partido_dos_Trabalhadores",
@@ -306,7 +308,7 @@ export const lula: Candidate = 	{
 					"2026-06-26",
 				),
 			},
-		{
+			{
 				year: dv(
 					"1980",
 					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#In%C3%ADcio_da_carreira_pol%C3%ADtica_e_cria%C3%A7%C3%A3o_do_Partido_dos_Trabalhadores",
@@ -318,7 +320,7 @@ export const lula: Candidate = 	{
 					"2026-06-26",
 				),
 			},
-		{
+			{
 				year: dv(
 					"1975",
 					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Sindicalismo",
@@ -329,10 +331,10 @@ export const lula: Candidate = 	{
 					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Sindicalismo",
 					"2026-06-26",
 				),
-			},
-	],
+			}
+],
 		electionResults: [
-		{
+			{
 				year: dvn(
 					2022,
 					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
@@ -358,8 +360,9 @@ export const lula: Candidate = 	{
 					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
 					"2026-06-26",
 				),
-			},
-		{
+			}
+		,
+			{
 				year: dvn(
 					2006,
 					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
@@ -386,7 +389,7 @@ export const lula: Candidate = 	{
 					"2026-06-26",
 				),
 			},
-		{
+			{
 				year: dvn(
 					2002,
 					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
@@ -413,7 +416,7 @@ export const lula: Candidate = 	{
 					"2026-06-26",
 				),
 			},
-		{
+			{
 				year: dvn(
 					1998,
 					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
@@ -440,7 +443,7 @@ export const lula: Candidate = 	{
 					"2026-06-26",
 				),
 			},
-		{
+			{
 				year: dvn(
 					1994,
 					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
@@ -467,7 +470,7 @@ export const lula: Candidate = 	{
 					"2026-06-26",
 				),
 			},
-		{
+			{
 				year: dvn(
 					1989,
 					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
@@ -494,7 +497,7 @@ export const lula: Candidate = 	{
 					"2026-06-26",
 				),
 			},
-		{
+			{
 				year: dvn(
 					1986,
 					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
@@ -520,8 +523,8 @@ export const lula: Candidate = 	{
 					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
 					"2026-06-26",
 				),
-			},
-	],
+			}
+],
 		scandals: [
 			{
 				name: dv(
@@ -613,28 +616,6 @@ export const lula: Candidate = 	{
 			},
 			{
 				name: dv(
-					"Op. Sem Desconto",
-					"https://www1.folha.uol.com.br/amp/poder/2026/05/investigadores-racham-sobre-envolvimento-de-lulinha-no-inss-e-grupo-quer-focar-fraudes.shtml",
-					"2026-05-19",
-				),
-				status: dv(
-					"ativo",
-					"https://www1.folha.uol.com.br/amp/poder/2026/05/investigadores-racham-sobre-envolvimento-de-lulinha-no-inss-e-grupo-quer-focar-fraudes.shtml",
-					"2026-05-19",
-				),
-				description: dv(
-					'PF investiga fraudes em descontos do INSS com suspeitas sobre Fábio Luís "Lulinha". Sem indiciamento de Lula.',
-					"https://www1.folha.uol.com.br/amp/poder/2026/05/investigadores-racham-sobre-envolvimento-de-lulinha-no-inss-e-grupo-quer-focar-fraudes.shtml",
-					"2026-05-19",
-				),
-				value: dv(
-					"—",
-					"https://www1.folha.uol.com.br/amp/poder/2026/05/investigadores-racham-sobre-envolvimento-de-lulinha-no-inss-e-grupo-quer-focar-fraudes.shtml",
-					"2026-05-19",
-				),
-			},
-			{
-				name: dv(
 					"Op. Compliance Zero",
 					"https://www.bbc.com/portuguese/articles/cp36nzdvyp4o",
 					"2026-06-18",
@@ -654,8 +635,31 @@ export const lula: Candidate = 	{
 					"https://www.bbc.com/portuguese/articles/cp36nzdvyp4o",
 					"2026-06-18",
 				),
-			},
-		],
+			}
+		,
+			{
+				name: dv(
+					"Op. Sem Desconto",
+					"https://www1.folha.uol.com.br/amp/poder/2026/05/investigadores-racham-sobre-envolvimento-de-lulinha-no-inss-e-grupo-quer-focar-fraudes.shtml",
+					"2026-05-19",
+				),
+				status: dv(
+					"ativo",
+					"https://www1.folha.uol.com.br/amp/poder/2026/05/investigadores-racham-sobre-envolvimento-de-lulinha-no-inss-e-grupo-quer-focar-fraudes.shtml",
+					"2026-05-19",
+				),
+				description: dv(
+					'PF investiga fraudes em descontos do INSS com suspeitas sobre Fábio Luís "Lulinha". Sem indiciamento de Lula.',
+					"https://www1.folha.uol.com.br/amp/poder/2026/05/investigadores-racham-sobre-envolvimento-de-lulinha-no-inss-e-grupo-quer-focar-fraudes.shtml",
+					"2026-05-19",
+				),
+				value: dv(
+					"—",
+					"https://www1.folha.uol.com.br/amp/poder/2026/05/investigadores-racham-sobre-envolvimento-de-lulinha-no-inss-e-grupo-quer-focar-fraudes.shtml",
+					"2026-05-19",
+				),
+			}
+],
 		campaignFinance: {
 			totalArrecadado: dv(
 				"R$ 126,9 mi (reeleição)",
@@ -716,14 +720,26 @@ export const lula: Candidate = 	{
 			},
 			{
 				issue: dv(
-					"Drogas",
-					"https://valor.globo.com/politica/noticia/2024/06/26/apos-stf-julgar-porte-de-maconha-lula-diz-que-e-equivoco-tratar-uso-das-drogas-pelo-codigo-penal.ghtml",
-					"2024-06-26",
+					"Agronegócio",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva",
+					"2026-07-05",
 				),
 				position: dv(
-					"Redução de danos, prevenção. Não apoia legalização recreativa.",
-					"https://valor.globo.com/politica/noticia/2024/06/26/apos-stf-julgar-porte-de-maconha-lula-diz-que-e-equivoco-tratar-uso-das-drogas-pelo-codigo-penal.ghtml",
-					"2024-06-26",
+					"-",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
+					"Apoios Regionais",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva",
+					"2026-07-05",
 				),
 			},
 			{
@@ -740,50 +756,26 @@ export const lula: Candidate = 	{
 			},
 			{
 				issue: dv(
-					"Privatização",
-					"https://g1.globo.com/se/sergipe/noticia/2026/05/29/lula-em-sergipe.ghtml",
-					"2026-05-29",
+					"Assistência Social",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva",
+					"2026-07-05",
 				),
 				position: dv(
-					"Contrário. Fortalecimento da empresa pública.",
-					"https://g1.globo.com/se/sergipe/noticia/2026/05/29/lula-em-sergipe.ghtml",
-					"2026-05-29",
+					"-",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva",
+					"2026-07-05",
 				),
 			},
 			{
 				issue: dv(
-					"Reforma Tributária",
-					"https://g1.globo.com/economia/noticia/2025/03/18/mudancas-no-ir-imposto-para-super-rico-comeca-em-25percent-a-partir-de-r-600-mil-por-ano-e-busca-arrecadar-r-25-bilhoes-em-2026.ghtml",
-					"2025-03-18",
+					"Bolsa Família / Programas Sociais",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva",
+					"2026-07-05",
 				),
 				position: dv(
-					'Progressiva. "Ricos pagarem IR". Tributação dividendos.',
-					"https://g1.globo.com/economia/noticia/2025/03/18/mudancas-no-ir-imposto-para-super-rico-comeca-em-25percent-a-partir-de-r-600-mil-por-ano-e-busca-arrecadar-r-25-bilhoes-em-2026.ghtml",
-					"2025-03-18",
-				),
-			},
-			{
-				issue: dv(
-					"Previdência",
-					"https://horadopovo.com.br/centrais-levam-pauta-a-lula-que-critica-reformas-e-convoca-mobilizacao-para-avanco-em-direitos-trabalhistas/",
-					"2026-04-16",
-				),
-				position: dv(
-					"Revisão EC 103/2019. Ampliar cobertura.",
-					"https://horadopovo.com.br/centrais-levam-pauta-a-lula-que-critica-reformas-e-convoca-mobilizacao-para-avanco-em-direitos-trabalhistas/",
-					"2026-04-16",
-				),
-			},
-			{
-				issue: dv(
-					"Trabalhista",
-					"https://www.estadao.com.br/politica/lula-critica-reforma-trabalhista-e-chama-bolsonaro-de-a-coisa-que-veio-depois-do-temer-nprp/",
-					"2026-04-16",
-				),
-				position: dv(
-					"Revogar marcos reforma 2017. Proteção apps. Apoio fim 6x1.",
-					"https://www.estadao.com.br/politica/lula-critica-reforma-trabalhista-e-chama-bolsonaro-de-a-coisa-que-veio-depois-do-temer-nprp/",
-					"2026-04-16",
+					"-",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva",
+					"2026-07-05",
 				),
 			},
 			{
@@ -800,14 +792,86 @@ export const lula: Candidate = 	{
 			},
 			{
 				issue: dv(
-					"Regulação Mídia e Redes",
-					"https://pt.org.br/com-olhar-para-o-futuro-programa-de-governo-de-lula-tera-construcao-coletiva/",
-					"2026-05-30",
+					"Cotas Raciais",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva",
+					"2026-07-05",
 				),
 				position: dv(
-					"Regular sem censura. Combate desinformação.",
-					"https://pt.org.br/com-olhar-para-o-futuro-programa-de-governo-de-lula-tera-construcao-coletiva/",
-					"2026-05-30",
+					"-",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
+					"Drogas",
+					"https://valor.globo.com/politica/noticia/2024/06/26/apos-stf-julgar-porte-de-maconha-lula-diz-que-e-equivoco-tratar-uso-das-drogas-pelo-codigo-penal.ghtml",
+					"2024-06-26",
+				),
+				position: dv(
+					"Redução de danos, prevenção. Não apoia legalização recreativa.",
+					"https://valor.globo.com/politica/noticia/2024/06/26/apos-stf-julgar-porte-de-maconha-lula-diz-que-e-equivoco-tratar-uso-das-drogas-pelo-codigo-penal.ghtml",
+					"2024-06-26",
+				),
+			},
+			{
+				issue: dv(
+					"Economia",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
+					"Educação",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
+					"Fundo Eleitoral",
+					"https://www1.folha.uol.com.br/poder/2024/02/lula-critica-pt-e-diz-que-fundo-eleitoral-e-cooptado-por-deputados-com-mandato.shtml",
+					"2024-02-02",
+				),
+				position: dv(
+					"Crítico. Fundo cooptado por deputados com mandato. Defende distribuição mais equilibrada.",
+					"https://www1.folha.uol.com.br/poder/2024/02/lula-critica-pt-e-diz-que-fundo-eleitoral-e-cooptado-por-deputados-com-mandato.shtml",
+					"2024-02-02",
+				),
+			},
+			{
+				issue: dv(
+					"Impeachment Dilma",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
+					"Infraestrutura",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva",
+					"2026-07-05",
 				),
 			},
 			{
@@ -836,6 +900,150 @@ export const lula: Candidate = 	{
 			},
 			{
 				issue: dv(
+					"PEC do Teto",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
+					"Previdência",
+					"https://horadopovo.com.br/centrais-levam-pauta-a-lula-que-critica-reformas-e-convoca-mobilizacao-para-avanco-em-direitos-trabalhistas/",
+					"2026-04-16",
+				),
+				position: dv(
+					"Revisão EC 103/2019. Ampliar cobertura.",
+					"https://horadopovo.com.br/centrais-levam-pauta-a-lula-que-critica-reformas-e-convoca-mobilizacao-para-avanco-em-direitos-trabalhistas/",
+					"2026-04-16",
+				),
+			},
+			{
+				issue: dv(
+					"Privatização",
+					"https://g1.globo.com/se/sergipe/noticia/2026/05/29/lula-em-sergipe.ghtml",
+					"2026-05-29",
+				),
+				position: dv(
+					"Contrário. Fortalecimento da empresa pública.",
+					"https://g1.globo.com/se/sergipe/noticia/2026/05/29/lula-em-sergipe.ghtml",
+					"2026-05-29",
+				),
+			},
+			{
+				issue: dv(
+					"Reforma Agrária/Indígenas",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
+					"Reforma do STF",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
+					"Reforma Política",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
+					"Reforma Trabalhista",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
+					"Reforma Tributária",
+					"https://g1.globo.com/economia/noticia/2025/03/18/mudancas-no-ir-imposto-para-super-rico-comeca-em-25percent-a-partir-de-r-600-mil-por-ano-e-busca-arrecadar-r-25-bilhoes-em-2026.ghtml",
+					"2025-03-18",
+				),
+				position: dv(
+					'Progressiva. "Ricos pagarem IR". Tributação dividendos.',
+					"https://g1.globo.com/economia/noticia/2025/03/18/mudancas-no-ir-imposto-para-super-rico-comeca-em-25percent-a-partir-de-r-600-mil-por-ano-e-busca-arrecadar-r-25-bilhoes-em-2026.ghtml",
+					"2025-03-18",
+				),
+			},
+			{
+				issue: dv(
+					"Regulação Mídia e Redes",
+					"https://pt.org.br/com-olhar-para-o-futuro-programa-de-governo-de-lula-tera-construcao-coletiva/",
+					"2026-05-30",
+				),
+				position: dv(
+					"Regular sem censura. Combate desinformação.",
+					"https://pt.org.br/com-olhar-para-o-futuro-programa-de-governo-de-lula-tera-construcao-coletiva/",
+					"2026-05-30",
+				),
+			},
+			{
+				issue: dv(
+					"Relações Exteriores",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
+					"STF",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
+					"Saúde",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
 					"Segurança Pública",
 					"https://g1.globo.com/politica/noticia/2026/05/12/governo-federal-lanca-plano-de-combate-ao-crime-organizado-veja-acoes.ghtml",
 					"2026-05-12",
@@ -848,16 +1056,53 @@ export const lula: Candidate = 	{
 			},
 			{
 				issue: dv(
-					"Fundo Eleitoral",
-					"https://www1.folha.uol.com.br/poder/2024/02/lula-critica-pt-e-diz-que-fundo-eleitoral-e-cooptado-por-deputados-com-mandato.shtml",
-					"2024-02-02",
+					"Separatismo Sul-Sudeste",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva",
+					"2026-07-05",
 				),
 				position: dv(
-					"Crítico. Fundo cooptado por deputados com mandato. Defende distribuição mais equilibrada.",
-					"https://www1.folha.uol.com.br/poder/2024/02/lula-critica-pt-e-diz-que-fundo-eleitoral-e-cooptado-por-deputados-com-mandato.shtml",
-					"2024-02-02",
+					"-",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva",
+					"2026-07-05",
 				),
 			},
+			{
+				issue: dv(
+					"Trabalho Infantil",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva",
+					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
+					"Trabalhista",
+					"https://www.estadao.com.br/politica/lula-critica-reforma-trabalhista-e-chama-bolsonaro-de-a-coisa-que-veio-depois-do-temer-nprp/",
+					"2026-04-16",
+				),
+				position: dv(
+					"Revogar marcos reforma 2017. Proteção apps. Apoio fim 6x1.",
+					"https://www.estadao.com.br/politica/lula-critica-reforma-trabalhista-e-chama-bolsonaro-de-a-coisa-que-veio-depois-do-temer-nprp/",
+					"2026-04-16",
+				),
+			},
+			{
+				issue: dv(
+					"Zona Franca de Manaus",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva",
+					"2026-07-05",
+				),
+				position: dv(
+					"-",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva",
+					"2026-07-05",
+				),
+			},
+
 		],
 	}
 
