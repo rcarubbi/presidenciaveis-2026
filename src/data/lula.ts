@@ -162,163 +162,7 @@ export const lula: Candidate = 	{
 			"2026-06-26",
 		),
 		timeline: [
-			{
-				year: dv(
-					"1975",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Sindicalismo",
-					"2026-06-26",
-				),
-				event: dv(
-					"Presidente Sindicato Metalúrgicos ABC (92% votos)",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Sindicalismo",
-					"2026-06-26",
-				),
-			},
-			{
-				year: dv(
-					"1980",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#In%C3%ADcio_da_carreira_pol%C3%ADtica_e_cria%C3%A7%C3%A3o_do_Partido_dos_Trabalhadores",
-					"2026-06-26",
-				),
-				event: dv(
-					"Funda o PT; preso 31 dias (Lei Segurança Nacional)",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#In%C3%ADcio_da_carreira_pol%C3%ADtica_e_cria%C3%A7%C3%A3o_do_Partido_dos_Trabalhadores",
-					"2026-06-26",
-				),
-			},
-			{
-				year: dv(
-					"1986",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#In%C3%ADcio_da_carreira_pol%C3%ADtica_e_cria%C3%A7%C3%A3o_do_Partido_dos_Trabalhadores",
-					"2026-06-26",
-				),
-				event: dv(
-					"Deputado Federal Constituinte mais votado (650 mil votos)",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#In%C3%ADcio_da_carreira_pol%C3%ADtica_e_cria%C3%A7%C3%A3o_do_Partido_dos_Trabalhadores",
-					"2026-06-26",
-				),
-			},
-			{
-				year: dv(
-					"1989",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Candidatura_%C3%A0_Presid%C3%AAncia_da_Rep%C3%BAblica_em_1989",
-					"2026-06-26",
-				),
-				event: dv(
-					"1ª candidatura Presidência (perde 2ºT para Collor)",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Candidatura_%C3%A0_Presid%C3%AAncia_da_Rep%C3%BAblica_em_1989",
-					"2026-06-26",
-				),
-			},
-			{
-				year: dv(
-					"2002",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Vit%C3%B3ria_em_2002",
-					"2026-06-26",
-				),
-				event: dv(
-					"Eleito Presidente (61,27% × José Serra)",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Vit%C3%B3ria_em_2002",
-					"2026-06-26",
-				),
-			},
-			{
-				year: dv(
-					"2006",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Reelei%C3%A7%C3%A3o_em_2006",
-					"2026-06-26",
-				),
-				event: dv(
-					"Reeleito (60,83% × Geraldo Alckmin)",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Reelei%C3%A7%C3%A3o_em_2006",
-					"2026-06-26",
-				),
-			},
-			{
-				year: dv(
-					"2010",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva",
-					"2026-06-26",
-				),
-				event: dv(
-					"Encerra mandato com 83% aprovação",
-					"https://datafolha.folha.uol.com.br/opiniaopublica/2010/12/acima-das-expectativas-lula-encerra-mandato-com-melhor-avaliacao-da-historia.shtml",
-					"2010-12-20",
-				),
-			},
-			{
-				year: dv(
-					"2017",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Opera%C3%A7%C3%A3o_Lava_Jato",
-					"2026-06-26",
-				),
-				event: dv(
-					"Condenado por Moro no caso tríplex",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Opera%C3%A7%C3%A3o_Lava_Jato",
-					"2026-06-26",
-				),
-			},
-			{
-				year: dv(
-					"2018",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Candidatura_presidencial_em_2018",
-					"2026-06-26",
-				),
-				event: dv(
-					"Preso 580 dias; candidatura barrada",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Candidatura_presidencial_em_2018",
-					"2026-06-26",
-				),
-			},
-			{
-				year: dv(
-					"2021",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Opera%C3%A7%C3%A3o_Lava_Jato",
-					"2026-06-26",
-				),
-				event: dv(
-					"STF anula condenações; recupera direitos",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Opera%C3%A7%C3%A3o_Lava_Jato",
-					"2026-06-26",
-				),
-			},
-			{
-				year: dv(
-					"2022",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Campanha_presidencial_de_2022",
-					"2026-06-26",
-				),
-				event: dv(
-					"Eleito presidente 3ª vez (50,83% × Bolsonaro)",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Campanha_presidencial_de_2022",
-					"2026-06-26",
-				),
-			},
-			{
-				year: dv(
-					"2026",
-					"https://g1.globo.com/politica/noticia/2026/04/26/sem-lula-pt-aprova-manifesto-para-2026-com-foco-em-reeleicao-do-presidente.ghtml",
-					"2026-04-26",
-				),
-				event: dv(
-					'PT aprova manifesto "Construindo o Futuro" foco reeleição. Pré-candidato.',
-					"https://g1.globo.com/politica/noticia/2026/04/26/sem-lula-pt-aprova-manifesto-para-2026-com-foco-em-reeleicao-do-presidente.ghtml",
-					"2026-04-26",
-				),
-			},
-			{
-				year: dv(
-					"2026",
-					"https://g1.globo.com/politica/noticia/2026/06/24/jaques-wagner-pede-licenca-da-lideranca-do-governo-do-senado-apos-operacao-da-pf.ghtml",
-					"2026-06-24",
-				),
-				event: dv(
-					"Lula designa Teresa Leitão líder do governo no Senado após Wagner se afastar por investigação da PF",
-					"https://g1.globo.com/politica/noticia/2026/06/24/jaques-wagner-pede-licenca-da-lideranca-do-governo-do-senado-apos-operacao-da-pf.ghtml",
-					"2026-06-24",
-				),
-			},
-			{
+		{
 				year: dv(
 					"2026",
 					"https://atarde.com.br/eleicoes/pt-define-data-para-oficializar-candidatura-de-lula-a-reeleicao-1394105",
@@ -330,171 +174,165 @@ export const lula: Candidate = 	{
 					"2026-07-04",
 				),
 			},
-		],
+		{
+				year: dv(
+					"2026",
+					"https://g1.globo.com/politica/noticia/2026/06/24/jaques-wagner-pede-licenca-da-lideranca-do-governo-do-senado-apos-operacao-da-pf.ghtml",
+					"2026-06-24",
+				),
+				event: dv(
+					"Lula designa Teresa Leitão líder do governo no Senado após Wagner se afastar por investigação da PF",
+					"https://g1.globo.com/politica/noticia/2026/06/24/jaques-wagner-pede-licenca-da-lideranca-do-governo-do-senado-apos-operacao-da-pf.ghtml",
+					"2026-06-24",
+				),
+			},
+		{
+				year: dv(
+					"2026",
+					"https://g1.globo.com/politica/noticia/2026/04/26/sem-lula-pt-aprova-manifesto-para-2026-com-foco-em-reeleicao-do-presidente.ghtml",
+					"2026-04-26",
+				),
+				event: dv(
+					'PT aprova manifesto "Construindo o Futuro" foco reeleição. Pré-candidato.',
+					"https://g1.globo.com/politica/noticia/2026/04/26/sem-lula-pt-aprova-manifesto-para-2026-com-foco-em-reeleicao-do-presidente.ghtml",
+					"2026-04-26",
+				),
+			},
+		{
+				year: dv(
+					"2022",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Campanha_presidencial_de_2022",
+					"2026-06-26",
+				),
+				event: dv(
+					"Eleito presidente 3ª vez (50,83% × Bolsonaro)",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Campanha_presidencial_de_2022",
+					"2026-06-26",
+				),
+			},
+		{
+				year: dv(
+					"2021",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Opera%C3%A7%C3%A3o_Lava_Jato",
+					"2026-06-26",
+				),
+				event: dv(
+					"STF anula condenações; recupera direitos",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Opera%C3%A7%C3%A3o_Lava_Jato",
+					"2026-06-26",
+				),
+			},
+		{
+				year: dv(
+					"2018",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Candidatura_presidencial_em_2018",
+					"2026-06-26",
+				),
+				event: dv(
+					"Preso 580 dias; candidatura barrada",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Candidatura_presidencial_em_2018",
+					"2026-06-26",
+				),
+			},
+		{
+				year: dv(
+					"2017",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Opera%C3%A7%C3%A3o_Lava_Jato",
+					"2026-06-26",
+				),
+				event: dv(
+					"Condenado por Moro no caso tríplex",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Opera%C3%A7%C3%A3o_Lava_Jato",
+					"2026-06-26",
+				),
+			},
+		{
+				year: dv(
+					"2010",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva",
+					"2026-06-26",
+				),
+				event: dv(
+					"Encerra mandato com 83% aprovação",
+					"https://datafolha.folha.uol.com.br/opiniaopublica/2010/12/acima-das-expectativas-lula-encerra-mandato-com-melhor-avaliacao-da-historia.shtml",
+					"2010-12-20",
+				),
+			},
+		{
+				year: dv(
+					"2006",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Reelei%C3%A7%C3%A3o_em_2006",
+					"2026-06-26",
+				),
+				event: dv(
+					"Reeleito (60,83% × Geraldo Alckmin)",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Reelei%C3%A7%C3%A3o_em_2006",
+					"2026-06-26",
+				),
+			},
+		{
+				year: dv(
+					"2002",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Vit%C3%B3ria_em_2002",
+					"2026-06-26",
+				),
+				event: dv(
+					"Eleito Presidente (61,27% × José Serra)",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Vit%C3%B3ria_em_2002",
+					"2026-06-26",
+				),
+			},
+		{
+				year: dv(
+					"1989",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Candidatura_%C3%A0_Presid%C3%AAncia_da_Rep%C3%BAblica_em_1989",
+					"2026-06-26",
+				),
+				event: dv(
+					"1ª candidatura Presidência (perde 2ºT para Collor)",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Candidatura_%C3%A0_Presid%C3%AAncia_da_Rep%C3%BAblica_em_1989",
+					"2026-06-26",
+				),
+			},
+		{
+				year: dv(
+					"1986",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#In%C3%ADcio_da_carreira_pol%C3%ADtica_e_cria%C3%A7%C3%A3o_do_Partido_dos_Trabalhadores",
+					"2026-06-26",
+				),
+				event: dv(
+					"Deputado Federal Constituinte mais votado (650 mil votos)",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#In%C3%ADcio_da_carreira_pol%C3%ADtica_e_cria%C3%A7%C3%A3o_do_Partido_dos_Trabalhadores",
+					"2026-06-26",
+				),
+			},
+		{
+				year: dv(
+					"1980",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#In%C3%ADcio_da_carreira_pol%C3%ADtica_e_cria%C3%A7%C3%A3o_do_Partido_dos_Trabalhadores",
+					"2026-06-26",
+				),
+				event: dv(
+					"Funda o PT; preso 31 dias (Lei Segurança Nacional)",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#In%C3%ADcio_da_carreira_pol%C3%ADtica_e_cria%C3%A7%C3%A3o_do_Partido_dos_Trabalhadores",
+					"2026-06-26",
+				),
+			},
+		{
+				year: dv(
+					"1975",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Sindicalismo",
+					"2026-06-26",
+				),
+				event: dv(
+					"Presidente Sindicato Metalúrgicos ABC (92% votos)",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Sindicalismo",
+					"2026-06-26",
+				),
+			},
+	],
 		electionResults: [
-			{
-				year: dvn(
-					1986,
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
-					"2026-06-26",
-				),
-				cargo: dv(
-					"Dep. Federal SP",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
-					"2026-06-26",
-				),
-				votos: dv(
-					"650.134",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
-					"2026-06-26",
-				),
-				pct: dv(
-					"—",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
-					"2026-06-26",
-				),
-				resultado: dv(
-					"Eleito (mais votado)",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
-					"2026-06-26",
-				),
-			},
-			{
-				year: dvn(
-					1989,
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
-					"2026-06-26",
-				),
-				cargo: dv(
-					"Presidente",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
-					"2026-06-26",
-				),
-				votos: dv(
-					"11.622.673 (1T)",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
-					"2026-06-26",
-				),
-				pct: dv(
-					"17,19%",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
-					"2026-06-26",
-				),
-				resultado: dv(
-					"2º turno (derrotado)",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
-					"2026-06-26",
-				),
-			},
-			{
-				year: dvn(
-					1994,
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
-					"2026-06-26",
-				),
-				cargo: dv(
-					"Presidente",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
-					"2026-06-26",
-				),
-				votos: dv(
-					"17.122.127",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
-					"2026-06-26",
-				),
-				pct: dv(
-					"27,04%",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
-					"2026-06-26",
-				),
-				resultado: dv(
-					"Não eleito (1ºT)",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
-					"2026-06-26",
-				),
-			},
-			{
-				year: dvn(
-					1998,
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
-					"2026-06-26",
-				),
-				cargo: dv(
-					"Presidente",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
-					"2026-06-26",
-				),
-				votos: dv(
-					"21.475.218",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
-					"2026-06-26",
-				),
-				pct: dv(
-					"31,71%",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
-					"2026-06-26",
-				),
-				resultado: dv(
-					"Não eleito (1ºT)",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
-					"2026-06-26",
-				),
-			},
-			{
-				year: dvn(
-					2002,
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
-					"2026-06-26",
-				),
-				cargo: dv(
-					"Presidente",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
-					"2026-06-26",
-				),
-				votos: dv(
-					"52.793.364 (2T)",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
-					"2026-06-26",
-				),
-				pct: dv(
-					"61,27%",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
-					"2026-06-26",
-				),
-				resultado: dv(
-					"Eleito",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
-					"2026-06-26",
-				),
-			},
-			{
-				year: dvn(
-					2006,
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
-					"2026-06-26",
-				),
-				cargo: dv(
-					"Presidente",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
-					"2026-06-26",
-				),
-				votos: dv(
-					"58.295.042 (2T)",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
-					"2026-06-26",
-				),
-				pct: dv(
-					"60,83%",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
-					"2026-06-26",
-				),
-				resultado: dv(
-					"Eleito",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
-					"2026-06-26",
-				),
-			},
-			{
+		{
 				year: dvn(
 					2022,
 					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
@@ -521,7 +359,169 @@ export const lula: Candidate = 	{
 					"2026-06-26",
 				),
 			},
-		],
+		{
+				year: dvn(
+					2006,
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
+					"2026-06-26",
+				),
+				cargo: dv(
+					"Presidente",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
+					"2026-06-26",
+				),
+				votos: dv(
+					"58.295.042 (2T)",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
+					"2026-06-26",
+				),
+				pct: dv(
+					"60,83%",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
+					"2026-06-26",
+				),
+				resultado: dv(
+					"Eleito",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
+					"2026-06-26",
+				),
+			},
+		{
+				year: dvn(
+					2002,
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
+					"2026-06-26",
+				),
+				cargo: dv(
+					"Presidente",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
+					"2026-06-26",
+				),
+				votos: dv(
+					"52.793.364 (2T)",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
+					"2026-06-26",
+				),
+				pct: dv(
+					"61,27%",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
+					"2026-06-26",
+				),
+				resultado: dv(
+					"Eleito",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
+					"2026-06-26",
+				),
+			},
+		{
+				year: dvn(
+					1998,
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
+					"2026-06-26",
+				),
+				cargo: dv(
+					"Presidente",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
+					"2026-06-26",
+				),
+				votos: dv(
+					"21.475.218",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
+					"2026-06-26",
+				),
+				pct: dv(
+					"31,71%",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
+					"2026-06-26",
+				),
+				resultado: dv(
+					"Não eleito (1ºT)",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
+					"2026-06-26",
+				),
+			},
+		{
+				year: dvn(
+					1994,
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
+					"2026-06-26",
+				),
+				cargo: dv(
+					"Presidente",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
+					"2026-06-26",
+				),
+				votos: dv(
+					"17.122.127",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
+					"2026-06-26",
+				),
+				pct: dv(
+					"27,04%",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
+					"2026-06-26",
+				),
+				resultado: dv(
+					"Não eleito (1ºT)",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
+					"2026-06-26",
+				),
+			},
+		{
+				year: dvn(
+					1989,
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
+					"2026-06-26",
+				),
+				cargo: dv(
+					"Presidente",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
+					"2026-06-26",
+				),
+				votos: dv(
+					"11.622.673 (1T)",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
+					"2026-06-26",
+				),
+				pct: dv(
+					"17,19%",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
+					"2026-06-26",
+				),
+				resultado: dv(
+					"2º turno (derrotado)",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
+					"2026-06-26",
+				),
+			},
+		{
+				year: dvn(
+					1986,
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
+					"2026-06-26",
+				),
+				cargo: dv(
+					"Dep. Federal SP",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
+					"2026-06-26",
+				),
+				votos: dv(
+					"650.134",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
+					"2026-06-26",
+				),
+				pct: dv(
+					"—",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
+					"2026-06-26",
+				),
+				resultado: dv(
+					"Eleito (mais votado)",
+					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Hist%C3%B3rico_eleitoral",
+					"2026-06-26",
+				),
+			},
+	],
 		scandals: [
 			{
 				name: dv(

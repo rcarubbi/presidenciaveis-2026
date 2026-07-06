@@ -82,22 +82,22 @@ export const zema: Candidate = 	{
 			"2026-06-26",
 		),
 		partyHistory: [
-			dv(
-				"PL (1999–2006)",
-				"https://pt.wikipedia.org/wiki/Romeu_Zema#Primeiros_anos",
-				"2026-06-26",
-			),
-			dv(
-				"PR (2006–2018)",
-				"https://pt.wikipedia.org/wiki/Romeu_Zema#Primeiros_anos",
-				"2026-06-26",
-			),
-			dv(
+		dv(
 				"NOVO (2018–presente)",
 				"https://pt.wikipedia.org/wiki/Romeu_Zema#Primeiros_anos",
 				"2026-06-26",
 			),
-		],
+		dv(
+				"PR (2006–2018)",
+				"https://pt.wikipedia.org/wiki/Romeu_Zema#Primeiros_anos",
+				"2026-06-26",
+			),
+		dv(
+				"PL (1999–2006)",
+				"https://pt.wikipedia.org/wiki/Romeu_Zema#Primeiros_anos",
+				"2026-06-26",
+			),
+	],
 		coalition: [
 			{
 				party: dv("NOVO"),
@@ -124,43 +124,7 @@ export const zema: Candidate = 	{
 			"2026-06-26",
 		),
 		timeline: [
-			{
-				year: dv(
-					"2017",
-					"https://pt.wikipedia.org/wiki/Romeu_Zema#Primeiros_anos",
-					"2026-06-26",
-				),
-				event: dv(
-					"Filia-se ao Partido Novo",
-					"https://pt.wikipedia.org/wiki/Romeu_Zema#Primeiros_anos",
-					"2026-06-26",
-				),
-			},
-			{
-				year: dv(
-					"2018",
-					"https://pt.wikipedia.org/wiki/Romeu_Zema#Eleição_de_2018_e_primeiro_mandato_como_governador",
-					"2026-06-26",
-				),
-				event: dv(
-					"Eleito Governador MG (2ºT, 71,80%) — surpresa nacional",
-					"https://pt.wikipedia.org/wiki/Romeu_Zema#Eleição_de_2018_e_primeiro_mandato_como_governador",
-					"2026-06-26",
-				),
-			},
-			{
-				year: dv(
-					"2022",
-					"https://pt.wikipedia.org/wiki/Romeu_Zema#Releição_em_2022_e_segundo_mandato_como_governador",
-					"2026-06-26",
-				),
-				event: dv(
-					"Reeleito Governador MG (1ºT, 56,18%)",
-					"https://pt.wikipedia.org/wiki/Romeu_Zema#Releição_em_2022_e_segundo_mandato_como_governador",
-					"2026-06-26",
-				),
-			},
-			{
+		{
 				year: dv(
 					"2026",
 					"https://g1.globo.com/mg/minas-gerais/noticia/2026/03/22/zema-renuncia-ao-governo-de-mg-para-pre-campanha-a-presidencia-da-republica-e-vice-mateus-simoes-assume-cargo.ghtml",
@@ -172,36 +136,45 @@ export const zema: Candidate = 	{
 					"2026-03-22",
 				),
 			},
-		],
-		electionResults: [
-			{
-				year: dvn(
-					2018,
-					"https://pt.wikipedia.org/wiki/Romeu_Zema#Desempenho_eleitoral",
+		{
+				year: dv(
+					"2022",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema#Releição_em_2022_e_segundo_mandato_como_governador",
 					"2026-06-26",
 				),
-				cargo: dv(
-					"Governador MG",
-					"https://pt.wikipedia.org/wiki/Romeu_Zema#Desempenho_eleitoral",
-					"2026-06-26",
-				),
-				votos: dv(
-					"4.138.967 (1T) / 6.963.806 (2T)",
-					"https://pt.wikipedia.org/wiki/Romeu_Zema#Desempenho_eleitoral",
-					"2026-06-26",
-				),
-				pct: dv(
-					"42,73% (1T) / 71,80% (2T)",
-					"https://pt.wikipedia.org/wiki/Romeu_Zema#Desempenho_eleitoral",
-					"2026-06-26",
-				),
-				resultado: dv(
-					"Eleito (2º turno)",
-					"https://pt.wikipedia.org/wiki/Romeu_Zema#Desempenho_eleitoral",
+				event: dv(
+					"Reeleito Governador MG (1ºT, 56,18%)",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema#Releição_em_2022_e_segundo_mandato_como_governador",
 					"2026-06-26",
 				),
 			},
-			{
+		{
+				year: dv(
+					"2018",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema#Eleição_de_2018_e_primeiro_mandato_como_governador",
+					"2026-06-26",
+				),
+				event: dv(
+					"Eleito Governador MG (2ºT, 71,80%) — surpresa nacional",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema#Eleição_de_2018_e_primeiro_mandato_como_governador",
+					"2026-06-26",
+				),
+			},
+		{
+				year: dv(
+					"2017",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema#Primeiros_anos",
+					"2026-06-26",
+				),
+				event: dv(
+					"Filia-se ao Partido Novo",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema#Primeiros_anos",
+					"2026-06-26",
+				),
+			},
+	],
+		electionResults: [
+		{
 				year: dvn(
 					2022,
 					"https://pt.wikipedia.org/wiki/Romeu_Zema#Desempenho_eleitoral",
@@ -228,7 +201,34 @@ export const zema: Candidate = 	{
 					"2026-06-26",
 				),
 			},
-		],
+		{
+				year: dvn(
+					2018,
+					"https://pt.wikipedia.org/wiki/Romeu_Zema#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				cargo: dv(
+					"Governador MG",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				votos: dv(
+					"4.138.967 (1T) / 6.963.806 (2T)",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				pct: dv(
+					"42,73% (1T) / 71,80% (2T)",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				resultado: dv(
+					"Eleito (2º turno)",
+					"https://pt.wikipedia.org/wiki/Romeu_Zema#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+			},
+	],
 		scandals: [
 			{
 				name: dv(

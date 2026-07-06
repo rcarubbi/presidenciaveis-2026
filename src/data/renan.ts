@@ -74,17 +74,17 @@ export const renan: Candidate = 	{
 			"2026-06-26",
 		),
 		partyHistory: [
-			dv(
-				"PSDB (2010–2015)",
-				"https://pt.wikipedia.org/wiki/Renan_Santos#Carreira_pol%C3%ADtica",
-				"2026-06-26",
-			),
-			dv(
+		dv(
 				"Missão (2023–presente)",
 				"https://pt.wikipedia.org/wiki/Renan_Santos#Partido_Miss%C3%A3o",
 				"2026-06-26",
 			),
-		],
+		dv(
+				"PSDB (2010–2015)",
+				"https://pt.wikipedia.org/wiki/Renan_Santos#Carreira_pol%C3%ADtica",
+				"2026-06-26",
+			),
+	],
 		coalition: [
 			{
 				party: dv("Missão"),
@@ -119,91 +119,7 @@ export const renan: Candidate = 	{
 			"2026-06-26",
 		),
 		timeline: [
-			{
-				year: dv(
-					"2013",
-					"https://pt.wikipedia.org/wiki/Renan_Santos#Manifesta%C3%A7%C3%A3o_contra_a_PEC_37_de_2013",
-					"2026-06-26",
-				),
-				event: dv(
-					"Participa Jornadas de Junho; contra PEC 37",
-					"https://pt.wikipedia.org/wiki/Renan_Santos#Manifesta%C3%A7%C3%A3o_contra_a_PEC_37_de_2013",
-					"2026-06-26",
-				),
-			},
-			{
-				year: dv(
-					"2014",
-					"https://pt.wikipedia.org/wiki/Renan_Santos#Movimento_Brasil_Livre",
-					"2026-06-26",
-				),
-				event: dv(
-					"Funda MBL com Kim Kataguiri",
-					"https://pt.wikipedia.org/wiki/Renan_Santos#Movimento_Brasil_Livre",
-					"2026-06-26",
-				),
-			},
-			{
-				year: dv(
-					"2015–2016",
-					"https://pt.wikipedia.org/wiki/Renan_Santos#Manifesta%C3%A7%C3%B5es_de_13_de_mar%C3%A7o_de_2016",
-					"2026-06-26",
-				),
-				event: dv(
-					"Lidera protestos impeachment Dilma (3,3 mi pessoas)",
-					"https://pt.wikipedia.org/wiki/Renan_Santos#Manifesta%C3%A7%C3%B5es_de_13_de_mar%C3%A7o_de_2016",
-					"2026-06-26",
-				),
-			},
-			{
-				year: dv(
-					"2020",
-					"https://pt.wikipedia.org/wiki/Renan_Santos#Den%C3%BAncia_por_tr%C3%A1fico_de_influ%C3%AAncia",
-					"2026-06-26",
-				),
-				event: dv(
-					"Denunciado MP-SP (tráfico influência) — rejeitada",
-					"https://pt.wikipedia.org/wiki/Renan_Santos#Den%C3%BAncia_por_tr%C3%A1fico_de_influ%C3%AAncia",
-					"2026-06-26",
-				),
-			},
-			{
-				year: dv(
-					"2023",
-					"https://pt.wikipedia.org/wiki/Renan_Santos#Partido_Miss%C3%A3o",
-					"2026-06-26",
-				),
-				event: dv(
-					"Anuncia fundação Partido Missão",
-					"https://pt.wikipedia.org/wiki/Renan_Santos#Partido_Miss%C3%A3o",
-					"2026-06-26",
-				),
-			},
-			{
-				year: dv(
-					"2025",
-					"https://pt.wikipedia.org/wiki/Renan_Santos#Partido_Miss%C3%A3o",
-					"2026-06-26",
-				),
-				event: dv(
-					"TSE aprova registro Missão (04/11)",
-					"https://pt.wikipedia.org/wiki/Renan_Santos#Partido_Miss%C3%A3o",
-					"2026-06-26",
-				),
-			},
-			{
-				year: dv(
-					"2026",
-					"https://pt.wikipedia.org/wiki/Renan_Santos#Pr%C3%A9-candidatura_presidencial_de_2026",
-					"2026-06-26",
-				),
-				event: dv(
-					"Pré-candidatura Presidência. 3–7% pesquisas.",
-					"https://pt.wikipedia.org/wiki/Renan_Santos#Pr%C3%A9-candidatura_presidencial_de_2026",
-					"2026-06-26",
-				),
-			},
-			{
+		{
 				year: dv(
 					"2026",
 					"https://g1.globo.com/politica/eleicoes/2026/noticia/2026/07/02/renan-santos-anuncia-aroldo-medina-como-vice-em-chapa-a-presidencia.ghtml",
@@ -215,7 +131,91 @@ export const renan: Candidate = 	{
 					"2026-07-02",
 				),
 			},
-		],
+		{
+				year: dv(
+					"2026",
+					"https://pt.wikipedia.org/wiki/Renan_Santos#Pr%C3%A9-candidatura_presidencial_de_2026",
+					"2026-06-26",
+				),
+				event: dv(
+					"Pré-candidatura Presidência. 3–7% pesquisas.",
+					"https://pt.wikipedia.org/wiki/Renan_Santos#Pr%C3%A9-candidatura_presidencial_de_2026",
+					"2026-06-26",
+				),
+			},
+		{
+				year: dv(
+					"2025",
+					"https://pt.wikipedia.org/wiki/Renan_Santos#Partido_Miss%C3%A3o",
+					"2026-06-26",
+				),
+				event: dv(
+					"TSE aprova registro Missão (04/11)",
+					"https://pt.wikipedia.org/wiki/Renan_Santos#Partido_Miss%C3%A3o",
+					"2026-06-26",
+				),
+			},
+		{
+				year: dv(
+					"2023",
+					"https://pt.wikipedia.org/wiki/Renan_Santos#Partido_Miss%C3%A3o",
+					"2026-06-26",
+				),
+				event: dv(
+					"Anuncia fundação Partido Missão",
+					"https://pt.wikipedia.org/wiki/Renan_Santos#Partido_Miss%C3%A3o",
+					"2026-06-26",
+				),
+			},
+		{
+				year: dv(
+					"2020",
+					"https://pt.wikipedia.org/wiki/Renan_Santos#Den%C3%BAncia_por_tr%C3%A1fico_de_influ%C3%AAncia",
+					"2026-06-26",
+				),
+				event: dv(
+					"Denunciado MP-SP (tráfico influência) — rejeitada",
+					"https://pt.wikipedia.org/wiki/Renan_Santos#Den%C3%BAncia_por_tr%C3%A1fico_de_influ%C3%AAncia",
+					"2026-06-26",
+				),
+			},
+		{
+				year: dv(
+					"2015–2016",
+					"https://pt.wikipedia.org/wiki/Renan_Santos#Manifesta%C3%A7%C3%B5es_de_13_de_mar%C3%A7o_de_2016",
+					"2026-06-26",
+				),
+				event: dv(
+					"Lidera protestos impeachment Dilma (3,3 mi pessoas)",
+					"https://pt.wikipedia.org/wiki/Renan_Santos#Manifesta%C3%A7%C3%B5es_de_13_de_mar%C3%A7o_de_2016",
+					"2026-06-26",
+				),
+			},
+		{
+				year: dv(
+					"2014",
+					"https://pt.wikipedia.org/wiki/Renan_Santos#Movimento_Brasil_Livre",
+					"2026-06-26",
+				),
+				event: dv(
+					"Funda MBL com Kim Kataguiri",
+					"https://pt.wikipedia.org/wiki/Renan_Santos#Movimento_Brasil_Livre",
+					"2026-06-26",
+				),
+			},
+		{
+				year: dv(
+					"2013",
+					"https://pt.wikipedia.org/wiki/Renan_Santos#Manifesta%C3%A7%C3%A3o_contra_a_PEC_37_de_2013",
+					"2026-06-26",
+				),
+				event: dv(
+					"Participa Jornadas de Junho; contra PEC 37",
+					"https://pt.wikipedia.org/wiki/Renan_Santos#Manifesta%C3%A7%C3%A3o_contra_a_PEC_37_de_2013",
+					"2026-06-26",
+				),
+			},
+	],
 		electionResults: [],
 		scandals: [
 			{

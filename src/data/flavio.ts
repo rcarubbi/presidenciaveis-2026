@@ -82,37 +82,37 @@ export const flavio: Candidate = 	{
 			"2026-06-26",
 		),
 		partyHistory: [
-			dv(
-				"PPB (2002–2003)",
-				"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Carreira_pol%C3%ADtica",
-				"2026-06-26",
-			),
-			dv(
-				"PP (2003–2005)",
-				"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Carreira_pol%C3%ADtica",
-				"2026-06-26",
-			),
-			dv(
-				"PFL (2005–2007)",
-				"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Carreira_pol%C3%ADtica",
-				"2026-06-26",
-			),
-			dv(
-				"PSC (2007–2009)",
-				"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Carreira_pol%C3%ADtica",
-				"2026-06-26",
-			),
-			dv(
-				"PSL (2009–2022)",
-				"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Carreira_pol%C3%ADtica",
-				"2026-06-26",
-			),
-			dv(
+		dv(
 				"PL (2022–presente)",
 				"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Carreira_pol%C3%ADtica",
 				"2026-06-26",
 			),
-		],
+		dv(
+				"PSL (2009–2022)",
+				"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Carreira_pol%C3%ADtica",
+				"2026-06-26",
+			),
+		dv(
+				"PSC (2007–2009)",
+				"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Carreira_pol%C3%ADtica",
+				"2026-06-26",
+			),
+		dv(
+				"PFL (2005–2007)",
+				"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Carreira_pol%C3%ADtica",
+				"2026-06-26",
+			),
+		dv(
+				"PP (2003–2005)",
+				"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Carreira_pol%C3%ADtica",
+				"2026-06-26",
+			),
+		dv(
+				"PPB (2002–2003)",
+				"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Carreira_pol%C3%ADtica",
+				"2026-06-26",
+			),
+	],
 		coalition: [
 			{
 				party: dv("PL"),
@@ -139,115 +139,7 @@ export const flavio: Candidate = 	{
 			"2026-06-26",
 		),
 		timeline: [
-			{
-				year: dv(
-					"2004",
-					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Deputado_estadual",
-					"2026-06-26",
-				),
-				event: dv(
-					"Eleito vereador RJ (suplente, assume 2005)",
-					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Deputado_estadual",
-					"2026-06-26",
-				),
-			},
-			{
-				year: dv(
-					"2008",
-					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Deputado_estadual",
-					"2026-06-26",
-				),
-				event: dv(
-					"Reeleito vereador RJ (35.498 votos)",
-					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Deputado_estadual",
-					"2026-06-26",
-				),
-			},
-			{
-				year: dv(
-					"2010",
-					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Deputado_estadual",
-					"2026-06-26",
-				),
-				event: dv(
-					"Eleito Deputado Estadual RJ (94.902 votos)",
-					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Deputado_estadual",
-					"2026-06-26",
-				),
-			},
-			{
-				year: dv(
-					"2014",
-					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Deputado_estadual",
-					"2026-06-26",
-				),
-				event: dv(
-					"Reeleito Dep. Estadual RJ (126.512 votos)",
-					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Deputado_estadual",
-					"2026-06-26",
-				),
-			},
-			{
-				year: dv(
-					"2018",
-					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Senador_da_Rep%C3%BAblica_(2019%E2%80%93presente)",
-					"2026-06-26",
-				),
-				event: dv(
-					"Eleito Senador RJ — mais votado do Brasil (4.099.888 votos)",
-					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Senador_da_Rep%C3%BAblica_(2019%E2%80%93presente)",
-					"2026-06-26",
-				),
-			},
-			{
-				year: dv(
-					"2019",
-					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Senador_da_Rep%C3%BAblica_(2019%E2%80%93presente)",
-					"2026-06-26",
-				),
-				event: dv(
-					"Preside CCJ do Senado",
-					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Senador_da_Rep%C3%BAblica_(2019%E2%80%93presente)",
-					"2026-06-26",
-				),
-			},
-			{
-				year: dv(
-					"2022",
-					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Senador_da_Rep%C3%BAblica_(2019%E2%80%93presente)",
-					"2026-06-26",
-				),
-				event: dv(
-					"Reeleito Senador RJ (1.839.409 votos)",
-					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Senador_da_Rep%C3%BAblica_(2019%E2%80%93presente)",
-					"2026-06-26",
-				),
-			},
-			{
-				year: dv(
-					"2024",
-					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Caso_Queiroz_e_acusa%C3%A7%C3%A3o_de_peculato",
-					"2026-06-26",
-				),
-				event: dv(
-					"Caso rachadinhas arquivado",
-					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Caso_Queiroz_e_acusa%C3%A7%C3%A3o_de_peculato",
-					"2026-06-26",
-				),
-			},
-			{
-				year: dv(
-					"2025",
-					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Pr%C3%A9-candidatura_%C3%A0_Presid%C3%AAncia_da_Rep%C3%BAblica_em_2026",
-					"2026-06-26",
-				),
-				event: dv(
-					"STF rejeita reabertura; lança pré-candidatura",
-					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Pr%C3%A9-candidatura_%C3%A0_Presid%C3%AAncia_da_Rep%C3%BAblica_em_2026",
-					"2026-06-26",
-				),
-			},
-			{
+		{
 				year: dv(
 					"2026",
 					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Esc%C3%A2ndalo_do_Banco_Master_e_filme_Dark_Horse",
@@ -259,144 +151,117 @@ export const flavio: Candidate = 	{
 				"2026-07-03",
 			),
 			},
-		],
+		{
+				year: dv(
+					"2025",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Pr%C3%A9-candidatura_%C3%A0_Presid%C3%AAncia_da_Rep%C3%BAblica_em_2026",
+					"2026-06-26",
+				),
+				event: dv(
+					"STF rejeita reabertura; lança pré-candidatura",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Pr%C3%A9-candidatura_%C3%A0_Presid%C3%AAncia_da_Rep%C3%BAblica_em_2026",
+					"2026-06-26",
+				),
+			},
+		{
+				year: dv(
+					"2024",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Caso_Queiroz_e_acusa%C3%A7%C3%A3o_de_peculato",
+					"2026-06-26",
+				),
+				event: dv(
+					"Caso rachadinhas arquivado",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Caso_Queiroz_e_acusa%C3%A7%C3%A3o_de_peculato",
+					"2026-06-26",
+				),
+			},
+		{
+				year: dv(
+					"2022",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Senador_da_Rep%C3%BAblica_(2019%E2%80%93presente)",
+					"2026-06-26",
+				),
+				event: dv(
+					"Reeleito Senador RJ (1.839.409 votos)",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Senador_da_Rep%C3%BAblica_(2019%E2%80%93presente)",
+					"2026-06-26",
+				),
+			},
+		{
+				year: dv(
+					"2019",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Senador_da_Rep%C3%BAblica_(2019%E2%80%93presente)",
+					"2026-06-26",
+				),
+				event: dv(
+					"Preside CCJ do Senado",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Senador_da_Rep%C3%BAblica_(2019%E2%80%93presente)",
+					"2026-06-26",
+				),
+			},
+		{
+				year: dv(
+					"2018",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Senador_da_Rep%C3%BAblica_(2019%E2%80%93presente)",
+					"2026-06-26",
+				),
+				event: dv(
+					"Eleito Senador RJ — mais votado do Brasil (4.099.888 votos)",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Senador_da_Rep%C3%BAblica_(2019%E2%80%93presente)",
+					"2026-06-26",
+				),
+			},
+		{
+				year: dv(
+					"2014",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Deputado_estadual",
+					"2026-06-26",
+				),
+				event: dv(
+					"Reeleito Dep. Estadual RJ (126.512 votos)",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Deputado_estadual",
+					"2026-06-26",
+				),
+			},
+		{
+				year: dv(
+					"2010",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Deputado_estadual",
+					"2026-06-26",
+				),
+				event: dv(
+					"Eleito Deputado Estadual RJ (94.902 votos)",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Deputado_estadual",
+					"2026-06-26",
+				),
+			},
+		{
+				year: dv(
+					"2008",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Deputado_estadual",
+					"2026-06-26",
+				),
+				event: dv(
+					"Reeleito vereador RJ (35.498 votos)",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Deputado_estadual",
+					"2026-06-26",
+				),
+			},
+		{
+				year: dv(
+					"2004",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Deputado_estadual",
+					"2026-06-26",
+				),
+				event: dv(
+					"Eleito vereador RJ (suplente, assume 2005)",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Deputado_estadual",
+					"2026-06-26",
+				),
+			},
+	],
 		electionResults: [
-			{
-				year: dvn(
-					2004,
-					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Desempenho_eleitoral",
-					"2026-06-26",
-				),
-				cargo: dv(
-					"Vereador RJ",
-					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Desempenho_eleitoral",
-					"2026-06-26",
-				),
-				votos: dv(
-					"25.146",
-					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Desempenho_eleitoral",
-					"2026-06-26",
-				),
-				pct: dv(
-					"0,82%",
-					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Desempenho_eleitoral",
-					"2026-06-26",
-				),
-				resultado: dv(
-					"Suplente (assumiu 2005)",
-					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Desempenho_eleitoral",
-					"2026-06-26",
-				),
-			},
-			{
-				year: dvn(
-					2008,
-					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Desempenho_eleitoral",
-					"2026-06-26",
-				),
-				cargo: dv(
-					"Vereador RJ",
-					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Desempenho_eleitoral",
-					"2026-06-26",
-				),
-				votos: dv(
-					"35.498",
-					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Desempenho_eleitoral",
-					"2026-06-26",
-				),
-				pct: dv(
-					"1,13%",
-					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Desempenho_eleitoral",
-					"2026-06-26",
-				),
-				resultado: dv(
-					"Eleito",
-					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Desempenho_eleitoral",
-					"2026-06-26",
-				),
-			},
-			{
-				year: dvn(
-					2010,
-					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Desempenho_eleitoral",
-					"2026-06-26",
-				),
-				cargo: dv(
-					"Dep. Estadual RJ",
-					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Desempenho_eleitoral",
-					"2026-06-26",
-				),
-				votos: dv(
-					"94.902",
-					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Desempenho_eleitoral",
-					"2026-06-26",
-				),
-				pct: dv(
-					"1,69%",
-					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Desempenho_eleitoral",
-					"2026-06-26",
-				),
-				resultado: dv(
-					"Eleito",
-					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Desempenho_eleitoral",
-					"2026-06-26",
-				),
-			},
-			{
-				year: dvn(
-					2014,
-					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Desempenho_eleitoral",
-					"2026-06-26",
-				),
-				cargo: dv(
-					"Dep. Estadual RJ",
-					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Desempenho_eleitoral",
-					"2026-06-26",
-				),
-				votos: dv(
-					"126.512",
-					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Desempenho_eleitoral",
-					"2026-06-26",
-				),
-				pct: dv(
-					"2,15%",
-					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Desempenho_eleitoral",
-					"2026-06-26",
-				),
-				resultado: dv(
-					"Eleito",
-					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Desempenho_eleitoral",
-					"2026-06-26",
-				),
-			},
-			{
-				year: dvn(
-					2018,
-					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Desempenho_eleitoral",
-					"2026-06-26",
-				),
-				cargo: dv(
-					"Senador RJ",
-					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Desempenho_eleitoral",
-					"2026-06-26",
-				),
-				votos: dv(
-					"4.099.888",
-					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Desempenho_eleitoral",
-					"2026-06-26",
-				),
-				pct: dv(
-					"31,17%",
-					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Desempenho_eleitoral",
-					"2026-06-26",
-				),
-				resultado: dv(
-					"Eleito (mais votado BR)",
-					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Desempenho_eleitoral",
-					"2026-06-26",
-				),
-			},
-			{
+		{
 				year: dvn(
 					2022,
 					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Desempenho_eleitoral",
@@ -423,7 +288,142 @@ export const flavio: Candidate = 	{
 					"2026-06-26",
 				),
 			},
-		],
+		{
+				year: dvn(
+					2018,
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				cargo: dv(
+					"Senador RJ",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				votos: dv(
+					"4.099.888",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				pct: dv(
+					"31,17%",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				resultado: dv(
+					"Eleito (mais votado BR)",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+			},
+		{
+				year: dvn(
+					2014,
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				cargo: dv(
+					"Dep. Estadual RJ",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				votos: dv(
+					"126.512",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				pct: dv(
+					"2,15%",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				resultado: dv(
+					"Eleito",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+			},
+		{
+				year: dvn(
+					2010,
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				cargo: dv(
+					"Dep. Estadual RJ",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				votos: dv(
+					"94.902",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				pct: dv(
+					"1,69%",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				resultado: dv(
+					"Eleito",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+			},
+		{
+				year: dvn(
+					2008,
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				cargo: dv(
+					"Vereador RJ",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				votos: dv(
+					"35.498",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				pct: dv(
+					"1,13%",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				resultado: dv(
+					"Eleito",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+			},
+		{
+				year: dvn(
+					2004,
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				cargo: dv(
+					"Vereador RJ",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				votos: dv(
+					"25.146",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				pct: dv(
+					"0,82%",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+				resultado: dv(
+					"Suplente (assumiu 2005)",
+					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Desempenho_eleitoral",
+					"2026-06-26",
+				),
+			},
+	],
 		scandals: [
 			{
 				name: dv(
