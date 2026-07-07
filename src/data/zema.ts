@@ -84,21 +84,20 @@ export const zema: Candidate = 	{
 		partyHistory: [
 			dv(
 				"NOVO (2018–presente)",
-				"https://pt.wikipedia.org/wiki/Romeu_Zema#Primeiros_anos",
+				"https://ndmais.com.br/politica/quem-e-romeu-zema-carreira-e-trajetoria/",
 				"2026-06-26",
-			)
-		,
+			),
 			dv(
 				"PR (2006–2018)",
-				"https://pt.wikipedia.org/wiki/Romeu_Zema#Primeiros_anos",
+				"https://ndmais.com.br/politica/quem-e-romeu-zema-carreira-e-trajetoria/",
 				"2026-06-26",
 			),
 			dv(
 				"PL (1999–2006)",
-				"https://pt.wikipedia.org/wiki/Romeu_Zema#Primeiros_anos",
+				"https://ndmais.com.br/politica/quem-e-romeu-zema-carreira-e-trajetoria/",
 				"2026-06-26",
-			)
-],
+			),
+		],
 		coalition: [
 			{
 				party: dv("NOVO"),
