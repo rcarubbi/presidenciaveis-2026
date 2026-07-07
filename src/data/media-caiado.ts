@@ -8,6 +8,34 @@ export const caiadoMedia: MediaCategory[] = [
 			items: [
 				{
 					title: dv(
+						"Kassab: \"Caiado tem mais chances de vencer Lula do que Flávio Bolsonaro\" | TEMPO REAL",
+						"https://www.youtube.com/watch?v=NpI53O1em5k",
+						"2026-07-06",
+					),
+					description: dv(
+						"O presidente do PSD, Gilberto Kassab, afirmou em entrevista que considera mais fácil Ronaldo Caiado vencer o presidente Lula do que Flávio Bolsonaro.",
+						"https://www.youtube.com/watch?v=NpI53O1em5k",
+						"2026-07-06",
+					),
+					youtubeId: "NpI53O1em5k",
+					category: "entrevistas",
+				},
+				{
+					title: dv(
+						"Eleições 2026: o plano do Centrão para derrotar Flávio Bolsonaro e Lula nas urnas",
+						"https://www.youtube.com/watch?v=j7E8HzKYqV8",
+						"2026-07-06",
+					),
+					description: dv(
+						"Gilberto Kassab, presidente nacional do PSD, defendeu a chapa puro-sangue formada por ele e por Ronaldo Caiado como estratégia para vencer as eleições de 2026.",
+						"https://www.youtube.com/watch?v=j7E8HzKYqV8",
+						"2026-07-06",
+					),
+					youtubeId: "j7E8HzKYqV8",
+					category: "entrevistas",
+				},
+				{
+					title: dv(
 						"Caiado concede entrevista coletiva em Marília-SP",
 						"https://www.youtube.com/watch?v=37UHTPaDYQI",
 						"2026-07-03",

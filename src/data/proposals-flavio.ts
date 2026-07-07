@@ -19,6 +19,11 @@ export const flavioProposals: Record<string, ProposalItem[]> = {
     { text: dv('Revisão da reforma tributária', 'https://exame.com/brasil/flavio-defende-suspender-reforma-tributaria-e-e-questionado-em-evento-da-cni/', '2026-06-22') },
     { text: dv('Privatização estatais não estratégicas', 'https://exame.com/brasil/tesouraco-e-privatizacoes-os-sinais-de-flavio-sobre-a-economia/', '2026-02-14') },
   ],
+  social: [
+    { text: dv('Bolsa Família como direito adquirido — ampliar período de proteção pós-emprego formal', 'https://valor.globo.com/politica/noticia/2026/06/15/flavio-bolsonaro-promete-tesouraco-e-defende-bolsa-familia.ghtml', '2026-07-07') },
+    { text: dv('Pacto contra a fome — "esperança vai vencer o medo"', 'https://g1.globo.com/sp/sao-paulo/eleicoes/2026/noticia/2026/06/20/flavio-volta-adotar-bandeiras-e-slongan-de-lula-e-diz-que-vai-acabar-com-a-fome-a-esperanca-vai-vencer-o-medo-esse-ano.ghtml', '2026-07-07') },
+    { text: dv('Zerar fila de creches para que mulheres possam trabalhar', 'https://g1.globo.com/sp/sao-paulo/eleicoes/2026/noticia/2026/06/20/flavio-volta-adotar-bandeiras-e-slongan-de-lula-e-diz-que-vai-acabar-com-a-fome-a-esperanca-vai-vencer-o-medo-esse-ano.ghtml', '2026-07-07') },
+  ],
   saude: [
     { text: dv('Desvinculação do piso constitucional (correção só pela inflação, não 15% RCL)', 'https://www1.folha.uol.com.br/mercado/2026/04/flavio-planeja-reajustar-aposentadorias-e-despesas-com-saude-e-educacao-so-pela-inflacao.shtml', '2026-04-28') },
   ],

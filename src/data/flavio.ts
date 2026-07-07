@@ -141,18 +141,17 @@ export const flavio: Candidate = 	{
 		),
 		timeline: [
 			{
-				year: dv(
-					"2026",
-					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Esc%C3%A2ndalo_do_Banco_Master_e_filme_Dark_Horse",
-					"2026-06-26",
-				),
-				event: dv(
-					'Plano "Brasil Sem Medo" (18/06). Dark Horse no STF. Crise c/ Michelle (24/06). Bia Kicis cotada vice. Audiência tarifas EUA (jul). Carta aos EUA omite envolvimento (02/07).',
-					"https://www.metropoles.com/brasil/em-carta-aos-eua-flavio-associa-master-a-lula-e-omite-caso-dark-horse",
-					"2026-07-05",
-				),
-			}
-		,
+				year: dv("2026", "https://g1.globo.com/sp/sao-paulo/eleicoes/2026/noticia/2026/06/18/flavio-bolsonaro-lanca-pacote-de-seguranca-com-reducao-da-maioridade-penal-e-castracao-quimica.ghtml", "2026-07-07"),
+				event: dv('Lançamento plano "Brasil Sem Medo" (18/jun) — 12 propostas de segurança pública.', "https://g1.globo.com/sp/sao-paulo/eleicoes/2026/noticia/2026/06/18/flavio-bolsonaro-lanca-pacote-de-seguranca-com-reducao-da-maioridade-penal-e-castracao-quimica.ghtml", "2026-07-07"),
+			},
+			{
+				year: dv("2026", "https://g1.globo.com/politica/eleicoes/2026/noticia/2026/07/01/aliados-de-flavio-bolsonaro-saida-de-michelle-do-pl-mulher.ghtml", "2026-07-07"),
+				event: dv('Crise pública com Michelle Bolsonaro (24/jun). Flávio pede desculpas. Michelle deixa presidência do PL Mulher (1/jul); aliados veem alívio.', "https://g1.globo.com/politica/eleicoes/2026/noticia/2026/07/01/aliados-de-flavio-bolsonaro-saida-de-michelle-do-pl-mulher.ghtml", "2026-07-07"),
+			},
+			{
+				year: dv("2026", "https://g1.globo.com/politica/blog/andreia-sadi/post/2026/07/06/fogo-amigo-na-pre-campanha-de-flavio-bolsonaro.ghtml", "2026-07-07"),
+				event: dv('Fogo amigo desgasta pré-campanha (6/jul). PGR defende PF ouvir Flávio por calúnia contra Lula (6/jul). Convenção PL 25/jul SP. Audiência USTR Washington (7/jul). Carta aos EUA omite envolvimento com Dark Horse.', "https://g1.globo.com/politica/blog/andreia-sadi/post/2026/07/06/fogo-amigo-na-pre-campanha-de-flavio-bolsonaro.ghtml", "2026-07-07"),
+			},
 			{
 				year: dv(
 					"2025",
@@ -636,13 +635,13 @@ export const flavio: Candidate = 	{
 			{
 				issue: dv(
 					"Bolsa Família / Programas Sociais",
-					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro",
-					"2026-07-05",
+					"https://g1.globo.com/sp/sao-paulo/eleicoes/2026/noticia/2026/06/20/flavio-volta-adotar-bandeiras-e-slongan-de-lula-e-diz-que-vai-acabar-com-a-fome-a-esperanca-vai-vencer-o-medo-esse-ano.ghtml",
+					"2026-07-07",
 				),
 				position: dv(
-					"-",
-					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro",
-					"2026-07-05",
+					'Defende como direito adquirido. Ampliar proteção pós-emprego formal. Pacto contra fome, zerar fila creche.',
+					"https://g1.globo.com/sp/sao-paulo/eleicoes/2026/noticia/2026/06/20/flavio-volta-adotar-bandeiras-e-slongan-de-lula-e-diz-que-vai-acabar-com-a-fome-a-esperanca-vai-vencer-o-medo-esse-ano.ghtml",
+					"2026-07-07",
 				),
 			},
 			{

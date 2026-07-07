@@ -117,7 +117,7 @@ Usar `-v` para ver titulos e URLs.
 
 - **patrimonio**: buscar declaracao TSE mais recente
 - **timeline**: novos eventos (vice, aliancas, convencoes)
-- **scandals**: mudancas de status, novos escandalos
+- **scandals**: mudancas de status, novos escandalos **estritamente de corrupcao** (desvio, fraude, propina, caixa 2, improbidade) — nao incluir posicionamentos politicos, criticas ou reunioes sem ilicito comprovado
 - **campaignFinance**: novas prestacoes de contas
 - **positions**: novas declaracoes publicas
 
@@ -164,6 +164,8 @@ node --env-file .env.local --experimental-strip-types scripts/fetch-youtube-vide
 ```
 
 **ATENCAO:** `pnpm run` NAO funciona — o `--` separador do pnpm engole os argumentos. Chamar `node` diretamente.
+
+**Config:** `YOUTUBE_API_KEY` esta em `.env.local` na raiz do projeto. `--env-file .env.local` carrega automaticamente.
 
 Script retorna JSON: `title`, `description`, `youtubeId`, `publishedAt`, `channelTitle`.
 
@@ -280,22 +282,31 @@ Apos qualquer alteracao:
    Exemplo: `"Renan: timeline — 1a convencao Missao 01/ago (CNN) 03/jul"`
 4. **Inserir cada entrada na posicao correta** — `changes[]` e ordenado por data decrescente (mais recente primeiro). Extrair a data no formato `DD/mon` do label e posicionar entre a entrada mais recente (acima) e mais antiga (abaixo).
 
-### Passo 4.7 — Verificar duplicatas
+### Passo 4.7 — Verificar duplicatas (media only)
 
-Rodar apos edicoes:
+Rodar apos edicoes — checa youtubeIds duplicados no `media-{CANDIDATE}.ts`:
 
-```bash
-node "C:\Users\rcaru\AppData\Local\Temp\opencode\check_duplicates.mjs"
+```powershell
+$path = "src/data/media-{CANDIDATE}.ts"
+$ids = Select-String -Path $path -Pattern 'youtubeId: "([^"]+)"' | ForEach-Object { $_.Matches.Groups[1].Value }
+$dupes = $ids | Group-Object | Where-Object { $_.Count -gt 1 }
+if ($dupes) { Write-Host "DUPLICATA youtubeId: $($dupes.Name -join ', ')" -ForegroundColor Red; exit 1 }
 ```
 
-Verificar: youtubeIds duplicados, textos de proposal duplicados, polls duplicados, timeline/position duplicados.
-
-Se encontrar duplicatas **exatas**, remover automaticamente (manter na secao mais relevante).
+Se encontrar duplicatas **exatas**, remover automaticamente (manter a mais antiga ou a com source mais confiavel).
 Se **muito similares**, perguntar ao usuario.
 
-### Passo 5 — Verificar build
+### Passo 5 — Verificar build + duplicatas media
 
-```
+```bash
+# Checar duplicatas youtubeId no media do candidato
+$path = "src/data/media-{CANDIDATE}.ts"
+if (Test-Path $path) {
+    $ids = Select-String -Path $path -Pattern 'youtubeId: "([^"]+)"' | ForEach-Object { $_.Matches.Groups[1].Value }
+    $dupes = $ids | Group-Object | Where-Object { $_.Count -gt 1 }
+    if ($dupes) { Write-Host "DUPLICATA youtubeId: $($dupes.Name -join ', ')" -ForegroundColor Red; exit 1 }
+}
+
 npm run lint
 npm run typecheck
 npm run build

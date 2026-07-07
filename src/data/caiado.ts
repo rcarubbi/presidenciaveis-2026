@@ -773,13 +773,13 @@ export const caiado: Candidate = 	{
 			{
 				issue: dv(
 					"Economia",
-					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado",
-					"2026-07-05",
+					"https://jota.info/eleicoes/eleicoes-2026/caiado-defende-reformas-estruturantes-para-reduzir-o-custo-brasil-em-evento-da-cni",
+					"2026-06-23",
 				),
 				position: dv(
-					"-",
-					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado",
-					"2026-07-05",
+					"Reformas estruturantes para reduzir Custo Brasil. Ajuste fiscal, desburocratização, redução Selic. Contra aumento de impostos.",
+					"https://jota.info/eleicoes/eleicoes-2026/caiado-defende-reformas-estruturantes-para-reduzir-o-custo-brasil-em-evento-da-cni",
+					"2026-06-23",
 				),
 			},
 			{

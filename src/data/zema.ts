@@ -148,19 +148,55 @@ export const zema: Candidate = 	{
 					"https://g1.globo.com/ba/bahia/eleicoes/2026/noticia/2026/07/01/zema-confirma-apoio-a-acm-neto-para-o-governo-da-bahia.ghtml",
 					"2026-07-02",
 				),
-			},
-			{
-				year: dv(
-					"2026",
-					"https://estadao.com.br/politica/zema-nega-aliancas-com-flavio-bolsonaro-e-caiado-e-promete-anunciar-o-vice-na-proxima-semana",
-					"2026-06-25",
-				),
-				event: dv(
-					"Nega alianças com Flávio Bolsonaro e Caiado. Promete anunciar vice na próxima semana.",
-					"https://estadao.com.br/politica/zema-nega-aliancas-com-flavio-bolsonaro-e-caiado-e-promete-anunciar-o-vice-na-proxima-semana",
-					"2026-06-25",
-				),
-			},
+		},
+		{
+			year: dv(
+				"2026",
+				"https://ncnews.com.br/2026/06/30/zema-evita-comentar-crise-da-familia-bolsonaro-diz-que-vice-ainda-nao-foi-definido-e-promete-rever-programas-sociais",
+				"2026-07-01",
+			),
+			event: dv(
+				"Diz que vice ainda n\u00e3o foi definido. Promete rever programas sociais caso eleito.",
+				"https://ncnews.com.br/2026/06/30/zema-evita-comentar-crise-da-familia-bolsonaro-diz-que-vice-ainda-nao-foi-definido-e-promete-rever-programas-sociais",
+				"2026-07-01",
+			),
+		},
+		{
+			year: dv(
+				"2026",
+				"https://em.com.br/politica/platobr/2026/06/7451753-zema-busca-alianca-com-podemos-e-pode-ter-empresario-como-vice.html",
+				"2026-06-30",
+			),
+			event: dv(
+				"Busca alian\u00e7a com Podemos e pode ter empres\u00e1rio como vice.",
+				"https://em.com.br/politica/platobr/2026/06/7451753-zema-busca-alianca-com-podemos-e-pode-ter-empresario-como-vice.html",
+				"2026-06-30",
+			),
+		},
+		{
+			year: dv(
+				"2026",
+				"https://estadao.com.br/politica/coluna-do-estadao/romeu-zema-faz-primeira-sondagem-para-vice-em-sua-chapa-na-corrida-presidencial-saiba-quem-e",
+				"2026-06-26",
+			),
+			event: dv(
+				"Faz primeira sondagem para vice em sua chapa presidencial.",
+				"https://estadao.com.br/politica/coluna-do-estadao/romeu-zema-faz-primeira-sondagem-para-vice-em-sua-chapa-na-corrida-presidencial-saiba-quem-e",
+				"2026-06-26",
+			),
+		},
+		{
+			year: dv(
+				"2026",
+				"https://estadao.com.br/politica/zema-nega-aliancas-com-flavio-bolsonaro-e-caiado-e-promete-anunciar-o-vice-na-proxima-semana",
+				"2026-06-25",
+			),
+			event: dv(
+				"Nega alian\u00e7as com Fl\u00e1vio Bolsonaro e Caiado. Promete anunciar vice na pr\u00f3xima semana.",
+				"https://estadao.com.br/politica/zema-nega-aliancas-com-flavio-bolsonaro-e-caiado-e-promete-anunciar-o-vice-na-proxima-semana",
+				"2026-06-25",
+			),
+		},
 			{
 				year: dv(
 					"2026",
@@ -336,8 +372,7 @@ export const zema: Candidate = 	{
 					"https://g1.globo.com/mg/minas-gerais/noticia/2025/12/23/zema-sanciona-lei-que-autoriza-privatizacao-da-copasa-e-troca-comando-da-empresa.ghtml",
 					"2026-06-28",
 				),
-			}
-		
+			},
 ],
 		campaignFinance: {
 			totalArrecadado: dv(
@@ -438,21 +473,21 @@ export const zema: Candidate = 	{
 					"2026-06-26",
 				),
 			},
-			{
-				issue: dv(
-					"Assistência Social",
-					"https://pt.wikipedia.org/wiki/Romeu_Zema",
-					"2026-07-05",
-				),
-				position: dv(
-					"-",
-					"https://pt.wikipedia.org/wiki/Romeu_Zema",
-					"2026-07-05",
-				),
-			},
-			{
-				issue: dv(
-					"Bolsa Família / Programas Sociais",
+            {
+                issue: dv(
+                    "Assistência Social",
+                    "https://ncnews.com.br/2026/06/30/zema-evita-comentar-crise-da-familia-bolsonaro-diz-que-vice-ainda-nao-foi-definido-e-promete-rever-programas-sociais",
+                    "2026-07-01",
+                ),
+                position: dv(
+                    "Promete rever programas sociais. Defende condicionar benef\u00edcios a contrapartidas de emprego e capacita\u00e7\u00e3o.",
+                    "https://ncnews.com.br/2026/06/30/zema-evita-comentar-crise-da-familia-bolsonaro-diz-que-vice-ainda-nao-foi-definido-e-promete-rever-programas-sociais",
+                    "2026-07-01",
+                ),
+            },
+            {
+                issue: dv(
+                    "Bolsa Família / Programas Sociais",
 					"https://jornalopcao.com.br/politica/estamos-criando-uma-geracao-de-imprestaveis-diz-romeu-zema-ao-criticar-programas-sociais-839355",
 					"2026-06-22",
 				),
@@ -690,21 +725,21 @@ export const zema: Candidate = 	{
 					"2026-07-05",
 				),
 			},
-			{
-				issue: dv(
-					"Relações Exteriores",
-					"https://pt.wikipedia.org/wiki/Romeu_Zema",
-					"2026-07-05",
-				),
-				position: dv(
-					"-",
-					"https://pt.wikipedia.org/wiki/Romeu_Zema",
-					"2026-07-05",
-				),
-			},
-			{
-				issue: dv(
-					"STF",
+            {
+                issue: dv(
+                    "Relações Exteriores",
+                    "https://veja.abril.com.br/politica/a-embaixadores-zema-critica-relacao-de-intocaveis-com-master",
+                    "2026-06-23",
+                ),
+                position: dv(
+                    "A embaixadores, critica relação de 'intocáveis' com Master e alfineta PT. Defende abertura comercial e alinhamento com OCDE.",
+                    "https://veja.abril.com.br/politica/a-embaixadores-zema-critica-relacao-de-intocaveis-com-master",
+                    "2026-06-23",
+                ),
+            },
+            {
+                issue: dv(
+                    "STF",
 					"https://ndmais.com.br/politica/zema-diz-dormir-bem-apos-ataques-a-gilmar-mendes-dever-cumprido",
 					"2026-06-26",
 				),
