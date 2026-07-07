@@ -40,12 +40,54 @@ export const lulaMedia: MediaCategory[] = [
 				youtubeId: "KwUOhAlb5zc",
 				category: "entrevistas",
 			},
+			{
+				title: dv(
+					"Lula chama Trump de 'imperador' após tarifaço no G7 — CNN Brasil",
+					"https://www.youtube.com/watch?v=6-Ka5MdhmnU",
+					"2026-06-17",
+				),
+				description: dv(
+					"O presidente Lula critica o comportamento de Donald Trump durante coletiva no G7 em Évian-les-Bains, chamando-o de 'imperador' e afirmando que espera que os EUA não interfiram na eleição do Brasil.",
+					"https://www.youtube.com/watch?v=6-Ka5MdhmnU",
+					"2026-06-17",
+				),
+				youtubeId: "6-Ka5MdhmnU",
+				category: "entrevistas",
+			},
+			{
+				title: dv(
+					"Lula inaugura obras na Dutra — Poder360",
+					"https://www.youtube.com/watch?v=DOSpPQ7fUn4",
+					"2026-06-23",
+				),
+				description: dv(
+					"O presidente Lula inaugura a primeira etapa das obras da nova Serra das Araras, na rodovia Presidente Dutra, em Paracambi (RJ), com investimento de R$ 1,5 bilhão.",
+					"https://www.youtube.com/watch?v=DOSpPQ7fUn4",
+					"2026-06-23",
+				),
+				youtubeId: "DOSpPQ7fUn4",
+				category: "discursos",
+			},
 		],
 	},
 	{
 		id: "2026-05",
 		label: "Maio de 2026",
 		items: [
+			{
+				title: dv(
+					"Lula concede coletiva após encontro com Trump na Casa Branca — UOL",
+					"https://www.youtube.com/watch?v=9r0UgR6czRw",
+					"2026-05-07",
+				),
+				description: dv(
+					"O presidente Lula concede entrevista coletiva após reunião de três horas com Donald Trump na Casa Branca, em Washington, abordando tarifas comerciais e a relação bilateral.",
+					"https://www.youtube.com/watch?v=9r0UgR6czRw",
+					"2026-05-07",
+				),
+				youtubeId: "9r0UgR6czRw",
+				category: "entrevistas",
+			},
 			{
 				title: dv(
 					"Lula no EL PAÍS Brasil — entrevista completa sobre política internacional",
@@ -58,6 +100,20 @@ export const lulaMedia: MediaCategory[] = [
 					"2026-05-15",
 				),
 				youtubeId: "HkG2J_0jxGw",
+				category: "entrevistas",
+			},
+			{
+				title: dv(
+					"Presidente Lula participa do programa Sem Censura, da TV Brasil",
+					"https://www.youtube.com/watch?v=6JwcqHhdqgA",
+					"2026-05-22",
+				),
+				description: dv(
+					"O presidente Lula concede entrevista ao vivo ao programa Sem Censura, apresentado por Cissa Guimarães na TV Brasil, abordando educação, violência, finanças e temas do dia a dia da população.",
+					"https://www.youtube.com/watch?v=6JwcqHhdqgA",
+					"2026-05-22",
+				),
+				youtubeId: "6JwcqHhdqgA",
 				category: "entrevistas",
 			},
 		],
@@ -78,6 +134,20 @@ export const lulaMedia: MediaCategory[] = [
 					"2026-02-10",
 				),
 				youtubeId: "01BYnHLyA2A",
+				category: "entrevistas",
+			},
+			{
+				title: dv(
+					"Lula: Brasil contornou o tarifaço pois 'esperou a febre passar' — CartaCapital",
+					"https://www.youtube.com/watch?v=ZzYe8Oag6bs",
+					"2026-02-23",
+				),
+				description: dv(
+					"O presidente Lula afirma que o Brasil conseguiu contornar o tarifaço americano ao 'esperar a febre passar', em entrevista à CartaCapital.",
+					"https://www.youtube.com/watch?v=ZzYe8Oag6bs",
+					"2026-02-23",
+				),
+				youtubeId: "ZzYe8Oag6bs",
 				category: "entrevistas",
 			},
 		],

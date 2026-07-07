@@ -8,6 +8,20 @@ export const renanMedia: MediaCategory[] = [
 		items: [
 			{
 				title: dv(
+					"O PLANO DE RENAN SANTOS PARA FAZER O BRASIL CRESCER | EsferaCast",
+					"https://www.youtube.com/watch?v=Cd4CD8YGT_M",
+					"2026-07-06",
+				),
+				description: dv(
+					"Renan Santos participa do EsferaCast e apresenta sua visão para aumentar o crescimento econômico, propostas liberais e críticas ao pacto federativo.",
+					"https://www.youtube.com/watch?v=Cd4CD8YGT_M",
+					"2026-07-06",
+				),
+				youtubeId: "Cd4CD8YGT_M",
+				category: "entrevistas",
+			},
+			{
+				title: dv(
 					"RENAN SANTOS detona família de JOÃO CAMPOS: eram escravocratas",
 					"https://www.youtube.com/watch?v=shHzdJZ0APo",
 					"2026-07-05",

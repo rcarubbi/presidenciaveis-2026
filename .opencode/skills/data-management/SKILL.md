@@ -269,18 +269,42 @@ npm run fetch:news 14 -- --candidate "{SLUG}"
 ```
 Usar `-v` para ver titulos/URLs.
 
-### 2b. YouTube
+### 2b. YouTube (canal oficial do candidato)
 ```bash
 node --env-file .env.local --experimental-strip-types scripts/fetch-youtube-videos.ts --candidate "{NOME}" --after "{ULTIMA_DATA}"
 ```
 **Atencao:** `pnpm run` NAO funciona. Chamar `node` diretamente.
 
-### 2c. Web search (paralelo)
+### 2c. YouTube (Tier 1 news sources)
+Buscar videos recentes de veiculos Tier 1 no YouTube onde o candidato APARECE/FALA diretamente (nao apenas comentario de terceiros).
+
+Tier 1 com canais YouTube: G1, Folha, UOL, Estadão, O Globo, CNN Brasil, BBC Brasil, Band, Record, SBT, Veja, Poder360, CartaCapital, TV Brasil/EBC, Jovem Pan, Roda Viva.
+
+Para cada veiculo, web search:
+```
+"{candidato} {veiculo} YouTube {mes_atual} {ano}"
+```
+ou search avancada no YouTube via web:
+```
+site:youtube.com "{candidato}" "{veiculo}" after:{dataAlvo}
+```
+
+Para cada video candidato:
+1. Verificar titulo/descricao — candidato aparece falando?
+2. `webfetch` da URL para confirmar
+3. Se sim: extrair `youtubeId`, data, titulo, descricao
+4. Classificar categoria: `entrevistas`, `discursos`, `coletivas`
+
+Se multiplos videos do mesmo periodo: priorizar veiculos Tier 1 diferentes (diversidade de fontes).
+
+Inserir em `media-{CANDIDATE}.ts` na ordem cronologica dentro do mes correspondente.
+
+### 2d. Web search (paralelo)
 - **Polls**: `{instituto} pesquisa eleitoral presidente 2026`
 - **Timeline/escandalos**: `{candidato} {evento} {ano}`
 - **Propostas**: `{candidato} plano de governo {area}`
 
-### 2d. Polls (sempre executar)
+### 2e. Polls (sempre executar)
 Institutos: Datafolha, Quaest, AtlasIntel, Real Time Big Data.
 
 Query: `{instituto} pesquisa eleitoral presidente 2026 {mes_atual}`

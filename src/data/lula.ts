@@ -166,6 +166,30 @@ export const lula: Candidate = 	{
 			{
 				year: dv(
 					"2026",
+					"https://g1.globo.com/politica/noticia/2026/07/06/lula-faz-trocas-em-equipe-do-governo-para-reforcar-pre-campanha-a-reeleicao.ghtml",
+					"2026-07-06",
+				),
+				event: dv(
+                    "Lula troca equipe de comunicação — Ricardo Stuckert assume coordenação de redes sociais (06/jul)",
+                    "https://g1.globo.com/politica/noticia/2026/07/06/lula-faz-trocas-em-equipe-do-governo-para-reforcar-pre-campanha-a-reeleicao.ghtml",
+                    "2026-07-06",
+				),
+			},
+			{
+				year: dv(
+					"2026",
+					"https://g1.globo.com/sp/sao-paulo/eleicoes/2026/noticia/2026/07/04/lula-antecipa-entregas-na-rede-federal-de-ensino-no-ultimo-dia-antes-do-defeso-eleitoral.ghtml",
+					"2026-07-04",
+				),
+				event: dv(
+                    "Defeso eleitoral: Lula antecipa entregas de escolas, hospitais e habitação; privilegia Nordeste e Sudeste (04/jul)",
+                    "https://noticias.uol.com.br/politica/ultimas-noticias/2026/07/02/lula-promete-mutirao-para-entregar-obras-na-vespera-da-proibicao.ghtm",
+                    "2026-07-04",
+				),
+			},
+			{
+				year: dv(
+					"2026",
 					"https://atarde.com.br/eleicoes/pt-define-data-para-oficializar-candidatura-de-lula-a-reeleicao-1394105",
 					"2026-07-04",
 				),

@@ -6,34 +6,62 @@ export const caiadoMedia: MediaCategory[] = [
 			id: "2026-07",
 			label: "Julho de 2026",
 			items: [
-				{
-					title: dv(
-						"Kassab: \"Caiado tem mais chances de vencer Lula do que Flávio Bolsonaro\" | TEMPO REAL",
-						"https://www.youtube.com/watch?v=NpI53O1em5k",
-						"2026-07-06",
-					),
-					description: dv(
-						"O presidente do PSD, Gilberto Kassab, afirmou em entrevista que considera mais fácil Ronaldo Caiado vencer o presidente Lula do que Flávio Bolsonaro.",
-						"https://www.youtube.com/watch?v=NpI53O1em5k",
-						"2026-07-06",
-					),
-					youtubeId: "NpI53O1em5k",
-					category: "entrevistas",
-				},
-				{
-					title: dv(
-						"Eleições 2026: o plano do Centrão para derrotar Flávio Bolsonaro e Lula nas urnas",
-						"https://www.youtube.com/watch?v=j7E8HzKYqV8",
-						"2026-07-06",
-					),
-					description: dv(
-						"Gilberto Kassab, presidente nacional do PSD, defendeu a chapa puro-sangue formada por ele e por Ronaldo Caiado como estratégia para vencer as eleições de 2026.",
-						"https://www.youtube.com/watch?v=j7E8HzKYqV8",
-						"2026-07-06",
-					),
-					youtubeId: "j7E8HzKYqV8",
-					category: "entrevistas",
-				},
+			{
+				title: dv(
+					"Kassab: \"Caiado tem mais chances de vencer Lula do que Flávio Bolsonaro\" | TEMPO REAL",
+					"https://www.youtube.com/watch?v=NpI53O1em5k",
+					"2026-07-06",
+				),
+				description: dv(
+					"O presidente do PSD, Gilberto Kassab, afirmou em entrevista que considera mais fácil Ronaldo Caiado vencer o presidente Lula do que Flávio Bolsonaro.",
+					"https://www.youtube.com/watch?v=NpI53O1em5k",
+					"2026-07-06",
+				),
+				youtubeId: "NpI53O1em5k",
+				category: "entrevistas",
+			},
+			{
+				title: dv(
+					"Eleições 2026: o plano do Centrão para derrotar Flávio Bolsonaro e Lula nas urnas",
+					"https://www.youtube.com/watch?v=j7E8HzKYqV8",
+					"2026-07-06",
+				),
+				description: dv(
+					"Gilberto Kassab, presidente nacional do PSD, defendeu a chapa puro-sangue formada por ele e por Ronaldo Caiado como estratégia para vencer as eleições de 2026.",
+					"https://www.youtube.com/watch?v=j7E8HzKYqV8",
+					"2026-07-06",
+				),
+				youtubeId: "j7E8HzKYqV8",
+				category: "entrevistas",
+			},
+			{
+				title: dv(
+					"Kassab diz que Caiado disputa votos com Flávio: 'O Caiado ganha do Lula'",
+					"https://www.youtube.com/watch?v=lahKMyuRiak",
+					"2026-07-03",
+				),
+				description: dv(
+					"Em entrevista ao Metrópoles, Gilberto Kassab afirmou que Ronaldo Caiado ocupa um campo de centro-direita e disputa votos com Flávio Bolsonaro.",
+					"https://www.youtube.com/watch?v=lahKMyuRiak",
+					"2026-07-03",
+				),
+				youtubeId: "lahKMyuRiak",
+				category: "entrevistas",
+			},
+			{
+				title: dv(
+					"Eleições 2026: Flávio, Zema e Renan Santos ainda têm vices indefinidos | CNN PRIME TIME",
+					"https://www.youtube.com/watch?v=uiNci5BdVJ8",
+					"2026-07-02",
+				),
+				description: dv(
+					"CNN Prime Time cobre anúncio de Kassab como vice de Caiado e analisa indefinição de vices nos demais candidatos.",
+					"https://www.youtube.com/watch?v=uiNci5BdVJ8",
+					"2026-07-02",
+				),
+				youtubeId: "uiNci5BdVJ8",
+				category: "campanha",
+			},
 				{
 					title: dv(
 						"Caiado concede entrevista coletiva em Marília-SP",

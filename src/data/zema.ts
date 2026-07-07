@@ -127,6 +127,30 @@ export const zema: Candidate = 	{
 			{
 				year: dv(
 					"2026",
+					"https://g1.globo.com/politica/eleicoes/2026/noticia/2026/07/07/em-evento-com-mulheres-zema-associa-presenca-feminina-na-politica-a-combate-a-corrupcao-e-cita-caso-master-nao-vi-mulher-envolvida.ghtml",
+					"2026-07-07",
+				),
+				event: dv(
+					"Em evento Women Invest (SP), associa presença feminina na política a combate à corrupção e cita caso Master: 'Não vi mulher envolvida'.",
+					"https://g1.globo.com/politica/eleicoes/2026/noticia/2026/07/07/em-evento-com-mulheres-zema-associa-presenca-feminina-na-politica-a-combate-a-corrupcao-e-cita-caso-master-nao-vi-mulher-envolvida.ghtml",
+					"2026-07-07",
+				),
+			},
+			{
+				year: dv(
+					"2026",
+					"https://www.otempo.com.br/eleicoes/2026/presidentes/2026/7/7/romeu-zema-culpa-lula-por-tarifas-dos-eua-e-diz-que-espera-solucao-independentemente-de-quem-vier",
+					"2026-07-07",
+				),
+				event: dv(
+					"Culpa Lula e Itamaraty por tarifas dos EUA: 'falta de habilidade na política externa'. Diz esperar solução independentemente de quem vencer.",
+					"https://www.otempo.com.br/eleicoes/2026/presidentes/2026/7/7/romeu-zema-culpa-lula-por-tarifas-dos-eua-e-diz-que-espera-solucao-independentemente-de-quem-vier",
+					"2026-07-07",
+				),
+			},
+			{
+				year: dv(
+					"2026",
 					"https://opovo.com.br/noticias/politica/2026/07/04/zema-critica-articulacao-da-direita-em-torno-de-ciro-e-apoia-girao.html",
 					"2026-07-04",
 				),
@@ -726,14 +750,26 @@ export const zema: Candidate = 	{
 			},
             {
                 issue: dv(
-                    "Relações Exteriores",
-                    "https://veja.abril.com.br/politica/a-embaixadores-zema-critica-relacao-de-intocaveis-com-master",
-                    "2026-06-23",
+                    "Direitos das Mulheres",
+                    "https://g1.globo.com/politica/eleicoes/2026/noticia/2026/07/07/em-evento-com-mulheres-zema-associa-presenca-feminina-na-politica-a-combate-a-corrupcao-e-cita-caso-master-nao-vi-mulher-envolvida.ghtml",
+                    "2026-07-07",
                 ),
                 position: dv(
-                    "A embaixadores, critica relação de 'intocáveis' com Master e alfineta PT. Defende abertura comercial e alinhamento com OCDE.",
-                    "https://veja.abril.com.br/politica/a-embaixadores-zema-critica-relacao-de-intocaveis-com-master",
-                    "2026-06-23",
+                    "Defende maior participação feminina na política como combate à corrupção. Pena mais dura para feminicídio. Polêmicas ao dizer que mulheres têm 'outras atribuições em casa'.",
+                    "https://g1.globo.com/politica/eleicoes/2026/noticia/2026/07/07/em-evento-com-mulheres-zema-associa-presenca-feminina-na-politica-a-combate-a-corrupcao-e-cita-caso-master-nao-vi-mulher-envolvida.ghtml",
+                    "2026-07-07",
+                ),
+            },
+            {
+                issue: dv(
+                    "Relações Exteriores",
+                    "https://www.otempo.com.br/eleicoes/2026/presidentes/2026/7/7/romeu-zema-culpa-lula-por-tarifas-dos-eua-e-diz-que-espera-solucao-independentemente-de-quem-vier",
+                    "2026-07-07",
+                ),
+                position: dv(
+                    "Culpa Lula e Itamaraty por tarifas dos EUA: 'falta de habilidade na política externa'. Defende abertura comercial e alinhamento com OCDE.",
+                    "https://www.otempo.com.br/eleicoes/2026/presidentes/2026/7/7/romeu-zema-culpa-lula-por-tarifas-dos-eua-e-diz-que-espera-solucao-independentemente-de-quem-vier",
+                    "2026-07-07",
                 ),
             },
             {

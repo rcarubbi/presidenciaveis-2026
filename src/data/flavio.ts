@@ -150,7 +150,7 @@ export const flavio: Candidate = 	{
 			},
 			{
 				year: dv("2026", "https://g1.globo.com/politica/blog/andreia-sadi/post/2026/07/06/fogo-amigo-na-pre-campanha-de-flavio-bolsonaro.ghtml", "2026-07-07"),
-				event: dv('Fogo amigo desgasta pré-campanha (6/jul). PGR defende PF ouvir Flávio por calúnia contra Lula (6/jul). Convenção PL 25/jul SP. Audiência USTR Washington (7/jul). Carta aos EUA omite envolvimento com Dark Horse.', "https://g1.globo.com/politica/blog/andreia-sadi/post/2026/07/06/fogo-amigo-na-pre-campanha-de-flavio-bolsonaro.ghtml", "2026-07-07"),
+				event: dv('Fogo amigo desgasta pré-campanha (4-7/jul). Flávio tenta agrupar mulheres, diz que Michelle está desinformada (Folha 06/jul). PGR defende PF ouvir Flávio por calúnia contra Lula (6/jul). Convenção PL 25/jul SP. André Mendonça assume relatoria Dark Horse (7/jul). Audiência USTR Washington (7/jul) — Flávio estende agenda para novas reuniões sobre tarifaço (CNN). Carta aos EUA omite envolvimento com Dark Horse.', "https://g1.globo.com/politica/blog/andreia-sadi/post/2026/07/06/fogo-amigo-na-pre-campanha-de-flavio-bolsonaro.ghtml", "2026-07-07"),
 			},
 			{
 				year: dv(

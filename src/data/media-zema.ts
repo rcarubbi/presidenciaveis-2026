@@ -196,6 +196,34 @@ export const zemaMedia: MediaCategory[] = [
 			},
 			{
 				title: dv(
+					"Zema culpa PT por tarifaço dos EUA e critica aproximação com a China",
+					"https://www.youtube.com/watch?v=i4mxxsa6Rvc",
+					"2026-06-02",
+				),
+				description: dv(
+					"Romeu Zema atribui ao PT a responsabilidade pelo tarifaço americano de 25% e critica a aproximação do governo Lula com a China.",
+					"https://www.youtube.com/watch?v=i4mxxsa6Rvc",
+					"2026-06-02",
+				),
+				youtubeId: "i4mxxsa6Rvc",
+				category: "entrevistas",
+			},
+			{
+				title: dv(
+					"Zema detona governo Lula após ameaça de tarifaço de 25% dos EUA",
+					"https://www.youtube.com/watch?v=8iA_uag7z2o",
+					"2026-06-02",
+				),
+				description: dv(
+					"Entrevista de Romeu Zema à Itatiaia criticando o governo Lula após o anúncio de tarifaço de 25% pelos Estados Unidos.",
+					"https://www.youtube.com/watch?v=8iA_uag7z2o",
+					"2026-06-02",
+				),
+				youtubeId: "8iA_uag7z2o",
+				category: "entrevistas",
+			},
+			{
+				title: dv(
 					"Zema no VEJA em Foco — entrevista sobre eleições 2026",
 					"https://www.youtube.com/watch?v=7IIZZ_cF-TE",
 					"2026-06-04",
@@ -240,6 +268,20 @@ export const zemaMedia: MediaCategory[] = [
 					"2026-05-22",
 				),
 				youtubeId: "688n7zJ6bME",
+				category: "entrevistas",
+			},
+			{
+				title: dv(
+					"Zema revela que convidou Flávio Bolsonaro para ser seu vice — Jovem Pan",
+					"https://www.youtube.com/watch?v=ntCm9bQI9UE",
+					"2026-05-04",
+				),
+				description: dv(
+					"Em entrevista exclusiva à Jovem Pan, o pré-candidato Romeu Zema revela ter convidado Flávio Bolsonaro para ser seu vice nas eleições de 2026.",
+					"https://www.youtube.com/watch?v=ntCm9bQI9UE",
+					"2026-05-04",
+				),
+				youtubeId: "ntCm9bQI9UE",
 				category: "entrevistas",
 			},
 			{

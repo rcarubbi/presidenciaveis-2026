@@ -142,43 +142,67 @@ export const caiado: Candidate = 	{
 			"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Governador_de_Goi%C3%A1s",
 			"2026-06-26",
 		),
-		timeline: [
-			{
-				year: dv(
-					"2026",
-					"https://g1.globo.com/politica/noticia/2026/07/01/caiado-anuncia-kassab-presidente-do-psd-como-vice-na-chapa-a-presidencia.ghtml",
-					"2026-07-01",
-				),
-				event: dv(
-					"Anuncia Gilberto Kassab como vice em chapa puro-sangue do PSD.",
-					"https://g1.globo.com/politica/noticia/2026/07/01/caiado-anuncia-kassab-presidente-do-psd-como-vice-na-chapa-a-presidencia.ghtml",
-					"2026-07-01",
-				),
-			},
-			{
-				year: dv(
-					"2026",
-					"https://bpmoney.com.br/politica/psd-convencao-caiado-presidencia-julho-sao-paulo",
-					"2026-06-24",
-				),
-				event: dv(
-					"PSD marca convenção para 26 de julho em SP para oficializar candidatura de Caiado.",
-					"https://bpmoney.com.br/politica/psd-convencao-caiado-presidencia-julho-sao-paulo",
-					"2026-06-24",
-				),
-			},
-			{
-				year: dv(
-					"2026",
-					"https://g1.globo.com/sp/sao-paulo/noticia/2026/03/30/psd-oficializa-ronaldo-caiado-como-pre-candidato-a-presidencia.ghtml",
-					"2026-03-27",
-				),
-				event: dv(
-					"Pré-candidatura Presidência. Sai UNIÃO p/ PSD. Governador licenciado.",
-					"https://g1.globo.com/sp/sao-paulo/noticia/2026/03/30/psd-oficializa-ronaldo-caiado-como-pre-candidato-a-presidencia.ghtml",
-					"2026-03-27",
-				),
-			},
+	timeline: [
+		{
+			year: dv(
+				"2026",
+				"https://veja.abril.com.br/brasil/caiado-leva-disputa-a-direita-e-usa-caso-vorcaro-em-ataque-a-flavio-bolsonaro",
+				"2026-07-07",
+			),
+			event: dv(
+				"Caiado leva disputa à direita e usa caso Vorcaro (Banco Master) em ataque a Flávio Bolsonaro. VEJA.",
+				"https://veja.abril.com.br/brasil/caiado-leva-disputa-a-direita-e-usa-caso-vorcaro-em-ataque-a-flavio-bolsonaro",
+				"2026-07-07",
+			),
+		},
+		{
+			year: dv(
+				"2026",
+				"https://oglobo.globo.com/blogs/lauro-jardim/post/2026/07/tarcisio-vai-a-convencao-do-psd-que-oficializara-a-candidatura-caiado-a-presidencia.ghtml",
+				"2026-07-07",
+			),
+			event: dv(
+				"Tarcísio confirma presença na convenção do PSD que oficializará candidatura de Caiado.",
+				"https://oglobo.globo.com/blogs/lauro-jardim/post/2026/07/tarcisio-vai-a-convencao-do-psd-que-oficializara-a-candidatura-caiado-a-presidencia.ghtml",
+				"2026-07-07",
+			),
+		},
+		{
+			year: dv(
+				"2026",
+				"https://g1.globo.com/politica/noticia/2026/07/01/caiado-anuncia-kassab-presidente-do-psd-como-vice-na-chapa-a-presidencia.ghtml",
+				"2026-07-01",
+			),
+			event: dv(
+				"Anuncia Gilberto Kassab como vice em chapa puro-sangue do PSD.",
+				"https://g1.globo.com/politica/noticia/2026/07/01/caiado-anuncia-kassab-presidente-do-psd-como-vice-na-chapa-a-presidencia.ghtml",
+				"2026-07-01",
+			),
+		},
+		{
+			year: dv(
+				"2026",
+				"https://bpmoney.com.br/politica/psd-convencao-caiado-presidencia-julho-sao-paulo",
+				"2026-06-24",
+			),
+			event: dv(
+				"PSD marca convenção para 26 de julho em SP para oficializar candidatura de Caiado.",
+				"https://bpmoney.com.br/politica/psd-convencao-caiado-presidencia-julho-sao-paulo",
+				"2026-06-24",
+			),
+		},
+		{
+			year: dv(
+				"2026",
+				"https://g1.globo.com/sp/sao-paulo/noticia/2026/03/30/psd-oficializa-ronaldo-caiado-como-pre-candidato-a-presidencia.ghtml",
+				"2026-03-27",
+			),
+			event: dv(
+				"Pré-candidatura Presidência. Sai UNIÃO p/ PSD. Governador licenciado.",
+				"https://g1.globo.com/sp/sao-paulo/noticia/2026/03/30/psd-oficializa-ronaldo-caiado-como-pre-candidato-a-presidencia.ghtml",
+				"2026-03-27",
+			),
+		},
 			{
 				year: dv(
 					"2022",
@@ -588,18 +612,18 @@ export const caiado: Candidate = 	{
 				),
 				status: dv(
 					"ativo",
-					"https://www1.folha.uol.com.br/poder/2026/06/ministerio-publico-de-goias-entra-com-acao-contra-uso-de-policiais-como-segurancas-de-caiado.shtml",
-					"2026-06-27",
+					"https://www1.folha.uol.com.br/colunas/painel/2026/07/justica-de-goias-reduz-segurancas-de-caiado-de-51-para-4-policiais-militares.shtml",
+					"2026-07-06",
 				),
 				description: dv(
-					"MP-GO aciona Justiça contra uso de policiais militares como seguranças particulares de Caiado. Ação aponta desvio de finalidade e improbidade administrativa.",
-					"https://www1.folha.uol.com.br/poder/2026/06/ministerio-publico-de-goias-entra-com-acao-contra-uso-de-policiais-como-segurancas-de-caiado.shtml",
-					"2026-06-27",
+					"MP-GO aciona Justiça contra uso de policiais militares como seguranças particulares de Caiado. Em 06/jul, Justiça determina redução de 51 para 4 PMs na segurança de Caiado. Ação aponta desvio de finalidade e improbidade administrativa.",
+					"https://www1.folha.uol.com.br/colunas/painel/2026/07/justica-de-goias-reduz-segurancas-de-caiado-de-51-para-4-policiais-militares.shtml",
+					"2026-07-06",
 				),
 				value: dv(
 					"Improbidade administrativa",
-					"https://www1.folha.uol.com.br/poder/2026/06/ministerio-publico-de-goias-entra-com-acao-contra-uso-de-policiais-como-segurancas-de-caiado.shtml",
-					"2026-06-27",
+					"https://www1.folha.uol.com.br/colunas/painel/2026/07/justica-de-goias-reduz-segurancas-de-caiado-de-51-para-4-policiais-militares.shtml",
+					"2026-07-06",
 				),
 			}
 		

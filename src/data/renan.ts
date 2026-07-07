@@ -126,6 +126,42 @@ export const renan: Candidate = {
 		{
 			year: dv(
 				"2026",
+				"https://folhape.com.br/politica/renan-santos-diz-que-mira-eleitor-de-flavio-nega-ser-outsider-e/498860",
+				"2026-07-07",
+			),
+			event: dv(
+				"Zema critica Renan ('sai dando tiro como metralhadora'). Renan diz que mira eleitor de Flávio e nega ser outsider.",
+				"https://folhape.com.br/politica/renan-santos-diz-que-mira-eleitor-de-flavio-nega-ser-outsider-e/498860",
+				"2026-07-07",
+			),
+		},
+		{
+			year: dv(
+				"2026",
+				"https://www.otempo.com.br/eleicoes/2026/2026/7/6/renan-santos-diz-que-zema-esta-perdido-e-dispara-contra-nikolas-um-influencer-de-politica",
+				"2026-07-06",
+			),
+			event: dv(
+				"Renan critica Zema ('perdido') e Nikolas ('influencer de política').",
+				"https://www.otempo.com.br/eleicoes/2026/2026/7/6/renan-santos-diz-que-zema-esta-perdido-e-dispara-contra-nikolas-um-influencer-de-politica",
+				"2026-07-06",
+			),
+		},
+		{
+			year: dv(
+				"2026",
+				"https://oglobo.globo.com/blogs/lauro-jardim/post/2026/07/o-vice-campeao-de-votos-de-renan-santos.ghtml",
+				"2026-07-05",
+			),
+			event: dv(
+				"Vice Aroldo Medina foi 'campeão de votos' em eleição da OAB/RS. Lauro Jardim (O Globo).",
+				"https://oglobo.globo.com/blogs/lauro-jardim/post/2026/07/o-vice-campeao-de-votos-de-renan-santos.ghtml",
+				"2026-07-05",
+			),
+		},
+		{
+			year: dv(
+				"2026",
 				"https://www.otempo.com.br/eleicoes/2026/presidentes/2026/7/4/em-bh-renan-santos-recusa-ser-outsider-e-mira-eleitor-de-flavio-bolsonaro-para-subir-em-pesquisas",
 				"2026-07-04",
 			),
@@ -133,6 +169,18 @@ export const renan: Candidate = {
 				"Congresso MBL BH; recusa ser outsider. Mira eleitor de Flávio.",
 				"https://www.otempo.com.br/eleicoes/2026/presidentes/2026/7/4/em-bh-renan-santos-recusa-ser-outsider-e-mira-eleitor-de-flavio-bolsonaro-para-subir-em-pesquisas",
 				"2026-07-04",
+			),
+		},
+		{
+			year: dv(
+				"2026",
+				"https://www.cnnbrasil.com.br/eleicoes/em-sua-1a-convencao-missao-lancara-renan-santos-a-presidencia-em-sp/",
+				"2026-07-03",
+			),
+			event: dv(
+				"Missão marca 1ª convenção para 1º/ago em SP; lança candidatura.",
+				"https://www.cnnbrasil.com.br/eleicoes/em-sua-1a-convencao-missao-lancara-renan-santos-a-presidencia-em-sp/",
+				"2026-07-03",
 			),
 		},
 		{
@@ -150,13 +198,25 @@ export const renan: Candidate = {
 		{
 			year: dv(
 				"2026",
-				"https://www.cnnbrasil.com.br/eleicoes/em-sua-1a-convencao-missao-lancara-renan-santos-a-presidencia-em-sp/",
-				"2026-07-03",
+				"https://veja.abril.com.br/politica/em-encontro-com-embaixadores-renan-santos-critica-lula-e-sobra-ate-para-o-cla-bolsonaro",
+				"2026-06-25",
 			),
 			event: dv(
-				"Missão marca 1ª convenção para 1º/ago em SP; lança candidatura.",
-				"https://www.cnnbrasil.com.br/eleicoes/em-sua-1a-convencao-missao-lancara-renan-santos-a-presidencia-em-sp/",
-				"2026-07-03",
+				"Encontro com embaixadores em SP. Critica Lula e sobra para clã Bolsonaro. VEJA.",
+				"https://veja.abril.com.br/politica/em-encontro-com-embaixadores-renan-santos-critica-lula-e-sobra-ate-para-o-cla-bolsonaro",
+				"2026-06-25",
+			),
+		},
+		{
+			year: dv(
+				"2026",
+				"https://www.estadao.com.br/politica/renan-santos-bolsonarismo-morreu-e-flavio-e-inviavel-na-disputa-contra-lula",
+				"2026-06-24",
+			),
+			event: dv(
+				"Renan diz que 'bolsonarismo morreu' e Flávio é inviável. Mira 2º turno.",
+				"https://www.estadao.com.br/politica/renan-santos-bolsonarismo-morreu-e-flavio-e-inviavel-na-disputa-contra-lula",
+				"2026-06-24",
 			),
 		},
 		{
@@ -266,6 +326,28 @@ export const renan: Candidate = {
 				"—",
 				"https://pt.wikipedia.org/wiki/Renan_Santos#Den%C3%BAncia_por_tr%C3%A1fico_de_influ%C3%AAncia",
 				"2026-06-26",
+			),
+		},
+		{
+			name: dv(
+				"Acusação de estupro (Justiça nega remoção de posts)",
+				"https://revistaoeste.com/politica/justica-de-sp-nega-retirada-de-postagens-que-acusam-renan-santos-de-estupro",
+				"2026-06-23",
+			),
+			status: dv(
+				"em andamento",
+				"https://revistaoeste.com/politica/justica-de-sp-nega-retirada-de-postagens-que-acusam-renan-santos-de-estupro",
+				"2026-06-23",
+			),
+			description: dv(
+				"TJ-SP nega pedido de Renan para remover postagens em redes sociais sobre acusação de estupro. Justiça mantém conteúdo sob argumento de liberdade de expressão.",
+				"https://revistaoeste.com/politica/justica-de-sp-nega-retirada-de-postagens-que-acusam-renan-santos-de-estupro",
+				"2026-06-23",
+			),
+			value: dv(
+				"—",
+				"https://revistaoeste.com/politica/justica-de-sp-nega-retirada-de-postagens-que-acusam-renan-santos-de-estupro",
+				"2026-06-23",
 			),
 		},
 	],
