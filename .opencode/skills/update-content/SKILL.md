@@ -280,6 +280,7 @@ Apos qualquer alteracao:
    - Se candidato nao tem entries, criar novas
 3. Template do `label`: `"{candidato}: descricao concisa + data (DD/mon)"`  
    Exemplo: `"Renan: timeline — 1a convencao Missao 01/ago (CNN) 03/jul"`
+   **Todas as entries devem ser escritas em português brasileiro.**
 4. **Inserir cada entrada na posicao correta** — `changes[]` e ordenado por data decrescente (mais recente primeiro). Extrair a data no formato `DD/mon` do label e posicionar entre a entrada mais recente (acima) e mais antiga (abaixo).
 
 ### Passo 4.7 — Verificar duplicatas (media only)

@@ -42,7 +42,7 @@ Se omitido, informar erro e listar opcoes validas.
 5. **Sempre verificar ancora `#`.** O fragmento deve existir no HTML e corresponder ao dado. Decodificar URL-encoding (`%C3%A7` → `ç`) antes de comparar com IDs do HTML.
 6. **Valor numerico deve bater com a fonte.** Extrair numero do artigo, comparar com `DataValue.value`.
 7. **EXECUTE O WORKFLOW COMPLETO (Passo 1 ao 7).** Nao pular etapas.
-8. **Sempre atualizar `src/data/.version.ts` apos qualquer alteracao.** Incrementar timestamp `version`/`updatedAt` e adicionar entry em `changes[]` descrevendo a mudanca.
+8. **Sempre atualizar `src/data/.version.ts` apos qualquer alteracao.** Incrementar timestamp `version`/`updatedAt` e adicionar entry em `changes[]` descrevendo a mudanca. **Todas as entries devem ser escritas em português brasileiro.**
 9. **FONTE DEVE COMPROVAR O DADO ESPECIFICO individualmente.** `DataValue.source` precisa ser um artigo que mencione explicitamente aquele `value`. Proibido agrupar N propostas sob uma unica URL generica que nao cita cada proposta individual. Cada `source` deve ser verificado independentemente contra seu `value` — uma URL que funciona para um dado pode ser INVALIDA para outro.
 10. **BUSCA MULTI-FONTE obrigatoria.** Ao buscar substituto, tentar no minimo 3 queries diferentes variando veiculos (G1, Folha, UOL, Estadão, CNN, BBC, Poder360, Band, VEJA, etc.). Nao aceitar o primeiro resultado. Se o primeiro resultado for fraco (Tier 3-4 ou nao comprova o dado), continuar buscando.
 11. **LER CONTEUDO COMPLETO do artigo**, nao apenas trecho de busca. O snippet da busca pode mencionar o termo mas nao comprovar o dado no contexto correto.
