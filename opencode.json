@@ -11,8 +11,7 @@
       "caveman-help": "allow",
       "caveman-compress": "allow",
       "pdf-pipeline": "allow",
-      "update-content": "allow",
-      "validate-sources": "allow"
+      "data-management": "allow"
     }
   },
   "plugin": [
