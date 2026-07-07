@@ -5,13 +5,13 @@ import Link from 'next/link'
 import { useRouter, usePathname } from 'next/navigation'
 import { toast } from 'sonner'
 import type { Candidate, CandidateSubTab } from '../../types'
-import { ArrowLeft, User, Briefcase, FileText, Newspaper, Shield, DollarSign, Grid3X3 } from 'lucide-react'
-import { DadosPessoaisCell } from './DadosPessoais'
+import { ArrowLeft, Briefcase, FileText, Newspaper, Shield, DollarSign, User, Grid3X3 } from 'lucide-react'
+import { DadosPessoais, DadosPessoaisCell } from './DadosPessoais'
 import { CarreiraCell } from './Carreira'
 import { EscandalosCell } from './Escandalos'
 import { FinanciamentoCell } from './Financiamento'
 import { PlanoGovernoCell } from './PlanoGoverno'
-import { PosicionamentoCell } from './Posicionamento'
+import { Posicionamento, PosicionamentoCell } from './Posicionamento'
 import { CoberturaCell } from './Cobertura'
 import { ComparisonSelector } from './ComparisonSelector'
 import { ComparisonTabs } from './ComparisonTabs'
@@ -73,17 +73,22 @@ export function Comparativo({ candidates, initialIds = ['lula', 'flavio', 'renan
       case 'dados':
         return (
           <>
-            <div className="flex items-center gap-2 mb-4 text-gray-700 dark:text-gray-300">
-              <User className="size-4" />
-              <h3 className="text-sm font-black uppercase tracking-[0.12em]">DADOS PESSOAIS</h3>
+            <div className="block md:hidden">
+              <div className="flex items-center gap-2 mb-4 text-gray-700 dark:text-gray-300">
+                <User className="size-4" />
+                <h3 className="text-sm font-black uppercase tracking-[0.12em]">DADOS PESSOAIS</h3>
+              </div>
+              <CmpGrid>
+                {filtered.map((c) => (
+                  <CandidateSectionBlock key={c.id} candidate={c}>
+                    <DadosPessoaisCell candidate={c} />
+                  </CandidateSectionBlock>
+                ))}
+              </CmpGrid>
             </div>
-            <CmpGrid>
-              {filtered.map((c) => (
-                <CandidateSectionBlock key={c.id} candidate={c}>
-                  <DadosPessoaisCell candidate={c} />
-                </CandidateSectionBlock>
-              ))}
-            </CmpGrid>
+            <div className="hidden md:block">
+              <DadosPessoais candidates={filtered} />
+            </div>
           </>
         )
       case 'carreira':
@@ -169,17 +174,22 @@ export function Comparativo({ candidates, initialIds = ['lula', 'flavio', 'renan
       case 'posicionamento':
         return (
           <>
-            <div className="flex items-center gap-2 mb-4 text-gray-700 dark:text-gray-300">
-              <Grid3X3 className="size-4" />
-              <h3 className="text-sm font-black uppercase tracking-[0.12em]">POSICIONAMENTO SOBRE PAUTAS POLÊMICAS</h3>
+            <div className="block md:hidden">
+              <div className="flex items-center gap-2 mb-4 text-gray-700 dark:text-gray-300">
+                <Grid3X3 className="size-4" />
+                <h3 className="text-sm font-black uppercase tracking-[0.12em]">POSICIONAMENTO SOBRE PAUTAS POLÊMICAS</h3>
+              </div>
+              <CmpGrid>
+                {filtered.map((c) => (
+                  <CandidateSectionBlock key={c.id} candidate={c}>
+                    <PosicionamentoCell candidate={c} />
+                  </CandidateSectionBlock>
+                ))}
+              </CmpGrid>
             </div>
-            <CmpGrid>
-              {filtered.map((c) => (
-                <CandidateSectionBlock key={c.id} candidate={c}>
-                  <PosicionamentoCell candidate={c} />
-                </CandidateSectionBlock>
-              ))}
-            </CmpGrid>
+            <div className="hidden md:block">
+              <Posicionamento candidates={filtered} />
+            </div>
           </>
         )
       default:

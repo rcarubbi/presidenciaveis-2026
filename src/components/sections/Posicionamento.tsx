@@ -26,9 +26,10 @@ export function Posicionamento({ candidates }: PosicionamentoProps) {
           <caption className="sr-only">Posicionamento dos candidatos sobre pautas polêmicas</caption>
         <thead>
           <tr className="border-b border-gray-200/60 dark:border-gray-700/40">
-            <th className="text-left py-4 pr-4 pl-5 font-medium text-gray-500 dark:text-gray-400 w-36">Pauta</th>
+            <th className="text-left py-4 pr-4 pl-5 font-medium text-gray-500 dark:text-gray-400 w-32 md:w-36 sticky left-0 z-10 bg-white/88 dark:bg-slate-900/82 backdrop-blur-xl">Pauta</th>
             {candidates.map((c) => (
               <th key={c.id} className="text-left py-4 px-4 font-semibold text-base" style={{ color: c.party.color }}>
+                {c.name.value}
               </th>
             ))}
           </tr>
@@ -36,7 +37,7 @@ export function Posicionamento({ candidates }: PosicionamentoProps) {
         <tbody>
           {allIssues.map((issue, i) => (
             <tr key={issue} className={i < allIssues.length - 1 ? 'border-b border-gray-100/50 dark:border-gray-800/30' : ''}>
-              <td className="py-3 pr-4 pl-5 text-gray-500 dark:text-gray-400 font-medium text-sm whitespace-nowrap">{issue}</td>
+              <td className="py-3 pr-4 pl-5 text-gray-500 dark:text-gray-400 font-medium text-sm whitespace-nowrap sticky left-0 z-10 bg-white/88 dark:bg-slate-900/82 backdrop-blur-xl">{issue}</td>
               {candidates.map((c) => {
                 const pos = c.positions.find((p) => p.issue.value === issue)
                 return (

@@ -1,7 +1,9 @@
+import Image from 'next/image'
 import type { Candidate } from '../../types'
 import { DataLink } from '../DataLink'
 import { User } from 'lucide-react'
 import { CandidateNameHeading } from '../ui/CandidateNameHeading'
+import { hideImageOnError } from '@/lib/dom'
 
 interface DadosPessoaisProps {
   candidates: Candidate[]
@@ -30,9 +32,15 @@ export function DadosPessoais({ candidates }: DadosPessoaisProps) {
           <caption className="sr-only">Dados pessoais dos candidatos</caption>
         <thead>
           <tr className="border-b border-gray-200/60 dark:border-gray-700/40">
-            <th className="text-left py-4 px-5 font-medium text-gray-500 dark:text-gray-400 w-40"></th>
+            <th className="text-left py-4 px-5 font-medium text-gray-500 dark:text-gray-400 w-32 md:w-40 sticky left-0 z-10 bg-white/88 dark:bg-slate-900/82 backdrop-blur-xl"></th>
             {candidates.map((c) => (
               <th key={c.id} className="text-left py-4 px-5 font-semibold text-base" style={{ color: c.party.color }}>
+                <div className="flex items-center gap-2">
+                  <div className="w-6 h-6 rounded-full overflow-hidden flex-shrink-0">
+                    <Image src={c.photo} alt="" width={24} height={24} className="object-cover" onError={hideImageOnError} />
+                  </div>
+                  {c.name.value}
+                </div>
               </th>
             ))}
           </tr>
@@ -40,7 +48,7 @@ export function DadosPessoais({ candidates }: DadosPessoaisProps) {
         <tbody>
           {rows.map((row, i) => (
             <tr key={row.label} className={i < rows.length - 1 ? 'border-b border-gray-100/50 dark:border-gray-800/30' : ''}>
-              <td className="py-3 px-5 text-gray-500 dark:text-gray-400 text-sm">{row.label}</td>
+              <td className="py-3 px-5 text-gray-500 dark:text-gray-400 text-sm sticky left-0 z-10 bg-white/88 dark:bg-slate-900/82 backdrop-blur-xl">{row.label}</td>
               {candidates.map((c) => (
                 <td key={c.id} className="py-3 px-5 text-gray-900 dark:text-gray-100 text-sm">
                   {row.render(c)}
