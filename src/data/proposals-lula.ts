@@ -9,6 +9,7 @@ export const lulaProposals: Record<string, ProposalItem[]> = {
     { text: dv('Mapeamento criminal em tempo real', 'https://oglobo.globo.com/politica/noticia/2026/05/29/em-minuta-de-plano-de-governo-de-lula-pt-propoe-e-repressao-qualificada-para-combater-crime-organizado.ghtml', '2026-05-29') },
     { text: dv('Fortalecimento PRF e PF', 'https://oglobo.globo.com/politica/noticia/2026/05/29/em-minuta-de-plano-de-governo-de-lula-pt-propoe-e-repressao-qualificada-para-combater-crime-organizado.ghtml', '2026-05-29') },
     { text: dv('Retomada Estatuto do Desarmamento', 'https://pt.org.br/com-olhar-para-o-futuro-programa-de-governo-de-lula-tera-construcao-coletiva/', '2026-05-30') },
+    { text: dv('Defesa nacional como eixo do programa de governo (inédito)', 'https://www1.folha.uol.com.br/poder/2026/06/lula-diz-que-vai-incluir-defesa-nacional-em-plano-de-governo-esta-cheio-de-maluco-no-mundo.shtml', '2026-06-26') },
   ],
   economia: [
     { text: dv('Reforma tributária progressiva', 'https://pt.org.br/com-olhar-para-o-futuro-programa-de-governo-de-lula-tera-construcao-coletiva/', '2026-05-30') },

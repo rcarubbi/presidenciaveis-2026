@@ -54,6 +54,26 @@ export const polls: PollData[] = [
     ],
   },
   {
+    institute: 'PoderData/Aya',
+    date: '25/jun',
+    firstRound: [
+      { name: 'Lula', value: 40.0 },
+      { name: 'Flávio', value: 36.0 },
+      { name: 'Renan', value: 4.0 },
+      { name: 'Caiado', value: 4.0 },
+      { name: 'Zema', value: 3.0 },
+      { name: 'Cury', value: 3.0 },
+      { name: 'Barbosa', value: 3.0 },
+    ],
+    secondRound: [
+      { label: 'Lula × Flávio', lula: 46.0, adversario: 43.0, adversarioNome: 'Flávio' },
+    ],
+    rejection: [
+      { name: 'Lula', value: 50.0 },
+      { name: 'Flávio', value: 48.0 },
+    ],
+  },
+  {
     institute: 'Datafolha',
     date: '17/jun',
     firstRound: [
