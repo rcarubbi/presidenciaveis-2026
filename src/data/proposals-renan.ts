@@ -3,12 +3,12 @@ import { dv } from '@/lib/dataValue'
 
 export const renanProposals: Record<string, ProposalItem[]> = {
   seguranca: [
-    { text: dv('Endurecimento penal total', 'https://bmcnews.com.br/programas-bmc/bmc-talks/renan-santos-defende-guerra-ao-crime-e-corte-de-gastos-em-projeto-para-2026/', '2026-05-20') },
+    { text: dv('Endurecimento penal total', 'https://tmc.com.br/politica/renan-santos-sobre-seguranca-publica-vou-eliminar-as-ocupacoes-territoriais/', '2026-05-18') },
     { text: dv('Pena de morte p/ hediondos contra crianças', 'https://www.poder360.com.br/poder-eleicoes/presidente-da-missao-defende-discutir-prisao-perpetua-e-pena-de-morte/', '2026-06-26') },
     { text: dv('Direito Penal do Inimigo (suspensão garantias facções)', 'https://www.poder360.com.br/poder-internacional/entenda-o-plano-de-seguranca-de-el-salvador-que-inspira-direita-brasileira', '2025-12-07') },
     { text: dv('Estado de defesa em cidades dominadas', 'https://www.poder360.com.br/poder-internacional/entenda-o-plano-de-seguranca-de-el-salvador-que-inspira-direita-brasileira', '2025-12-07') },
     { text: dv('Fim progressão de regime', 'https://tmc.com.br/politica/renan-santos-sobre-seguranca-publica-vou-eliminar-as-ocupacoes-territoriais/', '2026-05-18') },
-    { text: dv('Reestruturação polícia brasileira', 'https://bmcnews.com.br/programas-bmc/bmc-talks/renan-santos-defende-guerra-ao-crime-e-corte-de-gastos-em-projeto-para-2026/', '2026-05-20') },
+    { text: dv('Reestruturação polícia brasileira', 'https://tmc.com.br/politica/renan-santos-sobre-seguranca-publica-vou-eliminar-as-ocupacoes-territoriais/', '2026-05-18') },
   ],
   economia: [
     { text: dv('Economia de R$ 3,3 tri em 10 anos', 'https://exame.com/brasil/virais-regionais-e-ataques-a-flavio-a-estrategia-de-renan-santos-para-a-eleicao/', '2026-04-08') },

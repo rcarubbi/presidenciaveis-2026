@@ -110,24 +110,24 @@ export const lula: Candidate = 	{
 				party: dv("PDT"),
 				status: dv(
 					"Acordo nacional (18/03/2026)",
-					"https://revistaforum.com.br/politica/o-xadrez-de-2026-pt-psb-e-pdt-fecham-acordo-nacional-para-reeleicao-de-lula/",
-					"2026-03-18",
+"https://www1.folha.uol.com.br/blogs/brasilia-hoje/2026/04/pdt-vai-aderir-a-alianca-de-lula-apos-pt-desistir-de-candidato-proprio-ao-governo-do-rs.shtml",
+                    "2026-04-09",
 				),
 			},
 			{
 				party: dv("PCdoB"),
 				status: dv(
 					"Federação Brasil da Esperança",
-					"https://pt.org.br/nossa-historia/",
-					"2026-06-26",
+                    "https://www.cnnbrasil.com.br/eleicoes/psol-rejeita-federacao-com-pt-e-mantem-alianca-com-a-rede/",
+                    "2026-03-07",
 				),
 			},
 			{
 				party: dv("PV"),
 				status: dv(
 					"Federação Brasil da Esperança",
-					"https://pt.org.br/nossa-historia/",
-					"2026-06-26",
+                    "https://www.cnnbrasil.com.br/eleicoes/psol-rejeita-federacao-com-pt-e-mantem-alianca-com-a-rede/",
+                    "2026-03-07",
 				),
 			},
 			{
@@ -170,9 +170,9 @@ export const lula: Candidate = 	{
 					"2026-07-04",
 				),
 				event: dv(
-					"PT define 2 de agosto para oficializar candidatura de Lula à reeleição",
-					"https://atarde.com.br/eleicoes/pt-define-data-para-oficializar-candidatura-de-lula-a-reeleicao-1394105",
-					"2026-07-04",
+                    "PT define 2 de agosto para oficializar candidatura de Lula à reeleição",
+                    "https://www.cnnbrasil.com.br/eleicoes/por-peso-eleitoral-pt-troca-brasilia-por-sp-para-lancar-lula-a-reeleicao/",
+                    "2026-07-01",
 				),
 			},
 			{
@@ -779,10 +779,10 @@ export const lula: Candidate = 	{
 				),
 			},
 			{
-				issue: dv(
-					"Casamento LGBT+",
-					"https://www.voxms.com.br/politica/governo-lula-lanca-campanha-de-visibilidade-e-defesa-dos-direitos-lgbtqia",
-					"2026-06-05",
+                issue: dv(
+                    "Casamento LGBT+",
+                    "https://www.gov.br/mdh/pt-br/assuntos/noticias/2026/junho/governo-federal-lanca-campanha-201co-brasil-e-de-todas-as-cores-para-todas-as-pessoas201d-durante-a-25a-feira-da-diversidade-cultural-lgbt-de-sao-paulo",
+                    "2026-06-04",
 				),
 				position: dv(
 					'Apoio união civil homoafetiva. "Brasil sem Homofobia".',
@@ -911,10 +911,10 @@ export const lula: Candidate = 	{
 				),
 			},
 			{
-				issue: dv(
-					"Previdência",
-					"https://horadopovo.com.br/centrais-levam-pauta-a-lula-que-critica-reformas-e-convoca-mobilizacao-para-avanco-em-direitos-trabalhistas/",
-					"2026-04-16",
+                issue: dv(
+                    "Previdência",
+                    "https://www.estadao.com.br/politica/lula-critica-reforma-trabalhista-e-chama-bolsonaro-de-a-coisa-que-veio-depois-do-temer-nprp/",
+                    "2026-04-15",
 				),
 				position: dv(
 					"Revisão EC 103/2019. Ampliar cobertura.",
@@ -995,10 +995,10 @@ export const lula: Candidate = 	{
 				),
 			},
 			{
-				issue: dv(
-					"Regulação Mídia e Redes",
-					"https://pt.org.br/com-olhar-para-o-futuro-programa-de-governo-de-lula-tera-construcao-coletiva/",
-					"2026-05-30",
+                issue: dv(
+                    "Regulação Mídia e Redes",
+                    "https://oglobo.globo.com/politica/noticia/2026/05/29/em-minuta-de-plano-de-governo-de-lula-pt-propoe-e-repressao-qualificada-para-combater-crime-organizado.ghtml",
+                    "2026-05-29",
 				),
 				position: dv(
 					"Regular sem censura. Combate desinformação.",

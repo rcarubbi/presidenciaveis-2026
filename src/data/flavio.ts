@@ -609,16 +609,16 @@ export const flavio: Candidate = 	{
 				),
 			},
 			{
-				issue: dv(
-					"Armas",
-					"https://jornaltaguacei.com.br/noticias/22/02/2026/pre-candidato-flavio-bolsonaro-defende-mais-privatizacao-prisoes-e-armas-no-brasil/",
-					"2026-02-22",
-				),
-				position: dv(
-					"Armamento civil amplo. Contra Estatuto Desarmamento.",
-					"https://jornaltaguacei.com.br/noticias/22/02/2026/pre-candidato-flavio-bolsonaro-defende-mais-privatizacao-prisoes-e-armas-no-brasil/",
-					"2026-02-22",
-				),
+			issue: dv(
+				"Armas",
+				"https://www.estadao.com.br/politica/privatizacoes-ferrovias-e-presidios-o-que-flavio-bolsonaro-ja-propos-em-8-areas/",
+				"2026-07-07",
+			),
+			position: dv(
+				"Armamento civil amplo. Flexibilização porte de armas.",
+				"https://www.estadao.com.br/politica/privatizacoes-ferrovias-e-presidios-o-que-flavio-bolsonaro-ja-propos-em-8-areas/",
+				"2026-07-07",
+			),
 			},
 			{
 				issue: dv(
@@ -789,16 +789,16 @@ export const flavio: Candidate = 	{
 				),
 			},
 			{
-				issue: dv(
-					"Privatização",
-					"https://jornaltaguacei.com.br/noticias/22/02/2026/pre-candidato-flavio-bolsonaro-defende-mais-privatizacao-prisoes-e-armas-no-brasil/",
-					"2026-02-22",
-				),
-				position: dv(
-					"A favor. Eficiência setor privado.",
-					"https://jornaltaguacei.com.br/noticias/22/02/2026/pre-candidato-flavio-bolsonaro-defende-mais-privatizacao-prisoes-e-armas-no-brasil/",
-					"2026-02-22",
-				),
+			issue: dv(
+				"Privatização",
+				"https://www.estadao.com.br/politica/privatizacoes-ferrovias-e-presidios-o-que-flavio-bolsonaro-ja-propos-em-8-areas/",
+				"2026-07-07",
+			),
+			position: dv(
+				"A favor. Eficiência setor privado.",
+				"https://www.estadao.com.br/politica/privatizacoes-ferrovias-e-presidios-o-que-flavio-bolsonaro-ja-propos-em-8-areas/",
+				"2026-07-07",
+			),
 			},
 			{
 				issue: dv(
@@ -849,16 +849,16 @@ export const flavio: Candidate = 	{
 				),
 			},
 			{
-				issue: dv(
-					"Reforma Tributária",
-					"https://jornaltaguacei.com.br/noticias/22/02/2026/pre-candidato-flavio-bolsonaro-defende-mais-privatizacao-prisoes-e-armas-no-brasil/",
-					"2026-02-22",
-				),
-				position: dv(
-					"Simplificação. Contra alíquotas progressivas.",
-					"https://jornaltaguacei.com.br/noticias/22/02/2026/pre-candidato-flavio-bolsonaro-defende-mais-privatizacao-prisoes-e-armas-no-brasil/",
-					"2026-02-22",
-				),
+			issue: dv(
+				"Reforma Tributária",
+				"https://www.estadao.com.br/politica/privatizacoes-ferrovias-e-presidios-o-que-flavio-bolsonaro-ja-propos-em-8-areas/",
+				"2026-07-07",
+			),
+			position: dv(
+				"Revisitar reforma. Simplificação. Contra alíquotas elevadas.",
+				"https://www.estadao.com.br/politica/privatizacoes-ferrovias-e-presidios-o-que-flavio-bolsonaro-ja-propos-em-8-areas/",
+				"2026-07-07",
+			),
 			},
 			{
 				issue: dv(

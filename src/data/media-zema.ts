@@ -48,20 +48,6 @@ export const zemaMedia: MediaCategory[] = [
 				youtubeId: "uiNci5BdVJ8",
 				category: "entrevistas",
 			},
-			{
-				title: dv(
-					"Romeu Zema no Poder360 — entrevista completa 01/07",
-					"https://www.youtube.com/watch?v=TWzMeA0MrJ0",
-					"2026-07-01",
-				),
-				description: dv(
-					"O pré-candidato do Novo concede entrevista ao Poder360 sobre propostas de governo, economia e o cenário eleitoral.",
-					"https://www.youtube.com/watch?v=TWzMeA0MrJ0",
-					"2026-07-01",
-				),
-				youtubeId: "TWzMeA0MrJ0",
-				category: "entrevistas",
-			},
 		],
 	},
 	{

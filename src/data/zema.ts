@@ -42,17 +42,17 @@ export const zema: Candidate = 	{
 			"2026-06-26",
 		),
 		conjugesAnteriores: dv(
-			"Ana Paula (até 2014, divorciada)",
+			"Ivana Scarpellini (divorciado)",
 			"https://pt.wikipedia.org/wiki/Romeu_Zema#Primeiros_anos",
 			"2026-06-26",
 		),
 		filhos: dv(
-			"3: Luiza, Marina, Lucas",
+			"2: Catharina, Domenico",
 			"https://pt.wikipedia.org/wiki/Romeu_Zema#Primeiros_anos",
 			"2026-06-26",
 		),
 		formacao: dv(
-			"Administração de Empresas (Centro Universitário Newton Paiva)",
+			"Administração de Empresas (Fundação Getulio Vargas)",
 			"https://pt.wikipedia.org/wiki/Romeu_Zema#Primeiros_anos",
 			"2026-06-26",
 		),

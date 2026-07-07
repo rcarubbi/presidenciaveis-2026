@@ -52,7 +52,7 @@ export const caiado: Candidate = 	{
 			"2026-06-26",
 		),
 		formacao: dv(
-			"Medicina (Universidade Federal de Goiás, 1975)",
+			"Medicina (Universidade Federal do Estado do Rio de Janeiro, 1972)",
 			"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Percurso_acad%C3%AAmico_e_carreira_m%C3%A9dica",
 			"2026-06-26",
 		),
@@ -77,17 +77,22 @@ export const caiado: Candidate = 	{
 			"2026-06-28",
 		),
 		currentParty: dv(
-			"PSD (Partido Social Democrático) — desde 2022",
+			"PSD (Partido Social Democrático) — desde 2026",
 			"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Trajet%C3%B3ria_e_carreira_pol%C3%ADtica",
 			"2026-06-26",
 		),
 		partyHistory: [
 			dv(
-				"PSD (2022–presente)",
+				"PSD (2026–presente)",
 				"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Trajet%C3%B3ria_e_carreira_pol%C3%ADtica",
 				"2026-06-26",
 			)
 		,
+			dv(
+				"UNIÃO (2022–2026)",
+				"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Trajet%C3%B3ria_e_carreira_pol%C3%ADtica",
+				"2026-06-26",
+			),
 			dv(
 				"DEM (2007–2022)",
 				"https://pt.wikipedia.org/wiki/Ronaldo_Caiado#Trajet%C3%B3ria_e_carreira_pol%C3%ADtica",

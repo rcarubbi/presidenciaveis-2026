@@ -126,12 +126,12 @@ export const renan: Candidate = {
 		{
 			year: dv(
 				"2026",
-				"https://www.otempo.com.br/politica/2026/7/4/renan-santos-mira-eleitor-de-flavio-e-recusa-ser-outsider--ja-lutei-muito.html",
+				"https://www.otempo.com.br/eleicoes/2026/presidentes/2026/7/4/em-bh-renan-santos-recusa-ser-outsider-e-mira-eleitor-de-flavio-bolsonaro-para-subir-em-pesquisas",
 				"2026-07-04",
 			),
 			event: dv(
 				"Congresso MBL BH; recusa ser outsider. Mira eleitor de Flávio.",
-				"https://www.otempo.com.br/politica/2026/7/4/renan-santos-mira-eleitor-de-flavio-e-recusa-ser-outsider--ja-lutei-muito.html",
+				"https://www.otempo.com.br/eleicoes/2026/presidentes/2026/7/4/em-bh-renan-santos-recusa-ser-outsider-e-mira-eleitor-de-flavio-bolsonaro-para-subir-em-pesquisas",
 				"2026-07-04",
 			),
 		},
