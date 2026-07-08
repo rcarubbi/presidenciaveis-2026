@@ -5,7 +5,7 @@ import { X, Bell, ShieldCheck } from 'lucide-react'
 import { useApp } from '@/lib/app-context'
 
 const COOKIE_KEY = 'cookie-consent'
-const PUSH_KEY = 'push-opt-out'
+const PUSH_KEY = 'push-consent'
 
 function applyGa(val: string | null) {
   const gaId = process.env.NEXT_PUBLIC_GA_ID
@@ -17,12 +17,12 @@ function applyGa(val: string | null) {
 export function SettingsPanel() {
   const { settingsOpen, setSettingsOpen } = useApp()
   const [cookie, setCookie] = useState<string | null>(null)
-  const [pushOptOut, setPushOptOut] = useState(false)
+  const [pushConsent, setPushConsent] = useState<string | null>(null)
 
   useEffect(() => {
     if (settingsOpen) {
       setCookie(localStorage.getItem(COOKIE_KEY))
-      setPushOptOut(localStorage.getItem(PUSH_KEY) === 'true')
+      setPushConsent(localStorage.getItem(PUSH_KEY))
     }
   }, [settingsOpen])
 
@@ -36,18 +36,21 @@ export function SettingsPanel() {
     setCookie(val)
   }
 
-  function handlePushOptIn() {
-    localStorage.removeItem(PUSH_KEY)
-    setPushOptOut(false)
-    Notification.requestPermission()
+  function handlePushGrant() {
+    localStorage.setItem(PUSH_KEY, 'granted')
+    setPushConsent('granted')
+    if (typeof Notification !== 'undefined') {
+      Notification.requestPermission()
+    }
   }
 
-  function handlePushOptOut() {
-    localStorage.setItem(PUSH_KEY, 'true')
-    setPushOptOut(true)
+  function handlePushDeny() {
+    localStorage.setItem(PUSH_KEY, 'denied')
+    setPushConsent('denied')
   }
 
   const cookieLabel = cookie === 'accepted' ? 'Aceito' : cookie === 'refused' ? 'Recusado' : 'Não definido'
+  const pushLabel = pushConsent === 'granted' ? 'Notificações ativas' : pushConsent === 'denied' ? 'Notificações desativadas' : 'Não definido'
 
   return (
     <>
@@ -86,27 +89,21 @@ export function SettingsPanel() {
               <div className="flex items-center justify-between">
                 <div>
                   <p className="text-sm font-medium text-gray-800 dark:text-gray-200">Push</p>
-                  <p className="text-xs text-gray-400 mt-0.5">
-                    {pushOptOut
-                      ? 'Notificações desativadas'
-                      : Notification.permission === 'granted'
-                        ? 'Notificações ativas'
-                        : 'Clique para ativar'}
-                  </p>
+                  <p className="text-xs text-gray-400 mt-0.5">{pushLabel}</p>
                 </div>
                 <button
                   role="switch"
-                  aria-checked={!pushOptOut}
-                  onClick={pushOptOut ? handlePushOptIn : handlePushOptOut}
+                  aria-checked={pushConsent === 'granted'}
+                  onClick={pushConsent === 'granted' ? handlePushDeny : handlePushGrant}
                   className={`relative inline-flex h-6 w-11 shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 ${
-                    pushOptOut
-                      ? 'bg-gray-200 dark:bg-gray-700'
-                      : 'bg-green-500'
+                    pushConsent === 'granted'
+                      ? 'bg-green-500'
+                      : 'bg-gray-200 dark:bg-gray-700'
                   }`}
                 >
                   <span
                     className={`pointer-events-none inline-block size-5 rounded-full bg-white shadow ring-0 transition-transform duration-200 ${
-                      pushOptOut ? 'translate-x-0' : 'translate-x-5'
+                      pushConsent === 'granted' ? 'translate-x-5' : 'translate-x-0'
                     }`}
                   />
                 </button>

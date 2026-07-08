@@ -77,14 +77,14 @@ export function PushInit() {
   useEffect(() => {
     if (typeof Notification === 'undefined') return
     if (Notification.permission !== 'default') return
-    if (localStorage.getItem('push-opt-out') === 'true') return
+    if (localStorage.getItem('push-consent')) return
 
     const timer = setTimeout(() => {
       toast('Receba notificacoes quando novos dados forem publicados', {
         action: {
           label: 'Ativar',
           onClick: () => {
-            Notification.requestPermission()
+            Notification.requestPermission().then((r) => localStorage.setItem('push-consent', r))
           },
         },
         duration: 10000,
