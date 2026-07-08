@@ -37,10 +37,11 @@ export function SettingsPanel() {
   }
 
   function handlePushGrant() {
-    localStorage.setItem(PUSH_KEY, 'granted')
-    setPushConsent('granted')
     if (typeof Notification !== 'undefined') {
-      Notification.requestPermission()
+      Notification.requestPermission().then((r) => {
+        localStorage.setItem(PUSH_KEY, r)
+        setPushConsent(r)
+      })
     }
   }
 

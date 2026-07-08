@@ -76,6 +76,21 @@ export function PushInit() {
 
   useEffect(() => {
     if (typeof Notification === 'undefined') return
+
+    function sync() {
+      const perm = Notification.permission
+      if (perm === 'granted') { localStorage.setItem('push-consent', 'granted'); return }
+      if (perm === 'denied')  { localStorage.setItem('push-consent', 'denied');  return }
+      if (localStorage.getItem('push-consent') === 'granted') {
+        localStorage.setItem('push-consent', 'denied')
+      }
+    }
+
+    sync()
+  }, [])
+
+  useEffect(() => {
+    if (typeof Notification === 'undefined') return
     if (Notification.permission !== 'default') return
     if (localStorage.getItem('push-consent')) return
 
