@@ -150,7 +150,7 @@ export function Cobertura({ candidates }: CoberturaProps) {
               Artigos Recentes
             </h3>
           </div>
-          <div className="divide-y divide-gray-200/40 dark:divide-gray-700/30">
+          <div className="hidden sm:block divide-y divide-gray-200/40 dark:divide-gray-700/30">
             {articles.slice(0, 5).map((article) => (
               <a
                 key={article.id}
@@ -188,6 +188,42 @@ export function Cobertura({ candidates }: CoberturaProps) {
                       )
                     })()}
                   </div>
+                </div>
+              </a>
+            ))}
+          </div>
+          <div className="block sm:hidden space-y-2 p-4">
+            {articles.slice(0, 5).map((article) => (
+              <a
+                key={article.id}
+                href={article.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block rounded-lg border border-gray-200/40 dark:border-gray-700/30 p-3 hover:bg-white/40 dark:hover:bg-gray-800/40 transition-colors group"
+              >
+                <p className="text-sm text-gray-800 dark:text-gray-200 line-clamp-2 group-hover:text-gray-900 dark:group-hover:text-gray-100 transition-colors mb-1.5">
+                  {article.title}
+                </p>
+                <div className="flex flex-wrap items-center gap-x-2 gap-y-0.5 text-xs text-gray-400">
+                  <span>{article.source ?? '—'}</span>
+                  <span>·</span>
+                  <span>{formatDate(article.published_at)}</span>
+                  {article.genre && (
+                    <>
+                      <span>·</span>
+                      <span className="capitalize">{article.genre}</span>
+                    </>
+                  )}
+                  {article.editorial_lean && (() => {
+                    const badge = editorialLeanBadge(article.editorial_lean!)
+                    if (!badge) return null
+                    return (
+                      <span className={`inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-[10px] font-semibold leading-none ${badge.cls}`}>
+                        {badge.icon}
+                        {badge.label}
+                      </span>
+                    )
+                  })()}
                 </div>
               </a>
             ))}
@@ -359,7 +395,7 @@ export function CoberturaCell({ candidate }: { candidate: Candidate }) {
               <Newspaper size={12} className="text-gray-400" />
               <p className="text-[10px] font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wider">Artigos Recentes</p>
             </div>
-            <div className="space-y-1.5">
+            <div className="hidden sm:block space-y-1.5">
               {articles.slice(0, 4).map((article) => (
                 <a
                   key={article.id}
@@ -391,6 +427,36 @@ export function CoberturaCell({ candidate }: { candidate: Candidate }) {
                         )
                       })()}
                     </div>
+                  </div>
+                </a>
+              ))}
+            </div>
+            <div className="block sm:hidden space-y-2">
+              {articles.slice(0, 4).map((article) => (
+                <a
+                  key={article.id}
+                  href={article.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block rounded-lg border border-gray-200/40 dark:border-gray-700/30 p-2.5 hover:bg-white/40 dark:hover:bg-gray-800/40 transition-colors group"
+                >
+                  <p className="text-xs text-gray-800 dark:text-gray-200 line-clamp-2 group-hover:text-gray-900 dark:group-hover:text-gray-100 transition-colors mb-1">
+                    {article.title}
+                  </p>
+                  <div className="flex flex-wrap items-center gap-x-1.5 gap-y-0.5 text-[10px] text-gray-400">
+                    <span>{article.source ?? '—'}</span>
+                    <span>·</span>
+                    <span>{formatDate(article.published_at)}</span>
+                    {article.editorial_lean && (() => {
+                      const badge = editorialLeanBadge(article.editorial_lean!)
+                      if (!badge) return null
+                      return (
+                        <span className={`inline-flex items-center gap-1 rounded-full px-1.5 py-0.5 text-[9px] font-semibold leading-none ${badge.cls}`}>
+                          {badge.icon}
+                          {badge.label}
+                        </span>
+                      )
+                    })()}
                   </div>
                 </a>
               ))}
