@@ -61,7 +61,7 @@ function Photo({ children }: { children: React.ReactNode }) {
   const { candidate: c } = useCardCtx()
   return (
     <div className="relative overflow-hidden rounded-[1.75rem]" style={{ backgroundColor: c.party.color }}>
-      <div className="aspect-3/4">
+      <div className="relative aspect-3/4">
         <Image
           fill
           src={c.photo}
