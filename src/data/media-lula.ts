@@ -8,6 +8,34 @@ export const lulaMedia: MediaCategory[] = [
 		items: [
 			{
 				title: dv(
+					"Governo Federal faz entregas simultâneas de obras — Record News",
+					"https://www.youtube.com/watch?v=KgRVmPvBGVc",
+					"2026-07-03",
+				),
+				description: dv(
+					"O presidente Lula participa de cerimônia que marca entregas do Governo Federal nas áreas de saúde, educação e habitação.",
+					"https://www.youtube.com/watch?v=KgRVmPvBGVc",
+					"2026-07-03",
+				),
+				youtubeId: "KgRVmPvBGVc",
+				category: "discursos",
+			},
+			{
+				title: dv(
+					"Lula mostra dedo do meio durante discurso no Palácio do Planalto — Estadão",
+					"https://www.youtube.com/watch?v=6A3W_rZWGBY",
+					"2026-07-04",
+				),
+				description: dv(
+					"O presidente Lula faz gesto com dedo médio durante discurso no Palácio do Planalto, em resposta a críticas da oposição.",
+					"https://www.youtube.com/watch?v=6A3W_rZWGBY",
+					"2026-07-04",
+				),
+				youtubeId: "6A3W_rZWGBY",
+				category: "discursos",
+			},
+			{
+				title: dv(
 					"Presidente Lula concede entrevista para o Jornal da Manhã Bahia",
 					"https://www.youtube.com/watch?v=PEp6i7Sxz10",
 					"2026-07-05",
@@ -19,6 +47,62 @@ export const lulaMedia: MediaCategory[] = [
 				),
 				youtubeId: "PEp6i7Sxz10",
 				category: "entrevistas",
+			},
+			{
+				title: dv(
+					"Lula divulga inscrições do ProUni — Poder360",
+					"https://www.youtube.com/watch?v=CO2HEcmNFY8",
+					"2026-07-07",
+				),
+				description: dv(
+					"O presidente Lula divulga o Programa Universidade para Todos (ProUni) em vídeo nas redes sociais, com inscrições abertas até 10 de julho.",
+					"https://www.youtube.com/watch?v=CO2HEcmNFY8",
+					"2026-07-07",
+				),
+				youtubeId: "CO2HEcmNFY8",
+				category: "discursos",
+			},
+			{
+				title: dv(
+					"Começaram as inscrições do Prouni. Não perca essa oportunidade!",
+					"https://www.youtube.com/watch?v=YA-C9GnSYFs",
+					"2026-07-07",
+				),
+				description: dv(
+					"O presidente Lula anuncia a abertura das inscrições para o Programa Universidade para Todos (ProUni).",
+					"https://www.youtube.com/watch?v=YA-C9GnSYFs",
+					"2026-07-07",
+				),
+				youtubeId: "YA-C9GnSYFs",
+				category: "discursos",
+			},
+			{
+				title: dv(
+					"Lula descarta atuação com Trump antes do prazo para tarifa — Bastidores CNN",
+					"https://www.youtube.com/watch?v=hJg2Oy3psWA",
+					"2026-07-08",
+				),
+				description: dv(
+					"O presidente Lula descarta atuar junto ao presidente Donald Trump antes do aumento da alíquota sobre produtos brasileiros, conforme apuração da CNN Brasil.",
+					"https://www.youtube.com/watch?v=hJg2Oy3psWA",
+					"2026-07-08",
+				),
+				youtubeId: "hJg2Oy3psWA",
+				category: "entrevistas",
+			},
+			{
+				title: dv(
+					"Lula colhe mandioca 'sem agrotóxico' e critica tarifaço — Poder360",
+					"https://www.youtube.com/watch?v=Tvg0iOrV-kg",
+					"2026-07-08",
+				),
+				description: dv(
+					"O presidente Lula colhe novo tipo de mandioca desenvolvido pela Embrapa e brinca sobre o tarifaço americano, em vídeo compartilhado pela primeira-dama Janja.",
+					"https://www.youtube.com/watch?v=Tvg0iOrV-kg",
+					"2026-07-08",
+				),
+				youtubeId: "Tvg0iOrV-kg",
+				category: "discursos",
 			},
 		],
 	},
@@ -66,6 +150,20 @@ export const lulaMedia: MediaCategory[] = [
 					"2026-06-23",
 				),
 				youtubeId: "DOSpPQ7fUn4",
+				category: "discursos",
+			},
+			{
+				title: dv(
+					"Lula participa da Cúpula do Mercosul no Paraguai — Record News",
+					"https://www.youtube.com/watch?v=P0eu_GblrmU",
+					"2026-06-30",
+				),
+				description: dv(
+					"O presidente Lula participa da 68ª Cúpula de Chefes de Estado do Mercosul e Estados Associados, em Assunção, no Paraguai.",
+					"https://www.youtube.com/watch?v=P0eu_GblrmU",
+					"2026-06-30",
+				),
+				youtubeId: "P0eu_GblrmU",
 				category: "discursos",
 			},
 		],

@@ -439,9 +439,9 @@ export const flavio: Candidate = 	{
 					"2026-05-23",
 				),
 				description: dv(
-					"PF investiga solicitação de R$ 134 mi ao Banco Master. Em jul/2026, enviou carta ao governo dos EUA chamando Master de 'maior escândalo bancário' e omitiu sua própria ligação com o caso Dark Horse. Relator: STF André Mendonça.",
-					"https://www.metropoles.com/brasil/em-carta-aos-eua-flavio-associa-master-a-lula-e-omite-caso-dark-horse",
-					"2026-07-05",
+					"PF investiga solicitação de R$ 134 mi ao Banco Master. Em jul/2026, enviou carta ao governo dos EUA chamando Master de 'maior escândalo bancário' e omitiu sua própria ligação com o caso Dark Horse. Relator: STF André Mendonça — disse a auxiliares que 'não pretende aliviar' para Flávio.",
+					"https://www.folha.uol.com.br/colunas/goias246/2026/07/mendonca-diz-a-aliados-que-nao-vai-aliviar-para-flavio-na-relatoria-da-dark-horse.shtml",
+					"2026-07-07",
 				),
 				value: dv(
 					"R$ 134 mi",

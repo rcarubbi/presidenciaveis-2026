@@ -2,6 +2,67 @@ import type { PollData } from '../types'
 
 export const polls: PollData[] = [
   {
+    institute: 'Gerp/Aesp',
+    date: '07/jul',
+    firstRound: [
+      { name: 'Lula', value: 36.0 },
+      { name: 'Flávio', value: 36.0 },
+      { name: 'Caiado', value: 4.0 },
+      { name: 'Renan', value: 2.0 },
+      { name: 'Zema', value: 2.0 },
+      { name: 'Cury', value: 1.0 },
+      { name: 'Barbosa', value: 1.0 },
+      { name: 'Aécio', value: 0.0 },
+      { name: 'Daciolo', value: 0.0 },
+      { name: 'Samara', value: 0.0 },
+      { name: 'Pimenta', value: 0.0 },
+    ],
+    secondRound: [
+      { label: 'Lula × Flávio', lula: 42.0, adversario: 45.0, adversarioNome: 'Flávio' },
+      { label: 'Lula × Caiado', lula: 40.0, adversario: 36.0, adversarioNome: 'Caiado' },
+      { label: 'Lula × Zema', lula: 41.0, adversario: 36.0, adversarioNome: 'Zema' },
+      { label: 'Lula × Renan', lula: 41.0, adversario: 30.0, adversarioNome: 'Renan' },
+    ],
+    spontaneous: [
+      { name: 'Lula', value: 32 },
+      { name: 'Flávio', value: 30 },
+      { name: 'Caiado', value: 3 },
+      { name: 'Renan', value: 2 },
+      { name: 'Zema', value: 1 },
+      { name: 'Cury', value: 1 },
+    ],
+    rejection: [
+      { name: 'Lula', value: 49.0 },
+      { name: 'Flávio', value: 40.0 },
+      { name: 'Zema', value: 10.0 },
+      { name: 'Aécio', value: 10.0 },
+    ],
+  },
+  {
+    institute: 'Meio/Ideia',
+    date: '06/jul',
+    firstRound: [
+      { name: 'Lula', value: 40.4 },
+      { name: 'Flávio', value: 32.0 },
+      { name: 'Caiado', value: 4.0 },
+      { name: 'Zema', value: 2.5 },
+      { name: 'Aécio', value: 2.0 },
+      { name: 'Renan', value: 2.0 },
+      { name: 'Cury', value: 1.5 },
+    ],
+    secondRound: [
+      { label: 'Lula × Flávio', lula: 45.0, adversario: 40.0, adversarioNome: 'Flávio' },
+      { label: 'Lula × Caiado', lula: 45.0, adversario: 37.6, adversarioNome: 'Caiado' },
+    ],
+    spontaneous: [
+      { name: 'Lula', value: 32.8 },
+      { name: 'Flávio', value: 20.3 },
+      { name: 'Caiado', value: 1.2 },
+      { name: 'Renan', value: 0.7 },
+      { name: 'Zema', value: 0.4 },
+    ],
+  },
+  {
     institute: 'Nexus/BTG Pactual',
     date: '29/jun',
     firstRound: [

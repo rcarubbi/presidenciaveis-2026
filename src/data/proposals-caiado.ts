@@ -8,6 +8,7 @@ export const caiadoProposals: Record<string, ProposalItem[]> = {
     { text: dv('Controle total dos presídios (modelo Goiás)', 'https://g1.globo.com/politica/eleicoes/2026/noticia/2026/03/30/anistia-a-bolsonaro-terras-raras-combate-ao-crime-as-propostas-de-caiado-no-1o-discurso.ghtml', '2026-03-30') },
     { text: dv('Integração Polícias Estaduais com PF e PRF', 'https://www.correiobraziliense.com.br/mundo/2026/03/7387104-a-segunda-disputa-de-ronaldo-caiado-pela-presidencia.html', '2026-03-30') },
     { text: dv('Contrário ao uso de câmeras corporais em policiais militares', 'https://www.correiobraziliense.com.br/mundo/2026/03/7387104-a-segunda-disputa-de-ronaldo-caiado-pela-presidencia.html', '2026-03-30') },
+    { text: dv('Ampliar tipificação do crime de traição à pátria no Código Penal, defendendo soberania nacional contra interferências externas', 'https://www.estadao.com.br/politica/caiado-diz-que-aceita-propor-ampliacao-do-crime-de-traicao-a-patria-no-brasil-em-meio-ao-tarifaco/', '2026-07-08') },
   ],
   economia: [
     { text: dv('Exploração e processamento de terras raras com parceria EUA/Japão', 'https://g1.globo.com/politica/eleicoes/2026/noticia/2026/03/30/anistia-a-bolsonaro-terras-raras-combate-ao-crime-as-propostas-de-caiado-no-1o-discurso.ghtml', '2026-03-30') },

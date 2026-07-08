@@ -328,28 +328,6 @@ export const renan: Candidate = {
 				"2026-06-26",
 			),
 		},
-		{
-			name: dv(
-				"Acusação de estupro (Justiça nega remoção de posts)",
-				"https://revistaoeste.com/politica/justica-de-sp-nega-retirada-de-postagens-que-acusam-renan-santos-de-estupro",
-				"2026-06-23",
-			),
-			status: dv(
-				"em andamento",
-				"https://revistaoeste.com/politica/justica-de-sp-nega-retirada-de-postagens-que-acusam-renan-santos-de-estupro",
-				"2026-06-23",
-			),
-			description: dv(
-				"TJ-SP nega pedido de Renan para remover postagens em redes sociais sobre acusação de estupro. Justiça mantém conteúdo sob argumento de liberdade de expressão.",
-				"https://revistaoeste.com/politica/justica-de-sp-nega-retirada-de-postagens-que-acusam-renan-santos-de-estupro",
-				"2026-06-23",
-			),
-			value: dv(
-				"—",
-				"https://revistaoeste.com/politica/justica-de-sp-nega-retirada-de-postagens-que-acusam-renan-santos-de-estupro",
-				"2026-06-23",
-			),
-		},
 	],
 	campaignFinance: {
 		totalArrecadado: dv(

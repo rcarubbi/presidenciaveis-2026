@@ -151,6 +151,30 @@ export const zema: Candidate = 	{
 			{
 				year: dv(
 					"2026",
+					"https://g1.globo.com/politica/eleicoes/2026/noticia/2026/07/06/zema-sobre-renan-santos.ghtml",
+					"2026-07-06",
+				),
+				event: dv(
+					"Critica Renan Santos em sabatina 'No Osso' (Derrubando Muros): 'sai dando tiro como metralhadora, prometendo mundos e fundos'. Diz que falta 'histórico de entrega' ao pré-candidato do Missão.",
+					"https://g1.globo.com/politica/eleicoes/2026/noticia/2026/07/06/zema-sobre-renan-santos.ghtml",
+					"2026-07-06",
+				),
+			},
+			{
+				year: dv(
+					"2026",
+					"https://www.em.com.br/politica/2026/07/7456325-zema-defende-novo-julgamento-de-bolsonaro-por-tentativa-de-golpe.html",
+					"2026-07-06",
+				),
+				event: dv(
+					"Defende rejulgamento de Bolsonaro por tentativa de golpe em vez de anistia no Congresso. Afasta-se da linha bolsonarista de perdão legislativo.",
+					"https://www.em.com.br/politica/2026/07/7456325-zema-defende-novo-julgamento-de-bolsonaro-por-tentativa-de-golpe.html",
+					"2026-07-06",
+				),
+			},
+			{
+				year: dv(
+					"2026",
 					"https://opovo.com.br/noticias/politica/2026/07/04/zema-critica-articulacao-da-direita-em-torno-de-ciro-e-apoia-girao.html",
 					"2026-07-04",
 				),

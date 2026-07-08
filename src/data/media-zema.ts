@@ -8,6 +8,20 @@ export const zemaMedia: MediaCategory[] = [
 		items: [
 			{
 				title: dv(
+					"No Osso — Romeu Zema é sabatinado pelo canal Derrubando Muros (06/07)",
+					"https://www.youtube.com/watch?v=H7OHS5OX66M",
+					"2026-07-06",
+				),
+				description: dv(
+					"O pré-candidato do Novo participa da sabatina 'No Osso' do canal Derrubando Muros. Critica Renan Santos, defende rejulgamento de Bolsonaro e aborda propostas de governo.",
+					"https://www.youtube.com/watch?v=H7OHS5OX66M",
+					"2026-07-06",
+				),
+				youtubeId: "H7OHS5OX66M",
+				category: "entrevistas",
+			},
+			{
+				title: dv(
 					"Poder360 entrevista Romeu Zema — pré-candidato do Novo (04/07)",
 					"https://www.youtube.com/watch?v=VXafoqXoKXs",
 					"2026-07-04",

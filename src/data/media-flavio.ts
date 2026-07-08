@@ -8,6 +8,48 @@ export const flavioMedia: MediaCategory[] = [
 			items: [
 				{
 					title: dv(
+						"Flávio Bolsonaro participa de audiência sobre tarifaço nos EUA; governo repudia falas",
+						"https://www.youtube.com/watch?v=TcanimJnN7Y",
+						"2026-07-08",
+					),
+					description: dv(
+						"O senador e pré-candidato Flávio Bolsonaro (PL-RJ) participou de audiência pública em Washington sobre tarifas de 25% sobre produtos brasileiros. Disse que impor tarifas antes das eleições não é bom.",
+						"https://www.youtube.com/watch?v=TcanimJnN7Y",
+						"2026-07-08",
+					),
+					youtubeId: "TcanimJnN7Y",
+					category: "noticias",
+				},
+				{
+					title: dv(
+						"O constrangimento de Flávio Bolsonaro durante a audiência do tarifaço em Washington",
+						"https://www.youtube.com/watch?v=7cl4yZoEht4",
+						"2026-07-08",
+					),
+					description: dv(
+						"Análise dos dois dias de audiência da USTR: momentos de tensão com a participação de Flávio Bolsonaro e repercussão entre especialistas.",
+						"https://www.youtube.com/watch?v=7cl4yZoEht4",
+						"2026-07-08",
+					),
+					youtubeId: "7cl4yZoEht4",
+					category: "noticias",
+				},
+				{
+					title: dv(
+						"Flávio Bolsonaro x Lula: a guerra do tarifaço nos EUA",
+						"https://www.youtube.com/watch?v=1OmWSfOKhH4",
+						"2026-07-08",
+					),
+					description: dv(
+						"Flávio Bolsonaro participou de audiência da USTR em Washington pedindo adiamento do tarifaço de 25%, e o Planalto reagiu chamando o senador de traidor da pátria. Análise de quem sai ganhando na disputa.",
+						"https://www.youtube.com/watch?v=1OmWSfOKhH4",
+						"2026-07-08",
+					),
+					youtubeId: "1OmWSfOKhH4",
+					category: "noticias",
+				},
+				{
+					title: dv(
 						"O novo apelido de Michelle Bolsonaro na direita após atrito com Flávio",
 						"https://www.youtube.com/watch?v=AZXyWibrND8",
 						"2026-07-03",

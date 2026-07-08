@@ -8,6 +8,20 @@ export const renanMedia: MediaCategory[] = [
 		items: [
 			{
 				title: dv(
+					"Renan responde ataques — Análises Renais 07/07/2026",
+					"https://www.youtube.com/watch?v=CRIRHVoppEI",
+					"2026-07-07",
+				),
+				description: dv(
+					"No Análises Renais, Renan Santos responde a ataques e comenta bastidores da campanha, Congresso da Missão e cenário eleitoral.",
+					"https://www.youtube.com/watch?v=CRIRHVoppEI",
+					"2026-07-07",
+				),
+				youtubeId: "CRIRHVoppEI",
+				category: "entrevistas",
+			},
+			{
+				title: dv(
 					"O PLANO DE RENAN SANTOS PARA FAZER O BRASIL CRESCER | EsferaCast",
 					"https://www.youtube.com/watch?v=Cd4CD8YGT_M",
 					"2026-07-06",

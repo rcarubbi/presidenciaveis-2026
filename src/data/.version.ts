@@ -10,53 +10,45 @@ export interface DataVersionInfo {
 }
 
 export const dataVersion: DataVersionInfo = {
-	version: "2026-07-07T23:45:00Z",
-	updatedAt: "2026-07-07T23:45:00Z",
+	version: "2026-07-08T00:00:00Z",
+	updatedAt: "2026-07-08T00:00:00Z",
 	changes: [
 		{
-			emoji: "🖊️",
-			label:
-				"Caiado: escândalo atualizado — Justiça reduz seguranças de 51 para 4 PMs (Folha 06/jul)",
+			emoji: "📊",
+			label: "Caiado: 2 novas pesquisas — Gerp/Aesp 4% (03-07/jul) + Meio/Ideia 4% (03-06/jul)",
 		},
 		{
-			emoji: "📅",
-			label:
-				"Caiado: timeline expandida (07/jul) — Tarcísio vai à convenção PSD, Caiado ataca Flávio caso Vorcaro",
+			emoji: "📜",
+			label: "Caiado: 2 eventos timeline (06/jul agenda SP c/ Zema; 08/jul critica Flávio tarifaço no CNC + traição à pátria)",
 		},
 		{
-			emoji: "🎬",
-			label:
-				"Caiado: 2 novos vídeos YouTube — Metrópoles (03/jul), CNN Prime Time (02/jul)",
-		},
-		{
-			emoji: "📅",
-			label:
-				"Flávio: timeline expandida (04-07/jul) — tenta agrupar mulheres (Folha 06/jul), estende agenda nos EUA após audiência USTR (CNN 07/jul)",
-		},
-		{
-			emoji: "📅",
-			label:
-				"Lula: timeline — defeso eleitoral com entregas no Nordeste/Sudeste (04/jul), troca equipe de comunicação (06/jul)",
+			emoji: "📋",
+			label: "Caiado: nova posição e proposta — ampliar crime de traição à pátria (08/jul)",
 		},
 		{
 			emoji: "🎬",
 			label:
-				"Lula: 5 novos vídeos YouTube de Tier 1 (Poder360 23/jun, CNN Brasil 17/jun, TV Brasil 22/mai, UOL 07/mai, CartaCapital 23/fev)",
+				"Lula: 7 novos vídeos YouTube Tier 1 (CNN Brasil 08/jul, Poder360 08/jul, Poder360 07/jul, Canal Lula 07/jul, Estadão 04/jul, Record News 03/jul, Record News 30/jun)",
 		},
 		{
-			emoji: "📅",
-			label:
-				"Renan: timeline expandida (24/jun-07/jul) — Flávio inviável, encontro embaixadores, vice Aroldo Medina, Zema x Renan",
-		},
-		{
-			emoji: "🆕",
-			label:
-				"Renan: novo escândalo — TJ-SP nega remoção posts sobre acusação de estupro (23/jun)",
+			emoji: "🔎",
+			label: "Flávio: atualiza descrição escândalo Dark Horse — Mendonça 'não vai aliviar' (Folha/Goiás246 07/jul)",
 		},
 		{
 			emoji: "🎬",
-			label:
-				"Renan: 1 vídeo YouTube — EsferaCast/Katallaxis (06/jul) plano crescimento econômico",
+			label: "Flávio: 3 novos vídeos YouTube — CNN Brasil (Tier 1) + VEJA+ e O Antagonista (Tier 2) — audiência USTR tarifaço 08/jul",
+		},
+		{
+			emoji: "🎬",
+			label: "Renan: novo vídeo YouTube — Análises Renais responde a ataques (canal oficial 07/jul)",
+		},
+		{
+			emoji: "📜",
+			label: "Zema: 2 eventos timeline 06/jul — crítica Renan Santos + defende rejulgamento de Bolsonaro",
+		},
+		{
+			emoji: "🎬",
+			label: "Zema: novo vídeo YouTube — sabatina No Osso (Derrubando Muros) 06/jul",
 		},
 	],
 };

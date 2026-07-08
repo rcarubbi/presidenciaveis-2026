@@ -146,6 +146,18 @@ export const caiado: Candidate = 	{
 		{
 			year: dv(
 				"2026",
+				"https://g1.globo.com/politica/eleicoes/2026/noticia/2026/07/08/tarifaco-de-trump-caiado-chama-de-inaceitavel-pedido-de-flavio-para-adiamento-e-diz-que-governo-lula-deve-deixar-ideologia-de-lado.ghtml",
+				"2026-07-08",
+			),
+			event: dv(
+				"Caiado critica Flávio sobre tarifaço no CNC: 'inaceitável' pedir adiamento; aceita ampliar crime de traição à pátria.",
+				"https://g1.globo.com/politica/eleicoes/2026/noticia/2026/07/08/tarifaco-de-trump-caiado-chama-de-inaceitavel-pedido-de-flavio-para-adiamento-e-diz-que-governo-lula-deve-deixar-ideologia-de-lado.ghtml",
+				"2026-07-08",
+			),
+		},
+		{
+			year: dv(
+				"2026",
 				"https://veja.abril.com.br/brasil/caiado-leva-disputa-a-direita-e-usa-caso-vorcaro-em-ataque-a-flavio-bolsonaro",
 				"2026-07-07",
 			),
@@ -165,6 +177,18 @@ export const caiado: Candidate = 	{
 				"Tarcísio confirma presença na convenção do PSD que oficializará candidatura de Caiado.",
 				"https://oglobo.globo.com/blogs/lauro-jardim/post/2026/07/tarcisio-vai-a-convencao-do-psd-que-oficializara-a-candidatura-caiado-a-presidencia.ghtml",
 				"2026-07-07",
+			),
+		},
+		{
+			year: dv(
+				"2026",
+				"https://cbn.globo.com/sao-paulo/noticia/2026/07/06/pre-candidatos-a-presidencia-caiado-e-zema-cumprem-agenda-em-sao-paulo.ghtml",
+				"2026-07-06",
+			),
+			event: dv(
+				"Caiado e Zema cumprem agenda conjunta em São Paulo (culto evangélico, segurança pública).",
+				"https://cbn.globo.com/sao-paulo/noticia/2026/07/06/pre-candidatos-a-presidencia-caiado-e-zema-cumprem-agenda-em-sao-paulo.ghtml",
+				"2026-07-06",
 			),
 		},
 		{
@@ -1085,6 +1109,18 @@ export const caiado: Candidate = 	{
 					"-",
 					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado",
 					"2026-07-05",
+				),
+			},
+			{
+				issue: dv(
+					"Traição à Pátria",
+					"https://www.estadao.com.br/politica/caiado-diz-que-aceita-propor-ampliacao-do-crime-de-traicao-a-patria-no-brasil-em-meio-ao-tarifaco/",
+					"2026-07-08",
+				),
+				position: dv(
+					"Defende ampliação do crime de traição à pátria no Código Penal. Após tarifaço de Trump, afirmou ter 'coragem de assinar projeto' que tipifique condutas contra soberania nacional.",
+					"https://www.estadao.com.br/politica/caiado-diz-que-aceita-propor-ampliacao-do-crime-de-traicao-a-patria-no-brasil-em-meio-ao-tarifaco/",
+					"2026-07-08",
 				),
 			},
 
