@@ -77,6 +77,7 @@ export function PushInit() {
   useEffect(() => {
     if (typeof Notification === 'undefined') return
     if (Notification.permission !== 'default') return
+    if (localStorage.getItem('push-opt-out') === 'true') return
 
     const timer = setTimeout(() => {
       toast('Receba notificacoes quando novos dados forem publicados', {

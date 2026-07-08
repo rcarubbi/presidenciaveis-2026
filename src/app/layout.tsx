@@ -10,6 +10,7 @@ import { GaScript } from '@/components/GaScript'
 import { ThemeScript } from '@/components/ThemeScript'
 import { JsonLdScript } from '@/components/JsonLdScript'
 import { PushInit } from '@/components/PushInit'
+import { SettingsPanel } from '@/components/SettingsPanel'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import { Analytics } from '@vercel/analytics/next'
 
@@ -73,6 +74,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
             <AppProvider>
               <Header />
+              <SettingsPanel />
               <ErrorBoundary>
                 <main className="px-8 py-10 page-enter" id="main-content">
                   {children}

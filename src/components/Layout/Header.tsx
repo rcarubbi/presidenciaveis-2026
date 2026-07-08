@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { Moon, Sun, GitCompare, Users, BarChart3, Menu, X, Landmark } from 'lucide-react'
+import { Moon, Sun, GitCompare, Users, BarChart3, Menu, X, Landmark, Cog } from 'lucide-react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useApp } from '@/lib/app-context'
@@ -14,7 +14,7 @@ const tabs = [
 
 export function Header() {
   const pathname = usePathname()
-  const { theme, toggleTheme } = useApp()
+  const { theme, toggleTheme, setSettingsOpen } = useApp()
   const [menuOpen, setMenuOpen] = useState(false)
 
   useEffect(() => { setMenuOpen(false) }, [pathname])
@@ -70,6 +70,13 @@ export function Header() {
               Comparar
             </Link>
             <button
+              onClick={() => setSettingsOpen(true)}
+              className="hidden md:flex min-h-11 min-w-11 items-center justify-center rounded-full border border-blue-100/80 bg-white/70 text-slate-600 transition-all duration-200 hover:bg-blue-50 hover:text-blue-950 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 dark:border-blue-900/50 dark:bg-slate-900/70 dark:text-slate-200 dark:hover:bg-slate-800"
+              aria-label="Abrir configurações"
+            >
+              <Cog size={17} />
+            </button>
+            <button
               onClick={toggleTheme}
               className="flex min-h-11 min-w-11 items-center justify-center rounded-full border border-blue-100/80 bg-white/70 text-slate-600 transition-all duration-200 hover:bg-blue-50 hover:text-blue-950 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 dark:border-blue-900/50 dark:bg-slate-900/70 dark:text-slate-200 dark:hover:bg-slate-800"
               aria-label={theme === 'dark' ? 'Ativar modo claro' : 'Ativar modo escuro'}
@@ -111,6 +118,13 @@ export function Header() {
                 </Link>
               )
             })}
+            <button
+              onClick={() => { setMenuOpen(false); setSettingsOpen(true) }}
+              className="flex min-h-11 items-center gap-3 rounded-2xl px-4 text-sm font-bold transition-all duration-200 text-slate-600 hover:bg-blue-50 hover:text-blue-950 dark:text-slate-300 dark:hover:bg-slate-800 dark:hover:text-white"
+            >
+              <Cog size={16} />
+              Configurações
+            </button>
           </div>
         </div>
       </div>

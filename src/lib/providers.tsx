@@ -6,6 +6,7 @@ import type { Theme } from './app-context'
 
 export function AppProvider({ children }: { children: React.ReactNode }) {
   const [theme, setTheme] = useState<Theme>('light')
+  const [settingsOpen, setSettingsOpen] = useState(false)
 
   useEffect(() => {
     const savedTheme = localStorage.getItem('theme') as Theme | null
@@ -23,7 +24,7 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
     })
   }, [])
 
-  const value = useMemo(() => ({ theme, toggleTheme }), [theme, toggleTheme])
+  const value = useMemo(() => ({ theme, toggleTheme, settingsOpen, setSettingsOpen }), [theme, toggleTheme, settingsOpen])
 
   return (
     <AppContext.Provider value={value}>
