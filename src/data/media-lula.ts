@@ -92,20 +92,6 @@ export const lulaMedia: MediaCategory[] = [
 			},
 			{
 				title: dv(
-					"Começaram as inscrições do Prouni. Não perca essa oportunidade!",
-					"https://www.youtube.com/watch?v=YA-C9GnSYFs",
-					"2026-07-07",
-				),
-				description: dv(
-					"O presidente Lula anuncia a abertura das inscrições para o Programa Universidade para Todos (ProUni).",
-					"https://www.youtube.com/watch?v=YA-C9GnSYFs",
-					"2026-07-07",
-				),
-				youtubeId: "YA-C9GnSYFs",
-				category: "discursos",
-			},
-			{
-				title: dv(
 					"Lula descarta atuação com Trump antes do prazo para tarifa — Bastidores CNN",
 					"https://www.youtube.com/watch?v=hJg2Oy3psWA",
 					"2026-07-08",
