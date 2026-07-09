@@ -8,6 +8,20 @@ export const caiadoMedia: MediaCategory[] = [
 			items: [
 			{
 				title: dv(
+					"RONALDO CAIADO - Flow News #055 | Flow Podcast",
+					"https://www.youtube.com/watch?v=HzVDn5oAKpQ",
+					"2026-07-08",
+				),
+				description: dv(
+					"Pré-candidato à Presidência participa do Flow Podcast: critica Bolsonaro (economia, pandemia), diz que Flávio não deve ser candidato, ataca Lula e Flávio sobre tarifaço e defende soberania nacional.",
+					"https://www.youtube.com/watch?v=HzVDn5oAKpQ",
+					"2026-07-08",
+				),
+				youtubeId: "HzVDn5oAKpQ",
+				category: "entrevistas",
+			},
+			{
+				title: dv(
 					"Kassab: \"Caiado tem mais chances de vencer Lula do que Flávio Bolsonaro\" | TEMPO REAL",
 					"https://www.youtube.com/watch?v=NpI53O1em5k",
 					"2026-07-06",

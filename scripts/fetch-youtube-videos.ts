@@ -35,7 +35,7 @@ function parseArgs(): Record<string, string> {
 }
 
 async function main() {
-  const { candidate, after } = parseArgs()
+  const { candidate, after, before, query: customQuery } = parseArgs()
 
   if (!candidate) {
     console.error('[youtube] Error: --candidate is required')
@@ -48,7 +48,7 @@ async function main() {
     process.exit(1)
   }
 
-  const query = `${candidate} entrevista 2026`
+  const query = customQuery || `${candidate}`
   const publishedAfter = after ? `${after}T00:00:00Z` : ''
 
   const params = new URLSearchParams({
@@ -64,6 +64,11 @@ async function main() {
 
   if (publishedAfter) {
     params.set('publishedAfter', publishedAfter)
+  }
+
+  const publishedBefore = before ? `${before}T23:59:59Z` : ''
+  if (publishedBefore) {
+    params.set('publishedBefore', publishedBefore)
   }
 
   const url = `https://www.googleapis.com/youtube/v3/search?${params}`

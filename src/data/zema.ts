@@ -127,6 +127,78 @@ export const zema: Candidate = 	{
 			{
 				year: dv(
 					"2026",
+					"https://veja.abril.com.br/brasil/zema-acusa-ministro-do-stf-por-fracasso-da-selecao-brasileira-na-copa/",
+					"2026-07-09",
+				),
+				event: dv(
+					"Acusa Gilmar Mendes (STF) por fracasso da seleção brasileira na Copa. Aponta que filho do ministro, Francisco Mendes, exerce influência na CBF via contrato IDP/CBF Academy.",
+					"https://veja.abril.com.br/brasil/zema-acusa-ministro-do-stf-por-fracasso-da-selecao-brasileira-na-copa/",
+					"2026-07-09",
+				),
+			},
+			{
+				year: dv(
+					"2026",
+					"https://www.estadao.com.br/politica/zema-chama-operacao-da-pf-contra-bolsonaro-de-suspeita-e-cobra-acao-contra-mulher-de-moraes-nprp/",
+					"2026-07-08",
+				),
+				event: dv(
+					"Chama operação da PF contra Bolsonaro de 'extremamente suspeita'. Cobra ação contra Viviane Barci de Moraes, esposa de Alexandre de Moraes, por contrato de R$ 129 mi com Banco Master.",
+					"https://www.estadao.com.br/politica/zema-chama-operacao-da-pf-contra-bolsonaro-de-suspeita-e-cobra-acao-contra-mulher-de-moraes-nprp/",
+					"2026-07-08",
+				),
+			},
+			{
+				year: dv(
+					"2026",
+					"https://g1.globo.com/politica/eleicoes/2026/noticia/2026/07/08/zema-cnc.ghtml",
+					"2026-07-08",
+				),
+				event: dv(
+					"Em evento CNC Brasília, ataca STF ('cheio de frutas podres'), Lula ('gastança') e Vorcaro. Propõe '3 choques' de gestão: moral/ético, segurança pública e despesas públicas. Defende idade mínima de 60 anos para STF.",
+					"https://g1.globo.com/politica/eleicoes/2026/noticia/2026/07/08/zema-cnc.ghtml",
+					"2026-07-08",
+				),
+			},
+			{
+				year: dv(
+					"2026",
+					"https://revistaoeste.com/politica/novo-marca-data-para-oficializar-candidatura-de-zema-a-presidencia",
+					"2026-07-08",
+				),
+				event: dv(
+					"Novo marca convenção para 27 de julho em Brasília para oficializar candidatura de Zema à Presidência.",
+					"https://revistaoeste.com/politica/novo-marca-data-para-oficializar-candidatura-de-zema-a-presidencia",
+					"2026-07-08",
+				),
+			},
+			{
+				year: dv(
+					"2026",
+					"https://www.cnnbrasil.com.br/eleicoes/zema-sinaliza-que-tera-como-vice-empresario-ex-catador-de-latinhas",
+					"2026-07-08",
+				),
+				event: dv(
+					"Sinaliza empresário Geraldo Rufino (JR Diesel, Podemos) como vice. Reforça planos de nova reforma da Previdência e revisão de programas sociais.",
+					"https://www.cnnbrasil.com.br/eleicoes/zema-sinaliza-que-tera-como-vice-empresario-ex-catador-de-latinhas",
+					"2026-07-08",
+				),
+			},
+			{
+				year: dv(
+					"2026",
+					"https://g1.globo.com/politica/eleicoes/2026/noticia/2026/07/07/zema-diz-que-tarcisio-seria-candidatura-viavel-e-que-direita-perdeu-ao-nao-lancar-governador-a-presidencia.ghtml",
+					"2026-07-07",
+				),
+				event: dv(
+					"Diz que Tarcísio de Freitas seria candidatura 'viável' ao Planalto e que direita 'perdeu' ao não lançá-lo. Críticas a Bolsonaro e defesa de anistia em sabatina.",
+					"https://g1.globo.com/politica/eleicoes/2026/noticia/2026/07/07/zema-diz-que-tarcisio-seria-candidatura-viavel-e-que-direita-perdeu-ao-nao-lancar-governador-a-presidencia.ghtml",
+					"2026-07-07",
+				),
+			},
+			{
+				year: dv(
+					"2026",
 					"https://g1.globo.com/politica/eleicoes/2026/noticia/2026/07/07/em-evento-com-mulheres-zema-associa-presenca-feminina-na-politica-a-combate-a-corrupcao-e-cita-caso-master-nao-vi-mulher-envolvida.ghtml",
 					"2026-07-07",
 				),

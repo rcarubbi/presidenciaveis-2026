@@ -146,6 +146,30 @@ export const caiado: Candidate = 	{
 		{
 			year: dv(
 				"2026",
+				"https://correiodiario.com.br/politica/ronaldo-caiado-defende-papel-central-das-mulheres-na-protecao-e-nas-decisoes-das-familias-brasileiras/",
+				"2026-07-09",
+			),
+			event: dv(
+				"Caiado cumpre agenda no Rio: Congresso Cibem (evangélicas), evento saúde ACRJ, almoço com empresários; defende papel central das mulheres na família e valores conservadores.",
+				"https://correiodiario.com.br/politica/ronaldo-caiado-defende-papel-central-das-mulheres-na-protecao-e-nas-decisoes-das-familias-brasileiras/",
+				"2026-07-09",
+			),
+		},
+		{
+			year: dv(
+				"2026",
+				"https://g1.globo.com/politica/eleicoes/2026/noticia/2026/07/08/caiado-lula-provocacao-trump-flavio-bolsonaro-ajoelhamento.ghtml",
+				"2026-07-08",
+			),
+			event: dv(
+				"Caiado participa do Flow Podcast: critica Bolsonaro (economia, pandemia), diz que Flávio não deve ser candidato ('sem estatura ética'), critica Lula e Flávio sobre tarifaço, defende soberania nacional, elogia André Mendonça (Caso Master).",
+				"https://www.poder360.com.br/poder-eleicoes/caiado-critica-bolsonaro-e-diz-que-flavio-nao-deve-ser-candidato/",
+				"2026-07-08",
+			),
+		},
+		{
+			year: dv(
+				"2026",
 				"https://g1.globo.com/politica/eleicoes/2026/noticia/2026/07/08/tarifaco-de-trump-caiado-chama-de-inaceitavel-pedido-de-flavio-para-adiamento-e-diz-que-governo-lula-deve-deixar-ideologia-de-lado.ghtml",
 				"2026-07-08",
 			),
@@ -1018,13 +1042,13 @@ export const caiado: Candidate = 	{
 			{
 				issue: dv(
 					"Relações Exteriores",
-					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado",
-					"2026-07-05",
+					"https://g1.globo.com/politica/eleicoes/2026/noticia/2026/07/08/caiado-lula-provocacao-trump-flavio-bolsonaro-ajoelhamento.ghtml",
+					"2026-07-08",
 				),
 				position: dv(
-					"-",
-					"https://pt.wikipedia.org/wiki/Ronaldo_Caiado",
-					"2026-07-05",
+					"Defende soberania nacional e resgate do Itamaraty. Critica Lula ('provocar Trump') e Flávio ('ajoelhamento') sobre tarifaço. Propõe fim do 'Brasil colônia'. Aliança EUA/Japão em terras raras.",
+					"https://g1.globo.com/politica/eleicoes/2026/noticia/2026/07/08/caiado-lula-provocacao-trump-flavio-bolsonaro-ajoelhamento.ghtml",
+					"2026-07-08",
 				),
 			},
 			{

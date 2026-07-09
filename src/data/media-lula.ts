@@ -8,6 +8,34 @@ export const lulaMedia: MediaCategory[] = [
 		items: [
 			{
 				title: dv(
+					"Lula inaugura túnel da transposição do Rio São Francisco no RN — Poder360",
+					"https://www.youtube.com/watch?v=-brFD4fG4EI",
+					"2026-07-02",
+				),
+				description: dv(
+					"O presidente Lula inaugura o Túnel Major Sales no Rio Grande do Norte, principal estrutura do Ramal do Apodi da transposição do Rio São Francisco, beneficiando 750 mil pessoas em 54 municípios.",
+					"https://www.youtube.com/watch?v=-brFD4fG4EI",
+					"2026-07-02",
+				),
+				youtubeId: "-brFD4fG4EI",
+				category: "discursos",
+			},
+			{
+				title: dv(
+					"Lula participa de entrega de novos trechos da Ferrovia Transnordestina no Ceará — Poder360",
+					"https://www.youtube.com/watch?v=jt7vizNjOW4",
+					"2026-07-02",
+				),
+				description: dv(
+					"O presidente Lula participa em Quixeramobim (CE) da cerimônia de entregas da Ferrovia Transnordestina, com anúncio de R$ 600 milhões em investimentos e entrega de 101 km de trilhos.",
+					"https://www.youtube.com/watch?v=jt7vizNjOW4",
+					"2026-07-02",
+				),
+				youtubeId: "jt7vizNjOW4",
+				category: "discursos",
+			},
+			{
+				title: dv(
 					"Governo Federal faz entregas simultâneas de obras — Record News",
 					"https://www.youtube.com/watch?v=KgRVmPvBGVc",
 					"2026-07-03",

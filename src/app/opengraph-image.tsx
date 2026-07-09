@@ -4,8 +4,6 @@ import { candidates } from '@/data'
 export const runtime = 'edge'
 
 export const alt = 'Presidenciáveis 2026 — Comparativo dos candidatos à Presidência'
-export const size = { width: 1200, height: 630 }
-export const contentType = 'image/png'
 
 export default async function Image() {
   return new ImageResponse(

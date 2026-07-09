@@ -1,11 +1,25 @@
 import type { MediaCategory } from "../types";
 import { dv } from "@/lib/dataValue";
 
-export const renanMedia: MediaCategory[] = [
+	export const renanMedia: MediaCategory[] = [
 	{
 		id: "2026-07",
 		label: "Julho de 2026",
 		items: [
+			{
+				title: dv(
+					"Renan Santos: 'Não sou terceira via, quero ganhar de Lula e Bolsonaro' — MyNews",
+					"https://www.youtube.com/watch?v=o3txKu4pKxM",
+					"2026-07-09",
+				),
+				description: dv(
+					"Entrevista exclusiva ao MyNews. Renan Santos fala sobre estratégia de campanha, crescimento nas pesquisas e críticas à polarização Lula-Bolsonaro.",
+					"https://www.youtube.com/watch?v=o3txKu4pKxM",
+					"2026-07-09",
+				),
+				youtubeId: "o3txKu4pKxM",
+				category: "entrevistas",
+			},
 			{
 				title: dv(
 					"Renan responde ataques — Análises Renais 07/07/2026",

@@ -53,6 +53,7 @@ export const polls: PollData[] = [
     secondRound: [
       { label: 'Lula × Flávio', lula: 45.0, adversario: 40.0, adversarioNome: 'Flávio' },
       { label: 'Lula × Caiado', lula: 45.0, adversario: 37.6, adversarioNome: 'Caiado' },
+      { label: 'Lula × Renan', lula: 45.0, adversario: 33.0, adversarioNome: 'Renan' },
     ],
     spontaneous: [
       { name: 'Lula', value: 32.8 },

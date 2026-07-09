@@ -16,24 +16,24 @@ Projeto: `C:\Users\rcaru\source\repos\eleicoes_benchmark\presidenciaveis-2026`
 
 ## Modos de Operacao
 
-| Modo | Trigger | O que faz | Arquivos alterados |
-|---|---|---|---|
-| `validate` | `validar fontes {candidato}`, `/check-sources {candidato}` | Checa HTTP, ancora, conteudo, numeros. Substitui fontes quebradas/fracas. | `{candidato}.ts`, `proposals-{candidato}.ts`, `.version.ts` |
-| `update` | `atualizar {candidato}`, `/update {candidato}`, `update content {candidato}` | Busca polls, timeline, escandalos, propostas, videos, posicoes. Adiciona/atualiza. | `polls.ts`, `{candidato}.ts`, `proposals-{candidato}.ts`, `media-{candidato}.ts`, `.version.ts` |
-| `polls` | `update polls`, `atualizar pesquisas` | So pesquisas eleitorais. Nao requer candidato. | `polls.ts`, `.version.ts` |
+| Modo       | Trigger                                                                      | O que faz                                                                          | Arquivos alterados                                                                              |
+| ---------- | ---------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| `validate` | `validar fontes {candidato}`, `/check-sources {candidato}`                   | Checa HTTP, ancora, conteudo, numeros. Substitui fontes quebradas/fracas.          | `{candidato}.ts`, `proposals-{candidato}.ts`, `.version.ts`                                     |
+| `update`   | `atualizar {candidato}`, `/update {candidato}`, `update content {candidato}` | Busca polls, timeline, escandalos, propostas, videos, posicoes. Adiciona/atualiza. | `polls.ts`, `{candidato}.ts`, `proposals-{candidato}.ts`, `media-{candidato}.ts`, `.version.ts` |
+| `polls`    | `update polls`, `atualizar pesquisas`                                        | So pesquisas eleitorais. Nao requer candidato.                                     | `polls.ts`, `.version.ts`                                                                       |
 
 Se modo nao especificado: detectar pelo trigger.
 Se `validate` sem candidato: informar erro + listar opcoes.
 
 ## Candidatos
 
-| ID | Nome | Arquivo dados | Arquivo propostas | Arquivo media | Slugs YouTube/SAPIENS |
-|---|---|---|---|---|---|
-| `lula` | Lula (Luiz Inácio Lula da Silva, PT) | `src/data/lula.ts` | `src/data/proposals-lula.ts` | `src/data/media-lula.ts` | `lula-silva` / `"Lula"` |
-| `flavio` | Flávio Bolsonaro (Flávio Nantes Bolsonaro, PL) | `src/data/flavio.ts` | `src/data/proposals-flavio.ts` | `src/data/media-flavio.ts` | `flavio-bolsonaro` / `"Flavio Bolsonaro"` |
-| `renan` | Renan Santos (Renan Antônio Ferreira dos Santos, Missão) | `src/data/renan.ts` | `src/data/proposals-renan.ts` | `src/data/media-renan.ts` | `renan-santos` / `"Renan Santos"` |
-| `caiado` | Ronaldo Caiado (Ronaldo Ramos Caiado, União Brasil) | `src/data/caiado.ts` | `src/data/proposals-caiado.ts` | `src/data/media-caiado.ts` | `ronaldo-caiado` / `"Caiado"` |
-| `zema` | Romeu Zema (Romeu Zema Neto, NOVO) | `src/data/zema.ts` | `src/data/proposals-zema.ts` | `src/data/media-zema.ts` | `romeu-zema` / `"Zema"` |
+| ID       | Nome                                                     | Arquivo dados        | Arquivo propostas              | Arquivo media              | Slugs YouTube/SAPIENS                     |
+| -------- | -------------------------------------------------------- | -------------------- | ------------------------------ | -------------------------- | ----------------------------------------- |
+| `lula`   | Lula (Luiz Inácio Lula da Silva, PT)                     | `src/data/lula.ts`   | `src/data/proposals-lula.ts`   | `src/data/media-lula.ts`   | `lula-silva` / `"Lula"`                   |
+| `flavio` | Flávio Bolsonaro (Flávio Nantes Bolsonaro, PL)           | `src/data/flavio.ts` | `src/data/proposals-flavio.ts` | `src/data/media-flavio.ts` | `flavio-bolsonaro` / `"Flavio Bolsonaro"` |
+| `renan`  | Renan Santos (Renan Antônio Ferreira dos Santos, Missão) | `src/data/renan.ts`  | `src/data/proposals-renan.ts`  | `src/data/media-renan.ts`  | `renan-santos` / `"Renan Santos"`         |
+| `caiado` | Ronaldo Caiado (Ronaldo Ramos Caiado, União Brasil)      | `src/data/caiado.ts` | `src/data/proposals-caiado.ts` | `src/data/media-caiado.ts` | `ronaldo-caiado` / `"Caiado"`             |
+| `zema`   | Romeu Zema (Romeu Zema Neto, NOVO)                       | `src/data/zema.ts`   | `src/data/proposals-zema.ts`   | `src/data/media-zema.ts`   | `romeu-zema` / `"Zema"`                   |
 
 ## Regras Obrigatorias (todos os modos)
 
@@ -50,15 +50,15 @@ Se `validate` sem candidato: informar erro + listar opcoes.
 11. **Nao modificar package.json, sitemap.ts, ou config.**
 12. **Ordenacao dos arrays**: sempre inserir na posicao que preserva ordenacao (nunca no final):
 
-| Array | Chave de ordenacao | Ordem |
-|---|---|---|
-| `timeline` | `year` (decrescente) | Mais recente primeiro |
-| `electionResults` | `year` (decrescente) | Mais recente primeiro |
-| `partyHistory` | sequencia | Mais recente primeiro |
-| `positions` | `issue` | Alfabetica |
-| `scandals` | `updatedAt` | Mais recente primeiro |
-| `polls` | `date` | Mais recente primeiro |
-| changes[] (.version.ts) | data no label | Mais recente primeiro |
+| Array                   | Chave de ordenacao   | Ordem                 |
+| ----------------------- | -------------------- | --------------------- |
+| `timeline`              | `year` (decrescente) | Mais recente primeiro |
+| `electionResults`       | `year` (decrescente) | Mais recente primeiro |
+| `partyHistory`          | sequencia            | Mais recente primeiro |
+| `positions`             | `issue`              | Alfabetica            |
+| `scandals`              | `updatedAt`          | Mais recente primeiro |
+| `polls`                 | `date`               | Mais recente primeiro |
+| changes[] (.version.ts) | data no label        | Mais recente primeiro |
 
 13. **Positions vazias**: Todos os candidatos devem ter entradas para todas as pautas. Usar `"-"` (traco) como `position.value` quando nao se pronunciou. Usar Wikipedia como `source` e data atual como `updatedAt`.
 14. **Portugues brasileiro**: Todas as entries em `.version.ts` devem ser escritas em portugues brasileiro.
@@ -67,12 +67,12 @@ Se `validate` sem candidato: informar erro + listar opcoes.
 
 ## Tabela de Qualidade de Fontes
 
-| Tier | Descricao | Exemplos | Acao |
-|---|---|---|---|
-| 1 | Grande imprensa nacional | G1, Folha de S.Paulo, UOL, Estadão, O Globo, CNN Brasil, BBC Brasil, Veja, Exame, Poder360, Agencia Brasil, CartaCapital, Correio Braziliense, Revista Oeste | Manter (ideal) |
-| 2 | Imprensa regional/especializada | Jornais locais, sites juridicos (JusBrasil, Conjur), portais setoriais | Manter se Tier 1 nao disponivel |
-| 3 | Wikipedia, sites partidarios | wikipedia.org, pt.org.br, partido.site | Substituir por Tier 1/2 quando possivel |
-| 4 | Blogs, redes sociais, fontes primarias sem verificacao | Blogspot, Medium, Twitter/X, Instagram, Facebook | Substituir sempre |
+| Tier | Descricao                                              | Exemplos                                                                                                                                                     | Acao                                    |
+| ---- | ------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------- |
+| 1    | Grande imprensa nacional                               | G1, Folha de S.Paulo, UOL, Estadão, O Globo, CNN Brasil, BBC Brasil, Veja, Exame, Poder360, Agencia Brasil, CartaCapital, Correio Braziliense, Revista Oeste | Manter (ideal)                          |
+| 2    | Imprensa regional/especializada                        | Jornais locais, sites juridicos (JusBrasil, Conjur), portais setoriais                                                                                       | Manter se Tier 1 nao disponivel         |
+| 3    | Wikipedia, sites partidarios                           | wikipedia.org, pt.org.br, partido.site                                                                                                                       | Substituir por Tier 1/2 quando possivel |
+| 4    | Blogs, redes sociais, fontes primarias sem verificacao | Blogspot, Medium, Twitter/X, Instagram, Facebook                                                                                                             | Substituir sempre                       |
 
 ## .version.ts — Regras
 
@@ -91,18 +91,18 @@ Se `validate` sem candidato: informar erro + listar opcoes.
 ## Passo 1 — Ler dados do candidato
 
 Ler `src/data/{CANDIDATE}.ts` e `src/data/proposals-{CANDIDATE}.ts`.
-Excluir: media-*, polls, .version, index, types.
+Excluir: media-\*, polls, .version, index, types.
 
 ### Categorias e campos
 
-| Categoria | Campos com `source` | Fontes estimadas |
-|---|---|---|
-| Dados Pessoais | `naturalidade`, `estadoCivil`, `conjugesAnteriores`, `filhos`, `formacao`, `profissao`, `religiao`, `residencia`, `patrimonio` | ~9 |
-| Carreira | `currentParty`, `partyHistory[]`, `coalition[].status`, `ideologicalPosition`, `careerYears`, `currentPosition`, `timeline[].year+event`, `electionResults[].cargo+votos+pct+resultado` | ~40-60 |
-| Plano Governo | `ProposalItem[].text` (11 areas) | ~15-30 |
-| Escandalos | `scandals[].name`, `.status`, `.description`, `.value` | ~4-12 |
-| Financiamento | `campaignFinance.totalArrecadado`, `.totalGasto`, `.limiteGastos`, `.fontes[].name+value`, `.comparison.*` | ~8-15 |
-| Posicionamento | `positions[].issue`, `.position` | ~10-15 |
+| Categoria      | Campos com `source`                                                                                                                                                                     | Fontes estimadas |
+| -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- |
+| Dados Pessoais | `naturalidade`, `estadoCivil`, `conjugesAnteriores`, `filhos`, `formacao`, `profissao`, `religiao`, `residencia`, `patrimonio`                                                          | ~9               |
+| Carreira       | `currentParty`, `partyHistory[]`, `coalition[].status`, `ideologicalPosition`, `careerYears`, `currentPosition`, `timeline[].year+event`, `electionResults[].cargo+votos+pct+resultado` | ~40-60           |
+| Plano Governo  | `ProposalItem[].text` (11 areas)                                                                                                                                                        | ~15-30           |
+| Escandalos     | `scandals[].name`, `.status`, `.description`, `.value`                                                                                                                                  | ~4-12            |
+| Financiamento  | `campaignFinance.totalArrecadado`, `.totalGasto`, `.limiteGastos`, `.fontes[].name+value`, `.comparison.*`                                                                              | ~8-15            |
+| Posicionamento | `positions[].issue`, `.position`                                                                                                                                                        | ~10-15           |
 
 ## Passo 2 — Extrair e classificar URLs
 
@@ -139,6 +139,7 @@ Para cada URL unica: `webfetch(url, timeout=15)`
 ### Verificacao de Conteudo
 
 Para cada URL valida:
+
 1. `webfetch(url)` para obter texto
 2. Verificar se `value` e mencionado no texto:
    - **Literal**: fonte comprova (`ALTA`)
@@ -149,16 +150,16 @@ Para cada URL valida:
 
 ### Classificacao Final
 
-| Resultado | Acao |
-|---|---|
-| `OK` | Manter |
-| `OK_WEAK` | Tier 3-4 — buscar substituto |
-| `OK_ANCHOR` | Ancora errada — corrigir |
-| `BROKEN` | Substituto |
-| `UNREACHABLE` | Substituto |
-| `WEAK_CONTENT` | Substituto |
-| `WRONG_VALUE` | Corrigir value ou fonte |
-| `BLOCKED` | Substituto Tier 1 |
+| Resultado      | Acao                         |
+| -------------- | ---------------------------- |
+| `OK`           | Manter                       |
+| `OK_WEAK`      | Tier 3-4 — buscar substituto |
+| `OK_ANCHOR`    | Ancora errada — corrigir     |
+| `BROKEN`       | Substituto                   |
+| `UNREACHABLE`  | Substituto                   |
+| `WEAK_CONTENT` | Substituto                   |
+| `WRONG_VALUE`  | Corrigir value ou fonte      |
+| `BLOCKED`      | Substituto Tier 1            |
 
 Salvar checkpoint apos Passo 3.
 
@@ -178,11 +179,13 @@ Para cada resultado nao-OK:
 7. Se multiplas: listar para usuario (URL, veiculo, data, trecho)
 
 ### Subprotocolo: fonte Tier 3-4 (Wikipedia)
+
 - Buscar Tier 1-2 com mesma query
 - Se achar e comprovar: substituir
 - Se nao achar: manter Wikipedia com nota
 
 ### Subprotocolo: ancora incorreta
+
 - Identificar secao correta no documento
 - Extrair `id` do elemento HTML correto
 - Substituir fragmento
@@ -197,18 +200,19 @@ Para cada caso ambiguo: multiplas fontes, nenhum substituto, valor numerico dive
 
 Para todo `DataValue<number>` (`dvn()`):
 
-| Campo | Verificar |
-|---|---|
-| `patrimonio` | Valor em reais. Fonte deve exibir numero exato. |
-| `age` | Idade atual. Recalcular se necessario. |
-| `birthYear` | Ano de nascimento. |
-| `careerYears` | Anos de carreira. |
-| `electionResults[].year` | Ano da eleicao. |
-| `electionResults[].pct` | Percentual. Formato brasileiro (virgula decimal). |
-| `scandals[].value` | Valor em reais. |
-| `campaignFinance.*.value` | Valores de arrecadacao/gasto. |
+| Campo                     | Verificar                                         |
+| ------------------------- | ------------------------------------------------- |
+| `patrimonio`              | Valor em reais. Fonte deve exibir numero exato.   |
+| `age`                     | Idade atual. Recalcular se necessario.            |
+| `birthYear`               | Ano de nascimento.                                |
+| `careerYears`             | Anos de carreira.                                 |
+| `electionResults[].year`  | Ano da eleicao.                                   |
+| `electionResults[].pct`   | Percentual. Formato brasileiro (virgula decimal). |
+| `scandals[].value`        | Valor em reais.                                   |
+| `campaignFinance.*.value` | Valores de arrecadacao/gasto.                     |
 
 Protocolo:
+
 1. Extrair valor numerico do `DataValue`
 2. `webfetch` da URL — procurar numero no texto
 3. Se divergir: `WRONG_VALUE`
@@ -217,6 +221,7 @@ Protocolo:
 ## Passo 7 — Aplicar edicoes
 
 Para cada substituicao aprovada:
+
 1. Editar `{CANDIDATE}.ts` e/ou `proposals-{CANDIDATE}.ts`
 2. Atualizar: `source` → nova URL, `updatedAt` → data atual
 3. Apos todas edicoes: atualizar `.version.ts`
@@ -254,6 +259,7 @@ Para cada substituicao aprovada:
 ## Passo 1 — Diagnosticar estado atual
 
 Ler:
+
 - `src/data/polls.ts` — ultima data por instituto
 - `src/data/{CANDIDATE}.ts` — `updatedAt` de cada campo
 - `src/data/media-{CANDIDATE}.ts` — `updatedAt` dos videos mais recentes
@@ -264,47 +270,60 @@ Calcular `dataAlvo = (hoje - 14 dias)` formato `YYYY-MM-DD`.
 ## Passo 2 — Buscar atualizacoes
 
 ### 2a. Candidate news — SAPIENS API
+
 ```bash
 npm run fetch:news 14 -- --candidate "{SLUG}"
 ```
+
 Usar `-v` para ver titulos/URLs.
 
-### 2b. YouTube (canal oficial do candidato)
+### 2b. YouTube — Busca unificada
+
+Buscar videos no YouTube usando **apenas o nome do candidato** como query, sem palavras extras. Buscar em TODOS os canais (nao so Tier 1). Filtrar por data: ontem ate hoje.
+
 ```bash
-node --env-file .env.local --experimental-strip-types scripts/fetch-youtube-videos.ts --candidate "{NOME}" --after "{ULTIMA_DATA}"
-```
-**Atencao:** `pnpm run` NAO funciona. Chamar `node` diretamente.
-
-### 2c. YouTube (Tier 1 news sources)
-Buscar videos recentes de veiculos Tier 1 no YouTube onde o candidato APARECE/FALA diretamente (nao apenas comentario de terceiros).
-
-Tier 1 com canais YouTube: G1, Folha, UOL, Estadão, O Globo, CNN Brasil, BBC Brasil, Band, Record, SBT, Veja, Poder360, CartaCapital, TV Brasil/EBC, Jovem Pan, Roda Viva.
-
-Para cada veiculo, web search:
-```
-"{candidato} {veiculo} YouTube {mes_atual} {ano}"
-```
-ou search avancada no YouTube via web:
-```
-site:youtube.com "{candidato}" "{veiculo}" after:{dataAlvo}
+# Busca videos publicados entre ONTEM e HOJE
+node --env-file .env.local --experimental-strip-types scripts/fetch-youtube-videos.ts --candidate "{NOME}" --after "{ONTEM}" --before "{HOJE}"
 ```
 
-Para cada video candidato:
-1. Verificar titulo/descricao — candidato aparece falando?
-2. `webfetch` da URL para confirmar
-3. Se sim: extrair `youtubeId`, data, titulo, descricao
-4. Classificar categoria: `entrevistas`, `discursos`, `coletivas`
+### 2c. YouTube — Processamento dos resultados
 
-Se multiplos videos do mesmo periodo: priorizar veiculos Tier 1 diferentes (diversidade de fontes).
+Para cada lote de resultados:
 
-Inserir em `media-{CANDIDATE}.ts` na ordem cronologica dentro do mes correspondente.
+1. **Classificar por Tier** (decrescente: Tier 1 primeiro, depois Tier 2):
+   - Tier 1: G1, Folha, UOL, Estadão, O Globo, CNN Brasil, BBC Brasil, Band, Record, SBT, Veja, Poder360, CartaCapital, TV Brasil/EBC, Jovem Pan, Roda Viva
+   - Tier 2: Imprensa regional (Itatiaia, O Povo, Correio Braziliense, etc.), especializada
+   - Tier 3: Wikipedia, sites partidarios, canais de membros/afiliados
+   - Tier 4: Blogs, redes sociais, influencers, canais de cortes
+
+2. **Tier 3/4 como ponte**: Videos Tier 3/4 NAO sao adicionados diretamente. Sao usados para identificar o evento e localizar a fonte original:
+   - Se titulo/descricao indica corte de entrevista → buscar entrevista completa no canal original (Tier 1/2)
+   - Se canal de membro/afiliado postou conteudo → buscar no canal oficial do veiculo
+   - Exemplo: corte em canal Tier 4 sobre entrevista Band → buscar video completo no canal Band YouTube
+   - Se encontrar original Tier 1/2: adicionar o original
+   - Se nao encontrar: nao adicionar nada
+   - Excecao: canal proprio do candidato (ex: Análises Renais do Renan) pode ter cortes do proprio conteudo
+
+3. **Remover duplicatas por similaridade**: videos sobre o MESMO EVENTO de fontes diferentes. Manter apenas o de maior Tier. Ex: Poder360 (Tier 1) e Itatiaia (Tier 2) sobre mesmo evento → manter Poder360.
+
+4. **Verificar se candidato APARECE/FALA diretamente** no video (nao apenas comentario de terceiros).
+
+5. **Verificar se video ja existe** em `media-{CANDIDATE}.ts` (por youtubeId ou mesmo evento).
+
+6. **Inserir** em `media-{CANDIDATE}.ts` na ordem cronologica dentro do mes correspondente.
+   Categoria: `entrevistas`, `discursos`, `coletivas`.
+
+7. **Priorizar diversidade de veiculos**: se multiplos videos Tier 1 do mesmo periodo, optar por fontes diferentes.
 
 ### 2d. Web search (paralelo)
+
 - **Polls**: `{instituto} pesquisa eleitoral presidente 2026`
-- **Timeline/escandalos**: `{candidato} {evento} {ano}`
+- **Timeline**: `{candidato} eleições 2026 {mes_atual}`
+- **Escandalos**: SOMENTE corrupcao comprovada (desvio, fraude, propina, caixa 2, improbidade). NUNCA "polêmica" ou "crítica". Query: `{candidato} corrupção OR desvio OR fraude OR propina {ano}`
 - **Propostas**: `{candidato} plano de governo {area}`
 
 ### 2e. Polls (sempre executar)
+
 Institutos: Datafolha, Quaest, AtlasIntel, Real Time Big Data.
 
 Query: `{instituto} pesquisa eleitoral presidente 2026 {mes_atual}`
@@ -326,23 +345,27 @@ Se achar pesquisa mais recente que ultima entrada do mesmo instituto: extrair fi
 - Manter indentacao (tabs), aspas duplas
 
 ### Media (YouTube) — verificar duplicatas
+
 ```powershell
 $path = "src/data/media-{CANDIDATE}.ts"
 $ids = Select-String -Path $path -Pattern 'youtubeId: "([^"]+)"' | ForEach-Object { $_.Matches.Groups[1]. Value }
 $dupes = $ids | Group-Object | Where-Object { $_.Count -gt 1 }
 if ($dupes) { Write-Host "DUPLICATA youtubeId: $($dupes.Name -join ', ')" -ForegroundColor Red; exit 1 }
 ```
+
 Se duplicatas exatas: remover automaticamente (manter mais antiga ou fonte mais confiavel).
 Se muito similares: perguntar ao usuario.
 
 Apos todas edicoes: atualizar `.version.ts`.
 
 ## Passo 5 — Verificar build
+
 ```bash
 npm run typecheck
 npm run lint
 npm run build
 ```
+
 Para media, rodar verificacao de duplicatas youtubeId antes.
 
 ## Passo 6 — Reportar
@@ -366,34 +389,39 @@ Listar para usuario: arquivos alterados, entradas novas, campos atualizados, dat
 Usar memoria do opencode para salvar e recarregar progresso.
 
 ### Salvar
+
 ```bash
 memory mode=add type=skill-checkpoint tags="data-management,{CANDIDATE},modo-{validate|update},passo-{N}" content="PROGRESSO:{...JSON...}"
 ```
 
 Formato JSON:
+
 ```json
 {
-  "candidate": "{CANDIDATE}",
-  "modo": "validate",
-  "passo": 3,
-  "descricao": "Validacao de links concluida",
-  "totalUrls": 42,
-  "ok": 35,
-  "broken": 5
+	"candidate": "{CANDIDATE}",
+	"modo": "validate",
+	"passo": 3,
+	"descricao": "Validacao de links concluida",
+	"totalUrls": 42,
+	"ok": 35,
+	"broken": 5
 }
 ```
 
 ### Recarregar
+
 ```bash
 memory mode=search type=skill-checkpoint query="data-management {CANDIDATE}"
 ```
 
 ### Limpeza ao finalizar
+
 Apos reportar, listar checkpoints do candidato e apagar todos (`memory mode=forget memoryId=<ID>`). Nao deixar orfaos.
 
 ---
 
 # Anexo — Comandos Uteis
+
 ```bash
 # Ler dados
 cat src/data/{CANDIDATE}.ts
@@ -411,9 +439,9 @@ npm run build
 
 ```typescript
 interface DataValue<T = string> {
-    value: T;
-    source: string;
-    updatedAt: string;
+	value: T;
+	source: string;
+	updatedAt: string;
 }
 // dv(valor, source, updatedAt)  → DataValue<string>
 // dvn(valor, source, updatedAt) → DataValue<number>

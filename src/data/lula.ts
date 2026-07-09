@@ -166,6 +166,18 @@ export const lula: Candidate = 	{
 			{
 				year: dv(
 					"2026",
+					"https://oglobo.globo.com/politica/noticia/2026/07/08/lula-reune-aliados-para-debater-acoes-de-campanha-e-pt-espera-definicao-sobre-minas.ghtml",
+					"2026-07-08",
+				),
+				event: dv(
+					"Lula reúne aliados no Alvorada para balanço da pré-campanha; PT busca definir palanques em MG e GO (08/jul)",
+					"https://oglobo.globo.com/politica/noticia/2026/07/08/lula-reune-aliados-para-debater-acoes-de-campanha-e-pt-espera-definicao-sobre-minas.ghtml",
+					"2026-07-08",
+				),
+			},
+			{
+				year: dv(
+					"2026",
 					"https://g1.globo.com/politica/noticia/2026/07/06/lula-faz-trocas-em-equipe-do-governo-para-reforcar-pre-campanha-a-reeleicao.ghtml",
 					"2026-07-06",
 				),
@@ -197,6 +209,42 @@ export const lula: Candidate = 	{
                     "PT define 2 de agosto para oficializar candidatura de Lula à reeleição",
                     "https://www.cnnbrasil.com.br/eleicoes/por-peso-eleitoral-pt-troca-brasilia-por-sp-para-lancar-lula-a-reeleicao/",
                     "2026-07-01",
+				),
+			},
+			{
+				year: dv(
+					"2026",
+					"https://g1.globo.com/economia/noticia/2026/06/29/desenrola-adimplentes-governo-lanca-nova-etapa-do-programa-para-trabalhadores-informal-e-empreendedores.ghtml",
+					"2026-06-29",
+				),
+				event: dv(
+					"Lula lança 'Desenrola Adimplentes' para informais e empreendedores com juros de 1,99% ao mês (29/jun)",
+					"https://oglobo.globo.com/economia/noticia/2026/06/29/lula-novo-desenrola.ghtml",
+					"2026-06-29",
+				),
+			},
+			{
+				year: dv(
+					"2026",
+					"https://www.correiobraziliense.com.br/politica/2026/06/7449772-nao-queremos-guerra-mas-estaremos-preparados-diz-lula.html",
+					"2026-06-26",
+				),
+				event: dv(
+					'Lula lança fragata em Itajaí e diz: "Não queremos guerra, mas estaremos preparados"; critica Trump (26/jun)',
+					"https://www.correiobraziliense.com.br/politica/2026/06/7449772-nao-queremos-guerra-mas-estaremos-preparados-diz-lula.html",
+					"2026-06-26",
+				),
+			},
+			{
+				year: dv(
+					"2026",
+					"https://www.metropoles.com/sao-paulo/apos-reuniao-com-lula-haddad-define-franca-como-vice-na-chapa-em-sp",
+					"2026-06-25",
+				),
+				event: dv(
+					"Lula define Haddad com França vice em SP; Tebet e Marina para o Senado (25/jun)",
+					"https://www1.folha.uol.com.br/poder/2026/06/haddad-tera-franca-como-vice-na-disputa-pelo-governo-de-sp-com-tebet-e-marina-para-o-senado.shtml",
+					"2026-06-25",
 				),
 			},
 			{
@@ -743,28 +791,28 @@ export const lula: Candidate = 	{
 				),
 			},
 			{
-				issue: dv(
-					"Agronegócio",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva",
-					"2026-07-05",
-				),
-				position: dv(
-					"-",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva",
-					"2026-07-05",
-				),
+			issue: dv(
+				"Agronegócio",
+				"https://www1.folha.uol.com.br/mercado/2026/06/governo-lula-lanca-plano-safra-com-r-525-bilhoes-para-financiar-producao.shtml",
+				"2026-06-30",
+			),
+			position: dv(
+				"Plano Safra R$ 622 bi (2026). Crítico à dependência de fertilizantes importados. Defesa agricultura familiar e empresarial.",
+				"https://www1.folha.uol.com.br/mercado/2026/06/governo-lula-lanca-plano-safra-com-r-525-bilhoes-para-financiar-producao.shtml",
+				"2026-06-30",
+			),
 			},
 			{
-				issue: dv(
-					"Apoios Regionais",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva",
-					"2026-07-05",
-				),
-				position: dv(
-					"-",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva",
-					"2026-07-05",
-				),
+			issue: dv(
+				"Apoios Regionais",
+				"https://oglobo.globo.com/politica/noticia/2026/07/08/lula-reune-aliados-para-debater-acoes-de-campanha-e-pt-espera-definicao-sobre-minas.ghtml",
+				"2026-07-08",
+			),
+			position: dv(
+				"Montagem palanques regionais amplos. Prioridade MG (2º maior colégio), SP (Haddad/Tebet/Marina), RJ (Paes). PT busca definir MG e GO.",
+				"https://oglobo.globo.com/politica/noticia/2026/07/08/lula-reune-aliados-para-debater-acoes-de-campanha-e-pt-espera-definicao-sobre-minas.ghtml",
+				"2026-07-08",
+			),
 			},
 			{
 				issue: dv(
@@ -779,27 +827,27 @@ export const lula: Candidate = 	{
 				),
 			},
 			{
-				issue: dv(
-					"Assistência Social",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva",
-					"2026-07-05",
-				),
-				position: dv(
-					"-",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva",
-					"2026-07-05",
-				),
+			issue: dv(
+				"Assistência Social",
+				"https://valor.globo.com/politica/noticia/2026/04/02/lula-diz-que-governo-vai-manter-todas-as-politicas-publicas-de-inclusao-social.ghtml",
+				"2026-04-02",
+			),
+			position: dv(
+				"Orçamento fixo p/ SUAS. Manutenção políticas inclusão social. Fiscalização benefícios. 'Sonho é povo não precisar mais de Bolsa Família'.",
+				"https://valor.globo.com/politica/noticia/2026/04/02/lula-diz-que-governo-vai-manter-todas-as-politicas-publicas-de-inclusao-social.ghtml",
+				"2026-04-02",
+			),
 			},
 			{
 				issue: dv(
 					"Bolsa Família / Programas Sociais",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva",
-					"2026-07-05",
+					"https://www.poder360.com.br/poder-governo/lula-aumenta-tamanho-do-bolsa-familia-em-ano-eleitoral/",
+					"2026-06-18",
 				),
 				position: dv(
-					"-",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva",
-					"2026-07-05",
+					"Ampliação do Bolsa Família. 19,35 mi famílias. Benefício médio R$ 677,66. Programa como trunfo eleitoral.",
+					"https://www.poder360.com.br/poder-governo/lula-aumenta-tamanho-do-bolsa-familia-em-ano-eleitoral/",
+					"2026-06-18",
 				),
 			},
 			{
@@ -815,16 +863,16 @@ export const lula: Candidate = 	{
 				),
 			},
 			{
-				issue: dv(
-					"Cotas Raciais",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva",
-					"2026-07-05",
-				),
-				position: dv(
-					"-",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva",
-					"2026-07-05",
-				),
+			issue: dv(
+				"Cotas Raciais",
+				"https://www.gov.br/planalto/pt-br/acompanhe-o-planalto/noticias/2025/06/presidente-sanciona-lei-que-reserva-30-das-vagas-no-servico-publico-a-negros-indigenas-e-quilombolas",
+				"2025-06-03",
+			),
+			position: dv(
+				"Ampliação cotas serviço público 20%→30%. Inclusão indígenas e quilombolas. Defesa intransigente ações afirmativas. Crítico a fim de cotas estaduais (SC).",
+				"https://www.gov.br/planalto/pt-br/acompanhe-o-planalto/noticias/2025/06/presidente-sanciona-lei-que-reserva-30-das-vagas-no-servico-publico-a-negros-indigenas-e-quilombolas",
+				"2025-06-03",
+			),
 			},
 			{
 				issue: dv(
@@ -841,25 +889,25 @@ export const lula: Candidate = 	{
 			{
 				issue: dv(
 					"Economia",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva",
-					"2026-07-05",
+					"https://oglobo.globo.com/economia/noticia/2026/05/18/governo-admite-inflacao-no-teto-da-meta-em-2026-e-mantem-previsao-de-crescimento-de-23percent-do-pib.ghtml",
+					"2026-05-18",
 				),
 				position: dv(
-					"-",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva",
-					"2026-07-05",
+					"Crescimento PIB 2,3-2,4% (2026). Mercado trabalho forte. Estímulos fiscais. Arcabouço fiscal. Inflação no teto da meta.",
+					"https://oglobo.globo.com/economia/noticia/2026/05/18/governo-admite-inflacao-no-teto-da-meta-em-2026-e-mantem-previsao-de-crescimento-de-23percent-do-pib.ghtml",
+					"2026-05-18",
 				),
 			},
 			{
 				issue: dv(
 					"Educação",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva",
-					"2026-07-05",
+					"https://www.estadao.com.br/educacao/governo-prepara-programa-para-universalizar-escola-de-tempo-integral-verba-pode-ficar-fora-do-teto/",
+					"2026-06-03",
 				),
 				position: dv(
-					"-",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva",
-					"2026-07-05",
+					"Universalização escola tempo integral. Novo PNE 2026-2036. Investimento R$ 280 bi em infraestrutura escolar em 10 anos.",
+					"https://www.estadao.com.br/educacao/governo-prepara-programa-para-universalizar-escola-de-tempo-integral-verba-pode-ficar-fora-do-teto/",
+					"2026-06-03",
 				),
 			},
 			{
@@ -875,28 +923,28 @@ export const lula: Candidate = 	{
 				),
 			},
 			{
-				issue: dv(
-					"Impeachment Dilma",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva",
-					"2026-07-05",
-				),
-				position: dv(
-					"-",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva",
-					"2026-07-05",
-				),
+			issue: dv(
+				"Impeachment Dilma",
+				"https://oglobo.globo.com/politica/noticia/2023/08/04/lula-volta-a-chamar-impeachment-de-dilma-de-golpe-ao-lado-de-dois-senadores-que-votaram-a-favor-da-destituicao.ghtml",
+				"2023-08-04",
+			),
+			position: dv(
+				"Considera impeachment golpe. 'Brasil deve desculpas a Dilma'. Cassada de forma leviana.",
+				"https://oglobo.globo.com/politica/noticia/2023/08/04/lula-volta-a-chamar-impeachment-de-dilma-de-golpe-ao-lado-de-dois-senadores-que-votaram-a-favor-da-destituicao.ghtml",
+				"2023-08-04",
+			),
 			},
 			{
-				issue: dv(
-					"Infraestrutura",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva",
-					"2026-07-05",
-				),
-				position: dv(
-					"-",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva",
-					"2026-07-05",
-				),
+			issue: dv(
+				"Infraestrutura",
+				"https://www1.folha.uol.com.br/mercado/2025/12/novo-pac-chega-a-2026-com-protagonismo-do-setor-privado-e-promessas-para-transportes.shtml",
+				"2025-12-31",
+			),
+			position: dv(
+				"Novo PAC: 34 mil empreendimentos. Foco transportes, ciência/tecnologia, infraestrutura social, contenção encostas, drenagem. 53% investido até 2026.",
+				"https://www1.folha.uol.com.br/mercado/2025/12/novo-pac-chega-a-2026-com-protagonismo-do-setor-privado-e-promessas-para-transportes.shtml",
+				"2025-12-31",
+			),
 			},
 			{
 				issue: dv(
@@ -923,16 +971,16 @@ export const lula: Candidate = 	{
 				),
 			},
 			{
-				issue: dv(
-					"PEC do Teto",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva",
-					"2026-07-05",
-				),
-				position: dv(
-					"-",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva",
-					"2026-07-05",
-				),
+			issue: dv(
+				"PEC do Teto",
+				"https://exame.com/brasil/vai-aumentar-o-dolar-cair-a-bolsa-paciencia-diz-lula-sobre-mudanca-no-teto-de-gastos/",
+				"2022-11-17",
+			),
+			position: dv(
+				"Contra teto gastos. 'Tira dinheiro saúde, educação, cultura e não mexe no sistema financeiro'. Defesa arcabouço fiscal. Furou teto p/ Bolsa Família R$ 600.",
+				"https://exame.com/brasil/vai-aumentar-o-dolar-cair-a-bolsa-paciencia-diz-lula-sobre-mudanca-no-teto-de-gastos/",
+				"2022-11-17",
+			),
 			},
 			{
                 issue: dv(
@@ -961,50 +1009,50 @@ export const lula: Candidate = 	{
 			{
 				issue: dv(
 					"Reforma Agrária/Indígenas",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva",
-					"2026-07-05",
+					"https://www.gov.br/planalto/pt-br/acompanhe-o-planalto/noticias/2026/03/lula-anuncia-medidas-de-reforma-agraria-regularizacao-fundiaria-e-apoio-a-agricultura-familiar",
+					"2026-03-24",
 				),
 				position: dv(
-					"-",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva",
-					"2026-07-05",
+					"Retomada reforma agrária. Reestruturação INCRA. Desapropriações e assentamentos. Ministério Povos Indígenas. Demarcação terras.",
+					"https://www.gov.br/planalto/pt-br/acompanhe-o-planalto/noticias/2026/03/lula-anuncia-medidas-de-reforma-agraria-regularizacao-fundiaria-e-apoio-a-agricultura-familiar",
+					"2026-03-24",
 				),
 			},
 			{
-				issue: dv(
-					"Reforma do STF",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva",
-					"2026-07-05",
-				),
-				position: dv(
-					"-",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva",
-					"2026-07-05",
-				),
+			issue: dv(
+				"Reforma do STF",
+				"https://g1.globo.com/politica/noticia/2026/02/05/lula-elogia-stf-por-nao-ter-cedido-nem-a-pressoes-de-trump-mas-diz-que-corte-tem-questoes-a-melhorar.ghtml",
+				"2026-02-05",
+			),
+			position: dv(
+				"Defende mandato ministros STF (vitaliciedade até 75 'não é justo'). Crítico a casos banais na Corte. Apoia indicações com sabatina.",
+				"https://g1.globo.com/politica/noticia/2026/02/05/lula-elogia-stf-por-nao-ter-cedido-nem-a-pressoes-de-trump-mas-diz-que-corte-tem-questoes-a-melhorar.ghtml",
+				"2026-02-05",
+			),
 			},
 			{
-				issue: dv(
-					"Reforma Política",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva",
-					"2026-07-05",
-				),
-				position: dv(
-					"-",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva",
-					"2026-07-05",
-				),
+			issue: dv(
+				"Reforma Política",
+				"https://www.gazetadopovo.com.br/eleicoes/2022/plano-de-governo-de-lula-defende-reforma-politica-e-do-estado-o-que-esperar/",
+				"2022-06-15",
+			),
+			position: dv(
+				"Defende voto distrital misto c/ lista fechada. Paridade homens/mulheres Legislativo. Financiamento público exclusivo. Fidelidade partidária.",
+				"https://www.gazetadopovo.com.br/eleicoes/2022/plano-de-governo-de-lula-defende-reforma-politica-e-do-estado-o-que-esperar/",
+				"2022-06-15",
+			),
 			},
 			{
-				issue: dv(
-					"Reforma Trabalhista",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva",
-					"2026-07-05",
-				),
-				position: dv(
-					"-",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva",
-					"2026-07-05",
-				),
+			issue: dv(
+				"Reforma Trabalhista",
+				"https://www.estadao.com.br/politica/lula-critica-reforma-trabalhista-e-chama-bolsonaro-de-a-coisa-que-veio-depois-do-temer-nprp/",
+				"2026-04-15",
+			),
+			position: dv(
+				"Contra reforma 2017 (Temer). 'Legalizou trabalho precário'. Defende revogação/revisão. Redução jornada 44h→40h, fim 6x1 s/ redução salário.",
+				"https://www.estadao.com.br/politica/lula-critica-reforma-trabalhista-e-chama-bolsonaro-de-a-coisa-que-veio-depois-do-temer-nprp/",
+				"2026-04-15",
+			),
 			},
 			{
 				issue: dv(
@@ -1031,39 +1079,39 @@ export const lula: Candidate = 	{
 				),
 			},
 			{
-				issue: dv(
-					"Relações Exteriores",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva",
-					"2026-07-05",
-				),
-				position: dv(
-					"-",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva",
-					"2026-07-05",
-				),
+			issue: dv(
+				"Relações Exteriores",
+				"https://cbn.globo.com/politica/noticia/2026/06/30/lula-critica-protecionismo-manda-recado-a-trump-e-confirma-candidatura-a-reeleicao-em-cupula-do-mercosul.ghtml",
+				"2026-06-30",
+			),
+			position: dv(
+				"Multilateralismo ativo. Fortalecimento Mercosul. Crítico protecionismo (Trump). Autonomia América do Sul. Sistema pagamentos regional (Pix). Cooperação bilateral.",
+				"https://cbn.globo.com/politica/noticia/2026/06/30/lula-critica-protecionismo-manda-recado-a-trump-e-confirma-candidatura-a-reeleicao-em-cupula-do-mercosul.ghtml",
+				"2026-06-30",
+			),
 			},
 			{
-				issue: dv(
-					"STF",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva",
-					"2026-07-05",
-				),
-				position: dv(
-					"-",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva",
-					"2026-07-05",
-				),
+			issue: dv(
+				"STF",
+				"https://g1.globo.com/politica/noticia/2026/02/05/lula-elogia-stf-por-nao-ter-cedido-nem-a-pressoes-de-trump-mas-diz-que-corte-tem-questoes-a-melhorar.ghtml",
+				"2026-02-05",
+			),
+			position: dv(
+				"Defesa STF como instituição democrática. Elogia resistência a pressões Trump no 8/1. Defende mandato e reformas na Corte.",
+				"https://g1.globo.com/politica/noticia/2026/02/05/lula-elogia-stf-por-nao-ter-cedido-nem-a-pressoes-de-trump-mas-diz-que-corte-tem-questoes-a-melhorar.ghtml",
+				"2026-02-05",
+			),
 			},
 			{
 				issue: dv(
 					"Saúde",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva",
-					"2026-07-05",
+					"https://www.opovo.com.br/noticias/politica/2026/07/03/va-para-os-eua-para-ver-se-voce-tem-isso-saude-gratuita-e-ambulancia-de-graca-diz-lula.html",
+					"2026-07-03",
 				),
 				position: dv(
-					"-",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva",
-					"2026-07-05",
+					"Defesa do SUS como política pública sem equivalente mundial. PAC Saúde R$ 815 mi. Críticas à gestão Bolsonaro na pandemia.",
+					"https://www.opovo.com.br/noticias/politica/2026/07/03/va-para-os-eua-para-ver-se-voce-tem-isso-saude-gratuita-e-ambulancia-de-graca-diz-lula.html",
+					"2026-07-03",
 				),
 			},
 			{
@@ -1079,28 +1127,28 @@ export const lula: Candidate = 	{
 				),
 			},
 			{
-				issue: dv(
-					"Separatismo Sul-Sudeste",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva",
-					"2026-07-05",
-				),
-				position: dv(
-					"-",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva",
-					"2026-07-05",
-				),
+			issue: dv(
+				"Separatismo Sul-Sudeste",
+				"https://www.estadao.com.br/politica/governador-minas-gerais-romeu-zema-bloco-sul-sudeste-leia-repercussao-nprp/",
+				"2023-08-07",
+			),
+			position: dv(
+				"Rejeição veemente via líderes governo. 'Xenofobia' e 'discurso de ódio'. Defende união nacional e equilíbrio regional. Crítico a Zema.",
+				"https://www.estadao.com.br/politica/governador-minas-gerais-romeu-zema-bloco-sul-sudeste-leia-repercussao-nprp/",
+				"2023-08-07",
+			),
 			},
 			{
-				issue: dv(
-					"Trabalho Infantil",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva",
-					"2026-07-05",
-				),
-				position: dv(
-					"-",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva",
-					"2026-07-05",
-				),
+			issue: dv(
+				"Trabalho Infantil",
+				"https://exame.com/mundo/lula-diz-que-mapa-do-trabalho-infantil-e-o-mapa-da-miseria/",
+				"2024-06-13",
+			),
+			position: dv(
+				"'Mapa trabalho infantil = mapa da fome e miséria'. Erradicação via distribuição renda e educação integral. Fortalecimento PETI e Bolsa Família.",
+				"https://exame.com/mundo/lula-diz-que-mapa-do-trabalho-infantil-e-o-mapa-da-miseria/",
+				"2024-06-13",
+			),
 			},
 			{
 				issue: dv(
@@ -1115,16 +1163,16 @@ export const lula: Candidate = 	{
 				),
 			},
 			{
-				issue: dv(
-					"Zona Franca de Manaus",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva",
-					"2026-07-05",
-				),
-				position: dv(
-					"-",
-					"https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva",
-					"2026-07-05",
-				),
+			issue: dv(
+				"Zona Franca de Manaus",
+				"https://g1.globo.com/am/amazonas/noticia/2026/05/27/lula-defende-br-319-zona-franca-e-potassio-no-amazonas-video.ghtml",
+				"2026-05-27",
+			),
+			position: dv(
+				"Defesa manutenção benefícios fiscais. 'Patrimônio desenvolvimento região Norte'. Renovou benefícios quando presidente. Crítico a Bolsonaro por tentar reduzir.",
+				"https://g1.globo.com/am/amazonas/noticia/2026/05/27/lula-defende-br-319-zona-franca-e-potassio-no-amazonas-video.ghtml",
+				"2026-05-27",
+			),
 			},
 
 		],

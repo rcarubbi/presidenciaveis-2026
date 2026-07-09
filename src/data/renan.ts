@@ -126,6 +126,18 @@ export const renan: Candidate = {
 		{
 			year: dv(
 				"2026",
+				"https://www.itatiaia.com.br/politica/eleicoes/renan-santos-flavio-bolsonaro-finge-que-se-importa-e-faz-compras-na-disney/",
+				"2026-07-08",
+			),
+			event: dv(
+				"Renan rebate Flávio Bolsonaro: 'É especialista em defender inimigos'. Cita Disney e IPVA na CCJ.",
+				"https://www.itatiaia.com.br/politica/eleicoes/renan-santos-flavio-bolsonaro-finge-que-se-importa-e-faz-compras-na-disney/",
+				"2026-07-08",
+			),
+		},
+		{
+			year: dv(
+				"2026",
 				"https://folhape.com.br/politica/renan-santos-diz-que-mira-eleitor-de-flavio-nega-ser-outsider-e/498860",
 				"2026-07-07",
 			),
@@ -193,6 +205,18 @@ export const renan: Candidate = {
 				"Anuncia Aroldo Medina como vice na chapa do Missão.",
 				"https://g1.globo.com/politica/eleicoes/2026/noticia/2026/07/02/renan-santos-anuncia-aroldo-medina-como-vice-em-chapa-a-presidencia.ghtml",
 				"2026-07-02",
+			),
+		},
+		{
+			year: dv(
+				"2026",
+				"https://g1.globo.com/rs/rio-grande-do-sul/eleicoes/2026/noticia/2026/06/30/no-rs-renan-santos-compara-politicos-do-nordeste-a-parasitas-e-diz-que-sao-os-maiores-inimigos-do-brasil.ghtml",
+				"2026-06-30",
+			),
+			event: dv(
+				"No RS, Renan compara políticos do Nordeste a 'parasitas' e diz que são os 'maiores inimigos do Brasil'. G1.",
+				"https://g1.globo.com/rs/rio-grande-do-sul/eleicoes/2026/noticia/2026/06/30/no-rs-renan-santos-compara-politicos-do-nordeste-a-parasitas-e-diz-que-sao-os-maiores-inimigos-do-brasil.ghtml",
+				"2026-06-30",
 			),
 		},
 		{

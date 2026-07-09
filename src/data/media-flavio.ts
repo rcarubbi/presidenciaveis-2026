@@ -50,6 +50,20 @@ export const flavioMedia: MediaCategory[] = [
 				},
 				{
 					title: dv(
+						"URGENTE - Flávio Bolsonaro fala sobre audiência pública nos EUA e TARIFAÇO do LULA",
+						"https://www.youtube.com/watch?v=THDrFjrIWnA",
+						"2026-07-07",
+					),
+					description: dv(
+						"Flávio Bolsonaro relata sua participação na audiência pública do USTR em Washington e defende o Brasil contra o tarifaço de 25% imposto pelo governo Lula.",
+						"https://www.youtube.com/watch?v=THDrFjrIWnA",
+						"2026-07-07",
+					),
+					youtubeId: "THDrFjrIWnA",
+					category: "entrevistas",
+				},
+				{
+					title: dv(
 						"O novo apelido de Michelle Bolsonaro na direita após atrito com Flávio",
 						"https://www.youtube.com/watch?v=AZXyWibrND8",
 						"2026-07-03",

@@ -139,11 +139,19 @@ export const flavio: Candidate = 	{
 			"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro#Senador_da_Rep%C3%BAblica_(2019%E2%80%93presente)",
 			"2026-06-26",
 		),
-		timeline: [
-			{
-				year: dv("2026", "https://g1.globo.com/sp/sao-paulo/eleicoes/2026/noticia/2026/06/18/flavio-bolsonaro-lanca-pacote-de-seguranca-com-reducao-da-maioridade-penal-e-castracao-quimica.ghtml", "2026-07-07"),
-				event: dv('Lançamento plano "Brasil Sem Medo" (18/jun) — 12 propostas de segurança pública.', "https://g1.globo.com/sp/sao-paulo/eleicoes/2026/noticia/2026/06/18/flavio-bolsonaro-lanca-pacote-de-seguranca-com-reducao-da-maioridade-penal-e-castracao-quimica.ghtml", "2026-07-07"),
-			},
+	timeline: [
+		{
+			year: dv("2026", "https://valor.globo.com/politica/noticia/2026/07/08/valdemar-diz-que-vai-reaproximar-flvio-e-michelle-at-a-conveno-do-pl.ghtml", "2026-07-08"),
+			event: dv('Valdemar prega reconciliação Flávio/Michelle: "Não podemos sair brigando dentro de casa". Convenção PL 25/jul.', "https://valor.globo.com/politica/noticia/2026/07/08/valdemar-diz-que-vai-reaproximar-flvio-e-michelle-at-a-conveno-do-pl.ghtml", "2026-07-08"),
+		},
+		{
+			year: dv("2026", "https://oglobo.globo.com/politica/noticia/2026/07/08/aliados-de-eduardo-fazem-chegar-a-cupula-do-pl-criticas-sobre-campanha-de-flavio-e-pressionam-por-mudancas.ghtml", "2026-07-08"),
+			event: dv('Fogo amigo de aliados de Eduardo Bolsonaro: Wajngarten ("campanha não existe"), Paulo Figueiredo ("desastre"), Kim Paim cobram mudanças na equipe.', "https://oglobo.globo.com/politica/noticia/2026/07/08/aliados-de-eduardo-fazem-chegar-a-cupula-do-pl-criticas-sobre-campanha-de-flavio-e-pressionam-por-mudancas.ghtml", "2026-07-08"),
+		},
+		{
+			year: dv("2026", "https://g1.globo.com/sp/sao-paulo/eleicoes/2026/noticia/2026/06/18/flavio-bolsonaro-lanca-pacote-de-seguranca-com-reducao-da-maioridade-penal-e-castracao-quimica.ghtml", "2026-07-07"),
+			event: dv('Lançamento plano "Brasil Sem Medo" (18/jun) — 12 propostas de segurança pública.', "https://g1.globo.com/sp/sao-paulo/eleicoes/2026/noticia/2026/06/18/flavio-bolsonaro-lanca-pacote-de-seguranca-com-reducao-da-maioridade-penal-e-castracao-quimica.ghtml", "2026-07-07"),
+		},
 			{
 				year: dv("2026", "https://g1.globo.com/politica/eleicoes/2026/noticia/2026/07/01/aliados-de-flavio-bolsonaro-saida-de-michelle-do-pl-mulher.ghtml", "2026-07-07"),
 				event: dv('Crise pública com Michelle Bolsonaro (24/jun). Flávio pede desculpas. Michelle deixa presidência do PL Mulher (1/jul); aliados veem alívio.', "https://g1.globo.com/politica/eleicoes/2026/noticia/2026/07/01/aliados-de-flavio-bolsonaro-saida-de-michelle-do-pl-mulher.ghtml", "2026-07-07"),
@@ -584,18 +592,30 @@ export const flavio: Candidate = 	{
 					"2026-06-03",
 				),
 			},
-			{
-				issue: dv(
-					"Agronegócio",
-					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro",
-					"2026-07-05",
-				),
-				position: dv(
-					"-",
-					"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro",
-					"2026-07-05",
-				),
-			},
+		{
+			issue: dv(
+				"Acordo Comercial EUA",
+				"https://oglobo.globo.com/economia/noticia/2026/07/08/flavio-defende-entrada-do-brasil-em-acordo-comercial-entre-eua-mexico-e-canada-que-foi-esvaziado-por-trump.ghtml",
+				"2026-07-08",
+			),
+			position: dv(
+				'Propõe AFTA (Acordo de Livre Comércio das Américas) — incluir Brasil no bloco USMCA/Nafta com EUA, México e Canadá. Economias complementares.',
+				"https://oglobo.globo.com/economia/noticia/2026/07/08/flavio-defende-entrada-do-brasil-em-acordo-comercial-entre-eua-mexico-e-canada-que-foi-esvaziado-por-trump.ghtml",
+				"2026-07-08",
+			),
+		},
+		{
+			issue: dv(
+				"Agronegócio",
+				"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro",
+				"2026-07-05",
+			),
+			position: dv(
+				"-",
+				"https://pt.wikipedia.org/wiki/Fl%C3%A1vio_Bolsonaro",
+				"2026-07-05",
+			),
+		},
 			{
 				issue: dv(
 					"Apoios Regionais",

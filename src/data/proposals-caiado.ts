@@ -33,6 +33,7 @@ export const caiadoProposals: Record<string, ProposalItem[]> = {
   infraestrutura: [
     { text: dv('Indústria de processamento de terras raras com agregação de valor nacional', 'https://g1.globo.com/politica/eleicoes/2026/noticia/2026/03/30/anistia-a-bolsonaro-terras-raras-combate-ao-crime-as-propostas-de-caiado-no-1o-discurso.ghtml', '2026-03-30') },
     { text: dv('Redução da dependência externa de fertilizantes com incentivo à produção nacional de insumos', 'https://www.correiobraziliense.com.br/mundo/2026/03/7387104-a-segunda-disputa-de-ronaldo-caiado-pela-presidencia.html', '2026-03-30') },
+    { text: dv('Investimentos em energia e fertilizantes para reduzir dependência externa e fortalecer soberania nacional', 'https://www.estadao.com.br/politica/caiado-diz-que-aceita-propor-ampliacao-do-crime-de-traicao-a-patria-no-brasil-em-meio-ao-tarifaco/', '2026-07-08') },
   ],
   'meio-ambiente': [
     { text: dv('Marco temporal para demarcações indígenas como segurança jurídica ao produtor', 'https://www.correiobraziliense.com.br/mundo/2026/03/7387104-a-segunda-disputa-de-ronaldo-caiado-pela-presidencia.html', '2026-03-30') },

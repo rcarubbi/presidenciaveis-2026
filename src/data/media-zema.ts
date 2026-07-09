@@ -8,6 +8,20 @@ export const zemaMedia: MediaCategory[] = [
 		items: [
 			{
 				title: dv(
+					"Romeu Zema diz que 'tem ministros do STF que querem calar quem discorda deles' — CNN Brasil (08/07)",
+					"https://www.youtube.com/watch?v=-1pANmoHPNs",
+					"2026-07-08",
+				),
+				description: dv(
+					"O pré-candidato do Novo concede entrevista à CNN Brasil sobre pedido de investigação de Gilmar Mendes, planos de governo, busca por vice e críticas ao STF e Lula.",
+					"https://www.youtube.com/watch?v=-1pANmoHPNs",
+					"2026-07-08",
+				),
+				youtubeId: "-1pANmoHPNs",
+				category: "entrevistas",
+			},
+			{
+				title: dv(
 					"No Osso — Romeu Zema é sabatinado pelo canal Derrubando Muros (06/07)",
 					"https://www.youtube.com/watch?v=H7OHS5OX66M",
 					"2026-07-06",

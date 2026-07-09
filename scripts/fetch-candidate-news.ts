@@ -158,7 +158,6 @@ async function main() {
     if (verbose && matches.length > 0) {
       for (const m of matches) {
         const date = m.article.published_at.slice(0, 10)
-        const kw = m.matchedKeywords.slice(0, 3).join(", ")
         console.log(`  [${m.relevance}] ${date} — ${m.article.title}`)
         console.log(`    ${m.article.url}`)
       }
