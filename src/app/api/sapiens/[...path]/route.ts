@@ -1,6 +1,19 @@
+import { unstable_cache } from 'next/cache'
 import { NextRequest, NextResponse } from 'next/server'
 
 const API_BASE = 'https://eleicoes2026.sapienslabs.com.br/api/v1'
+
+const getCachedJson = unstable_cache(
+  async (url: string) => {
+    const res = await fetch(url, {
+      headers: { Accept: 'application/json' },
+    })
+    if (!res.ok) throw new Error(`Upstream ${res.status}`)
+    return res.json()
+  },
+  ['sapiens-proxy'],
+  { revalidate: 300 }
+)
 
 export async function GET(
   req: NextRequest,
@@ -11,20 +24,7 @@ export async function GET(
     const search = req.nextUrl.search
     const url = `${API_BASE}/${path.join('/')}${search}`
 
-    const res = await fetch(url, {
-      next: { revalidate: 300 },
-      headers: { Accept: 'application/json' },
-      signal: req.signal,
-    })
-
-    if (!res.ok) {
-      return NextResponse.json(
-        { error: `Upstream ${res.status}` },
-        { status: res.status }
-      )
-    }
-
-    const data = await res.json()
+    const data = await getCachedJson(url)
     return NextResponse.json(data)
   } catch (err) {
     if (err instanceof DOMException && err.name === 'AbortError') {
