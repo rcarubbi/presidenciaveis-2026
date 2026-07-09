@@ -40,14 +40,18 @@ export function usePollsData(initialSource?: 'institutes' | 'tse') {
     if (source !== 'tse') return
     setTseLoading(true)
     setTseError('')
-    fetch('/api/tse/pesquisas')
-      .then((r) => r.json())
-      .then((json) => {
+    ;(async () => {
+      try {
+        const res = await fetch('/api/tse/pesquisas')
+        const json = await res.json()
         if (json.error) throw new Error(json.error)
         setTseData(json.data)
-      })
-      .catch((err) => setTseError(err.message))
-      .finally(() => setTseLoading(false))
+      } catch (err) {
+        setTseError((err as Error).message)
+      } finally {
+        setTseLoading(false)
+      }
+    })()
   }, [source])
 
   const filtered = useMemo(() => polls.filter((p) => p.institute === selected), [selected])

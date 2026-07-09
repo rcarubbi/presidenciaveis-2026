@@ -36,18 +36,25 @@ export function SettingsPanel() {
     setCookie(val)
   }
 
-  function handlePushGrant() {
+  function postConsentToSW(value: string) {
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.controller?.postMessage({ type: 'push-consent', value })
+    }
+  }
+
+  async function handlePushGrant() {
     if (typeof Notification !== 'undefined') {
-      Notification.requestPermission().then((r) => {
-        localStorage.setItem(PUSH_KEY, r)
-        setPushConsent(r)
-      })
+      const r = await Notification.requestPermission()
+      localStorage.setItem(PUSH_KEY, r)
+      setPushConsent(r)
+      postConsentToSW(r)
     }
   }
 
   function handlePushDeny() {
     localStorage.setItem(PUSH_KEY, 'denied')
     setPushConsent('denied')
+    postConsentToSW('denied')
   }
 
   const cookieLabel = cookie === 'accepted' ? 'Aceito' : cookie === 'refused' ? 'Recusado' : 'Não definido'

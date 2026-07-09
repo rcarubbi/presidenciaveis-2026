@@ -6,36 +6,47 @@ import { toast } from 'sonner'
 export function PushInit() {
   const swPosted = useRef(false)
 
+  function postConsent(worker: ServiceWorker | null) {
+    const c = localStorage.getItem('push-consent')
+    worker?.postMessage({ type: 'push-consent', value: c || 'denied' })
+  }
+
   useEffect(() => {
     if (!('serviceWorker' in navigator)) return
 
-    navigator.serviceWorker.register('/sw.js', { scope: '/' }).then((reg) => {
-      function postCheck() {
-        if (reg.active) {
-          reg.active.postMessage('check')
+    ;(async () => {
+      try {
+        const reg = await navigator.serviceWorker.register('/sw.js', { scope: '/' })
+
+        function postCheck() {
+          if (reg.active) {
+            reg.active.postMessage('check')
+          }
         }
-      }
 
-      if (!swPosted.current) {
-        postCheck()
-        swPosted.current = true
-      }
+        if (!swPosted.current) {
+          postCheck()
+          swPosted.current = true
+        }
 
-      if (reg.installing) {
-        reg.installing.addEventListener('statechange', () => {
-          if (reg.installing?.state === 'activated') postCheck()
-        })
-      }
+        postConsent(reg.active)
 
-      reg.addEventListener('updatefound', () => {
-        const installing = reg.installing
-        if (installing) {
-          installing.addEventListener('statechange', () => {
-            if (installing.state === 'activated') postCheck()
+        if (reg.installing) {
+          reg.installing.addEventListener('statechange', () => {
+            if (reg.installing?.state === 'activated') postCheck()
           })
         }
-      })
-    }).catch(() => {})
+
+        reg.addEventListener('updatefound', () => {
+          const installing = reg.installing
+          if (installing) {
+            installing.addEventListener('statechange', () => {
+              if (installing.state === 'activated') postCheck()
+            })
+          }
+        })
+      } catch {}
+    })()
 
     navigator.serviceWorker.addEventListener('controllerchange', () => {
       navigator.serviceWorker.controller?.postMessage('check')
@@ -98,8 +109,10 @@ export function PushInit() {
       toast('Receba notificacoes quando novos dados forem publicados', {
         action: {
           label: 'Ativar',
-          onClick: () => {
-            Notification.requestPermission().then((r) => localStorage.setItem('push-consent', r))
+          onClick: async () => {
+            const r = await Notification.requestPermission()
+            localStorage.setItem('push-consent', r)
+            postConsent(navigator.serviceWorker.controller)
           },
         },
         duration: 10000,

@@ -88,26 +88,27 @@ export function useCobertura(candidateId: string) {
       setLoading(true)
     }
 
-    fetchCoberturaData(apiSlug, controller.signal)
-      .then((result) => {
+    ;(async () => {
+      try {
+        const result = await fetchCoberturaData(apiSlug, controller.signal)
         setCache(key, result)
         if (!cancelled) {
           setData(result)
           setLoading(false)
           setError(null)
         }
-      })
-      .catch((err) => {
-        if (err.name === 'AbortError') return
+      } catch (err) {
+        if ((err as Error).name === 'AbortError') return
         if (!cancelled) {
           if (!cached) {
-            setError(err.message)
+            setError((err as Error).message)
             setLoading(false)
           } else {
             setLoading(false)
           }
         }
-      })
+      }
+    })()
 
     return () => {
       cancelled = true

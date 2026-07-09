@@ -148,7 +148,8 @@ export function MediaCard({ item, color }: MediaCardProps) {
 
     let destroyed = false
 
-    loadYouTubeAPI().then(() => {
+    ;(async () => {
+      await loadYouTubeAPI()
       if (destroyed || !containerRef.current) return
 
       const YT = window.YT!
@@ -182,7 +183,7 @@ export function MediaCard({ item, color }: MediaCardProps) {
         },
       })
       playerRef.current = player
-    })
+    })()
 
     return () => {
       destroyed = true
